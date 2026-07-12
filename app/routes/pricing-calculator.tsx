@@ -1,6 +1,14 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router";
 import { pageMeta } from "@/lib/seo";
+import {
+  PLATFORM_FEE,
+  HOTEL_BASE_RATE,
+  VR_BASE_RATE,
+  HOTEL_TIERS as HOTEL_TIER_DATA,
+  VR_TIERS as VR_TIER_DATA,
+  tierRate,
+} from "@/data/pricing";
 import type { Route } from "./+types/pricing-calculator";
 
 export const meta: Route.MetaFunction = ({ location }) =>
@@ -12,19 +20,8 @@ export const meta: Route.MetaFunction = ({ location }) =>
     location,
   );
 
-function hotelRate(n: number): number {
-  if (n >= 2000) return 4;
-  if (n >= 1000) return 5;
-  if (n >= 500) return 6;
-  return 7;
-}
-
-function vrRate(n: number): number {
-  if (n >= 7000) return 0.30;
-  if (n >= 4000) return 0.40;
-  if (n >= 2000) return 0.45;
-  return 0.50;
-}
+const hotelRate = (n: number) => tierRate(n, HOTEL_BASE_RATE, HOTEL_TIER_DATA);
+const vrRate = (n: number) => tierRate(n, VR_BASE_RATE, VR_TIER_DATA);
 
 function fmt(n: number): string {
   return "$" + n.toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
@@ -35,19 +32,15 @@ function fmtShort(n: number): string {
   return fmt(n);
 }
 
-const HOTEL_TIERS = [
-  { thresh: 500,  label: "500+ → $6.00" },
-  { thresh: 1000, label: "1,000+ → $5.00" },
-  { thresh: 2000, label: "2,000+ → $4.00" },
-];
+const HOTEL_TIERS = HOTEL_TIER_DATA.map((t) => ({
+  thresh: t.thresh,
+  label: `${t.thresh.toLocaleString("en-US")}+ → ${fmt(t.rate)}`,
+}));
 
-const VR_TIERS = [
-  { thresh: 2000, label: "2,000+ → $0.45" },
-  { thresh: 4000, label: "4,000+ → $0.40" },
-  { thresh: 7000, label: "7,000+ → $0.30" },
-];
-
-const PLATFORM_FEE = 130;
+const VR_TIERS = VR_TIER_DATA.map((t) => ({
+  thresh: t.thresh,
+  label: `${t.thresh.toLocaleString("en-US")}+ → ${fmt(t.rate)}`,
+}));
 
 export default function PricingCalculator() {
   const [hotels, setHotels] = useState<string>("");
@@ -66,22 +59,20 @@ export default function PricingCalculator() {
   const props = h + v;
   const perProp = props > 0 ? total / props : null;
 
-  const savings = h * (7 - hr) + v * (0.5 - vr);
+  const savings = h * (HOTEL_BASE_RATE - hr) + v * (VR_BASE_RATE - vr);
 
   const savingsParts: string[] = [];
-  if (h > 0 && hr < 7) savingsParts.push("hotel volume discount");
-  if (v > 0 && vr < 0.5) savingsParts.push("VR volume discount");
+  if (h > 0 && hr < HOTEL_BASE_RATE) savingsParts.push("hotel volume discount");
+  if (v > 0 && vr < VR_BASE_RATE) savingsParts.push("VR volume discount");
 
   const hints: string[] = [];
-  if (h > 0) {
-    if (h < 500) hints.push(`${(500 - h).toLocaleString()} more hotels to unlock $6.00/hotel`);
-    else if (h < 1000) hints.push(`${(1000 - h).toLocaleString()} more hotels to unlock $5.00/hotel`);
-    else if (h < 2000) hints.push(`${(2000 - h).toLocaleString()} more hotels to unlock $4.00/hotel`);
+  const nextHotelTier = HOTEL_TIER_DATA.find((t) => h < t.thresh);
+  if (h > 0 && nextHotelTier) {
+    hints.push(`${(nextHotelTier.thresh - h).toLocaleString()} more hotels to unlock ${fmt(nextHotelTier.rate)}/hotel`);
   }
-  if (v > 0) {
-    if (v < 2000) hints.push(`${(2000 - v).toLocaleString()} more VR units to unlock $0.45/unit`);
-    else if (v < 4000) hints.push(`${(4000 - v).toLocaleString()} more VR units to unlock $0.40/unit`);
-    else if (v < 7000) hints.push(`${(7000 - v).toLocaleString()} more VR units to unlock $0.30/unit`);
+  const nextVrTier = VR_TIER_DATA.find((t) => v < t.thresh);
+  if (v > 0 && nextVrTier) {
+    hints.push(`${(nextVrTier.thresh - v).toLocaleString()} more VR units to unlock ${fmt(nextVrTier.rate)}/unit`);
   }
 
   function tierChipClass(index: number, value: number, tiers: typeof HOTEL_TIERS): string {

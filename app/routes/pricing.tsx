@@ -6,68 +6,32 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Link } from "react-router";
 import { Check, CreditCard, Shield, RefreshCw, ArrowRight, Building2, Home, MessageSquare, Calculator, ChevronDown, ChevronUp } from "lucide-react";
 import { useState } from "react";
+import { faqs, plan, featureRows, channels } from "@/data/pricing";
 import type { Route } from "./+types/pricing";
 
-export const meta: Route.MetaFunction = ({ location }) =>
-  pageMeta(
+export const meta: Route.MetaFunction = ({ location }) => [
+  ...pageMeta(
     {
       title: "Pricing | White-label Channel Manager API",
       description: "Flexible pricing for PMS providers using Channex's white-label channel manager API.",
+      structuredData: {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        mainEntity: faqs.map((faq) => ({
+          "@type": "Question",
+          name: faq.question,
+          acceptedAnswer: { "@type": "Answer", text: faq.answer },
+        })),
+      },
     },
     location,
-  );
-
-const faqs = [
-  {
-    question: "Is there a free trial or sandbox environment?",
-    answer: "Yes — Channex provides a full sandbox environment so you can test the API, map channels, and validate your integration before going live. Contact our team to get sandbox credentials set up."
-  },
-  {
-    question: "What counts as an \"active\" property?",
-    answer: "A property is considered active in any month where it has at least one live channel connection. Properties that are set up but have no active channel connections are not billed."
-  },
-  {
-    question: "What does the $130/month platform fee cover?",
-    answer: "The platform fee covers your API access, the Channex dashboard, the Mapping API, unlimited user seats, standard tech support, and onboarding assistance. Per-property charges are billed on top of this fee based on the number of active connected properties."
-  },
-  {
-    question: "Are there volume discounts for large deployments?",
-    answer: "Yes. Hotel rates reduce from $7.00 to as low as $4.00 per property at scale, and vacation rental unit rates reduce from $0.50 to as low as $0.30 per unit. Use the pricing calculator to see the exact rate that applies to your portfolio size."
-  },
-  {
-    question: "What contract length is required?",
-    answer: "Channex is billed monthly with no long-term contract required. You can scale up, scale down, or cancel at any time."
-  },
-  {
-    question: "Is there a setup or onboarding fee?",
-    answer: "No. There are no setup fees. Onboarding and technical support are included in the platform fee."
-  },
-  {
-    question: "Can I white-label the Channex interface for my customers?",
-    answer: "Yes — the WhiteLabel plan is specifically designed for PMS providers and booking engines who want to offer channel management under their own brand. The interface, API responses, and documentation can all be white-labelled."
-  },
-  {
-    question: "Which channels are supported?",
-    answer: "Channex connects to 400+ channels including Booking.com, Expedia, Airbnb, Google Hotel Search, Agoda, Hotelbeds, Hostelworld, Ctrip, and many more. See the full list on the integrations page."
-  }
+  ),
+  // Machine-readable mirror of this page for LLMs/agents.
+  { tagName: "link", rel: "alternate", type: "text/markdown", href: "/pricing.md" },
 ];
 
 const Pricing = () => {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
-
-  const plan = {
-    name: "WhiteLabel",
-    price: "$130",
-    period: "per Month",
-    description: "For tech providers like PMS and Booking Engines. Very Competitive Prices per property.",
-    features: [
-      "Competitive per-property pricing",
-      "API Access",
-      "White-label solution",
-      "Mapping API",
-      "Tech Support"
-    ]
-  };
 
   return (
     <div className="min-h-screen bg-background">
@@ -237,20 +201,7 @@ const Pricing = () => {
                   </tr>
                 </thead>
                 <tbody>
-                  {[
-                    { feature: "Hotels Fee (Per Property)", whitelabel: "$7" },
-                    { feature: "Vacation Rental Fee (Per unit)", whitelabel: "$0.50" },
-                    { feature: "Dashboard", whitelabel: "✓" },
-                    { feature: "PMS Integration", whitelabel: "✓" },
-                    { feature: "API Access", whitelabel: "✓" },
-                    { feature: "Channel Reports", whitelabel: "✓" },
-                    { feature: "Support via Chat & Email", whitelabel: "✓" },
-                    { feature: "Unlimited Users", whitelabel: "✓" },
-                    { feature: "Onboarding & Training", whitelabel: "✓" },
-                    { feature: "Messaging & Reviews App (Hotels)", whitelabel: "$7 / property" },
-                    { feature: "Messaging & Reviews App (VR)", whitelabel: "$0.50 / unit" },
-                    { feature: "Channel and Mapping API", whitelabel: "✓" },
-                  ].map((row, index) => (
+                  {featureRows.map((row, index) => (
                     <tr key={index} className={index % 2 === 0 ? "bg-background" : "bg-muted/25"}>
                       <td className="p-6 font-medium text-foreground font-inter">{row.feature}</td>
                       <td className="p-6 text-center text-muted-foreground font-inter">
@@ -280,17 +231,7 @@ const Pricing = () => {
                     </tr>
                   </thead>
                   <tbody>
-                    {[
-                      "Booking.com",
-                      "Expedia",
-                      "Google Hotel Search (Hotels & Vacation Rentals)",
-                      "Airbnb",
-                      "Hostelworld",
-                      "Agoda",
-                      "Hotelbeds",
-                      "Ctrip",
-                      "Other Channels (See integration page for full list)"
-                    ].map((channel, index) => (
+                    {channels.map((channel, index) => (
                       <tr key={index} className={index % 2 === 0 ? "bg-background" : "bg-muted/25"}>
                         <td className="p-6 font-medium text-foreground font-inter">{channel}</td>
                         <td className="p-6 text-center">
@@ -328,11 +269,11 @@ const Pricing = () => {
                         : <ChevronDown className="h-5 w-5 text-muted-foreground flex-shrink-0" />
                       }
                     </button>
-                    {isOpen && (
-                      <div className="px-6 pb-6 bg-muted/20">
-                        <p className="text-muted-foreground font-inter leading-relaxed">{faq.answer}</p>
-                      </div>
-                    )}
+                    {/* Always in the DOM (hidden when collapsed) so crawlers
+                        and LLMs see the answers in the SSR HTML. */}
+                    <div className={isOpen ? "px-6 pb-6 bg-muted/20" : "hidden"}>
+                      <p className="text-muted-foreground font-inter leading-relaxed">{faq.answer}</p>
+                    </div>
                   </div>
                 );
               })}

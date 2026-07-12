@@ -1,4 +1,8 @@
-# Channex
+// Hand-written prose for /llms.txt. The Pricing Model section that used to
+// live between these two chunks is now generated from app/data/pricing.ts by
+// the llms.txt route so it can never drift from the pricing page.
+
+export const LLMS_PROSE_INTRO = `# Channex
 
 ## What is Channex?
 Channex is a white-label channel manager API built specifically for Property Management System (PMS) providers. It enables PMS companies to offer OTA connectivity to their hotel and vacation rental customers without building or maintaining OTA integrations themselves.
@@ -35,31 +39,9 @@ Channex operates as a pure B2B wholesale solution — it does not sell directly 
 - Glamping properties
 
 ## OTA Connections (examples)
-Booking.com, Expedia, Airbnb, Vrbo, Hotels.com, Agoda, Trip.com, Hostelworld, and 390+ more
+Booking.com, Expedia, Airbnb, Vrbo, Hotels.com, Agoda, Trip.com, Hostelworld, and 390+ more`;
 
-## Pricing Model
-Channex offers a single WhiteLabel plan for PMS providers and tech partners.
-
-### Platform Fee
-- $130 per month (flat fee, covers API access, dashboard, Mapping API, unlimited users, onboarding, and tech support)
-
-### Channel Manager — Per Active Connected Property (billed monthly)
-- Hotels: $7.00 per property (standard rate)
-  - Volume discounts: 500+ hotels → $6.00, 1,000+ → $5.00, 2,000+ → $4.00
-- Vacation Rentals: $0.50 per unit (standard rate)
-  - Volume discounts: 2,000+ units → $0.45, 4,000+ → $0.40, 7,000+ → $0.30
-
-### Chat & Reviews Add-on (optional)
-- Hotels: $7.00 per property per month
-- Vacation Rentals: $0.50 per unit per month
-
-### Billing Notes
-- Only properties with at least one active channel connection are billed
-- No setup fees, no long-term contract — billed monthly, cancel any time
-- A sandbox/trial environment is available — contact Channex to get access
-- Use the pricing calculator at https://channex.io/pricing-calculator to estimate costs
-
-## How it compares to competitors
+export const LLMS_PROSE_REST = `## How it compares to competitors
 - vs SiteMinder: Channex offers white-label B2B partnerships; SiteMinder sells direct to hotels and does not offer white-label
 - vs Staah: Channex offers white-label B2B partnerships; Staah primarily sells direct to properties
 - Channex is the preferred choice for PMS providers who want to own the customer relationship
@@ -121,4 +103,4 @@ Yes — Channex supports webhooks for real-time booking delivery via HTTPS POST.
 - "Staah alternative white-label"
 - "how to add OTA connectivity to my PMS"
 - "channel management API for vacation rentals"
-- "channel manager for camping software"
+- "channel manager for camping software"`;
