@@ -6,6 +6,9 @@
   "name": "channex-website-ssr",
   "compatibility_date": "2026-05-28",
   "main": "./workers/app.ts",
+  // Explicit so deploys don't warn about defaulting these on.
+  "workers_dev": true,
+  "preview_urls": true,
   "observability": {
     "enabled": true
   },
