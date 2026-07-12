@@ -10,7 +10,6 @@ import { categories } from "@/types/integration";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { pageMeta } from "@/lib/seo";
-import { useToast } from "@/components/ui/use-toast";
 import type { Route } from "./+types/integrations";
 
 export const meta: Route.MetaFunction = ({ location }) =>
@@ -21,7 +20,6 @@ export const meta: Route.MetaFunction = ({ location }) =>
     },
     location,
   );
-import { utils, writeFile } from "xlsx";
 
 const HIDDEN_CATEGORIES = new Set(["Regional","Budget","Luxury","Corporate","API"]);
 
@@ -52,23 +50,6 @@ const Integrations = () => {
   const clearFilters = () => {
     setSelectedCategories([]);
     setSearchTerm("");
-};
-
-const { toast } = useToast();
-
-const handleDownloadOTA = () => {
-  const otaList = integrations.filter((i) => i.categories.includes("OTA"));
-  const data = otaList.map((i) => ({
-    Name: i.name,
-    Description: i.description,
-    Categories: i.categories.join(", "),
-    Website: i.website || "",
-  }));
-  const ws = utils.json_to_sheet(data);
-  const wb = utils.book_new();
-  utils.book_append_sheet(wb, ws, "OTAs");
-  writeFile(wb, "channex-ota-integrations.xlsx");
-  toast({ title: "Download started", description: `Exported ${otaList.length} OTA integrations.` });
 };
 
 const getCategoryColor = (category: string) => {
@@ -107,8 +88,12 @@ const getCategoryColor = (category: string) => {
               <Badge variant="secondary" className="text-sm">One API</Badge>
             </div>
             <div className="mt-6 flex justify-center">
-              <Button size="lg" onClick={handleDownloadOTA}>
-                <Download size={16} className="mr-2" /> Download OTAs (XLS)
+              {/* Generated at build time by the emit-ota-xlsx Vite plugin and
+                  served as an edge-cached static asset. */}
+              <Button size="lg" asChild>
+                <a href="/channex-ota-integrations.xlsx" download>
+                  <Download size={16} className="mr-2" /> Download OTAs (XLS)
+                </a>
               </Button>
             </div>
           </div>

@@ -17,7 +17,13 @@
     "strict": true,
     "noUnusedLocals": false,
     "noUnusedParameters": false,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+
+    /* vite.config.ts imports app/data/integrations.ts (build-time XLSX export) */
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./app/*"]
+    }
   },
-  "include": ["vite.config.ts", "react-router.config.ts"]
+  "include": ["vite.config.ts", "react-router.config.ts", "app/data/integrations.ts", "app/types/integration.ts"]
 }
