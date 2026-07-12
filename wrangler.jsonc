@@ -1,14 +1,13 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "channex-website-live",
+  // Deliberately NOT "channex-website-live" so test deploys can never
+  // overwrite the Worker that may be serving production channex.io.
+  // Rename when cutting over for real.
+  "name": "channex-website-ssr",
   "compatibility_date": "2026-05-28",
+  "main": "./workers/app.ts",
   "observability": {
     "enabled": true
-  },
-  "assets": {
-    "directory": "./dist",
-    "html_handling": "none",
-    "not_found_handling": "single-page-application"
   },
   "compatibility_flags": [
     "nodejs_compat"

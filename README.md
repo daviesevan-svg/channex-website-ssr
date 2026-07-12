@@ -1,74 +1,47 @@
-# Welcome to your Lovable project
+# Channex website (channex.io)
 
-## Project info
+Server-rendered marketing site, deployed as a Cloudflare Worker.
 
-**URL**: https://lovable.dev/projects/ed8c404c-ee63-495a-9373-fff4cafa6e6a
+## Stack
 
-## How can I edit this code?
+- [React Router](https://reactrouter.com/) v8 (framework mode) — file-based routes in `app/routes/`, SSR by default
+- React 19 + Vite 8
+- [@cloudflare/vite-plugin](https://developers.cloudflare.com/workers/vite-plugin/) — builds and serves the Worker locally
+- Tailwind CSS v3 + shadcn/ui components
+- TypeScript
 
-There are several ways of editing your application.
+Every route exports a `meta()` function so title/description/canonical/Open Graph/Twitter/JSON-LD tags are rendered
+server-side (see `app/lib/seo.ts`), rather than injected client-side after hydration.
 
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/ed8c404c-ee63-495a-9373-fff4cafa6e6a) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
+## Local development
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+npm install
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+## Typecheck
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+```sh
+npm run typecheck
+```
 
-**Use GitHub Codespaces**
+## Build
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+```sh
+npm run build
+```
 
-## What technologies are used for this project?
+Outputs `build/client` (static assets) and `build/server` (the Worker bundle).
 
-This project is built with:
+## Deploy
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+Push to `main` with a Cloudflare Workers Builds git integration configured (Cloudflare dashboard → Workers & Pages →
+Create → Connect to Git), which runs `npm run build` then `wrangler deploy` automatically. To deploy manually:
 
-## How can I deploy this project?
+```sh
+npm run deploy
+```
 
-Simply open [Lovable](https://lovable.dev/projects/ed8c404c-ee63-495a-9373-fff4cafa6e6a) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
- 
+`wrangler.jsonc` holds the Worker's non-secret config (name, compatibility date). There are no environment
+variables/bindings for this project — it's a static content site with no backend.

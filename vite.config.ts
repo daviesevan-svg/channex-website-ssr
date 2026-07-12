@@ -1,26 +1,24 @@
+import { reactRouter } from "@react-router/dev/vite";
+import { cloudflare } from "@cloudflare/vite-plugin";
 import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react-swc";
 import path from "path";
-import { componentTagger } from "lovable-tagger";
 import fs from "fs";
 
-// Custom plugin to clean up dist after build:
-// 1. Remove integration logos that are served from GitHub raw CDN (saves ~14 MB)
-//    - These are referenced via raw.githubusercontent.com URLs in integrations.ts
-//    - They do NOT need to be in the dist since they're fetched from GitHub CDN
-// 2. Keep all other lovable-uploads files (logo, favicon, blog images, screenshots)
-//    - These are referenced locally via /lovable-uploads/ paths
-// 3. Remove _redirects if present - SPA routing is handled by wrangler.jsonc
-function cleanupDist() {
+// Integration logos referenced via raw.githubusercontent.com URLs in
+// integrations.ts are served from GitHub's CDN and don't need to ship in the
+// Worker's static assets (saves ~14 MB of upload). Only prune files that are
+// CDN-served; local-only uploads (logo, favicon, blog images) stay put.
+function pruneCdnLogos() {
   return {
-    name: "cleanup-dist",
+    name: "prune-cdn-logos",
     closeBundle() {
-      const distUploadsDir = path.resolve(__dirname, "dist/lovable-uploads");
-      if (!fs.existsSync(distUploadsDir)) return;
+      const uploadsDir = path.resolve(__dirname, "build/client/lovable-uploads");
+      if (!fs.existsSync(uploadsDir)) return;
 
-      // Read integrations.ts to find CDN-served logos
-      const integrationsPath = path.resolve(__dirname, "src/data/integrations.ts");
-      const integrationsContent = fs.readFileSync(integrationsPath, "utf-8");
+      const integrationsContent = fs.readFileSync(
+        path.resolve(__dirname, "app/data/integrations.ts"),
+        "utf-8",
+      );
       const cdnLogoRegex = /raw\.githubusercontent\.com\/[^"]+\/lovable-uploads\/([^"]+)/g;
       const cdnLogos = new Set<string>();
       let match;
@@ -28,46 +26,37 @@ function cleanupDist() {
         cdnLogos.add(match[1]);
       }
 
-      // Remove only CDN-served logos from dist/lovable-uploads/
       let removed = 0;
       for (const file of cdnLogos) {
-        const filePath = path.join(distUploadsDir, file);
+        const filePath = path.join(uploadsDir, file);
         if (fs.existsSync(filePath)) {
           fs.rmSync(filePath);
           removed++;
         }
       }
       if (removed > 0) {
-        console.log(`✅ Removed ${removed} CDN-served integration logos from dist/lovable-uploads/`);
-      }
-
-      // Remove _redirects if present - SPA routing handled by wrangler.jsonc
-      const redirectsFile = path.resolve(__dirname, "dist/_redirects");
-      if (fs.existsSync(redirectsFile)) {
-        fs.rmSync(redirectsFile);
-        console.log("✅ Removed dist/_redirects (SPA routing handled by wrangler.jsonc)");
+        console.log(`Removed ${removed} CDN-served integration logos from build/client/lovable-uploads/`);
       }
     },
   };
 }
 
-// https://vitejs.dev/config/
-export default defineConfig(({ mode }) => ({
-  base: "/",
+export default defineConfig({
+  // Dev-only: crawl every route at server startup so Vite discovers and
+  // optimizes ALL dependencies up front. Without this, each newly visited page
+  // (e.g. /integrations pulling in xlsx) triggers "optimized dependencies
+  // changed. reloading", which invalidates route modules mid-load and traps
+  // the browser in a "Error loading route module, reloading page..." loop.
+  // See https://github.com/remix-run/react-router/issues/12786.
   server: {
-    host: "::",
-    port: 8080,
-    allowedHosts: true,
-  },
-  plugins: [
-    react(),
-    mode === 'development' &&
-    componentTagger(),
-    mode === 'production' && cleanupDist(),
-  ].filter(Boolean),
-  resolve: {
-    alias: {
-      "@": path.resolve(__dirname, "./src"),
+    warmup: {
+      clientFiles: ["./app/root.tsx", "./app/routes/**/*.tsx"],
     },
   },
-}));
+  plugins: [cloudflare({ viteEnvironment: { name: "ssr" } }), reactRouter(), pruneCdnLogos()],
+  resolve: {
+    alias: {
+      "@": "/app",
+    },
+  },
+});

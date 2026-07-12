@@ -12,6 +12,13 @@ dist
 dist-ssr
 *.local
 
+# React Router / Cloudflare build output
+build
+.react-router
+.wrangler
+worker-configuration.d.ts
+*.tsbuildinfo
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

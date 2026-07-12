@@ -1,10 +1,10 @@
 import re, glob, os
 
-content = open('src/data/integrations.ts').read()
+content = open('app/data/integrations.ts').read()
 cdn_logos = set(re.findall(r'raw\.githubusercontent\.com/[^"]+/lovable-uploads/([^"]+)', content))
 
 all_refs = set()
-files = glob.glob('src/**/*.tsx', recursive=True) + glob.glob('src/**/*.ts', recursive=True) + ['index.html']
+files = glob.glob('app/**/*.tsx', recursive=True) + glob.glob('app/**/*.ts', recursive=True) + ['index.html']
 for f in files:
     try:
         c = open(f).read()

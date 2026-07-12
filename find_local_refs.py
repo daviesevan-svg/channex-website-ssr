@@ -1,13 +1,13 @@
 import re, glob
 
 # Get all CDN logo filenames (these are served from GitHub, don't need to be in dist)
-content = open('src/data/integrations.ts').read()
+content = open('app/data/integrations.ts').read()
 cdn_logos = set(re.findall(r'raw\.githubusercontent\.com/[^"]+/lovable-uploads/([^"]+)', content))
 print(f'Integration logos (via CDN): {len(cdn_logos)}')
 
 # Get all /lovable-uploads/ references from source files
 all_refs = set()
-files = glob.glob('src/**/*.tsx', recursive=True) + glob.glob('src/**/*.ts', recursive=True) + ['index.html']
+files = glob.glob('app/**/*.tsx', recursive=True) + glob.glob('app/**/*.ts', recursive=True) + ['index.html']
 for f in files:
     try:
         c = open(f).read()
