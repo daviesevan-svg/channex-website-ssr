@@ -3,8 +3,8 @@ import { z } from "zod";
 
 // Contact-form handling. Two independent things happen per submission:
 //
-//  1. the enquiry is stored (D1, when a DB binding exists), and
-//  2. an email is sent to the sales inbox via Resend.
+//  1. the enquiry is stored in D1, and
+//  2. an email is sent to the sales inbox via SparkPost.
 //
 // They're independent on purpose: a lead is the whole point of this site, so
 // one failing must not lose it. If storage succeeds but email doesn't, the
@@ -29,12 +29,14 @@ export type ContactInput = z.infer<typeof contactSchema>;
  *  CONTACT_TO/CONTACT_FROM are plain vars; DB is optional — without it,
  *  enquiries are emailed but not stored. */
 interface ContactEnv {
-  RESEND_API_KEY?: string;
-  /** Override the Resend endpoint (a proxy, or a stub in tests). */
-  RESEND_API_URL?: string;
+  SPARKPOST_API_KEY?: string;
+  /** API host. SparkPost accounts are region-bound: EU accounts must use
+   *  https://api.eu.sparkpost.com, US accounts https://api.sparkpost.com.
+   *  Using the wrong one fails auth even with a valid key. */
+  SPARKPOST_API_URL?: string;
   /** Where enquiries are sent. Defaults to the published address. */
   CONTACT_TO?: string;
-  /** Must be a Resend-verified sender on your domain. */
+  /** Sending address — its domain must be verified in SparkPost. */
   CONTACT_FROM?: string;
   DB?: D1Database;
 }
@@ -42,7 +44,10 @@ interface ContactEnv {
 const bindings = () => env as unknown as ContactEnv;
 
 const DEFAULT_TO = "hello@channex.io";
-const DEFAULT_FROM = "Channex website <noreply@channex.io>";
+const DEFAULT_FROM_EMAIL = "noreply@channex.io";
+const DEFAULT_FROM_NAME = "Channex website";
+// EU host by default, matching the SparkPost account the booking engine uses.
+const DEFAULT_API_URL = "https://api.eu.sparkpost.com";
 
 export interface SubmitMeta {
   /** Which page the form was submitted from. */
@@ -128,30 +133,50 @@ function plainBody(input: ContactInput, meta: SubmitMeta): string {
     .join("\n");
 }
 
+/** Splits an RFC-5322-ish "Name <email>" into SparkPost's from object. */
+function parseFrom(value: string): { email: string; name?: string } {
+  const m = value.match(/^\s*(.*?)\s*<([^>]+)>\s*$/);
+  if (m) return { email: m[2].trim(), name: m[1].trim() || undefined };
+  return { email: value.trim() };
+}
+
 async function sendEmail(input: ContactInput, meta: SubmitMeta): Promise<boolean> {
   const env = bindings();
-  if (!env.RESEND_API_KEY) {
-    console.error("contact: RESEND_API_KEY is not set — enquiry not emailed");
+  if (!env.SPARKPOST_API_KEY) {
+    console.error("contact: SPARKPOST_API_KEY is not set — enquiry not emailed");
     return false;
   }
+  const base = (env.SPARKPOST_API_URL || DEFAULT_API_URL).replace(/\/+$/, "");
   try {
-    const res = await fetch(env.RESEND_API_URL || "https://api.resend.com/emails", {
+    const res = await fetch(`${base}/api/v1/transmissions`, {
       method: "POST",
       headers: {
-        Authorization: `Bearer ${env.RESEND_API_KEY}`,
+        // SparkPost takes the raw key — no "Bearer" prefix.
+        Authorization: env.SPARKPOST_API_KEY,
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        from: env.CONTACT_FROM || DEFAULT_FROM,
-        to: [env.CONTACT_TO || DEFAULT_TO],
-        // So a reply from the inbox goes straight back to the prospect.
-        reply_to: input.email,
-        subject: `Website enquiry — ${input.company} (${input.firstName} ${input.lastName})`,
-        text: plainBody(input, meta),
+        content: {
+          from: env.CONTACT_FROM
+            ? parseFrom(env.CONTACT_FROM)
+            : { email: DEFAULT_FROM_EMAIL, name: DEFAULT_FROM_NAME },
+          // So a reply from the inbox goes straight back to the prospect.
+          reply_to: input.email,
+          subject: `Website enquiry — ${input.company} (${input.firstName} ${input.lastName})`,
+          text: plainBody(input, meta),
+        },
+        recipients: [{ address: { email: env.CONTACT_TO || DEFAULT_TO } }],
       }),
     });
     if (!res.ok) {
-      console.error(`contact: Resend responded ${res.status}`, await res.text().catch(() => ""));
+      const body = await res.text().catch(() => "");
+      console.error(`contact: SparkPost responded ${res.status} from ${base}`, body);
+      if (res.status === 401 || res.status === 403) {
+        console.error(
+          "contact: check SPARKPOST_API_KEY, and that SPARKPOST_API_URL matches your " +
+            "account region (EU accounts must use https://api.eu.sparkpost.com)",
+        );
+      }
       return false;
     }
     return true;

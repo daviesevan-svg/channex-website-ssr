@@ -12,6 +12,16 @@
   "observability": {
     "enabled": true
   },
+  // Stores contact-form enquiries so a Resend outage can't lose a lead (see
+  // app/lib/contact.server.ts). The database_id is an identifier, not a secret
+  // — reading it still requires account auth.
+  //
+  // Note there is no "vars" block here on purpose: every key in `vars` is
+  // re-applied on deploy and would overwrite a dashboard secret of the same
+  // name. RESEND_API_KEY must stay a dashboard Secret.
+  "d1_databases": [
+    { "binding": "DB", "database_name": "channex-website", "database_id": "20098ac7-7b2e-4768-95b1-43dd4d3936f5" }
+  ],
   "compatibility_flags": [
     "nodejs_compat"
   ]
