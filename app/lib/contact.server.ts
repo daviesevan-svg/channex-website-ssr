@@ -81,6 +81,13 @@ async function ensureSchema(db: D1Database): Promise<void> {
       )`,
     )
     .run();
+  // Added after the table shipped; SQLite has no IF NOT EXISTS for columns, so
+  // the duplicate-column error on an already-migrated table is expected.
+  try {
+    await db.prepare(`ALTER TABLE contact_enquiry ADD COLUMN email_error TEXT`).run();
+  } catch {
+    /* column already present */
+  }
   schemaReady = true;
 }
 
@@ -88,15 +95,15 @@ async function store(
   db: D1Database,
   input: ContactInput,
   meta: SubmitMeta,
-  emailed: boolean,
+  email: EmailResult,
 ): Promise<boolean> {
   try {
     await ensureSchema(db);
     await db
       .prepare(
         `INSERT INTO contact_enquiry
-           (ts, first_name, last_name, email, company, message, source, country, user_agent, emailed)
-         VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
+           (ts, first_name, last_name, email, company, message, source, country, user_agent, emailed, email_error)
+         VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
       )
       .bind(
         Date.now(),
@@ -108,7 +115,8 @@ async function store(
         meta.source,
         meta.country,
         meta.userAgent?.slice(0, 300) ?? null,
-        emailed ? 1 : 0,
+        email.ok ? 1 : 0,
+        email.error?.slice(0, 500) ?? null,
       )
       .run();
     return true;
@@ -140,11 +148,17 @@ function parseFrom(value: string): { email: string; name?: string } {
   return { email: value.trim() };
 }
 
-async function sendEmail(input: ContactInput, meta: SubmitMeta): Promise<boolean> {
+interface EmailResult {
+  ok: boolean;
+  /** Why it failed — recorded on the row so failures aren't invisible. */
+  error?: string;
+}
+
+async function sendEmail(input: ContactInput, meta: SubmitMeta): Promise<EmailResult> {
   const env = bindings();
   if (!env.SPARKPOST_API_KEY) {
     console.error("contact: SPARKPOST_API_KEY is not set — enquiry not emailed");
-    return false;
+    return { ok: false, error: "SPARKPOST_API_KEY not set" };
   }
   const base = (env.SPARKPOST_API_URL || DEFAULT_API_URL).replace(/\/+$/, "");
   try {
@@ -177,21 +191,21 @@ async function sendEmail(input: ContactInput, meta: SubmitMeta): Promise<boolean
             "account region (EU accounts must use https://api.eu.sparkpost.com)",
         );
       }
-      return false;
+      return { ok: false, error: `${res.status} from ${base}: ${body}` };
     }
-    return true;
+    return { ok: true };
   } catch (err) {
     console.error("contact: failed to send email", err);
-    return false;
+    return { ok: false, error: `fetch failed to ${base}: ${String(err)}` };
   }
 }
 
 export async function submitEnquiry(input: ContactInput, meta: SubmitMeta): Promise<SubmitResult> {
   const env = bindings();
-  const emailed = await sendEmail(input, meta);
-  const stored = env.DB ? await store(env.DB, input, meta, emailed) : false;
+  const email = await sendEmail(input, meta);
+  const stored = env.DB ? await store(env.DB, input, meta, email) : false;
   if (!env.DB) {
     console.warn("contact: no DB binding — enquiries are not being stored, email only");
   }
-  return { stored, emailed };
+  return { stored, emailed: email.ok };
 }
