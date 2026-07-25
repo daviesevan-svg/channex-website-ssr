@@ -172,6 +172,11 @@ async function sendEmail(input: ContactInput, meta: SubmitMeta): Promise<EmailRe
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
+        // No engagement tracking. Both default to on in SparkPost, and open
+        // tracking injects a pixel while click tracking rewrites every link
+        // through a tracking domain — neither is wanted for an internal
+        // notification, and link rewriting can trip spam filters.
+        options: { open_tracking: false, click_tracking: false },
         content: {
           from: env.CONTACT_FROM
             ? parseFrom(env.CONTACT_FROM)

@@ -74,7 +74,13 @@ Defaults, both overridable with plain Variables:
 | `CONTACT_FROM` | `Channex website <noreply@channex.io>` |
 
 `Reply-To` is set to the enquirer, so replying from the inbox goes back to them.
-The `CONTACT_FROM` domain must be a verified sending domain in SparkPost.
+The `CONTACT_FROM` domain must be a verified sending domain in SparkPost —
+`channex.io` itself is **not** configured there, which is why the default sends
+from `mail.channex.io`.
+
+Open and click tracking are explicitly disabled (`options.open_tracking` /
+`options.click_tracking`). Both default to on in SparkPost; leaving them on
+would inject a tracking pixel and rewrite every link through a tracking domain.
 
 ### Reading stored enquiries
 
