@@ -1,5 +1,5 @@
 import { blogPosts } from "@/data/blogPosts";
-import { integrations } from "@/data/integrations";
+import { detailPageIntegrations, integrationSlug } from "@/lib/integrations.server";
 import { SITE_URL } from "@/lib/seo";
 
 // Sitemap generated from the same data the pages render from, so every blog
@@ -49,8 +49,10 @@ export async function loader() {
         priority: "0.6",
       }),
     ),
-    ...integrations.map((int) =>
-      entry(`/integrations/${int.slug || int.id}`, { changefreq: "monthly", priority: "0.6" }),
+    // Only integrations that still have a page — PMS/tech partners live on the
+    // /integrations listing and their old URLs 301 there.
+    ...detailPageIntegrations().map((int) =>
+      entry(`/integrations/${integrationSlug(int)}`, { changefreq: "monthly", priority: "0.6" }),
     ),
   ];
 

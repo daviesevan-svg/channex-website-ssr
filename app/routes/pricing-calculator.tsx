@@ -89,9 +89,14 @@ export default function PricingCalculator() {
         {/* Logo */}
         <div className="flex items-center gap-3 mb-8">
           <Link to="/">
-            <img src="/lovable-uploads/channex-logo.png" alt="Channex" className="h-8" onError={(e) => {
-              (e.target as HTMLImageElement).style.display = "none";
-            }} />
+            {/* Same asset the site header uses. The old path (channex-logo.png)
+                never existed, and an onError fallback can't save it: the 404
+                fires before hydration, so the broken icon was always visible. */}
+            <img
+              src="/lovable-uploads/69087199-9a31-470c-9fef-20343850d889.png"
+              alt="Channex"
+              className="h-8 w-8 rounded-lg"
+            />
           </Link>
           <span className="text-lg font-semibold text-[#1a1a18] tracking-tight font-inter">Channex</span>
         </div>

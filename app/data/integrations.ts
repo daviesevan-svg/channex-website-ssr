@@ -5,7 +5,7 @@ export const integrations: Integration[] = [
     id: "agoda", 
     name: "Agoda",
     description: "One of Asia's leading OTAs with a strong presence in Southeast Asia and global reach. Agoda offers competitive rates and extensive inventory for leisure and business travelers.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/agoda-logo.jpg",
+    icon: "/lovable-uploads/agoda-logo.jpg",
     categories: ["OTA", "Global", "Asia"],
     slug: "agoda",
     longDescription: "Agoda is a premier online travel agency that connects travelers with accommodations worldwide, with a particular strength in the Asian market. As part of Booking Holdings Inc., Agoda provides a platform for hotels, vacation rentals, and unique stays to reach millions of travelers globally. Known for its competitive pricing, extensive inventory, and user-friendly booking experience, Agoda is an essential channel for properties looking to expand their reach in Asia and beyond.",
@@ -54,10 +54,10 @@ export const integrations: Integration[] = [
     website: "https://partner.agoda.com",
     documentation: "https://partner-docs.agoda.com/api",
     screenshots: [
-      "https://storage.googleapis.com/your-bucket/agoda-listing.png",
-      "https://storage.googleapis.com/your-bucket/agoda-mobile.png", 
-      "https://storage.googleapis.com/your-bucket/agoda-partner.png",
-      "https://storage.googleapis.com/your-bucket/agoda-analytics.png"
+      "",
+      "", 
+      "",
+      ""
     ],
     videoUrl: "https://www.youtube.com/watch?v=agoda-partner-demo",
     supportedLanguages: ["English", "Thai", "Korean", "Japanese", "Chinese", "Vietnamese", "Bahasa Indonesia"],
@@ -88,7 +88,7 @@ export const integrations: Integration[] = [
     id: "1",
     name: "Booking Factory",
     description: "A modern PMS designed for small to medium-sized accommodations, offering tools to manage bookings, automate operations, and optimize revenue. Features include channel management, direct booking tools, and guest communication, all in one easy-to-use platform.",
-    icon: "https://storage.googleapis.com/your-bucket/bookingfactory-icon.png",
+    icon: "",
     categories: ["PMS"],
     slug: "booking-factory",
     longDescription: "Booking Factory is a comprehensive cloud-based Property Management System specifically designed for small to medium-sized accommodations. Our all-in-one platform streamlines your daily operations with powerful booking management, automated workflows, and integrated channel management. Whether you're running a boutique hotel, bed & breakfast, or vacation rental, Booking Factory provides the tools you need to maximize efficiency and revenue while delivering exceptional guest experiences.",
@@ -138,10 +138,10 @@ export const integrations: Integration[] = [
     website: "https://bookingfactory.com",
     documentation: "https://docs.bookingfactory.com/api",
     screenshots: [
-      "https://storage.googleapis.com/your-bucket/bookingfactory-dashboard.png",
-      "https://storage.googleapis.com/your-bucket/bookingfactory-calendar.png", 
-      "https://storage.googleapis.com/your-bucket/bookingfactory-reports.png",
-      "https://storage.googleapis.com/your-bucket/bookingfactory-mobile.png"
+      "",
+      "", 
+      "",
+      ""
     ],
     videoUrl: "https://www.youtube.com/watch?v=bookingfactory-demo",
     supportedLanguages: ["English", "Spanish", "French", "German", "Italian"],
@@ -173,7 +173,7 @@ export const integrations: Integration[] = [
     id: "2",
     name: "Abode",
     description: "A flexible PMS tailored for vacation rentals and small accommodations, offering tools for booking management, automation, and guest communication. Ideal for properties seeking simplicity and efficiency in operations.",
-    icon: "https://storage.googleapis.com/your-bucket/abode-icon.png",
+    icon: "",
     categories: ["PMS", "Vacation Rentals"],
     slug: "abode",
     longDescription: "Abode is a user-friendly Property Management System designed specifically for vacation rentals, short-term rentals, and small accommodations. Built with simplicity in mind, Abode streamlines your property operations while maintaining the personal touch that guests expect. Our platform combines powerful automation with intuitive design, making it easy to manage bookings, communicate with guests, and optimize your rental business.",
@@ -219,9 +219,9 @@ export const integrations: Integration[] = [
     website: "https://abodepms.com",
     documentation: "https://docs.abodepms.com",
     screenshots: [
-      "https://storage.googleapis.com/your-bucket/abode-dashboard.png",
-      "https://storage.googleapis.com/your-bucket/abode-calendar.png",
-      "https://storage.googleapis.com/your-bucket/abode-messaging.png"
+      "",
+      "",
+      ""
     ],
     videoUrl: "https://www.youtube.com/watch?v=abode-demo",
     supportedLanguages: ["English", "Spanish", "French"],
@@ -252,7 +252,7 @@ export const integrations: Integration[] = [
     id: "3",
     name: "Make.com",
     description: "A versatile automation platform that connects your PMS with various apps and services to create custom workflows. Ideal for streamlining operations, automating tasks, and improving efficiency.",
-    icon: "https://storage.googleapis.com/your-bucket/make-icon.png",
+    icon: "",
     categories: ["API"],
     slug: "make-com",
     longDescription: "Make.com (formerly Integromat) is a powerful visual automation platform that enables you to connect your PMS with hundreds of applications and services. Create sophisticated workflows without coding, automate repetitive tasks, and integrate your hotel operations with external tools like CRM systems, marketing platforms, and financial software. Perfect for properties that want to build custom automation solutions.",
@@ -298,9 +298,9 @@ export const integrations: Integration[] = [
     website: "https://make.com",
     documentation: "https://docs.make.com",
     screenshots: [
-      "https://storage.googleapis.com/your-bucket/make-workflow.png",
-      "https://storage.googleapis.com/your-bucket/make-integrations.png",
-      "https://storage.googleapis.com/your-bucket/make-monitoring.png"
+      "",
+      "",
+      ""
     ],
     videoUrl: "https://www.youtube.com/watch?v=make-automation-demo",
     supportedLanguages: ["English", "German", "Spanish", "French", "Portuguese", "Japanese"],
@@ -331,7 +331,7 @@ export const integrations: Integration[] = [
     id: "4",
     name: "Front Desk Master",
     description: "A robust PMS for hostels, hotels, and small accommodations, offering features like channel management, automation, and reporting. Ideal for properties seeking an all-in-one, user-friendly platform.",
-    icon: "https://storage.googleapis.com/your-bucket/frontdeskmaster-icon.png",
+    icon: "",
     categories: ["PMS", "Budget"],
     slug: "front-desk-master",
     longDescription: "Front Desk Master is a comprehensive Property Management System designed specifically for hostels, budget hotels, and small accommodations. Built to handle high-volume, budget-conscious operations, our platform offers powerful booking management, automated workflows, and detailed reporting. Perfect for properties that need to manage multiple guests per room, group bookings, and cost-effective operations.",
@@ -378,9 +378,9 @@ export const integrations: Integration[] = [
     website: "https://frontdeskmaster.com",
     documentation: "https://docs.frontdeskmaster.com",
     screenshots: [
-      "https://storage.googleapis.com/your-bucket/fdm-dashboard.png",
-      "https://storage.googleapis.com/your-bucket/fdm-dormitory.png",
-      "https://storage.googleapis.com/your-bucket/fdm-checkin.png"
+      "",
+      "",
+      ""
     ],
     videoUrl: "https://www.youtube.com/watch?v=fdm-hostel-demo",
     supportedLanguages: ["English", "Spanish", "German", "French"],
@@ -411,7 +411,7 @@ export const integrations: Integration[] = [
     id: "5",
     name: "Omnihotelier",
     description: "Integrate your PMS with Omnihotelier to streamline bookings, optimize revenue, and enhance guest management. Ideal for properties seeking comprehensive hospitality solutions.",
-    icon: "https://storage.googleapis.com/your-bucket/omnihotelier-icon.png",
+    icon: "",
     categories: ["IBE", "PMS"],
     slug: "omnihotelier",
     longDescription: "Omnihotelier is a comprehensive hospitality platform that combines Internet Booking Engine (IBE) capabilities with powerful PMS integration features. Designed for hotels that want to maximize direct bookings while maintaining seamless operations, Omnihotelier offers advanced revenue optimization, guest management, and booking engine technologies in one integrated solution.",
@@ -457,9 +457,9 @@ export const integrations: Integration[] = [
     website: "https://omnihotelier.com",
     documentation: "https://docs.omnihotelier.com",
     screenshots: [
-      "https://storage.googleapis.com/your-bucket/omnihotelier-booking.png",
-      "https://storage.googleapis.com/your-bucket/omnihotelier-dashboard.png",
-      "https://storage.googleapis.com/your-bucket/omnihotelier-revenue.png"
+      "",
+      "",
+      ""
     ],
     videoUrl: "https://www.youtube.com/watch?v=omnihotelier-demo",
     supportedLanguages: ["English", "Spanish", "French", "German", "Italian", "Portuguese"],
@@ -490,49 +490,54 @@ export const integrations: Integration[] = [
     id: "6",
     name: "Turbosuite",
     description: "Connect your PMS with Turbosuite to leverage advanced pricing and revenue optimization tools. Ideal for properties seeking to maximize profitability and streamline operations.",
-    icon: "https://storage.googleapis.com/your-bucket/turbosuite-icon.png",
+    icon: "",
     categories: ["RMS"]
   },
   {
     id: "7",
+    slug: "hotelnetwork",
     name: "Hotelnetwork",
     description: "Connect your PMS with HotelNetwork to expand your reach through its distribution channels. Ideal for properties seeking greater visibility and diverse booking sources.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/6aba2cfe-3309-4b59-ba28-b19cda8e32e4.png",
+    icon: "/lovable-uploads/6aba2cfe-3309-4b59-ba28-b19cda8e32e4.png",
     categories: ["Distribution", "OTA"]
   },
   {
     id: "8",
+    slug: "pricetravel",
     name: "PriceTravel",
     description: "Reach travelers across Latin America. Ideal for properties targeting regional tourists and travel agencies.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/pricetravel-logo.jpg",
+    icon: "/lovable-uploads/pricetravel-logo.jpg",
     categories: ["Regional", "OTA", "Latin America"]
   },
   {
     id: "9",
+    slug: "getaroom",
     name: "Getaroom",
     description: "Streamline bookings and expand your reach to global travelers. Ideal for properties seeking increased visibility through diverse distribution channels.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/a008ef7d-2bb3-4f59-a31d-95660d6140e5.png",
+    icon: "/lovable-uploads/a008ef7d-2bb3-4f59-a31d-95660d6140e5.png",
     categories: ["Global", "OTA", "Distribution"]
   },
   {
     id: "10",
+    slug: "szallas",
     name: "Szallas",
     description: "Connect with Hungary's leading travel platform. Ideal for properties targeting travelers in Central and Eastern Europe.",
-    icon: "https://storage.googleapis.com/your-bucket/szallas-icon.png",
+    icon: "",
     categories: ["Regional", "Europe", "OTA"]
   },
   {
     id: "11",
+    slug: "roombeast",
     name: "Roombeast",
     description: "Ideal for properties aiming to simplify operations and boost visibility in the Latam market.",
-    icon: "https://storage.googleapis.com/your-bucket/roombeast-icon.png",
+    icon: "",
     categories: ["Regional", "Latin America", "OTA"]
   },
   {
     id: "12",
     name: "Hostelworld",
     description: "For Hostels & Budget Stays. Ideal for properties seeking global travellers and social, budget-conscious guests.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/hostelworld-logo.png",
+    icon: "/lovable-uploads/hostelworld-logo.png",
     categories: ["Global", "Budget", "OTA"],
     slug: "hostelworld",
     longDescription: "Hostelworld is the world's leading hostel booking platform, connecting over 13 million young travelers annually with unique accommodation experiences. Specializing in budget-friendly, social accommodations, Hostelworld is the go-to platform for backpackers, gap year travelers, and adventure seekers. Our integration helps properties tap into this vibrant, social travel community.",
@@ -582,9 +587,9 @@ export const integrations: Integration[] = [
     website: "https://hostelworld.com",
     documentation: "https://partners.hostelworld.com/api",
     screenshots: [
-      "https://storage.googleapis.com/your-bucket/hostelworld-listing.png",
-      "https://storage.googleapis.com/your-bucket/hostelworld-social.png",
-      "https://storage.googleapis.com/your-bucket/hostelworld-booking.png"
+      "",
+      "",
+      ""
     ],
     videoUrl: "https://www.youtube.com/watch?v=hostelworld-community-demo",
     supportedLanguages: ["English", "Spanish", "French", "German", "Portuguese", "Italian"],
@@ -616,7 +621,7 @@ export const integrations: Integration[] = [
     id: "13",
     name: "Airbnb",
     description: "Sync your PMS with Airbnb to manage bookings, rates, and availability effortlessly. Perfect for short-term rentals and unique stays.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/airbnb-logo.png",
+    icon: "/lovable-uploads/airbnb-logo.png",
     categories: ["Global", "Vacation Rentals", "OTA"],
     slug: "airbnb",
     longDescription: "Airbnb is the world's leading marketplace for unique stays and experiences. Our seamless integration allows property managers to effortlessly synchronize their listings, manage bookings, and optimize pricing across this global platform that connects millions of hosts with travelers seeking authentic accommodations.",
@@ -661,9 +666,9 @@ export const integrations: Integration[] = [
     website: "https://airbnb.com",
     documentation: "https://developers.airbnb.com",
     screenshots: [
-      "https://storage.googleapis.com/your-bucket/airbnb-listing.png",
-      "https://storage.googleapis.com/your-bucket/airbnb-calendar.png",
-      "https://storage.googleapis.com/your-bucket/airbnb-messaging.png"
+      "",
+      "",
+      ""
     ],
     videoUrl: "https://www.youtube.com/watch?v=airbnb-integration-demo",
     supportedLanguages: ["English", "Spanish", "French", "German", "Italian", "Portuguese", "Japanese", "Korean"],
@@ -692,16 +697,17 @@ export const integrations: Integration[] = [
   },
   {
     id: "15",
+    slug: "hotelbeds",
     name: "Hotelbeds",
     description: "Link your PMS with Hotelbeds to access a global B2B travel network. Perfect for properties seeking partnerships with travel agents and tour operators.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/hotelbeds-logo.png",
+    icon: "/lovable-uploads/hotelbeds-logo.png",
     categories: ["B2B", "Global", "Distribution", "OTA"]
   },
   {
     id: "16",
     name: "Trip.com",
     description: "Attract travellers from Asia and beyond. Ideal for properties seeking a global audience with a focus on Asian markets.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/tripcom-logo.png",
+    icon: "/lovable-uploads/tripcom-logo.png",
     categories: ["Asia", "Global", "OTA"],
     slug: "trip-com",
     longDescription: "Trip.com is China's leading online travel platform and one of the world's largest travel service providers. With over 400 million users globally, Trip.com offers unparalleled access to Chinese outbound travelers and growing Asian markets. Our integration enables properties to tap into this massive and lucrative market segment with localized services and payment methods.",
@@ -751,10 +757,10 @@ export const integrations: Integration[] = [
     website: "https://trip.com",
     documentation: "https://partners.trip.com/api-docs",
     screenshots: [
-      "https://storage.googleapis.com/your-bucket/tripcom-listing.png",
-      "https://storage.googleapis.com/your-bucket/tripcom-mobile.png",
-      "https://storage.googleapis.com/your-bucket/tripcom-payments.png",
-      "https://storage.googleapis.com/your-bucket/tripcom-analytics.png"
+      "",
+      "",
+      "",
+      ""
     ],
     videoUrl: "https://www.youtube.com/watch?v=tripcom-china-market-demo",
     supportedLanguages: ["Chinese (Simplified)", "Chinese (Traditional)", "English", "Japanese", "Korean", "Thai", "Bahasa Indonesia"],
@@ -784,23 +790,25 @@ export const integrations: Integration[] = [
   },
   {
     id: "17",
+    slug: "despegar",
     name: "Despegar",
     description: "Latin America's leading travel platform. Ideal for properties targeting travellers across the region.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/5497aac5-58cb-4673-9dc0-3513cb38f1a0.png",
+    icon: "/lovable-uploads/5497aac5-58cb-4673-9dc0-3513cb38f1a0.png",
     categories: ["Latin America", "Regional", "OTA"]
   },
   {
     id: "18",
+    slug: "traveloka",
     name: "Traveloka",
     description: "Reach travellers across Southeast Asia. Ideal for properties targeting this fast-growing regional market.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/traveloka-logo.png",
+    icon: "/lovable-uploads/traveloka-logo.png",
     categories: ["Asia", "Regional", "OTA"]
   },
   {
     id: "19",
     name: "VRBO",
     description: "Manage vacation rental bookings seamlessly. Perfect for properties offering unique stays and family-friendly accommodations.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/vrbo-logo.png",
+    icon: "/lovable-uploads/vrbo-logo.png",
     categories: ["Vacation Rentals", "Global", "OTA"],
     slug: "vrbo",
     longDescription: "VRBO (Vacation Rentals by Owner) is the world's leading vacation rental marketplace, specializing in whole-home rentals for families and groups. As part of Expedia Group, VRBO connects property owners with travelers seeking authentic, home-like experiences. Our integration provides comprehensive tools for managing vacation rental bookings and property optimization across this premium platform.",
@@ -846,10 +854,10 @@ export const integrations: Integration[] = [
     website: "https://vrbo.com",
     documentation: "https://help.vrbo.com/partner-resources",
     screenshots: [
-      "https://storage.googleapis.com/your-bucket/vrbo-listing.png",
-      "https://storage.googleapis.com/your-bucket/vrbo-calendar.png",
-      "https://storage.googleapis.com/your-bucket/vrbo-family.png",
-      "https://storage.googleapis.com/your-bucket/vrbo-dashboard.png"
+      "",
+      "",
+      "",
+      ""
     ],
     videoUrl: "https://www.youtube.com/watch?v=vrbo-vacation-rental-demo",
     supportedLanguages: ["English", "Spanish", "French", "German", "Italian", "Portuguese"],
@@ -879,110 +887,125 @@ export const integrations: Integration[] = [
   },
   {
     id: "20",
+    slug: "google-hotels-and-vacation-rentals",
     name: "Google Hotels & Vacation Rentals",
     description: "Showcase your property directly in search results. Ideal for hotels and vacation rentals seeking increased visibility and direct bookings.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/google-hotels-logo.png",
+    icon: "/lovable-uploads/google-hotels-logo.png",
     categories: ["Vacation Rentals", "Distribution", "OTA"]
   },
   {
     id: "21",
+    slug: "tiket",
     name: "Tiket",
     description: "Reach travellers across Indonesia and beyond. Perfect for properties targeting Southeast Asian markets.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/tiket-logo.webp",
+    icon: "/lovable-uploads/tiket-logo.webp",
     categories: ["Asia", "Regional", "OTA"]
   },
   {
     id: "22",
+    slug: "mg-bedbank",
     name: "MG Bedbank",
     description: "Access Southeast Asia's leading B2B travel distribution network. Ideal for properties seeking connections with travel agents and wholesalers.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/mg-bedbank-logo.png",
+    icon: "/lovable-uploads/mg-bedbank-logo.png",
     categories: ["B2B", "Asia", "Distribution", "OTA"]
   },
   {
     id: "23",
+    slug: "hrs",
     name: "HRS",
     description: "Streamline bookings for business travelers and corporate clients. Ideal for properties targeting the corporate travel market.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/hrs-logo.png",
+    icon: "/lovable-uploads/hrs-logo.png",
     categories: ["Corporate", "Global", "B2B", "OTA"]
   },
   {
     id: "24",
+    slug: "hipcamp",
     name: "Hipcamp",
     description: "Ideal for campsites, glamping, and unique nature-focused properties.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/hipcamp-logo.png",
+    icon: "/lovable-uploads/hipcamp-logo.png",
     categories: ["Outdoor", "Vacation Rentals", "OTA"]
   },
   {
     id: "225",
+    slug: "edreams",
     name: "eDreams",
     description: "Connect with one of Europe's leading OTAs. Perfect for properties targeting European and global leisure travelers.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/edreams-logo.png",
+    icon: "/lovable-uploads/edreams-logo.png",
     categories: ["OTA", "Europe", "Global"],
     website: "https://www.edreams.com/"
   },
   {
     id: "25",
+    slug: "travelgatex",
     name: "TravelgateX",
     description: "Access a global marketplace of travel distributors. Ideal for properties seeking broad B2B connectivity and increased distribution.",
-    icon: "https://storage.googleapis.com/your-bucket/travelgatex-icon.png",
+    icon: "",
     categories: ["B2B", "Global", "Distribution", "OTA"]
   },
   {
     id: "26",
+    slug: "hopper",
     name: "Hopper",
     description: "Connect with Hopper to reach a mobile-first audience seeking personalised travel deals. Ideal for properties targeting tech-savvy, price-conscious travellers.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/7b05812a-9203-4c34-b995-9a7fcbd64216.png",
+    icon: "/lovable-uploads/7b05812a-9203-4c34-b995-9a7fcbd64216.png",
     categories: ["OTA", "Global"]
   },
   {
     id: "27",
+    slug: "reconline",
     name: "Reconline",
     description: "Connect with Reconline GDS to access global distribution channels and connect with travel agents worldwide. Ideal for properties seeking broader exposure and increased bookings.",
-    icon: "https://storage.googleapis.com/your-bucket/reconline-icon.png",
+    icon: "",
     categories: ["Distribution", "Global", "B2B", "OTA"]
   },
   {
     id: "28",
+    slug: "hostelhop",
     name: "Hostelhop",
     description: "For budget-conscious and social travelers. Ideal for hostels and shared accommodations seeking increased visibility.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/64209784-51e7-4dcd-9fdf-29491a43908f.png",
+    icon: "/lovable-uploads/64209784-51e7-4dcd-9fdf-29491a43908f.png",
     categories: ["Budget", "Global", "OTA"]
   },
   {
     id: "29",
+    slug: "makemytrip",
     name: "MakeMyTrip",
     description: "India's leading travel platform. Perfect for properties targeting travellers across India and beyond.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/7ad7313e-823b-4d7b-81ef-2c6ff7dde322.png",
+    icon: "/lovable-uploads/7ad7313e-823b-4d7b-81ef-2c6ff7dde322.png",
     categories: ["Asia", "Regional", "OTA"]
   },
   {
     id: "30",
+    slug: "roibos",
     name: "Roibos",
     description: "A robust B2B travel platform. Ideal for properties seeking connections with tour operators, travel agents, and wholesalers worldwide.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/da970051-848f-499c-a8cc-2c650fae0caf.png",
+    icon: "/lovable-uploads/da970051-848f-499c-a8cc-2c650fae0caf.png",
     categories: ["B2B", "Global", "Distribution", "OTA"]
   },
 
   
   {
     id: "31",
+    slug: "hyperguest",
     name: "Hyperguest",
     description: "Access a direct, commission-free B2B distribution network. Ideal for properties seeking to optimize margins and connect with travel agents globally.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/da51353c-aaa9-4fa4-ba27-c0c34f952887.png",
+    icon: "/lovable-uploads/da51353c-aaa9-4fa4-ba27-c0c34f952887.png",
     categories: ["B2B", "Global", "Distribution", "OTA"]
   },
   {
     id: "32",
+    slug: "inntopia",
     name: "Inntopia",
     description: "Connect your PMS with Inntopia to streamline bookings and packaging for resorts, hotels, and vacation rentals. Ideal for properties targeting year-round leisure and group travelers.",
-    icon: "https://storage.googleapis.com/your-bucket/inntopia-icon.png",
+    icon: "",
     categories: ["Vacation Rentals", "OTA"]
   },
   {
     id: "33",
+    slug: "travia",
     name: "Travia",
     description: "Travia is a B2B distribution marketplace connecting agencies and accommodation providers with live availability, direct bookings, and seamless contracting.",
-    icon: "https://storage.googleapis.com/your-bucket/travia-icon.png",
+    icon: "",
     categories: ["B2B", "Distribution", "Global", "OTA"],
     website: "https://travia.io/",
     features: [
@@ -997,48 +1020,54 @@ export const integrations: Integration[] = [
   },
   {
     id: "34",
+    slug: "mitchell-corp",
     name: "Mitchell Corp",
     description: "Ideal for properties targeting domestic and international travelers exploring New Zealand.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/mitchell-logo.jpeg",
+    icon: "/lovable-uploads/mitchell-logo.jpeg",
     categories: ["Regional", "Australia", "OTA"]
   },
   {
     id: "35",
+    slug: "wink",
     name: "Wink",
     description: "Connect with Wink to streamline bookings and enhance distribution through its travel platform. Ideal for properties seeking innovative solutions to reach modern travelers.",
-    icon: "https://storage.googleapis.com/your-bucket/wink-icon.png",
+    icon: "",
     categories: ["Distribution", "OTA"]
   },
   {
     id: "36",
+    slug: "hookusbookus",
     name: "Hookusbookus",
     description: "Integrate with Hookusbookus to streamline bookings and connect with travelers seeking unique accommodations. Ideal for properties offering personalized and distinctive experiences.",
-    icon: "https://storage.googleapis.com/your-bucket/hookusbookus-icon.png",
+    icon: "",
     categories: ["OTA", "Vacation Rentals"]
   },
   {
     id: "37",
+    slug: "spot2nite",
     name: "Spot2nite",
     description: "Connect with Spot2Nite to manage bookings for RV parks and campgrounds seamlessly. Ideal for properties catering to travelers seeking outdoor and road trip adventures.",
-    icon: "https://storage.googleapis.com/your-bucket/spot2nite-icon.png",
+    icon: "",
     categories: ["Outdoor", "Vacation Rentals", "OTA"]
   },
   {
     id: "38",
     name: "Camping Vision",
     description: "Integrate your PMS with Camping Vision to access Europe's leading platform for campsite bookings. Ideal for campgrounds, glamping sites, and holiday parks targeting outdoor enthusiasts.",
-    icon: "https://storage.googleapis.com/your-bucket/campingvision-icon.png",
+    icon: "",
     categories: ["Outdoor", "Europe", "Vacation Rentals"]
   },
   {
     id: "39",
+    slug: "ratedock",
     name: "Ratedock",
     description: "Streamline rate and inventory distribution across multiple channels. Ideal for properties seeking efficient and centralized management solutions.",
-    icon: "https://storage.googleapis.com/your-bucket/ratedock-icon.png",
+    icon: "",
     categories: ["Distribution", "OTA"]
   },
   {
     id: "40",
+    slug: "emerging-travel-group",
     name: "Emerging Travel Group",
     description: "Integrate your PMS with Emerging Travel Group platforms like RateHawk, RoundTrip, and ZenHotels to reach B2B, corporate, and individual travelers all over the world.",
     icon: "/images/integrations/etg-logo.svg",
@@ -1046,30 +1075,33 @@ export const integrations: Integration[] = [
   },
   {
     id: "41",
+    slug: "opengds-com",
     name: "OpenGDS.com",
     description: "Streamline distribution and connect with local travel agents and OTAs.",
-    icon: "https://storage.googleapis.com/your-bucket/opengds-icon.png",
+    icon: "",
     categories: ["Distribution", "B2B", "OTA"]
   },
   {
     id: "42",
+    slug: "hrs-australia",
     name: "HRS Australia",
     description: "Seamlessly connect your PMS with HRS Australia to manage bookings, rates, and availability in real-time. Ideal for hotels looking to expand their reach in the Australian market.",
-    icon: "https://storage.googleapis.com/your-bucket/hrsau-icon.png",
+    icon: "",
     categories: ["Australia", "Regional", "OTA"]
   },
   {
     id: "43",
+    slug: "moverii",
     name: "Moverii",
     description: "Ideal for properties seeking a user-friendly solution to streamline operations and enhance guest experiences.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/moverii-logo.png",
+    icon: "/lovable-uploads/moverii-logo.png",
     categories: ["OTA"]
   },
   {
     id: "44",
     name: "Booking.com",
     description: "Connect your PMS to Booking.com for seamless management of rates, availability, and reservations. Ideal for all property types aiming for global reach.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/bookingcom-logo.png",
+    icon: "/lovable-uploads/bookingcom-logo.png",
     categories: ["OTA", "Global"],
     slug: "booking-com",
     longDescription: "Booking.com is the world's leading digital travel company, connecting properties with millions of travelers worldwide. Our integration provides real-time synchronization of rates, availability, and reservations, ensuring your property maintains optimal visibility and booking efficiency across this massive platform.",
@@ -1111,9 +1143,9 @@ export const integrations: Integration[] = [
     website: "https://booking.com",
     documentation: "https://developers.booking.com",
     screenshots: [
-      "https://storage.googleapis.com/your-bucket/booking-screenshot-1.png",
-      "https://storage.googleapis.com/your-bucket/booking-screenshot-2.png",
-      "https://storage.googleapis.com/your-bucket/booking-screenshot-3.png"
+      "",
+      "",
+      ""
     ],
     videoUrl: "https://www.youtube.com/watch?v=example",
     supportedLanguages: ["English", "Spanish", "French", "German", "Italian", "Portuguese"],
@@ -1143,7 +1175,7 @@ export const integrations: Integration[] = [
     id: "45",
     name: "Expedia",
     description: "Integrate your PMS with Expedia to streamline bookings, rates, and availability. Perfect for properties targeting a wide, global audience.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/expedia-logo.png",
+    icon: "/lovable-uploads/expedia-logo.png",
     categories: ["OTA", "Global"],
     slug: "expedia",
     longDescription: "Expedia Group is one of the world's largest online travel companies, reaching over 750 million people annually across its family of brands including Expedia.com, Hotels.com, and Vrbo. Our integration provides seamless connectivity to this massive distribution network, enabling properties to manage rates, availability, and bookings across multiple Expedia Group platforms from a single interface.",
@@ -1193,10 +1225,10 @@ export const integrations: Integration[] = [
     website: "https://expedia.com",
     documentation: "https://developers.expediagroup.com",
     screenshots: [
-      "https://storage.googleapis.com/your-bucket/expedia-listing.png",
-      "https://storage.googleapis.com/your-bucket/expedia-partner-central.png",
-      "https://storage.googleapis.com/your-bucket/expedia-analytics.png",
-      "https://storage.googleapis.com/your-bucket/expedia-mobile.png"
+      "",
+      "",
+      "",
+      ""
     ],
     videoUrl: "https://www.youtube.com/watch?v=expedia-integration-demo",
     supportedLanguages: ["English", "Spanish", "French", "German", "Italian", "Japanese", "Korean", "Chinese"],
@@ -1228,427 +1260,427 @@ export const integrations: Integration[] = [
     id: "46",
     name: "Pricepoint",
     description: "Connect your PMS with Pricepoint RMS to automate pricing and optimize revenue. Ideal for properties seeking dynamic rate management and increased profitability.",
-    icon: "https://storage.googleapis.com/your-bucket/pricepoint-icon.png",
+    icon: "",
     categories: ["RMS"]
   },
   {
     id: "47",
     name: "Rategenie",
     description: "Integrate your PMS with Rategenie to automate dynamic pricing and maximize revenue. Ideal for properties seeking smarter rate management and improved occupancy.",
-    icon: "https://storage.googleapis.com/your-bucket/rategenie-icon.png",
+    icon: "",
     categories: ["RMS"]
   },
   {
     id: "48",
     name: "Elastic Hotel",
     description: "Connect your PMS with Elastic Hotel to optimize your distribution strategy and enhance channel management. Ideal for properties seeking flexible and efficient connectivity solutions.",
-    icon: "https://storage.googleapis.com/your-bucket/elastichotel-icon.png",
+    icon: "",
     categories: ["RMS"]
   },
   {
     id: "49",
     name: "Room Price Genie",
     description: "Integrate your PMS with RoomPriceGenie to simplify dynamic pricing and maximize revenue. Ideal for small to medium-sized properties seeking easy and effective rate management.",
-    icon: "https://storage.googleapis.com/your-bucket/roompricegenie-icon.png",
+    icon: "",
     categories: ["RMS"]
   },
   {
     id: "50",
     name: "Cultbooking",
     description: "Integrate your PMS with CultBooking to enhance direct bookings through customizable booking engines. Ideal for properties seeking to increase direct revenue and reduce commission costs.",
-    icon: "https://storage.googleapis.com/your-bucket/cultbooking-icon.png",
+    icon: "",
     categories: ["IBE"]
   },
   {
     id: "51",
     name: "GuestTraction",
     description: "Connect your PMS with GuestTraction to streamline bookings and enhance guest experiences through innovative tools. Ideal for properties aiming to attract and retain travelers in the Australasian market.",
-    icon: "https://storage.googleapis.com/your-bucket/guesttraction-icon.png",
+    icon: "",
     categories: ["IBE", "Australia"]
   },
   {
     id: "52",
     name: "Zapier",
     description: "A powerful automation platform that connects your PMS with thousands of apps to streamline workflows. Ideal for automating tasks like data syncing, notifications, and guest communication across multiple tools.",
-    icon: "https://storage.googleapis.com/your-bucket/zapier-icon.png",
+    icon: "",
     categories: ["API"]
   },
   {
     id: "53",
     name: "Aiosell",
     description: "An all-in-one property management system that combines channel management, revenue optimization, and automation tools. Ideal for properties seeking to maximize efficiency and profitability with an integrated solution.",
-    icon: "https://storage.googleapis.com/your-bucket/aiosell-icon.png",
+    icon: "",
     categories: ["PMS"]
   },
   {
     id: "54",
     name: "ReservationKey",
     description: "A user-friendly PMS designed for small to medium-sized accommodations, offering tools for booking management, channel integration, and guest communication. Ideal for properties seeking affordability and simplicity.",
-    icon: "https://storage.googleapis.com/your-bucket/reservationkey-icon.png",
+    icon: "",
     categories: ["PMS"]
   },
   {
     id: "55",
     name: "Hotelier 101",
     description: "A comprehensive PMS designed for independent hotels and small accommodations, offering tools for booking management, channel connectivity, and guest engagement. Ideal for properties seeking an intuitive and affordable solution.",
-    icon: "https://storage.googleapis.com/your-bucket/hotelier101-icon.png",
+    icon: "",
     categories: ["PMS"]
   },
   {
     id: "56",
     name: "Ermes Hotels",
     description: "A cloud-based PMS tailored for independent hotels and small chains, offering features like booking management, channel integration, and revenue optimization. Ideal for properties seeking efficient and user-friendly solutions.",
-    icon: "https://storage.googleapis.com/your-bucket/ermes-icon.png",
+    icon: "",
     categories: ["PMS"]
   },
   {
     id: "57",
     name: "Front Desk Express",
     description: "A simple and intuitive PMS designed for small to mid-sized accommodations, providing tools for reservation management, guest tracking, and reporting. Ideal for properties seeking a streamlined and cost-effective solution.",
-    icon: "https://storage.googleapis.com/your-bucket/frontdeskexpress-icon.png",
+    icon: "",
     categories: ["PMS"]
   },
   {
     id: "58",
     name: "BananaDesk",
     description: "A cloud-based PMS designed for hostels and budget accommodations, offering tools for reservation management, guest check-ins, and channel integration. Ideal for properties focused on efficiency and affordability.",
-    icon: "https://storage.googleapis.com/your-bucket/bananadesk-icon.png",
+    icon: "",
     categories: ["PMS", "Budget"]
   },
   {
     id: "59",
     name: "Resmaster",
     description: "A comprehensive PMS offering booking management, channel integration, and guest communication tools. Ideal for properties seeking a reliable solution to streamline operations and boost reservations.",
-    icon: "https://storage.googleapis.com/your-bucket/resmaster-icon.png",
+    icon: "",
     categories: ["PMS"]
   },
   {
     id: "60",
     name: "GuestSmart",
     description: "A user-friendly PMS designed for small to medium-sized properties, offering features like booking management, channel integration, and guest communication. Ideal for properties seeking to enhance efficiency and improve guest experiences.",
-    icon: "https://storage.googleapis.com/your-bucket/guestsmart-icon.png",
+    icon: "",
     categories: ["PMS"]
   },
   {
     id: "61",
     name: "Zavia ERP",
     description: "An advanced property management and enterprise resource planning system designed for the hospitality industry. Offers tools for reservations, inventory, finance, and operational management. Ideal for properties seeking an all-in-one, scalable solution.",
-    icon: "https://storage.googleapis.com/your-bucket/zaviaerp-icon.png",
+    icon: "",
     categories: ["PMS"]
   },
   {
     id: "62",
     name: "Ayrton",
     description: "A modern property management system designed for hotels and accommodations, offering tools for reservations, guest management, and operational efficiency. Ideal for properties seeking a seamless and intuitive management solution.",
-    icon: "https://storage.googleapis.com/your-bucket/ayrton-icon.png",
+    icon: "",
     categories: ["PMS"]
   },
   {
     id: "63",
     name: "Johku",
     description: "A versatile property management system tailored for tourism and hospitality businesses, offering tools for bookings, sales, and customer management. Ideal for properties seeking an all-in-one solution to streamline operations and enhance guest experiences.",
-    icon: "https://storage.googleapis.com/your-bucket/johku-icon.png",
+    icon: "",
     categories: ["PMS"]
   },
   {
     id: "64",
     name: "Eksenia",
     description: "A comprehensive PMS solution designed for hotels and accommodations, offering features like reservation management, channel integration, and guest services. Ideal for properties seeking to optimize operations and elevate guest experiences.",
-    icon: "https://storage.googleapis.com/your-bucket/eksenia-icon.png",
+    icon: "",
     categories: ["PMS"]
   },
   {
     id: "65",
     name: "Nokumo",
     description: "A versatile property management system offering tools for booking management, task automation, and guest communication. Ideal for small to medium-sized accommodations seeking streamlined operations and improved efficiency.",
-    icon: "https://storage.googleapis.com/your-bucket/nokumo-icon.png",
+    icon: "",
     categories: ["PMS"]
   },
   {
     id: "66",
     name: "Igloorooms",
     description: "A property management system designed for budget accommodations and small to medium-sized properties, offering features like booking management, channel integration, and guest communication. Ideal for properties seeking a cost-effective and user-friendly solution.",
-    icon: "https://storage.googleapis.com/your-bucket/igloorooms-icon.png",
+    icon: "",
     categories: ["PMS"]
   },
   {
     id: "67",
     name: "MasterYield",
     description: "A comprehensive property management and revenue optimization system, offering tools for booking management, channel connectivity, and pricing automation. Ideal for properties seeking to maximize revenue and streamline operations.",
-    icon: "https://storage.googleapis.com/your-bucket/masteryield-icon.png",
+    icon: "",
     categories: ["PMS"]
   },
   {
     id: "68",
     name: "Comando",
     description: "A modern property management system designed for hotels and accommodations, providing tools for reservations, guest management, and operational efficiency. Ideal for properties seeking an intuitive and scalable solution.",
-    icon: "https://storage.googleapis.com/your-bucket/comando-icon.png",
+    icon: "",
     categories: ["PMS"]
   },
   {
     id: "69",
     name: "The Lobby Boy",
     description: "A user-friendly property management system tailored for boutique hotels and small accommodations. Offers tools for booking management, guest communication, and operations. Ideal for properties seeking simplicity and personalized service.",
-    icon: "https://storage.googleapis.com/your-bucket/thelobbyboy-icon.png",
+    icon: "",
     categories: ["PMS"]
   },
   {
     id: "70",
     name: "Booktech",
     description: "A Norwegian property management system offering solutions for booking management, channel integration, and guest services. Ideal for accommodations seeking efficient and localized tools to streamline operations.",
-    icon: "https://storage.googleapis.com/your-bucket/booktech-icon.png",
+    icon: "",
     categories: ["PMS"]
   },
   {
     id: "71",
     name: "Desbravador",
     description: "A robust property management system designed for hotels and resorts, offering tools for reservations, financial management, and operational control. Ideal for properties in Latin America seeking a comprehensive and scalable solution.",
-    icon: "https://storage.googleapis.com/your-bucket/desbravador-icon.png",
+    icon: "",
     categories: ["PMS"]
   },
   {
     id: "72",
     name: "PAN Hospitality",
     description: "A South African property management solution offering tools for reservations, guest management, and operational efficiency. Ideal for hotels, lodges, and guesthouses seeking a reliable and localized system to streamline their operations.",
-    icon: "https://storage.googleapis.com/your-bucket/panhospitality-icon.png",
+    icon: "",
     categories: ["PMS"]
   },
   {
     id: "73",
     name: "Bookipro",
     description: "A user-friendly property management system designed for small to medium-sized accommodations, offering features like booking management, channel integration, and guest communication. Ideal for properties seeking simplicity and efficiency.",
-    icon: "https://storage.googleapis.com/your-bucket/bookipro-icon.png",
+    icon: "",
     categories: ["PMS"]
   },
   {
     id: "74",
     name: "OTASync",
     description: "A cloud-based property management system offering booking management, channel synchronization, and revenue optimization tools. Ideal for small to medium-sized accommodations seeking a seamless all-in-one solution.",
-    icon: "https://storage.googleapis.com/your-bucket/otasync-icon.png",
+    icon: "",
     categories: ["PMS"]
   },
   {
     id: "75",
     name: "Pxsol",
     description: "A powerful property management and channel management solution, offering tools for booking management, rate optimization, and operational efficiency. Ideal for hotels and accommodations seeking to streamline workflows and maximize revenue.",
-    icon: "https://storage.googleapis.com/your-bucket/pxsol-icon.png",
+    icon: "",
     categories: ["PMS"]
   },
   {
     id: "76",
     name: "Dtravel",
     description: "A decentralized platform for managing short-term rental bookings, offering tools for direct reservations, lower fees, and blockchain-based security. Ideal for property owners seeking more control and transparency in their operations.",
-    icon: "https://storage.googleapis.com/your-bucket/dtravel-icon.png",
+    icon: "",
     categories: ["PMS", "Vacation Rentals"]
   },
   {
     id: "77",
     name: "Winpax",
     description: "A user-friendly property management system designed for small to medium-sized accommodations, offering tools for booking management, guest services, and operational efficiency. Ideal for properties seeking an affordable and intuitive solution.",
-    icon: "https://storage.googleapis.com/your-bucket/winpax-icon.png",
+    icon: "",
     categories: ["PMS"]
   },
   {
     id: "78",
     name: "Roomsy",
     description: "A cloud-based property management system designed for small to medium-sized accommodations, offering features like booking management, invoicing, and reporting. Ideal for properties seeking a simple and efficient way to manage operations.",
-    icon: "https://storage.googleapis.com/your-bucket/roomsy-icon.png",
+    icon: "",
     categories: ["PMS"]
   },
   {
     id: "79",
     name: "Easy Rez",
     description: "A straightforward property management system offering tools for booking management, channel integration, and guest communication. Ideal for small to medium-sized accommodations seeking an easy-to-use and efficient solution.",
-    icon: "https://storage.googleapis.com/your-bucket/easyrez-icon.png",
+    icon: "",
     categories: ["PMS"]
   },
   {
     id: "80",
     name: "Finner",
     description: "A modern property management system designed to streamline bookings, optimize revenue, and enhance guest experiences. Ideal for hotels and accommodations seeking an intuitive and efficient solution.",
-    icon: "https://storage.googleapis.com/your-bucket/finner-icon.png",
+    icon: "",
     categories: ["PMS"]
   },
   {
     id: "81",
     name: "TMRW Hotels",
     description: "An innovative property management solution focusing on contactless operations and digital guest experiences. Ideal for modern accommodations seeking to enhance efficiency and provide seamless self-service options for guests.",
-    icon: "https://storage.googleapis.com/your-bucket/tmrwhotels-icon.png",
+    icon: "",
     categories: ["PMS"]
   },
   {
     id: "82",
     name: "Cortec AG",
     description: "A Swiss-based property management and technology provider offering tailored solutions for hotels and accommodations, including booking management, channel integration, and operational tools.",
-    icon: "https://storage.googleapis.com/your-bucket/cortec-icon.png",
+    icon: "",
     categories: ["PMS"]
   },
   {
     id: "83",
     name: "Quovai",
     description: "A comprehensive property management solution tailored for small to medium-sized accommodations, offering tools for booking management, channel integration, and guest services. Ideal for properties seeking efficient and user-friendly software to enhance operations.",
-    icon: "https://storage.googleapis.com/your-bucket/quovai-icon.png",
+    icon: "",
     categories: ["PMS"]
   },
   {
     id: "84",
     name: "Turbo PMS",
     description: "A lightweight and efficient property management system designed for small to medium-sized accommodations. Features include booking management, guest communication, and channel integration. Ideal for properties seeking a fast and easy-to-use solution.",
-    icon: "https://storage.googleapis.com/your-bucket/turbopms-icon.png",
+    icon: "",
     categories: ["PMS"]
   },
   {
     id: "85",
     name: "Hotelsminder",
     description: "A cloud-based property management solution offering tools for booking management, channel synchronization, and operational efficiency. Ideal for small to medium-sized accommodations seeking to streamline processes and improve guest experiences.",
-    icon: "https://storage.googleapis.com/your-bucket/hotelsminder-icon.png",
+    icon: "",
     categories: ["PMS"]
   },
   {
     id: "86",
     name: "HotelMU",
     description: "An Indonesia-based property management system designed to streamline hotel operations, offering features such as booking management, guest communication, and financial tracking.",
-    icon: "https://storage.googleapis.com/your-bucket/hotelmu-icon.png",
+    icon: "",
     categories: ["PMS"]
   },
   {
     id: "87",
     name: "Guest.Guru",
     description: "A specialized platform for revenue optimization and guest engagement, offering tools for dynamic pricing, upselling, and personalized communication. Ideal for properties seeking to boost revenue and enhance guest satisfaction.",
-    icon: "https://storage.googleapis.com/your-bucket/guestguru-icon.png",
+    icon: "",
     categories: ["PMS"]
   },
   {
     id: "88",
     name: "Lodging System",
     description: "A comprehensive cloud-based property management solution offering tools for reservations, channel management, and guest services. Ideal for hotels, resorts, and vacation rentals seeking to streamline operations and enhance guest experiences.",
-    icon: "https://storage.googleapis.com/your-bucket/lodgingsystem-icon.png",
+    icon: "",
     categories: ["PMS"]
   },
   {
     id: "89",
     name: "Digitelia",
     description: "A cutting-edge platform specializing in digital transformation for the hospitality industry, offering tools for online bookings, marketing, and operational efficiency. Ideal for properties looking to modernize and enhance their digital presence.",
-    icon: "https://storage.googleapis.com/your-bucket/digitelia-icon.png",
+    icon: "",
     categories: ["PMS"]
   },
   {
     id: "90",
     name: "HotelPoint",
     description: "A Greek-based property management system offering tools for booking management, channel integration, and guest communication. Ideal for hotels and accommodations seeking a localized and efficient solution to streamline operations.",
-    icon: "https://storage.googleapis.com/your-bucket/hotelpoint-icon.png",
+    icon: "",
     categories: ["PMS"]
   },
   {
     id: "91",
     name: "OnePlace",
     description: "A Mexico-based property management platform providing tools for reservation management, channel integration, and guest communication. Ideal for accommodations in Latin America seeking an intuitive and localized solution to enhance efficiency.",
-    icon: "https://storage.googleapis.com/your-bucket/oneplace-icon.png",
+    icon: "",
     categories: ["PMS", "Latin America"]
   },
   {
     id: "92",
     name: "ResBook",
     description: "A cloud-based property management system designed for boutique accommodations, lodges, and vacation rentals. Offers tools for booking management, channel integration, and guest communication.",
-    icon: "https://storage.googleapis.com/your-bucket/resbook-icon.png",
+    icon: "",
     categories: ["PMS"]
   },
   {
     id: "93",
     name: "Easy Front Desk by BrattaSoft",
     description: "A comprehensive property management solution tailored for hotels and accommodations, offering tools for reservations, billing, and operational management. Ideal for properties in Latin America.",
-    icon: "https://storage.googleapis.com/your-bucket/brattosoft-icon.png",
+    icon: "",
     categories: ["PMS", "Latin America"]
   },
   {
     id: "94",
     name: "Lodgy",
     description: "A property management system designed for hotels and accommodations in Latin America, offering tools for reservation management, billing, and operational efficiency. Ideal for properties seeking a localized and comprehensive solution to optimize their operations.",
-    icon: "https://storage.googleapis.com/your-bucket/lodgy-icon.png",
+    icon: "",
     categories: ["PMS", "Latin America"]
   },
   {
     id: "95",
     name: "Sky Arabia PMS",
     description: "A cloud-based property management system tailored for hotels and accommodations in the MENA region. Offers features like booking management, channel integration, and guest services.",
-    icon: "https://storage.googleapis.com/your-bucket/skyarabia-icon.png",
+    icon: "",
     categories: ["PMS"]
   },
   {
     id: "96",
     name: "Bouk by Ed Hotels",
     description: "A comprehensive property management solution offering tools for reservations, channel management, and revenue optimization. Ideal for hotels and accommodations seeking to enhance operations, improve guest experiences, and maximize profitability.",
-    icon: "https://storage.googleapis.com/your-bucket/bouk-icon.png",
+    icon: "",
     categories: ["PMS"]
   },
   {
     id: "97",
     name: "Hotelgest",
     description: "A cloud-based property management system designed for independent hotels and small accommodations. Offers features like booking management, channel integration, and guest communication. Ideal for properties seeking a simple and efficient solution to streamline operations and boost revenue.",
-    icon: "https://storage.googleapis.com/your-bucket/hotelgest-icon.png",
+    icon: "",
     categories: ["PMS"]
   },
   {
     id: "98",
     name: "ResClick",
     description: "A user-friendly property management system designed for small to medium-sized accommodations. Offers tools for booking management, channel integration, and direct booking optimization. Ideal for properties in Spanish-speaking markets",
-    icon: "https://storage.googleapis.com/your-bucket/resclick-icon.png",
+    icon: "",
     categories: ["PMS"]
   },
   {
     id: "99",
     name: "PetroffSoft",
     description: "A Bulgarian-based property management system offering solutions for hotels and accommodations, including reservation management, billing, and reporting. Ideal for properties seeking a reliable and localized tool to streamline operations and enhance guest services.",
-    icon: "https://storage.googleapis.com/your-bucket/petroffsoft-icon.png",
+    icon: "",
     categories: ["PMS"]
   },
   {
     id: "100",
     name: "StarHotelier",
     description: "A comprehensive property management system designed for hotels and accommodations, offering features such as reservation management, channel integration, and guest communication.",
-    icon: "https://storage.googleapis.com/your-bucket/starhotelier-icon.png",
+    icon: "",
     categories: ["PMS"]
   },
   {
     id: "101",
     name: "Bitz Softwares",
     description: "A Brazilian-based property management system providing solutions for hotels, inns, and vacation rentals. Features include reservation management, financial control, and operational efficiency.",
-    icon: "https://storage.googleapis.com/your-bucket/bitzsoftwares-icon.png",
+    icon: "",
     categories: ["PMS", "Latin America"]
   },
   {
     id: "102",
     name: "GuestPro",
     description: "An Indonesia-based property management system offering tools for booking management, guest services, and operational automation. Ideal for hotels, guesthouses, and resorts in Southeast Asia seeking an intuitive and efficient solution to enhance their operations.",
-    icon: "https://storage.googleapis.com/your-bucket/guestpro-icon.png",
+    icon: "",
     categories: ["PMS", "Asia"]
   },
   {
     id: "103",
     name: "NewSoft PMS",
     description: "A flexible property management system offering tools for reservations, channel management, and guest services. Ideal for hotels, resorts, and accommodations seeking a reliable solution to streamline operations and optimize efficiency.",
-    icon: "https://storage.googleapis.com/your-bucket/newsoft-icon.png",
+    icon: "",
     categories: ["PMS", "Asia"]
   },
   {
     id: "104",
     name: "Callista",
     description: "A comprehensive property management system designed for hotels and resorts, offering tools for reservations, billing, and channel management. Ideal for properties seeking a scalable and efficient solution to enhance operations and guest experiences.",
-    icon: "https://storage.googleapis.com/your-bucket/callista-icon.png",
+    icon: "",
     categories: ["PMS"]
   },
   {
     id: "105",
     name: "Wander",
     description: "A modern platform for managing luxury vacation rentals, offering features like smart home integration, seamless booking management, and guest services. Ideal for high-end properties seeking to provide exceptional and tech-enabled guest experiences.",
-    icon: "https://storage.googleapis.com/your-bucket/wander-icon.png",
+    icon: "",
     categories: ["PMS", "Luxury", "Vacation Rentals"]
   },
   {
     id: "106",
     name: "Blue Jay PMS",
     description: "A cloud-based property management system from Vietnam designed for hotels seeking to streamline operations and grow revenue. Connects with 200+ OTA channels, offers booking management, channel management, and guest communication tools. 80% of hotels using Blue Jay PMS report a 20% increase in revenue.",
-    icon: "https://storage.googleapis.com/your-bucket/bluejay-icon.png",
+    icon: "",
     categories: ["PMS", "Asia"],
     slug: "blue-jay-pms",
     website: "https://bluejaypms.com"
@@ -1657,266 +1689,266 @@ export const integrations: Integration[] = [
     id: "107",
     name: "Book.World",
     description: "A global property management and booking platform offering tools for reservations, channel management, and guest services. Ideal for hotels and vacation rentals seeking a seamless solution to manage bookings and enhance operational efficiency across multiple channels.",
-    icon: "https://storage.googleapis.com/your-bucket/bookworld-icon.png",
+    icon: "",
     categories: ["PMS"]
   },
   {
     id: "108",
     name: "GuestPoint",
     description: "A cloud-based property management system designed for hotels, resorts, and vacation rentals. Offers features like booking management, channel integration, and guest communication tools.",
-    icon: "https://storage.googleapis.com/your-bucket/guestpoint-icon.png",
+    icon: "",
     categories: ["PMS"]
   },
   {
     id: "109",
     name: "Retreat Guru",
     description: "A platform designed for wellness retreats and group experiences, offering tools for booking management, payment processing, and guest communication. Ideal for properties focused on retreats, wellness, and holistic experiences.",
-    icon: "https://storage.googleapis.com/your-bucket/retreatguru-icon.png",
+    icon: "",
     categories: ["PMS"]
   },
   {
     id: "110",
     name: "Aaryatm",
     description: "A property management system designed for hotels and accommodations, offering tools for booking management, guest communication, and operational efficiency.",
-    icon: "https://storage.googleapis.com/your-bucket/aaryatm-icon.png",
+    icon: "",
     categories: ["PMS"]
   },
   {
     id: "111",
     name: "Mashvisor",
     description: "A real estate analytics platform designed for investors and property managers, offering tools for property search, rental analysis, and investment insights. Ideal for those seeking to optimize property investments and make data-driven decisions in real estate.",
-    icon: "https://storage.googleapis.com/your-bucket/mashvisor-icon.png",
+    icon: "",
     categories: ["PMS"]
   },
   {
     id: "112",
     name: "Webia",
     description: "A Finnish-based platform offering property management and reservation solutions for hotels, vacation rentals, and accommodations. Features include booking management, channel integration, and guest communication.",
-    icon: "https://storage.googleapis.com/your-bucket/webia-icon.png",
+    icon: "",
     categories: ["PMS"]
   },
   {
     id: "113",
     name: "Ayenda",
     description: "A hotel chain management platform offering tools for booking management, revenue optimization, and guest services. Ideal for budget accommodations and small hotel chains in Latin America seeking to streamline operations and enhance guest experiences.",
-    icon: "https://storage.googleapis.com/your-bucket/ayenda-icon.png",
+    icon: "",
     categories: ["PMS", "Latin America"]
   },
   {
     id: "114",
     name: "HotelMeister",
     description: "A comprehensive property management system designed for hotels and accommodations, offering features like booking management, guest communication, and reporting tools.",
-    icon: "https://storage.googleapis.com/your-bucket/hotelmeister-icon.png",
+    icon: "",
     categories: ["PMS"]
   },
   {
     id: "115",
     name: "Bookelier",
     description: "A property management and booking platform designed for boutique hotels and accommodations, offering tools for reservations, guest communication, and revenue management.",
-    icon: "https://storage.googleapis.com/your-bucket/bookelier-icon.png",
+    icon: "",
     categories: ["PMS"]
   },
   {
     id: "116",
     name: "Servoit Solutions",
     description: "A Philippine-based provider of property management systems and IT solutions for the hospitality industry. Offering tools for reservation management, guest services, and operational efficiency.",
-    icon: "https://storage.googleapis.com/your-bucket/servoit-icon.png",
+    icon: "",
     categories: ["PMS", "Asia"]
   },
   {
     id: "117",
     name: "Revenatium",
     description: "A revenue management platform designed for hotels and accommodations, offering tools for dynamic pricing, forecasting, and performance analysis.",
-    icon: "https://storage.googleapis.com/your-bucket/revenatium-icon.png",
+    icon: "",
     categories: ["PMS"]
   },
   {
     id: "118",
     name: "Atlantis Asia",
     description: "A provider of tailored property management and IT solutions for the hospitality industry in Asia. Offering tools for reservation management, guest communication, and operational optimization.",
-    icon: "https://storage.googleapis.com/your-bucket/atlantisasia-icon.png",
+    icon: "",
     categories: ["PMS", "Asia"]
   },
   {
     id: "119",
     name: "Zaaer",
     description: "A property management system offering tools for booking management, guest communication, and operational efficiency. Ideal for hotels and accommodations seeking an intuitive, cloud-based solution to streamline operations and enhance guest experiences.",
-    icon: "https://storage.googleapis.com/your-bucket/zaaer-icon.png",
+    icon: "",
     categories: ["PMS"]
   },
   {
     id: "120",
     name: "EzyInn",
     description: "A cloud-based property management system designed for small to medium-sized accommodations, offering tools for booking management, guest communication, and channel integration.",
-    icon: "https://storage.googleapis.com/your-bucket/ezyinn-icon.png",
+    icon: "",
     categories: ["PMS"]
   },
   {
     id: "121",
     name: "Big Solutions",
     description: "An Indonesia-based provider of property management and IT solutions, offering tools for hotel management, booking integration, and operational efficiency.",
-    icon: "https://storage.googleapis.com/your-bucket/bigsolutions-icon.png",
+    icon: "",
     categories: ["PMS", "Asia"]
   },
   {
     id: "122",
     name: "StarRez",
     description: "A leading property management system designed for student housing, multifamily, and vacation rentals. Offers tools for reservation management, billing, maintenance, and guest communication.",
-    icon: "https://storage.googleapis.com/your-bucket/starrez-icon.png",
+    icon: "",
     categories: ["PMS"]
   },
   {
     id: "123",
     name: "RoverPass",
     description: "A property management platform designed for campgrounds, RV parks, and outdoor accommodations. Offers tools for reservation management, payment processing, and guest communication.",
-    icon: "https://storage.googleapis.com/your-bucket/roverpass-icon.png",
+    icon: "",
     categories: ["PMS", "Outdoor"]
   },
   {
     id: "124",
     name: "Firefly Reservations",
     description: "A cloud-based property management system designed for vacation rentals, offering tools for booking management, guest communication, and channel integration.",
-    icon: "https://storage.googleapis.com/your-bucket/firefly-icon.png",
+    icon: "",
     categories: ["PMS", "Outdoor"]
   },
   {
     id: "125",
     name: "Fitshotel",
     description: "A property management system designed for the hospitality industry, offering tools for booking management, guest services, and operational efficiency.",
-    icon: "https://storage.googleapis.com/your-bucket/fitshotel-icon.png",
+    icon: "",
     categories: ["PMS"]
   },
   {
     id: "126",
     name: "Hiswen",
     description: "A property management system offering solutions for hotel management, booking integration, and guest services. Ideal for hotels and accommodations seeking an efficient platform to streamline operations, manage bookings, and enhance guest experiences.",
-    icon: "https://storage.googleapis.com/your-bucket/hiswen-icon.png",
+    icon: "",
     categories: ["PMS"]
   },
   {
     id: "127",
     name: "Bidrento",
     description: "A property management and rental platform offering tools for booking management, payment processing, and guest communication.",
-    icon: "https://storage.googleapis.com/your-bucket/bidrento-icon.png",
+    icon: "",
     categories: ["PMS", "Vacation Rentals"]
   },
   {
     id: "128",
     name: "GetaBedSuite",
     description: "A property management system designed for hotels, vacation rentals, and guesthouses, offering tools for booking management, guest communication, and channel integration.",
-    icon: "https://storage.googleapis.com/your-bucket/getabedsuite-icon.png",
+    icon: "",
     categories: ["PMS"]
   },
   {
     id: "129",
     name: "Zimple.Cloud",
     description: "A cloud-based property management system offering tools for booking management, guest communication, and operational efficiency.",
-    icon: "https://storage.googleapis.com/your-bucket/zimplecloud-icon.png",
+    icon: "",
     categories: ["PMS"]
   },
   {
     id: "130",
     name: "The Zenden Group",
     description: "A hospitality management platform offering solutions for property management, booking integration, and guest services.",
-    icon: "https://storage.googleapis.com/your-bucket/zendengroup-icon.png",
+    icon: "",
     categories: ["PMS"]
   },
   {
     id: "131",
     name: "EZCloud",
     description: "A cloud-based property management system offering solutions for booking management, guest communication, and operational efficiency. Ideal for hotels, resorts, and guesthouses in Vietnam and Southeast Asia.",
-    icon: "https://storage.googleapis.com/your-bucket/ezcloud-icon.png",
+    icon: "",
     categories: ["PMS", "Asia"]
   },
   {
     id: "132",
     name: "RevivoTech",
     description: "An India-based provider of property management and revenue optimization solutions, offering tools for booking management, dynamic pricing, and operational efficiency.",
-    icon: "https://storage.googleapis.com/your-bucket/revivotech-icon.png",
+    icon: "",
     categories: ["PMS", "Asia"]
   },
   {
     id: "133",
     name: "Citrus PMS",
     description: "A cloud-based property management system offering features for booking management, guest services, and operational efficiency.",
-    icon: "https://storage.googleapis.com/your-bucket/citrus-icon.png",
+    icon: "",
     categories: ["PMS", "Asia"]
   },
   {
     id: "134",
     name: "Alojate Pro",
     description: "A property management system designed for vacation rentals and small accommodations, offering tools for booking management, guest communication, and financial tracking.",
-    icon: "https://storage.googleapis.com/your-bucket/alojatepro-icon.png",
+    icon: "",
     categories: ["PMS"]
   },
   {
     id: "135",
     name: "CakraSoft",
     description: "A property management software provider offering solutions for booking management, guest services, and hotel operations.",
-    icon: "https://storage.googleapis.com/your-bucket/cakrasoft-icon.png",
+    icon: "",
     categories: ["PMS", "Asia"]
   },
   {
     id: "136",
     name: "Msool",
     description: "A cloud-based property management platform offering tools for booking management, guest communication, and operational efficiency.",
-    icon: "https://storage.googleapis.com/your-bucket/msool-icon.png",
+    icon: "",
     categories: ["PMS"]
   },
   {
     id: "137",
     name: "Jaras.io",
     description: "A property management system offering tools for booking management, guest communication, and operational efficiency. Ideal for hotels and accommodations seeking a user-friendly, scalable solution to streamline operations and enhance guest satisfaction.",
-    icon: "https://storage.googleapis.com/your-bucket/jarasio-icon.png",
+    icon: "",
     categories: ["PMS"]
   },
   {
     id: "138",
     name: "Host-It",
     description: "An Austrian-based property management system offering solutions for booking management, channel integration, and guest services.",
-    icon: "https://storage.googleapis.com/your-bucket/hostit-icon.png",
+    icon: "",
     categories: ["PMS"]
   },
   {
     id: "139",
     name: "Sophia Solution",
     description: "A property management and hospitality solution provider offering tools for booking management, guest communication, and operational optimization.",
-    icon: "https://storage.googleapis.com/your-bucket/sophiasolution-icon.png",
+    icon: "",
     categories: ["PMS"]
   },
   {
     id: "140",
     name: "Hotelzify",
     description: "A property management system offering tools for booking management, guest communication, and channel integration.",
-    icon: "https://storage.googleapis.com/your-bucket/hotelzify-icon.png",
+    icon: "",
     categories: ["PMS"]
   },
   {
     id: "141",
     name: "BeBetter Hotels",
     description: "A property management platform designed to optimize hotel operations, offering tools for booking management, guest communication, and revenue management.",
-    icon: "https://storage.googleapis.com/your-bucket/bebetterhotels-icon.png",
+    icon: "",
     categories: ["PMS", "Latin America"]
   },
   {
     id: "142",
     name: "RezStream",
     description: "A cloud-based property management system offering features for booking management, channel integration, and guest services.",
-    icon: "https://storage.googleapis.com/your-bucket/rezstream-icon.png",
+    icon: "",
     categories: ["PMS"]
   },
   {
     id: "143",
     name: "Vikey",
     description: "A cloud-based property management system offering tools for booking management, guest communication, and operational efficiency.",
-    icon: "https://storage.googleapis.com/your-bucket/vikey-icon.png",
+    icon: "",
     categories: ["PMS"]
   },
   {
     id: "144",
     name: "Dibooq",
     description: "A cloud-based vacation rental software designed for owners and property managers, offering property management, channel management, booking management, direct booking websites, guest communication, and enhanced operational efficiency.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/ca1fa9b6-8ada-47f4-849e-47809d4c6a67.png",
+    icon: "/lovable-uploads/ca1fa9b6-8ada-47f4-849e-47809d4c6a67.png",
     categories: ["PMS"],
     website: "https://www.dibooq.com"
   },
@@ -1924,49 +1956,49 @@ export const integrations: Integration[] = [
     id: "145",
     name: "EveryLeisure",
     description: "A property management and booking platform designed for leisure facilities, including parks, resorts, and recreational accommodations. Offers tools for reservation management, guest services, and operational efficiency.",
-    icon: "https://storage.googleapis.com/your-bucket/everyleisure-icon.png",
+    icon: "",
     categories: ["PMS", "Outdoor"]
   },
   {
     id: "146",
     name: "Aplend",
     description: "A property management and booking platform designed for vacation rentals, resorts, and chalets. Offering tools for booking management, guest communication, and operational efficiency.",
-    icon: "https://storage.googleapis.com/your-bucket/aplend-icon.png",
+    icon: "",
     categories: ["PMS", "Vacation Rentals"]
   },
   {
     id: "147",
     name: "Livedin",
     description: "A property management and guest experience platform designed for vacation rentals and boutique accommodations. Offering tools for booking management, guest communication, and personalized services.",
-    icon: "https://storage.googleapis.com/your-bucket/livedin-icon.png",
+    icon: "",
     categories: ["PMS", "Vacation Rentals"]
   },
   {
     id: "148",
     name: "GoHost",
     description: "A property management system designed for small to medium-sized accommodations, offering tools for booking management, guest services, and operational efficiency.",
-    icon: "https://storage.googleapis.com/your-bucket/gohost-icon.png",
+    icon: "",
     categories: ["PMS"]
   },
   {
     id: "149",
     name: "Beingidly",
     description: "A property management and automation platform offering tools for booking management, guest communication, and operational efficiency.",
-    icon: "https://storage.googleapis.com/your-bucket/beingidly-icon.png",
+    icon: "",
     categories: ["PMS"]
   },
   {
     id: "150",
     name: "Wasimil",
     description: "A property management system offering solutions for booking management, guest services, and operational efficiency.",
-    icon: "https://storage.googleapis.com/your-bucket/wasimil-icon.png",
+    icon: "",
     categories: ["PMS"]
   },
   {
     id: "151",
     name: "StellarStay",
     description: "A comprehensive property management system designed for vacation rentals and short-term accommodations, offering booking management, guest communication, and operational tools.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/4eb781f9-6627-406e-8ea6-0942d3c2f485.png",
+    icon: "/lovable-uploads/4eb781f9-6627-406e-8ea6-0942d3c2f485.png",
     categories: ["PMS"],
     website: "https://www.stellarstay.com/"
   },
@@ -1974,49 +2006,49 @@ export const integrations: Integration[] = [
     id: "152",
     name: "Diafasol",
     description: "A property management solution offering tools for booking management, guest communication, and operational efficiency.",
-    icon: "https://storage.googleapis.com/your-bucket/diafasol-icon.png",
+    icon: "",
     categories: ["PMS"]
   },
   {
     id: "153",
     name: "Hanz",
     description: "A property management system designed for hotels and accommodations in Vietnam, offering features like booking management, guest services, and operational optimization.",
-    icon: "https://storage.googleapis.com/your-bucket/hanz-icon.png",
+    icon: "",
     categories: ["PMS", "Asia"]
   },
   {
     id: "154",
     name: "RunHotel",
     description: "A cloud-based property management system designed to streamline hotel operations, offering tools for booking management, guest communication, and revenue optimization.",
-    icon: "https://storage.googleapis.com/your-bucket/runhotel-icon.png",
+    icon: "",
     categories: ["PMS"]
   },
   {
     id: "155",
     name: "Zotel.ai",
     description: "An AI-driven property management system designed to optimize hotel operations, offering features like booking management, dynamic pricing, and guest services automation.",
-    icon: "https://storage.googleapis.com/your-bucket/zotelai-icon.png",
+    icon: "",
     categories: ["PMS"]
   },
   {
     id: "156",
     name: "SaffronStays",
     description: "A hospitality platform specializing in managing and booking unique, luxury vacation homes and villas. Ideal for property owners and travelers seeking curated, high-end stays in various destinations.",
-    icon: "https://storage.googleapis.com/your-bucket/saffronstays-icon.png",
+    icon: "",
     categories: ["PMS"]
   },
   {
     id: "157",
     name: "Halmo",
     description: "A property management system designed for hotels and accommodations, offering tools for booking management, guest communication, and operational optimization.",
-    icon: "https://storage.googleapis.com/your-bucket/halmo-icon.png",
+    icon: "",
     categories: ["PMS"]
   },
   {
     id: "158",
     name: "Rentware",
     description: "A property management and rental platform offering solutions for booking management, guest communication, and payment processing.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/rentware-logo.png",
+    icon: "/lovable-uploads/rentware-logo.png",
     categories: ["PMS", "Vacation Rentals", "Global"],
     website: "https://rentware.com/en/"
   },
@@ -2024,7 +2056,7 @@ export const integrations: Integration[] = [
     id: "159",
     name: "TodoAlojamiento",
     description: "A property management and booking platform designed for accommodations, offering tools for reservation management, guest services, and operational optimization.",
-    icon: "https://storage.googleapis.com/your-bucket/todoalojamiento-icon.png",
+    icon: "",
     categories: ["PMS"]
   },
   {
@@ -2038,378 +2070,386 @@ export const integrations: Integration[] = [
     id: "161",
     name: "Twik PMS",
     description: "A cloud-based property management system offering tools for booking management, guest services, and operational efficiency.",
-    icon: "https://storage.googleapis.com/your-bucket/twikpms-icon.png",
+    icon: "",
     categories: ["PMS"]
   },
   {
     id: "162",
     name: "JoodBooking",
     description: "A property management and booking platform designed for small to medium-sized accommodations, offering features like reservation management, guest communication, and payment processing.",
-    icon: "https://storage.googleapis.com/your-bucket/joodbooking-icon.png",
+    icon: "",
     categories: ["PMS"]
   },
   {
     id: "163",
     name: "TrivSmart",
     description: "A property management system designed to streamline hotel operations, offering tools for booking management, guest communication, and revenue optimization.",
-    icon: "https://storage.googleapis.com/your-bucket/trivsmart-icon.png",
+    icon: "",
     categories: ["PMS"]
   },
   {
     id: "164",
     name: "HelloHosty",
     description: "A property management and automation platform designed for vacation rental owners and managers, offering tools for booking management, guest communication, and operations automation.",
-    icon: "https://storage.googleapis.com/your-bucket/hellohosty-icon.png",
+    icon: "",
     categories: ["PMS", "Vacation Rentals"]
   },
   {
     id: "165",
     name: "Appartman.hu",
     description: "A property management platform focused on vacation rentals and apartments, offering tools for booking management, guest communication, and operational efficiency. Ideal for property owners in Hungary.",
-    icon: "https://storage.googleapis.com/your-bucket/appartmanhu-icon.png",
+    icon: "",
     categories: ["PMS", "Vacation Rentals"]
   },
   {
     id: "166",
     name: "Hububb",
     description: "A property management platform offering solutions for booking management, guest services, and operational efficiency. Ideal for small to medium-sized hotels, vacation rentals.",
-    icon: "https://storage.googleapis.com/your-bucket/hububb-icon.png",
+    icon: "",
     categories: ["PMS", "Vacation Rentals"]
   },
   {
     id: "167",
     name: "Bookinglayer",
     description: "A cloud-based property management system designed for boutique accommodations, retreat centers, and activity-based businesses. Offering tools for booking management, guest communication, and payment processing.",
-    icon: "https://storage.googleapis.com/your-bucket/bookinglayer-icon.png",
+    icon: "",
     categories: ["PMS"]
   },
   {
     id: "168",
     name: "SIHoteles",
     description: "A comprehensive property management system designed for hotels and accommodations, offering tools for booking management, guest services, and operational efficiency.",
-    icon: "https://storage.googleapis.com/your-bucket/sihoteles-icon.png",
+    icon: "",
     categories: ["PMS"]
   },
   {
     id: "169",
     name: "PassPass",
     description: "A property management and guest experience platform offering tools for booking management, contactless check-in, and guest communication.",
-    icon: "https://storage.googleapis.com/your-bucket/passpass-icon.png",
+    icon: "",
     categories: ["PMS"]
   },
   {
     id: "170",
     name: "Ozin.ai",
     description: "An AI-powered property management system designed to optimize hotel operations, offering features like dynamic pricing, booking management, and guest communication.",
-    icon: "https://storage.googleapis.com/your-bucket/ozinai-icon.png",
+    icon: "",
     categories: ["PMS"]
   },
   {
     id: "171",
     name: "SeguriServer",
     description: "A property management and security platform offering solutions for booking management, guest communication, and data security.",
-    icon: "https://storage.googleapis.com/your-bucket/seguriserver-icon.png",
+    icon: "",
     categories: ["PMS"]
   },
   {
     id: "172",
     name: "MyTourist Cloud",
     description: "A cloud-based property management system designed for hotels, resorts, and vacation rentals. Offering tools for booking management, guest communication, and operational efficiency.",
-    icon: "https://storage.googleapis.com/your-bucket/mytouristcloud-icon.png",
+    icon: "",
     categories: ["PMS"]
   },
   {
     id: "173",
     name: "ReyHut",
     description: "A property management and booking platform designed for small to medium-sized accommodations. Offering tools for reservation management, guest communication, and operational efficiency.",
-    icon: "https://storage.googleapis.com/your-bucket/reyhut-icon.png",
+    icon: "",
     categories: ["PMS"]
   },
   {
     id: "174",
     name: "Sojori",
     description: "A property management and booking platform designed for vacation rentals and boutique accommodations. Offering tools for booking management, guest communication, and operational optimization.",
-    icon: "https://storage.googleapis.com/your-bucket/sojori-icon.png",
+    icon: "",
     categories: ["PMS", "Vacation Rentals"]
   },
   {
     id: "175",
     name: "Guestpedia",
     description: "A property management system offering tools for booking management, guest communication, and operational efficiency. Ideal for hotels, resorts, and vacation rentals seeking an intuitive platform to enhance guest experiences and streamline daily operations.",
-    icon: "https://storage.googleapis.com/your-bucket/guestpedia-icon.png",
+    icon: "",
     categories: ["PMS"]
   },
   {
     id: "176",
     name: "Mr. Alfred",
     description: "A property management and guest experience platform designed for hotels, resorts, and vacation rentals. Offering tools for booking management, guest communication, and operational efficiency.",
-    icon: "https://storage.googleapis.com/your-bucket/mralfred-icon.png",
+    icon: "",
     categories: ["PMS", "Vacation Rentals"]
   },
   {
     id: "177",
     name: "Project Bay",
     description: "A property management platform offering solutions for booking management, guest services, and operational efficiency. Ideal for hotels, resorts, and vacation rentals.",
-    icon: "https://storage.googleapis.com/your-bucket/projectbay-icon.png",
+    icon: "",
     categories: ["PMS"]
   },
   {
     id: "178",
     name: "Dolcerent",
     description: "A property management and rental platform designed for vacation rentals and short-term accommodations. Offering tools for booking management, payment processing, and guest communication.",
-    icon: "https://storage.googleapis.com/your-bucket/dolcerent-icon.png",
+    icon: "",
     categories: ["PMS", "Vacation Rentals"]
   },
   {
     id: "179",
     name: "Hoone",
     description: "A property management and booking platform designed for vacation rentals and small accommodations. Offering features for booking management, guest communication, and operational efficiency.",
-    icon: "https://storage.googleapis.com/your-bucket/hoone-icon.png",
+    icon: "",
     categories: ["PMS", "Vacation Rentals"]
   },
   {
     id: "180",
     name: "B-Company",
     description: "A Swiss-based company offering property management and IT solutions for the hospitality industry. Specializing in booking management, guest services, and operational optimization",
-    icon: "https://storage.googleapis.com/your-bucket/bcompany-icon.png",
+    icon: "",
     categories: ["PMS"]
   },
   {
     id: "186",
     name: "Muaroa",
     description: "Muaroa provides website solutions for tourism and businesses in French Polynesia, including online bookings, payments, and marketing services.",
-    icon: "https://storage.googleapis.com/your-bucket/bcompany-icon.png",
+    icon: "",
     categories: ["PMS"]
   },
   {
     id: "187",
     name: "Annwn Stay",
     description: "Annwn Stay is an integrated hospitality platform offering tools like a guest app for self-check-in, a channel manager, a booking engine, and a property management system to automate operations and enhance guest experiences.",
-    icon: "https://storage.googleapis.com/your-bucket/bcompany-icon.png",
+    icon: "",
     categories: ["PMS", "Vacation Rentals"]
   },
   {
     id: "188",
     name: "TIC Rural",
     description: "TIC Rural is a booking service offering over 300 rural houses in Catalonia, Spain, providing online reservations and personalized customer support.",
-    icon: "https://storage.googleapis.com/your-bucket/bcompany-icon.png",
+    icon: "",
     categories: ["PMS", "Vacation Rentals"]
   },
   {
     id: "189",
     name: "Hotelfabrik",
     description: "Hotelfabrik is an IT consulting firm based in South Tyrol, Italy, specializing in optimizing hotel operations through services like hospitality consulting, tailored software solutions, and comprehensive technical support.",
-    icon: "https://storage.googleapis.com/your-bucket/bcompany-icon.png",
+    icon: "",
     categories: ["PMS"]
   },
   {
     id: "190",
     name: "uhotels",
     description: "UHotels.app offers digital solutions for the hospitality industry, including a guest app for service orders and payments, a booking engine integrated with systems like Fidelio and Opera, and cloud-based hotel websites with availability calendars.",
-    icon: "https://storage.googleapis.com/your-bucket/bcompany-icon.png",
+    icon: "",
     categories: ["PMS"]
   },
   {
     id: "191",
     name: "OpenHotel",
     description: "OpenHotel provides a comprehensive cloud-based Property Management System (PMS) designed to streamline hotel operations. Their integrated solutions include channel management, yield management, and enterprise management tools, all developed in-house for seamless functionality.",
-    icon: "https://storage.googleapis.com/your-bucket/bcompany-icon.png",
+    icon: "",
     categories: ["PMS"]
   },
   {
     id: "192",
     name: "BV Trip",
     description: "BV Trip is a reservation management system designed for small to medium-sized accommodations, such as bed and breakfasts and campsites.",
-    icon: "https://storage.googleapis.com/your-bucket/bcompany-icon.png",
+    icon: "",
     categories: ["PMS", "Asia"]
   },
   {
     id: "193",
+    slug: "waverick",
     name: "Waverick",
     description: "Waverick Adventures is a platform that allows users to find and compare surf camps and schools across various Moroccan destinations, including Taghazout, Rabat, Imsouane, Dakhla, Casablanca, and Essaouira.",
-    icon: "https://storage.googleapis.com/your-bucket/bcompany-icon.png",
+    icon: "",
     categories: ["OTA"]
   },
   {
     id: "194",
     name: "Hugo-hotelsoftware",
     description: "HUGO Hotelsoftware is a professional cloud-based hotel management system offering features such as an online booking engine, channel manager, and digital guest services.",
-    icon: "https://storage.googleapis.com/your-bucket/bcompany-icon.png",
+    icon: "",
     categories: ["PMS"]
   },
   {
     id: "195",
     name: "Pricelabs",
     description: "PriceLabs is a cloud-based dynamic pricing and revenue management tool designed for the vacation and short-term rental industry. It offers automated, data-driven pricing recommendations.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/pricelabs-logo.png",
+    icon: "/lovable-uploads/pricelabs-logo.png",
     categories: ["RMS"]
   },
   {
     id: "196",
     name: "Adcsystems",
     description: "ADC sistemi d.o.o. offers an intuitive property management system (PMS) designed for tourist accommodations, providing seamless automation and guest convenience.",
-    icon: "https://storage.googleapis.com/your-bucket/bcompany-icon.png",
+    icon: "",
     categories: ["PMS"]
   },
   {
     id: "197",
     name: "Stayhub",
     description: "StayHub is a Saudi-based property management system (PMS) designed to simplify rental operations for vacation rentals, private units, and serviced apartments. It offers centralized tools for booking management, pricing automation, smart lock integration, and compliance with local platforms like Shmoos and Absher.",
-    icon: "https://storage.googleapis.com/your-bucket/bcompany-icon.png",
+    icon: "",
     categories: ["PMS"]
   },
   {
     id: "198",
     name: "Labuhardilla",
     description: "Labuhardilla.online is a property management system (PMS) tailored for boutique accommodations, offering tools for booking management, guest communication, and operational automation.",
-    icon: "https://storage.googleapis.com/your-bucket/bcompany-icon.png",
+    icon: "",
     categories: ["PMS"]
   },
   {
     id: "199",
     name: "Credencesoft",
     description: "CredenceSoft's BookOne PMS is a cloud-based property management system designed to streamline hotel operations, including front desk management, reservations, billing, housekeeping, and guest services.",
-    icon: "https://storage.googleapis.com/your-bucket/bcompany-icon.png",
+    icon: "",
     categories: ["PMS"]
   },
   {
     id: "200",
     name: "Hotelar",
     description: "Hotelar is an intuitive online property management system (PMS) designed for hotels, guesthouses, hostels, and similar accommodations. It simplifies reservation and stay management with features like drag-and-drop booking, real-time room status updates, and automated document generation.",
-    icon: "https://storage.googleapis.com/your-bucket/bcompany-icon.png",
+    icon: "",
     categories: ["PMS"]
   },
   {
     id: "201",
     name: "Priceone",
     description: "PriceOne.ai is an AI-driven, all-in-one platform that integrates Property Management System (PMS), Channel Management System (CMS), and Revenue Management System (RMS) functionalities.",
-    icon: "https://storage.googleapis.com/your-bucket/bcompany-icon.png",
+    icon: "",
     categories: ["PMS"]
   },
   {
     id: "202",
     name: "Homeyhuts",
     description: "Homeyhuts is an India-based platform offering flexible property management solutions for homestays and vacation rentals. It provides tools for listing optimization, calendar synchronization, guest communication, and marketing support.",
-    icon: "https://storage.googleapis.com/your-bucket/bcompany-icon.png",
+    icon: "",
     categories: ["PMS"]
   },
   {
     id: "203",
     name: "Quartoverde",
     description: "QuartoVerde is a cloud-based property management system (PMS) tailored for small to mid-sized hospitality businesses. It offers a free plan with essential features such as unlimited reservations, guest registration.",
-    icon: "https://storage.googleapis.com/your-bucket/bcompany-icon.png",
+    icon: "",
     categories: ["PMS"]
   },
   {
     id: "204",
     name: "Reeka",
     description: "Reeka is a property management system (PMS) tailored for short-term rental operators, particularly in Africa.",
-    icon: "https://storage.googleapis.com/your-bucket/bcompany-icon.png",
+    icon: "",
     categories: ["PMS"]
   },
   {
     id: "205",
     name: "Connectingpax",
     description: "ConnectingPax is a Brazil-based, cloud-native property management system (PMS) designed for hotels and guesthouses. It offers comprehensive modules for reservations, housekeeping, finance, and guest services, all accessible via desktop or mobile.",
-    icon: "https://storage.googleapis.com/your-bucket/bcompany-icon.png",
+    icon: "",
     categories: ["PMS", "Latin America"]
   },
   {
     id: "206",
     name: "Zafari",
     description: "Zafari is a no-cost, Africa-focused property management and booking system designed for safari lodges, boutique hotels, and vacation rentals. It offers direct booking tools, flexible rate management (including resident/non-resident pricing), and seamless OTA synchronization.",
-    icon: "https://storage.googleapis.com/your-bucket/bcompany-icon.png",
+    icon: "",
     categories: ["PMS", "Asia"]
   },
   {
     id: "207",
     name: "Djituhs",
     description: "Djitu Hospitality Solution is a Bali-based property management and revenue optimization company serving over 100 hotels, villas, and resorts across Indonesia.",
-    icon: "https://storage.googleapis.com/your-bucket/bcompany-icon.png",
+    icon: "",
     categories: ["PMS", "Asia"]
   },
   {
     id: "208",
     name: "Bedlygo",
     description: "BedlyGo is an AI-powered platform designed for short-term rental professionals, offering advanced market analysis, dynamic pricing tools, and customizable PDF reports to optimize revenue and reduce investment risk.",
-    icon: "https://storage.googleapis.com/your-bucket/bcompany-icon.png",
+    icon: "",
     categories: ["PMS"]
   },
   {
     id: "209",
     name: "Snapguest",
     description: "SnapGuest is a mobile-first property management solution tailored for short-term rental hosts and small accommodation providers in Slovenia and Croatia. It streamlines guest registration by scanning MRZ codes on passports or IDs, automatically syncing data with national systems like eTurizem (AJPES) and eVisitor.",
-    icon: "https://storage.googleapis.com/your-bucket/bcompany-icon.png",
+    icon: "",
     categories: ["PMS"]
   },
   {
     id: "210",
     name: "Staylist",
     description: "Staylist is a comprehensive, cloud-based property management system (PMS) tailored for RV parks, campgrounds, cabins, and glamping sites. It offers an all-in-one solution encompassing reservations, guest communication, dynamic pricing, and integrated point-of-sale (POS) systems.",
-    icon: "https://storage.googleapis.com/your-bucket/bcompany-icon.png",
+    icon: "",
     categories: ["PMS"]
   },
   {
     id: "211",
     name: "HotelFriend",
     description: "HotelFriend is a comprehensive, cloud-based Property Management System (PMS) designed to streamline hotel operations and enhance guest experiences.",
-    icon: "https://storage.googleapis.com/your-bucket/bcompany-icon.png",
+    icon: "",
     categories: ["PMS"]
   },
   {
     id: "212",
+    slug: "pitchup",
     name: "Pitchup",
     description: "Pitchup.com is a leading online booking platform specializing in outdoor accommodations such as campsites, glamping sites, and caravan parks.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/82d1b7f7-d608-45d1-8f33-80c1ca408e78.png",
+    icon: "/lovable-uploads/82d1b7f7-d608-45d1-8f33-80c1ca408e78.png",
     categories: ["OTA"]
   },
     {
     id: "213",
+    slug: "tablet-michelin",
     name: "Tablet Michelin",
     description: "Connect with Tablet Hotels to showcase your property on a curated platform for boutique and luxury stays. Ideal for properties offering unique experiences and aiming to attract high-end travelers.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/tablet-michelin-logo.png",
+    icon: "/lovable-uploads/tablet-michelin-logo.png",
     categories: ["Luxury", "Global", "OTA"]
   },
   {
     id: "214",
+    slug: "didatravel",
     name: "Didatravel",
     description: "China's leading B2B travel platform. Ideal for properties targeting travel agents, tour operators, and wholesalers globally.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/524270f8-c22d-41b4-8acd-a5f302d9b08d.png",
+    icon: "/lovable-uploads/524270f8-c22d-41b4-8acd-a5f302d9b08d.png",
     categories: ["B2B", "Asia", "Distribution", "OTA"]
   },
   {
     id: "215",
+    slug: "hoterip",
     name: "Hoterip",
     description: "A leading travel platform in Southeast Asia. Ideal for properties targeting Indonesian travelers and regional markets.",
-    icon: "https://storage.googleapis.com/your-bucket/hoterip-icon.png",
+    icon: "",
     categories: ["Asia", "Regional", "OTA"]
   },
   {
     id: "216",
+    slug: "mr-and-mrs-smith",
     name: "Mr & Mrs Smith",
     description: "A curated platform for luxury and boutique stays. Ideal for properties offering unique, high-end experiences.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/mrandmrssmith-logo.jpg",
+    icon: "/lovable-uploads/mrandmrssmith-logo.jpg",
     categories: ["Luxury", "Global", "OTA"]
   },
   {
     id: "217",
+    slug: "hotel-tonight",
     name: "Hotel Tonight",
     description: "Attract last-minute travelers seeking great deals. Ideal for properties targeting spontaneous, mobile-first bookings.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/hoteltonight-logo.png",
+    icon: "/lovable-uploads/hoteltonight-logo.png",
     categories: ["OTA", "Global"]
   },
      {
     id: "218",
+    slug: "bookeasy",
     name: "Bookeasy",
     description: "Australia's leading tourism destination management platform. Ideal for properties targeting local and regional travelers.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/592fc0e3-4382-414f-a873-fe6397751604.png",
+    icon: "/lovable-uploads/592fc0e3-4382-414f-a873-fe6397751604.png",
     categories: ["Australia", "Distribution", "OTA"]
   },
   {
     id: "219",
     name: "HomeinLeonidio",
     description: "A specialized accommodation platform for unique stays in Leonidio, Greece. Connect with travelers seeking authentic local experiences in this charming climbing destination.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/homeinleonidio-icon.png",
+    icon: "",
     categories: ["Regional", "Vacation Rentals", "Europe", "PMS"],
     slug: "homeinleonidio",
     website: "https://homeinleonidio.com"
@@ -2418,7 +2458,7 @@ export const integrations: Integration[] = [
     id: "220",
     name: "Rentzz",
     description: "Romanian property management platform for rental properties. Automates rental contracts, payments, collections, and utility management with mobile app support.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/rentzz-icon.png",
+    icon: "",
     categories: ["PMS", "Regional", "Europe"],
     slug: "rentzz",
     website: "https://rentzz.app",
@@ -2440,7 +2480,7 @@ export const integrations: Integration[] = [
     id: "221",
     name: "RunHotel",
     description: "Modern cloud-based hotel management system designed for independent hotels and small chains. Streamlines operations with booking management, channel distribution, and guest communication tools.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/runhotel-icon.png",
+    icon: "",
     categories: ["PMS", "Distribution", "Global"],
     slug: "runhotel",
     website: "https://runhotel.io",
@@ -2462,7 +2502,7 @@ export const integrations: Integration[] = [
     id: "222",
     name: "MiniHotelman",
     description: "Affordable all-in-one cloud-based hotel management system for Indian hoteliers. Integrates PMS, POS, channel manager, and revenue management in one platform.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/minihotelman-icon.png",
+    icon: "",
     categories: ["PMS", "Asia", "Regional"],
     slug: "minihotelman",
     website: "https://minihotelman.com",
@@ -2484,7 +2524,7 @@ export const integrations: Integration[] = [
     id: "223",
     name: "Booknpay",
     description: "Booknpay is an all-in-one platform built to boost hotel and villa performance by transforming property websites into powerful direct booking channels. Equipped with a seamless Online Reservation System, it maximizes revenue potential and delivers a smoother booking experience for guests.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/78a66bab-8fd7-464c-a255-301401af8dde.png",
+    icon: "/lovable-uploads/78a66bab-8fd7-464c-a255-301401af8dde.png",
     categories: ["IBE", "Asia"],
     slug: "booknpay",
     longDescription: "Booknpay is an innovative all-in-one platform specifically designed to boost hotel and villa performance by transforming property websites into powerful direct booking channels. With a seamless Online Reservation System at its core, Booknpay maximizes revenue potential while delivering an exceptional booking experience for guests. The platform empowers hospitality businesses to reduce dependency on third-party booking sites and increase direct bookings, ultimately improving profit margins and guest relationships.",
@@ -2533,7 +2573,7 @@ export const integrations: Integration[] = [
     id: "224",
     name: "Ministry of Villas",
     description: "A luxury villa booking platform specializing in exceptional private villas across Asia-Pacific destinations. Offers personalized service and inspires travelers to experience the privacy and luxury of villa stays over traditional hotels.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/ministryofvillas-logo.png",
+    icon: "/lovable-uploads/ministryofvillas-logo.png",
     categories: ["OTA", "Vacation Rentals", "Asia"],
     slug: "ministry-of-villas",
     longDescription: "Ministry of Villas is the quintessential service for travelers seeking luxury villa accommodations across premier destinations including Bali, Thailand, Japan, Philippines, and more. We inspire travelers who would normally book a hotel to experience staying in a private villa, adding a new dimension to their holiday. Our platform makes searching for a villa a pleasure and the booking process painless, connecting guests with exceptional properties while providing villa owners with a premium distribution channel.",
@@ -2602,7 +2642,7 @@ export const integrations: Integration[] = [
     id: "lodgegate",
     name: "LodgeGate",
     description: "Comprehensive hospitality software solution for property management, offering booking management, guest services, and operational tools designed for hotels, resorts, and accommodation providers.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/lodgegate-logo.jpeg",
+    icon: "/lovable-uploads/lodgegate-logo.jpeg",
     categories: ["PMS"],
     slug: "lodgegate",
     longDescription: "LodgeGate is a modern property management system designed specifically for the hospitality industry. Our comprehensive platform provides hotels, resorts, and accommodation providers with powerful tools to manage bookings, streamline operations, and enhance guest experiences. With a focus on user-friendly design and robust functionality, LodgeGate helps properties of all sizes optimize their operations and maximize revenue.",
@@ -2894,10 +2934,11 @@ export const integrations: Integration[] = [
   },
   {
     id: "hotelrez",
+    slug: "hotelrez",
     name: "HotelREZ",
     description: "A global hotel representation company increasing revenue with GDS, RFPs, Direct Booking tools and unlocking global demand and marketing power.",
     longDescription: "Interface your PMS to our SynXIS CRS for GDS, IDS, OTAs connectivity and Direct Hotel Booking Solutions with demand partnerships, global reach, marketing, account management, support and best in class systems – more business at an attractive cost of sale. Unlock chain-level reach without sacrificing independence. HotelREZ, seamlessly integrated with your Channex PMS, connects you to the most powerful commercial network for independent hotels worldwide. Gain Global Preferred Status and access chain-level deals across GDS (750k agencies), OTAs, corporate RFPs, consortia, TMCs, and direct channels. HotelREZ drives higher-margin business and sustainable growth for independent and small hotel groups. As a Global Partner of Hospitality Solutions (formerly Sabre Hospitality), we use SynXis as our CRS \"pipe\", but the real value goes far beyond connectivity. We help you win more profitable business, not simply additional room nights.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/hotelrez-logo.png",
+    icon: "/lovable-uploads/hotelrez-logo.png",
     categories: ["OTA", "Distribution", "Global"],
     features: [
       "Incremental demand, not rebadging - At HotelREZ our aim is to focus your Channex property on delivering new volume and a stronger channel mix rather than simply moving existing bookings from one pipe to another.",
@@ -3026,7 +3067,7 @@ export const integrations: Integration[] = [
     id: "klook",
     name: "Klook",
     description: "Leading travel activities and services booking platform in Asia-Pacific, connecting millions of travelers with unique experiences, tours, and accommodations.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/klook-logo.png",
+    icon: "/lovable-uploads/klook-logo.png",
     categories: ["OTA", "Global", "Asia", "Activities"],
     slug: "klook",
     longDescription: "Klook is Asia-Pacific's leading travel activities and services booking platform, offering travelers instant booking and confirmation for tours, attractions, transportation, and accommodations. With over 400,000 activities across 1,000+ destinations worldwide, Klook has become the go-to platform for travelers seeking unique experiences. Our integration enables properties to tap into Klook's massive user base of experience-seeking travelers, particularly strong in Asian markets.",
@@ -3104,7 +3145,7 @@ export const integrations: Integration[] = [
     id: "check24",
     name: "Check24",
     description: "Germany's leading comparison and booking platform for travel, hotels, and accommodations, connecting millions of German-speaking travelers with properties worldwide.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/check24-logo.png",
+    icon: "/lovable-uploads/check24-logo.png",
     categories: ["OTA", "Europe", "Germany"],
     slug: "check24",
     longDescription: "Check24 is Germany's largest online comparison portal and one of Europe's leading travel booking platforms. With over 15 million customers and a dominant presence in German-speaking markets (Germany, Austria, Switzerland), Check24 provides hotels and accommodations with direct access to high-value European travelers. Known for its comprehensive comparison features and trusted brand reputation, Check24 is essential for properties targeting the lucrative German travel market.",
@@ -3184,7 +3225,7 @@ export const integrations: Integration[] = [
     id: "nuzul",
     name: "Nuzul",
     description: "Cloud-based property management system providing comprehensive hotel operations management and channel connectivity.",
-    icon: "https://storage.googleapis.com/your-bucket/placeholder-logo.png",
+    icon: "",
     categories: ["PMS", "Middle East"],
     slug: "nuzul",
     website: "https://www.nuzul.com/"
@@ -3193,7 +3234,7 @@ export const integrations: Integration[] = [
     id: "vhp--part-of-sindata",
     name: "VHP ( Part of Sindata)",
     description: "Cloud-based property management system providing comprehensive hotel operations management and channel connectivity.",
-    icon: "https://storage.googleapis.com/your-bucket/placeholder-logo.png",
+    icon: "",
     categories: ["PMS", "Asia Pacific"],
     slug: "vhp--part-of-sindata",
     website: "https://sindata.net/"
@@ -3202,7 +3243,7 @@ export const integrations: Integration[] = [
     id: "lejuezgroup-proxy-to-opera",
     name: "Lejuezgroup (Proxy to Opera)",
     description: "Cloud-based property management system providing comprehensive hotel operations management and channel connectivity.",
-    icon: "https://storage.googleapis.com/your-bucket/placeholder-logo.png",
+    icon: "",
     categories: ["PMS", "Americas"],
     slug: "lejuezgroup-proxy-to-opera",
     website: "https://lejuezgroup.com/"
@@ -3211,7 +3252,7 @@ export const integrations: Integration[] = [
     id: "cropsly",
     name: "Cropsly",
     description: "Cloud-based property management system providing comprehensive hotel operations management and channel connectivity.",
-    icon: "https://storage.googleapis.com/your-bucket/placeholder-logo.png",
+    icon: "",
     categories: ["PMS", "Asia Pacific"],
     slug: "cropsly",
     website: "https://runhotel.io/"
@@ -3220,7 +3261,7 @@ export const integrations: Integration[] = [
     id: "stellarstay",
     name: "Stellarstay",
     description: "Cloud-based property management system providing comprehensive hotel operations management and channel connectivity.",
-    icon: "https://storage.googleapis.com/your-bucket/placeholder-logo.png",
+    icon: "",
     categories: ["PMS", "Americas"],
     slug: "stellarstay",
     website: "https://www.stellarstay.com/"
@@ -3229,7 +3270,7 @@ export const integrations: Integration[] = [
     id: "pumapro",
     name: "Pumapro",
     description: "Cloud-based property management system providing comprehensive hotel operations management and channel connectivity.",
-    icon: "https://storage.googleapis.com/your-bucket/placeholder-logo.png",
+    icon: "",
     categories: ["PMS", "Asia Pacific"],
     slug: "pumapro",
     website: "https://pumapro.com.au/"
@@ -3238,7 +3279,7 @@ export const integrations: Integration[] = [
     id: "easyrev",
     name: "Easyrev",
     description: "Cloud-based property management system providing comprehensive hotel operations management and channel connectivity.",
-    icon: "https://storage.googleapis.com/your-bucket/placeholder-logo.png",
+    icon: "",
     categories: ["PMS", "Americas"],
     slug: "easyrev",
     website: "https://easyrev.com.br/"
@@ -3247,7 +3288,7 @@ export const integrations: Integration[] = [
     id: "baras",
     name: "Baras",
     description: "Cloud-based property management system providing comprehensive hotel operations management and channel connectivity.",
-    icon: "https://storage.googleapis.com/your-bucket/placeholder-logo.png",
+    icon: "",
     categories: ["PMS", "Middle East"],
     slug: "baras",
     website: "https://barasglobal.com"
@@ -3256,7 +3297,7 @@ export const integrations: Integration[] = [
     id: "rabt",
     name: "Rabt",
     description: "Cloud-based property management system providing comprehensive hotel operations management and channel connectivity.",
-    icon: "https://storage.googleapis.com/your-bucket/placeholder-logo.png",
+    icon: "",
     categories: ["PMS", "Middle East"],
     slug: "rabt",
     website: "https://www.rabt.solutions/en/home"
@@ -3265,7 +3306,7 @@ export const integrations: Integration[] = [
     id: "tranquiloh",
     name: "Tranquiloh",
     description: "Cloud-based property management system providing comprehensive hotel operations management and channel connectivity.",
-    icon: "https://storage.googleapis.com/your-bucket/placeholder-logo.png",
+    icon: "",
     categories: ["PMS", "Americas"],
     slug: "tranquiloh",
     website: "https://www.tranquiloh.tech"
@@ -3274,7 +3315,7 @@ export const integrations: Integration[] = [
     id: "fortravel",
     name: "Fortravel",
     description: "Cloud-based property management system providing comprehensive hotel operations management and channel connectivity.",
-    icon: "https://storage.googleapis.com/your-bucket/placeholder-logo.png",
+    icon: "",
     categories: ["PMS", "Europe"],
     slug: "fortravel",
     website: "https://forhotel.eu/en"
@@ -3283,7 +3324,7 @@ export const integrations: Integration[] = [
     id: "semantic",
     name: "Semantic",
     description: "Cloud-based property management system providing comprehensive hotel operations management and channel connectivity.",
-    icon: "https://storage.googleapis.com/your-bucket/placeholder-logo.png",
+    icon: "",
     categories: ["PMS", "Europe"],
     slug: "semantic",
     website: "https://semantic.gr/"
@@ -3292,7 +3333,7 @@ export const integrations: Integration[] = [
     id: "spylanditalia",
     name: "Spylanditalia",
     description: "Cloud-based property management system providing comprehensive hotel operations management and channel connectivity.",
-    icon: "https://storage.googleapis.com/your-bucket/placeholder-logo.png",
+    icon: "",
     categories: ["PMS", "Europe"],
     slug: "spylanditalia",
     website: "https://keymate.it/"
@@ -3301,7 +3342,7 @@ export const integrations: Integration[] = [
     id: "develab",
     name: "Develab",
     description: "Cloud-based property management system providing comprehensive hotel operations management and channel connectivity.",
-    icon: "https://storage.googleapis.com/your-bucket/placeholder-logo.png",
+    icon: "",
     categories: ["PMS", "Asia Pacific"],
     slug: "develab",
     website: "https://develab.io/"
@@ -3310,7 +3351,7 @@ export const integrations: Integration[] = [
     id: "trvmglobal",
     name: "Trvmglobal",
     description: "Cloud-based property management system providing comprehensive hotel operations management and channel connectivity.",
-    icon: "https://storage.googleapis.com/your-bucket/placeholder-logo.png",
+    icon: "",
     categories: ["PMS", "Asia Pacific"],
     slug: "trvmglobal",
     website: "https://www.trvmglobal.com/"
@@ -3319,7 +3360,7 @@ export const integrations: Integration[] = [
     id: "tunn3lcom",
     name: "tunn3l.com",
     description: "Cloud-based property management system providing comprehensive hotel operations management and channel connectivity.",
-    icon: "https://storage.googleapis.com/your-bucket/placeholder-logo.png",
+    icon: "",
     categories: ["PMS", "Europe"],
     slug: "tunn3lcom",
     website: "https://www.tunn3l.com"
@@ -3328,7 +3369,7 @@ export const integrations: Integration[] = [
     id: "etg",
     name: "Etg",
     description: "Cloud-based property management system providing comprehensive hotel operations management and channel connectivity.",
-    icon: "https://storage.googleapis.com/your-bucket/placeholder-logo.png",
+    icon: "",
     categories: ["PMS", "Europe"],
     slug: "etg",
     website: "https://pms.etg.al/"
@@ -3337,7 +3378,7 @@ export const integrations: Integration[] = [
     id: "iroom",
     name: "iroom",
     description: "Cloud-based property management system providing comprehensive hotel operations management and channel connectivity.",
-    icon: "https://storage.googleapis.com/your-bucket/placeholder-logo.png",
+    icon: "",
     categories: ["PMS", "Middle East"],
     slug: "iroom",
     website: "https://iroom.ai/"
@@ -3346,7 +3387,7 @@ export const integrations: Integration[] = [
     id: "taskbeast",
     name: "Taskbeast",
     description: "Cloud-based property management system providing comprehensive hotel operations management and channel connectivity.",
-    icon: "https://storage.googleapis.com/your-bucket/placeholder-logo.png",
+    icon: "",
     categories: ["PMS", "Europe"],
     slug: "taskbeast",
     website: "https://www.taskbeast.ai/"
@@ -3355,7 +3396,7 @@ export const integrations: Integration[] = [
     id: "altezza",
     name: "Altezza",
     description: "Cloud-based property management system providing comprehensive hotel operations management and channel connectivity.",
-    icon: "https://storage.googleapis.com/your-bucket/placeholder-logo.png",
+    icon: "",
     categories: ["PMS"],
     slug: "altezza",
     website: "https://altezzatravel.com/"
@@ -3364,7 +3405,7 @@ export const integrations: Integration[] = [
     id: "viatoratech",
     name: "Viatoratech",
     description: "Cloud-based property management system providing comprehensive hotel operations management and channel connectivity.",
-    icon: "https://storage.googleapis.com/your-bucket/placeholder-logo.png",
+    icon: "",
     categories: ["PMS", "Middle East"],
     slug: "viatoratech",
     website: "https://viatoratech.com/"
@@ -3373,7 +3414,7 @@ export const integrations: Integration[] = [
     id: "rukiyation",
     name: "Rukiyation",
     description: "Cloud-based property management system providing comprehensive hotel operations management and channel connectivity.",
-    icon: "https://storage.googleapis.com/your-bucket/placeholder-logo.png",
+    icon: "",
     categories: ["PMS", "Asia Pacific"],
     slug: "rukiyation",
     website: "https://rukiyezara.com/"
@@ -3382,7 +3423,7 @@ export const integrations: Integration[] = [
     id: "digistay",
     name: "Digistay",
     description: "Cloud-based property management system providing comprehensive hotel operations management and channel connectivity.",
-    icon: "https://storage.googleapis.com/your-bucket/placeholder-logo.png",
+    icon: "",
     categories: ["PMS", "Asia Pacific"],
     slug: "digistay",
     website: "https://digistay.ai/"
@@ -3391,7 +3432,7 @@ export const integrations: Integration[] = [
     id: "fortran-house",
     name: "Fortran House",
     description: "Cloud-based property management system providing comprehensive hotel operations management and channel connectivity.",
-    icon: "https://storage.googleapis.com/your-bucket/placeholder-logo.png",
+    icon: "",
     categories: ["PMS", "Africa"],
     slug: "fortran-house",
     website: "https://fortranhouse.com/"
@@ -3400,7 +3441,7 @@ export const integrations: Integration[] = [
     id: "art2fly",
     name: "Art2fly",
     description: "Cloud-based property management system providing comprehensive hotel operations management and channel connectivity.",
-    icon: "https://storage.googleapis.com/your-bucket/placeholder-logo.png",
+    icon: "",
     categories: ["PMS", "Americas"],
     slug: "art2fly",
     website: "https://www.art2travel.com/"
@@ -3409,7 +3450,7 @@ export const integrations: Integration[] = [
     id: "abouthotelier",
     name: "abouthotelier",
     description: "Cloud-based property management system providing comprehensive hotel operations management and channel connectivity.",
-    icon: "https://storage.googleapis.com/your-bucket/placeholder-logo.png",
+    icon: "",
     categories: ["PMS", "Europe"],
     slug: "abouthotelier",
     website: "https://abouthotelier.com"
@@ -3418,7 +3459,7 @@ export const integrations: Integration[] = [
     id: "heyandes",
     name: "Heyandes",
     description: "Cloud-based property management system providing comprehensive hotel operations management and channel connectivity.",
-    icon: "https://storage.googleapis.com/your-bucket/placeholder-logo.png",
+    icon: "",
     categories: ["PMS", "Americas"],
     slug: "heyandes",
     website: "https://www.heyandes.com/"
@@ -3427,7 +3468,7 @@ export const integrations: Integration[] = [
     id: "zuzu",
     name: "Zuzu Hospitality",
     description: "All-in-one hospitality platform combining human expertise and advanced technology to help independent hotels thrive across Southeast Asia and India with smart pricing, revenue management, and distribution.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/zuzu-logo.webp",
+    icon: "/lovable-uploads/zuzu-logo.webp",
     categories: ["PMS", "Asia Pacific"],
     slug: "zuzu",
     website: "https://zuzuhospitality.com/"
@@ -3436,7 +3477,7 @@ export const integrations: Integration[] = [
     id: "cohosting",
     name: "Cohosting",
     description: "Cloud-based property management system providing comprehensive hotel operations management and channel connectivity.",
-    icon: "https://storage.googleapis.com/your-bucket/placeholder-logo.png",
+    icon: "",
     categories: ["PMS", "Americas"],
     slug: "cohosting",
     website: "https://cohosting.com/"
@@ -3445,7 +3486,7 @@ export const integrations: Integration[] = [
     id: "frontdesk-tech-ltda",
     name: "Frontdesk Tech LTDA",
     description: "Cloud-based property management system providing comprehensive hotel operations management and channel connectivity.",
-    icon: "https://storage.googleapis.com/your-bucket/placeholder-logo.png",
+    icon: "",
     categories: ["PMS", "Americas"],
     slug: "frontdesk-tech-ltda",
     website: "https://frontdesktech.com/"
@@ -3454,7 +3495,7 @@ export const integrations: Integration[] = [
     id: "joodlab",
     name: "Joodlab",
     description: "Cloud-based property management system providing comprehensive hotel operations management and channel connectivity.",
-    icon: "https://storage.googleapis.com/your-bucket/placeholder-logo.png",
+    icon: "",
     categories: ["PMS", "Middle East"],
     slug: "joodlab",
     website: "https://www.joodlab.com/"
@@ -3463,7 +3504,7 @@ export const integrations: Integration[] = [
     id: "lsisoftware",
     name: "Lsisoftware",
     description: "Cloud-based property management system providing comprehensive hotel operations management and channel connectivity.",
-    icon: "https://storage.googleapis.com/your-bucket/placeholder-logo.png",
+    icon: "",
     categories: ["PMS", "Europe"],
     slug: "lsisoftware",
     website: "https://www.lsisoftware.pl/"
@@ -3472,7 +3513,7 @@ export const integrations: Integration[] = [
     id: "arealy",
     name: "Arealy",
     description: "Cloud-based property management system providing comprehensive hotel operations management and channel connectivity.",
-    icon: "https://storage.googleapis.com/your-bucket/placeholder-logo.png",
+    icon: "",
     categories: ["PMS", "Europe"],
     slug: "arealy",
     website: "https://www.area.ly/"
@@ -3481,7 +3522,7 @@ export const integrations: Integration[] = [
     id: "tuzgle",
     name: "Tuzgle",
     description: "Cloud-based property management system providing comprehensive hotel operations management and channel connectivity.",
-    icon: "https://storage.googleapis.com/your-bucket/placeholder-logo.png",
+    icon: "",
     categories: ["PMS", "Americas"],
     slug: "tuzgle",
     website: "https://tuzgle-it.com/"
@@ -3490,7 +3531,7 @@ export const integrations: Integration[] = [
     id: "amiqa",
     name: "Amiqa",
     description: "Cloud-based property management system providing comprehensive hotel operations management and channel connectivity.",
-    icon: "https://storage.googleapis.com/your-bucket/placeholder-logo.png",
+    icon: "",
     categories: ["PMS", "Europe"],
     slug: "amiqa",
     website: "https://amiqa.io/"
@@ -3499,7 +3540,7 @@ export const integrations: Integration[] = [
     id: "homeit",
     name: "Homeit",
     description: "Cloud-based property management system providing comprehensive hotel operations management and channel connectivity.",
-    icon: "https://storage.googleapis.com/your-bucket/placeholder-logo.png",
+    icon: "",
     categories: ["PMS", "Europe"],
     slug: "homeit",
     website: "https://homeit.io/"
@@ -3508,7 +3549,7 @@ export const integrations: Integration[] = [
     id: "hospify",
     name: "Hospify",
     description: "Cloud-based property management system providing comprehensive hotel operations management and channel connectivity.",
-    icon: "https://storage.googleapis.com/your-bucket/placeholder-logo.png",
+    icon: "",
     categories: ["PMS"],
     slug: "hospify",
     website: "https://hospify.app/"
@@ -3517,7 +3558,7 @@ export const integrations: Integration[] = [
     id: "xlayertechnologies",
     name: "Xlayertechnologies",
     description: "Cloud-based property management system providing comprehensive hotel operations management and channel connectivity.",
-    icon: "https://storage.googleapis.com/your-bucket/placeholder-logo.png",
+    icon: "",
     categories: ["PMS", "Asia Pacific"],
     slug: "xlayertechnologies",
     website: "https://xlayertechnologies.com"
@@ -3526,7 +3567,7 @@ export const integrations: Integration[] = [
     id: "mettle-tec",
     name: "Mettle Tec",
     description: "Cloud-based property management system providing comprehensive hotel operations management and channel connectivity.",
-    icon: "https://storage.googleapis.com/your-bucket/placeholder-logo.png",
+    icon: "",
     categories: ["PMS", "Asia Pacific"],
     slug: "mettle-tec",
     website: "https://mettletech.co/"
@@ -3535,7 +3576,7 @@ export const integrations: Integration[] = [
     id: "cico-technologies-llc",
     name: "CICO Technologies LLC",
     description: "Cloud-based property management system providing comprehensive hotel operations management and channel connectivity.",
-    icon: "https://storage.googleapis.com/your-bucket/placeholder-logo.png",
+    icon: "",
     categories: ["PMS", "Asia Pacific"],
     slug: "cico-technologies-llc",
     website: "https://www.cicogroup.com/"
@@ -3544,7 +3585,7 @@ export const integrations: Integration[] = [
     id: "aron-cloud",
     name: "Aron Cloud",
     description: "Cloud-based property management system providing comprehensive hotel operations management and channel connectivity.",
-    icon: "https://storage.googleapis.com/your-bucket/placeholder-logo.png",
+    icon: "",
     categories: ["PMS", "Europe"],
     slug: "aron-cloud",
     website: "https://www.arhon.ch/"
@@ -3553,7 +3594,7 @@ export const integrations: Integration[] = [
     id: "gopaddi",
     name: "Gopaddi",
     description: "Cloud-based property management system providing comprehensive hotel operations management and channel connectivity.",
-    icon: "https://storage.googleapis.com/your-bucket/placeholder-logo.png",
+    icon: "",
     categories: ["PMS", "Africa"],
     slug: "gopaddi",
     website: "https://www.gopaddi.com/en"
@@ -3562,7 +3603,7 @@ export const integrations: Integration[] = [
     id: "sentineltech",
     name: "SentinelTech",
     description: "Cloud-based property management system providing comprehensive hotel operations management and channel connectivity.",
-    icon: "https://storage.googleapis.com/your-bucket/placeholder-logo.png",
+    icon: "",
     categories: ["PMS", "Asia Pacific"],
     slug: "sentineltech",
     website: "https://www.sentineltech.com/"
@@ -3571,7 +3612,7 @@ export const integrations: Integration[] = [
     id: "digital-solusindo",
     name: "Digital Solusindo",
     description: "Cloud-based property management system providing comprehensive hotel operations management and channel connectivity.",
-    icon: "https://storage.googleapis.com/your-bucket/placeholder-logo.png",
+    icon: "",
     categories: ["PMS", "Asia Pacific"],
     slug: "digital-solusindo",
     website: "https://www.digitalsolusindo.id/"
@@ -3580,7 +3621,7 @@ export const integrations: Integration[] = [
     id: "uno-hotelsde",
     name: "uno-hotels.de",
     description: "Cloud-based property management system providing comprehensive hotel operations management and channel connectivity.",
-    icon: "https://storage.googleapis.com/your-bucket/placeholder-logo.png",
+    icon: "",
     categories: ["PMS", "Europe"],
     slug: "uno-hotelsde",
     website: "https://uno-hotels.de/"
@@ -3589,7 +3630,7 @@ export const integrations: Integration[] = [
     id: "raumschmidede",
     name: "raumschmide.de",
     description: "Cloud-based property management system providing comprehensive hotel operations management and channel connectivity.",
-    icon: "https://storage.googleapis.com/your-bucket/placeholder-logo.png",
+    icon: "",
     categories: ["PMS", "Europe"],
     slug: "raumschmidede",
     website: "https://www.raumschmiede.de"
@@ -3598,7 +3639,7 @@ export const integrations: Integration[] = [
     id: "visitorappco",
     name: "visitorapp.co",
     description: "Cloud-based property management system providing comprehensive hotel operations management and channel connectivity.",
-    icon: "https://storage.googleapis.com/your-bucket/placeholder-logo.png",
+    icon: "",
     categories: ["PMS", "Europe"],
     slug: "visitorappco",
     website: "https://www.visitorapp.co/"
@@ -3607,7 +3648,7 @@ export const integrations: Integration[] = [
     id: "hostmesa",
     name: "hostme.sa",
     description: "Cloud-based property management system providing comprehensive hotel operations management and channel connectivity.",
-    icon: "https://storage.googleapis.com/your-bucket/placeholder-logo.png",
+    icon: "",
     categories: ["PMS", "Middle East"],
     slug: "hostmesa",
     website: "https://hostme.sa/en/home-page/"
@@ -3616,7 +3657,7 @@ export const integrations: Integration[] = [
     id: "sooninn",
     name: "Sooninn",
     description: "Cloud-based property management system providing comprehensive hotel operations management and channel connectivity.",
-    icon: "https://storage.googleapis.com/your-bucket/placeholder-logo.png",
+    icon: "",
     categories: ["PMS", "Asia Pacific"],
     slug: "sooninn",
     website: "https://www.sooninn.com.tw/"
@@ -3625,7 +3666,7 @@ export const integrations: Integration[] = [
     id: "biloki",
     name: "biloki",
     description: "Cloud-based property management system providing comprehensive hotel operations management and channel connectivity.",
-    icon: "https://storage.googleapis.com/your-bucket/placeholder-logo.png",
+    icon: "",
     categories: ["PMS", "Europe"],
     slug: "biloki",
     website: "https://www.biloki.fr/"
@@ -3634,7 +3675,7 @@ export const integrations: Integration[] = [
     id: "atflow",
     name: "atflow",
     description: "Cloud-based property management system providing comprehensive hotel operations management and channel connectivity.",
-    icon: "https://storage.googleapis.com/your-bucket/placeholder-logo.png",
+    icon: "",
     categories: ["PMS", "Europe"],
     slug: "atflow",
     website: "https://atflow.fi/"
@@ -3643,7 +3684,7 @@ export const integrations: Integration[] = [
     id: "lodgix",
     name: "lodgix",
     description: "Cloud-based property management system providing comprehensive hotel operations management and channel connectivity.",
-    icon: "https://storage.googleapis.com/your-bucket/placeholder-logo.png",
+    icon: "",
     categories: ["PMS", "Americas"],
     slug: "lodgix",
     website: "https://www.lodgix.com/"
@@ -3652,7 +3693,7 @@ export const integrations: Integration[] = [
     id: "servos",
     name: "servos",
     description: "Cloud-based property management system providing comprehensive hotel operations management and channel connectivity.",
-    icon: "https://storage.googleapis.com/your-bucket/placeholder-logo.png",
+    icon: "",
     categories: ["PMS", "Europe"],
     slug: "servos",
     website: "https://servos.dk/"
@@ -3663,7 +3704,7 @@ export const integrations: Integration[] = [
     id: "support@imobiznetsinc",
     name: "Imobiznets",
     description: "Integrated PMS and ERP platform combining property management with enterprise resource planning for hospitality businesses.",
-    icon: "https://storage.googleapis.com/your-bucket/placeholder-logo.png",
+    icon: "",
     categories: ["PMS"],
     slug: "imobiznets",
     website: "https://imobiznets.inc/"
@@ -3673,7 +3714,7 @@ export const integrations: Integration[] = [
     id: "o-sócio-hoteleiro",
     name: "O Sócio Hoteleiro",
     description: "Cloud-based property management system providing comprehensive hotel operations management and channel connectivity.",
-    icon: "https://storage.googleapis.com/your-bucket/placeholder-logo.png",
+    icon: "",
     categories: ["PMS", "Americas"],
     slug: "o-socio-hoteleiro",
     website: "https://osociohoteleiro.com.br/"
@@ -3682,7 +3723,7 @@ export const integrations: Integration[] = [
     id: "lodge-easy-srl",
     name: "Lodge Easy SRL",
     description: "Cloud-based property management system providing comprehensive hotel operations management and channel connectivity.",
-    icon: "https://storage.googleapis.com/your-bucket/placeholder-logo.png",
+    icon: "",
     categories: ["PMS", "Europe"],
     slug: "lodge-easy-srl",
     website: "https://lodgeasy.it/en/"
@@ -3691,7 +3732,7 @@ export const integrations: Integration[] = [
     id: "guestbox-inc",
     name: "GuestBox Inc.",
     description: "Cloud-based property management system providing comprehensive hotel operations management and channel connectivity.",
-    icon: "https://storage.googleapis.com/your-bucket/placeholder-logo.png",
+    icon: "",
     categories: ["PMS", "Americas"],
     slug: "guestbox-inc",
     website: "https://guestbox.tv/"
@@ -3700,7 +3741,7 @@ export const integrations: Integration[] = [
     id: "taskyinn",
     name: "Taskyinn",
     description: "Cloud-based property management system providing comprehensive hotel operations management and channel connectivity.",
-    icon: "https://storage.googleapis.com/your-bucket/placeholder-logo.png",
+    icon: "",
     categories: ["PMS", "Middle East"],
     slug: "taskyinn",
     website: "https://www.taskyinn.com/"
@@ -3709,7 +3750,7 @@ export const integrations: Integration[] = [
     id: "muntadaacom",
     name: "MUNTADAACOM",
     description: "Cloud-based property management system providing comprehensive hotel operations management and channel connectivity.",
-    icon: "https://storage.googleapis.com/your-bucket/placeholder-logo.png",
+    icon: "",
     categories: ["PMS", "Middle East"],
     slug: "muntadaacom",
     website: "https://www.muntadaa.com/"
@@ -3718,7 +3759,7 @@ export const integrations: Integration[] = [
     id: "stayntouch",
     name: "Stayntouch",
     description: "Cloud-native, full-featured hotel property management system trusted by leading independent hotels, hotel chains, and management companies worldwide. Offers multi-property management, mobile check-in, automated upselling, and seamless integrations.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/stayntouch-logo.jpeg",
+    icon: "/lovable-uploads/stayntouch-logo.jpeg",
     categories: ["PMS", "Americas"],
     slug: "stayntouch",
     website: "https://www.stayntouch.com/"
@@ -3727,7 +3768,7 @@ export const integrations: Integration[] = [
     id: "sahab-tech",
     name: "Sahab-Tech",
     description: "Cloud-based property management system providing comprehensive hotel operations management and channel connectivity.",
-    icon: "https://storage.googleapis.com/your-bucket/placeholder-logo.png",
+    icon: "",
     categories: ["PMS", "Middle East"],
     slug: "sahab-tech",
     website: "https://sahabhotels.com/"
@@ -3736,7 +3777,7 @@ export const integrations: Integration[] = [
     id: "rjourney",
     name: "RJourney",
     description: "Cloud-based property management system providing comprehensive hotel operations management and channel connectivity.",
-    icon: "https://storage.googleapis.com/your-bucket/placeholder-logo.png",
+    icon: "",
     categories: ["PMS", "Americas"],
     slug: "rjourney",
     website: "https://rjourney.com/"
@@ -3745,7 +3786,7 @@ export const integrations: Integration[] = [
     id: "hotels-task",
     name: "Hotels Task",
     description: "Cloud-based property management system providing comprehensive hotel operations management and channel connectivity.",
-    icon: "https://storage.googleapis.com/your-bucket/placeholder-logo.png",
+    icon: "",
     categories: ["PMS", "Middle East"],
     slug: "hotels-task",
     website: "https://hotelstask.com"
@@ -3754,7 +3795,7 @@ export const integrations: Integration[] = [
     id: "turbosuite",
     name: "Turbosuite",
     description: "Cloud-based property management system providing comprehensive hotel operations management and channel connectivity.",
-    icon: "https://storage.googleapis.com/your-bucket/placeholder-logo.png",
+    icon: "",
     categories: ["PMS", "Europe"],
     slug: "turbosuite",
     website: "https://turbosuite.com/en/"
@@ -3764,7 +3805,7 @@ export const integrations: Integration[] = [
     id: "resarva-software-&-technology",
     name: "Resarva Software & Technology",
     description: "Cloud-based property management system providing comprehensive hotel operations management and channel connectivity.",
-    icon: "https://storage.googleapis.com/your-bucket/placeholder-logo.png",
+    icon: "",
     categories: ["PMS", "Middle East"],
     slug: "resarva-software-and-technology",
     website: "https://resarva.com/"
@@ -3773,7 +3814,7 @@ export const integrations: Integration[] = [
     id: "resboxcom",
     name: "resbox.com",
     description: "Cloud-based property management system providing comprehensive hotel operations management and channel connectivity.",
-    icon: "https://storage.googleapis.com/your-bucket/placeholder-logo.png",
+    icon: "",
     categories: ["PMS", "Middle East"],
     slug: "resboxcom",
     website: "https://resbox.com"
@@ -3782,7 +3823,7 @@ export const integrations: Integration[] = [
     id: "symple-host",
     name: "Symple Host",
     description: "Cloud-based property management system providing comprehensive hotel operations management and channel connectivity.",
-    icon: "https://storage.googleapis.com/your-bucket/placeholder-logo.png",
+    icon: "",
     categories: ["PMS", "Asia Pacific"],
     slug: "symple-host",
     website: "https://www.symplehost.ai/"
@@ -3791,7 +3832,7 @@ export const integrations: Integration[] = [
     id: "rushd",
     name: "Rushd",
     description: "Cloud-based property management system providing comprehensive hotel operations management and channel connectivity.",
-    icon: "https://storage.googleapis.com/your-bucket/placeholder-logo.png",
+    icon: "",
     categories: ["PMS", "Middle East"],
     slug: "rushd",
     website: "https://rushd.tech"
@@ -3800,7 +3841,7 @@ export const integrations: Integration[] = [
     id: "sedgeosio",
     name: "sedgeos.io",
     description: "Cloud-based property management system providing comprehensive hotel operations management and channel connectivity.",
-    icon: "https://storage.googleapis.com/your-bucket/placeholder-logo.png",
+    icon: "",
     categories: ["PMS", "Asia Pacific"],
     slug: "sedgeosio",
     website: "https://sedgeos.io/"
@@ -3809,7 +3850,7 @@ export const integrations: Integration[] = [
     id: "zzzzebracom",
     name: "ZZZzebra.com",
     description: "Cloud-based property management system providing comprehensive hotel operations management and channel connectivity.",
-    icon: "https://storage.googleapis.com/your-bucket/placeholder-logo.png",
+    icon: "",
     categories: ["PMS", "Africa"],
     slug: "zzzzebracom",
     website: "https://zzzzebra.com/"
@@ -3818,7 +3859,7 @@ export const integrations: Integration[] = [
     id: "kassavo",
     name: "Kassavo",
     description: "Intelligent short-stay property management platform combining technology and specialized teams to automate reservations, cleaning, and pricing — helping hosts increase income with minimal effort.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/pms-kassavo.png",
+    icon: "/lovable-uploads/pms-kassavo.png",
     categories: ["PMS", "Vacation Rentals"],
     slug: "kassavo",
     website: "https://kassavo.com/"
@@ -3827,7 +3868,7 @@ export const integrations: Integration[] = [
     id: "hotelbee",
     name: "HotelBee",
     description: "Comprehensive cloud-based hotel management software that streamlines day-to-day operations and provides valuable business insights for hotels, B&Bs, hostels, and resorts worldwide.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/pms-hotelbee.png",
+    icon: "/lovable-uploads/pms-hotelbee.png",
     categories: ["PMS", "Hotels"],
     slug: "hotelbee",
     website: "https://hotelbee.co/"
@@ -3836,7 +3877,7 @@ export const integrations: Integration[] = [
     id: "mrhewbuc",
     name: "Mr. Hewbuc",
     description: "Custom Salesforce-integrated solutions provider offering powerful integrations, intelligent automation, and AI-enhanced services for hospitality and property management businesses.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/pms-mrhewbuc.png",
+    icon: "/lovable-uploads/pms-mrhewbuc.png",
     categories: ["PMS"],
     slug: "mrhewbuc",
     website: "https://mrhewbuc.com/"
@@ -3845,7 +3886,7 @@ export const integrations: Integration[] = [
     id: "balimmo",
     name: "Balimmo",
     description: "Full-service villa investment and rental management platform in Bali, handling legal, construction, and rental operations for property investors seeking high-yield returns.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/pms-balimmo.png",
+    icon: "/lovable-uploads/pms-balimmo.png",
     categories: ["PMS", "Vacation Rentals", "Asia Pacific"],
     slug: "balimmo",
     website: "https://balimmo.fr/"
@@ -3854,7 +3895,7 @@ export const integrations: Integration[] = [
     id: "nowistay",
     name: "nowistay",
     description: "AI co-host and digital welcome book for vacation rentals that automates guest communication and team management, helping property managers save time, boost review scores, and increase occupancy.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/pms-nowistay.png",
+    icon: "/lovable-uploads/pms-nowistay.png",
     categories: ["PMS", "Vacation Rentals"],
     slug: "nowistay",
     website: "https://nowistay.com/"
@@ -3863,7 +3904,7 @@ export const integrations: Integration[] = [
     id: "checkedinn",
     name: "CheckedInn",
     description: "Intelligent hotel PMS solution for Germany offering intuitive management of master data, reporting, staff scheduling, reservations, and occupancy planning.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/pms-checkedinn.ico",
+    icon: "/lovable-uploads/pms-checkedinn.ico",
     categories: ["PMS", "Hotels", "Europe"],
     slug: "checkedinn",
     website: "https://checked-inn.de/"
@@ -3872,7 +3913,7 @@ export const integrations: Integration[] = [
     id: "mcontigo",
     name: "MContigo",
     description: "Digital development and technology company building web, mobile, and app solutions for property management and hospitality businesses.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/pms-mcontigo.png",
+    icon: "/lovable-uploads/pms-mcontigo.png",
     categories: ["PMS"],
     slug: "mcontigo",
     website: "https://mcontigo.com/"
@@ -3881,7 +3922,7 @@ export const integrations: Integration[] = [
     id: "guthuegle",
     name: "Gut Hügle",
     description: "Family-friendly adventure farm and holiday destination near Lake Constance, Germany, offering holiday apartments, restaurant, spa, and event facilities.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/pms-kassavo.png",
+    icon: "/lovable-uploads/pms-kassavo.png",
     categories: ["PMS", "Europe"],
     slug: "guthuegle",
     website: "https://guthuegle.de/"
@@ -3890,7 +3931,7 @@ export const integrations: Integration[] = [
     id: "bedandbreakfastitaly",
     name: "Bed-and-Breakfast.it",
     description: "Italy's leading B&B booking portal connecting travellers with thousands of bed and breakfasts, guesthouses, and small accommodations across Italy. One of the most visited Italian travel platforms for independent accommodation.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/ota-bedandbreakfast-it.png",
+    icon: "/lovable-uploads/ota-bedandbreakfast-it.png",
     categories: ["OTA", "Europe"],
     slug: "bedandbreakfastitaly",
     website: "https://www.bed-and-breakfast.it/"
@@ -3899,7 +3940,7 @@ export const integrations: Integration[] = [
     id: "world2meet",
     name: "World2Meet (W2M)",
     description: "One of Europe's leading travel companies and tour operators, part of the Iberostar Group. W2M connects hotels and accommodation providers with a vast network of European travellers through its B2B and B2C distribution channels, specialising in sun and beach, city breaks, and holiday packages.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/ota-world2meet.jpeg",
+    icon: "/lovable-uploads/ota-world2meet.jpeg",
     categories: ["OTA", "Europe", "B2B"],
     slug: "world2meet",
     website: "https://www.w2m.travel/"
@@ -3908,7 +3949,7 @@ export const integrations: Integration[] = [
     id: "uibsplatform",
     name: "UIBS | hospitality. platform",
     description: "Microsoft Azure-certified CRS, Booking Engine, CRM, CMS, and core PMS delivering seamless, fully-branded website guest experiences and a unified single-source-of-truth platform for hoteliers and vacation rentals. Connects to Channex to keep availability, rates, inventory, and reservations accurate across all channels.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/pms-uibs.svg",
+    icon: "/lovable-uploads/pms-uibs.svg",
     categories: ["PMS", "IBE", "Europe", "Global"],
     slug: "uibsplatform",
     website: "https://hospitality.uibs.net"
@@ -3917,7 +3958,7 @@ export const integrations: Integration[] = [
     id: "gatein",
     name: "GateIn",
     description: "UAE-based property management and hospitality technology platform providing hotels and accommodation providers with tools for reservations, guest management, and operations. Serving the Middle East hospitality market.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/pms-gatein.png",
+    icon: "/lovable-uploads/pms-gatein.png",
     categories: ["PMS", "Middle East"],
     slug: "gatein",
     website: "https://gatein.ae/en"
@@ -3926,7 +3967,7 @@ export const integrations: Integration[] = [
     id: "transitor",
     name: "Transitor (Comers)",
     description: "Swedish hospitality management system by Comers, offering property management, booking, and guest communication tools for accommodation providers across Scandinavia and Europe.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/pms-transitor.png",
+    icon: "/lovable-uploads/pms-transitor.png",
     categories: ["PMS", "Europe"],
     slug: "transitor",
     website: "https://comers.se"
@@ -3935,7 +3976,7 @@ export const integrations: Integration[] = [
     id: "roamhome",
     name: "Roamhome",
     description: "India-based property management platform designed for vacation rentals, homestays, and boutique accommodations. Provides booking management, channel connectivity, and guest experience tools for the Indian hospitality market.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/pms-roamhome.webp",
+    icon: "/lovable-uploads/pms-roamhome.webp",
     categories: ["PMS", "Asia"],
     slug: "roamhome",
     website: "https://www.roamhome.in/"
@@ -3944,7 +3985,7 @@ export const integrations: Integration[] = [
     id: "hostomat",
     name: "Hostomat",
     description: "Cloud-based hospitality management software for hotels, guesthouses, and serviced apartments. Provides front desk operations, reservation management, and reporting tools to streamline property operations.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/pms-hostomat.ico",
+    icon: "/lovable-uploads/pms-hostomat.ico",
     categories: ["PMS", "Asia"],
     slug: "hostomat",
     website: "https://www.hostomat.io/"
@@ -3953,7 +3994,7 @@ export const integrations: Integration[] = [
     id: "sitemarq",
     name: "Sitemarq",
     description: "UK-based property management and booking solution for independent hotels and accommodation providers. Offers website booking engines, channel management integration, and guest management tools.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/pms-sitemarq.svg",
+    icon: "/lovable-uploads/pms-sitemarq.svg",
     categories: ["PMS", "Europe"],
     slug: "sitemarq",
     website: "https://sitemarq.com/"
@@ -3962,7 +4003,7 @@ export const integrations: Integration[] = [
     id: "mantavillas",
     name: "Mantavillas",
     description: "Bali-based villa and luxury accommodation management platform serving the Indonesian hospitality market. Provides property management, booking, and guest services for villas and boutique properties.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/pms-mantavillas.webp",
+    icon: "/lovable-uploads/pms-mantavillas.webp",
     categories: ["PMS", "Asia"],
     slug: "mantavillas",
     website: "https://mantavillas.com/"
@@ -3971,7 +4012,7 @@ export const integrations: Integration[] = [
     id: "hostopus",
     name: "HOSTOPUS",
     description: "Turkey-based property management system for hotels, hostels, and vacation rentals. Offers reservation management, front desk operations, and reporting tools designed for the Turkish and regional hospitality market.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/pms-hostopus.ico",
+    icon: "/lovable-uploads/pms-hostopus.ico",
     categories: ["PMS", "Europe", "Middle East"],
     slug: "hostopus",
     website: "https://www.hostopus.co/"
@@ -3980,7 +4021,7 @@ export const integrations: Integration[] = [
     id: "eurocompetence",
     name: "EURO COMPETENCE (Sforhet)",
     description: "Morocco-based hospitality technology provider offering hotel management software and digital solutions for accommodation providers across North Africa and the Middle East.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/pms-eurocompetence.webp",
+    icon: "/lovable-uploads/pms-eurocompetence.webp",
     categories: ["PMS", "Africa", "Middle East"],
     slug: "eurocompetence",
     website: "https://sforhet.ma/"
@@ -3989,7 +4030,7 @@ export const integrations: Integration[] = [
     id: "hotelnative",
     name: "Hotel Native",
     description: "AI-powered hotel management platform from Costa Rica offering smart property management, guest communication, and revenue optimisation tools for independent hotels and boutique properties in Latin America and beyond.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/pms-hotelnative.ico",
+    icon: "/lovable-uploads/pms-hotelnative.ico",
     categories: ["PMS", "Americas"],
     slug: "hotelnative",
     website: "https://hellonative.ai"
@@ -3998,7 +4039,7 @@ export const integrations: Integration[] = [
     id: "emonsite",
     name: "E-monsite",
     description: "French website builder and digital platform that includes accommodation booking and reservation management tools for small hotels, guesthouses, and B&Bs. Widely used by independent accommodation providers in France.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/pms-emonsite.png",
+    icon: "/lovable-uploads/pms-emonsite.png",
     categories: ["PMS", "IBE", "Europe"],
     slug: "emonsite",
     website: "https://www.e-monsite.com"
@@ -4007,7 +4048,7 @@ export const integrations: Integration[] = [
     id: "hotelpalais",
     name: "Hotel Palais d'Orient",
     description: "Moroccan boutique hotel and riad management platform providing reservation management and guest services for traditional Moroccan accommodations and heritage properties.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/pms-hotelpalais.webp",
+    icon: "/lovable-uploads/pms-hotelpalais.webp",
     categories: ["PMS", "Africa"],
     slug: "hotelpalais",
     website: "https://hotelpalaisdorient.com/"
@@ -4016,7 +4057,7 @@ export const integrations: Integration[] = [
     id: "4roomsworldwide",
     name: "4Rooms Worldwide",
     description: "Spain-based global property management and distribution technology for hotels and accommodation providers. Offers multi-property management, booking engine, and channel distribution tools with a focus on international markets.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/pms-4roomsworldwide.webp",
+    icon: "/lovable-uploads/pms-4roomsworldwide.webp",
     categories: ["PMS", "IBE", "Europe", "Global"],
     slug: "4roomsworldwide",
     website: "https://4rooms.tech/"
@@ -4025,7 +4066,7 @@ export const integrations: Integration[] = [
     id: "alsolutions",
     name: "AL Solutions",
     description: "Italian technology company providing custom software solutions for the hospitality sector, including property management systems, booking engines, and digital tools for hotels and accommodation providers across Italy.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/pms-alsolutionsdiarzilliluca.png",
+    icon: "/lovable-uploads/pms-alsolutionsdiarzilliluca.png",
     categories: ["PMS", "Europe"],
     slug: "alsolutions",
     website: "https://www.alsolutions.it"
@@ -4034,7 +4075,7 @@ export const integrations: Integration[] = [
     id: "apar1ments",
     name: "Apar1Ments Living",
     description: "Austria-based serviced apartment and short-term rental management platform. Provides property management, booking, and guest experience tools for urban apartment operators and corporate housing providers.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/pms-apar1mentsliving.jpg",
+    icon: "/lovable-uploads/pms-apar1mentsliving.jpg",
     categories: ["PMS", "Europe"],
     slug: "apar1ments",
     website: "https://apar1ments.com"
@@ -4043,7 +4084,7 @@ export const integrations: Integration[] = [
     id: "apartx",
     name: "Apartx",
     description: "Kazakhstan-based property management platform for apartment rentals and short-term accommodations. Provides booking management, guest communication, and operational tools for Central Asian property managers.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/pms-apartx.ico",
+    icon: "/lovable-uploads/pms-apartx.ico",
     categories: ["PMS", "Asia"],
     slug: "apartx",
     website: "https://apartx.co"
@@ -4052,7 +4093,7 @@ export const integrations: Integration[] = [
     id: "sisreservas",
     name: "Sisreservas",
     description: "Brazilian hotel management and reservation system providing PMS, booking engine, and channel management tools for hotels and pousadas across Brazil. One of Brazil's established hospitality technology solutions.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/pms-sisreservas.png",
+    icon: "/lovable-uploads/pms-sisreservas.png",
     categories: ["PMS", "IBE", "Americas"],
     slug: "sisreservas",
     website: "https://www.sisreservas.com.br/"
@@ -4061,7 +4102,7 @@ export const integrations: Integration[] = [
     id: "bluesquareai",
     name: "BlueSquareAI",
     description: "Albania-based AI-powered property management platform for hotels and vacation rentals. Leverages artificial intelligence for smart pricing, booking optimisation, and guest management automation.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/pms-bluesquareai.png",
+    icon: "/lovable-uploads/pms-bluesquareai.png",
     categories: ["PMS", "Europe"],
     slug: "bluesquareai",
     website: "https://bluesquareai.com/"
@@ -4070,7 +4111,7 @@ export const integrations: Integration[] = [
     id: "bookingfwi",
     name: "Booking FWI",
     description: "Caribbean-based online booking and property management platform serving hotels and accommodations in the French West Indies (FWI). Provides reservation management and distribution tools for Caribbean hospitality providers.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/pms-bookingfwi.png",
+    icon: "/lovable-uploads/pms-bookingfwi.png",
     categories: ["PMS", "IBE", "Americas"],
     slug: "bookingfwi",
     website: "https://demo.bookingfwi.com/"
@@ -4079,7 +4120,7 @@ export const integrations: Integration[] = [
     id: "hotelgest",
     name: "HotelGest",
     description: "Spain-based hotel management software providing PMS, front desk, and reservation tools for independent hotels and small chains across Spain and Latin America. Designed for ease of use and operational efficiency.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/pms-hotelgest.webp",
+    icon: "/lovable-uploads/pms-hotelgest.webp",
     categories: ["PMS", "Europe", "Americas"],
     slug: "hotelgest",
     website: "https://hotelgest.com"
@@ -4088,7 +4129,7 @@ export const integrations: Integration[] = [
     id: "cozzyid",
     name: "Cozzy.id",
     description: "Indonesia-based property management platform for hotels, villas, and guesthouses. Provides reservation management, booking engine, and operational tools tailored for the Indonesian hospitality and tourism market.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/pms-cozzyid.jpg",
+    icon: "/lovable-uploads/pms-cozzyid.jpg",
     categories: ["PMS", "Asia"],
     slug: "cozzyid",
     website: "https://cozzy.id/"
@@ -4097,7 +4138,7 @@ export const integrations: Integration[] = [
     id: "cruwzo",
     name: "Cruwzo",
     description: "Germany-based property management and hospitality software solution for hotels and accommodation providers. Offers streamlined front desk operations, reservation management, and reporting for European properties.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/pms-emonsite.png",
+    icon: "/lovable-uploads/pms-emonsite.png",
     categories: ["PMS", "Europe"],
     slug: "cruwzo",
     website: "https://www.cruwzo.com/"
@@ -4106,7 +4147,7 @@ export const integrations: Integration[] = [
     id: "deverso",
     name: "Deverso Srl",
     description: "Italian hospitality technology company developing property management and booking solutions for hotels, resorts, and accommodation providers across Italy. Offers integrated PMS and distribution tools.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/pms-emonsite.png",
+    icon: "/lovable-uploads/pms-emonsite.png",
     categories: ["PMS", "Europe"],
     slug: "deverso",
     website: "https://deverso.it"
@@ -4115,7 +4156,7 @@ export const integrations: Integration[] = [
     id: "elev8suite",
     name: "Elev8",
     description: "Switzerland-based hotel management suite providing comprehensive PMS, booking engine, and revenue management tools for independent hotels and boutique properties across Europe.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/pms-elev8.ico",
+    icon: "/lovable-uploads/pms-elev8.ico",
     categories: ["PMS", "Europe"],
     slug: "elev8suite",
     website: "https://www.elev8-suite.com/"
@@ -4124,7 +4165,7 @@ export const integrations: Integration[] = [
     id: "thefinner",
     name: "The Finner",
     description: "India-based hospitality management platform providing property management, booking, and guest experience tools for hotels, resorts, and vacation rentals across India and South Asia.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/pms-roamhome.webp",
+    icon: "/lovable-uploads/pms-roamhome.webp",
     categories: ["PMS", "Asia"],
     slug: "thefinner",
     website: "https://thefinner.com"
@@ -4133,7 +4174,7 @@ export const integrations: Integration[] = [
     id: "hostiq",
     name: "Hostiq",
     description: "Ukraine-based property management system for hotels, hostels, and apartment rentals. Provides front desk management, online booking, and channel connectivity tools for Eastern European accommodation providers.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/pms-hostiq.svg",
+    icon: "/lovable-uploads/pms-hostiq.svg",
     categories: ["PMS", "Europe"],
     slug: "hostiq",
     website: "https://hostiq.ua/eng/"
@@ -4142,7 +4183,7 @@ export const integrations: Integration[] = [
     id: "hotelitech",
     name: "Hotelitech",
     description: "Brazilian hospitality technology company offering PMS, booking engine, and channel management solutions for hotels and pousadas across Brazil. Focused on simplifying hotel operations for independent properties.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/pms-hotelitech.png",
+    icon: "/lovable-uploads/pms-hotelitech.png",
     categories: ["PMS", "Americas"],
     slug: "hotelitech",
     website: "https://hotelitech.com.br"
@@ -4151,7 +4192,7 @@ export const integrations: Integration[] = [
     id: "innetltda",
     name: "INNET LTDA",
     description: "Brazilian technology company providing hotel management software and digital solutions for hospitality providers. Offers PMS, booking tools, and operational systems for hotels and accommodation businesses in Brazil.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/pms-innetltda.ico",
+    icon: "/lovable-uploads/pms-innetltda.ico",
     categories: ["PMS", "Americas"],
     slug: "innetltda",
     website: "https://innet.com.br/"
@@ -4160,7 +4201,7 @@ export const integrations: Integration[] = [
     id: "instantbb",
     name: "INSTANT B&B",
     description: "Italian B&B and short-term rental management platform by e-instant.it. Provides property management, online booking, and guest communication tools for bed and breakfasts and vacation rentals across Italy.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/pms-instantbb.webp",
+    icon: "/lovable-uploads/pms-instantbb.webp",
     categories: ["PMS", "Europe"],
     slug: "instantbb",
     website: "https://e-instant.it"
@@ -4169,7 +4210,7 @@ export const integrations: Integration[] = [
     id: "jetquid",
     name: "Jet Quid",
     description: "India-based hospitality management platform offering property management, booking engine, and revenue tools for hotels and resorts. Designed to help Indian hoteliers streamline operations and increase direct bookings.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/pms-jetquid.png",
+    icon: "/lovable-uploads/pms-jetquid.png",
     categories: ["PMS", "Asia"],
     slug: "jetquid",
     website: "https://jetquid.com/"
@@ -4178,7 +4219,7 @@ export const integrations: Integration[] = [
     id: "easyconcierge",
     name: "Easy Concierge",
     description: "French property management and concierge software for vacation rentals, apartments, and boutique hotels. Provides booking management, guest communication, and operational tools for French accommodation providers.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/pms-easyconcierge.png",
+    icon: "/lovable-uploads/pms-easyconcierge.png",
     categories: ["PMS", "Europe"],
     slug: "easyconcierge",
     website: "https://easy-concierge.fr"
@@ -4187,7 +4228,7 @@ export const integrations: Integration[] = [
     id: "mediatarget",
     name: "Media Target",
     description: "French digital agency and hospitality technology provider offering website development, booking solutions, and digital marketing tools for hotels and accommodation businesses in France.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/pms-emonsite.png",
+    icon: "/lovable-uploads/pms-emonsite.png",
     categories: ["PMS", "IBE", "Europe"],
     slug: "mediatarget",
     website: "https://mediatarget.fr"
@@ -4196,7 +4237,7 @@ export const integrations: Integration[] = [
     id: "msool",
     name: "Msool",
     description: "Saudi Arabia-based property management platform for hotels and short-term rentals. Provides reservation management, booking engine, and operational tools tailored for the Saudi Arabian and Gulf hospitality market.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/pms-gatein.png",
+    icon: "/lovable-uploads/pms-gatein.png",
     categories: ["PMS", "Middle East"],
     slug: "msool",
     website: "https://msool.io"
@@ -4205,7 +4246,7 @@ export const integrations: Integration[] = [
     id: "mykratisi",
     name: "MyKratisi",
     description: "Greece-based property management and booking platform for hotels, villas, and vacation rentals. Offers reservation management, channel connectivity, and guest tools designed for the Greek tourism and hospitality market.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/pms-mykratisi.png",
+    icon: "/lovable-uploads/pms-mykratisi.png",
     categories: ["PMS", "Europe"],
     slug: "mykratisi",
     website: "https://mykratisi.gr"
@@ -4214,7 +4255,7 @@ export const integrations: Integration[] = [
     id: "novaestate",
     name: "Nova Estate (NovaSuite)",
     description: "Singapore-based property management platform providing PMS, booking engine, and operational tools for hotels and serviced apartments. NovaSuite serves the Asia-Pacific hospitality market with cloud-based management solutions.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/pms-novaestate.ico",
+    icon: "/lovable-uploads/pms-novaestate.ico",
     categories: ["PMS", "Asia"],
     slug: "novaestate",
     website: "https://www.novasuite.app/"
@@ -4223,7 +4264,7 @@ export const integrations: Integration[] = [
     id: "opentravelone",
     name: "OpenTravel One",
     description: "US-based hospitality technology platform leveraging OpenTravel standards for hotel distribution and connectivity. Provides API-based integration tools for property management systems and online travel agencies.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/pms-opentravelone.png",
+    icon: "/lovable-uploads/pms-opentravelone.png",
     categories: ["PMS", "Global"],
     slug: "opentravelone",
     website: "https://opentravel.org/"
@@ -4232,7 +4273,7 @@ export const integrations: Integration[] = [
     id: "hobostays",
     name: "Hobo Stays",
     description: "India-based accommodation management platform for budget hotels, hostels, and guesthouses. Provides reservation management, booking tools, and operational systems for affordable accommodation providers across India.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/pms-roamhome.webp",
+    icon: "/lovable-uploads/pms-roamhome.webp",
     categories: ["PMS", "Asia"],
     slug: "hobostays",
     website: "https://hobostays.in/"
@@ -4241,7 +4282,7 @@ export const integrations: Integration[] = [
     id: "raixertech",
     name: "Raixer Tech",
     description: "Spain-based smart access and property management technology company. Provides digital key, access control, and property management solutions for hotels, vacation rentals, and serviced apartments.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/pms-raixertechsl.png",
+    icon: "/lovable-uploads/pms-raixertechsl.png",
     categories: ["PMS", "Europe"],
     slug: "raixertech",
     website: "https://www.raixer.com"
@@ -4250,7 +4291,7 @@ export const integrations: Integration[] = [
     id: "resavenue",
     name: "ResAvenue",
     description: "India-based hotel reservation and distribution platform providing central reservation system (CRS), booking engine, and channel management tools for hotels across India and South Asia. One of India's established hotel technology providers.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/pms-roamhome.webp",
+    icon: "/lovable-uploads/pms-roamhome.webp",
     categories: ["PMS", "IBE", "Asia"],
     slug: "resavenue",
     website: "https://www.resavenue.com/"
@@ -4259,7 +4300,7 @@ export const integrations: Integration[] = [
     id: "revbotid",
     name: "Revbot.id",
     description: "Indonesia-based AI-powered revenue management and property management platform for hotels and villas. Uses intelligent automation to optimise pricing, distribution, and operations for Indonesian accommodation providers.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/pms-revbotid.png",
+    icon: "/lovable-uploads/pms-revbotid.png",
     categories: ["PMS", "Asia"],
     slug: "revbotid",
     website: "https://revbot.id/"
@@ -4268,7 +4309,7 @@ export const integrations: Integration[] = [
     id: "hotelier101",
     name: "Hotelier 101",
     description: "Turkey-based hotel management platform providing PMS, booking engine, and operational tools for independent hotels and small chains. Designed for the Turkish hospitality market with multi-language support.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/pms-hostomat.ico",
+    icon: "/lovable-uploads/pms-hostomat.ico",
     categories: ["PMS", "Europe", "Middle East"],
     slug: "hotelier101",
     website: "https://hotelier101.com"
@@ -4277,7 +4318,7 @@ export const integrations: Integration[] = [
     id: "scovietnam",
     name: "SCO Vietnam",
     description: "Vietnam-based hospitality technology company providing property management and booking solutions for hotels and resorts across Vietnam and Southeast Asia. Offers localised tools for the Vietnamese tourism market.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/pms-scovietnam.webp",
+    icon: "/lovable-uploads/pms-scovietnam.webp",
     categories: ["PMS", "Asia"],
     slug: "scovietnam",
     website: "https://scovietnam.com"
@@ -4286,7 +4327,7 @@ export const integrations: Integration[] = [
     id: "sirromsolutions",
     name: "Sirrom Solutions",
     description: "Netherlands-based hospitality technology company providing property management and booking solutions for hotels and accommodation providers across the Benelux region and Europe.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/pms-sitemarq.svg",
+    icon: "/lovable-uploads/pms-sitemarq.svg",
     categories: ["PMS", "Europe"],
     slug: "sirromsolutions",
     website: "https://sirrom.io"
@@ -4295,7 +4336,7 @@ export const integrations: Integration[] = [
     id: "stayfleximmo",
     name: "STAYFLEX IMMO",
     description: "France-based property management platform for short-term rentals and vacation properties. Provides booking management, guest communication, and operational tools for French property managers and vacation rental owners.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/pms-stayfleximmo.png",
+    icon: "/lovable-uploads/pms-stayfleximmo.png",
     categories: ["PMS", "Europe"],
     slug: "stayfleximmo",
     website: "https://www.stayflex-immo.com/"
@@ -4304,7 +4345,7 @@ export const integrations: Integration[] = [
     id: "strabiliare",
     name: "Strabiliare",
     description: "Italian property management company and software provider for vacation rentals and boutique accommodations. Offers reservation management, booking tools, and guest experience solutions for Italian properties.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/pms-strabiliaresrlsunipersonale.png",
+    icon: "/lovable-uploads/pms-strabiliaresrlsunipersonale.png",
     categories: ["PMS", "Europe"],
     slug: "strabiliare",
     website: "https://strabiliare.it/"
@@ -4313,7 +4354,7 @@ export const integrations: Integration[] = [
     id: "suitespotproperties",
     name: "SuiteSpot Properties",
     description: "Canada-based property management platform for hotels and serviced apartments. SuiteSpot provides operations management, maintenance tracking, and guest experience tools for hospitality providers in North America.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/pms-suitespot.png",
+    icon: "/lovable-uploads/pms-suitespot.png",
     categories: ["PMS", "Americas"],
     slug: "suitespotproperties",
     website: "https://www.suitespot.ai/"
@@ -4322,7 +4363,7 @@ export const integrations: Integration[] = [
     id: "threenorthclean",
     name: "Three North Clean",
     description: "Canada-based property management and cleaning operations platform for vacation rentals and short-term accommodations. Provides operational management, housekeeping scheduling, and property maintenance tools.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/pms-threenorthcleaninc.ico",
+    icon: "/lovable-uploads/pms-threenorthcleaninc.ico",
     categories: ["PMS", "Americas"],
     slug: "threenorthclean",
     website: "https://threenorthclean.com/"
@@ -4331,7 +4372,7 @@ export const integrations: Integration[] = [
     id: "uabiluma",
     name: "UAB Iluma (J14A)",
     description: "Lithuania-based hospitality technology company providing property management and booking solutions for hotels and accommodation providers across the Baltic states and Northern Europe.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/pms-sitemarq.svg",
+    icon: "/lovable-uploads/pms-sitemarq.svg",
     categories: ["PMS", "Europe"],
     slug: "uabiluma",
     website: "https://www.j14a.co/"
@@ -4340,7 +4381,7 @@ export const integrations: Integration[] = [
     id: "ydea",
     name: "Ydea",
     description: "Peru-based hospitality management platform built on Odoo, providing property management, booking, and operational tools for hotels and accommodation providers across Peru and Latin America.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/pms-ydea.webp",
+    icon: "/lovable-uploads/pms-ydea.webp",
     categories: ["PMS", "Americas"],
     slug: "ydea",
     website: "https://ydea-aqp-eirl.odoo.com/"
@@ -4349,7 +4390,7 @@ export const integrations: Integration[] = [
     id: "maiahost",
     name: "Maia Host",
     description: "France-based property management platform for vacation rentals and short-term accommodations. Provides automated booking management, guest communication, and operational tools for French property managers.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/pms-maiahost.svg",
+    icon: "/lovable-uploads/pms-maiahost.svg",
     categories: ["PMS", "Europe"],
     slug: "maiahost",
     website: "https://www.maia-host.com/"
@@ -4358,7 +4399,7 @@ export const integrations: Integration[] = [
     id: "orclaus",
     name: "Orclaus",
     description: "Spain-based hospitality technology company providing property management and booking solutions for hotels and vacation rentals. Offers integrated PMS and distribution tools for Spanish and European accommodation providers.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/pms-raixertechsl.png",
+    icon: "/lovable-uploads/pms-raixertechsl.png",
     categories: ["PMS", "Europe"],
     slug: "orclaus",
     website: "https://orclaus.com"
@@ -4367,7 +4408,7 @@ export const integrations: Integration[] = [
     id: "bedrockresidencies",
     name: "Bedrock Residencies",
     description: "Nigeria-based premium apart-hotel operator providing fully serviced short-let apartments in Lagos. Bedrock Residencies offers a seamless guest experience with modern amenities, integrated booking management, and a mobile app for direct reservations.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/pms-bedrockresidencies.webp",
+    icon: "/lovable-uploads/pms-bedrockresidencies.webp",
     categories: ["PMS", "Africa"],
     slug: "bedrockresidencies",
     website: "https://bedrockresidencies.com"
@@ -4376,7 +4417,7 @@ export const integrations: Integration[] = [
     id: "luxeshine",
     name: "Luxeshine",
     description: "USA-based hospitality management platform providing property management and booking solutions for hotels and accommodation providers. Luxeshine offers streamlined operations, reservation management, and guest experience tools for the North American market.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/pms-sitemarq.svg",
+    icon: "/lovable-uploads/pms-sitemarq.svg",
     categories: ["PMS", "Americas"],
     slug: "luxeshine",
     website: "https://luxeshine.com"
@@ -4385,7 +4426,7 @@ export const integrations: Integration[] = [
     id: "ribat",
     name: "Ribat",
     description: "Egypt-based property management system providing hotel management and booking solutions for accommodation providers across Egypt and the Middle East. Ribat offers reservation management, front desk operations, and distribution tools for hospitality businesses.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/pms-sitemarq.svg",
+    icon: "/lovable-uploads/pms-sitemarq.svg",
     categories: ["PMS", "Middle East & Africa"],
     slug: "ribat",
     website: "https://ribat.io"
@@ -4394,7 +4435,7 @@ export const integrations: Integration[] = [
     id: "hautrip",
     name: "Hautrip",
     description: "South Korea-based accommodation platform and property management system providing booking and reservation management for hotels, guesthouses, and short-term rentals across South Korea and the Asia-Pacific region.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/pms-hautrip.png",
+    icon: "/lovable-uploads/pms-hautrip.png",
     categories: ["PMS", "Asia Pacific"],
     slug: "hautrip",
     website: "https://hautrip.com"
@@ -4403,7 +4444,7 @@ export const integrations: Integration[] = [
     id: "vayada",
     name: "Vayada",
     description: "Germany-based hospitality platform connecting hotels with content creators and influencers. Vayada provides property management and marketing tools that help hotels leverage creator partnerships for authentic promotion and direct bookings.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/pms-vayada.png",
+    icon: "/lovable-uploads/pms-vayada.png",
     categories: ["PMS", "Europe"],
     slug: "vayada",
     website: "https://vayada.com"
@@ -4412,7 +4453,7 @@ export const integrations: Integration[] = [
     id: "nissiaholidays",
     name: "Nissiaholidays",
     description: "Greece-based villa and holiday rental management platform specializing in luxury accommodations across the Greek islands. Nissiaholidays provides booking management, guest services, and property operations for premium vacation rentals in Greece.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/pms-nissiaholidays.png",
+    icon: "/lovable-uploads/pms-nissiaholidays.png",
     categories: ["PMS", "Europe"],
     slug: "nissiaholidays",
     website: "https://www.nissiaholidays.com"
@@ -4421,7 +4462,7 @@ export const integrations: Integration[] = [
     id: "hubnb",
     name: "Hubnb",
     description: "Brazil-based property management platform for short-term rentals and vacation accommodations. Hubnb provides booking management, channel distribution, and operational tools for property managers and hosts across Brazil and Latin America.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/pms-sitemarq.svg",
+    icon: "/lovable-uploads/pms-sitemarq.svg",
     categories: ["PMS", "Americas"],
     slug: "hubnb",
     website: "https://hubnb.com.br"
@@ -4430,7 +4471,7 @@ export const integrations: Integration[] = [
     id: "gustavopms",
     name: "Gustavo PMS",
     description: "Property management system providing hotel and accommodation operators with tools for reservations, front desk operations, and channel management. Gustavo PMS helps hospitality businesses streamline their daily operations and distribution.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/pms-sitemarq.svg",
+    icon: "/lovable-uploads/pms-sitemarq.svg",
     categories: ["PMS"],
     slug: "gustavopms",
     website: "https://gustavopms.com"
@@ -4439,7 +4480,7 @@ export const integrations: Integration[] = [
     id: "booksuite",
     name: "Booksuite",
     description: "Brazil-based hotel e-commerce platform providing website creation, property management, and booking engine solutions. Booksuite helps hotels and accommodations in Brazil grow their direct bookings and manage their online presence.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/pms-booksuite.png",
+    icon: "/lovable-uploads/pms-booksuite.png",
     categories: ["PMS", "Americas"],
     slug: "booksuite",
     website: "https://www.booksuite.io"
@@ -4448,7 +4489,7 @@ export const integrations: Integration[] = [
     id: "plubox",
     name: "PluBox",
     description: "Ukraine-based property management system specializing in daily and short-term rental management. PluBox provides booking management, channel distribution, and operational tools for vacation rental hosts and property managers.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/pms-plubox.svg",
+    icon: "/lovable-uploads/pms-plubox.svg",
     categories: ["PMS", "Europe"],
     slug: "plubox",
     website: "https://plubox.com"
@@ -4457,7 +4498,7 @@ export const integrations: Integration[] = [
     id: "ecommerceloka",
     name: "Ecommerceloka",
     description: "Indonesia-based hotel online sales optimization platform providing channel management and distribution solutions. Ecommerceloka helps hotels across Indonesia maximize their online revenue through major booking channels including Booking.com, Traveloka, and Tiket.com.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/pms-ecommerceloka.png",
+    icon: "/lovable-uploads/pms-ecommerceloka.png",
     categories: ["PMS", "Asia Pacific"],
     slug: "ecommerceloka",
     website: "https://ecommerceloka.com"
@@ -4466,7 +4507,7 @@ export const integrations: Integration[] = [
     id: "ctoutvert",
     name: "Ctoutvert / Secureholiday",
     description: "France-based online booking and distribution platform specializing in outdoor accommodation, camping, and holiday parks. Ctoutvert operates the Secureholiday Platform, providing campsite and holiday park operators with online reservation management, channel distribution, and CRM tools across Europe.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/ota-ctoutvert.png",
+    icon: "/lovable-uploads/ota-ctoutvert.png",
     categories: ["OTA", "Europe"],
     slug: "ctoutvert",
     website: "https://www.ctoutvert.com/fr"
@@ -4475,7 +4516,7 @@ export const integrations: Integration[] = [
     id: "resonline",
     name: "Resonline",
     description: "Australia-based channel manager and online distribution platform providing hotels, motels, and accommodation providers with a total solution to expand their online reach globally. Resonline enables properties to manage rooms and rates across multiple booking channels with ease.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/ota-resonline.png",
+    icon: "/lovable-uploads/ota-resonline.png",
     categories: ["OTA", "Asia Pacific"],
     slug: "resonline",
     website: "https://www.resonline.com"
@@ -4484,7 +4525,7 @@ export const integrations: Integration[] = [
     id: "oomsi",
     name: "Oomsi",
     description: "Smart vacation rental management platform providing tools to reduce stress and fill calendars. Oomsi helps short-term rental operators streamline operations with automated messaging, pricing, and channel distribution.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/pms-oomsi.svg",
+    icon: "/lovable-uploads/pms-oomsi.svg",
     categories: ["PMS", "Vacation Rental", "North America"],
     slug: "oomsi",
     website: "https://oomsi.com"
@@ -4493,7 +4534,7 @@ export const integrations: Integration[] = [
     id: "navthan",
     name: "Navthan",
     description: "Australian property management system provider offering hospitality technology solutions for accommodation operators.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/pms-placeholder.png",
+    icon: "",
     categories: ["PMS", "Asia Pacific"],
     slug: "navthan",
     website: ""
@@ -4502,7 +4543,7 @@ export const integrations: Integration[] = [
     id: "luppa",
     name: "Luppa",
     description: "Argentine all-in-one management platform for hospitality businesses including hotels and accommodation providers. Luppa offers inventory management, sales tracking, and statistics for property operators.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/pms-luppa.png",
+    icon: "/lovable-uploads/pms-luppa.png",
     categories: ["PMS", "Latin America"],
     slug: "luppa",
     website: "https://luppa.net.ar"
@@ -4511,7 +4552,7 @@ export const integrations: Integration[] = [
     id: "azurecorporate",
     name: "Azure Corporate LLC",
     description: "Vacation rental management company specializing in property management solutions for short-term rental operators. Azure Corporate provides personalized services to maximize investment returns for property owners.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/pms-azurecorporate.png",
+    icon: "/lovable-uploads/pms-azurecorporate.png",
     categories: ["PMS", "Vacation Rental", "North America"],
     slug: "azurecorporate",
     website: "https://azurerd.com"
@@ -4520,7 +4561,7 @@ export const integrations: Integration[] = [
     id: "desata",
     name: "Desata",
     description: "Spanish SaaS technology company creating specialized applications and tailored solutions to automate hospitality and business niche processes, combining technology, AI, and business strategy.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/pms-placeholder.png",
+    icon: "",
     categories: ["PMS", "Europe"],
     slug: "desata",
     website: ""
@@ -4529,7 +4570,7 @@ export const integrations: Integration[] = [
     id: "varaamokki",
     name: "Varaamokki",
     description: "Finnish holiday accommodation booking and management platform built on Apaleo, specializing in cabin and cottage rentals across Lapland and other Finnish destinations.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/pms-varaamokki.png",
+    icon: "/lovable-uploads/pms-varaamokki.png",
     categories: ["PMS", "Europe"],
     slug: "varaamokki",
     website: "https://www.varaamokki.com"
@@ -4538,7 +4579,7 @@ export const integrations: Integration[] = [
     id: "stellartourism",
     name: "Stellar Tourism Innovations",
     description: "German hospitality technology company offering automated digital check-in, guest registration, and tourist tax solutions for vacation rentals and hotels, simplifying property management and boosting revenue.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/pms-stellartourism.png",
+    icon: "/lovable-uploads/pms-stellartourism.png",
     categories: ["PMS", "Europe"],
     slug: "stellartourism",
     website: "https://stellar-trust.com"
@@ -4547,7 +4588,7 @@ export const integrations: Integration[] = [
     id: "norrkallan",
     name: "Norrkällan",
     description: "Swedish hospitality and retreat provider located in Vännäs, Norrland, offering hotel rooms, conference packages, and wellness retreats inspired by the nature of northern Sweden.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/pms-norrkallan.png",
+    icon: "/lovable-uploads/pms-norrkallan.png",
     categories: ["PMS", "Europe"],
     slug: "norrkallan",
     website: "https://norrkallan.se"
@@ -4556,7 +4597,7 @@ export const integrations: Integration[] = [
     id: "terrahospedagem",
     name: "Terra Hospedagem",
     description: "Brazilian hospitality management system provider offering property management solutions for hotels and accommodation operators in Brazil.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/pms-placeholder.png",
+    icon: "",
     categories: ["PMS", "Latin America"],
     slug: "terrahospedagem",
     website: ""
@@ -4565,7 +4606,7 @@ export const integrations: Integration[] = [
     id: "macpms",
     name: "MAC PMS",
     description: "Intelligent hotel management platform from Vietnam providing smart property management solutions for modern hospitality operators.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/pms-macpms.png",
+    icon: "/lovable-uploads/pms-macpms.png",
     categories: ["PMS", "Asia Pacific"],
     slug: "macpms",
     website: "https://www.macpms.com"
@@ -4574,7 +4615,7 @@ export const integrations: Integration[] = [
     id: "home2share",
     name: "Home2share",
     description: "Fast-growing German company in the serviced apartment industry, specializing in fully managed short- and long-term rental solutions for property owners and operators.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/pms-home2share.svg",
+    icon: "/lovable-uploads/pms-home2share.svg",
     categories: ["PMS", "Europe"],
     slug: "home2share",
     website: "https://home2share.de"
@@ -4583,7 +4624,7 @@ export const integrations: Integration[] = [
     id: "rentdari",
     name: "Rentdari",
     description: "Property management platform helping rental operators manage their properties across channels including Airbnb, with tools for contracts, concierge services, and revenue tracking.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/pms-rentdari.png",
+    icon: "/lovable-uploads/pms-rentdari.png",
     categories: ["PMS", "Europe"],
     slug: "rentdari",
     website: "https://rentdari.com"
@@ -4592,7 +4633,7 @@ export const integrations: Integration[] = [
     id: "zerotoone",
     name: "ZeroToOne",
     description: "Korean property management system provider offering hospitality technology solutions for accommodation operators.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/pms-placeholder.png",
+    icon: "",
     categories: ["PMS", "Asia Pacific"],
     slug: "zerotoone",
     website: "https://ztoone.kr"
@@ -4601,7 +4642,7 @@ export const integrations: Integration[] = [
     id: "haxa",
     name: "Haxa",
     description: "Icelandic property management system provider offering hospitality technology solutions for accommodation operators in Iceland.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/pms-placeholder.png",
+    icon: "",
     categories: ["PMS", "Europe"],
     slug: "haxa",
     website: "https://haxa.is"
@@ -4610,7 +4651,7 @@ export const integrations: Integration[] = [
     id: "roamkaro",
     name: "Roamkaro",
     description: "Indian hospitality technology company providing property management and booking solutions for accommodation operators across India.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/pms-roamkaro.png",
+    icon: "/lovable-uploads/pms-roamkaro.png",
     categories: ["PMS", "Asia Pacific"],
     slug: "roamkaro",
     website: "https://www.roamkaro.in"
@@ -4619,7 +4660,7 @@ export const integrations: Integration[] = [
     id: "roomnix",
     name: "Roomnix",
     description: "Turkish property management system helping hotels, hostels, villas, apartments, and camping/RV parks run smoothly with an intuitive calendar, fast check-in, online bookings, and effortless billing.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/pms-roomnix.png",
+    icon: "/lovable-uploads/pms-roomnix.png",
     categories: ["PMS", "Europe", "Middle East"],
     slug: "roomnix",
     website: "https://roomnix.com"
@@ -4628,7 +4669,7 @@ export const integrations: Integration[] = [
     id: "yallahost",
     name: "Yallahost",
     description: "SaaS property management platform helping operators manage their rental properties with ease. Yallahost provides an intuitive PMS for short-term rental and hotel management.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/pms-yallahost.png",
+    icon: "/lovable-uploads/pms-yallahost.png",
     categories: ["PMS", "Middle East", "Africa"],
     slug: "yallahost",
     website: "https://yallahost.io"
@@ -4637,7 +4678,7 @@ export const integrations: Integration[] = [
     id: "dixome",
     name: "DIXOME",
     description: "Spanish technology company providing digital solutions and services for hospitality and accommodation businesses.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/pms-placeholder.png",
+    icon: "",
     categories: ["PMS", "Europe"],
     slug: "dixome",
     website: ""
@@ -4646,7 +4687,7 @@ export const integrations: Integration[] = [
     id: "innexo",
     name: "innexo",
     description: "AI-driven hotel operations platform transforming hospitality management with smart pricing, housekeeping optimization, and revenue management tools for modern hotels.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/pms-innexo.png",
+    icon: "/lovable-uploads/pms-innexo.png",
     categories: ["PMS", "North America"],
     slug: "innexo",
     website: "https://innexo.com"
@@ -4655,7 +4696,7 @@ export const integrations: Integration[] = [
     id: "simplyresa",
     name: "Simply-resa",
     description: "French all-in-one reservation management solution providing a native Channel Manager for hotels, spas, thalassotherapy centres, and wellness properties across France, Belgium, and Switzerland.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/pms-simplyresa.png",
+    icon: "/lovable-uploads/pms-simplyresa.png",
     categories: ["PMS", "Europe"],
     slug: "simplyresa",
     website: "https://simply-resa.fr"
@@ -4664,7 +4705,7 @@ export const integrations: Integration[] = [
     id: "zyzsolution",
     name: "zyz solution",
     description: "Italian technology company designing and developing customized CRM and management systems for hospitality businesses, offering intelligent automation and IT infrastructure solutions.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/pms-placeholder.png",
+    icon: "",
     categories: ["PMS", "Europe"],
     slug: "zyzsolution",
     website: "https://zyzsolution.it"
@@ -4673,7 +4714,7 @@ export const integrations: Integration[] = [
     id: "naverpms",
     name: "Naver PMS",
     description: "Korean property management system provider offering hotel and accommodation management solutions for hospitality operators.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/pms-placeholder.png",
+    icon: "",
     categories: ["PMS", "Asia Pacific"],
     slug: "naverpms",
     website: ""
@@ -4682,7 +4723,7 @@ export const integrations: Integration[] = [
     id: "checkeasy",
     name: "Check Easy",
     description: "French AI-powered property inspection platform automating inventory reports with timestamped photo reports, damage detection, and dispute reduction for Airbnb concierges and property managers.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/pms-checkeasy.png",
+    icon: "/lovable-uploads/pms-checkeasy.png",
     categories: ["PMS", "Europe"],
     slug: "checkeasy",
     website: "https://www.checkeasy.co"
@@ -4691,7 +4732,7 @@ export const integrations: Integration[] = [
     id: "genthd",
     name: "genthd",
     description: "Japanese property management system provider offering hospitality technology solutions for accommodation operators in Japan.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/pms-placeholder.png",
+    icon: "",
     categories: ["PMS", "Asia Pacific"],
     slug: "genthd",
     website: "https://genthd.com"
@@ -4700,7 +4741,7 @@ export const integrations: Integration[] = [
     id: "mystay",
     name: "mystay",
     description: "Portuguese hospitality platform offering direct booking solutions for villas, apartments, and hotels across Portugal, with best price guarantees and exclusive discounts for direct guests.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/pms-mystay.png",
+    icon: "/lovable-uploads/pms-mystay.png",
     categories: ["PMS", "Europe"],
     slug: "mystay",
     website: "https://mystay.pt"
@@ -4709,7 +4750,7 @@ export const integrations: Integration[] = [
     id: "appsclicks",
     name: "Appsclicks",
     description: "Israeli technology company connecting hospitality clients to the right users at the right time using AI, machine learning, data analytics, and human expertise.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/pms-appsclicks.png",
+    icon: "/lovable-uploads/pms-appsclicks.png",
     categories: ["PMS", "Middle East"],
     slug: "appsclicks",
     website: "https://appsclicks.com"
@@ -4718,7 +4759,7 @@ export const integrations: Integration[] = [
     id: "comfortly",
     name: "Comfortly",
     description: "US-based hotel operations platform helping small hotels manage housekeeping, maintenance, and team communication. Fully integrated with rezStream to automate operations and improve efficiency.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/pms-comfortly.png",
+    icon: "/lovable-uploads/pms-comfortly.png",
     categories: ["PMS", "North America"],
     slug: "comfortly",
     website: "https://comfort.ly"
@@ -4727,7 +4768,7 @@ export const integrations: Integration[] = [
     id: "hisamichiono",
     name: "Hisamichi Ono",
     description: "Japanese property management system provider offering hospitality technology solutions for accommodation operators in Japan.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/pms-placeholder.png",
+    icon: "",
     categories: ["PMS", "Asia Pacific"],
     slug: "hisamichiono",
     website: ""
@@ -4736,7 +4777,7 @@ export const integrations: Integration[] = [
     id: "uttkarsh",
     name: "UTTKARSH",
     description: "Canadian property management system provider offering hospitality technology solutions for accommodation operators.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/pms-placeholder.png",
+    icon: "",
     categories: ["PMS", "North America"],
     slug: "uttkarsh",
     website: ""
@@ -4745,7 +4786,7 @@ export const integrations: Integration[] = [
     id: "hostport",
     name: "Host Port",
     description: "Australian hospitality technology platform simplifying bookings, automating operations, and enhancing guest experiences for accommodation providers.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/pms-hostport.svg",
+    icon: "/lovable-uploads/pms-hostport.svg",
     categories: ["PMS", "Asia Pacific"],
     slug: "hostport",
     website: "https://www.hostpms.com"
@@ -4754,7 +4795,7 @@ export const integrations: Integration[] = [
     id: "epia",
     name: "EPIA",
     description: "Vietnamese property management system provider offering hospitality technology solutions for accommodation operators.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/pms-placeholder.png",
+    icon: "",
     categories: ["PMS", "Asia Pacific"],
     slug: "epia",
     website: ""
@@ -4763,7 +4804,7 @@ export const integrations: Integration[] = [
     id: "flexglobal",
     name: "Flex",
     description: "Irish flexible short-term rental platform offering fully furnished, move-in-ready apartments for holidays, business travellers, relocations, and extended stays across London, Paris, Algiers, and more.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/pms-flexglobal.png",
+    icon: "/lovable-uploads/pms-flexglobal.png",
     categories: ["PMS", "Europe"],
     slug: "flexglobal",
     website: "https://theflex.global"
@@ -4772,7 +4813,7 @@ export const integrations: Integration[] = [
     id: "kolmex",
     name: "Kolmex",
     description: "Serbian property management system provider offering hospitality technology solutions for accommodation operators.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/pms-placeholder.png",
+    icon: "",
     categories: ["PMS", "Europe"],
     slug: "kolmex",
     website: ""
@@ -4781,7 +4822,7 @@ export const integrations: Integration[] = [
     id: "opesuites",
     name: "OpeSuites",
     description: "Colombian furnished apartment provider offering temporary stays in Bogotá, providing comfortable accommodations in prime locations for business and leisure travellers.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/pms-placeholder.png",
+    icon: "",
     categories: ["PMS", "Latin America"],
     slug: "opesuites",
     website: "https://ope.com.co"
@@ -4790,7 +4831,7 @@ export const integrations: Integration[] = [
     id: "hostspilot",
     name: "Hosts Pilot",
     description: "Romanian AI-powered platform offering one-click setup for Airbnb and Booking.com hosts to generate direct booking websites, guest guides, and automated guest communication.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/pms-hostspilot.png",
+    icon: "/lovable-uploads/pms-hostspilot.png",
     categories: ["PMS", "Europe"],
     slug: "hostspilot",
     website: "https://www.host-pilot.ai"
@@ -4799,7 +4840,7 @@ export const integrations: Integration[] = [
     id: "stayarc",
     name: "Stayarc",
     description: "UK-based all-in-one property management system and channel manager built for short-term rental hosts and vacation property owners. StayArc uses built-in AI to manage bookings, guest messages, and calendars from a unified dashboard.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/pms-stayarc-fav.png",
+    icon: "/lovable-uploads/pms-stayarc-fav.png",
     categories: ["PMS", "Europe"],
     slug: "stayarc",
     website: "https://www.stayarc.com"
@@ -4808,7 +4849,7 @@ export const integrations: Integration[] = [
     id: "kan2go",
     name: "Kan2Go",
     description: "Greek cloud-based PMS giving property owners full control through a modern system designed for simple management, better organisation, and higher returns.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/pms-kan2go.svg",
+    icon: "/lovable-uploads/pms-kan2go.svg",
     categories: ["PMS", "Europe"],
     slug: "kan2go",
     website: "https://kan2go.gr"
@@ -4817,7 +4858,7 @@ export const integrations: Integration[] = [
     id: "tenerifebsl",
     name: "Tenerife Belgique SL",
     description: "Spanish property management company guiding buyers through property purchases in Tenerife, offering full-service support from search to completion.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/pms-tenerifebsl.png",
+    icon: "/lovable-uploads/pms-tenerifebsl.png",
     categories: ["PMS", "Europe"],
     slug: "tenerifebsl",
     website: "https://www.tenerifeonline.com"
@@ -4826,7 +4867,7 @@ export const integrations: Integration[] = [
     id: "morphicai",
     name: "Morphicai",
     description: "UK-based AI co-host platform for Airbnb guest messaging, combining automated replies, AI drafts, WhatsApp host approval, and human-in-the-loop safeguards for property managers.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/pms-morphicai.png",
+    icon: "/lovable-uploads/pms-morphicai.png",
     categories: ["PMS", "Europe"],
     slug: "morphicai",
     website: "https://www.morphicai.io"
@@ -4835,7 +4876,7 @@ export const integrations: Integration[] = [
     id: "adivor",
     name: "Adivor",
     description: "Mexican AI automation agency helping hospitality businesses grow with AI agents, marketing automation, and technology consulting.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/pms-adivor.png",
+    icon: "/lovable-uploads/pms-adivor.png",
     categories: ["PMS", "Latin America"],
     slug: "adivor",
     website: "https://adivor.com.mx"
@@ -4844,7 +4885,7 @@ export const integrations: Integration[] = [
     id: "insistmx",
     name: "insist",
     description: "Mexican software development company specialising in IT solutions for the hotel, restaurant, and hospitality sectors, offering management systems, advisory, and maintenance services.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/pms-insistmx.png",
+    icon: "/lovable-uploads/pms-insistmx.png",
     categories: ["PMS", "Latin America"],
     slug: "insistmx",
     website: "https://www.insist.com.mx"
@@ -4853,7 +4894,7 @@ export const integrations: Integration[] = [
     id: "outhands",
     name: "Outhands",
     description: "Dutch full-service internet agency specialising in web design, web development, e-commerce, and online marketing for hospitality and other businesses.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/pms-placeholder.png",
+    icon: "",
     categories: ["PMS", "Europe"],
     slug: "outhands",
     website: ""
@@ -4862,7 +4903,7 @@ export const integrations: Integration[] = [
     id: "localota",
     name: "LocalOTA",
     description: "LocalOTA is an online travel agency connecting travellers with unique local accommodations, experiences, and destinations, helping property owners reach guests seeking authentic local stays.",
-    icon: "https://raw.githubusercontent.com/Evan135135/channex-website-live/main/public/lovable-uploads/ota-localota.jpg",
+    icon: "/lovable-uploads/ota-localota.jpg",
     categories: ["OTA", "North America"],
     slug: "localota",
     website: "https://www.localota.com"
@@ -4871,7 +4912,7 @@ export const integrations: Integration[] = [
     id: "kliknbook",
     name: "KliknBook",
     description: "KliknBook is a B2B online travel agency offering travel agencies exclusive access to hotel inventory across key Asian markets including Singapore, Kuala Lumpur, and Bangkok. Focused on speed, accuracy, and efficiency in hotel booking.",
-    icon: "https://storage.googleapis.com/your-bucket/placeholder-logo.png",
+    icon: "",
     categories: ["OTA", "B2B", "Asia"],
     slug: "kliknbook",
     website: "https://www.kliknbook.com",
@@ -4896,7 +4937,7 @@ export const integrations: Integration[] = [
     id: "webbeds",
     name: "WebBeds",
     description: "WebBeds is a global B2B marketplace for the travel trade, connecting 500,000+ hotels with over 50,000 online and offline travel buyers across 50+ countries. One of the world's largest B2B hotel distribution platforms with $3.2B+ TTV.",
-    icon: "https://storage.googleapis.com/your-bucket/placeholder-logo.png",
+    icon: "",
     categories: ["OTA", "B2B", "Global"],
     slug: "webbeds",
     website: "https://www.webbeds.com",
@@ -4923,7 +4964,7 @@ export const integrations: Integration[] = [
     id: "nuitee",
     name: "Nuitee",
     description: "Nuitee is an AI-driven B2B hotel distribution and API platform, providing developers and travel businesses with modular APIs for hotel search, rates, booking, and branded site deployment. Poised to disrupt the $75B B2B hotel market.",
-    icon: "https://storage.googleapis.com/your-bucket/placeholder-logo.png",
+    icon: "",
     categories: ["OTA", "B2B", "Global"],
     slug: "nuitee",
     website: "https://nuitee.com",
@@ -4950,7 +4991,7 @@ export const integrations: Integration[] = [
     id: "yatra",
     name: "Yatra",
     description: "Yatra is one of India's leading online travel companies, offering real-time bookings for 103,000+ hotels in India and 1.5M+ hotels worldwide. A top corporate travel services provider with 700+ corporate customers and multiple national tourism awards.",
-    icon: "https://storage.googleapis.com/your-bucket/placeholder-logo.png",
+    icon: "",
     categories: ["OTA", "Asia", "Global"],
     slug: "yatra",
     website: "https://www.yatra.com",

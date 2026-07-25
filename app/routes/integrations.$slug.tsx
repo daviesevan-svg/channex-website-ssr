@@ -9,6 +9,8 @@ import { integrations } from "@/data/integrations";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { pageMeta } from "@/lib/seo";
+import IntegrationLogo from "@/components/IntegrationLogo";
+import { hasDetailPage, integrationSlug, relatedChannels } from "@/lib/integrations.server";
 import { useState } from "react";
 import type { Route } from "./+types/integrations.$slug";
 
@@ -19,13 +21,21 @@ export async function loader({ params }: Route.LoaderArgs) {
   if (!integration) {
     throw new Response(null, { status: 404, statusText: "Not Found" });
   }
+  // Only booking channels keep a page (see integrations.server.ts). PMS/tech
+  // partners are listed on /integrations instead — permanent-redirect there so
+  // links a partner made to their old page still land somewhere useful.
+  if (!hasDetailPage(integration)) {
+    throw redirect("/integrations", 301);
+  }
   // Legacy id-based URLs (e.g. /integrations/13) serve the same content as the
   // slug URL — permanent-redirect to the slug so only one URL gets indexed.
-  const canonicalSlug = integration.slug || integration.id;
+  const canonicalSlug = integrationSlug(integration);
   if (params.slug !== canonicalSlug) {
     throw redirect(`/integrations/${canonicalSlug}`, 301);
   }
-  return { integration };
+  // Resolved here rather than in the component so the full dataset stays out of
+  // the client bundle.
+  return { integration, related: relatedChannels(integration) };
 }
 
 export const meta: Route.MetaFunction = ({ loaderData, location }) =>
@@ -70,7 +80,7 @@ const IntegrationDetail = ({ loaderData }: Route.ComponentProps) => {
     };
     return colorMap[category] || "bg-muted text-muted-foreground border-border";
   };
-  const relatedIntegrations = integrations.filter(int => int.id !== integration.id && int.categories.some(cat => integration.categories.includes(cat))).slice(0, 3);
+  const relatedIntegrations = loaderData.related;
   return <div className="min-h-screen bg-background">
       <Header />
 
@@ -101,14 +111,12 @@ const IntegrationDetail = ({ loaderData }: Route.ComponentProps) => {
         <div className="container mx-auto px-4 lg:px-6">
           <div className="max-w-4xl mx-auto">
             <div className="flex items-start gap-6">
-              <div className="w-20 h-20 bg-muted rounded-xl flex items-center justify-center flex-shrink-0 overflow-hidden">
-                <img src={integration.icon} alt={`${integration.name} logo`} className="w-12 h-12 object-contain" onError={e => {
-                // Fallback to gradient placeholder on error
-                e.currentTarget.style.display = 'none';
-                e.currentTarget.nextElementSibling?.classList.remove('hidden');
-              }} />
-                <div className="w-12 h-12 bg-gradient-primary rounded-lg opacity-80 hidden"></div>
-              </div>
+              <IntegrationLogo
+                name={integration.name}
+                logo={integration.icon || null}
+                className="w-20 h-20"
+                textClassName="text-2xl"
+              />
               
               <div className="flex-1">
                 <h1 className="text-4xl lg:text-5xl font-bold text-foreground font-inter mb-4">
@@ -355,9 +363,12 @@ const IntegrationDetail = ({ loaderData }: Route.ComponentProps) => {
                 {relatedIntegrations.map(relatedInt => <Card key={relatedInt.id} className="group hover:shadow-primary transition-all duration-300">
                     <CardHeader>
                       <div className="flex items-start gap-3">
-                        <div className="w-12 h-12 bg-muted rounded-lg flex items-center justify-center flex-shrink-0">
-                          <div className="w-8 h-8 bg-gradient-primary rounded opacity-80"></div>
-                        </div>
+                        <IntegrationLogo
+                          name={relatedInt.name}
+                          logo={relatedInt.logo}
+                          className="w-12 h-12"
+                          textClassName="text-sm"
+                        />
                         <div className="flex-1 min-w-0">
                           <CardTitle className="text-lg font-semibold text-foreground group-hover:text-primary transition-colors">
                             {relatedInt.name}

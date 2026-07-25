@@ -11,6 +11,7 @@ import {
 } from "@/data/pricing";
 import { blogPosts } from "@/data/blogPosts";
 import { integrations } from "@/data/integrations";
+import { hasDetailPage, integrationSlug } from "@/lib/integrations.server";
 import { SITE_URL } from "@/lib/seo";
 
 // Plain-text/markdown mirrors of the site for LLMs and agents. Everything is
@@ -133,9 +134,13 @@ export function buildIntegrationsMarkdown(): string {
         .slice()
         .sort((a, b) => a.name.localeCompare(b.name))
         .map((i) => {
-          const url = `${SITE_URL}/integrations/${encodeURIComponent(i.slug || i.id)}`;
           const site = i.website ? ` — ${i.website}` : "";
-          return `- [${i.name}](${url}) (${i.categories.join(", ")})${site}`;
+          // Only booking channels have their own page; link the rest by name
+          // only so this file never points at a URL that just redirects.
+          const label = hasDetailPage(i)
+            ? `[${i.name}](${SITE_URL}/integrations/${encodeURIComponent(integrationSlug(i))})`
+            : i.name;
+          return `- ${label} (${i.categories.join(", ")})${site}`;
         })
         .join("\n");
       return `## ${category} (${list.length})\n\n${rows}`;
@@ -145,6 +150,7 @@ export function buildIntegrationsMarkdown(): string {
   return `# Channex Integrations Directory
 
 > ${integrations.length} OTAs, PMS systems, and distribution channels connected to the Channex channel manager API.
+> Booking channels have their own page (linked); PMS and technology partners are listed by name.
 > Human version: ${SITE_URL}/integrations
 
 ${sections}
