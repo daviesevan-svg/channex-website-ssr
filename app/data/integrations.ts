@@ -129,7 +129,6 @@ export const integrations: Integration[] = [
       "Train your staff using our comprehensive tutorials",
       "Go live and start accepting bookings"
     ],
-    website: "https://bookingfactory.com",
     screenshots: [
       "",
       "", 
@@ -204,7 +203,6 @@ export const integrations: Integration[] = [
       "Launch your direct booking website",
       "Start accepting and managing bookings"
     ],
-    website: "https://abodepms.com",
     screenshots: [
       "",
       "",
@@ -449,13 +447,6 @@ export const integrations: Integration[] = [
       bulkOperations: true,
       customFields: true
     }
-  },
-  {
-    id: "6",
-    name: "Turbosuite",
-    description: "Connect your PMS with Turbosuite to leverage advanced pricing and revenue optimization tools. Ideal for properties seeking to maximize profitability and streamline operations.",
-    icon: "",
-    categories: ["RMS"]
   },
   {
     id: "7",
@@ -932,8 +923,6 @@ export const integrations: Integration[] = [
     categories: ["B2B", "Global", "Distribution", "OTA"],
     website: "https://roibos.com/",
   },
-
-  
   {
     id: "31",
     slug: "hyperguest",
@@ -1258,13 +1247,6 @@ export const integrations: Integration[] = [
     id: "54",
     name: "ReservationKey",
     description: "A user-friendly PMS designed for small to medium-sized accommodations, offering tools for booking management, channel integration, and guest communication. Ideal for properties seeking affordability and simplicity.",
-    icon: "",
-    categories: ["PMS"]
-  },
-  {
-    id: "55",
-    name: "Hotelier 101",
-    description: "A comprehensive PMS designed for independent hotels and small accommodations, offering tools for booking management, channel connectivity, and guest engagement. Ideal for properties seeking an intuitive and affordable solution.",
     icon: "",
     categories: ["PMS"]
   },
@@ -1831,13 +1813,6 @@ export const integrations: Integration[] = [
     categories: ["PMS", "Asia"]
   },
   {
-    id: "136",
-    name: "Msool",
-    description: "A cloud-based property management platform offering tools for booking management, guest communication, and operational efficiency.",
-    icon: "",
-    categories: ["PMS"]
-  },
-  {
     id: "137",
     name: "Jaras.io",
     description: "A property management system offering tools for booking management, guest communication, and operational efficiency. Ideal for hotels and accommodations seeking a user-friendly, scalable solution to streamline operations and enhance guest satisfaction.",
@@ -1957,13 +1932,6 @@ export const integrations: Integration[] = [
     description: "A property management system designed for hotels and accommodations in Vietnam, offering features like booking management, guest services, and operational optimization.",
     icon: "",
     categories: ["PMS", "Asia"]
-  },
-  {
-    id: "154",
-    name: "RunHotel",
-    description: "A cloud-based property management system designed to streamline hotel operations, offering tools for booking management, guest communication, and revenue optimization.",
-    icon: "",
-    categories: ["PMS"]
   },
   {
     id: "155",
@@ -2505,7 +2473,6 @@ export const integrations: Integration[] = [
       "Customize booking interface design",
       "Test booking flow and go live"
     ],
-    website: "https://booknpay.com",
     integrationFeatures: {
       dataSync: ["Reservations", "Availability", "Rates"],
       realTime: true,
@@ -3717,9 +3684,9 @@ export const integrations: Integration[] = [
   {
     id: "turbosuite",
     name: "Turbosuite",
-    description: "Cloud-based property management system providing comprehensive hotel operations management and channel connectivity.",
+    description: "Connect your PMS with Turbosuite to leverage advanced pricing and revenue optimization tools. Ideal for properties seeking to maximize profitability and streamline operations.",
     icon: "",
-    categories: ["PMS", "Europe"],
+    categories: ["PMS", "RMS", "Europe"],
     slug: "turbosuite",
     website: "https://turbosuite.com/en/"
   },
@@ -4136,7 +4103,6 @@ export const integrations: Integration[] = [
     icon: "/lovable-uploads/pms-jetquid.png",
     categories: ["PMS", "Asia"],
     slug: "jetquid",
-    website: "https://jetquid.com/"
   },
   {
     id: "easyconcierge",
@@ -4316,7 +4282,6 @@ export const integrations: Integration[] = [
     icon: "/lovable-uploads/pms-maiahost.svg",
     categories: ["PMS", "Europe"],
     slug: "maiahost",
-    website: "https://www.maia-host.com/"
   },
   {
     id: "orclaus",
@@ -4397,7 +4362,6 @@ export const integrations: Integration[] = [
     icon: "/lovable-uploads/pms-sitemarq.svg",
     categories: ["PMS"],
     slug: "gustavopms",
-    website: "https://gustavopms.com"
   },
   {
     id: "booksuite",
@@ -4658,7 +4622,6 @@ export const integrations: Integration[] = [
     icon: "",
     categories: ["PMS", "Asia Pacific"],
     slug: "genthd",
-    website: "https://genthd.com"
   },
   {
     id: "mystay",
