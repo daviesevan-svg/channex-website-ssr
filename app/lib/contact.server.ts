@@ -44,7 +44,9 @@ interface ContactEnv {
 const bindings = () => env as unknown as ContactEnv;
 
 const DEFAULT_TO = "hello@channex.io";
-const DEFAULT_FROM_EMAIL = "noreply@channex.io";
+// mail.channex.io is the configured SparkPost sending domain (channex.io
+// itself is not — sending from it fails with "Unconfigured Sending Domain").
+const DEFAULT_FROM_EMAIL = "noreply@mail.channex.io";
 const DEFAULT_FROM_NAME = "Channex website";
 // EU host by default, matching the SparkPost account the booking engine uses.
 const DEFAULT_API_URL = "https://api.eu.sparkpost.com";
