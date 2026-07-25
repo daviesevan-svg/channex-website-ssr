@@ -1,4 +1,5 @@
 import { integrations } from "@/data/integrations";
+import { OTA_CHANNEL_COUNT, PARTNER_COUNT } from "@/data/counts";
 import type { Integration } from "@/types/integration";
 
 // Which integrations get their own page, and the slim projections the pages
@@ -25,6 +26,21 @@ export function integrationSlug(int: Integration): string {
 }
 
 export const detailPageIntegrations = () => integrations.filter(hasDetailPage);
+
+/** The counts in data/counts.ts are hand-maintained (they're used by client
+ *  components that must not import this dataset). Warn when they drift so
+ *  adding integrations surfaces a reminder instead of silently dating the copy. */
+function assertCountsFresh(): void {
+  if (!import.meta.env.DEV) return;
+  const ota = integrations.filter(hasDetailPage).length;
+  const partners = integrations.length - ota;
+  if (ota !== OTA_CHANNEL_COUNT || partners !== PARTNER_COUNT) {
+    console.warn(
+      `[counts] app/data/counts.ts is stale: OTA_CHANNEL_COUNT=${OTA_CHANNEL_COUNT} (actual ${ota}), ` +
+        `PARTNER_COUNT=${PARTNER_COUNT} (actual ${partners}). Update it — marketing copy reads these.`,
+    );
+  }
+}
 
 /** A card on the listing page: a channel, with description and its own page. */
 export interface ChannelRow {
@@ -57,6 +73,8 @@ export interface IntegrationsIndex {
  *  dataset never ships to the browser. */
 export function integrationsIndex(): IntegrationsIndex {
   const byName = (a: { name: string }, b: { name: string }) => a.name.localeCompare(b.name);
+
+  assertCountsFresh();
 
   const channels: ChannelRow[] = integrations
     .filter(hasDetailPage)

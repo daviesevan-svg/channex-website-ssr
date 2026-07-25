@@ -27,6 +27,7 @@ export const meta: Route.MetaFunction = ({ location }) =>
     },
     location,
   );
+import { OTA_CHANNEL_COUNT } from "@/data/counts";
 import {
   Check,
   X,
@@ -72,7 +73,7 @@ const ComparisonSiteMinder = () => {
     },
     {
       category: "OTA Connections",
-      channex: "50+ certified OTA integrations with real-time sync",
+      channex: `${OTA_CHANNEL_COUNT}+ certified OTA integrations with real-time sync`,
       siteminder: "450+ distribution channels (includes metasearch and GDS)",
       channexWins: false
     },
@@ -221,7 +222,7 @@ const ComparisonSiteMinder = () => {
                 <div className="text-slate-300 text-sm mt-1">Feature Categories</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-primary">50+</div>
+                <div className="text-3xl font-bold text-primary">{OTA_CHANNEL_COUNT}+</div>
                 <div className="text-slate-300 text-sm mt-1">OTA Partners</div>
               </div>
               <div className="text-center">

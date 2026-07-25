@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import { pageMeta } from "@/lib/seo";
 import { Link } from "react-router";
 import type { Route } from "./+types/features";
+import { OTA_CHANNEL_COUNT } from "@/data/counts";
 
 export const meta: Route.MetaFunction = ({ location }) =>
   pageMeta(
@@ -201,7 +202,7 @@ const Features = () => {
                 <div className="text-slate-300 text-sm mt-1">Response Time</div>
               </div>
               <div className="text-center">
-                <div className="text-4xl font-bold bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">50+</div>
+                <div className="text-4xl font-bold bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">{OTA_CHANNEL_COUNT}+</div>
                 <div className="text-slate-300 text-sm mt-1">OTA Partners</div>
               </div>
             </div>
@@ -437,7 +438,9 @@ const Features = () => {
               ))}
             </div>
             <p className="text-center text-muted-foreground">
-              <span className="font-semibold">And 40+ more</span> regional and niche booking platforms
+              {/* Derived so this stays consistent with the channel count above. */}
+              <span className="font-semibold">And {OTA_CHANNEL_COUNT - otaLogos.length} more</span>{" "}
+              regional and niche booking platforms
             </p>
           </div>
         </div>

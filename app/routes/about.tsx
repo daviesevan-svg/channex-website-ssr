@@ -6,6 +6,7 @@ import { pageMeta } from "@/lib/seo";
 import { Code2, Users, Globe, Target, Award, ArrowRight, Building, Calendar, MapPin, Zap, Shield, Lightbulb, Handshake } from "lucide-react";
 import { Link } from "react-router";
 import type { Route } from "./+types/about";
+import { OTA_CHANNEL_COUNT } from "@/data/counts";
 
 export const meta: Route.MetaFunction = ({ location }) =>
   pageMeta(
@@ -19,7 +20,7 @@ export const meta: Route.MetaFunction = ({ location }) =>
 
 const About = () => {
   const stats = [{
-    number: "50+",
+    number: `${OTA_CHANNEL_COUNT}+`,
     label: "OTA Partners",
     icon: Globe,
     description: "Connected to the world's leading booking platforms"

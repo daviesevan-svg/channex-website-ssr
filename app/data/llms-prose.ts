@@ -1,6 +1,7 @@
 // Hand-written prose for /llms.txt. The Pricing Model section that used to
 // live between these two chunks is now generated from app/data/pricing.ts by
 // the llms.txt route so it can never drift from the pricing page.
+import { OTA_CHANNEL_COUNT } from "@/data/counts";
 
 export const LLMS_PROSE_INTRO = `# Channex
 
@@ -18,7 +19,7 @@ Channex operates as a pure B2B wholesale solution — it does not sell directly 
 - Founded: January 2020
 - Partnerships: 280+ PMS integrations
 - Properties: 10,000+ hotels, 55,000+ vacation rentals and outdoor hospitality properties
-- OTA connections: 400+ OTAs and booking channels
+- OTA connections: ${OTA_CHANNEL_COUNT} OTAs and booking channels (see the integrations directory)
 - Uptime SLA: 99.9%
 - API response time: sub-100ms
 

@@ -1,6 +1,7 @@
 // Single source of truth for pricing facts. Rendered by the /pricing page,
 // the /pricing-calculator, the /pricing.md markdown mirror, and /llms.txt —
 // change numbers here and every surface stays in sync.
+import { OTA_CHANNEL_COUNT, PARTNER_COUNT } from "@/data/counts";
 
 export const PLATFORM_FEE = 130;
 export const HOTEL_BASE_RATE = 7;
@@ -103,6 +104,6 @@ export const faqs = [
   },
   {
     question: "Which channels are supported?",
-    answer: "Channex connects to 400+ channels including Booking.com, Expedia, Airbnb, Google Hotel Search, Agoda, Hotelbeds, Hostelworld, Ctrip, and many more. See the full list on the integrations page."
+    answer: `Channex connects to ${OTA_CHANNEL_COUNT} booking channels including Booking.com, Expedia, Airbnb, Google Hotel Search, Agoda, Hotelbeds, Hostelworld, and Trip.com, plus ${PARTNER_COUNT} PMS and technology partners. See the full list on the integrations page.`
   }
 ];

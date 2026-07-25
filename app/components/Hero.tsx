@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Code, Zap, Check } from "lucide-react";
 import { useNavigate } from "react-router";
+import { OTA_CHANNEL_COUNT } from "@/data/counts";
 const heroImage = "/channex-og-image.png";
 
 const Hero = () => {
@@ -31,7 +32,7 @@ const Hero = () => {
               </h1>
               
               <p className="text-xl lg:text-2xl text-muted-foreground font-inter leading-relaxed max-w-xl">
-                Connect your PMS to Booking.com, Airbnb, Expedia, and 50+ OTAs with a modern REST API. No CSV mapping. No XML files.
+                Connect your PMS to Booking.com, Airbnb, Expedia, and {OTA_CHANNEL_COUNT}+ OTAs with a modern REST API. No CSV mapping. No XML files.
               </p>
             </div>
 

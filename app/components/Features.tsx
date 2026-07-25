@@ -1,5 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { OTA_CHANNEL_COUNT } from "@/data/counts";
 import { 
   Code2, 
   Zap, 
@@ -44,9 +45,9 @@ const Features = () => {
     },
     {
       icon: Globe,
-      title: "50+ OTA Connections",
-      description: "Connect to Booking.com, Airbnb, Expedia, Agoda, Trip.com, and 50+ more booking platforms worldwide.",
-      highlight: "50+ OTAs",
+      title: `${OTA_CHANNEL_COUNT}+ OTA Connections`,
+      description: `Connect to Booking.com, Airbnb, Expedia, Agoda, Trip.com and dozens more — ${OTA_CHANNEL_COUNT} booking channels in total.`,
+      highlight: `${OTA_CHANNEL_COUNT}+ OTAs`,
       gradient: "from-indigo-500 to-purple-500"
     },
     {

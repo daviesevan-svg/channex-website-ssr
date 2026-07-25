@@ -6,13 +6,14 @@ import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import { pageMeta } from "@/lib/seo";
 import { PLATFORM_FEE, HOTEL_BASE_RATE, VR_BASE_RATE } from "@/data/pricing";
+import { OTA_CHANNEL_COUNT } from "@/data/counts";
 import type { Route } from "./+types/index";
 
 export const meta: Route.MetaFunction = ({ location }) => [
   ...pageMeta(
     {
       title: "Channel Manager API for PMS | Channex",
-      description: `Connect your PMS to 50+ OTAs via Channex's white-label channel manager API. WhiteLabel plan from $${PLATFORM_FEE}/month plus per-property fees.`,
+      description: `Connect your PMS to ${OTA_CHANNEL_COUNT}+ OTAs via Channex's white-label channel manager API. WhiteLabel plan from $${PLATFORM_FEE}/month plus per-property fees.`,
       structuredData: {
         "@context": "https://schema.org",
         "@type": "SoftwareApplication",
