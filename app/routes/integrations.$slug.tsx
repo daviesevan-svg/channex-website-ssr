@@ -1,5 +1,6 @@
 import { Link, redirect } from "react-router";
-import { ArrowLeft, ExternalLink, CheckCircle, Code, Users, Zap, Globe, Mail, FileText, Shield, DollarSign } from "lucide-react";
+import { ArrowLeft, ArrowRight, Building2, ExternalLink, CheckCircle, Code, Users, Zap, Globe, DollarSign } from "lucide-react";
+import type { LucideIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -11,10 +12,24 @@ import Footer from "@/components/Footer";
 import { pageMeta } from "@/lib/seo";
 import IntegrationLogo from "@/components/IntegrationLogo";
 import { hasDetailPage, integrationSlug, relatedChannels } from "@/lib/integrations.server";
+import { displayCategories, factsOf } from "@/lib/integration-facts";
 import { useState } from "react";
 import type { Route } from "./+types/integrations.$slug";
 
-const HIDDEN_CATEGORIES = new Set(["Regional", "Budget", "Luxury", "Corporate", "API"]);
+/** One line of the "At a glance" card. Renders nothing when we have no data
+ *  for it, so a page never shows an empty or placeholder fact. */
+function FactRow({ icon: Icon, label, values }: { icon: LucideIcon; label: string; values: string[] }) {
+  if (values.length === 0) return null;
+  return (
+    <div>
+      <div className="mb-1 flex items-center gap-2 text-sm font-medium text-foreground">
+        <Icon size={15} className="text-primary" />
+        {label}
+      </div>
+      <p className="text-sm text-muted-foreground">{values.join(", ")}</p>
+    </div>
+  );
+}
 
 export async function loader({ params }: Route.LoaderArgs) {
   const integration = integrations.find((int) => int.slug === params.slug || int.id === params.slug);
@@ -81,6 +96,11 @@ const IntegrationDetail = ({ loaderData }: Route.ComponentProps) => {
     return colorMap[category] || "bg-muted text-muted-foreground border-border";
   };
   const relatedIntegrations = loaderData.related;
+  const facts = factsOf(integration);
+  const hasFeatures = Boolean(integration.features?.length) || Boolean(integration.apiCapabilities?.length);
+  const hasPricing = Boolean(integration.pricing);
+  const hasOverviewExtra = Boolean(integration.longDescription) || Boolean(integration.useCases?.length);
+  const showTabs = hasOverviewExtra || hasFeatures || hasPricing;
   return <div className="min-h-screen bg-background">
       <Header />
 
@@ -123,23 +143,28 @@ const IntegrationDetail = ({ loaderData }: Route.ComponentProps) => {
                   {integration.name}
                 </h1>
                 
+                {/* Short summary here; the longer write-up (where one exists)
+                    lives in the Overview tab, so the two don't repeat. */}
                 <p className="text-xl text-muted-foreground font-inter mb-6 leading-relaxed">
-                  {integration.longDescription || integration.description}
+                  {integration.description}
                 </p>
                 
                 <div className="flex flex-wrap gap-2 mb-6">
-                  {integration.categories.filter(c => !HIDDEN_CATEGORIES.has(c)).map(category => <Badge key={category} variant="outline" className={getCategoryColor(category)}>
+                  {displayCategories(integration).map(category => <Badge key={category} variant="outline" className={getCategoryColor(category)}>
                         {category}
                       </Badge>)}
                 </div>
-                
+
                 <div className="flex flex-wrap gap-4">
                   <Button className="bg-gradient-primary hover:shadow-primary transition-all duration-300" asChild>
-                    
+                    <Link to="/start-integration">
+                      Connect this channel
+                      <ArrowRight size={16} className="ml-2" />
+                    </Link>
                   </Button>
-                  {integration.website && <Button variant="outline" asChild>
-                      <a href={integration.website} target="_blank" rel="noopener noreferrer">
-                        Visit Website
+                  {facts.website && <Button variant="outline" asChild>
+                      <a href={facts.website} target="_blank" rel="noopener noreferrer">
+                        Visit {integration.name}
                         <ExternalLink size={16} className="ml-2" />
                       </a>
                     </Button>}
@@ -153,15 +178,22 @@ const IntegrationDetail = ({ loaderData }: Route.ComponentProps) => {
       {/* Main Content with Tabs */}
       <section className="py-12">
         <div className="container mx-auto px-4 lg:px-6">
-          <div className="grid lg:grid-cols-4 gap-8">
-            
-            {/* Main Content Area */}
-            <div className="lg:col-span-3">
+          <div className={showTabs ? "grid lg:grid-cols-4 gap-8" : "max-w-4xl mx-auto"}>
+
+            {/* Main Content Area — omitted entirely when a channel has nothing
+                beyond its summary, rather than showing empty tabs. */}
+            {showTabs && <div className="lg:col-span-3">
               <Tabs value={activeTab} onValueChange={setActiveTab} className="space-y-6">
-                <TabsList className="grid w-full grid-cols-3">
+                {/* Only offer a tab we actually have content for — most
+                    channels carry just a description, and empty tabs read as
+                    broken. */}
+                <TabsList
+                  className="grid w-full"
+                  style={{ gridTemplateColumns: `repeat(${1 + (hasFeatures ? 1 : 0) + (hasPricing ? 1 : 0)}, minmax(0, 1fr))` }}
+                >
                   <TabsTrigger value="overview">Overview</TabsTrigger>
-                  <TabsTrigger value="features">Features</TabsTrigger>
-                  <TabsTrigger value="pricing">Pricing</TabsTrigger>
+                  {hasFeatures && <TabsTrigger value="features">Features</TabsTrigger>}
+                  {hasPricing && <TabsTrigger value="pricing">Pricing</TabsTrigger>}
                 </TabsList>
 
                 {/* Overview Tab */}
@@ -174,10 +206,12 @@ const IntegrationDetail = ({ loaderData }: Route.ComponentProps) => {
                       <CardTitle>About {integration.name}</CardTitle>
                     </CardHeader>
                     <CardContent>
-                      <p className="text-muted-foreground leading-relaxed">
-                        {integration.longDescription || integration.description}
-                      </p>
-                      
+                      {integration.longDescription && (
+                        <p className="text-muted-foreground leading-relaxed">
+                          {integration.longDescription}
+                        </p>
+                      )}
+
                       {/* Use Cases */}
                       {integration.useCases && integration.useCases.length > 0 && <div className="mt-6">
                           <h4 className="font-semibold text-foreground mb-4 flex items-center gap-2">
@@ -263,87 +297,64 @@ const IntegrationDetail = ({ loaderData }: Route.ComponentProps) => {
                     </Card>}
                 </TabsContent>
               </Tabs>
-            </div>
+            </div>}
 
-            {/* Sidebar */}
-            <div className="lg:col-span-1 space-y-6">
+            {/* Sidebar. Without tabs these two cards sit side by side instead of
+                stacking in a narrow column. */}
+            <div
+              className={
+                showTabs
+                  ? "lg:col-span-1 space-y-6"
+                  : "space-y-6 md:grid md:grid-cols-2 md:gap-6 md:space-y-0"
+              }
+            >
 
-              {/* Categories */}
+              {/* At a glance — the same four facts on every channel page, all
+                  derived from the integration's category tags, so adding a
+                  channel means adding tags rather than writing prose. */}
               <Card>
                 <CardHeader>
-                  <CardTitle className="text-lg">Categories</CardTitle>
+                  <CardTitle className="text-lg">At a glance</CardTitle>
                 </CardHeader>
-                <CardContent>
-                  <div className="flex flex-wrap gap-2">
-                    {integration.categories.filter(c => !HIDDEN_CATEGORIES.has(c)).map(category => <Badge key={category} variant="outline" className={getCategoryColor(category)}>
-                          {category}
-                        </Badge>)}
-                  </div>
+                <CardContent className="space-y-4">
+                  <FactRow icon={Zap} label="Channel type" values={facts.channelTypes} />
+                  <FactRow icon={Globe} label="Sells in" values={facts.regions} />
+                  <FactRow icon={Building2} label="Property types" values={facts.propertyTypes} />
+
+                  {facts.website ? (
+                    <div>
+                      <div className="mb-1 flex items-center gap-2 text-sm font-medium text-foreground">
+                        <ExternalLink size={15} className="text-primary" />
+                        Official site
+                      </div>
+                      <a
+                        href={facts.website}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="break-all text-sm text-primary hover:underline"
+                      >
+                        {facts.website.replace(/^https?:\/\/(www\.)?/, "").replace(/\/$/, "")}
+                      </a>
+                    </div>
+                  ) : null}
                 </CardContent>
               </Card>
 
-              {/* Supported Languages */}
-              {integration.supportedLanguages && integration.supportedLanguages.length > 0 && <Card>
-                  <CardHeader>
-                    <CardTitle className="text-lg flex items-center gap-2">
-                      <Globe size={18} className="text-primary" />
-                      Supported Languages
-                    </CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <div className="space-y-2">
-                      <div>
-                        <h4 className="text-sm font-medium text-foreground mb-1">Software</h4>
-                        <p className="text-sm text-muted-foreground">
-                          {integration.supportedLanguages.join(", ")}
-                        </p>
-                      </div>
-                      <div>
-                        <h4 className="text-sm font-medium text-foreground mb-1">Support</h4>
-                        <p className="text-sm text-muted-foreground">
-                          {integration.supportedLanguages.join(", ")}
-                        </p>
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>}
-
-              {/* Important Links */}
               <Card>
                 <CardHeader>
-                  <CardTitle className="text-lg">Important Links</CardTitle>
+                  <CardTitle className="text-lg">Connect {integration.name}</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-3">
-                  {integration.website && <Button variant="ghost" className="w-full justify-start" asChild>
-                      <a href={integration.website} target="_blank" rel="noopener noreferrer">
-                        <ExternalLink size={16} className="mr-2" />
-                        App website
-                      </a>
-                    </Button>}
-                  {integration.supportEmail && <Button variant="ghost" className="w-full justify-start" asChild>
-                      <a href={`mailto:${integration.supportEmail}`}>
-                        <Mail size={16} className="mr-2" />
-                        Support
-                      </a>
-                    </Button>}
-                  {integration.setupGuideUrl && <Button variant="ghost" className="w-full justify-start" asChild>
-                      <a href={integration.setupGuideUrl} target="_blank" rel="noopener noreferrer">
-                        <FileText size={16} className="mr-2" />
-                        Setup guide
-                      </a>
-                    </Button>}
-                  {integration.privacyPolicyUrl && <Button variant="ghost" className="w-full justify-start" asChild>
-                      <a href={integration.privacyPolicyUrl} target="_blank" rel="noopener noreferrer">
-                        <Shield size={16} className="mr-2" />
-                        Privacy policy
-                      </a>
-                    </Button>}
-                  {integration.documentation && <Button variant="ghost" className="w-full justify-start" asChild>
-                      <a href={integration.documentation} target="_blank" rel="noopener noreferrer">
-                        <Code size={16} className="mr-2" />
-                        Documentation
-                      </a>
-                    </Button>}
+                  <p className="text-sm text-muted-foreground">
+                    Available through the Channex API on the WhiteLabel plan. Mapping and
+                    certification are handled as part of onboarding.
+                  </p>
+                  <Button className="w-full" asChild>
+                    <Link to="/start-integration">Start an integration</Link>
+                  </Button>
+                  <Button variant="outline" className="w-full" asChild>
+                    <Link to="/contact">Talk to sales</Link>
+                  </Button>
                 </CardContent>
               </Card>
             </div>

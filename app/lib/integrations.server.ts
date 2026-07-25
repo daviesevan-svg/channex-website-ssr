@@ -1,5 +1,6 @@
 import { integrations } from "@/data/integrations";
-import { OTA_CHANNEL_COUNT, PARTNER_COUNT } from "@/data/counts";
+import { OTA_CHANNEL_COUNT, PARTNER_COUNT, PMS_COUNT } from "@/data/counts";
+import { regionsOf } from "@/lib/integration-facts";
 import type { Integration } from "@/types/integration";
 
 // Which integrations get their own page, and the slim projections the pages
@@ -34,10 +35,31 @@ function assertCountsFresh(): void {
   if (!import.meta.env.DEV) return;
   const ota = integrations.filter(hasDetailPage).length;
   const partners = integrations.length - ota;
-  if (ota !== OTA_CHANNEL_COUNT || partners !== PARTNER_COUNT) {
+  const pms = integrations.filter((i) => i.categories.includes("PMS")).length;
+  if (ota !== OTA_CHANNEL_COUNT || partners !== PARTNER_COUNT || pms !== PMS_COUNT) {
     console.warn(
       `[counts] app/data/counts.ts is stale: OTA_CHANNEL_COUNT=${OTA_CHANNEL_COUNT} (actual ${ota}), ` +
-        `PARTNER_COUNT=${PARTNER_COUNT} (actual ${partners}). Update it — marketing copy reads these.`,
+        `PARTNER_COUNT=${PARTNER_COUNT} (actual ${partners}), PMS_COUNT=${PMS_COUNT} (actual ${pms}). ` +
+        `Update it — marketing copy reads these.`,
+    );
+  }
+  reportChannelGaps();
+}
+
+/** Channel pages state region / property type / official site from the data, so
+ *  a channel missing those renders a thinner page. Listed in dev rather than
+ *  hidden, so the gaps are visible to whoever adds the next channel. */
+function reportChannelGaps(): void {
+  const channels = integrations.filter(hasDetailPage);
+  const noSite = channels.filter((i) => !i.website).map((i) => i.name);
+  const noRegion = channels.filter((i) => regionsOf(i).length === 0).map((i) => i.name);
+  // Property type isn't listed: an untagged channel correctly falls back to
+  // "Hotels" (see factsOf), so a missing tag isn't a gap.
+  if (noSite.length || noRegion.length) {
+    console.warn(
+      `[channel data] incomplete channel pages —\n` +
+        `  no official site (${noSite.length}): ${noSite.join(", ") || "—"}\n` +
+        `  no region tag (${noRegion.length}): ${noRegion.join(", ") || "—"}`,
     );
   }
 }

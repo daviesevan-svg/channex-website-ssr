@@ -52,18 +52,12 @@ export const integrations: Integration[] = [
       "Go live and start receiving bookings"
     ],
     website: "https://partner.agoda.com",
-    documentation: "https://partner-docs.agoda.com/api",
     screenshots: [
       "",
       "", 
       "",
       ""
-    ],
-    videoUrl: "https://www.youtube.com/watch?v=agoda-partner-demo",
-    supportedLanguages: ["English", "Thai", "Korean", "Japanese", "Chinese", "Vietnamese", "Bahasa Indonesia"],
-    supportEmail: "partner@agoda.com",
-    setupGuideUrl: "https://partner.agoda.com/partner/getting-started", 
-    privacyPolicyUrl: "https://www.agoda.com/info/privacy.html",
+    ], 
     pricing: {
       model: "Commission-based per booking",
       details: "Competitive commission rates with no setup or monthly fees. Commission is only charged on successful bookings.",
@@ -136,18 +130,12 @@ export const integrations: Integration[] = [
       "Go live and start accepting bookings"
     ],
     website: "https://bookingfactory.com",
-    documentation: "https://docs.bookingfactory.com/api",
     screenshots: [
       "",
       "", 
       "",
       ""
     ],
-    videoUrl: "https://www.youtube.com/watch?v=bookingfactory-demo",
-    supportedLanguages: ["English", "Spanish", "French", "German", "Italian"],
-    supportEmail: "support@bookingfactory.com",
-    setupGuideUrl: "https://help.bookingfactory.com/setup-guide",
-    privacyPolicyUrl: "https://bookingfactory.com/privacy",
     pricing: {
       model: "Subscription-based with tiered plans",
       details: "Flexible pricing based on the number of rooms and properties you manage. All plans include core PMS features with advanced tools available in higher tiers.",
@@ -217,17 +205,11 @@ export const integrations: Integration[] = [
       "Start accepting and managing bookings"
     ],
     website: "https://abodepms.com",
-    documentation: "https://docs.abodepms.com",
     screenshots: [
       "",
       "",
       ""
     ],
-    videoUrl: "https://www.youtube.com/watch?v=abode-demo",
-    supportedLanguages: ["English", "Spanish", "French"],
-    supportEmail: "support@abodepms.com",
-    setupGuideUrl: "https://help.abodepms.com/getting-started",
-    privacyPolicyUrl: "https://abodepms.com/privacy",
     pricing: {
       model: "Per-property monthly subscription",
       details: "Simple pricing based on the number of properties you manage. Includes all features with no hidden fees.",
@@ -296,17 +278,11 @@ export const integrations: Integration[] = [
       "Set up error notifications and handling"
     ],
     website: "https://make.com",
-    documentation: "https://docs.make.com",
     screenshots: [
       "",
       "",
       ""
     ],
-    videoUrl: "https://www.youtube.com/watch?v=make-automation-demo",
-    supportedLanguages: ["English", "German", "Spanish", "French", "Portuguese", "Japanese"],
-    supportEmail: "support@make.com",
-    setupGuideUrl: "https://help.make.com/hc/en-us/articles/getting-started",
-    privacyPolicyUrl: "https://make.com/en/privacy-notice",
     pricing: {
       model: "Usage-based with free tier",
       details: "Pay only for the operations you use. Free tier includes 1,000 operations per month. Scale up as your automation needs grow.",
@@ -376,17 +352,11 @@ export const integrations: Integration[] = [
       "Go live with full operations"
     ],
     website: "https://frontdeskmaster.com",
-    documentation: "https://docs.frontdeskmaster.com",
     screenshots: [
       "",
       "",
       ""
     ],
-    videoUrl: "https://www.youtube.com/watch?v=fdm-hostel-demo",
-    supportedLanguages: ["English", "Spanish", "German", "French"],
-    supportEmail: "support@frontdeskmaster.com",
-    setupGuideUrl: "https://help.frontdeskmaster.com/setup",
-    privacyPolicyUrl: "https://frontdeskmaster.com/privacy",
     pricing: {
       model: "Affordable monthly subscription per property",
       details: "Budget-friendly pricing designed for hostels and small accommodations. No per-bed fees, just simple property-based pricing.",
@@ -455,17 +425,11 @@ export const integrations: Integration[] = [
       "Launch and monitor performance"
     ],
     website: "https://omnihotelier.com",
-    documentation: "https://docs.omnihotelier.com",
     screenshots: [
       "",
       "",
       ""
     ],
-    videoUrl: "https://www.youtube.com/watch?v=omnihotelier-demo",
-    supportedLanguages: ["English", "Spanish", "French", "German", "Italian", "Portuguese"],
-    supportEmail: "support@omnihotelier.com",
-    setupGuideUrl: "https://help.omnihotelier.com/integration-guide",
-    privacyPolicyUrl: "https://omnihotelier.com/privacy",
     pricing: {
       model: "Revenue-based commission model",
       details: "Pay only for successful bookings generated through our platform. No upfront costs or monthly fees.",
@@ -507,7 +471,8 @@ export const integrations: Integration[] = [
     name: "PriceTravel",
     description: "Reach travelers across Latin America. Ideal for properties targeting regional tourists and travel agencies.",
     icon: "/lovable-uploads/pricetravel-logo.jpg",
-    categories: ["Regional", "OTA", "Latin America"]
+    categories: ["Regional", "OTA", "Latin America"],
+    website: "https://www.pricetravel.com/",
   },
   {
     id: "9",
@@ -515,7 +480,8 @@ export const integrations: Integration[] = [
     name: "Getaroom",
     description: "Streamline bookings and expand your reach to global travelers. Ideal for properties seeking increased visibility through diverse distribution channels.",
     icon: "/lovable-uploads/a008ef7d-2bb3-4f59-a31d-95660d6140e5.png",
-    categories: ["Global", "OTA", "Distribution"]
+    categories: ["Global", "OTA", "Distribution"],
+    website: "https://www.getaroom.com/",
   },
   {
     id: "10",
@@ -531,7 +497,8 @@ export const integrations: Integration[] = [
     name: "Roombeast",
     description: "Ideal for properties aiming to simplify operations and boost visibility in the Latam market.",
     icon: "",
-    categories: ["Regional", "Latin America", "OTA"]
+    categories: ["Regional", "Latin America", "OTA"],
+    website: "https://roombeast.com/",
   },
   {
     id: "12",
@@ -585,17 +552,11 @@ export const integrations: Integration[] = [
       "Launch and engage with traveler community"
     ],
     website: "https://hostelworld.com",
-    documentation: "https://partners.hostelworld.com/api",
     screenshots: [
       "",
       "",
       ""
     ],
-    videoUrl: "https://www.youtube.com/watch?v=hostelworld-community-demo",
-    supportedLanguages: ["English", "Spanish", "French", "German", "Portuguese", "Italian"],
-    supportEmail: "partners@hostelworld.com",
-    setupGuideUrl: "https://partners.hostelworld.com/setup",
-    privacyPolicyUrl: "https://hostelworld.com/privacy",
     pricing: {
       model: "Commission-based on completed bookings",
       details: "Competitive commission rates for budget accommodation segment. No upfront costs or monthly fees.",
@@ -664,17 +625,11 @@ export const integrations: Integration[] = [
       "Test booking flow and go live"
     ],
     website: "https://airbnb.com",
-    documentation: "https://developers.airbnb.com",
     screenshots: [
       "",
       "",
       ""
     ],
-    videoUrl: "https://www.youtube.com/watch?v=airbnb-integration-demo",
-    supportedLanguages: ["English", "Spanish", "French", "German", "Italian", "Portuguese", "Japanese", "Korean"],
-    supportEmail: "support@airbnb.com",
-    setupGuideUrl: "https://help.airbnb.com/en/article/setup-guide",
-    privacyPolicyUrl: "https://airbnb.com/privacy",
     pricing: {
       model: "Host service fee on bookings",
       details: "Airbnb charges a service fee for each booking. No upfront costs to list your property.",
@@ -701,7 +656,8 @@ export const integrations: Integration[] = [
     name: "Hotelbeds",
     description: "Link your PMS with Hotelbeds to access a global B2B travel network. Perfect for properties seeking partnerships with travel agents and tour operators.",
     icon: "/lovable-uploads/hotelbeds-logo.png",
-    categories: ["B2B", "Global", "Distribution", "OTA"]
+    categories: ["B2B", "Global", "Distribution", "OTA"],
+    website: "https://www.hotelbeds.com/",
   },
   {
     id: "16",
@@ -755,18 +711,12 @@ export const integrations: Integration[] = [
       "Launch and monitor Asian market performance"
     ],
     website: "https://trip.com",
-    documentation: "https://partners.trip.com/api-docs",
     screenshots: [
       "",
       "",
       "",
       ""
     ],
-    videoUrl: "https://www.youtube.com/watch?v=tripcom-china-market-demo",
-    supportedLanguages: ["Chinese (Simplified)", "Chinese (Traditional)", "English", "Japanese", "Korean", "Thai", "Bahasa Indonesia"],
-    supportEmail: "partnersupport@trip.com",
-    setupGuideUrl: "https://partners.trip.com/setup-guide",
-    privacyPolicyUrl: "https://trip.com/privacy",
     pricing: {
       model: "Market-specific commission rates",
       details: "Competitive commission structure tailored to Asian markets. Special rates available for strategic properties and destinations.",
@@ -802,7 +752,8 @@ export const integrations: Integration[] = [
     name: "Traveloka",
     description: "Reach travellers across Southeast Asia. Ideal for properties targeting this fast-growing regional market.",
     icon: "/lovable-uploads/traveloka-logo.png",
-    categories: ["Asia", "Regional", "OTA"]
+    categories: ["Asia", "Regional", "OTA"],
+    website: "https://www.traveloka.com/",
   },
   {
     id: "19",
@@ -852,18 +803,12 @@ export const integrations: Integration[] = [
       "Launch and monitor booking performance"
     ],
     website: "https://vrbo.com",
-    documentation: "https://help.vrbo.com/partner-resources",
     screenshots: [
       "",
       "",
       "",
       ""
     ],
-    videoUrl: "https://www.youtube.com/watch?v=vrbo-vacation-rental-demo",
-    supportedLanguages: ["English", "Spanish", "French", "German", "Italian", "Portuguese"],
-    supportEmail: "partnersupport@vrbo.com",
-    setupGuideUrl: "https://help.vrbo.com/partner-setup",
-    privacyPolicyUrl: "https://vrbo.com/privacy",
     pricing: {
       model: "Annual subscription or pay-per-booking",
       details: "Choose between annual subscription model or pay-per-booking commission. Subscription offers lower total costs for active properties.",
@@ -915,7 +860,8 @@ export const integrations: Integration[] = [
     name: "HRS",
     description: "Streamline bookings for business travelers and corporate clients. Ideal for properties targeting the corporate travel market.",
     icon: "/lovable-uploads/hrs-logo.png",
-    categories: ["Corporate", "Global", "B2B", "OTA"]
+    categories: ["Corporate", "Global", "B2B", "OTA"],
+    website: "https://www.hrs.com/",
   },
   {
     id: "24",
@@ -923,7 +869,8 @@ export const integrations: Integration[] = [
     name: "Hipcamp",
     description: "Ideal for campsites, glamping, and unique nature-focused properties.",
     icon: "/lovable-uploads/hipcamp-logo.png",
-    categories: ["Outdoor", "Vacation Rentals", "OTA"]
+    categories: ["Outdoor", "Vacation Rentals", "OTA"],
+    website: "https://www.hipcamp.com/",
   },
   {
     id: "225",
@@ -948,7 +895,8 @@ export const integrations: Integration[] = [
     name: "Hopper",
     description: "Connect with Hopper to reach a mobile-first audience seeking personalised travel deals. Ideal for properties targeting tech-savvy, price-conscious travellers.",
     icon: "/lovable-uploads/7b05812a-9203-4c34-b995-9a7fcbd64216.png",
-    categories: ["OTA", "Global"]
+    categories: ["OTA", "Global"],
+    website: "https://www.hopper.com/",
   },
   {
     id: "27",
@@ -956,7 +904,8 @@ export const integrations: Integration[] = [
     name: "Reconline",
     description: "Connect with Reconline GDS to access global distribution channels and connect with travel agents worldwide. Ideal for properties seeking broader exposure and increased bookings.",
     icon: "",
-    categories: ["Distribution", "Global", "B2B", "OTA"]
+    categories: ["Distribution", "Global", "B2B", "OTA"],
+    website: "https://www.reconline.com/",
   },
   {
     id: "28",
@@ -980,7 +929,8 @@ export const integrations: Integration[] = [
     name: "Roibos",
     description: "A robust B2B travel platform. Ideal for properties seeking connections with tour operators, travel agents, and wholesalers worldwide.",
     icon: "/lovable-uploads/da970051-848f-499c-a8cc-2c650fae0caf.png",
-    categories: ["B2B", "Global", "Distribution", "OTA"]
+    categories: ["B2B", "Global", "Distribution", "OTA"],
+    website: "https://roibos.com/",
   },
 
   
@@ -990,7 +940,8 @@ export const integrations: Integration[] = [
     name: "Hyperguest",
     description: "Access a direct, commission-free B2B distribution network. Ideal for properties seeking to optimize margins and connect with travel agents globally.",
     icon: "/lovable-uploads/da51353c-aaa9-4fa4-ba27-c0c34f952887.png",
-    categories: ["B2B", "Global", "Distribution", "OTA"]
+    categories: ["B2B", "Global", "Distribution", "OTA"],
+    website: "https://www.hyperguest.com/",
   },
   {
     id: "32",
@@ -998,7 +949,8 @@ export const integrations: Integration[] = [
     name: "Inntopia",
     description: "Connect your PMS with Inntopia to streamline bookings and packaging for resorts, hotels, and vacation rentals. Ideal for properties targeting year-round leisure and group travelers.",
     icon: "",
-    categories: ["Vacation Rentals", "OTA"]
+    categories: ["Vacation Rentals", "OTA"],
+    website: "https://www.inntopia.com/",
   },
   {
     id: "33",
@@ -1040,7 +992,8 @@ export const integrations: Integration[] = [
     name: "Hookusbookus",
     description: "Integrate with Hookusbookus to streamline bookings and connect with travelers seeking unique accommodations. Ideal for properties offering personalized and distinctive experiences.",
     icon: "",
-    categories: ["OTA", "Vacation Rentals"]
+    categories: ["OTA", "Vacation Rentals"],
+    website: "https://hookusbookus.com/",
   },
   {
     id: "37",
@@ -1095,7 +1048,8 @@ export const integrations: Integration[] = [
     name: "Moverii",
     description: "Ideal for properties seeking a user-friendly solution to streamline operations and enhance guest experiences.",
     icon: "/lovable-uploads/moverii-logo.png",
-    categories: ["OTA"]
+    categories: ["OTA", "Activities"],
+    website: "https://moverii.de/",
   },
   {
     id: "44",
@@ -1141,17 +1095,11 @@ export const integrations: Integration[] = [
       "Go live and monitor performance"
     ],
     website: "https://booking.com",
-    documentation: "https://developers.booking.com",
     screenshots: [
       "",
       "",
       ""
     ],
-    videoUrl: "https://www.youtube.com/watch?v=example",
-    supportedLanguages: ["English", "Spanish", "French", "German", "Italian", "Portuguese"],
-    supportEmail: "support@booking.com",
-    setupGuideUrl: "https://partner.booking.com/en-gb/help/setup-guide",
-    privacyPolicyUrl: "https://booking.com/privacy",
     pricing: {
       model: "Commission-based",
       details: "No setup fees. You only pay when you receive bookings through our platform.",
@@ -1223,18 +1171,12 @@ export const integrations: Integration[] = [
       "Launch and monitor performance metrics"
     ],
     website: "https://expedia.com",
-    documentation: "https://developers.expediagroup.com",
     screenshots: [
       "",
       "",
       "",
       ""
     ],
-    videoUrl: "https://www.youtube.com/watch?v=expedia-integration-demo",
-    supportedLanguages: ["English", "Spanish", "French", "German", "Italian", "Japanese", "Korean", "Chinese"],
-    supportEmail: "partnersupport@expedia.com",
-    setupGuideUrl: "https://help.expedia.com/partner-setup-guide",
-    privacyPolicyUrl: "https://expedia.com/privacy",
     pricing: {
       model: "Commission-based on bookings",
       details: "Pay only when guests book and stay. No upfront costs or monthly fees. Commission rates vary by property type and market.",
@@ -2261,7 +2203,7 @@ export const integrations: Integration[] = [
     name: "Waverick",
     description: "Waverick Adventures is a platform that allows users to find and compare surf camps and schools across various Moroccan destinations, including Taghazout, Rabat, Imsouane, Dakhla, Casablanca, and Essaouira.",
     icon: "",
-    categories: ["OTA"]
+    categories: ["OTA", "Outdoor"]
   },
   {
     id: "194",
@@ -2395,7 +2337,7 @@ export const integrations: Integration[] = [
     name: "Pitchup",
     description: "Pitchup.com is a leading online booking platform specializing in outdoor accommodations such as campsites, glamping sites, and caravan parks.",
     icon: "/lovable-uploads/82d1b7f7-d608-45d1-8f33-80c1ca408e78.png",
-    categories: ["OTA"]
+    categories: ["OTA", "Outdoor"]
   },
     {
     id: "213",
@@ -2411,7 +2353,8 @@ export const integrations: Integration[] = [
     name: "Didatravel",
     description: "China's leading B2B travel platform. Ideal for properties targeting travel agents, tour operators, and wholesalers globally.",
     icon: "/lovable-uploads/524270f8-c22d-41b4-8acd-a5f302d9b08d.png",
-    categories: ["B2B", "Asia", "Distribution", "OTA"]
+    categories: ["B2B", "Asia", "Distribution", "OTA"],
+    website: "https://www.didatravel.com/",
   },
   {
     id: "215",
@@ -2427,7 +2370,8 @@ export const integrations: Integration[] = [
     name: "Mr & Mrs Smith",
     description: "A curated platform for luxury and boutique stays. Ideal for properties offering unique, high-end experiences.",
     icon: "/lovable-uploads/mrandmrssmith-logo.jpg",
-    categories: ["Luxury", "Global", "OTA"]
+    categories: ["Luxury", "Global", "OTA"],
+    website: "https://www.mrandmrssmith.com/",
   },
   {
     id: "217",
@@ -2443,7 +2387,8 @@ export const integrations: Integration[] = [
     name: "Bookeasy",
     description: "Australia's leading tourism destination management platform. Ideal for properties targeting local and regional travelers.",
     icon: "/lovable-uploads/592fc0e3-4382-414f-a873-fe6397751604.png",
-    categories: ["Australia", "Distribution", "OTA"]
+    categories: ["Australia", "Distribution", "OTA"],
+    website: "https://www.bookeasy.com/",
   },
   {
     id: "219",
@@ -2617,8 +2562,6 @@ export const integrations: Integration[] = [
       "Launch villa listing on platform"
     ],
     website: "https://www.ministryofvillas.com",
-    documentation: "https://www.ministryofvillas.com/villa-owners/",
-    supportEmail: "support@ministryofvillas.com",
     pricing: {
       model: "Commission-based",
       details: "Competitive commission structure with no upfront fees. Revenue share model that aligns our success with villa owner profitability.",
@@ -2685,7 +2628,6 @@ export const integrations: Integration[] = [
       "Go live with booking management"
     ],
     website: "https://lodgegate.com",
-    supportEmail: "support@lodgegate.com",
     pricing: {
       model: "Subscription-based",
       details: "Flexible pricing based on property size and feature requirements. Contact for custom pricing.",
@@ -2756,7 +2698,6 @@ export const integrations: Integration[] = [
       "Test booking flow and go live"
     ],
     website: "https://alaric.id/",
-    supportEmail: "support@alaric.id",
     pricing: {
       model: "Commission or Subscription-based",
       details: "Flexible pricing options available. Contact for detailed pricing information.",
@@ -2831,7 +2772,6 @@ export const integrations: Integration[] = [
       "Go live with ongoing support"
     ],
     website: "https://lsisoftware.pl/",
-    supportEmail: "support@lsisoftware.pl",
     pricing: {
       model: "Subscription-based",
       details: "Monthly or annual subscription plans based on property size and features required. Contact LSI Software for custom pricing.",
@@ -2904,13 +2844,7 @@ export const integrations: Integration[] = [
       "Go live and start processing payments"
     ],
     website: "https://stripe.com",
-    documentation: "https://stripe.com/docs/api",
     screenshots: [],
-    videoUrl: "https://www.youtube.com/watch?v=stripe-overview",
-    supportedLanguages: ["English", "Spanish", "French", "German", "Italian", "Portuguese", "Japanese", "Chinese"],
-    supportEmail: "support@stripe.com",
-    setupGuideUrl: "https://docs.channex.io/api-v.1-documentation/stripe-tokenization-app",
-    privacyPolicyUrl: "https://stripe.com/privacy",
     pricing: {
       model: "Transaction-based pricing",
       details: "Pay only when you process payments. Standard rate is 2.9% + $0.30 per successful transaction. Volume discounts available for high-volume businesses.",
@@ -2940,6 +2874,7 @@ export const integrations: Integration[] = [
     longDescription: "Interface your PMS to our SynXIS CRS for GDS, IDS, OTAs connectivity and Direct Hotel Booking Solutions with demand partnerships, global reach, marketing, account management, support and best in class systems – more business at an attractive cost of sale. Unlock chain-level reach without sacrificing independence. HotelREZ, seamlessly integrated with your Channex PMS, connects you to the most powerful commercial network for independent hotels worldwide. Gain Global Preferred Status and access chain-level deals across GDS (750k agencies), OTAs, corporate RFPs, consortia, TMCs, and direct channels. HotelREZ drives higher-margin business and sustainable growth for independent and small hotel groups. As a Global Partner of Hospitality Solutions (formerly Sabre Hospitality), we use SynXis as our CRS \"pipe\", but the real value goes far beyond connectivity. We help you win more profitable business, not simply additional room nights.",
     icon: "/lovable-uploads/hotelrez-logo.png",
     categories: ["OTA", "Distribution", "Global"],
+    website: "https://hotelrez.com/",
     features: [
       "Incremental demand, not rebadging - At HotelREZ our aim is to focus your Channex property on delivering new volume and a stronger channel mix rather than simply moving existing bookings from one pipe to another.",
       "Margin-focused economics - Our model prioritises profitability. Smarter OTA deals, stronger direct share and optimised GDS costs all contribute to drive a healthier P&L over time securing higher margins that sticks.",
@@ -3114,13 +3049,7 @@ export const integrations: Integration[] = [
       "Go live and start receiving bookings"
     ],
     website: "https://www.klook.com",
-    documentation: "https://partner.klook.com/",
     screenshots: [],
-    videoUrl: "",
-    supportedLanguages: ["English", "Chinese (Simplified)", "Chinese (Traditional)", "Japanese", "Korean", "Thai", "Vietnamese", "Bahasa Indonesia", "Bahasa Malaysia"],
-    supportEmail: "partner@klook.com",
-    setupGuideUrl: "https://partner.klook.com/getting-started",
-    privacyPolicyUrl: "https://www.klook.com/privacy/",
     pricing: {
       model: "Commission-based per booking",
       details: "Competitive commission rates with no upfront costs. Commission is only charged on confirmed bookings.",
@@ -3192,13 +3121,7 @@ export const integrations: Integration[] = [
       "Go live and start receiving bookings"
     ],
     website: "https://www.check24.de",
-    documentation: "https://partner.check24.de/",
     screenshots: [],
-    videoUrl: "",
-    supportedLanguages: ["German", "English"],
-    supportEmail: "partner@check24.de",
-    setupGuideUrl: "https://partner.check24.de/getting-started",
-    privacyPolicyUrl: "https://www.check24.de/unternehmen/datenschutz/",
     pricing: {
       model: "Commission-based per booking",
       details: "Competitive commission rates for the German market with no upfront costs. Commission is only charged on confirmed bookings.",
@@ -4508,7 +4431,7 @@ export const integrations: Integration[] = [
     name: "Ctoutvert / Secureholiday",
     description: "France-based online booking and distribution platform specializing in outdoor accommodation, camping, and holiday parks. Ctoutvert operates the Secureholiday Platform, providing campsite and holiday park operators with online reservation management, channel distribution, and CRM tools across Europe.",
     icon: "/lovable-uploads/ota-ctoutvert.png",
-    categories: ["OTA", "Europe"],
+    categories: ["OTA", "Europe", "Outdoor"],
     slug: "ctoutvert",
     website: "https://www.ctoutvert.com/fr"
   },
