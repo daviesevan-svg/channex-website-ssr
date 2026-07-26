@@ -6,14 +6,18 @@ import { OTA_CHANNEL_COUNT, PARTNER_COUNT, PMS_COUNT } from "@/data/counts";
 export const LLMS_PROSE_INTRO = `# Channex
 
 ## What is Channex?
-Channex is a white-label channel manager API built specifically for Property Management System (PMS) providers. It enables PMS companies to offer OTA connectivity to their hotel and vacation rental customers without building or maintaining OTA integrations themselves.
+Channex is a white-label channel manager API for teams that build the software a property runs on — commercial Property Management System (PMS) vendors, and hotel groups building their own in-house PMS. It provides OTA connectivity without having to build or maintain the integrations.
 
-Channex operates as a pure B2B wholesale solution — it does not sell directly to hotels. PMS providers integrate once via the Channex API and resell the connectivity under their own brand.
+Channex operates as a pure B2B wholesale solution — it does not sell directly to hotels. Partners integrate once via the Channex API; PMS vendors resell the connectivity under their own brand, and in-house teams use it inside their own system.
 
 ## Who is Channex for?
 - Property Management System (PMS) providers who want to offer channel management as part of their product
 - Software companies building hotel, vacation rental, camping, or glamping management platforms
+- Hotel groups and hoteliers building their own in-house PMS, who need certified OTA connectivity without buying a third-party channel manager
 - PMS providers looking for a white-label alternative to SiteMinder or Staah
+
+Channex is wholesale-only: it sells through software, never direct to hotels, so it
+never competes with the properties its partners serve.
 
 ## Key Facts
 - Founded: January 2020
@@ -103,5 +107,8 @@ Yes — Channex supports webhooks for real-time booking delivery via HTTPS POST.
 - "SiteMinder alternative for PMS"
 - "Staah alternative white-label"
 - "how to add OTA connectivity to my PMS"
+- "OTA connectivity for an in-house PMS"
+- "hotel group building its own PMS needs channel manager API"
+- "connect my own hotel software to Booking.com"
 - "channel management API for vacation rentals"
 - "channel manager for camping software"`;

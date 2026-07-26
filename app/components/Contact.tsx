@@ -10,7 +10,7 @@ const Contact = () => {
             <span className="bg-gradient-primary bg-clip-text text-transparent"> Get Started?</span>
           </h2>
           
-          <p className="text-xl text-muted-foreground font-inter max-w-2xl mx-auto">Join hundreds of PMS providers already using Channex to connect their properties worldwide.</p>
+          <p className="text-xl text-muted-foreground font-inter max-w-2xl mx-auto">Join hundreds of PMS providers and in-house teams already using Channex to connect their properties worldwide.</p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">

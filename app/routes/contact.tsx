@@ -74,7 +74,7 @@ const Contact = ({ actionData }: Route.ComponentProps) => {
             </h1>
             
             <p className="text-xl text-muted-foreground font-inter max-w-2xl mx-auto">
-              Join thousands of PMS providers already using Channex to connect their properties worldwide.
+              Join hundreds of PMS providers and in-house teams already using Channex to connect their properties worldwide.
             </p>
           </div>
 

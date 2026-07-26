@@ -25,7 +25,7 @@ const Features = () => {
     {
       icon: Zap,
       title: "Fast Integration",
-      description: "Most PMS companies go live in 2-4 weeks. Sub-100ms response times with 99.9% uptime SLA.",
+      description: "Most teams go live in 2-4 weeks. Sub-100ms response times with 99.9% uptime SLA.",
       highlight: "2-4 weeks",
       gradient: "from-purple-500 to-pink-500"
     },
@@ -52,9 +52,9 @@ const Features = () => {
     },
     {
       icon: Users,
-      title: "PMS-Only Focus",
-      description: "We only work with PMS providers. We never market to hotels or compete with your customers.",
-      highlight: "B2B only",
+      title: "Wholesale Only",
+      description: "We sell through software, never direct to hotels. Whether you're a PMS vendor or a hotel group building in-house, we're never competing with you.",
+      highlight: "Never direct",
       gradient: "from-teal-500 to-cyan-500"
     },
     {
@@ -80,7 +80,7 @@ const Features = () => {
         <div className="text-center space-y-6 mb-16">
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 rounded-full text-sm font-medium text-primary border border-primary/20">
             <Code2 size={16} />
-            Built for PMS Providers
+            Built for teams building hotel software
           </div>
           
           <h2 className="text-4xl lg:text-5xl font-bold text-foreground font-inter">
@@ -89,7 +89,7 @@ const Features = () => {
           </h2>
           
           <p className="text-xl text-muted-foreground font-inter max-w-3xl mx-auto leading-relaxed">
-            A complete channel manager API designed for Property Management Systems. Modern, reliable, and developer-friendly.
+            A complete channel manager API for anyone building hotel software — commercial PMS products and in-house systems alike. Modern, reliable, developer-friendly.
           </p>
         </div>
 

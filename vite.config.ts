@@ -57,6 +57,12 @@ function emitOtaXlsx() {
 // Cloudflare. Nothing to prune any more.
 
 export default defineConfig({
+  // Copyright year, fixed at build time (see app/components/Footer.tsx). Not
+  // computed at runtime: server and client would disagree across New Year,
+  // which React reports as a hydration mismatch.
+  define: {
+    __BUILD_YEAR__: JSON.stringify(String(new Date().getFullYear())),
+  },
   // Dev-only: crawl every route at server startup so Vite discovers and
   // optimizes ALL dependencies up front. Without this, each newly visited page
   // (e.g. /integrations pulling in xlsx) triggers "optimized dependencies

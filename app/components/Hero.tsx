@@ -20,7 +20,7 @@ const Hero = () => {
             {/* Badge */}
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 rounded-full text-sm font-medium text-primary border border-primary/20">
               <Zap size={16} className="animate-pulse" />
-              For PMS Providers Only
+              Wholesale only — never direct to hotels
             </div>
             
             {/* Main headline */}
@@ -32,7 +32,7 @@ const Hero = () => {
               </h1>
               
               <p className="text-xl lg:text-2xl text-muted-foreground font-inter leading-relaxed max-w-xl">
-                Connect your PMS to Booking.com, Airbnb, Expedia, and {OTA_CHANNEL_COUNT}+ OTAs with a modern REST API. No CSV mapping. No XML files.
+                Connect your PMS — or your own in-house system — to Booking.com, Airbnb, Expedia and {OTA_CHANNEL_COUNT}+ OTAs with a modern REST API. No CSV mapping. No XML files.
               </p>
             </div>
 
@@ -54,7 +54,7 @@ const Hero = () => {
                 <div className="flex items-center justify-center w-5 h-5 rounded-full bg-primary/20">
                   <Check size={14} className="text-primary" />
                 </div>
-                <span className="text-lg font-inter">We never compete with your customers</span>
+                <span className="text-lg font-inter">We never sell direct to hotels</span>
               </div>
             </div>
 
