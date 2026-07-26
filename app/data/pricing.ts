@@ -93,11 +93,19 @@ export const wrongFit = [
 export const faqs = [
   {
     question: "Is there a free trial or sandbox environment?",
-    answer: "Yes — Channex provides a full sandbox environment so you can test the API, map channels, and validate your integration before going live. Contact our team to get sandbox credentials set up."
+    answer: "Yes. The staging server is free — sign up at staging.channex.io and start building straight away, no sales call and no card required. You get the full API to test against, map channels, and validate your integration before anything goes live or is billed."
+  },
+  {
+    question: "Are there minimums, commissions or hidden fees?",
+    answer: "No. There's no minimum number of properties, no certification fee, no commission on bookings, and no hidden charges. You pay the platform fee plus the per-property fee for properties with an active channel — that's the whole bill."
+  },
+  {
+    question: "How and when am I billed?",
+    answer: "Your first month is pro-rated from your start date. After that, on the 1st of each month we automatically charge the platform fee plus the per-property fees for that month in advance, and email you the invoice."
   },
   {
     question: "What counts as an \"active\" property?",
-    answer: "A property is considered active in any month where it has at least one live channel connection. Properties that are set up but have no active channel connections are not billed."
+    answer: "A property counts as live once it has at least one active channel connection. Properties that are set up but have no active connection are not billed. Because each month is charged in advance on the 1st, adding or removing a property mid-cycle doesn't change that month's invoice — there's no pro rata or credit either way, and the change is reflected on the next one."
   },
   {
     question: "What does the $130/month platform fee cover?",
