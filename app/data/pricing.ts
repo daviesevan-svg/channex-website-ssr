@@ -117,7 +117,7 @@ export const faqs = [
   },
   {
     question: "What contract length is required?",
-    answer: "There's no fixed term or minimum contract — Channex is billed monthly. To cancel, give 30 days' notice. You can scale the number of connected properties up or down at any time without notice; only cancellation of the account itself needs the 30 days."
+    answer: "There's no fixed term or minimum contract — Channex is billed monthly and you can cancel any time, with 30 days' notice. Scaling the number of connected properties up or down needs no notice at all."
   },
   {
     question: "Is there a setup or onboarding fee?",

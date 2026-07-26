@@ -111,7 +111,7 @@ const Pricing = () => {
                   <Link to="/contact">Talk to us about your integration</Link>
                 </Button>
                 <p className="text-center text-xs text-muted-foreground font-inter">
-                  No setup fee. Billed monthly, 30 days' notice to cancel.
+                  No setup fee. Billed monthly, cancel any time.
                 </p>
               </CardContent>
             </Card>
@@ -445,7 +445,7 @@ const Pricing = () => {
               </div>
               <h3 className="text-lg font-semibold text-foreground font-inter">No lock-in</h3>
               <p className="text-muted-foreground font-inter">
-                Billed monthly, no fixed term, no setup fee. Scale properties up or down as you go; 30 days' notice to cancel.
+                Billed monthly, no long-term contract, no setup fee. Scale up or down as you go.
               </p>
             </div>
 

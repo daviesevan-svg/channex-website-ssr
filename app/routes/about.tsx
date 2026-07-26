@@ -6,7 +6,7 @@ import { pageMeta } from "@/lib/seo";
 import { Code2, Users, Globe, Target, Award, ArrowRight, Building, Calendar, MapPin, Zap, Shield, Lightbulb, Handshake } from "lucide-react";
 import { Link } from "react-router";
 import type { Route } from "./+types/about";
-import { OTA_CHANNEL_COUNT } from "@/data/counts";
+import { OTA_CHANNEL_COUNT, PMS_COUNT } from "@/data/counts";
 
 export const meta: Route.MetaFunction = ({ location }) =>
   pageMeta(
@@ -30,7 +30,7 @@ const About = () => {
     icon: Shield,
     description: "Enterprise-grade reliability you can depend on"
   }, {
-    number: "200+",
+    number: `${PMS_COUNT}+`,
     label: "PMS Integrations",
     icon: Building,
     description: "Seamless connectivity across all major systems"
@@ -49,7 +49,7 @@ const About = () => {
   }, {
     icon: Handshake,
     title: "Partnership Focused",
-    description: "We're not here to replace PMS systems - we're here to make them more powerful through seamless OTA connectivity.",
+    description: "We sell through software, never direct to hotels. Your product stays the one your customers rely on; we just make it better connected.",
     color: "from-purple-500/20 to-purple-600/20"
   }, {
     icon: Target,
@@ -136,7 +136,7 @@ const About = () => {
             </h1>
             
             <p className="text-xl text-slate-300 font-inter max-w-2xl mx-auto leading-relaxed">
-              We're on a mission to make OTA connectivity seamless for every Property Management System, enabling hotels to focus on what they do best — creating amazing guest experiences.
+              We're on a mission to make OTA connectivity seamless for everyone who builds the software a property runs on — commercial PMS vendors and hotel groups building their own — so properties can focus on what they do best: creating great guest experiences.
             </p>
           </div>
         </div>
