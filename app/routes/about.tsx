@@ -35,10 +35,10 @@ const About = () => {
     icon: Building,
     description: "Seamless connectivity across all major systems"
   }, {
-    number: "2019",
+    number: "2020",
     label: "Founded",
     icon: Calendar,
-    description: "Built by hospitality tech veterans"
+    description: "By a hotelier who had already built and sold a PMS"
   }];
 
   const values = [{
@@ -66,7 +66,7 @@ const About = () => {
   const teamMembers = [{
     name: "Evan Davies",
     role: "CEO & Co-Founder",
-    bio: "Former Hotelier with 10+ years in hospitality tech.",
+    bio: "Former hotelier. Built his own PMS in 2015 and sold it in 2019 — Channex is the channel manager he wanted back then.",
     image: "/lovable-uploads/578448c6-4f90-414e-bbbd-a0d0d3ee17f2.png"
   }, {
     name: "Andrew Yudin",
@@ -106,10 +106,11 @@ const About = () => {
   }];
 
   const milestones = [
-    { year: "2019", title: "Founded", description: "Channex launched with a mission to simplify OTA connectivity" },
-    { year: "2020", title: "First 10 Integrations", description: "Rapidly expanded OTA partner network" },
-    { year: "2022", title: "Enterprise Scale", description: "Reached 200+ PMS integrations and 99.9% uptime" },
-    { year: "2024", title: "Global Leader", description: "Trusted by hundreds of PMS providers worldwide" }
+    { year: "2015", title: "The problem, first-hand", description: "Our founder builds his own PMS while running hotels — and hits the channel-manager wall" },
+    { year: "2019", title: "PMS sold", description: "The PMS is sold in December, but the connectivity gap it exposed is still there" },
+    { year: "2020", title: "Channex founded", description: "Launched in January to build the channel manager that PMS had needed: modern API, per-property pricing, wholesale only" },
+    { year: "2022", title: "Enterprise scale", description: "Hundreds of PMS integrations live, on a 99.9% uptime SLA" },
+    { year: "Today", title: `${PMS_COUNT}+ PMS partners`, description: `${OTA_CHANNEL_COUNT} booking channels behind one API, serving partners worldwide` }
   ];
 
   return (
@@ -205,9 +206,15 @@ const About = () => {
                     <MapPin size={24} className="text-blue-400" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-foreground text-lg mb-2">Founded in London</h3>
+                    <h3 className="font-semibold text-foreground text-lg mb-2">
+                      Built by a hotelier who'd already built a PMS
+                    </h3>
                     <p className="text-muted-foreground leading-relaxed">
-                      Born from the frustration of complex hotel tech integrations, Channex was founded by former PMS engineers who understood the pain points firsthand.
+                      Our founder built his own property management system in 2015 while running
+                      hotels, and sold it in December 2019. The hardest part was never the PMS — it
+                      was the channel managers it had to plug into: expensive, no modern API worth
+                      the name, and unwilling to bend to fit the product. Channex opened in January
+                      2020 to be the thing he'd needed.
                     </p>
                   </div>
                 </div>

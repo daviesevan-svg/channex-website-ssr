@@ -19,6 +19,14 @@ Channex operates as a pure B2B wholesale solution — it does not sell directly 
 Channex is wholesale-only: it sells through software, never direct to hotels, so it
 never competes with the properties its partners serve.
 
+## Origin
+Channex was founded in January 2020 by a hotelier who had built his own property
+management system in 2015 and sold it in December 2019. The pain point that
+started Channex was the channel managers that PMS had to integrate with: they
+were expensive, had no modern API, and were inflexible. Channex exists to be the
+opposite — a modern REST API, per-property pricing, and wholesale-only so it
+never competes with its partners.
+
 ## Key Facts
 - Founded: January 2020
 - Partnerships: ${PMS_COUNT} PMS integrations (plus booking engines, RMS and payment gateways — ${PARTNER_COUNT} technology partners in total)
