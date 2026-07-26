@@ -98,7 +98,8 @@ ${tierLines(VR_TIERS, "units")}
 - Only properties with at least one active channel connection are billed.
 - The $${PLATFORM_FEE}/month platform fee applies in addition to per-property charges.
 - All prices are excluding VAT.
-- Billed monthly, no long-term contract, cancel any time. No setup fees.
+- Billed monthly, no fixed term or minimum contract. No setup fees.
+- Cancellation requires 30 days' notice; scaling properties up or down does not.
 
 ## Example Monthly Cost
 
