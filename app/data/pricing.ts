@@ -36,7 +36,8 @@ export const plan = {
   name: "WhiteLabel",
   price: "$130",
   period: "per Month",
-  description: "For tech providers like PMS and Booking Engines. Very Competitive Prices per property.",
+  description:
+    "For teams that build hotel software — commercial PMS products, booking engines, and in-house systems.",
   features: [
     "Competitive per-property pricing",
     "API Access",
@@ -71,6 +72,22 @@ export const channels = [
   "Hotelbeds",
   "Ctrip",
   "Other Channels (See integration page for full list)",
+];
+
+/** Who the product suits. Stated on the pricing page and in /pricing.md so
+ *  unsuitable enquiries self-select out rather than becoming support load:
+ *  Channex is a wholesale API needing engineering capacity, and the flat
+ *  platform fee makes no sense for a single property. */
+export const goodFit = [
+  "You build the software a property runs on — a commercial PMS, booking engine, or your own in-house system",
+  "You have developers who can integrate a REST API and pass certification (typically 2–4 weeks)",
+  "You're connecting a portfolio, not a single property — the platform fee is flat, so cost per property falls as you grow",
+];
+
+export const wrongFit = [
+  "You run one hotel and want to connect it to OTAs — buy a channel manager directly instead; it will cost less and work out of the box",
+  "You don't have development resources — there's no no-code option, this is an API",
+  "You want us to manage your listings for you — we're wholesale infrastructure, not a managed service",
 ];
 
 export const faqs = [

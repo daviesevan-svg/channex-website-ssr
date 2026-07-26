@@ -1,4 +1,6 @@
 import {
+  goodFit,
+  wrongFit,
   PLATFORM_FEE,
   HOTEL_BASE_RATE,
   VR_BASE_RATE,
@@ -112,6 +114,16 @@ ${featureRows.map((r) => `- ${r.feature}: ${r.whitelabel === "✓" ? "Included" 
 ${channels.map((c) => `- ${c}`).join("\n")}
 
 Full directory: ${SITE_URL}/integrations.md
+
+## Is this the right product for you?
+
+Channex is wholesale infrastructure sold to the people who build hotel software.
+
+A good fit if:
+${goodFit.map((f) => `- ${f}`).join("\n")}
+
+Probably not, if:
+${wrongFit.map((f) => `- ${f}`).join("\n")}
 
 ## Frequently Asked Questions
 
