@@ -3,10 +3,17 @@ import { Button } from "@/components/ui/button";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { pageMeta } from "@/lib/seo";
-import { Code2, Users, Globe, Target, Award, ArrowRight, Building, Calendar, MapPin, Zap, Shield, Lightbulb, Handshake } from "lucide-react";
+import { Code2, Users, Globe, Target, Award, ArrowRight, Building, Home, Calendar, MapPin, Zap, Shield, Lightbulb, Handshake } from "lucide-react";
 import { Link } from "react-router";
 import type { Route } from "./+types/about";
-import { OTA_CHANNEL_COUNT, PMS_COUNT } from "@/data/counts";
+import {
+  CHANNEL_CONNECTION_COUNT,
+  HOTEL_PROPERTY_COUNT,
+  OTA_CHANNEL_COUNT,
+  PMS_COUNT,
+  VR_LISTING_COUNT,
+  approx,
+} from "@/data/counts";
 
 export const meta: Route.MetaFunction = ({ location }) =>
   pageMeta(
@@ -25,20 +32,20 @@ const About = () => {
     icon: Globe,
     description: "Connected to the world's leading booking platforms"
   }, {
-    number: "99.9%",
-    label: "Uptime SLA",
-    icon: Shield,
-    description: "Enterprise-grade reliability you can depend on"
-  }, {
-    number: `${PMS_COUNT}+`,
-    label: "PMS Integrations",
+    number: approx(HOTEL_PROPERTY_COUNT),
+    label: "Hotel properties",
     icon: Building,
-    description: "Seamless connectivity across all major systems"
+    description: "Live on the platform through our partners"
   }, {
-    number: "2020",
-    label: "Founded",
-    icon: Calendar,
-    description: "By a hotelier who had already built and sold a PMS"
+    number: approx(VR_LISTING_COUNT),
+    label: "Vacation rental listings",
+    icon: Home,
+    description: "Short-term rentals, cabins, campsites and glamping"
+  }, {
+    number: approx(CHANNEL_CONNECTION_COUNT),
+    label: "Channel connections",
+    icon: Shield,
+    description: "Live property-to-channel links kept in sync"
   }];
 
   const values = [{

@@ -1,7 +1,15 @@
 // Hand-written prose for /llms.txt. The Pricing Model section that used to
 // live between these two chunks is now generated from app/data/pricing.ts by
 // the llms.txt route so it can never drift from the pricing page.
-import { OTA_CHANNEL_COUNT, PARTNER_COUNT, PMS_COUNT } from "@/data/counts";
+import {
+  CHANNEL_CONNECTION_COUNT,
+  HOTEL_PROPERTY_COUNT,
+  OTA_CHANNEL_COUNT,
+  PARTNER_COUNT,
+  PMS_COUNT,
+  VR_LISTING_COUNT,
+  approx,
+} from "@/data/counts";
 
 export const LLMS_PROSE_INTRO = `# Channex
 
@@ -30,7 +38,8 @@ never competes with its partners.
 ## Key Facts
 - Founded: January 2020
 - Partnerships: ${PMS_COUNT} PMS integrations (plus booking engines, RMS and payment gateways — ${PARTNER_COUNT} technology partners in total)
-- Properties: 10,000+ hotels, 55,000+ vacation rentals and outdoor hospitality properties
+- Properties: ${approx(HOTEL_PROPERTY_COUNT)} hotel properties and ${approx(VR_LISTING_COUNT)} vacation rental / outdoor hospitality listings
+- Channel connections: ${approx(CHANNEL_CONNECTION_COUNT)} live property-to-channel connections
 - OTA connections: ${OTA_CHANNEL_COUNT} OTAs and booking channels (see the integrations directory)
 - Uptime SLA: 99.9%
 - API response time: sub-100ms

@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Code, Zap, Check } from "lucide-react";
 import { useNavigate } from "react-router";
-import { OTA_CHANNEL_COUNT } from "@/data/counts";
+import { CHANNEL_CONNECTION_COUNT, OTA_CHANNEL_COUNT, approx } from "@/data/counts";
 const heroImage = "/channex-og-image.png";
 
 const Hero = () => {
@@ -85,8 +85,10 @@ const Hero = () => {
             {/* Stats */}
             <div className="grid grid-cols-3 gap-6 pt-8 border-t border-border/50">
               <div className="text-center lg:text-left">
-                <div className="text-3xl lg:text-4xl font-bold bg-gradient-primary bg-clip-text text-transparent font-inter">5000+</div>
-                <div className="text-sm text-muted-foreground font-inter mt-1">Properties</div>
+                <div className="text-3xl lg:text-4xl font-bold bg-gradient-primary bg-clip-text text-transparent font-inter">
+                  {approx(CHANNEL_CONNECTION_COUNT)}
+                </div>
+                <div className="text-sm text-muted-foreground font-inter mt-1">Channel connections</div>
               </div>
               <div className="text-center lg:text-left">
                 <div className="text-3xl lg:text-4xl font-bold bg-gradient-primary bg-clip-text text-transparent font-inter">99.9%</div>
