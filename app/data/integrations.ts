@@ -4900,4 +4900,18 @@ export const integrations: Integration[] = [
       "Hotels targeting B2B travel agents in India"
     ]
   },
+  {
+    // Added Jul 2026. Facts from minedata.ch: MineData GmbH is a Swiss IT firm
+    // (HQ Baar, office Konstanz) whose PMS product is Hostera, serving hotels
+    // and accommodation businesses across the D-A-CH region. Hostera has no
+    // site of its own, so the company domain is the link — and both names are
+    // in the title because the listing search matches on name only.
+    id: "minedata",
+    slug: "minedata",
+    name: "MineData (Hostera)",
+    description: "Swiss provider whose Hostera PMS handles reservations, room planning, guest records, invoicing and reporting for hotels and accommodation businesses across the D-A-CH region.",
+    icon: "",
+    categories: ["PMS", "Europe"],
+    website: "https://minedata.ch"
+  },
 ];
