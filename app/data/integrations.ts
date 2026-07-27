@@ -3875,7 +3875,7 @@ export const integrations: Integration[] = [
     id: "hostomat",
     name: "Hostomat",
     description: "Cloud-based hospitality management software for hotels, guesthouses, and serviced apartments. Provides front desk operations, reservation management, and reporting tools to streamline property operations.",
-    icon: "/lovable-uploads/pms-hostomat.ico",
+    icon: "/lovable-uploads/pms-hostomat.svg",
     categories: ["PMS", "Asia"],
     slug: "hostomat",
     website: "https://www.hostomat.io/"
@@ -4198,7 +4198,7 @@ export const integrations: Integration[] = [
     id: "hotelier101",
     name: "Hotelier 101",
     description: "Turkey-based hotel management platform providing PMS, booking engine, and operational tools for independent hotels and small chains. Designed for the Turkish hospitality market with multi-language support.",
-    icon: "/lovable-uploads/pms-hostomat.ico",
+    icon: "/lovable-uploads/pms-hotelier101.png",
     categories: ["PMS", "Europe", "Middle East"],
     slug: "hotelier101",
     website: "https://hotelier101.com"
