@@ -134,7 +134,7 @@ const IntegrationDetail = ({ loaderData }: Route.ComponentProps) => {
               <IntegrationLogo
                 name={integration.name}
                 logo={integration.icon || null}
-                className="w-20 h-20"
+                className="w-32 h-20"
                 textClassName="text-2xl"
               />
               
@@ -377,7 +377,7 @@ const IntegrationDetail = ({ loaderData }: Route.ComponentProps) => {
                         <IntegrationLogo
                           name={relatedInt.name}
                           logo={relatedInt.logo}
-                          className="w-12 h-12"
+                          className="w-16 h-12"
                           textClassName="text-sm"
                         />
                         <div className="flex-1 min-w-0">

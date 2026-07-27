@@ -234,7 +234,7 @@ const Integrations = ({ loaderData }: Route.ComponentProps) => {
                           <IntegrationLogo
                             name={channel.name}
                             logo={channel.logo}
-                            className="w-20 h-20"
+                            className="w-28 h-20"
                             textClassName="text-xl"
                           />
                           <div className="flex-1 min-w-0">
@@ -303,7 +303,7 @@ const Integrations = ({ loaderData }: Route.ComponentProps) => {
                       <IntegrationLogo
                         name={partner.name}
                         logo={partner.logo}
-                        className="w-10 h-10"
+                        className="w-16 h-10"
                         textClassName="text-xs"
                       />
                       <div className="min-w-0">

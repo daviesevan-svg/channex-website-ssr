@@ -38,26 +38,30 @@ interface Props {
   textClassName?: string;
 }
 
+// The slot (`className`) is deliberately allowed to be wider than it is tall.
+// Many partner logos are wordmarks at 4-5:1 — squeezed into a square that tall
+// they render only a few pixels high and read as a smudge. A wide slot gives
+// them room while `object-contain` still leaves square logos square, and the
+// monogram stays a square inside the same slot so every row stays aligned.
 export default function IntegrationLogo({ name, logo, className = "w-16 h-16", textClassName = "text-lg" }: Props) {
-  if (logo) {
-    return (
-      <div className={`${className} flex items-center justify-center overflow-hidden rounded-lg bg-white`}>
+  return (
+    <div className={`${className} flex flex-none items-center justify-center`}>
+      {logo ? (
         <img
           src={logo}
           alt={`${name} logo`}
           loading="lazy"
           decoding="async"
-          className="h-full w-full object-contain p-1"
+          className="max-h-full max-w-full object-contain"
         />
-      </div>
-    );
-  }
-  return (
-    <div
-      aria-hidden="true"
-      className={`${className} ${paletteFor(name)} ${textClassName} flex flex-none items-center justify-center rounded-lg font-semibold tracking-tight`}
-    >
-      {initials(name)}
+      ) : (
+        <div
+          aria-hidden="true"
+          className={`${paletteFor(name)} ${textClassName} flex h-full aspect-square items-center justify-center rounded-lg font-semibold tracking-tight`}
+        >
+          {initials(name)}
+        </div>
+      )}
     </div>
   );
 }

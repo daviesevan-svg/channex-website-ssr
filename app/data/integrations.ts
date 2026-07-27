@@ -4910,7 +4910,7 @@ export const integrations: Integration[] = [
     slug: "minedata",
     name: "MineData (Hostera)",
     description: "Swiss provider whose Hostera PMS handles reservations, room planning, guest records, invoicing and reporting for hotels and accommodation businesses across the D-A-CH region.",
-    icon: "",
+    icon: "/lovable-uploads/pms-minedata.png",
     categories: ["PMS", "Europe"],
     website: "https://minedata.ch"
   },
