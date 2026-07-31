@@ -5,8 +5,33 @@ import path from "path";
 import fs from "fs";
 import { utils, write } from "xlsx";
 import { integrations } from "./app/data/integrations";
+import { blogPosts } from "./app/data/blogPosts";
+import { ogImageFor } from "./app/lib/og-image";
 
 const OTA_XLSX_PATH = "/channex-ota-integrations.xlsx";
+
+// Blog featured images are WebP, which some social scrapers won't render, so
+// each one needs a JPEG sibling for its og:image (see ogImageFor). A missing
+// sibling produces a broken share preview and nothing else — no error, no
+// visible symptom on the site — so fail the build instead.
+function assertOgImages() {
+  return {
+    name: "assert-og-images",
+    buildStart() {
+      const missing = blogPosts
+        .map((p) => ogImageFor(p.featuredImage))
+        .filter((url) => !fs.existsSync(path.join("public", url)));
+      if (missing.length) {
+        throw new Error(
+          `${missing.length} blog featured image(s) have no JPEG social-card sibling:\n  ` +
+            missing.join("\n  ") +
+            `\nGenerate each one at 1200px wide from the .webp, e.g.\n` +
+            `  sips -s format jpeg -s formatOptions 80 -Z 1200 public/<name>.webp --out public/<name>-og.jpg`,
+        );
+      }
+    },
+  };
+}
 
 // The "Download OTAs (XLS)" export, generated once from integrations data.
 // Doing this at build time (instead of in the browser on click) means the
@@ -62,6 +87,10 @@ export default defineConfig({
   // which React reports as a hydration mismatch.
   define: {
     __BUILD_YEAR__: JSON.stringify(String(new Date().getFullYear())),
+    // Namespaces the edge cache per deploy, so shipping a build invalidates
+    // every cached page instead of leaving the previous version's HTML (with
+    // its now-404 asset hashes) to expire on its own.
+    __BUILD_ID__: JSON.stringify(Date.now().toString(36)),
   },
   // Dev-only: crawl every route at server startup so Vite discovers and
   // optimizes ALL dependencies up front. Without this, each newly visited page
@@ -74,7 +103,7 @@ export default defineConfig({
       clientFiles: ["./app/root.tsx", "./app/routes/**/*.tsx"],
     },
   },
-  plugins: [cloudflare({ viteEnvironment: { name: "ssr" } }), reactRouter(), emitOtaXlsx()],
+  plugins: [cloudflare({ viteEnvironment: { name: "ssr" } }), reactRouter(), emitOtaXlsx(), assertOgImages()],
   resolve: {
     alias: {
       "@": "/app",

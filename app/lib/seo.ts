@@ -29,6 +29,10 @@ export function pageMeta(
   // Social scrapers require absolute image URLs; page code often passes
   // site-relative upload paths.
   const image = ogImage ? (ogImage.startsWith("http") ? ogImage : `${SITE_URL}${ogImage}`) : DEFAULT_OG_IMAGE;
+  // Only the default image has known dimensions. Declaring them for a
+  // caller-supplied image would be a guess, and a wrong width/height makes
+  // scrapers lay out the card against the wrong aspect ratio.
+  const isDefaultImage = image === DEFAULT_OG_IMAGE;
   const jsonLd = Array.isArray(structuredData) ? structuredData : structuredData ? [structuredData] : [];
 
   return [
@@ -42,8 +46,12 @@ export function pageMeta(
     { property: "og:type", content: type },
     { property: "og:url", content: url },
     { property: "og:image", content: image },
-    { property: "og:image:width", content: "1200" },
-    { property: "og:image:height", content: "630" },
+    ...(isDefaultImage
+      ? [
+          { property: "og:image:width", content: "1200" },
+          { property: "og:image:height", content: "754" },
+        ]
+      : []),
     { name: "twitter:card", content: "summary_large_image" },
     { name: "twitter:title", content: title },
     ...(description ? [{ name: "twitter:description", content: description }] : []),

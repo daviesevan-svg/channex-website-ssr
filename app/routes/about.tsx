@@ -74,42 +74,42 @@ const About = () => {
     name: "Evan Davies",
     role: "CEO & Co-Founder",
     bio: "Former hotelier. Built his own PMS in 2015 and sold it in 2019 — Channex is the channel manager he wanted back then.",
-    image: "/lovable-uploads/578448c6-4f90-414e-bbbd-a0d0d3ee17f2.png"
+    image: "/lovable-uploads/578448c6-4f90-414e-bbbd-a0d0d3ee17f2.webp"
   }, {
     name: "Andrew Yudin",
     role: "CTO & Co-Founder",
     bio: "API architecture expert who's built scalable systems for millions of bookings.",
-    image: "/lovable-uploads/c4fc7035-fd21-4f38-a290-7b8ae1bb38f9.png"
+    image: "/lovable-uploads/c4fc7035-fd21-4f38-a290-7b8ae1bb38f9.webp"
   }, {
     name: "Andrew Mamotko",
     role: "Senior Developer",
     bio: "15 years experience building enterprise integrations and scalable solutions.",
-    image: "/lovable-uploads/2bba953c-5623-4d9e-9fd9-fd30a724a83a.png"
+    image: "/lovable-uploads/2bba953c-5623-4d9e-9fd9-fd30a724a83a.webp"
   }, {
     name: "Andrew Sokolov",
     role: "Senior Developer",
     bio: "Over 15 years experience in Front End development and secure system design.",
-    image: "/lovable-uploads/0a736d36-ed1f-4265-b5e6-c267de944708.png"
+    image: "/lovable-uploads/0a736d36-ed1f-4265-b5e6-c267de944708.webp"
   }, {
     name: "Dawwalee Davies (Tikky)",
     role: "Co-Founder",
     bio: "Deep knowledge of the hotel industry.",
-    image: "/lovable-uploads/b27de44c-9399-4ca2-aa2e-9d7990932c5a.png"
+    image: "/lovable-uploads/b27de44c-9399-4ca2-aa2e-9d7990932c5a.webp"
   }, {
     name: "Paloma Sanchez",
     role: "Head of Partnerships",
     bio: "Over 15 years experience in sales and partnerships in hotel technology.",
-    image: "/lovable-uploads/72ae10b3-884b-4f73-8f5a-1d2acb353b9d.png"
+    image: "/lovable-uploads/72ae10b3-884b-4f73-8f5a-1d2acb353b9d.webp"
   }, {
     name: "Dmitry Krakosevich",
     role: "Senior Developer",
     bio: "Deep experience in integrations with PMS and OTA.",
-    image: "/lovable-uploads/c1982ae2-6167-4942-8ed6-7d753e056b5e.png"
+    image: "/lovable-uploads/c1982ae2-6167-4942-8ed6-7d753e056b5e.webp"
   }, {
     name: "Sergey Kurmaev",
     role: "Senior DevOps",
     bio: "Automating pipelines, scaling infrastructure, and championing reliability across cloud platforms.",
-    image: "/lovable-uploads/f5dcca07-0e62-4c9f-8548-d08cee857114.png"
+    image: "/lovable-uploads/f5dcca07-0e62-4c9f-8548-d08cee857114.webp"
   }];
 
   const milestones = [

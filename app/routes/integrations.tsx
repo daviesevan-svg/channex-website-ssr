@@ -269,7 +269,7 @@ const Integrations = ({ loaderData }: Route.ComponentProps) => {
                         </CardDescription>
                         <div className="mt-4">
                           <Button variant="ghost" size="sm" asChild>
-                            <Link to={`/integrations/${channel.slug}`}>Learn More</Link>
+                            <Link prefetch="intent" to={`/integrations/${channel.slug}`}>Learn More</Link>
                           </Button>
                         </div>
                       </CardContent>

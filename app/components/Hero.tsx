@@ -2,7 +2,14 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Code, Zap, Check } from "lucide-react";
 import { useNavigate } from "react-router";
 import { CHANNEL_CONNECTION_COUNT, OTA_CHANNEL_COUNT, approx } from "@/data/counts";
-const heroImage = "/channex-og-image.png";
+// A dedicated hero asset. This used to point at /channex-og-image.png — the
+// social-share image — which meant every visitor downloaded a 508 kB PNG sized
+// for Twitter cards to fill a ~600px slot. Worse, React 19 emits a
+// `<link rel="preload" as="image">` for it, so phones fetched all 508 kB at high
+// priority for an image `lg:block hidden` never shows them. The srcset gives
+// them the 20 kB candidate instead.
+const HERO_IMAGE = "/hero-dashboard.webp";
+const HERO_IMAGE_SMALL = "/hero-dashboard-600.webp";
 
 const Hero = () => {
   const navigate = useNavigate();
@@ -104,9 +111,18 @@ const Hero = () => {
           {/* Right content - Dashboard image */}
           <div className="relative animate-scale-in lg:block hidden" style={{ animationDelay: "0.3s" }}>
             <div className="relative">
-              <img 
-                src={heroImage} 
-                alt="Channex Dashboard Interface" 
+              {/* Largest element in the desktop viewport, so it's the LCP
+                  candidate: eager and high priority. width/height reserve the
+                  aspect ratio so nothing shifts when it decodes. */}
+              <img
+                src={HERO_IMAGE}
+                srcSet={`${HERO_IMAGE_SMALL} 600w, ${HERO_IMAGE} 1200w`}
+                sizes="(min-width: 1024px) 45vw, 600px"
+                width={1200}
+                height={754}
+                alt="Channex Dashboard Interface"
+                fetchPriority="high"
+                decoding="async"
                 className="w-full h-auto rounded-2xl shadow-elegant"
               />
               <div className="absolute inset-0 bg-gradient-primary/5 rounded-2xl"></div>

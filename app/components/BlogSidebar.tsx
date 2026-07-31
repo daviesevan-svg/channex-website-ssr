@@ -1,4 +1,4 @@
-import type { BlogCategory, BlogPost } from "@/types/blog";
+import type { BlogCategory, BlogListItem } from "@/types/blog";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -7,7 +7,7 @@ import { Calendar, User } from "lucide-react";
 
 interface BlogSidebarProps {
   categories: BlogCategory[];
-  recentPosts: BlogPost[];
+  recentPosts: BlogListItem[];
   onCategoryFilter: (categoryId: string | null) => void;
   selectedCategory: string | null;
 }

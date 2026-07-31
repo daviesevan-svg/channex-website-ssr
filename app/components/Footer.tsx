@@ -9,8 +9,11 @@ const Footer = () => {
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
               <img
-                src="/lovable-uploads/69087199-9a31-470c-9fef-20343850d889.png"
+                src="/lovable-uploads/channex-logo-mark.webp"
                 alt="Channex logo"
+                width={32}
+                height={32}
+                loading="lazy"
                 className="w-8 h-8 rounded-lg object-contain"
               />
               <span className="text-xl font-bold font-inter">Channex</span>
@@ -45,7 +48,7 @@ const Footer = () => {
             <h3 className="font-semibold text-lg font-inter">Product</h3>
             <ul className="space-y-2 text-slate-400">
               <li><a href="https://docs.channex.io/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors font-inter">API Documentation</a></li>
-              <li><Link to="/integrations" className="hover:text-white transition-colors font-inter">Integrations</Link></li>
+              <li><Link prefetch="intent" to="/integrations" className="hover:text-white transition-colors font-inter">Integrations</Link></li>
               <li><a href="https://staging.channex.io/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors font-inter">Staging Environment</a></li>
               <li><a href="https://status.channex.io/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors font-inter">Status Page</a></li>
             </ul>
@@ -55,9 +58,9 @@ const Footer = () => {
           <div className="space-y-4">
             <h3 className="font-semibold text-lg font-inter">Company</h3>
             <ul className="space-y-2 text-slate-400">
-              <li><Link to="/about" className="hover:text-white transition-colors font-inter">About Us</Link></li>
-              <li><Link to="/blog" className="hover:text-white transition-colors font-inter">Blog</Link></li>
-              <li><Link to="/comparison/siteminder" className="hover:text-white transition-colors font-inter">Alternative to Siteminder</Link></li>
+              <li><Link prefetch="intent" to="/about" className="hover:text-white transition-colors font-inter">About Us</Link></li>
+              <li><Link prefetch="intent" to="/blog" className="hover:text-white transition-colors font-inter">Blog</Link></li>
+              <li><Link prefetch="intent" to="/comparison/siteminder" className="hover:text-white transition-colors font-inter">Alternative to Siteminder</Link></li>
             </ul>
           </div>
 

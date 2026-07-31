@@ -1,21 +1,26 @@
-import type { BlogPost } from "@/types/blog";
+import type { BlogListItem } from "@/types/blog";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Link } from "react-router";
 import { Clock, User } from "lucide-react";
 
 interface BlogCardProps {
-  post: BlogPost;
+  post: BlogListItem;
 }
 
 const BlogCard = ({ post }: BlogCardProps) => {
   return (
     <Card className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
-      <Link to={`/blog/${post.slug}`}>
+      <Link prefetch="intent" to={`/blog/${post.slug}`}>
         <div className="aspect-video overflow-hidden rounded-t-lg">
-          <img 
-            src={post.featuredImage} 
+          {/* Card thumbnails are below the fold on the blog index and in the
+              related-posts strip, so they wait until they're scrolled towards
+              rather than competing with the article itself. */}
+          <img
+            src={post.featuredImage}
             alt={post.title}
+            loading="lazy"
+            decoding="async"
             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
           />
         </div>

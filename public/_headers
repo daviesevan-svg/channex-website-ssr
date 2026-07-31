@@ -1,0 +1,26 @@
+# Cache headers for static assets, applied by Cloudflare's asset server.
+# Pages are handled separately, in app/lib/edge-cache.server.ts.
+
+# Vite puts a content hash in every filename here, so a change ships as a new
+# URL. Nothing ever needs to revalidate these.
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Not content-hashed, but a font revision would be a new filename in the
+# @font-face rule anyway (see app/app.css).
+/fonts/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Logos and screenshots do get replaced in place under the same name, so these
+# can't be immutable. A day in the browser, then served stale for a week while
+# the refresh happens in the background — a replaced logo appears within a day
+# without making every repeat visit pay for a revalidation round trip.
+/lovable-uploads/*
+  Cache-Control: public, max-age=86400, stale-while-revalidate=604800
+
+/images/*
+  Cache-Control: public, max-age=86400, stale-while-revalidate=604800
+
+# Regenerated on every build from app/data/integrations.ts.
+/channex-ota-integrations.xlsx
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400

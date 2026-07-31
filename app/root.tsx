@@ -1,5 +1,3 @@
-import { useState } from "react";
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import {
   isRouteErrorResponse,
   Links,
@@ -9,9 +7,6 @@ import {
   ScrollRestoration,
 } from "react-router";
 
-import { Toaster } from "@/components/ui/toaster";
-import { Toaster as Sonner } from "@/components/ui/sonner";
-import { TooltipProvider } from "@/components/ui/tooltip";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Intercom from "@/components/Intercom";
@@ -26,12 +21,13 @@ import "./app.css";
 
 export const links: Route.LinksFunction = () => [
   { rel: "icon", href: "/lovable-uploads/147ee0ab-fa42-422d-9c56-59244be54b17.png", type: "image/png" },
-  { rel: "preconnect", href: "https://fonts.googleapis.com" },
-  { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
-  {
-    rel: "stylesheet",
-    href: "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap",
-  },
+  // Inter is declared in app.css and served from our own origin (see the
+  // @font-face comment there). Preloading the latin subset starts it in
+  // parallel with the stylesheet rather than after the browser has parsed the
+  // CSS and matched the unicode-range — that discovery delay is the usual cause
+  // of a visible swap from the fallback face. latin-ext is deliberately not
+  // preloaded: most pages never need it.
+  { rel: "preload", href: "/fonts/inter-latin.woff2", as: "font", type: "font/woff2", crossOrigin: "anonymous" },
 ];
 
 export function Layout({ children }: { children: React.ReactNode }) {
@@ -52,18 +48,17 @@ export function Layout({ children }: { children: React.ReactNode }) {
   );
 }
 
+// The site has no client-side data fetching, no toasts and no tooltips: it's
+// server-rendered pages with loaders. This used to wrap everything in
+// QueryClientProvider + TooltipProvider + two toast portals (Lovable
+// scaffolding), which pulled react-query, sonner, next-themes and two Radix
+// packages into the chunk loaded on every page for nothing.
 export default function App() {
-  const [queryClient] = useState(() => new QueryClient());
-
   return (
-    <QueryClientProvider client={queryClient}>
-      <TooltipProvider>
-        <Toaster />
-        <Sonner />
-        <Intercom />
-        <Outlet />
-      </TooltipProvider>
-    </QueryClientProvider>
+    <>
+      <Intercom />
+      <Outlet />
+    </>
   );
 }
 
