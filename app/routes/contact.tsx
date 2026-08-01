@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import { pageMeta } from "@/lib/seo";
 import ContactForm from "@/components/ContactForm";
 import { contactSchema, submitEnquiry } from "@/lib/contact.server";
+import { verifyTurnstile } from "@/lib/turnstile.server";
 import type { Route } from "./+types/contact";
 
 // The form on every page posts here. Always returns a plain result object:
@@ -39,13 +40,17 @@ export async function action({ request }: Route.ActionArgs) {
     return { ok: false as const, errors, values };
   }
 
+  const ip = request.headers.get("cf-connecting-ip");
+  const turnstile = await verifyTurnstile(String(form.get("cf-turnstile-response") ?? ""), ip);
+
   const result = await submitEnquiry(parsed.data, {
     source: request.headers.get("referer") ?? "/contact",
     country: request.headers.get("cf-ipcountry"),
     userAgent: request.headers.get("user-agent"),
     origin: request.headers.get("origin"),
     host: new URL(request.url).host,
-    ip: request.headers.get("cf-connecting-ip"),
+    ip,
+    turnstile,
   });
 
   // Spam is quarantined, not rejected — report success so a bot has no signal

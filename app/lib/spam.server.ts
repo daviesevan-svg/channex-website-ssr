@@ -53,6 +53,10 @@ export interface SpamContext {
   duplicate?: boolean;
   /** This sender has exceeded the per-IP submission rate. */
   rateLimited?: boolean;
+  /** Turnstile is configured and the submission had no valid token. Only set
+   *  for a definite verdict — never when Cloudflare was unreachable, which
+   *  says nothing about the sender. */
+  turnstileFailed?: boolean;
 }
 
 // Free mailbox providers. Deliberately NOT a signal by itself: 41 of the 104
@@ -178,6 +182,11 @@ export function classifySpam(input: SpamInput, ctx: SpamContext = {}): SpamVerdi
   }
 
   if (ctx.rateLimited) add("rate-limited", 4);
+
+  // No valid Turnstile token. A token can only be obtained by JS running on a
+  // page we served, so this is precisely what a direct POST to the endpoint
+  // cannot produce — the method the observed run relies on.
+  if (ctx.turnstileFailed) add("turnstile-failed", 4);
 
   // --- Contributory only (need corroboration to reach THRESHOLD) --------
   if (namesEcho(firstName, lastName)) {

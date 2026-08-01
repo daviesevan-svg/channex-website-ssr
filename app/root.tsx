@@ -11,8 +11,18 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Intercom from "@/components/Intercom";
 import NotFound from "./routes/not-found";
+import { turnstileSiteKey } from "@/lib/turnstile.server";
 import type { Route } from "./+types/root";
 import "./app.css";
+
+// The only reason the root has a loader: the contact form renders on both the
+// homepage and /contact, and needs the public Turnstile key. Reading it here
+// means neither key has to be hardcoded or added to wrangler.jsonc `vars`
+// (which would re-apply on deploy and overwrite dashboard values). It is a
+// short public string and is safe in edge-cached HTML.
+export function loader() {
+  return { turnstileSiteKey: turnstileSiteKey() };
+}
 
 // No meta() here on purpose: React Router replaces ancestor meta with the
 // leaf route's, so anything defined at the root never renders on routes that

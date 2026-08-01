@@ -1,6 +1,7 @@
 import { env } from "cloudflare:workers";
 import { z } from "zod";
 import { classifySpam, type SpamVerdict } from "@/lib/spam.server";
+import type { TurnstileOutcome } from "@/lib/turnstile.server";
 
 // Contact-form handling. Two independent things happen per submission:
 //
@@ -70,6 +71,8 @@ export interface SubmitMeta {
   host?: string | null;
   /** Caller IP (cf-connecting-ip). Never stored raw — only a hash of it. */
   ip?: string | null;
+  /** Result of Turnstile verification, already performed by the route. */
+  turnstile?: TurnstileOutcome;
 }
 
 export interface SubmitResult {
@@ -324,6 +327,10 @@ export async function submitEnquiry(input: ContactInput, meta: SubmitMeta): Prom
     host: meta.host,
     duplicate: flags.duplicate,
     rateLimited: flags.rateLimited,
+    // "unreachable" and "off" are deliberately not treated as failures: an
+    // outage at Cloudflare, or Turnstile not being configured yet, must not
+    // start quarantining real enquiries.
+    turnstileFailed: meta.turnstile === "missing" || meta.turnstile === "invalid",
   });
 
   if (verdict.spam) {
