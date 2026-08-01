@@ -43,7 +43,14 @@ export async function action({ request }: Route.ActionArgs) {
     source: request.headers.get("referer") ?? "/contact",
     country: request.headers.get("cf-ipcountry"),
     userAgent: request.headers.get("user-agent"),
+    origin: request.headers.get("origin"),
+    host: new URL(request.url).host,
+    ip: request.headers.get("cf-connecting-ip"),
   });
+
+  // Spam is quarantined, not rejected — report success so a bot has no signal
+  // to adapt to, exactly as the honeypot branch above does.
+  if (result.spam) return { ok: true as const };
 
   // Stored OR emailed is enough to promise a reply. Neither means we lost it,
   // so say so rather than showing a success message that isn't true.
