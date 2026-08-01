@@ -2287,10 +2287,15 @@ export const integrations: Integration[] = [
   },
   {
     id: "210",
+    slug: "staylist",
     name: "Staylist",
-    description: "Staylist is a comprehensive, cloud-based property management system (PMS) tailored for RV parks, campgrounds, cabins, and glamping sites. It offers an all-in-one solution encompassing reservations, guest communication, dynamic pricing, and integrated point-of-sale (POS) systems.",
-    icon: "",
-    categories: ["PMS"]
+    description: "Cloud hospitality platform for destination RV parks and resorts, glamping resorts, boutique hotels and vacation rentals. Combines reservations and guest management with integrated food & beverage and retail point of sale, revenue management (dynamic pricing, demand forecasting and upsell recommendations), AI concierge and call intelligence, and USALI-framework accounting that reconciles to QuickBooks.",
+    // Their own wordmark: dark #241F19 lettering with a teal accent on
+    // transparent, so it reads on our light tiles as-is. Kept as SVG (12 paths,
+    // no scripts or external refs) — 7 kB and sharp at any slot size.
+    icon: "/lovable-uploads/pms-staylist.svg",
+    categories: ["PMS", "Outdoor"],
+    website: "https://staylist.com"
   },
   {
     id: "211",
