@@ -22,6 +22,12 @@
   "d1_databases": [
     { "binding": "DB", "database_name": "channex-website", "database_id": "20098ac7-7b2e-4768-95b1-43dd4d3936f5" }
   ],
+  // Daily quarantine digest (workers/app.ts scheduled -> app/lib/digest.server.ts).
+  // 07:00 UTC, so it lands before the working day. Nothing is sent on a day
+  // with nothing held back.
+  "triggers": {
+    "crons": ["0 7 * * *"]
+  },
   "compatibility_flags": [
     "nodejs_compat"
   ]

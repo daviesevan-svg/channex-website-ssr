@@ -2,6 +2,7 @@ import { createRequestHandler } from "react-router";
 import { blogPostMarkdownResponse } from "../app/lib/blog-md.server";
 import { withSecurityHeaders } from "../app/lib/security-headers";
 import { withEdgeCache } from "../app/lib/edge-cache.server";
+import { sendQuarantineDigest } from "../app/lib/digest.server";
 
 const requestHandler = createRequestHandler(
   () => import("virtual:react-router/server-build"),
@@ -21,5 +22,18 @@ export default {
 
       return withSecurityHeaders(await requestHandler(request));
     });
+  },
+
+  // Cron trigger (schedule in wrangler.jsonc). Emails a summary of contact-form
+  // submissions that were quarantined rather than delivered, so a genuine
+  // enquiry held back by mistake gets noticed. Sends nothing on a quiet day.
+  async scheduled(_controller, _env, ctx) {
+    // waitUntil so the handler isn't torn down mid-send: a self-contained job
+    // like this must finish its fetch to SparkPost, not race the runtime.
+    ctx.waitUntil(
+      sendQuarantineDigest().catch((err) => {
+        console.error("digest: unhandled failure", err);
+      }),
+    );
   },
 } satisfies ExportedHandler<Env>;

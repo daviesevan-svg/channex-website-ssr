@@ -1,6 +1,7 @@
 import { env } from "cloudflare:workers";
 import { z } from "zod";
 import { classifySpam, type SpamVerdict } from "@/lib/spam.server";
+import { sendMail, type MailResult } from "@/lib/mail.server";
 import type { TurnstileOutcome } from "@/lib/turnstile.server";
 
 // Contact-form handling. Two independent things happen per submission:
@@ -34,31 +35,14 @@ export const contactSchema = z.object({
 
 export type ContactInput = z.infer<typeof contactSchema>;
 
-/** Worker bindings this module reads. RESEND_API_KEY is a dashboard secret;
- *  CONTACT_TO/CONTACT_FROM are plain vars; DB is optional — without it,
- *  enquiries are emailed but not stored. */
+/** Worker bindings this module reads. Mail configuration lives in
+ *  mail.server.ts; DB is optional — without it, enquiries are emailed but not
+ *  stored. */
 interface ContactEnv {
-  SPARKPOST_API_KEY?: string;
-  /** API host. SparkPost accounts are region-bound: EU accounts must use
-   *  https://api.eu.sparkpost.com, US accounts https://api.sparkpost.com.
-   *  Using the wrong one fails auth even with a valid key. */
-  SPARKPOST_API_URL?: string;
-  /** Where enquiries are sent. Defaults to the published address. */
-  CONTACT_TO?: string;
-  /** Sending address — its domain must be verified in SparkPost. */
-  CONTACT_FROM?: string;
   DB?: D1Database;
 }
 
 const bindings = () => env as unknown as ContactEnv;
-
-const DEFAULT_TO = "hello@channex.io";
-// mail.channex.io is the configured SparkPost sending domain (channex.io
-// itself is not — sending from it fails with "Unconfigured Sending Domain").
-const DEFAULT_FROM_EMAIL = "noreply@mail.channex.io";
-const DEFAULT_FROM_NAME = "Channex website";
-// EU host by default, matching the SparkPost account the booking engine uses.
-const DEFAULT_API_URL = "https://api.eu.sparkpost.com";
 
 export interface SubmitMeta {
   /** Which page the form was submitted from. */
@@ -83,6 +67,10 @@ export interface SubmitResult {
 }
 
 let schemaReady = false;
+/** Exported so the quarantine digest can guarantee the spam columns exist
+ *  before querying them, even if it runs before the first submission of a
+ *  deployment. Idempotent and memoised. */
+export const ensureContactSchema = (db: D1Database) => ensureSchema(db);
 async function ensureSchema(db: D1Database): Promise<void> {
   if (schemaReady) return;
   await db
@@ -244,68 +232,17 @@ function plainBody(input: ContactInput, meta: SubmitMeta): string {
     .join("\n");
 }
 
-/** Splits an RFC-5322-ish "Name <email>" into SparkPost's from object. */
-function parseFrom(value: string): { email: string; name?: string } {
-  const m = value.match(/^\s*(.*?)\s*<([^>]+)>\s*$/);
-  if (m) return { email: m[2].trim(), name: m[1].trim() || undefined };
-  return { email: value.trim() };
-}
-
-interface EmailResult {
-  ok: boolean;
-  /** Why it failed — recorded on the row so failures aren't invisible. */
-  error?: string;
-}
+type EmailResult = MailResult;
 
 async function sendEmail(input: ContactInput, meta: SubmitMeta): Promise<EmailResult> {
-  const env = bindings();
-  if (!env.SPARKPOST_API_KEY) {
-    console.error("contact: SPARKPOST_API_KEY is not set — enquiry not emailed");
-    return { ok: false, error: "SPARKPOST_API_KEY not set" };
-  }
-  const base = (env.SPARKPOST_API_URL || DEFAULT_API_URL).replace(/\/+$/, "");
-  try {
-    const res = await fetch(`${base}/api/v1/transmissions`, {
-      method: "POST",
-      headers: {
-        // SparkPost takes the raw key — no "Bearer" prefix.
-        Authorization: env.SPARKPOST_API_KEY,
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        // No engagement tracking. Both default to on in SparkPost, and open
-        // tracking injects a pixel while click tracking rewrites every link
-        // through a tracking domain — neither is wanted for an internal
-        // notification, and link rewriting can trip spam filters.
-        options: { open_tracking: false, click_tracking: false },
-        content: {
-          from: env.CONTACT_FROM
-            ? parseFrom(env.CONTACT_FROM)
-            : { email: DEFAULT_FROM_EMAIL, name: DEFAULT_FROM_NAME },
-          // So a reply from the inbox goes straight back to the prospect.
-          reply_to: input.email,
-          subject: `Website enquiry — ${input.company} (${input.firstName} ${input.lastName})`,
-          text: plainBody(input, meta),
-        },
-        recipients: [{ address: { email: env.CONTACT_TO || DEFAULT_TO } }],
-      }),
-    });
-    if (!res.ok) {
-      const body = await res.text().catch(() => "");
-      console.error(`contact: SparkPost responded ${res.status} from ${base}`, body);
-      if (res.status === 401 || res.status === 403) {
-        console.error(
-          "contact: check SPARKPOST_API_KEY, and that SPARKPOST_API_URL matches your " +
-            "account region (EU accounts must use https://api.eu.sparkpost.com)",
-        );
-      }
-      return { ok: false, error: `${res.status} from ${base}: ${body}` };
-    }
-    return { ok: true };
-  } catch (err) {
-    console.error("contact: failed to send email", err);
-    return { ok: false, error: `fetch failed to ${base}: ${String(err)}` };
-  }
+  const result = await sendMail({
+    subject: `Website enquiry — ${input.company} (${input.firstName} ${input.lastName})`,
+    text: plainBody(input, meta),
+    // So a reply from the inbox goes straight back to the prospect.
+    replyTo: input.email,
+  });
+  if (!result.ok) console.error(`contact: enquiry not emailed — ${result.error}`);
+  return result;
 }
 
 export async function submitEnquiry(input: ContactInput, meta: SubmitMeta): Promise<SubmitResult> {
