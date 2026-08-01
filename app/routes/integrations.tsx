@@ -47,6 +47,16 @@ const getCategoryColor = (category: string) => {
 
 const visibleCategories = (cats: string[]) => cats.filter((c) => !HIDDEN_CATEGORIES.has(c));
 
+// Lowercase and strip diacritics, so typing "arpon" finds "Arpón Enterprise".
+// Four partners have accented names (Arpón Enterprise, Norrkällan, Gut Hügle,
+// O Sócio Hoteleiro) and a plain `toLowerCase().includes()` made every one of
+// them unreachable unless the visitor happened to type the accent.
+const fold = (s: string) =>
+  s
+    .normalize("NFD")
+    .replace(/\p{Diacritic}/gu, "")
+    .toLowerCase();
+
 const Integrations = ({ loaderData }: Route.ComponentProps) => {
   const { channels, partners, categoryCounts, total } = loaderData;
   const [searchTerm, setSearchTerm] = useState("");
@@ -54,7 +64,7 @@ const Integrations = ({ loaderData }: Route.ComponentProps) => {
   const [viewMode, setViewMode] = useState<"grid" | "list">("grid");
 
   const matches = (item: { name: string; categories: string[] }) => {
-    const matchesSearch = item.name.toLowerCase().includes(searchTerm.toLowerCase());
+    const matchesSearch = fold(item.name).includes(fold(searchTerm));
     const matchesCategories =
       selectedCategories.length === 0 || selectedCategories.some((c) => item.categories.includes(c));
     return matchesSearch && matchesCategories;

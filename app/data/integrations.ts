@@ -4914,4 +4914,18 @@ export const integrations: Integration[] = [
     categories: ["PMS", "Europe"],
     website: "https://minedata.ch"
   },
+  {
+    // Mexican hotel PMS, trading since 1982. Their own wordmark can't be used
+    // here: assets/logo.png is a JPEG (despite the name) on a black background
+    // and logo-white.png is white-on-transparent, so both disappear or box out
+    // on our light tiles. The favicon is a self-contained blue tile that reads
+    // correctly, so that's the mark.
+    id: "arpon",
+    slug: "arpon",
+    name: "Arpón Enterprise",
+    description: "Cloud PMS built specifically for the Mexican hotel market, covering front desk and reservations, housekeeping, point of sale, CFDI electronic invoicing and revenue reporting. Used by over 760 hotels.",
+    icon: "/lovable-uploads/pms-arpon.webp",
+    categories: ["PMS", "Latin America"],
+    website: "https://arpon.com"
+  },
 ];
