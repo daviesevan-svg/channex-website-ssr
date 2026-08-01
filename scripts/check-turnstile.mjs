@@ -71,6 +71,12 @@ for (const path of ["/contact", "/"]) {
     if (isTestKey) problems++;
   } else {
     console.log(`${label(path + " site key")} ${FAIL}  absent — TURNSTILE_SITE_KEY is not set for the Worker`);
+    console.log(
+      `${label("")}       NOTE: if you added it and it has since vanished, it was almost\n` +
+        `${label("")}       certainly a plaintext dashboard Variable. Deploys ship\n` +
+        `${label("")}       \`vars: {}\` and that replaces the whole plaintext set, deleting\n` +
+        `${label("")}       it. Re-add BOTH keys as encrypted Secrets — those survive.`,
+    );
     problems++;
   }
 

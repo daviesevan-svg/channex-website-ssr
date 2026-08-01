@@ -30,11 +30,32 @@ export function turnstileSiteKey(): string | null {
   return bindings().TURNSTILE_SITE_KEY?.trim() || null;
 }
 
+// Warn once per isolate, not per request.
+let warnedHalfConfigured = false;
+
 /** Verification is only enforced once BOTH keys are present. Either one alone
  *  is a half-configured state: enforcing with no widget would quarantine every
- *  genuine enquiry, so we deliberately fail open. */
+ *  genuine enquiry, so we deliberately fail open.
+ *
+ *  Failing open silently is how this bit us in production on 2026-08-01: the
+ *  site key was added as a plaintext dashboard Variable, a later deploy wiped
+ *  it (the generated build/server/wrangler.json carries `vars: {}`, and a
+ *  deploy replaces the whole plaintext-variable set with that — encrypted
+ *  Secrets survive, plain Variables do not), and Turnstile quietly stopped
+ *  enforcing after eight minutes with nothing to show it had. Hence the loud
+ *  log below: half-configured is a misconfiguration, not a valid state. */
 export function turnstileConfigured(): boolean {
-  return Boolean(turnstileSiteKey() && bindings().TURNSTILE_SECRET_KEY?.trim());
+  const site = turnstileSiteKey();
+  const secret = bindings().TURNSTILE_SECRET_KEY?.trim();
+  if (!warnedHalfConfigured && Boolean(site) !== Boolean(secret)) {
+    warnedHalfConfigured = true;
+    console.error(
+      `turnstile: HALF CONFIGURED — ${site ? "TURNSTILE_SECRET_KEY is missing" : "TURNSTILE_SITE_KEY is missing"}. ` +
+        "Verification is disabled and the form is protected by content rules only. " +
+        "Add BOTH keys as encrypted Secrets (a plaintext Variable is deleted by the next deploy).",
+    );
+  }
+  return Boolean(site && secret);
 }
 
 export type TurnstileOutcome = "off" | "ok" | "missing" | "invalid" | "unreachable";
