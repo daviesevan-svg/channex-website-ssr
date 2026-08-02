@@ -30,32 +30,58 @@ export function turnstileSiteKey(): string | null {
   return bindings().TURNSTILE_SITE_KEY?.trim() || null;
 }
 
-// Warn once per isolate, not per request.
-let warnedHalfConfigured = false;
+export type TurnstileConfigState = "enforcing" | "half-configured" | "off";
 
-/** Verification is only enforced once BOTH keys are present. Either one alone
- *  is a half-configured state: enforcing with no widget would quarantine every
- *  genuine enquiry, so we deliberately fail open.
+/** Config as a value rather than a log line, so the daily digest can report it
+ *  (see digest.server.ts). Nothing here reads a token — it only asks which keys
+ *  the Worker was given. */
+export function turnstileConfigState(): TurnstileConfigState {
+  const site = Boolean(turnstileSiteKey());
+  const secret = Boolean(bindings().TURNSTILE_SECRET_KEY?.trim());
+  if (site && secret) return "enforcing";
+  if (site || secret) return "half-configured";
+  return "off";
+}
+
+/** Which key is missing, for a message. Empty when both or neither are set. */
+export function turnstileMissingKey(): string {
+  if (turnstileConfigState() !== "half-configured") return "";
+  return turnstileSiteKey() ? "TURNSTILE_SECRET_KEY" : "TURNSTILE_SITE_KEY";
+}
+
+// Warn once per isolate, not per request.
+let warnedNotEnforcing = false;
+
+/** Verification is only enforced once BOTH keys are present. Anything less
+ *  fails open: enforcing with no widget would quarantine every genuine enquiry.
  *
  *  Failing open silently is how this bit us in production on 2026-08-01: the
  *  site key was added as a plaintext dashboard Variable, a later deploy wiped
  *  it (the generated build/server/wrangler.json carries `vars: {}`, and a
  *  deploy replaces the whole plaintext-variable set with that — encrypted
  *  Secrets survive, plain Variables do not), and Turnstile quietly stopped
- *  enforcing after eight minutes with nothing to show it had. Hence the loud
- *  log below: half-configured is a misconfiguration, not a valid state. */
+ *  enforcing after eight minutes with nothing to show it had.
+ *
+ *  Note that the wipe takes out every plaintext Variable at once, so losing
+ *  BOTH keys together is the *expected* shape of that failure, not the exotic
+ *  one — "off" therefore has to be as loud as "half-configured". It stays
+ *  silent only where it is a real choice: local dev, which sets neither key and
+ *  never runs the cron that would nag about it. */
 export function turnstileConfigured(): boolean {
-  const site = turnstileSiteKey();
-  const secret = bindings().TURNSTILE_SECRET_KEY?.trim();
-  if (!warnedHalfConfigured && Boolean(site) !== Boolean(secret)) {
-    warnedHalfConfigured = true;
+  const state = turnstileConfigState();
+  if (!warnedNotEnforcing && state !== "enforcing") {
+    warnedNotEnforcing = true;
+    const cause =
+      state === "half-configured"
+        ? `HALF CONFIGURED — ${turnstileMissingKey()} is missing`
+        : "OFF — neither TURNSTILE_SITE_KEY nor TURNSTILE_SECRET_KEY is set (a deploy wipes both plaintext Variables at once)";
     console.error(
-      `turnstile: HALF CONFIGURED — ${site ? "TURNSTILE_SECRET_KEY is missing" : "TURNSTILE_SITE_KEY is missing"}. ` +
+      `turnstile: ${cause}. ` +
         "Verification is disabled and the form is protected by content rules only. " +
         "Add BOTH keys as encrypted Secrets (a plaintext Variable is deleted by the next deploy).",
     );
   }
-  return Boolean(site && secret);
+  return state === "enforcing";
 }
 
 export type TurnstileOutcome = "off" | "ok" | "missing" | "invalid" | "unreachable";

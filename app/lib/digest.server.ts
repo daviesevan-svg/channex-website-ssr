@@ -1,6 +1,11 @@
 import { env } from "cloudflare:workers";
 import { ensureContactSchema } from "@/lib/contact.server";
 import { sendMail, notificationRecipient } from "@/lib/mail.server";
+import {
+  turnstileConfigState,
+  turnstileMissingKey,
+  type TurnstileConfigState,
+} from "@/lib/turnstile.server";
 
 // Daily summary of contact-form submissions that were quarantined instead of
 // emailed. Runs from a cron trigger (see workers/app.ts and wrangler.jsonc).
@@ -90,17 +95,56 @@ function describe(row: QuarantinedRow): string {
   ].join("\n");
 }
 
-export function buildDigest(rows: QuarantinedRow[]): { subject: string; text: string } {
+/** The banner that turns a silent misconfiguration into something Evan reads.
+ *  Turnstile failing open leaves no trace in the held rows — the form simply
+ *  stops asking for a token and the content rules carry the whole load — so the
+ *  only way it surfaces is if the digest says so out loud. */
+function turnstileBanner(state: TurnstileConfigState): string[] {
+  if (state === "enforcing") return ["Turnstile: enforcing.", ""];
+
+  const cause =
+    state === "half-configured"
+      ? `${turnstileMissingKey()} is missing.`
+      : "Neither key is set. A deploy replaces the whole plaintext-variable set, so both go at once — this is what that looks like.";
+
+  return [
+    "!! TURNSTILE IS NOT ENFORCING !!",
+    "",
+    cause,
+    "The contact form is running on content rules alone: no captcha token is",
+    "being asked for or checked, and nothing else will tell you that.",
+    "",
+    "Fix: add BOTH TURNSTILE_SITE_KEY and TURNSTILE_SECRET_KEY in the Cloudflare",
+    "dashboard as encrypted Secrets. Plaintext Variables are deleted by the next",
+    "deploy — that is how this happened on 2026-08-01. Then confirm with:",
+    "  node scripts/check-turnstile.mjs",
+    "",
+  ];
+}
+
+export function buildDigest(
+  rows: QuarantinedRow[],
+  state: TurnstileConfigState = "enforcing",
+): { subject: string; text: string } {
   const review = rows.filter((r) => needsAHumanLook(r.spam_reasons));
   const bots = rows.filter((r) => !needsAHumanLook(r.spam_reasons));
 
+  // A broken captcha outranks the day's counts: it is the thing that decides
+  // whether tomorrow's digest can be trusted at all.
   const subject =
-    review.length > 0
-      ? `${review.length} held enquir${review.length === 1 ? "y" : "ies"} worth checking (${rows.length} total held)`
-      : `${rows.length} spam submission${rows.length === 1 ? "" : "s"} blocked, nothing needing attention`;
+    state !== "enforcing"
+      ? `ACTION NEEDED: Turnstile is not enforcing (${rows.length} held)`
+      : review.length > 0
+        ? `${review.length} held enquir${review.length === 1 ? "y" : "ies"} worth checking (${rows.length} total held)`
+        : `${rows.length} spam submission${rows.length === 1 ? "" : "s"} blocked, nothing needing attention`;
 
   const lines: string[] = [];
-  lines.push(`Contact form: ${rows.length} submission${rows.length === 1 ? "" : "s"} held back and not emailed.`);
+  lines.push(...turnstileBanner(state));
+  lines.push(
+    rows.length === 0
+      ? "Contact form: nothing was held back since the last run."
+      : `Contact form: ${rows.length} submission${rows.length === 1 ? "" : "s"} held back and not emailed.`,
+  );
   lines.push("");
 
   if (review.length > 0) {
@@ -114,7 +158,7 @@ export function buildDigest(rows: QuarantinedRow[]): { subject: string; text: st
     review.forEach((row) => {
       lines.push(describe(row), "");
     });
-  } else {
+  } else if (rows.length > 0) {
     lines.push("Nothing needs attention: every held submission was flagged on its content.");
     lines.push("");
   }
@@ -201,15 +245,19 @@ export async function sendQuarantineDigest(): Promise<DigestResult> {
   };
 
   const needsReview = rows.filter((r) => needsAHumanLook(r.spam_reasons)).length;
+  const state = turnstileConfigState();
 
-  if (rows.length === 0) {
+  // A quiet day normally means no mail. It does NOT when Turnstile is down:
+  // "nothing held" and "nothing is checking" look identical from the inbox, and
+  // the second one is the one worth waking up for.
+  if (rows.length === 0 && state === "enforcing") {
     const marker = await nextMarker();
     if (marker > lastId) await writeLastId(db, marker);
     console.log("digest: nothing quarantined since last run, no mail sent");
     return { found: 0, needsReview: 0, sent: false };
   }
 
-  const { subject, text } = buildDigest(rows);
+  const { subject, text } = buildDigest(rows, state);
   const mail = await sendMail({ subject: `[Channex site] ${subject}`, text });
 
   if (!mail.ok) {
