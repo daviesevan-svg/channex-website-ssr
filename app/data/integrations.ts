@@ -4939,15 +4939,15 @@ export const integrations: Integration[] = [
     // used as-is it boxes out on our light tiles. Backdrop flood-filled to
     // transparency and resized to 192px, 2.4x the largest slot it renders in.
     //
-    // No region tag: the site names no company, entity or country anywhere. The
-    // only geographic signal is the Thailand TM30 immigration export, which
-    // isn't enough on its own to claim a market.
+    // Tagged Asia on Evan's confirmation. Their site names no company, entity
+    // or country anywhere, so the data can't support the tag on its own — the
+    // Thailand TM30 immigration export is the only geographic signal in it.
     id: "pmspilot",
     slug: "pmspilot",
     name: "PMSPilot",
     description: "Self-serve property management system for independent hotels and guesthouses, built by a hotelier rather than around a sales process — sign-up to first booking without a demo or sales call. Covers the front-desk essentials: drag-and-drop booking calendar, digital guest registration with document capture and online check-in, Stripe card payments alongside a digital cash book, automatic invoicing with PDF export, housekeeping checklists with photo damage reports, and night audit and occupancy reporting. Existing rooms, guests and bookings import from Excel or CSV. Also handles multi-property, long-term rentals, vouchers, door codes, staff time tracking and a TM30 export for Thailand immigration reporting.",
     icon: "/lovable-uploads/pms-pmspilot.webp",
-    categories: ["PMS"],
+    categories: ["PMS", "Asia"],
     website: "https://pmspilot.com"
   },
 ];
