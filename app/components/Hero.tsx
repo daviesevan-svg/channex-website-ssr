@@ -89,20 +89,25 @@ const Hero = () => {
               </Button>
             </div>
 
-            {/* Stats */}
-            <div className="grid grid-cols-3 gap-6 pt-8 border-t border-border/50">
+            {/* Stats.
+                Three columns of a 390px screen are ~103px wide, where the 30px
+                figures didn't fit: "100,000+" needed 143px and "<100ms" 118, so
+                both rendered clipped — the headline number read "100,00", which
+                is worse than not showing it. Smaller type below `sm` only; the
+                desktop sizes are untouched. */}
+            <div className="grid grid-cols-3 gap-4 sm:gap-6 pt-8 border-t border-border/50">
               <div className="text-center lg:text-left">
-                <div className="text-3xl lg:text-4xl font-bold bg-gradient-primary bg-clip-text text-transparent font-inter">
+                <div className="text-xl sm:text-3xl lg:text-4xl font-bold bg-gradient-primary bg-clip-text text-transparent font-inter">
                   {approx(CHANNEL_CONNECTION_COUNT)}
                 </div>
                 <div className="text-sm text-muted-foreground font-inter mt-1">Channel connections</div>
               </div>
               <div className="text-center lg:text-left">
-                <div className="text-3xl lg:text-4xl font-bold bg-gradient-primary bg-clip-text text-transparent font-inter">99.9%</div>
+                <div className="text-xl sm:text-3xl lg:text-4xl font-bold bg-gradient-primary bg-clip-text text-transparent font-inter">99.9%</div>
                 <div className="text-sm text-muted-foreground font-inter mt-1">Uptime</div>
               </div>
               <div className="text-center lg:text-left">
-                <div className="text-3xl lg:text-4xl font-bold bg-gradient-primary bg-clip-text text-transparent font-inter">&lt;100ms</div>
+                <div className="text-xl sm:text-3xl lg:text-4xl font-bold bg-gradient-primary bg-clip-text text-transparent font-inter">&lt;100ms</div>
                 <div className="text-sm text-muted-foreground font-inter mt-1">Response</div>
               </div>
             </div>
