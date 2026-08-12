@@ -2,6 +2,7 @@ import {
   goodFit,
   wrongFit,
   PLATFORM_FEE,
+  CUSTOM_TERMS_REVIEW_FEE,
   HOTEL_BASE_RATE,
   VR_BASE_RATE,
   HOTEL_TIERS,
@@ -99,6 +100,7 @@ ${tierLines(VR_TIERS, "units")}
 - The $${PLATFORM_FEE}/month platform fee applies in addition to per-property charges.
 - All prices are excluding VAT.
 - Billed monthly, no fixed term or minimum contract. Cancel any time with 30 days' notice. No setup fees.
+- Channex contracts on its standard terms. Custom terms and security reviews carry a $${CUSTOM_TERMS_REVIEW_FEE.toLocaleString("en-US")} review fee.
 
 ## Example Monthly Cost
 

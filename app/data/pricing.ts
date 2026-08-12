@@ -4,6 +4,10 @@
 import { OTA_CHANNEL_COUNT, PARTNER_COUNT } from "@/data/counts";
 
 export const PLATFORM_FEE = 130;
+
+/** Flat fee charged when a customer wants us off our standard contract — their
+ *  own paper, negotiated terms, or a security questionnaire to complete. */
+export const CUSTOM_TERMS_REVIEW_FEE = 1500;
 export const HOTEL_BASE_RATE = 7;
 export const VR_BASE_RATE = 0.5;
 
@@ -97,7 +101,7 @@ export const faqs = [
   },
   {
     question: "Are there minimums, commissions or hidden fees?",
-    answer: "No. There's no minimum number of properties, no certification fee, no commission on bookings, and no hidden charges. You pay the platform fee plus the per-property fee for properties with an active channel — that's the whole bill."
+    answer: `No. There's no minimum number of properties, no certification fee, no commission on bookings, and no hidden charges. You pay the platform fee plus the per-property fee for properties with an active channel — that's the whole bill. The only thing charged on top is optional and entirely in your hands: a $${CUSTOM_TERMS_REVIEW_FEE.toLocaleString("en-US")} review fee if you ask us to leave our standard contract for custom terms or a security review.`
   },
   {
     question: "How and when am I billed?",
@@ -118,6 +122,10 @@ export const faqs = [
   {
     question: "What contract length is required?",
     answer: "There's no fixed term or minimum contract — Channex is billed monthly and you can cancel any time, with 30 days' notice. Scaling the number of connected properties up or down needs no notice at all."
+  },
+  {
+    question: "Can we contract on our own terms?",
+    answer: `We contract on our standard terms. If you need us to work from your paper instead, negotiate custom terms, or complete a security review or vendor questionnaire, there's a $${CUSTOM_TERMS_REVIEW_FEE.toLocaleString("en-US")} review fee. Our standard agreement is published in full — read it before you sign up, and most partners find they don't need changes.`
   },
   {
     question: "Is there a setup or onboarding fee?",
