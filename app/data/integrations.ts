@@ -3842,9 +3842,12 @@ export const integrations: Integration[] = [
   },
   {
     id: "uibsplatform",
-    name: "UIBS | hospitality. platform",
+    name: "UIBS | hospitality",
     description: "Microsoft Azure-certified CRS, Booking Engine, CRM, CMS, and core PMS delivering seamless, fully-branded website guest experiences and a unified single-source-of-truth platform for hoteliers and vacation rentals. Connects to Channex to keep availability, rates, inventory, and reservations accurate across all channels.",
-    icon: "/lovable-uploads/pms-uibs.svg",
+    // Their supplied 2026 mark: a square navy badge, unlike the wide wordmark it
+    // replaces. New filename rather than overwriting pms-uibs.svg, because that
+    // path is stable and already cached at the edge.
+    icon: "/lovable-uploads/pms-uibs-hospitality.svg",
     categories: ["PMS", "IBE", "Europe", "Global"],
     slug: "uibsplatform",
     website: "https://hospitality.uibs.net"
