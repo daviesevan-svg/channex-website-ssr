@@ -4959,14 +4959,15 @@ export const integrations: Integration[] = [
     // this is the inverse lockup Evan supplied, on transparency rather than the
     // cream field, which would have shown as an off-white box on our tiles.
     //
-    // No region tag: the copy implies a US focus (dollar pricing, US OTAs) but
-    // never states a market, so there's nothing solid to tag.
+    // Tagged North America on Evan's confirmation. Their copy points that way
+    // — dollar figures, US OTAs, motels — but never states a market outright,
+    // so the site alone wouldn't carry the tag.
     id: "lodgingos",
     slug: "lodgingos",
     name: "LodgingOs",
     description: "Hotel management software for independent hotels and motels, built around the hours when nobody is at the desk. Combines the front desk, a 0%-commission direct booking page and OTA channel sync in one system, so a last room sold at the desk closes across the other channels before the next refresh. Adds phone answering that takes bookings after hours and hands off anything it shouldn't handle, self check-in from a lobby tablet that verifies ID and issues a door code, housekeeping, a night audit that runs itself overnight, and ADR, RevPAR and occupancy reporting.",
     icon: "/lovable-uploads/pms-lodgingos.svg",
-    categories: ["PMS"],
+    categories: ["PMS", "North America"],
     website: "https://www.lodgingos.com"
   },
 ];
