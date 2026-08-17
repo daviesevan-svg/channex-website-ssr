@@ -890,12 +890,34 @@ export const integrations: Integration[] = [
     website: "https://www.hopper.com/",
   },
   {
+    // Tagged OTA, so this one HAS a detail page — hence the longer fields. All
+    // of it is from reconline.com; their own site is the only source used.
+    //
+    // No icon: their logo is a CSS text wordmark, not an image. The only image
+    // assets on the site are a social banner and a Swiss-flag favicon, neither
+    // of which is a mark, so the monogram tile is the honest fallback.
     id: "27",
     slug: "reconline",
     name: "Reconline",
-    description: "Connect with Reconline GDS to access global distribution channels and connect with travel agents worldwide. Ideal for properties seeking broader exposure and increased bookings.",
+    description: "Swiss GDS distribution specialist that lists independent hotels in Amadeus, Sabre and Travelport, reaching corporate travel programmes and travel-agency demand. Connects through the channel manager a hotel already runs rather than replacing it, and is priced per actualised booking with no setup fee and no monthly minimum.",
+    longDescription: "reconline AG has specialised in GDS distribution for independent hotels for over 20 years, working from Zermatt in Switzerland. The Global Distribution Systems — Amadeus, Sabre and Travelport — are where corporations, travel management companies and agencies book, and they have traditionally been hard for an independent property to reach without a brand affiliation. reconline handles the listing and the ongoing rate, availability and inventory sync across all three, integrating with the channel manager the hotel already uses instead of asking it to switch. Setup is a roughly 30-minute profile, hotels are typically live across all three systems within ten days, and they pay only for bookings that actualise — no setup fee, no monthly minimum. Travel agent commissions are settled automatically through Onyx CenterSource.",
     icon: "",
     categories: ["Distribution", "Global", "B2B", "OTA"],
+    features: [
+      "Listing in Amadeus, Sabre and Travelport",
+      "Connects through the hotel's existing channel manager",
+      "Rate, availability and inventory sync across all three GDS",
+      "Live within about ten days of a 30-minute setup",
+      "Priced per actualised booking — no setup fee, no monthly minimum",
+      "Automated travel agent commission handling via Onyx CenterSource",
+      "Site and support in English, German, French, Spanish and Italian"
+    ],
+    useCases: [
+      "Independent hotels chasing corporate and managed-travel demand",
+      "Properties wanting GDS reach without a brand affiliation",
+      "Hotels already running a channel manager and adding a channel",
+      "Properties selling to travel agencies and travel management companies"
+    ],
     website: "https://www.reconline.com/",
   },
   {
