@@ -117,7 +117,7 @@ const CustomerAgreement = () => {
               7.2 Using the Services necessarily involves transmitting data across networks we do not own or control. While we encrypt data in transit and take the measures described in our Security Policy, no system can be guaranteed impenetrable, and we cannot warrant that our measures or those of our suppliers will never be defeated.
             </p>
             <p className="mt-3">
-              7.3 Both parties will use reasonable endeavours to comply with the Payment Card Industry Data Security Standard (PCI DSS) in respect of any cardholder data handled through the Services, and will use a PCI compliant service provider or complete an annual assessment by a qualified security assessor where one is required.
+              7.3 Card processing for the Services is carried out by PCI DSS compliant service providers. Each party is responsible for its own compliance with the Payment Card Industry Data Security Standard in respect of cardholder data within its own environment.
             </p>
           </div>
 
@@ -162,7 +162,7 @@ const CustomerAgreement = () => {
               10.4 <strong>Taxes.</strong> Fees exclude VAT and any other applicable taxes or duties, which you will pay in addition where they are chargeable. If you hold a valid exemption, tell us and we will provide the invoicing documentation you need.
             </p>
             <p className="mt-3">
-              10.5 Except as set out in Section 9.4, Section 11 and Section 20, fees are non-refundable and non-creditable once due.
+              10.5 Except as set out in Section 9.4 (service availability remedy), Section 11 (30-day satisfaction refund), Section 20.3 (changes you do not accept) and Section 21.7 (subprocessor objection), fees are non-refundable and non-creditable once due.
             </p>
           </div>
 
@@ -210,7 +210,7 @@ const CustomerAgreement = () => {
               13.7 <strong>Return and deletion of Your Data.</strong> During the Subscription Term and for thirty (30) days after it ends, you may export Your Data from the platform, or ask us to provide it to you in a commonly used format. After that period we may delete Your Data in accordance with the retention schedule in our Security Policy.
             </p>
             <p className="mt-3">
-              13.8 <strong>Survival.</strong> The following survive termination: Sections 5.2 and 5.4 (ownership of and non-approach to Your Data), 10 (Fees and payment, in respect of amounts already due), 14 (Restrictions), 16 (Ownership and feedback), 17 (Confidentiality), 19.2 (Warranty disclaimer), 19.3 (Limitation of liability), 19.4 (Indemnities), 22 (Governing law), and this Section 13.8.
+              13.8 <strong>Survival.</strong> The following survive termination: Sections 5.2 and 5.4 (ownership of and non-approach to Your Data), 10 (Fees and payment, in respect of amounts already due), 13.5 to 13.8 (effect of termination, transition assistance, return and deletion of Your Data, and this Section), 14 (Restrictions), 16 (Ownership and feedback), 17 (Confidentiality), 19.2 (Warranty disclaimer), 19.3 (Limitation of liability), 19.4 (Indemnities), 21.13 and 21.14 (deletion of personal data, and liability under the Data Protection Addendum), 22 (Governing law and jurisdiction) and 25 (General).
             </p>
           </div>
 
@@ -226,7 +226,7 @@ const CustomerAgreement = () => {
               <li>reverse engineer, decompile or disassemble any part of the Services, or attempt to derive their source code or non-public APIs, except to the extent the law permits despite this restriction;</li>
               <li>circumvent or interfere with any mechanism in the Services intended to limit your use, or with any security or authentication measure;</li>
               <li>remove or obscure any proprietary notice in the Services; or</li>
-              <li>access the Services in order to build a competing product, or publish benchmark or performance information about the Services without our consent.</li>
+              <li>access the Services in order to build a competing product.</li>
             </ul>
             <p className="mt-3">
               <strong>Partners and resellers.</strong> The first three restrictions above do not apply to the extent we have appointed you as a reseller, or granted you white label or embedding rights, under a signed agreement. If you have such an agreement, that agreement defines what you may do and prevails under Section 1.2.
@@ -246,7 +246,7 @@ const CustomerAgreement = () => {
           <div>
             <h3 className="text-xl font-semibold text-foreground mb-3">16. Ownership and feedback</h3>
             <p>
-              16.1 The Services are made available to you on a subscription basis. We and our licensors retain all right, title and interest in the Services, the platform, its look and feel, all underlying technology, and any modifications or derivative works of them. No rights are granted to you except those expressly set out in this Agreement.
+              16.1 The Services are made available to you on a subscription basis. We and our licensors retain all right, title and interest in the Services, the platform, all underlying technology, and any modifications or derivative works of them. No rights are granted to you except those expressly set out in this Agreement.
             </p>
             <p className="mt-3">
               16.2 If you choose to send us suggestions, ideas or other feedback about the Services, we may use it freely to develop and improve our products, without obligation or payment to you. Feedback is not your Confidential Information. This does not give us any rights in Your Data.
@@ -302,7 +302,7 @@ const CustomerAgreement = () => {
                   (c) <strong>Nothing in this Agreement limits or excludes either party's liability for:</strong> (i) death or personal injury caused by its negligence; (ii) fraud or fraudulent misrepresentation; (iii) your obligation to pay fees properly due; or (iv) any other liability that cannot lawfully be limited or excluded under the laws of England and Wales.
                 </p>
                 <p>
-                  (d) The parties agree that the limitations in this Section 19.3 are reasonable, having regard to the fees charged for the Services, and that they survive and apply even if a limited remedy in this Agreement is found to have failed of its essential purpose.
+                  (d) The parties agree that the limitations in this Section 19.3 are reasonable, having regard to the fees charged for the Services and to the allocation of risk between the parties.
                 </p>
               </div>
               <p>
@@ -313,7 +313,7 @@ const CustomerAgreement = () => {
                   (a) <strong>By you.</strong> You will indemnify us against third party claims, and reasonable legal costs, arising from your material breach of this Agreement, from Your Data or your own content infringing a third party's rights, or from your violation of applicable law.
                 </p>
                 <p>
-                  (b) <strong>By us.</strong> We will defend you against any third party claim that the Services, used in accordance with this Agreement, infringe that third party's patent, copyright, trademark or trade secret, and we will indemnify you against damages and costs finally awarded or agreed in settlement. This does not apply where the claim arises from your modification of the Services, from combining the Services with something we did not provide, from your failure to apply an update we have made available, or from Your Data. If a claim is made or we reasonably expect one, we may procure the right for you to continue using the Services, modify or replace them with something functionally equivalent, or terminate the affected Services and refund prepaid fees for the unused term.
+                  (b) <strong>By us.</strong> We will defend you against any third party claim that the Services, used in accordance with this Agreement, infringe that third party's patent, copyright, trademark or trade secret, and we will indemnify you against damages and costs finally awarded or agreed in settlement. This does not apply where the claim arises from combining the Services with something we did not provide, or from Your Data. If a claim is made or we reasonably expect one, we may procure the right for you to continue using the Services, modify or replace them with something functionally equivalent, or terminate the affected Services and refund prepaid fees for the unused term.
                 </p>
                 <p>
                   (c) <strong>Procedure.</strong> The indemnified party must notify the indemnifier promptly, give it sole control of the defence and settlement, and provide reasonable cooperation at the indemnifier's expense. The indemnifier will not settle in a way that imposes an obligation or admits liability on behalf of the indemnified party without its prior written consent.
