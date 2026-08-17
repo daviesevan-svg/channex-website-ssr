@@ -48,7 +48,7 @@ const Policy = () => {
                 Terms & Policies
               </h1>
               <p className="text-muted-foreground font-inter">
-                Updated on January 3, 2021
+                Updated on 17 August 2026
               </p>
             </div>
 

@@ -15,18 +15,21 @@ const SecurityPolicy = () => {
             Our security implementation allows us to adhere to the following best practices, demonstrating our commitment to customer security and privacy:
           </p>
           <ul className="list-disc pl-6 space-y-1 mt-2">
-            <li>Abides by the ISO27001 security technical specifications</li>
-            <li>Abides by the PCI DSS security technical specifications</li>
-            <li>Abides by the EU Data Directive by entering into Model Clauses with applicable customers, partners, and suppliers</li>
+            <li>Our controls are designed in line with the ISO 27001 information security standard</li>
+            <li>Our handling of cardholder data is designed in line with the PCI DSS technical requirements, and we use PCI compliant service providers for card processing</li>
+            <li>We meet our obligations under the UK GDPR and the Data Protection Act 2018, and put the UK International Data Transfer Agreement or Addendum, or the European Commission's standard contractual clauses, in place with customers, partners and suppliers where a restricted transfer requires them</li>
           </ul>
+          <p className="mt-4">
+            Where we state that our controls are designed in line with a standard, we mean that we have adopted the practices that standard describes. Certification status for Channex and for any individual supplier is available on request from support@channex.io.
+          </p>
         </div>
 
         <div>
           <h3 className="text-xl font-semibold text-foreground mb-4">What Data Do We Store?</h3>
           <p className="mb-4">
-            Channex only stores metadata about your organisation and your organisation's properties and users.
+            Channex stores the data needed to operate the platform: information about your organisation, its properties and its users, and the booking data that must pass between your systems and the channels you connect. We store only what the Services require, and we process booking and guest data as your processor, on your instructions — see the Data Protection Addendum in Section 21 of the Customer Agreement.
           </p>
-          
+
           <div className="space-y-3">
             <p><strong>We store the following data for the purpose of authentication:</strong></p>
             <ul className="list-disc pl-6">
@@ -110,7 +113,7 @@ const SecurityPolicy = () => {
                 Channex platform servers are allocated to the respective security groups, characterised by specific security settings (TCP/IP level), supplemented by individual instance level stateful firewalls. Separate VLANs are used to split production, testing and development environments as well as to segregate end-user and administrative traffic.
               </p>
               <p className="mt-2">
-                Channex employs a three-tier security model:
+                Traffic is segregated across three tiers — the public-facing application tier, the internal service tier, and the data tier — with access between them permitted only on explicitly opened ports.
               </p>
             </div>
           </div>
@@ -129,7 +132,7 @@ const SecurityPolicy = () => {
                 All customer access to the Channex Enterprise Connectivity Platform is controlled through user interfaces (UI), APIs, and/or dedicated tools. Use of any of these methods of access require a username and password with privileges appropriate for the requested access.
               </p>
               <p className="mt-2">
-                Customers do not have root or administrative access to any portion of the Enterprise Insights Platform technology stack and access is permitted only via the Enterprise Insights Platform application layer (UI or API).
+                Customers do not have root or administrative access to any portion of the Enterprise Connectivity Platform technology stack and access is permitted only via the Enterprise Connectivity Platform application layer (UI or API).
               </p>
             </div>
 
@@ -152,17 +155,25 @@ const SecurityPolicy = () => {
         <div>
           <h3 className="text-xl font-semibold text-foreground mb-4">Data Retention</h3>
           <p className="mb-4">
-            Customer data is not stored for longer that it is needed. We require data about properties, bookings and users to deliver accurate data visualisations, and remove this data either upon request, or after a period [30 days max] after the account is terminated.
+            Customer data is not stored for longer than it is needed. We require data about properties, bookings and users in order to operate the platform, and we remove it according to the schedule below, or earlier on request.
           </p>
           <p className="mb-4">
-            Data is also removed if deemed out of date, or no longer valid. This can happen from removal of connected services, termination of accounts, or other events originating from connected service providers.
+            Data is also removed if it becomes out of date or no longer valid. This can happen through the removal of a connected service, the termination of an account, or other events originating from connected service providers.
           </p>
-          
+
+          <p className="mb-3"><strong>While an account is open:</strong></p>
           <ul className="list-disc pl-6 space-y-1">
-            <li>Bookings will be deleted once they reach 2 years after departure date.</li>
-            <li>Availability, Rates and Restriction data is removed for past dates daily.</li>
-            <li>Credit Card information is held until 7 days after booking departure.</li>
-            <li>Account data (Username, password, properties, channels & bookings) will be deleted within 30 days of account cancellation or on request.</li>
+            <li>Availability, rate and restriction data is removed for past dates daily.</li>
+            <li>Credit card information is held until 7 days after the booking departure date, then deleted.</li>
+            <li>Bookings are deleted once they reach 2 years after the departure date.</li>
+          </ul>
+
+          <p className="mb-3 mt-5"><strong>After an account is cancelled or terminated:</strong></p>
+          <ul className="list-disc pl-6 space-y-1">
+            <li>Account data — usernames, credentials, properties, channels and bookings — is deleted within 30 days of cancellation, or sooner on request. The 30-day window exists so that data can be exported during the period described in Section 13.7 of the Customer Agreement.</li>
+            <li>Where the retention rules above would give different answers, the shorter period applies: cancelling an account deletes its bookings within 30 days, regardless of departure date.</li>
+            <li>We retain the minimum data the law requires us to keep — for example invoice records for seven years, and guest registration information where it must be provided to local health and safety or police authorities — until that obligation expires. Retained data is isolated and protected from further processing.</li>
+            <li>Data held on backup media is deleted on the normal backup rotation cycle, and is not restored into production after an account is deleted.</li>
           </ul>
         </div>
 
