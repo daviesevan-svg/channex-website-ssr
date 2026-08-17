@@ -158,7 +158,7 @@ const PrivacyPolicy = () => {
         <div>
           <h3 className="text-xl font-semibold text-foreground mb-3">International transfers</h3>
           <p>
-            We host data with providers in the United Kingdom, the European Economic Area and, for some services, the United States. Where personal information is transferred outside the UK or the EEA, we make the transfer in accordance with data protection law — relying on UK adequacy regulations or a European Commission adequacy decision where one covers the destination, and otherwise putting in place the UK International Data Transfer Agreement or Addendum, or the European Commission's standard contractual clauses, with any supplementary measures required. You can request details of the safeguards applying to a specific transfer by emailing support@channex.io.
+            <strong>The Channex platform and its databases are hosted in the European Union</strong>, on infrastructure provided by Amazon Web Services and DigitalOcean. Booking and guest data you send us is stored in the EU. Some supporting services — such as website analytics — may process limited data outside the UK and EEA. Where personal information is transferred outside the UK or the EEA, we make the transfer in accordance with data protection law — relying on UK adequacy regulations or a European Commission adequacy decision where one covers the destination, and otherwise putting in place the UK International Data Transfer Agreement or Addendum, or the European Commission's standard contractual clauses, with any supplementary measures required. You can request details of the safeguards applying to a specific transfer by emailing support@channex.io.
           </p>
         </div>
 

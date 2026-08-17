@@ -4,156 +4,177 @@ const SecurityPolicy = () => {
       <h2 className="text-3xl font-bold text-foreground font-inter">
         Security Policy
       </h2>
-      
+      <p className="text-sm text-muted-foreground font-inter italic">
+        Effective from: 17 August 2026
+      </p>
+
       <div className="space-y-6 text-muted-foreground font-inter leading-relaxed">
         <div>
-          <h3 className="text-xl font-semibold text-foreground mb-4">Executive Overview</h3>
+          <h3 className="text-xl font-semibold text-foreground mb-4">Overview</h3>
           <p>
-            The Channex Enterprise Connectivity Platform is designed to help Enterprises and Independent Software Vendors (ISVs) securely connect channels and deliver them to hotels, customers, and or partners. Channex realizes that helping to protect our customer's data, ensure proper security regulations, and mitigate any potential risk is essential to building trust and delivering a high-level of service. Channex takes a risk based approach to security and this paper will detail the many different measures and technologies in place to protect our customers.
+            The Channex connectivity platform lets accommodation providers, property management systems and independent software vendors connect to distribution channels and exchange availability, rate and booking data. Protecting that data is central to the service — a failure here affects our customers' businesses and their guests, not just us. We take a risk-based approach to security, and this policy sets out the measures we have in place.
           </p>
           <p className="mt-4">
-            Our security implementation allows us to adhere to the following best practices, demonstrating our commitment to customer security and privacy:
-          </p>
-          <ul className="list-disc pl-6 space-y-1 mt-2">
-            <li>Our controls are designed in line with the ISO 27001 information security standard</li>
-            <li>Our handling of cardholder data is designed in line with the PCI DSS technical requirements, and we use PCI compliant service providers for card processing</li>
-            <li>We meet our obligations under the UK GDPR and the Data Protection Act 2018, and put the UK International Data Transfer Agreement or Addendum, or the European Commission's standard contractual clauses, in place with customers, partners and suppliers where a restricted transfer requires them</li>
-          </ul>
-          <p className="mt-4">
-            Where we state that our controls are designed in line with a standard, we mean that we have adopted the practices that standard describes. Certification status for Channex and for any individual supplier is available on request from support@channex.io.
+            No single control protects customer data. What protects it is a set of layers — the physical security of the facilities our infrastructure runs in, network and system controls above that, and the access rules that determine what any individual can reach. This policy describes each layer, and is explicit about which parts we operate ourselves and which we rely on our providers for.
           </p>
         </div>
 
         <div>
-          <h3 className="text-xl font-semibold text-foreground mb-4">What Data Do We Store?</h3>
+          <h3 className="text-xl font-semibold text-foreground mb-4">Where your data is hosted</h3>
+          <p className="mb-4">
+            <strong>Channex does not operate its own data centres.</strong> The platform runs on infrastructure provided by Amazon Web Services and DigitalOcean.
+          </p>
+          <p className="mb-4">
+            <strong>Platform data is hosted in the European Union.</strong> We use EU regions for the Channex platform and its databases, so the availability, rate and booking data you send us — including guest personal data — is stored in the EU.
+          </p>
+          <p>
+            Some supporting services we use, such as website analytics, may process limited data outside the EU. Where that involves a restricted transfer of personal data, we put the appropriate safeguards in place — see the International transfers section of our Privacy Policy. A current list of our subprocessors is available on request from support@channex.io.
+          </p>
+        </div>
+
+        <div>
+          <h3 className="text-xl font-semibold text-foreground mb-4">Standards and compliance</h3>
+          <ul className="list-disc pl-6 space-y-1">
+            <li>Our controls are designed in line with the ISO 27001 information security standard</li>
+            <li>Our handling of cardholder data is designed in line with the PCI DSS technical requirements, and card processing is carried out by PCI compliant service providers</li>
+            <li>We meet our obligations under the UK GDPR and the Data Protection Act 2018, and put the UK International Data Transfer Agreement or Addendum, or the European Commission's standard contractual clauses, in place with customers, partners and suppliers where a restricted transfer requires them</li>
+          </ul>
+          <p className="mt-4">
+            Where we say our controls are <em>designed in line with</em> a standard, we mean we have adopted the practices that standard describes. Certification status — ours and that of any individual supplier — is available on request from support@channex.io.
+          </p>
+        </div>
+
+        <div>
+          <h3 className="text-xl font-semibold text-foreground mb-4">What data do we store?</h3>
           <p className="mb-4">
             Channex stores the data needed to operate the platform: information about your organisation, its properties and its users, and the booking data that must pass between your systems and the channels you connect. We store only what the Services require, and we process booking and guest data as your processor, on your instructions — see the Data Protection Addendum in Section 21 of the Customer Agreement.
           </p>
 
           <div className="space-y-3">
-            <p><strong>We store the following data for the purpose of authentication:</strong></p>
+            <p><strong>For authentication:</strong></p>
             <ul className="list-disc pl-6">
-              <li>Usernames and/or email addresses</li>
+              <li>Usernames and email addresses, and credentials stored as salted hashes</li>
             </ul>
 
-            <p><strong>We store the following data for the purpose of channel management:</strong></p>
+            <p><strong>For channel management:</strong></p>
             <ul className="list-disc pl-6 space-y-1">
-              <li>Property Details (Name, Address, Email, Facilities, Images, rooms types, rates plans and Availability, prices and restriction data.)</li>
-              <li>Booking Metadata (including if present: Customer name, guest names, customer address, customer card details)</li>
+              <li>Property details — name, address, contact email, facilities, images, room types, rate plans, availability, prices and restriction data</li>
+              <li>Booking data — including, where present, the booker's name and address, guest names, and payment card details</li>
             </ul>
           </div>
         </div>
 
         <div>
-          <h3 className="text-xl font-semibold text-foreground mb-4">Defense in Depth</h3>
-          <p>
-            As you'll see from any best-in-class SaaS provider, there is no single layer that protects customer data, but rather a well-architected solution that considers every layer from the physical security measures at the data center, all the way through the access privileges that determine what data an individual user can access. Channex, as a connectivity provider, uses this approach to protect customer data.
+          <h3 className="text-xl font-semibold text-foreground mb-4">Physical security</h3>
+          <p className="mb-4">
+            Physical security is provided by our infrastructure providers, Amazon Web Services and DigitalOcean, at their own facilities. Channex personnel have no physical access to those facilities. The providers' data centres hold current certifications to major information security standards, including ISO 27001 and PCI DSS, and their published controls include:
+          </p>
+          <ul className="list-disc pl-6 space-y-1">
+            <li>Multi-factor access control, including keycard and biometric protocols, with continuous interior and exterior surveillance</li>
+            <li>Access restricted to authorised data centre personnel, with prior clearance and escort required to enter a production area</li>
+            <li>Background screening of data centre staff</li>
+            <li>Redundant power and cooling, including N+1 UPS and HVAC</li>
+          </ul>
+          <p className="mt-4">
+            Current certifications and audit reports for each provider are published by them, and we can point you to the relevant documents on request.
           </p>
         </div>
 
         <div>
-          <h3 className="text-xl font-semibold text-foreground mb-4">Process & Policy</h3>
+          <h3 className="text-xl font-semibold text-foreground mb-4">Process and policy</h3>
           <p className="mb-4">
-            The first layer of defense is having a well-defined and comprehensive set of security processes and policies to ensure the security of our customers' data and users. Channex's employs a number of process and policy measures that instill security as a key priority at our most core layer…. our people.
+            The first layer of defence is a defined set of security processes. Channex applies a number of process and policy measures that keep security a priority at our most important layer — our people.
           </p>
 
           <div className="space-y-4">
             <div>
-              <h4 className="text-lg font-semibold text-foreground mb-2">Change Control</h4>
+              <h4 className="text-lg font-semibold text-foreground mb-2">Change control</h4>
               <p>
-                A formal change control process minimises the risk associated with system changes. The process enables tracking of changes made to the systems and verifies that risks have been assessed, inter-dependencies are explored and necessary policies and procedures have been considered and applied before any change is authorised.
+                A formal change control process reduces the risk associated with system changes. It tracks changes made to our systems and verifies that risks have been assessed, inter-dependencies explored, and the necessary policies and procedures considered and applied, before any change is authorised.
               </p>
             </div>
 
             <div>
               <h4 className="text-lg font-semibold text-foreground mb-2">Training</h4>
               <p>
-                Channex employees authorised to access the Channex platform undergo periodic training to focus employee attention to compliance with corporate security policies. For example, Channex DevOps and Professional Services personnel who may handle sensitive customer data and information will regularly undergo security, auditing, access, and compliance training (e.g. for GDPR)
+                Channex employees authorised to access the platform undergo periodic training on compliance with our security policies. Personnel who may handle sensitive customer data receive regular training covering security, auditing, access control and data protection compliance.
               </p>
             </div>
 
             <div>
-              <h4 className="text-lg font-semibold text-foreground mb-2">Authorised Access</h4>
+              <h4 className="text-lg font-semibold text-foreground mb-2">Authorised access</h4>
               <p>
-                In addition to restricted personnel entering the production area, operational access is limited to only a restricted set of Channex operations employees. Access is controlled via a physically separate network that is isolated from the Channex corporate network that serves its general employee population ensuring that only personnel authorised to access the data centre may do so. All Channex personnel with physical or operational access to production environments are subject to training and all activities are logged for audit-ability.
+                Operational access to production systems is limited to a restricted set of Channex operations personnel who need it for their role. Access requires individual named credentials with multi-factor authentication, is granted on a least-privilege basis, is reviewed periodically, and is revoked promptly when someone changes role or leaves. Administrative access is separated from general employee systems, and privileged actions are logged for audit.
               </p>
             </div>
           </div>
         </div>
 
         <div>
-          <h3 className="text-xl font-semibold text-foreground mb-4">Physical</h3>
-          <p className="mb-4">
-            All Channex data centres are certified to major InfoSec standards, including ISO 27001 and PCI DSS. These data centres also feature N+1 redundant HVAC and UPS. The physical security adheres to the best practices in the industry and include:
-          </p>
-          <ul className="list-disc pl-6 space-y-1">
-            <li>Keycard protocols, biometric scanning protocols, and around-the-clock interior and exterior surveillance</li>
-            <li>Access limited to authorised datacenter personnel—no one can enter the production area without prior clearance and appropriate escort</li>
-            <li>Every data centre employee undergoes thorough background security checks</li>
-          </ul>
-        </div>
-
-        <div>
           <h3 className="text-xl font-semibold text-foreground mb-4">Infrastructure</h3>
           <p className="mb-4">
-            Between the physical datacenter layer and the Channex Enterprise Connectivity Platform application layer is the infrastructure that supports our solution. Throughout the infrastructure, security is implemented in a comprehensive and coordinated fashion to enhance the safety and security of customer data.
+            Between the hosting layer and the Channex application layer sits the infrastructure that supports the platform. Security is applied consistently across it.
           </p>
 
           <div className="space-y-4">
             <div>
               <h4 className="text-lg font-semibold text-foreground mb-2">Firewalls</h4>
               <p>
-                All network access to the virtual hosts is protected by a multi-layered firewall operating in a deny-all mode. Internet access is only permitted on explicitly opened ports for only a subset of specified virtual hosts. For an additional layer of security, all database servers reside behind an additional firewall.
+                All network access to our virtual hosts is protected by a multi-layered firewall operating in deny-all mode. Inbound access is permitted only on explicitly opened ports, and only to the hosts that require it. Database servers sit behind an additional firewall and are not reachable from the internet.
               </p>
             </div>
 
             <div>
               <h4 className="text-lg font-semibold text-foreground mb-2">Networking</h4>
               <p>
-                Channex platform servers are allocated to the respective security groups, characterised by specific security settings (TCP/IP level), supplemented by individual instance level stateful firewalls. Separate VLANs are used to split production, testing and development environments as well as to segregate end-user and administrative traffic.
+                Platform servers are allocated to security groups with specific network-level settings, supplemented by stateful firewalls at the individual instance level. Separate private networks segregate production, testing and development environments, and separate end-user traffic from administrative traffic.
               </p>
               <p className="mt-2">
                 Traffic is segregated across three tiers — the public-facing application tier, the internal service tier, and the data tier — with access between them permitted only on explicitly opened ports.
               </p>
             </div>
+
+            <div>
+              <h4 className="text-lg font-semibold text-foreground mb-2">Encryption</h4>
+              <p>
+                Data transmitted between you and the platform, and between the platform and connected channels, is encrypted in transit using TLS. Data at rest is encrypted using the encryption facilities provided by our hosting providers.
+              </p>
+            </div>
           </div>
         </div>
 
         <div>
-          <h3 className="text-xl font-semibold text-foreground mb-4">Systems Hardening</h3>
+          <h3 className="text-xl font-semibold text-foreground mb-4">Systems hardening</h3>
           <p className="mb-4">
-            Just like any SaaS offering, the Channex Enterprise Connectivity Platform utilises many well coordinated technologies to deliver our service, yet there may be many capabilities that are not required. Consistent with industry best practices, Channex DevOps closely inspects the entire solution to identify unnecessary services and remove and/or disable these capabilities to reduce vulnerabilities to security threats.
+            The platform uses a number of coordinated technologies, and many capabilities they ship with are not required. Consistent with industry practice, we review the stack to identify unnecessary services and remove or disable them, reducing the surface available to an attacker.
           </p>
 
           <div className="space-y-4">
             <div>
-              <h4 className="text-lg font-semibold text-foreground mb-2">No Root Access</h4>
+              <h4 className="text-lg font-semibold text-foreground mb-2">No root access</h4>
               <p>
-                All customer access to the Channex Enterprise Connectivity Platform is controlled through user interfaces (UI), APIs, and/or dedicated tools. Use of any of these methods of access require a username and password with privileges appropriate for the requested access.
-              </p>
-              <p className="mt-2">
-                Customers do not have root or administrative access to any portion of the Enterprise Connectivity Platform technology stack and access is permitted only via the Enterprise Connectivity Platform application layer (UI or API).
+                All customer access to the platform is through our user interface, our APIs and dedicated tools, each requiring authentication with privileges appropriate to the request. Customers do not have root or administrative access to any part of the underlying technology stack; access is only ever via the application layer.
               </p>
             </div>
 
             <div>
-              <h4 className="text-lg font-semibold text-foreground mb-2">Shutdown All Unnecessary Ports</h4>
+              <h4 className="text-lg font-semibold text-foreground mb-2">Unnecessary ports closed</h4>
               <p>
-                As previously mentioned in the Firewalls section, any ports on any server and/or virtual host not required for the operation of the Channex Enterprise Connectivity Platform is disabled eliminating additional opportunities for external intrusion.
+                As described under Firewalls, any port on any server or virtual host that is not required for the operation of the platform is disabled.
               </p>
             </div>
 
             <div>
-              <h4 className="text-lg font-semibold text-foreground mb-2">Security Patches</h4>
+              <h4 className="text-lg font-semibold text-foreground mb-2">Security patches</h4>
               <p>
-                Channex has rigorous policies and procedures in place to update all components of the Channex Enterprise Connectivity Platform, including operating systems, VM hypervisors, middleware, databases, etc. with their vendors' security patches.
+                We have policies and procedures in place to keep all components of the platform — operating systems, hypervisors, middleware, databases and application dependencies — updated with their vendors' security patches.
               </p>
             </div>
           </div>
         </div>
 
         <div>
-          <h3 className="text-xl font-semibold text-foreground mb-4">Data Retention</h3>
+          <h3 className="text-xl font-semibold text-foreground mb-4">Data retention</h3>
           <p className="mb-4">
             Customer data is not stored for longer than it is needed. We require data about properties, bookings and users in order to operate the platform, and we remove it according to the schedule below, or earlier on request.
           </p>
@@ -177,13 +198,20 @@ const SecurityPolicy = () => {
           </ul>
         </div>
 
-        <div className="bg-muted/50 p-6 rounded-lg">
-          <h3 className="text-xl font-semibold text-foreground mb-4">Conclusion</h3>
+        <div>
+          <h3 className="text-xl font-semibold text-foreground mb-4">Reporting a vulnerability</h3>
           <p>
-            Here at Channex, we pride ourselves on the vigilance we employ to protect our customers' data assets and we continually stress that a mature security organisation requires coordinated dedication across technology, policy, procedures, and people. This dedication is underscored by the risk-based approach laid out in this document to demonstrate strength at every layer of security, minimising any potential vulnerability or weakness.
+            If you believe you have found a security vulnerability in the Channex platform, please report it to support@channex.io. We will acknowledge your report and keep you informed while we investigate. We will not pursue a good-faith researcher who reports a genuine issue promptly and does not access, alter or retain other customers' data.
+          </p>
+        </div>
+
+        <div className="bg-muted/50 p-6 rounded-lg">
+          <h3 className="text-xl font-semibold text-foreground mb-4">In summary</h3>
+          <p>
+            A mature security posture needs coordinated attention across technology, policy, procedure and people. The risk-based approach described here is intended to give strength at every layer, and to be clear about where our responsibilities end and our providers' begin.
           </p>
           <p className="mt-4">
-            We want our customers to know their data is sufficiently protected by this approach and welcome the opportunity to discuss these practices and approaches further.
+            If you are evaluating Channex and need more detail — a completed security questionnaire, provider audit reports, or the subprocessor list — email support@channex.io and we will help.
           </p>
         </div>
       </div>
