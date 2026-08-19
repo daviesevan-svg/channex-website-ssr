@@ -479,7 +479,7 @@ export const integrations: Integration[] = [
     slug: "szallas",
     name: "Szallas",
     description: "Connect with Hungary's leading travel platform. Ideal for properties targeting travelers in Central and Eastern Europe.",
-    icon: "",
+    icon: "/images/integrations/ota-szallas.svg",
     categories: ["Regional", "Europe", "OTA"]
   },
   {
@@ -487,7 +487,7 @@ export const integrations: Integration[] = [
     slug: "roombeast",
     name: "Roombeast",
     description: "Ideal for properties aiming to simplify operations and boost visibility in the Latam market.",
-    icon: "",
+    icon: "/images/integrations/ota-roombeast.webp",
     categories: ["Regional", "Latin America", "OTA"],
     website: "https://roombeast.com/",
   },
@@ -877,7 +877,7 @@ export const integrations: Integration[] = [
     slug: "travelgatex",
     name: "TravelgateX",
     description: "Access a global marketplace of travel distributors. Ideal for properties seeking broad B2B connectivity and increased distribution.",
-    icon: "",
+    icon: "/images/integrations/ota-travelgatex.svg",
     categories: ["B2B", "Global", "Distribution", "OTA"]
   },
   {
@@ -959,7 +959,7 @@ export const integrations: Integration[] = [
     slug: "inntopia",
     name: "Inntopia",
     description: "Connect your PMS with Inntopia to streamline bookings and packaging for resorts, hotels, and vacation rentals. Ideal for properties targeting year-round leisure and group travelers.",
-    icon: "",
+    icon: "/images/integrations/ota-inntopia.webp",
     categories: ["Vacation Rentals", "OTA"],
     website: "https://www.inntopia.com/",
   },
@@ -968,7 +968,7 @@ export const integrations: Integration[] = [
     slug: "travia",
     name: "Travia",
     description: "Travia is a B2B distribution marketplace connecting agencies and accommodation providers with live availability, direct bookings, and seamless contracting.",
-    icon: "",
+    icon: "/images/integrations/ota-travia.svg",
     categories: ["B2B", "Distribution", "Global", "OTA"],
     website: "https://travia.io/",
     features: [
@@ -994,7 +994,7 @@ export const integrations: Integration[] = [
     slug: "wink",
     name: "Wink",
     description: "Connect with Wink to streamline bookings and enhance distribution through its travel platform. Ideal for properties seeking innovative solutions to reach modern travelers.",
-    icon: "",
+    icon: "/images/integrations/ota-wink.webp",
     categories: ["Distribution", "OTA"]
   },
   {
@@ -1011,7 +1011,7 @@ export const integrations: Integration[] = [
     slug: "spot2nite",
     name: "Spot2nite",
     description: "Connect with Spot2Nite to manage bookings for RV parks and campgrounds seamlessly. Ideal for properties catering to travelers seeking outdoor and road trip adventures.",
-    icon: "",
+    icon: "/images/integrations/ota-spot2nite.webp",
     categories: ["Outdoor", "Vacation Rentals", "OTA"]
   },
   {
@@ -1042,7 +1042,7 @@ export const integrations: Integration[] = [
     slug: "opengds-com",
     name: "OpenGDS.com",
     description: "Streamline distribution and connect with local travel agents and OTAs.",
-    icon: "",
+    icon: "/images/integrations/ota-opengds.svg",
     categories: ["Distribution", "B2B", "OTA"]
   },
   {
@@ -2192,7 +2192,7 @@ export const integrations: Integration[] = [
     slug: "waverick",
     name: "Waverick",
     description: "Waverick Adventures is a platform that allows users to find and compare surf camps and schools across various Moroccan destinations, including Taghazout, Rabat, Imsouane, Dakhla, Casablanca, and Essaouira.",
-    icon: "",
+    icon: "/images/integrations/ota-waverick.webp",
     categories: ["OTA", "Outdoor"]
   },
   {
@@ -2356,7 +2356,7 @@ export const integrations: Integration[] = [
     slug: "hoterip",
     name: "Hoterip",
     description: "A leading travel platform in Southeast Asia. Ideal for properties targeting Indonesian travelers and regional markets.",
-    icon: "",
+    icon: "/images/integrations/ota-hoterip.webp",
     categories: ["Asia", "Regional", "OTA"]
   },
   {
@@ -4828,7 +4828,7 @@ export const integrations: Integration[] = [
     id: "kliknbook",
     name: "KliknBook",
     description: "KliknBook is a B2B online travel agency offering travel agencies exclusive access to hotel inventory across key Asian markets including Singapore, Kuala Lumpur, and Bangkok. Focused on speed, accuracy, and efficiency in hotel booking.",
-    icon: "",
+    icon: "/images/integrations/ota-kliknbook.webp",
     categories: ["OTA", "B2B", "Asia"],
     slug: "kliknbook",
     website: "https://www.kliknbook.com",
@@ -4853,7 +4853,7 @@ export const integrations: Integration[] = [
     id: "webbeds",
     name: "WebBeds",
     description: "WebBeds is a global B2B marketplace for the travel trade, connecting 500,000+ hotels with over 50,000 online and offline travel buyers across 50+ countries. One of the world's largest B2B hotel distribution platforms with $3.2B+ TTV.",
-    icon: "",
+    icon: "/images/integrations/ota-webbeds.svg",
     categories: ["OTA", "B2B", "Global"],
     slug: "webbeds",
     website: "https://www.webbeds.com",
@@ -4880,7 +4880,7 @@ export const integrations: Integration[] = [
     id: "nuitee",
     name: "Nuitee",
     description: "Nuitee is an AI-driven B2B hotel distribution and API platform, providing developers and travel businesses with modular APIs for hotel search, rates, booking, and branded site deployment. Poised to disrupt the $75B B2B hotel market.",
-    icon: "",
+    icon: "/images/integrations/ota-nuitee.svg",
     categories: ["OTA", "B2B", "Global"],
     slug: "nuitee",
     website: "https://nuitee.com",
@@ -4907,7 +4907,7 @@ export const integrations: Integration[] = [
     id: "yatra",
     name: "Yatra",
     description: "Yatra is one of India's leading online travel companies, offering real-time bookings for 103,000+ hotels in India and 1.5M+ hotels worldwide. A top corporate travel services provider with 700+ corporate customers and multiple national tourism awards.",
-    icon: "",
+    icon: "/images/integrations/ota-yatra.svg",
     categories: ["OTA", "Asia", "Global"],
     slug: "yatra",
     website: "https://www.yatra.com",
