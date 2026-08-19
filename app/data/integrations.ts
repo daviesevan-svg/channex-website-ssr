@@ -4993,4 +4993,20 @@ export const integrations: Integration[] = [
     categories: ["PMS", "North America"],
     website: "https://www.lodgingos.com"
   },
+  {
+    // Their own horizontal dark lockup (onepms-logo-hor-dark.png), unmodified
+    // apart from the webp conversion. The variant their header actually renders
+    // is onepms-logo-hor-light.png — a white wordmark that would vanish on our
+    // light tiles. At 175px wide it is 2.7x the 64px slot it renders in.
+    //
+    // Asia is carried by the data, not a judgement call: the footer gives
+    // ONEPMS JSC in Da Nang, and the site claims 1,000+ properties in Vietnam.
+    id: "onepms",
+    slug: "onepms",
+    name: "OnePMS",
+    description: "Cloud hotel management system from Da Nang, used by over 1,000 properties across Vietnam — homestays and small hotels through to resorts. The front desk handles individual and group reservations on hourly, daily or monthly stays, check-in and check-out with front-desk cash handling and per-staff permissions, housekeeping with room status, cleaning schedules and minibar posting from the room, and revenue and expense reporting broken down by period, source and room type. Multi-property, so a chain runs from one account, and it works the same on desktop, tablet and phone. Pre-integrated with the Vietnamese e-invoice gateways — VNPT, Easy Invoice and Fast Invoice — so invoices issue straight from the cash register under government rules. Priced on a hotel's actual room count. Sold alongside OneCMS, the vendor's own channel manager.",
+    icon: "/lovable-uploads/pms-onepms.webp",
+    categories: ["PMS", "Asia"],
+    website: "https://onepms.net"
+  }
 ];
