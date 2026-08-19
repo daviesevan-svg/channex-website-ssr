@@ -1019,7 +1019,8 @@ export const integrations: Integration[] = [
     name: "Camping Vision",
     description: "Integrate your PMS with Camping Vision to access Europe's leading platform for campsite bookings. Ideal for campgrounds, glamping sites, and holiday parks targeting outdoor enthusiasts.",
     icon: "",
-    categories: ["Outdoor", "Europe", "Vacation Rentals"]
+    categories: ["OTA", "Outdoor", "Europe", "Vacation Rentals"],
+    slug: "camping-vision"
   },
   {
     id: "39",
