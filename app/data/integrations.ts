@@ -1015,12 +1015,26 @@ export const integrations: Integration[] = [
     categories: ["Outdoor", "Vacation Rentals", "OTA"]
   },
   {
-    id: "38",
-    name: "Camping Vision",
-    description: "Integrate your PMS with Camping Vision to access Europe's leading platform for campsite bookings. Ideal for campgrounds, glamping sites, and holiday parks targeting outdoor enthusiasts.",
-    icon: "",
+    // Renamed from "Camping Vision" on Evan's confirmation; campingvision.com
+    // now redirects to travel.vacanceselect.com.
+    //
+    // id carries the old slug rather than the original "38", so
+    // /integrations/camping-vision still 301s to the new URL through the
+    // loader's legacy-id path. Nothing is lost by retiring "38": the entry
+    // only became an OTA in d3058d0, so that URL never served a detail page.
+    //
+    // Their mark reads "VacanceSelect | Travel" — the partner-facing arm, and
+    // the only lockup the partner site publishes — so the plain brand name
+    // comes from this entry rather than from the image. Stacked rather than
+    // the horizontal version, which is 9:1 and renders 12px tall in the
+    // channel slot against 39px for this one.
+    id: "camping-vision",
+    name: "VacanceSelect",
+    description: "European distribution platform for family holidays, connecting campsites, holiday parks and resorts with travellers through its own consumer brands — VacanceSelect, Allcamps, LuxCamp, Friferie and Dansk Bilferie — each aimed at a different family segment. Over 25 years in the market, with more than 100 staff across offices in Breda, Copenhagen, Geneva and Hamburg, and partner support that runs to named account managers, marketing campaigns and booking-data insights.",
+    icon: "/images/integrations/ota-vacanceselect.webp",
     categories: ["OTA", "Outdoor", "Europe", "Vacation Rentals"],
-    slug: "camping-vision"
+    slug: "vacanceselect",
+    website: "https://travel.vacanceselect.com"
   },
   {
     id: "39",
