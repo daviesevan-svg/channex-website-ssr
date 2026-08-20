@@ -893,15 +893,25 @@ export const integrations: Integration[] = [
     // Tagged OTA, so this one HAS a detail page — hence the longer fields. All
     // of it is from reconline.com; their own site is the only source used.
     //
-    // No icon: their logo is a CSS text wordmark, not an image. The only image
-    // assets on the site are a social banner and a Swiss-flag favicon, neither
-    // of which is a mark, so the monogram tile is the honest fallback.
+    // Logo is the three-bar mark, on Evan's explicit call after being shown
+    // that it is RETIRED. reconline.com served it as _images/rec_logo.gif
+    // until Dec 2025; by Mar 2026 the redesign had replaced it with a CSS
+    // text wordmark, and their Hospitality Net profile logo — re-uploaded
+    // May 2026 — is the plain wordmark too. Revisit if we ever want the
+    // directory to track their current identity.
+    //
+    // Sourced from HotelMinder's partner directory, the only copy anywhere
+    // with both real resolution and transparency: their own site never
+    // served it larger than 137x23, and the vector on Guesty's marketplace
+    // is a potrace job whose letter counters are knocked out by a white
+    // layer painted on top, so it cannot be made transparent. Cropped from
+    // 500x500 to its ink bounds (500x86); pixels are otherwise untouched.
     id: "27",
     slug: "reconline",
     name: "Reconline",
     description: "Swiss GDS distribution specialist that lists independent hotels in Amadeus, Sabre and Travelport, reaching corporate travel programmes and travel-agency demand. Connects through the channel manager a hotel already runs rather than replacing it, and is priced per actualised booking with no setup fee and no monthly minimum.",
     longDescription: "reconline AG has specialised in GDS distribution for independent hotels for over 20 years, working from Zermatt in Switzerland. The Global Distribution Systems — Amadeus, Sabre and Travelport — are where corporations, travel management companies and agencies book, and they have traditionally been hard for an independent property to reach without a brand affiliation. reconline handles the listing and the ongoing rate, availability and inventory sync across all three, integrating with the channel manager the hotel already uses instead of asking it to switch. Setup is a roughly 30-minute profile, hotels are typically live across all three systems within ten days, and they pay only for bookings that actualise — no setup fee, no monthly minimum. Travel agent commissions are settled automatically through Onyx CenterSource.",
-    icon: "",
+    icon: "/images/integrations/ota-reconline.webp",
     categories: ["Distribution", "Global", "B2B", "OTA"],
     features: [
       "Listing in Amadeus, Sabre and Travelport",
