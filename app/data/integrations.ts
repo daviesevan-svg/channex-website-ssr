@@ -2910,10 +2910,16 @@ export const integrations: Integration[] = [
     ]
   },
   {
+    // The icon here used to hotlink a wixstatic.com URL that was not WeSpeak's
+    // logo at all — it was HOLIDAY INN's mark, lifted from the client wall on
+    // wespeak.pro (the path is /images/Logos/Clientes/). So this tile showed
+    // another company's trademark. Replaced with WeSpeak's own stacked lockup
+    // from /images/Logos/WeSpeak/fondo transparente/6.png, cropped from
+    // 1563x1563 to its ink bounds and resized to 260px, ~4x the 64px slot.
     id: "wespeak",
     name: "WeSpeak",
     description: "AI-powered conversational assistant for hotels that increases direct bookings through 24/7 personalized guest interactions via WhatsApp.",
-    icon: "https://static.wixstatic.com/media/714745_cc95c7f8e7c94a2ab835761be0b915ba~mv2.png",
+    icon: "/lovable-uploads/pms-wespeak.webp",
     categories: ["IBE"],
     slug: "wespeak",
     longDescription: "WeSpeak is an AI-powered conversational assistant designed specifically for hotels. Trusted by over 500 hotels across 20 countries, WeSpeak helps properties increase direct bookings by engaging with guests 24/7 through personalized interactions, primarily via WhatsApp. The platform reduces operational time for hotel staff by up to 90% while improving guest satisfaction with instant, professional responses in multiple languages.",
@@ -2937,10 +2943,15 @@ export const integrations: Integration[] = [
     website: "https://www.wespeak.pro/"
   },
   {
+    // The icon here used to hotlink levart.com.au for a file called
+    // Direct-Bookings-Dark-Blue.svg, which is not a logo — it is a feature
+    // illustration of a browser window with a chart and a calendar grid.
+    // Replaced with their actual wordmark, Levart-Logo-Dark.svg from the same
+    // site, kept as SVG and byte-identical to what they serve.
     id: "levart",
     name: "Levart",
     description: "Australian hospitality software provider offering intelligent booking engine technology, channel management, and website solutions to increase direct bookings.",
-    icon: "https://www.levart.com.au/wp-content/uploads/2021/05/Direct-Bookings-Dark-Blue.svg",
+    icon: "/lovable-uploads/pms-levart.svg",
     categories: ["IBE"],
     slug: "levart",
     longDescription: "Levart provides superior software solutions for the hospitality industry, helping properties grow direct bookings, easily manage online distribution, and optimize overall profitability with intelligent technology solutions. Their suite includes an intelligent booking engine, channel manager, and website solutions, all backed by a dedicated Client Success Team.",
