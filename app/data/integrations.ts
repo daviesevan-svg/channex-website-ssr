@@ -5032,5 +5032,29 @@ export const integrations: Integration[] = [
     icon: "/lovable-uploads/pms-onepms.webp",
     categories: ["PMS", "Asia"],
     website: "https://onepms.net"
+  },
+  {
+    // No logo: HostPilot publishes no brand asset anywhere. No <img> on the
+    // site, no /logo.*, /icon.*, /apple-icon or opengraph-image route, and the
+    // favicon is still the stock Vercel black-circle placeholder. Their header
+    // lockup is built from DOM and CSS — a gradient tile, a Lucide house glyph
+    // and text — in the dark-header polarity (white "Host", gradient "Pilot"),
+    // so lifting it would give us white-on-white the way Nuitee and Waverick
+    // did. Monogram stands until Evan supplies the light-background export.
+    //
+    // No region tag: their legal notice is still an unfilled template — the
+    // company name, SIRET/RCS, VAT and registered office are all literal
+    // "[A COMPLETER]" placeholders — so no country is disclosed. EUR pricing,
+    // an FR/EN toggle and French placeholder text all point to France, but the
+    // site never says it, so the tag would be inference. Vacation Rentals is
+    // carried by their own copy: they describe the product as short-term
+    // rental management SaaS throughout.
+    id: "hostpilot",
+    slug: "hostpilot",
+    name: "HostPilot",
+    description: "Short-term rental management software for Airbnb and Booking.com hosts, connecting to both through their APIs to sync reservations, availability and rates, with iCal kept as a complement or fallback for feeds such as Vrbo. Built around a Smart Calendar that merges bookings, blocks and availability, and a dashboard spanning multiple properties. Revenue AI reads availability, bookings, blocks and rates to flag pricing opportunities, and Listing AI drafts titles, descriptions, amenity checks and photo plans — both advisory only, with nothing published until the host approves it. Self-serve throughout: an in-product tutorial sets up the first property with no onboarding call. Priced from EUR 9 a month for a single property to EUR 149 for unlimited, on a 30-day trial.",
+    icon: "",
+    categories: ["PMS", "Vacation Rentals"],
+    website: "https://hostpilotapp.io"
   }
 ];
