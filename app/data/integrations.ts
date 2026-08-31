@@ -5067,5 +5067,26 @@ export const integrations: Integration[] = [
     icon: "",
     categories: ["PMS", "Vacation Rentals"],
     website: "https://hostpilotapp.io"
+  },
+  {
+    // Logo is their own mark, lifted verbatim from the inline <svg> in their
+    // site header — same path data and same #166534 green, with only the 36px
+    // width/height dropped so it scales into the slot. OutReserve publishes no
+    // logo file: their favicon.svg wraps the same mark in an opaque white
+    // 1000x1000 rect, and the only lockup with the wordmark is the one baked
+    // into their Open Graph banner, which is the white-on-dark variant and
+    // would have vanished on our tiles. Mark alone is fine here — the channel
+    // card prints the name beside the logo anyway.
+    //
+    // North America is carried by their own copy, not inferred: they describe
+    // themselves as a North American platform, browse by US state across all
+    // fifty, and offer the RV rental side in Canada.
+    id: "outreserve",
+    slug: "outreserve",
+    name: "OutReserve",
+    description: "Outdoor booking platform for the United States, covering campgrounds, RV parks, cabins, yurts and glamping sites alongside peer-to-peer RV rentals. Guests search by national park, city or state across all fifty states and filter by site type and RV class. Hosts either claim an existing listing or build a new one from scratch, then run reservations, distribution, payments and analytics from a host dashboard, with availability syncing in real time. Free to list, with no card required to start, and more than 6,000 properties on the platform by their own count.",
+    icon: "/images/integrations/ota-outreserve.svg",
+    categories: ["Outdoor", "Vacation Rentals", "OTA", "North America"],
+    website: "https://outreserve.com"
   }
 ];
