@@ -11,6 +11,10 @@ import {
   featureRows,
   channels,
   faqs,
+  DUPLICATE_CHANNEL_FEE,
+  STRIPE_TOKENISATION_FEE,
+  INCLUDED_LIMITS,
+  OVERAGE_FEES,
 } from "@/data/pricing";
 import { blogPosts } from "@/data/blogPosts";
 import { integrations } from "@/data/integrations";
@@ -94,6 +98,14 @@ ${tierLines(VR_TIERS, "units")}
 ### Chat & Reviews (optional add-on)
 - Hotels: ${money(HOTEL_BASE_RATE)} per property per month
 - Vacation Rentals: ${money(VR_BASE_RATE)} per unit per month
+
+### Charged on top (usage and overage)
+- Duplicate channel connection: $${DUPLICATE_CHANNEL_FEE} per month, where one property connects to the same OTA more than once. The first connection to each channel is included.
+- Stripe tokenisation: ${money(STRIPE_TOKENISATION_FEE)} per transaction. Optional — only if Channex sends card details to Stripe on your behalf.
+- Included property size limits:
+${INCLUDED_LIMITS.map((l) => `  - ${l.type}: ${l.limits}`).join("\n")}
+- Overage, charged only on the excess:
+${OVERAGE_FEES.map((o) => `  - ${o.item}: ${o.fee}${o.note ? ` (${o.note})` : ""}`).join("\n")}
 
 ### Billing Notes
 - Only properties with at least one active channel connection are billed.

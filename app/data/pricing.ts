@@ -28,6 +28,46 @@ export const VR_TIERS: VolumeTier[] = [
   { thresh: 7000, rate: 0.3 },
 ];
 
+/** Fees charged on top of the platform fee and the per-property rate. All of
+ *  these come from Appendix 1 of the standard Service Agreement — they were
+ *  contract-only until now, which left the pricing page claiming the platform
+ *  fee plus per-property fee was "the whole bill". Publishing them here is what
+ *  makes the "no hidden fees" line true rather than a liability.
+ *
+ *  NOTE on DUPLICATE_CHANNEL_FEE: Appendix 1 lists it as a bare "$1" with no
+ *  period, unlike the two rows either side of it in the same table, which both
+ *  say "/ month". Evan confirmed it is monthly. Worth fixing in the contract
+ *  too, so the paper and this page cannot drift apart. */
+export const STRIPE_TOKENISATION_FEE = 0.02;
+export const DUPLICATE_CHANNEL_FEE = 1;
+
+/** What each property gets before overage kicks in. */
+export const INCLUDED_LIMITS = [
+  { type: "Hotel", limits: "20 room types, 200 rate plans per property" },
+  { type: "Vacation rental", limits: "50 room types, 10 rate plans per room type" },
+];
+
+/** Charged only on the part of a property that exceeds the limits above. */
+export const OVERAGE_FEES = [
+  { item: "Hotel — each room type over 20", fee: "$1", note: "capped at $7 per property" },
+  { item: "Hotel — each rate plan over 200", fee: "$0.10", note: "" },
+  { item: "Vacation rental — each rate plan over 10 per room type", fee: "$0.10", note: "" },
+];
+
+/** Usage-based fees that are not tied to property size. */
+export const USAGE_FEES = [
+  {
+    item: "Duplicate channel connection",
+    fee: `$${DUPLICATE_CHANNEL_FEE} / month`,
+    note: "When one property connects to the same OTA more than once — five Booking.com connections on one hotel, for example. The first connection to each channel is included.",
+  },
+  {
+    item: "Stripe tokenisation",
+    fee: `$${STRIPE_TOKENISATION_FEE.toFixed(2)} / transaction`,
+    note: "Optional. Only applies if you have us send card details to Stripe directly from Channex.",
+  },
+];
+
 export function tierRate(count: number, baseRate: number, tiers: VolumeTier[]): number {
   let rate = baseRate;
   for (const tier of tiers) {
@@ -101,7 +141,7 @@ export const faqs = [
   },
   {
     question: "Are there minimums, commissions or hidden fees?",
-    answer: `No. There's no minimum number of properties, no certification fee, no commission on bookings, and no hidden charges. You pay the platform fee plus the per-property fee for properties with an active channel — that's the whole bill. The only thing charged on top is optional and entirely in your hands: a $${CUSTOM_TERMS_REVIEW_FEE.toLocaleString("en-US")} review fee if you ask us to leave our standard contract for custom terms or a security review.`
+    answer: `No minimums and no commission — there's no minimum number of properties, no certification fee, no commission on bookings and no setup cost. Nor is anything hidden: every charge we can raise is published on this page. Most accounts pay the platform fee plus the per-property fee and nothing else, but four things can be added on top. Three are usage-based: $${DUPLICATE_CHANNEL_FEE} a month for each duplicate connection where one property connects to the same OTA twice or more, $${STRIPE_TOKENISATION_FEE.toFixed(2)} per transaction if you use Stripe tokenisation, and overage on properties larger than the included limits of 20 room types and 200 rate plans per hotel. The fourth is optional and entirely in your hands: a $${CUSTOM_TERMS_REVIEW_FEE.toLocaleString("en-US")} review fee if you ask us to leave our standard contract for custom terms or a security review.`
   },
   {
     question: "How and when am I billed?",
