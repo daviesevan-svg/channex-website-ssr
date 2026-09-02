@@ -5088,5 +5088,25 @@ export const integrations: Integration[] = [
     icon: "/images/integrations/ota-outreserve.svg",
     categories: ["Outdoor", "Vacation Rentals", "OTA", "North America"],
     website: "https://outreserve.com"
+  },
+  {
+    // Name is "Santara AI" with an A, not "Sentara" — the request had it as
+    // Sentara, but their own site uses Santara 145 times and Sentara zero.
+    //
+    // Logo is their published app icon, /brand/santara-app-icon.svg, byte for
+    // byte as they serve it. It is a solid #2A44DB badge, so it holds up on a
+    // light tile without a variant hunt. They publish no wordmark lockup —
+    // /brand/ has only the app icon and its PNG exports.
+    //
+    // Asia is carried by their own copy, not inferred: they describe the
+    // product as built for Southeast Asia and name Bali and Vietnam as the
+    // markets, including in their meta description.
+    id: "santara-ai",
+    slug: "santara-ai",
+    name: "Santara AI",
+    description: "AI-native short-term rental platform built for Southeast Asia, aimed at operators in Bali and Vietnam running anywhere from one listing to forty. Everything hangs off a 6am Morning Brief that surfaces the day's arrivals, departures, turnovers, gap nights and anything needing attention before a guest or channel raises it. Bundles the PMS with AI guest messaging, per-night dynamic pricing inside a floor and ceiling the operator sets, a direct booking site and upsells, and dispatches cleaning turnovers to cleaners over WhatsApp. Airbnb and Booking.com connect as live channels. Charges a flat monthly fee per listing that falls as the portfolio grows, takes 0% commission on bookings and upsells, and includes migration, listing setup and staff training at no cost; the one optional extra is a 3% guest-paid service fee on the direct booking engine.",
+    icon: "/lovable-uploads/pms-santara-ai.svg",
+    categories: ["PMS", "Vacation Rentals", "Asia"],
+    website: "https://www.santara.ai"
   }
 ];
