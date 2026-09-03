@@ -5129,5 +5129,60 @@ export const integrations: Integration[] = [
     icon: "/images/integrations/ota-ascendtravel.svg",
     categories: ["OTA", "Asia"],
     website: "https://hotel.ascendtravel.com"
+  },
+  {
+    // The five entries below are Szallas Group sister brands, added together
+    // with the existing Szallas entry. Three of them (Travelminit, Noclegi,
+    // Hotely) serve their header logo from the same /wsngo/ path szallas.hu
+    // uses, and RevNGo serves its logo and OG image straight off szalas.hu,
+    // which corroborates the grouping independently of anyone telling us.
+    //
+    // Note on ownership: travelminit.ro's own cookie notice says it is part of
+    // the Wirtualna Polska holding, so Szallas Group itself appears to sit
+    // under WP rather than being the top of the tree. Described here as
+    // Szallas Group brands, which is what the shared platform evidences.
+    id: "travelminit",
+    slug: "travelminit",
+    name: "Travelminit",
+    description: "Romanian accommodation channel in the Szallas Group, listing hotels, guesthouses, apartments and wellness packages across Romania. Runs the group's book-here-pay-at-the-property model, so the guest reserves online and settles with the hotel on arrival, and offers members up to 25% off through a VIP account.",
+    icon: "/images/integrations/ota-travelminit.webp",
+    categories: ["Regional", "Europe", "OTA"],
+    website: "https://travelminit.ro"
+  },
+  {
+    id: "noclegi",
+    slug: "noclegi",
+    name: "Noclegi.pl",
+    description: "Polish accommodation channel in the Szallas Group, trading as Noclegi.pl by Nocowanie.pl. Covers hotels, apartments, private rooms and wellness packages, listing roughly 86,900 offers across 175 countries with more than 3.2 million guest reviews by its own count. Guests book online and pay the property on arrival.",
+    icon: "/images/integrations/ota-noclegi.svg",
+    categories: ["Regional", "Europe", "OTA"],
+    website: "https://noclegi.pl"
+  },
+  {
+    id: "nocowanie",
+    slug: "nocowanie",
+    name: "Nocowanie.pl",
+    description: "Polish accommodation channel in the Szallas Group and the parent brand behind Noclegi.pl, listing around 100,000 properties in Poland and abroad. Sells Polish domestic stays alongside the outbound destinations Polish travellers book most — Croatia, Hungary, Czechia, Slovakia and Romania.",
+    icon: "/images/integrations/ota-nocowanie.webp",
+    categories: ["Regional", "Europe", "OTA"],
+    website: "https://www.nocowanie.pl"
+  },
+  {
+    id: "hotely",
+    slug: "hotely",
+    name: "Hotely.cz",
+    description: "Czech accommodation channel in the Szallas Group, covering hotels, pensions, apartments and wellness stay packages. Runs the same book-here-pay-at-the-hotel model as its sister brands, with channel-specific discounts applied at booking.",
+    icon: "/images/integrations/ota-hotely.svg",
+    categories: ["Regional", "Europe", "OTA"],
+    website: "https://www.hotely.cz"
+  },
+  {
+    id: "revngo",
+    slug: "revngo",
+    name: "RevNGo.com",
+    description: "The Szallas Group's cross-border brand, pooling the inventory its national sites sell separately and putting it in front of travellers moving between Central and Eastern European markets. Sells in eight languages — English, Czech, Hungarian, Romanian, Slovak, German, Polish and Croatian — and prices in seven currencies including EUR, HUF, PLN, RON, CZK, GBP and USD. Same book-here-pay-at-the-hotel model, with rates shown inclusive of taxes and fees.",
+    icon: "/images/integrations/ota-revngo.svg",
+    categories: ["Regional", "Europe", "OTA"],
+    website: "https://revngo.com"
   }
 ];
