@@ -5108,5 +5108,26 @@ export const integrations: Integration[] = [
     icon: "/lovable-uploads/pms-santara-ai.svg",
     categories: ["PMS", "Vacation Rentals", "Asia"],
     website: "https://www.santara.ai"
+  },
+  {
+    // Logo is their own /assets/images/header/ascendtravel-logo.svg, byte for
+    // byte as they serve it — a coloured wordmark that needs no light/dark
+    // variant. 17 KB, in line with the other wordmark SVGs in this directory.
+    //
+    // Asia is carried by the data, not inferred: Ascend Travel Co., Ltd. lists
+    // a Bangkok head office at True Digital Park and publishes Thai tourism
+    // authority licence 11/08384.
+    //
+    // The two-million and fifty-thousand figures come from their own Thai meta
+    // description and are attributed as such. Their "Thailand's leading budget
+    // accommodation platform" line is left out: budget focus is factual and in
+    // the page title, "leading" is a claim nothing supports.
+    id: "ascendtravel",
+    slug: "ascendtravel",
+    name: "Ascend Travel",
+    description: "Thai booking platform aimed at the budget end of the market, listing more than two million properties worldwide and over fifty thousand in Thailand by its own count. Sells to leisure travellers and to companies from the same inventory: the corporate side sets spend limits per employee grade, routes bookings through automatic approval, and issues tax invoices to Thai requirements. Search filters run to the practical rather than the aspirational — breakfast included, EV charging. Beyond rooms it books co-working space and runs a full MICE arm covering seminars, team building, incentive and group tours, staff and private events, CSR activities, private jet charter, car rental and ticketing and visa services. Operated by Ascend Travel Co., Ltd. of Bangkok under Thai tourism authority licence 11/08384, trading since 2016.",
+    icon: "/images/integrations/ota-ascendtravel.svg",
+    categories: ["OTA", "Asia"],
+    website: "https://hotel.ascendtravel.com"
   }
 ];
