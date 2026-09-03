@@ -5184,5 +5184,32 @@ export const integrations: Integration[] = [
     icon: "/images/integrations/ota-revngo.svg",
     categories: ["Regional", "Europe", "OTA"],
     website: "https://revngo.com"
+  },
+  {
+    // Logo is the SVG Evan supplied, committed byte for byte. 32 KB because it
+    // is raw Inkscape output — the rounded corners are clipPaths rather than
+    // rx, so the cruft is load-bearing and cannot be stripped without redrawing
+    // the mark. Checked at 40px, where it still reads clearly.
+    //
+    // Name follows app.keyspms.com, which uses "KeysPMS" throughout and matches
+    // what Evan asked for. Their other site, keyspms.com, styles it "KEYSpms"
+    // and the app tab title says "Keys PMS"; there is no consistent spelling on
+    // their side to defer to.
+    //
+    // Description is deliberately confined to product scope and list pricing.
+    // It carries none of their traction claims — see the commit message for
+    // why: both of their sites are unfinished generated templates, and the
+    // numbers and testimonials on them do not survive a look.
+    //
+    // No region tag: the only location given is a San Francisco footer address
+    // that sits next to a +1 (888) 555-0123 phone number, which is in the
+    // reserved fictional range, so neither is evidence of anything.
+    id: "keyspms",
+    slug: "keyspms",
+    name: "KeysPMS",
+    description: "Cloud property management system for hotels, covering booking management for walk-ins, groups and OTA imports on one timeline, a real-time room grid with availability calendar and bulk rate updates, housekeeping boards with inspection checklists and maintenance tickets, and a one-click night audit with discrepancy detection and audit trails. Adds revenue tools — dynamic pricing, rate plans and occupancy forecasting — two-way OTA sync, guest profiles with ID scanning and duplicate merging, and occupancy, revenue and AR reporting. Self-serve: sign up, configure rooms and rate plans through a guided wizard, no consultant. Listed at $3 per room per month from $30, or $5 per room from $75 with the channel manager, revenue tools and API access, on a 14-day trial.",
+    icon: "/lovable-uploads/pms-keyspms.svg",
+    categories: ["PMS"],
+    website: "https://app.keyspms.com"
   }
 ];
