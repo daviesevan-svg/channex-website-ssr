@@ -3947,15 +3947,6 @@ export const integrations: Integration[] = [
     website: "https://www.hostomat.io/"
   },
   {
-    id: "sitemarq",
-    name: "Sitemarq",
-    description: "UK-based property management and booking solution for independent hotels and accommodation providers. Offers website booking engines, channel management integration, and guest management tools.",
-    icon: "/lovable-uploads/pms-sitemarq.svg",
-    categories: ["PMS", "Europe"],
-    slug: "sitemarq",
-    website: "https://sitemarq.com/"
-  },
-  {
     id: "mantavillas",
     name: "Mantavillas",
     description: "Bali-based villa and luxury accommodation management platform serving the Indonesian hospitality market. Provides property management, booking, and guest services for villas and boutique properties.",
