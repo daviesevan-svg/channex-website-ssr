@@ -4274,7 +4274,7 @@ export const integrations: Integration[] = [
     id: "sirromsolutions",
     name: "Sirrom Solutions",
     description: "Netherlands-based hospitality technology company providing property management and booking solutions for hotels and accommodation providers across the Benelux region and Europe.",
-    icon: "/lovable-uploads/pms-sitemarq.svg",
+    icon: "",
     categories: ["PMS", "Europe"],
     slug: "sirromsolutions",
     website: "https://sirrom.io"
@@ -4319,7 +4319,7 @@ export const integrations: Integration[] = [
     id: "uabiluma",
     name: "UAB Iluma (J14A)",
     description: "Lithuania-based hospitality technology company providing property management and booking solutions for hotels and accommodation providers across the Baltic states and Northern Europe.",
-    icon: "/lovable-uploads/pms-sitemarq.svg",
+    icon: "/lovable-uploads/pms-uabiluma.webp",
     categories: ["PMS", "Europe"],
     slug: "uabiluma",
     website: "https://www.j14a.co/"
@@ -4363,7 +4363,7 @@ export const integrations: Integration[] = [
     id: "luxeshine",
     name: "Luxeshine",
     description: "USA-based hospitality management platform providing property management and booking solutions for hotels and accommodation providers. Luxeshine offers streamlined operations, reservation management, and guest experience tools for the North American market.",
-    icon: "/lovable-uploads/pms-sitemarq.svg",
+    icon: "",
     categories: ["PMS", "Americas"],
     slug: "luxeshine",
     website: "https://luxeshine.com"
@@ -4372,7 +4372,7 @@ export const integrations: Integration[] = [
     id: "ribat",
     name: "Ribat",
     description: "Egypt-based property management system providing hotel management and booking solutions for accommodation providers across Egypt and the Middle East. Ribat offers reservation management, front desk operations, and distribution tools for hospitality businesses.",
-    icon: "/lovable-uploads/pms-sitemarq.svg",
+    icon: "",
     categories: ["PMS", "Middle East & Africa"],
     slug: "ribat",
     website: "https://ribat.io"
@@ -4408,7 +4408,7 @@ export const integrations: Integration[] = [
     id: "hubnb",
     name: "Hubnb",
     description: "Brazil-based property management platform for short-term rentals and vacation accommodations. Hubnb provides booking management, channel distribution, and operational tools for property managers and hosts across Brazil and Latin America.",
-    icon: "/lovable-uploads/pms-sitemarq.svg",
+    icon: "/lovable-uploads/pms-hubnb.webp",
     categories: ["PMS", "Americas"],
     slug: "hubnb",
     website: "https://hubnb.com.br"
@@ -4417,7 +4417,7 @@ export const integrations: Integration[] = [
     id: "gustavopms",
     name: "Gustavo PMS",
     description: "Property management system providing hotel and accommodation operators with tools for reservations, front desk operations, and channel management. Gustavo PMS helps hospitality businesses streamline their daily operations and distribution.",
-    icon: "/lovable-uploads/pms-sitemarq.svg",
+    icon: "",
     categories: ["PMS"],
     slug: "gustavopms",
   },
