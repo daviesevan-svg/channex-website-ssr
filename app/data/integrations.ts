@@ -480,7 +480,8 @@ export const integrations: Integration[] = [
     name: "Szallas",
     description: "Connect with Hungary's leading travel platform. Ideal for properties targeting travelers in Central and Eastern Europe.",
     icon: "/images/integrations/ota-szallas.svg",
-    categories: ["Regional", "Europe", "OTA"]
+    categories: ["Regional", "Europe", "OTA"],
+    website: "https://szallas.hu"
   },
   {
     id: "11",
