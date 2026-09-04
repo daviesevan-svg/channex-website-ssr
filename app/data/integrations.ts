@@ -5237,5 +5237,23 @@ export const integrations: Integration[] = [
     icon: "/lovable-uploads/pms-syncfaro.webp",
     categories: ["PMS"],
     website: "https://syncfaro.com"
+  },
+  {
+    // Logo is their published /apple-touch-icon.png, converted to webp. It is
+    // the only real brand asset the site serves — /logo.svg, /icon.svg and
+    // /manifest.json all return the SPA shell rather than 404ing, so probing
+    // filenames finds nothing but HTML. Matches the mark Evan supplied.
+    //
+    // Europe comes from Verifactu: they file booking and order invoices with
+    // the Spanish tax agency, which is not something you build unless you
+    // serve Spain. The footer names no company or country, and EUR pricing
+    // alone would not have been enough.
+    id: "estada",
+    slug: "estada",
+    name: "Estada",
+    description: "All-in-one platform bundling a PMS, a channel manager and an AI website builder, sold to hosts, agencies and regional portals running vacation rentals, hotels or B&Bs. Pushes rates and availability to Airbnb, Booking.com, Vrbo, Expedia and 50-plus other channels alongside multi-calendar and iCal sync, and takes direct bookings through the operator's own Stripe account at no commission, either instantly or as requests approved before the guest confirms. Around that sits the operational half: rates, seasons and minimum stays, upsells and extras, payment links, invoices and e-signed contracts, invoicing filed with the Spanish tax agency through Verifactu, online check-in and guest registration, a unified inbox that can pull Airbnb and Booking.com messages in, AI content writing and translation, and separate owner, cleaner and guest portals with settlements. From EUR 15 a month for three rentals, on a 14-day trial with no setup fee.",
+    icon: "/lovable-uploads/pms-estada.webp",
+    categories: ["PMS", "Europe"],
+    website: "https://estada.io"
   }
 ];
