@@ -5211,5 +5211,31 @@ export const integrations: Integration[] = [
     icon: "/lovable-uploads/pms-keyspms.svg",
     categories: ["PMS"],
     website: "https://app.keyspms.com"
+  },
+  {
+    // Unusual entry: Syncfaro is not a PMS but a connector INTO Channex, so
+    // the directory lists the thing that brings MotoPress sites to us. Tagged
+    // PMS because that is the certification track they came through and what
+    // Evan asked for; MotoPress itself is not in the directory.
+    //
+    // Their "certified Channex connector" line is the one claim here we can
+    // check internally rather than take from a website — flagged to Evan, who
+    // knows the certification list.
+    //
+    // Logo is their own rectangular lockup, logo_rectangulo.avif, converted
+    // from AVIF to webp at 320px. Chosen over their round mark, which drops
+    // the wordmark and sits smaller in the slot. Its background is opaque
+    // #FEFEFE rather than transparent, which is invisible against our white
+    // tiles but would box out if the tile colour ever changed.
+    //
+    // No region tag: the site names no company, country or entity anywhere,
+    // and prices in EUR, which is not on its own evidence of a market.
+    id: "syncfaro",
+    slug: "syncfaro",
+    name: "Syncfaro",
+    description: "WordPress plugin that connects MotoPress Hotel Booking sites to Channex, adding the rate and availability sync MotoPress's built-in channel manager does not do. MotoPress ships iCal only, which keeps calendars roughly aligned but carries no prices; Syncfaro pushes rates per rate plan with seasons and rules intact, syncs availability in real time so a booking on one channel closes the room everywhere, and pulls channel bookings back in with their creations, amendments and cancellations. Handles multiple rate plans per room, refundable against non-refundable, each mapped to its own channel rate plan, and sends minimum-stay rules alongside prices in a single restrictions call. Runs on standard WordPress scheduling, so there is no cron or server work to do. Sold to agencies by number of sites on an annual licence — EUR 179 for one site, EUR 449 for five, EUR 1,299 for fifteen — with the operator bringing their own Channex account.",
+    icon: "/lovable-uploads/pms-syncfaro.webp",
+    categories: ["PMS"],
+    website: "https://syncfaro.com"
   }
 ];
