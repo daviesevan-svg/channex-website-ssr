@@ -4360,15 +4360,6 @@ export const integrations: Integration[] = [
     website: "https://bedrockresidencies.com"
   },
   {
-    id: "luxeshine",
-    name: "Luxeshine",
-    description: "USA-based hospitality management platform providing property management and booking solutions for hotels and accommodation providers. Luxeshine offers streamlined operations, reservation management, and guest experience tools for the North American market.",
-    icon: "",
-    categories: ["PMS", "Americas"],
-    slug: "luxeshine",
-    website: "https://luxeshine.com"
-  },
-  {
     id: "ribat",
     name: "Ribat",
     description: "Egypt-based property management system providing hotel management and booking solutions for accommodation providers across Egypt and the Middle East. Ribat offers reservation management, front desk operations, and distribution tools for hospitality businesses.",
@@ -4412,14 +4403,6 @@ export const integrations: Integration[] = [
     categories: ["PMS", "Americas"],
     slug: "hubnb",
     website: "https://hubnb.com.br"
-  },
-  {
-    id: "gustavopms",
-    name: "Gustavo PMS",
-    description: "Property management system providing hotel and accommodation operators with tools for reservations, front desk operations, and channel management. Gustavo PMS helps hospitality businesses streamline their daily operations and distribution.",
-    icon: "",
-    categories: ["PMS"],
-    slug: "gustavopms",
   },
   {
     id: "booksuite",
