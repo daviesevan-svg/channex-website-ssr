@@ -40,7 +40,7 @@ const SecurityPolicy = () => {
             <li>We meet our obligations under the UK GDPR and the Data Protection Act 2018, and put the UK International Data Transfer Agreement or Addendum, or the European Commission's standard contractual clauses, in place with customers, partners and suppliers where a restricted transfer requires them</li>
           </ul>
           <p className="mt-4">
-            Where we say our controls are <em>designed in line with</em> a standard, we mean we have adopted the practices that standard describes. Certification status — ours and that of any individual supplier — is available on request from support@channex.io.
+            Where we say our controls are <em>designed in line with</em> a standard, we mean we have adopted the practices that standard describes, not that we hold a certification against it. Channex is not itself certified to ISO 27001 or PCI DSS. Our infrastructure and payment providers do hold their own certifications, and their current status is available on request from support@channex.io.
           </p>
         </div>
 
