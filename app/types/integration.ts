@@ -1,6 +1,8 @@
 export type Integration = {
   id: string;
   name: string;
+  /** Former or alternate names retained for directory search. */
+  aliases?: string[];
   description: string;
   icon: string;
   categories: string[];
@@ -42,7 +44,11 @@ export const categories = [
   "Asia",
   "Europe",
   "Australia",
+  "Asia Pacific",
+  "Americas",
   "Latin America",
+  "Middle East",
+  "Africa",
   "RMS",
   "IBE",
   "PMS",

@@ -79,11 +79,12 @@ export const integrations: Integration[] = [
     }
   },
   {
+    website: "https://bookingfactory.io/",
     id: "1",
     name: "Booking Factory",
     description: "A modern PMS designed for small to medium-sized accommodations, offering tools to manage bookings, automate operations, and optimize revenue. Features include channel management, direct booking tools, and guest communication, all in one easy-to-use platform.",
-    icon: "",
-    categories: ["PMS"],
+    icon: "/lovable-uploads/pms-catalog-booking-factory.webp",
+    categories: ["PMS", "Europe"],
     slug: "booking-factory",
     longDescription: "Booking Factory is a comprehensive cloud-based Property Management System specifically designed for small to medium-sized accommodations. Our all-in-one platform streamlines your daily operations with powerful booking management, automated workflows, and integrated channel management. Whether you're running a boutique hotel, bed & breakfast, or vacation rental, Booking Factory provides the tools you need to maximize efficiency and revenue while delivering exceptional guest experiences.",
     features: [
@@ -157,11 +158,13 @@ export const integrations: Integration[] = [
     }
   },
   {
+    website: "https://abodebooking.com/",
+    aliases: ["Abode"],
     id: "2",
-    name: "Abode",
+    name: "AbodeBooking",
     description: "A flexible PMS tailored for vacation rentals and small accommodations, offering tools for booking management, automation, and guest communication. Ideal for properties seeking simplicity and efficiency in operations.",
-    icon: "",
-    categories: ["PMS", "Vacation Rentals"],
+    icon: "/lovable-uploads/pms-catalog-abodebooking.webp",
+    categories: ["PMS", "Vacation Rentals", "Asia Pacific"],
     slug: "abode",
     longDescription: "Abode is a user-friendly Property Management System designed specifically for vacation rentals, short-term rentals, and small accommodations. Built with simplicity in mind, Abode streamlines your property operations while maintaining the personal touch that guests expect. Our platform combines powerful automation with intuitive design, making it easy to manage bookings, communicate with guests, and optimize your rental business.",
     features: [
@@ -302,11 +305,12 @@ export const integrations: Integration[] = [
     }
   },
   {
+    aliases: ["Front Desk Master"],
     id: "4",
-    name: "Front Desk Master",
+    name: "FrontDeskMaster",
     description: "A robust PMS for hostels, hotels, and small accommodations, offering features like channel management, automation, and reporting. Ideal for properties seeking an all-in-one, user-friendly platform.",
-    icon: "",
-    categories: ["PMS", "Budget"],
+    icon: "/lovable-uploads/pms-catalog-frontdeskmaster.webp",
+    categories: ["PMS", "Budget", "Europe"],
     slug: "front-desk-master",
     longDescription: "Front Desk Master is a comprehensive Property Management System designed specifically for hostels, budget hotels, and small accommodations. Built to handle high-volume, budget-conscious operations, our platform offers powerful booking management, automated workflows, and detailed reporting. Perfect for properties that need to manage multiple guests per room, group bookings, and cost-effective operations.",
     features: [
@@ -349,7 +353,7 @@ export const integrations: Integration[] = [
       "Set up automated guest communications",
       "Go live with full operations"
     ],
-    website: "https://frontdeskmaster.com",
+    website: "https://www.frontdeskmaster.io/cloud-pms/",
     screenshots: [
       "",
       "",
@@ -1285,18 +1289,20 @@ export const integrations: Integration[] = [
     categories: ["API"]
   },
   {
+    website: "https://aiosell.com/property-management-system/",
     id: "53",
     name: "Aiosell",
     description: "An all-in-one property management system that combines channel management, revenue optimization, and automation tools. Ideal for properties seeking to maximize efficiency and profitability with an integrated solution.",
-    icon: "",
-    categories: ["PMS"]
+    icon: "/lovable-uploads/pms-catalog-aiosell.webp",
+    categories: ["PMS", "Asia"]
   },
   {
+    website: "https://www.reservationkey.com/reservation-software/vacation-rental-property-management",
     id: "54",
     name: "ReservationKey",
     description: "A user-friendly PMS designed for small to medium-sized accommodations, offering tools for booking management, channel integration, and guest communication. Ideal for properties seeking affordability and simplicity.",
-    icon: "",
-    categories: ["PMS"]
+    icon: "/lovable-uploads/pms-catalog-reservationkey.webp",
+    categories: ["PMS", "Americas"]
   },
   {
     id: "56",
@@ -1306,18 +1312,21 @@ export const integrations: Integration[] = [
     categories: ["PMS"]
   },
   {
+    website: "https://www.frontdeskexpress.com/",
+    aliases: ["Front Desk Express"],
     id: "57",
-    name: "Front Desk Express",
+    name: "FrontDesk Express",
     description: "A simple and intuitive PMS designed for small to mid-sized accommodations, providing tools for reservation management, guest tracking, and reporting. Ideal for properties seeking a streamlined and cost-effective solution.",
     icon: "",
-    categories: ["PMS"]
+    categories: ["PMS", "Americas"]
   },
   {
+    website: "https://bananadesk.com/",
     id: "58",
     name: "BananaDesk",
     description: "A cloud-based PMS designed for hostels and budget accommodations, offering tools for reservation management, guest check-ins, and channel integration. Ideal for properties focused on efficiency and affordability.",
-    icon: "",
-    categories: ["PMS", "Budget"]
+    icon: "/lovable-uploads/pms-catalog-bananadesk.webp",
+    categories: ["PMS", "Budget", "Latin America"]
   },
   {
     id: "59",
@@ -1334,39 +1343,46 @@ export const integrations: Integration[] = [
     categories: ["PMS"]
   },
   {
+    website: "https://www.zaviaerp.com/pms-hotelero",
+    aliases: ["Zavia ERP"],
     id: "61",
-    name: "Zavia ERP",
+    name: "Zavia erp",
     description: "An advanced property management and enterprise resource planning system designed for the hospitality industry. Offers tools for reservations, inventory, finance, and operational management. Ideal for properties seeking an all-in-one, scalable solution.",
-    icon: "",
-    categories: ["PMS"]
+    icon: "/lovable-uploads/pms-catalog-zavia-erp.webp",
+    categories: ["PMS", "Latin America"]
   },
   {
+    website: "https://ayrton.net.br/produtos/pms-channel-manager",
     id: "62",
     name: "Ayrton",
     description: "A modern property management system designed for hotels and accommodations, offering tools for reservations, guest management, and operational efficiency. Ideal for properties seeking a seamless and intuitive management solution.",
-    icon: "",
-    categories: ["PMS"]
+    icon: "/lovable-uploads/pms-catalog-ayrton.webp",
+    categories: ["PMS", "Latin America"]
   },
   {
+    website: "https://www.johku.fi/fi/perustaomajohkusi/majoitus",
+    aliases: ["Johku"],
     id: "63",
-    name: "Johku",
+    name: "Johku Majoitus",
     description: "A versatile property management system tailored for tourism and hospitality businesses, offering tools for bookings, sales, and customer management. Ideal for properties seeking an all-in-one solution to streamline operations and enhance guest experiences.",
-    icon: "",
-    categories: ["PMS"]
+    icon: "/lovable-uploads/pms-catalog-johku-majoitus.webp",
+    categories: ["PMS", "Europe"]
   },
   {
+    website: "https://www.eksenia.com/en/",
     id: "64",
     name: "Eksenia",
     description: "A comprehensive PMS solution designed for hotels and accommodations, offering features like reservation management, channel integration, and guest services. Ideal for properties seeking to optimize operations and elevate guest experiences.",
-    icon: "",
-    categories: ["PMS"]
+    icon: "/lovable-uploads/pms-catalog-eksenia.webp",
+    categories: ["PMS", "Europe"]
   },
   {
+    website: "https://www.nokumo.net/",
     id: "65",
     name: "Nokumo",
     description: "A versatile property management system offering tools for booking management, task automation, and guest communication. Ideal for small to medium-sized accommodations seeking streamlined operations and improved efficiency.",
-    icon: "",
-    categories: ["PMS"]
+    icon: "/lovable-uploads/pms-catalog-nokumo.webp",
+    categories: ["PMS", "Europe"]
   },
   {
     id: "66",
@@ -1383,11 +1399,13 @@ export const integrations: Integration[] = [
     categories: ["PMS"]
   },
   {
+    website: "https://comandosoftware.com/",
+    aliases: ["Comando"],
     id: "68",
-    name: "Comando",
+    name: "Comando Software",
     description: "A modern property management system designed for hotels and accommodations, providing tools for reservations, guest management, and operational efficiency. Ideal for properties seeking an intuitive and scalable solution.",
-    icon: "",
-    categories: ["PMS"]
+    icon: "/lovable-uploads/pms-catalog-comando-software.webp",
+    categories: ["PMS", "Latin America"]
   },
   {
     id: "69",
@@ -1397,46 +1415,56 @@ export const integrations: Integration[] = [
     categories: ["PMS"]
   },
   {
+    website: "https://booktech.no/",
+    aliases: ["Booktech"],
     id: "70",
-    name: "Booktech",
+    name: "Booktech / Cloud Booking",
     description: "A Norwegian property management system offering solutions for booking management, channel integration, and guest services. Ideal for accommodations seeking efficient and localized tools to streamline operations.",
-    icon: "",
-    categories: ["PMS"]
+    icon: "/lovable-uploads/pms-catalog-booktech-cloud-booking.webp",
+    categories: ["PMS", "Europe"]
   },
   {
+    website: "https://desbravador.com.br/",
     id: "71",
     name: "Desbravador",
     description: "A robust property management system designed for hotels and resorts, offering tools for reservations, financial management, and operational control. Ideal for properties in Latin America seeking a comprehensive and scalable solution.",
-    icon: "",
-    categories: ["PMS"]
+    icon: "/lovable-uploads/pms-catalog-desbravador.webp",
+    categories: ["PMS", "Latin America"]
   },
   {
+    website: "https://www.panhospitality.co.za/",
+    aliases: ["PAN Hospitality"],
     id: "72",
-    name: "PAN Hospitality",
+    name: "PAN Hospitality / PANstrat",
     description: "A South African property management solution offering tools for reservations, guest management, and operational efficiency. Ideal for hotels, lodges, and guesthouses seeking a reliable and localized system to streamline their operations.",
-    icon: "",
-    categories: ["PMS"]
+    icon: "/lovable-uploads/pms-catalog-pan-hospitality-panstrat.webp",
+    categories: ["PMS", "Africa"]
   },
   {
+    website: "https://bookipro.com/property-management-system/",
     id: "73",
     name: "Bookipro",
     description: "A user-friendly property management system designed for small to medium-sized accommodations, offering features like booking management, channel integration, and guest communication. Ideal for properties seeking simplicity and efficiency.",
-    icon: "",
-    categories: ["PMS"]
+    icon: "/lovable-uploads/pms-catalog-bookipro.webp",
+    categories: ["PMS", "Europe"]
   },
   {
+    website: "https://hotelsync.com/hotel-management-solution/",
+    aliases: ["OTASync"],
     id: "74",
-    name: "OTASync",
-    description: "A cloud-based property management system offering booking management, channel synchronization, and revenue optimization tools. Ideal for small to medium-sized accommodations seeking a seamless all-in-one solution.",
-    icon: "",
-    categories: ["PMS"]
+    name: "HotelSync",
+    description: "Hospitality platform for property management, reservations and distribution, formerly known as OTA Sync.",
+    icon: "/lovable-uploads/pms-catalog-hotelsync.webp",
+    categories: ["PMS", "Europe"]
   },
   {
+    website: "https://www.pxsol.com/",
+    aliases: ["Pxsol"],
     id: "75",
-    name: "Pxsol",
+    name: "PXSOL",
     description: "A powerful property management and channel management solution, offering tools for booking management, rate optimization, and operational efficiency. Ideal for hotels and accommodations seeking to streamline workflows and maximize revenue.",
-    icon: "",
-    categories: ["PMS"]
+    icon: "/lovable-uploads/pms-catalog-pxsol.webp",
+    categories: ["PMS", "Latin America"]
   },
   {
     id: "76",
@@ -1446,11 +1474,13 @@ export const integrations: Integration[] = [
     categories: ["PMS", "Vacation Rentals"]
   },
   {
+    website: "https://winpax.com.ar/",
+    aliases: ["Winpax"],
     id: "77",
-    name: "Winpax",
+    name: "WinPAX",
     description: "A user-friendly property management system designed for small to medium-sized accommodations, offering tools for booking management, guest services, and operational efficiency. Ideal for properties seeking an affordable and intuitive solution.",
     icon: "",
-    categories: ["PMS"]
+    categories: ["PMS", "Latin America"]
   },
   {
     id: "78",
@@ -1460,18 +1490,21 @@ export const integrations: Integration[] = [
     categories: ["PMS"]
   },
   {
+    website: "https://www.easy-rez.com/sistema-de-gestion-hotelera-pms",
+    aliases: ["Easy Rez"],
     id: "79",
-    name: "Easy Rez",
+    name: "Easy-rez",
     description: "A straightforward property management system offering tools for booking management, channel integration, and guest communication. Ideal for small to medium-sized accommodations seeking an easy-to-use and efficient solution.",
-    icon: "",
-    categories: ["PMS"]
+    icon: "/lovable-uploads/pms-catalog-easy-rez.webp",
+    categories: ["PMS", "Latin America"]
   },
   {
+    website: "https://thefinner.com/property-management-software/",
     id: "80",
     name: "Finner",
     description: "A modern property management system designed to streamline bookings, optimize revenue, and enhance guest experiences. Ideal for hotels and accommodations seeking an intuitive and efficient solution.",
-    icon: "",
-    categories: ["PMS"]
+    icon: "/lovable-uploads/pms-catalog-finner.webp",
+    categories: ["PMS", "Asia"]
   },
   {
     id: "81",
@@ -1488,11 +1521,12 @@ export const integrations: Integration[] = [
     categories: ["PMS"]
   },
   {
+    website: "https://www.quovai.com/en/",
     id: "83",
     name: "Quovai",
     description: "A comprehensive property management solution tailored for small to medium-sized accommodations, offering tools for booking management, channel integration, and guest services. Ideal for properties seeking efficient and user-friendly software to enhance operations.",
     icon: "",
-    categories: ["PMS"]
+    categories: ["PMS", "Europe"]
   },
   {
     id: "84",
@@ -1502,18 +1536,20 @@ export const integrations: Integration[] = [
     categories: ["PMS"]
   },
   {
+    website: "https://hotelsminder.com/About.aspx",
     id: "85",
     name: "Hotelsminder",
     description: "A cloud-based property management solution offering tools for booking management, channel synchronization, and operational efficiency. Ideal for small to medium-sized accommodations seeking to streamline processes and improve guest experiences.",
-    icon: "",
-    categories: ["PMS"]
+    icon: "/lovable-uploads/pms-catalog-hotelsminder.webp",
+    categories: ["PMS", "Europe"]
   },
   {
+    website: "https://hotelmu.id/fitur",
     id: "86",
     name: "HotelMU",
     description: "An Indonesia-based property management system designed to streamline hotel operations, offering features such as booking management, guest communication, and financial tracking.",
-    icon: "",
-    categories: ["PMS"]
+    icon: "/lovable-uploads/pms-catalog-hotelmu.webp",
+    categories: ["PMS", "Asia"]
   },
   {
     id: "87",
@@ -1530,18 +1566,21 @@ export const integrations: Integration[] = [
     categories: ["PMS"]
   },
   {
+    website: "https://digitelia.io/en/pms",
+    aliases: ["Digitelia"],
     id: "89",
-    name: "Digitelia",
+    name: "Digitelia PMS",
     description: "A cutting-edge platform specializing in digital transformation for the hospitality industry, offering tools for online bookings, marketing, and operational efficiency. Ideal for properties looking to modernize and enhance their digital presence.",
-    icon: "",
-    categories: ["PMS"]
+    icon: "/lovable-uploads/pms-catalog-digitelia-pms.webp",
+    categories: ["PMS", "Europe"]
   },
   {
+    website: "https://hotelpoint.gr/property-management-software/",
     id: "90",
     name: "HotelPoint",
     description: "A Greek-based property management system offering tools for booking management, channel integration, and guest communication. Ideal for hotels and accommodations seeking a localized and efficient solution to streamline operations.",
-    icon: "",
-    categories: ["PMS"]
+    icon: "/lovable-uploads/pms-catalog-hotelpoint.webp",
+    categories: ["PMS", "Europe"]
   },
   {
     id: "91",
@@ -1551,11 +1590,13 @@ export const integrations: Integration[] = [
     categories: ["PMS", "Latin America"]
   },
   {
+    website: "https://cobber.one/cobberres-accommodation/",
+    aliases: ["ResBook"],
     id: "92",
-    name: "ResBook",
-    description: "A cloud-based property management system designed for boutique accommodations, lodges, and vacation rentals. Offers tools for booking management, channel integration, and guest communication.",
-    icon: "",
-    categories: ["PMS"]
+    name: "CobberRes Accommodation",
+    description: "Accommodation reservation software within the Cobber platform, incorporating the former ResBook product.",
+    icon: "/lovable-uploads/pms-catalog-cobberres-accommodation.webp",
+    categories: ["PMS", "Asia Pacific"]
   },
   {
     id: "93",
@@ -1579,11 +1620,13 @@ export const integrations: Integration[] = [
     categories: ["PMS"]
   },
   {
+    website: "https://www.edhotels.com/bouk-pms-funktsionaalsus/",
+    aliases: ["Bouk by Ed Hotels"],
     id: "96",
-    name: "Bouk by Ed Hotels",
+    name: "Bouk / ED Hotels",
     description: "A comprehensive property management solution offering tools for reservations, channel management, and revenue optimization. Ideal for hotels and accommodations seeking to enhance operations, improve guest experiences, and maximize profitability.",
-    icon: "",
-    categories: ["PMS"]
+    icon: "/lovable-uploads/pms-catalog-bouk-ed-hotels.webp",
+    categories: ["PMS", "Europe"]
   },
   {
     id: "97",
@@ -1607,11 +1650,13 @@ export const integrations: Integration[] = [
     categories: ["PMS"]
   },
   {
+    website: "https://orionpms.net/",
+    aliases: ["StarHotelier"],
     id: "100",
-    name: "StarHotelier",
-    description: "A comprehensive property management system designed for hotels and accommodations, offering features such as reservation management, channel integration, and guest communication.",
-    icon: "",
-    categories: ["PMS"]
+    name: "Orion PMS",
+    description: "Cloud property management software for hotel reservations and daily operations, formerly known as Star Hotelier.",
+    icon: "/lovable-uploads/pms-catalog-orion-pms.webp",
+    categories: ["PMS", "Europe"]
   },
   {
     id: "101",
@@ -1621,10 +1666,11 @@ export const integrations: Integration[] = [
     categories: ["PMS", "Latin America"]
   },
   {
+    website: "https://www.guestpro.id/hotel-cloud-pms/",
     id: "102",
     name: "GuestPro",
     description: "An Indonesia-based property management system offering tools for booking management, guest services, and operational automation. Ideal for hotels, guesthouses, and resorts in Southeast Asia seeking an intuitive and efficient solution to enhance their operations.",
-    icon: "",
+    icon: "/lovable-uploads/pms-catalog-guestpro.webp",
     categories: ["PMS", "Asia"]
   },
   {
@@ -1635,11 +1681,13 @@ export const integrations: Integration[] = [
     categories: ["PMS", "Asia"]
   },
   {
+    website: "https://www.aurelian.cloud/",
+    aliases: ["Callista"],
     id: "104",
-    name: "Callista",
-    description: "A comprehensive property management system designed for hotels and resorts, offering tools for reservations, billing, and channel management. Ideal for properties seeking a scalable and efficient solution to enhance operations and guest experiences.",
-    icon: "",
-    categories: ["PMS"]
+    name: "Aurelian",
+    description: "Hospitality property management software under the Aurelian brand, formerly Callista.",
+    icon: "/lovable-uploads/pms-catalog-aurelian.webp",
+    categories: ["PMS", "Asia Pacific"]
   },
   {
     id: "105",
@@ -1649,13 +1697,14 @@ export const integrations: Integration[] = [
     categories: ["PMS", "Luxury", "Vacation Rentals"]
   },
   {
+    aliases: ["Blue Jay PMS"],
     id: "106",
-    name: "Blue Jay PMS",
+    name: "Blue Jay POS",
     description: "A cloud-based property management system from Vietnam designed for hotels seeking to streamline operations and grow revenue. Connects with 200+ OTA channels, offers booking management, channel management, and guest communication tools. 80% of hotels using Blue Jay PMS report a 20% increase in revenue.",
-    icon: "",
+    icon: "/lovable-uploads/pms-catalog-blue-jay-pos.webp",
     categories: ["PMS", "Asia"],
     slug: "blue-jay-pms",
-    website: "https://bluejaypms.com"
+    website: "https://bluejaypos.vn/hotels"
   },
   {
     id: "107",
@@ -1665,39 +1714,46 @@ export const integrations: Integration[] = [
     categories: ["PMS"]
   },
   {
+    website: "https://www.guestpoint.com/solutions/property-management-system/",
     id: "108",
     name: "GuestPoint",
     description: "A cloud-based property management system designed for hotels, resorts, and vacation rentals. Offers features like booking management, channel integration, and guest communication tools.",
-    icon: "",
-    categories: ["PMS"]
+    icon: "/lovable-uploads/pms-catalog-guestpoint.webp",
+    categories: ["PMS", "Australia"]
   },
   {
+    website: "https://software.retreat.guru/",
     id: "109",
     name: "Retreat Guru",
     description: "A platform designed for wellness retreats and group experiences, offering tools for booking management, payment processing, and guest communication. Ideal for properties focused on retreats, wellness, and holistic experiences.",
-    icon: "",
-    categories: ["PMS"]
+    icon: "/lovable-uploads/pms-catalog-retreat-guru.webp",
+    categories: ["PMS", "Americas"]
   },
   {
+    website: "https://aaryatm.com/",
+    aliases: ["Aaryatm"],
     id: "110",
-    name: "Aaryatm",
+    name: "Aarya Technology & Management",
     description: "A property management system designed for hotels and accommodations, offering tools for booking management, guest communication, and operational efficiency.",
-    icon: "",
-    categories: ["PMS"]
+    icon: "/lovable-uploads/pms-catalog-aarya-technology-management.webp",
+    categories: ["PMS", "Asia"]
   },
   {
+    website: "https://www.mashvisor.com/vacation-rental-software",
     id: "111",
     name: "Mashvisor",
     description: "A real estate analytics platform designed for investors and property managers, offering tools for property search, rental analysis, and investment insights. Ideal for those seeking to optimize property investments and make data-driven decisions in real estate.",
-    icon: "",
-    categories: ["PMS"]
+    icon: "/lovable-uploads/pms-catalog-mashvisor.webp",
+    categories: ["PMS", "Americas"]
   },
   {
+    website: "https://webia.fi/",
+    aliases: ["Webia"],
     id: "112",
-    name: "Webia",
+    name: "WebiaBooking",
     description: "A Finnish-based platform offering property management and reservation solutions for hotels, vacation rentals, and accommodations. Features include booking management, channel integration, and guest communication.",
-    icon: "",
-    categories: ["PMS"]
+    icon: "/lovable-uploads/pms-catalog-webiabooking.webp",
+    categories: ["PMS", "Europe"]
   },
   {
     id: "113",
@@ -1707,11 +1763,13 @@ export const integrations: Integration[] = [
     categories: ["PMS", "Latin America"]
   },
   {
+    website: "https://www.hotelmeister.com/",
+    aliases: ["HotelMeister"],
     id: "114",
-    name: "HotelMeister",
+    name: "Hotelmeister",
     description: "A comprehensive property management system designed for hotels and accommodations, offering features like booking management, guest communication, and reporting tools.",
-    icon: "",
-    categories: ["PMS"]
+    icon: "/lovable-uploads/pms-catalog-hotelmeister.webp",
+    categories: ["PMS", "Europe"]
   },
   {
     id: "115",
@@ -1721,10 +1779,12 @@ export const integrations: Integration[] = [
     categories: ["PMS"]
   },
   {
+    website: "https://servoitsolutions.ph/cloud-applications/xenia-cloud-pms/",
+    aliases: ["Servoit Solutions"],
     id: "116",
-    name: "Servoit Solutions",
+    name: "Servo IT Solutions / Xenia PMS",
     description: "A Philippine-based provider of property management systems and IT solutions for the hospitality industry. Offering tools for reservation management, guest services, and operational efficiency.",
-    icon: "",
+    icon: "/lovable-uploads/pms-catalog-servo-it-solutions-xenia-pms.webp",
     categories: ["PMS", "Asia"]
   },
   {
@@ -1735,18 +1795,20 @@ export const integrations: Integration[] = [
     categories: ["PMS"]
   },
   {
+    website: "https://atlantis.asia/services/property-management-system/",
     id: "118",
     name: "Atlantis Asia",
     description: "A provider of tailored property management and IT solutions for the hospitality industry in Asia. Offering tools for reservation management, guest communication, and operational optimization.",
-    icon: "",
+    icon: "/lovable-uploads/pms-catalog-atlantis-asia.webp",
     categories: ["PMS", "Asia"]
   },
   {
+    website: "https://www.zaaer.co/en",
     id: "119",
     name: "Zaaer",
     description: "A property management system offering tools for booking management, guest communication, and operational efficiency. Ideal for hotels and accommodations seeking an intuitive, cloud-based solution to streamline operations and enhance guest experiences.",
-    icon: "",
-    categories: ["PMS"]
+    icon: "/lovable-uploads/pms-catalog-zaaer.webp",
+    categories: ["PMS", "Middle East"]
   },
   {
     id: "120",
@@ -1763,18 +1825,20 @@ export const integrations: Integration[] = [
     categories: ["PMS", "Asia"]
   },
   {
+    website: "https://www.starrez.com/solutions/student-property-management-pbsa",
     id: "122",
     name: "StarRez",
     description: "A leading property management system designed for student housing, multifamily, and vacation rentals. Offers tools for reservation management, billing, maintenance, and guest communication.",
-    icon: "",
-    categories: ["PMS"]
+    icon: "/lovable-uploads/pms-catalog-starrez.webp",
+    categories: ["PMS", "Europe"]
   },
   {
+    website: "https://software.roverpass.com/",
     id: "123",
     name: "RoverPass",
     description: "A property management platform designed for campgrounds, RV parks, and outdoor accommodations. Offers tools for reservation management, payment processing, and guest communication.",
     icon: "",
-    categories: ["PMS", "Outdoor"]
+    categories: ["PMS", "Outdoor", "Americas"]
   },
   {
     id: "124",
@@ -1784,32 +1848,39 @@ export const integrations: Integration[] = [
     categories: ["PMS", "Outdoor"]
   },
   {
+    website: "https://fitshotel.eu/",
+    aliases: ["Fitshotel"],
     id: "125",
-    name: "Fitshotel",
+    name: "FitsHotel",
     description: "A property management system designed for the hospitality industry, offering tools for booking management, guest services, and operational efficiency.",
-    icon: "",
-    categories: ["PMS"]
+    icon: "/lovable-uploads/pms-catalog-fitshotel.webp",
+    categories: ["PMS", "Europe"]
   },
   {
+    website: "https://www.hiswen.com/",
+    aliases: ["Hiswen"],
     id: "126",
-    name: "Hiswen",
+    name: "Swen PMS",
     description: "A property management system offering solutions for hotel management, booking integration, and guest services. Ideal for hotels and accommodations seeking an efficient platform to streamline operations, manage bookings, and enhance guest experiences.",
-    icon: "",
-    categories: ["PMS"]
+    icon: "/lovable-uploads/pms-catalog-swen-pms.webp",
+    categories: ["PMS", "Europe"]
   },
   {
+    website: "https://bidrento.com/et/",
     id: "127",
     name: "Bidrento",
     description: "A property management and rental platform offering tools for booking management, payment processing, and guest communication.",
-    icon: "",
-    categories: ["PMS", "Vacation Rentals"]
+    icon: "/lovable-uploads/pms-catalog-bidrento.webp",
+    categories: ["PMS", "Vacation Rentals", "Europe"]
   },
   {
+    website: "https://www.getabed.mx/",
+    aliases: ["GetaBedSuite"],
     id: "128",
-    name: "GetaBedSuite",
+    name: "Getabed",
     description: "A property management system designed for hotels, vacation rentals, and guesthouses, offering tools for booking management, guest communication, and channel integration.",
-    icon: "",
-    categories: ["PMS"]
+    icon: "/lovable-uploads/pms-catalog-getabed.webp",
+    categories: ["PMS", "Latin America"]
   },
   {
     id: "129",
@@ -1826,17 +1897,21 @@ export const integrations: Integration[] = [
     categories: ["PMS"]
   },
   {
+    website: "https://ezcloud.vn/",
+    aliases: ["EZCloud"],
     id: "131",
-    name: "EZCloud",
+    name: "ezCloud",
     description: "A cloud-based property management system offering solutions for booking management, guest communication, and operational efficiency. Ideal for hotels, resorts, and guesthouses in Vietnam and Southeast Asia.",
-    icon: "",
+    icon: "/lovable-uploads/pms-catalog-ezcloud.webp",
     categories: ["PMS", "Asia"]
   },
   {
+    website: "https://revivotech.in/",
+    aliases: ["RevivoTech"],
     id: "132",
-    name: "RevivoTech",
+    name: "Revivo / Hotel-X",
     description: "An India-based provider of property management and revenue optimization solutions, offering tools for booking management, dynamic pricing, and operational efficiency.",
-    icon: "",
+    icon: "/lovable-uploads/pms-catalog-revivo-hotel-x.webp",
     categories: ["PMS", "Asia"]
   },
   {
@@ -1854,10 +1929,12 @@ export const integrations: Integration[] = [
     categories: ["PMS"]
   },
   {
+    website: "https://cflow.cakrasoft.com/",
+    aliases: ["CakraSoft"],
     id: "135",
-    name: "CakraSoft",
+    name: "Cakrasoft",
     description: "A property management software provider offering solutions for booking management, guest services, and hotel operations.",
-    icon: "",
+    icon: "/lovable-uploads/pms-catalog-cakrasoft.webp",
     categories: ["PMS", "Asia"]
   },
   {
@@ -1875,11 +1952,13 @@ export const integrations: Integration[] = [
     categories: ["PMS"]
   },
   {
+    website: "https://sophiasolution.com/",
+    aliases: ["Sophia Solution"],
     id: "139",
-    name: "Sophia Solution",
+    name: "Sophia PMS",
     description: "A property management and hospitality solution provider offering tools for booking management, guest communication, and operational optimization.",
-    icon: "",
-    categories: ["PMS"]
+    icon: "/lovable-uploads/pms-catalog-sophia-pms.webp",
+    categories: ["PMS", "Asia"]
   },
   {
     id: "140",
@@ -1889,18 +1968,22 @@ export const integrations: Integration[] = [
     categories: ["PMS"]
   },
   {
+    website: "https://bebetterhotels.com/",
+    aliases: ["BeBetter Hotels"],
     id: "141",
-    name: "BeBetter Hotels",
+    name: "Be Better Hotels",
     description: "A property management platform designed to optimize hotel operations, offering tools for booking management, guest communication, and revenue management.",
-    icon: "",
+    icon: "/lovable-uploads/pms-catalog-be-better-hotels.webp",
     categories: ["PMS", "Latin America"]
   },
   {
+    website: "https://www.rezstream.com/property-management-software/",
+    aliases: ["RezStream"],
     id: "142",
-    name: "RezStream",
+    name: "rezStream",
     description: "A cloud-based property management system offering features for booking management, channel integration, and guest services.",
-    icon: "",
-    categories: ["PMS"]
+    icon: "/lovable-uploads/pms-catalog-rezstream.webp",
+    categories: ["PMS", "Americas"]
   },
   {
     id: "143",
@@ -1910,12 +1993,13 @@ export const integrations: Integration[] = [
     categories: ["PMS"]
   },
   {
+    aliases: ["Dibooq"],
     id: "144",
-    name: "Dibooq",
+    name: "DiBooq",
     description: "A cloud-based vacation rental software designed for owners and property managers, offering property management, channel management, booking management, direct booking websites, guest communication, and enhanced operational efficiency.",
-    icon: "/lovable-uploads/ca1fa9b6-8ada-47f4-849e-47809d4c6a67.png",
-    categories: ["PMS"],
-    website: "https://www.dibooq.com"
+    icon: "/lovable-uploads/pms-catalog-dibooq.webp",
+    categories: ["PMS", "Europe"],
+    website: "https://www.dibooq.com/vacation-home-owner/property-management-app-pms/"
   },
   {
     id: "145",
@@ -1939,25 +2023,30 @@ export const integrations: Integration[] = [
     categories: ["PMS", "Vacation Rentals"]
   },
   {
+    website: "https://gohost.vn/tinh-nang/quan-ly-khach-san-pms",
     id: "148",
     name: "GoHost",
     description: "A property management system designed for small to medium-sized accommodations, offering tools for booking management, guest services, and operational efficiency.",
-    icon: "",
-    categories: ["PMS"]
+    icon: "/lovable-uploads/pms-catalog-gohost.webp",
+    categories: ["PMS", "Asia"]
   },
   {
+    website: "https://beingidly.com/ko/services#pms",
+    aliases: ["Beingidly"],
     id: "149",
-    name: "Beingidly",
+    name: "Beingidly / Alls PMS",
     description: "A property management and automation platform offering tools for booking management, guest communication, and operational efficiency.",
-    icon: "",
-    categories: ["PMS"]
+    icon: "/lovable-uploads/pms-catalog-beingidly-alls-pms.webp",
+    categories: ["PMS", "Asia"]
   },
   {
+    website: "https://www.wasimil.com/",
+    aliases: ["Wasimil"],
     id: "150",
-    name: "Wasimil",
+    name: "Wasimil PMS",
     description: "A property management system offering solutions for booking management, guest services, and operational efficiency.",
-    icon: "",
-    categories: ["PMS"]
+    icon: "/lovable-uploads/pms-catalog-wasimil-pms.webp",
+    categories: ["PMS", "Asia"]
   },
   {
     id: "151",
@@ -1982,11 +2071,13 @@ export const integrations: Integration[] = [
     categories: ["PMS", "Asia"]
   },
   {
+    website: "https://zotel.ai/",
+    aliases: ["Zotel.ai"],
     id: "155",
-    name: "Zotel.ai",
+    name: "Zotel",
     description: "An AI-driven property management system designed to optimize hotel operations, offering features like booking management, dynamic pricing, and guest services automation.",
-    icon: "",
-    categories: ["PMS"]
+    icon: "/lovable-uploads/pms-catalog-zotel.webp",
+    categories: ["PMS", "Asia"]
   },
   {
     id: "156",
@@ -2011,11 +2102,12 @@ export const integrations: Integration[] = [
     website: "https://rentware.com/en/"
   },
   {
+    website: "https://todoalojamiento.com/",
     id: "159",
     name: "TodoAlojamiento",
     description: "A property management and booking platform designed for accommodations, offering tools for reservation management, guest services, and operational optimization.",
-    icon: "",
-    categories: ["PMS"]
+    icon: "/lovable-uploads/pms-catalog-todoalojamiento.webp",
+    categories: ["PMS", "Latin America"]
   },
   {
     id: "160",
@@ -2039,11 +2131,13 @@ export const integrations: Integration[] = [
     categories: ["PMS"]
   },
   {
+    website: "https://trivsmart.com/products/ora-property-management-system",
+    aliases: ["TrivSmart"],
     id: "163",
-    name: "TrivSmart",
+    name: "Smart Tech Solutions / ORA PMS",
     description: "A property management system designed to streamline hotel operations, offering tools for booking management, guest communication, and revenue optimization.",
-    icon: "",
-    categories: ["PMS"]
+    icon: "/lovable-uploads/pms-catalog-smart-tech-solutions-ora-pms.webp",
+    categories: ["PMS", "Asia"]
   },
   {
     id: "164",
@@ -2053,11 +2147,13 @@ export const integrations: Integration[] = [
     categories: ["PMS", "Vacation Rentals"]
   },
   {
+    website: "https://appartman.hu/property-management-system-demo",
+    aliases: ["Appartman.hu"],
     id: "165",
-    name: "Appartman.hu",
+    name: "Appartman HU",
     description: "A property management platform focused on vacation rentals and apartments, offering tools for booking management, guest communication, and operational efficiency. Ideal for property owners in Hungary.",
-    icon: "",
-    categories: ["PMS", "Vacation Rentals"]
+    icon: "/lovable-uploads/pms-catalog-appartman-hu.webp",
+    categories: ["PMS", "Vacation Rentals", "Europe"]
   },
   {
     id: "166",
@@ -2074,11 +2170,13 @@ export const integrations: Integration[] = [
     categories: ["PMS"]
   },
   {
+    website: "https://sihoteles.com/pms-hotelero/",
+    aliases: ["SIHoteles"],
     id: "168",
-    name: "SIHoteles",
+    name: "SI Hoteles",
     description: "A comprehensive property management system designed for hotels and accommodations, offering tools for booking management, guest services, and operational efficiency.",
-    icon: "",
-    categories: ["PMS"]
+    icon: "/lovable-uploads/pms-catalog-si-hoteles.webp",
+    categories: ["PMS", "Latin America"]
   },
   {
     id: "169",
@@ -2102,11 +2200,13 @@ export const integrations: Integration[] = [
     categories: ["PMS"]
   },
   {
+    website: "https://mytourist.cloud/en",
+    aliases: ["MyTourist Cloud"],
     id: "172",
-    name: "MyTourist Cloud",
+    name: "MyTourist",
     description: "A cloud-based property management system designed for hotels, resorts, and vacation rentals. Offering tools for booking management, guest communication, and operational efficiency.",
-    icon: "",
-    categories: ["PMS"]
+    icon: "/lovable-uploads/pms-catalog-mytourist.webp",
+    categories: ["PMS", "Europe"]
   },
   {
     id: "173",
@@ -2123,18 +2223,21 @@ export const integrations: Integration[] = [
     categories: ["PMS", "Vacation Rentals"]
   },
   {
+    website: "https://guestpedia.com/property-management-system-pms/",
     id: "175",
     name: "Guestpedia",
     description: "A property management system offering tools for booking management, guest communication, and operational efficiency. Ideal for hotels, resorts, and vacation rentals seeking an intuitive platform to enhance guest experiences and streamline daily operations.",
-    icon: "",
-    categories: ["PMS"]
+    icon: "/lovable-uploads/pms-catalog-guestpedia.webp",
+    categories: ["PMS", "Asia"]
   },
   {
+    website: "https://mralfred.com/",
+    aliases: ["Mr. Alfred"],
     id: "176",
-    name: "Mr. Alfred",
+    name: "Mr Alfred",
     description: "A property management and guest experience platform designed for hotels, resorts, and vacation rentals. Offering tools for booking management, guest communication, and operational efficiency.",
-    icon: "",
-    categories: ["PMS", "Vacation Rentals"]
+    icon: "/lovable-uploads/pms-catalog-mr-alfred.webp",
+    categories: ["PMS", "Vacation Rentals", "Middle East"]
   },
   {
     id: "177",
@@ -2151,11 +2254,12 @@ export const integrations: Integration[] = [
     categories: ["PMS", "Vacation Rentals"]
   },
   {
+    website: "https://www.hoone.io/es",
     id: "179",
     name: "Hoone",
     description: "A property management and booking platform designed for vacation rentals and small accommodations. Offering features for booking management, guest communication, and operational efficiency.",
-    icon: "",
-    categories: ["PMS", "Vacation Rentals"]
+    icon: "/lovable-uploads/pms-catalog-hoone.webp",
+    categories: ["PMS", "Vacation Rentals", "Latin America"]
   },
   {
     id: "180",
@@ -2200,11 +2304,12 @@ export const integrations: Integration[] = [
     categories: ["PMS"]
   },
   {
+    website: "https://openhotel.com/",
     id: "191",
     name: "OpenHotel",
     description: "OpenHotel provides a comprehensive cloud-based Property Management System (PMS) designed to streamline hotel operations. Their integrated solutions include channel management, yield management, and enterprise management tools, all developed in-house for seamless functionality.",
     icon: "",
-    categories: ["PMS"]
+    categories: ["PMS", "Americas"]
   },
   {
     id: "192",
@@ -2222,11 +2327,13 @@ export const integrations: Integration[] = [
     categories: ["OTA", "Outdoor"]
   },
   {
+    website: "https://hugo-hotelsoftware.com/",
+    aliases: ["Hugo-hotelsoftware"],
     id: "194",
-    name: "Hugo-hotelsoftware",
+    name: "Hugo",
     description: "HUGO Hotelsoftware is a professional cloud-based hotel management system offering features such as an online booking engine, channel manager, and digital guest services.",
-    icon: "",
-    categories: ["PMS"]
+    icon: "/lovable-uploads/pms-catalog-hugo.webp",
+    categories: ["PMS", "Europe"]
   },
   {
     id: "195",
@@ -2236,18 +2343,21 @@ export const integrations: Integration[] = [
     categories: ["RMS"]
   },
   {
+    website: "https://www.adcsystems.eu/",
+    aliases: ["Adcsystems"],
     id: "196",
-    name: "Adcsystems",
+    name: "ADC Host",
     description: "ADC sistemi d.o.o. offers an intuitive property management system (PMS) designed for tourist accommodations, providing seamless automation and guest convenience.",
-    icon: "",
-    categories: ["PMS"]
+    icon: "/lovable-uploads/pms-catalog-adc-host.webp",
+    categories: ["PMS", "Europe"]
   },
   {
+    website: "https://stayhub.sa/",
     id: "197",
     name: "Stayhub",
     description: "StayHub is a Saudi-based property management system (PMS) designed to simplify rental operations for vacation rentals, private units, and serviced apartments. It offers centralized tools for booking management, pricing automation, smart lock integration, and compliance with local platforms like Shmoos and Absher.",
-    icon: "",
-    categories: ["PMS"]
+    icon: "/lovable-uploads/pms-catalog-stayhub.webp",
+    categories: ["PMS", "Middle East"]
   },
   {
     id: "198",
@@ -2257,46 +2367,54 @@ export const integrations: Integration[] = [
     categories: ["PMS"]
   },
   {
+    website: "https://www.credencesoft.co.nz/",
+    aliases: ["Credencesoft"],
     id: "199",
-    name: "Credencesoft",
+    name: "CredenceSoft / BookOnePMS",
     description: "CredenceSoft's BookOne PMS is a cloud-based property management system designed to streamline hotel operations, including front desk management, reservations, billing, housekeeping, and guest services.",
-    icon: "",
-    categories: ["PMS"]
+    icon: "/lovable-uploads/pms-catalog-credencesoft-bookonepms.webp",
+    categories: ["PMS", "Asia Pacific"]
   },
   {
+    website: "https://hotelar.com/pt-br",
+    aliases: ["Hotelar"],
     id: "200",
-    name: "Hotelar",
+    name: "Hotelar PMS",
     description: "Hotelar is an intuitive online property management system (PMS) designed for hotels, guesthouses, hostels, and similar accommodations. It simplifies reservation and stay management with features like drag-and-drop booking, real-time room status updates, and automated document generation.",
-    icon: "",
-    categories: ["PMS"]
+    icon: "/lovable-uploads/pms-catalog-hotelar-pms.webp",
+    categories: ["PMS", "Latin America"]
   },
   {
+    website: "https://www.priceone.ai:443/",
     id: "201",
     name: "Priceone",
     description: "PriceOne.ai is an AI-driven, all-in-one platform that integrates Property Management System (PMS), Channel Management System (CMS), and Revenue Management System (RMS) functionalities.",
-    icon: "",
-    categories: ["PMS"]
+    icon: "/lovable-uploads/pms-catalog-priceone.webp",
+    categories: ["PMS", "Asia Pacific"]
   },
   {
+    website: "https://homeyhuts.com/",
     id: "202",
     name: "Homeyhuts",
     description: "Homeyhuts is an India-based platform offering flexible property management solutions for homestays and vacation rentals. It provides tools for listing optimization, calendar synchronization, guest communication, and marketing support.",
-    icon: "",
-    categories: ["PMS"]
+    icon: "/lovable-uploads/pms-catalog-homeyhuts.webp",
+    categories: ["PMS", "Asia Pacific"]
   },
   {
+    website: "https://quartoverde.com.br/",
     id: "203",
     name: "Quartoverde",
     description: "QuartoVerde is a cloud-based property management system (PMS) tailored for small to mid-sized hospitality businesses. It offers a free plan with essential features such as unlimited reservations, guest registration.",
-    icon: "",
-    categories: ["PMS"]
+    icon: "/lovable-uploads/pms-catalog-quartoverde.webp",
+    categories: ["PMS", "Latin America"]
   },
   {
+    website: "https://www.reeka.app/",
     id: "204",
     name: "Reeka",
     description: "Reeka is a property management system (PMS) tailored for short-term rental operators, particularly in Africa.",
-    icon: "",
-    categories: ["PMS"]
+    icon: "/lovable-uploads/pms-catalog-reeka.webp",
+    categories: ["PMS", "Africa"]
   },
   {
     id: "205",
@@ -2306,17 +2424,20 @@ export const integrations: Integration[] = [
     categories: ["PMS", "Latin America"]
   },
   {
+    website: "https://www.zafari.africa/",
     id: "206",
     name: "Zafari",
     description: "Zafari is a no-cost, Africa-focused property management and booking system designed for safari lodges, boutique hotels, and vacation rentals. It offers direct booking tools, flexible rate management (including resident/non-resident pricing), and seamless OTA synchronization.",
-    icon: "",
-    categories: ["PMS", "Asia"]
+    icon: "/lovable-uploads/pms-catalog-zafari.webp",
+    categories: ["PMS", "Africa"]
   },
   {
+    website: "https://djituhs.com/property-management-system/",
+    aliases: ["Djituhs"],
     id: "207",
-    name: "Djituhs",
+    name: "Djitu Hospitality Solution",
     description: "Djitu Hospitality Solution is a Bali-based property management and revenue optimization company serving over 100 hotels, villas, and resorts across Indonesia.",
-    icon: "",
+    icon: "/lovable-uploads/pms-catalog-djitu-hospitality-solution.webp",
     categories: ["PMS", "Asia"]
   },
   {
@@ -2327,10 +2448,12 @@ export const integrations: Integration[] = [
     categories: ["PMS"]
   },
   {
+    website: "https://www.snapguest.si/",
+    aliases: ["Snapguest"],
     id: "209",
-    name: "Snapguest",
+    name: "SnapGuest PRO",
     description: "SnapGuest is a mobile-first property management solution tailored for short-term rental hosts and small accommodation providers in Slovenia and Croatia. It streamlines guest registration by scanning MRZ codes on passports or IDs, automatically syncing data with national systems like eTurizem (AJPES) and eVisitor.",
-    icon: "",
+    icon: "/lovable-uploads/pms-catalog-snapguest-pro.webp",
     categories: ["PMS"]
   },
   {
@@ -2343,14 +2466,15 @@ export const integrations: Integration[] = [
     // no scripts or external refs) — 7 kB and sharp at any slot size.
     icon: "/lovable-uploads/pms-staylist.svg",
     categories: ["PMS", "Outdoor"],
-    website: "https://staylist.com"
+    website: "https://staylist.com/products/pms"
   },
   {
+    website: "https://hotelfriend.com/de/b/pms-for-independent-hotel",
     id: "211",
     name: "HotelFriend",
     description: "HotelFriend is a comprehensive, cloud-based Property Management System (PMS) designed to streamline hotel operations and enhance guest experiences.",
-    icon: "",
-    categories: ["PMS"]
+    icon: "/lovable-uploads/pms-catalog-hotelfriend.webp",
+    categories: ["PMS", "Europe"]
   },
   {
     id: "212",
@@ -2465,13 +2589,14 @@ export const integrations: Integration[] = [
     ]
   },
   {
+    aliases: ["MiniHotelman"],
     id: "222",
-    name: "MiniHotelman",
+    name: "Mini Hotel Man",
     description: "Affordable all-in-one cloud-based hotel management system for Indian hoteliers. Integrates PMS, POS, channel manager, and revenue management in one platform.",
-    icon: "",
-    categories: ["PMS", "Asia", "Regional"],
+    icon: "/lovable-uploads/pms-catalog-mini-hotel-man.webp",
+    categories: ["PMS", "Regional", "Asia"],
     slug: "minihotelman",
-    website: "https://minihotelman.com",
+    website: "https://www.minihotelman.com/hotel-pms-software/",
     longDescription: "MiniHotelman is an affordable, comprehensive hotel management solution designed specifically for Indian hoteliers. This cloud-based platform integrates Property Management System (PMS), Point of Sale (POS), Channel Manager, and Revenue Management tools into one unified solution. With a focus on cost-effectiveness and user-friendly design, MiniHotelman makes advanced hotel management accessible to properties of all sizes, from budget hotels to boutique establishments.",
     features: [
       "All-in-one integrated PMS, POS, and channel manager",
@@ -2605,8 +2730,8 @@ export const integrations: Integration[] = [
     id: "lodgegate",
     name: "LodgeGate",
     description: "Comprehensive hospitality software solution for property management, offering booking management, guest services, and operational tools designed for hotels, resorts, and accommodation providers.",
-    icon: "/lovable-uploads/lodgegate-logo.jpeg",
-    categories: ["PMS"],
+    icon: "/lovable-uploads/pms-catalog-lodgegate.webp",
+    categories: ["PMS", "Europe"],
     slug: "lodgegate",
     longDescription: "LodgeGate is a modern property management system designed specifically for the hospitality industry. Our comprehensive platform provides hotels, resorts, and accommodation providers with powerful tools to manage bookings, streamline operations, and enhance guest experiences. With a focus on user-friendly design and robust functionality, LodgeGate helps properties of all sizes optimize their operations and maximize revenue.",
     features: [
@@ -2647,7 +2772,7 @@ export const integrations: Integration[] = [
       "Train staff on platform usage",
       "Go live with booking management"
     ],
-    website: "https://lodgegate.com",
+    website: "https://lodgegate.com/",
     pricing: {
       model: "Subscription-based",
       details: "Flexible pricing based on property size and feature requirements. Contact for custom pricing.",
@@ -2976,11 +3101,12 @@ export const integrations: Integration[] = [
     website: "https://www.levart.com.au/"
   },
   {
+    aliases: ["MangoBeds"],
     id: "mangobeds",
-    name: "MangoBeds",
+    name: "Mangobeds",
     description: "Modern PMS + booking platform that helps hotel teams manage reservations, availability, rates, guest communication, and payments all in one place.",
     icon: "/images/integrations/mangobeds.svg",
-    categories: ["PMS"],
+    categories: ["PMS", "Americas"],
     slug: "mangobeds",
     longDescription: "MangoBeds is a modern PMS + booking platform that helps your team manage everything in one place: reservations, availability, rates, guest communication, and payments. It's easy to set up, automates the busy work, and keeps calendars in sync to avoid double bookings. Designed for efficiency, MangoBeds streamlines daily operations so hotel staff can focus on delivering great guest experiences instead of juggling multiple systems.",
     features: [
@@ -3000,13 +3126,14 @@ export const integrations: Integration[] = [
       "Teams seeking centralized guest communication",
       "Properties wanting integrated payment processing"
     ],
-    website: "https://www.mangobeds.com"
+    website: "https://www.mangobeds.com/en/solutions/hotel-management-software"
   },
   {
+    aliases: ["HighTide"],
     id: "hightide",
-    name: "HighTide",
+    name: "Hightide",
     description: "Simple but flexible reservation management software designed for surf camps, yoga retreats, adventure lodges, and unique tour operators.",
-    icon: "/images/integrations/hightide_logo.webp",
+    icon: "/lovable-uploads/pms-catalog-hightide.webp",
     categories: ["PMS"],
     slug: "hightide",
     longDescription: "HighTide is a cloud-based booking software specifically built for unique businesses like surf camps, retreats, and tour operators. It simplifies reservation management by providing a flexible calendar, automated guest communication, and an integrated online store. HighTide helps small businesses streamline their operations, reduce manual work, and increase bookings through a user-friendly platform that adapts to their specific needs.",
@@ -3185,10 +3312,11 @@ export const integrations: Integration[] = [
     website: "https://www.nuzul.com/"
   },
   {
+    aliases: ["VHP ( Part of Sindata)"],
     id: "vhp--part-of-sindata",
-    name: "VHP ( Part of Sindata)",
+    name: "VHP (Sindata)",
     description: "Cloud-based property management system providing comprehensive hotel operations management and channel connectivity.",
-    icon: "",
+    icon: "/lovable-uploads/pms-catalog-vhp-sindata.webp",
     categories: ["PMS", "Asia Pacific"],
     slug: "vhp--part-of-sindata",
     website: "https://sindata.net/"
@@ -3221,10 +3349,11 @@ export const integrations: Integration[] = [
     website: "https://www.stellarstay.com/"
   },
   {
+    aliases: ["Pumapro"],
     id: "pumapro",
-    name: "Pumapro",
+    name: "Pumapro PMS",
     description: "Cloud-based property management system providing comprehensive hotel operations management and channel connectivity.",
-    icon: "",
+    icon: "/lovable-uploads/pms-catalog-pumapro-pms.webp",
     categories: ["PMS", "Asia Pacific"],
     slug: "pumapro",
     website: "https://pumapro.com.au/"
@@ -3257,13 +3386,14 @@ export const integrations: Integration[] = [
     website: "https://www.rabt.solutions/en/home"
   },
   {
+    aliases: ["Tranquiloh"],
     id: "tranquiloh",
-    name: "Tranquiloh",
+    name: "Tranquilo H",
     description: "Cloud-based property management system providing comprehensive hotel operations management and channel connectivity.",
-    icon: "",
-    categories: ["PMS", "Americas"],
+    icon: "/lovable-uploads/pms-catalog-tranquilo-h.webp",
+    categories: ["PMS", "Latin America"],
     slug: "tranquiloh",
-    website: "https://www.tranquiloh.tech"
+    website: "https://tranquiloh.tech/"
   },
   {
     id: "fortravel",
@@ -3296,8 +3426,8 @@ export const integrations: Integration[] = [
     id: "develab",
     name: "Develab",
     description: "Cloud-based property management system providing comprehensive hotel operations management and channel connectivity.",
-    icon: "",
-    categories: ["PMS", "Asia Pacific"],
+    icon: "/lovable-uploads/pms-catalog-develab.webp",
+    categories: ["PMS", "Asia"],
     slug: "develab",
     website: "https://develab.io/"
   },
@@ -3341,7 +3471,7 @@ export const integrations: Integration[] = [
     id: "taskbeast",
     name: "Taskbeast",
     description: "Cloud-based property management system providing comprehensive hotel operations management and channel connectivity.",
-    icon: "",
+    icon: "/lovable-uploads/pms-catalog-taskbeast.webp",
     categories: ["PMS", "Europe"],
     slug: "taskbeast",
     website: "https://www.taskbeast.ai/"
@@ -3356,13 +3486,14 @@ export const integrations: Integration[] = [
     website: "https://altezzatravel.com/"
   },
   {
+    aliases: ["Viatoratech"],
     id: "viatoratech",
-    name: "Viatoratech",
+    name: "Viatora Tech",
     description: "Cloud-based property management system providing comprehensive hotel operations management and channel connectivity.",
-    icon: "",
-    categories: ["PMS", "Middle East"],
+    icon: "/lovable-uploads/pms-catalog-viatora-tech.webp",
+    categories: ["PMS", "Africa"],
     slug: "viatoratech",
-    website: "https://viatoratech.com/"
+    website: "https://viatoratech.com/hotel-management.html"
   },
   {
     id: "rukiyation",
@@ -3374,13 +3505,14 @@ export const integrations: Integration[] = [
     website: "https://rukiyezara.com/"
   },
   {
+    aliases: ["Digistay"],
     id: "digistay",
-    name: "Digistay",
+    name: "DigiStay",
     description: "Cloud-based property management system providing comprehensive hotel operations management and channel connectivity.",
-    icon: "",
-    categories: ["PMS", "Asia Pacific"],
+    icon: "/lovable-uploads/pms-catalog-digistay.webp",
+    categories: ["PMS", "Asia"],
     slug: "digistay",
-    website: "https://digistay.ai/"
+    website: "https://digistay.ai/become-a-partner/ai-hotel-management-system"
   },
   {
     id: "fortran-house",
@@ -3401,31 +3533,34 @@ export const integrations: Integration[] = [
     website: "https://www.art2travel.com/"
   },
   {
+    aliases: ["abouthotelier"],
     id: "abouthotelier",
-    name: "abouthotelier",
+    name: "Roomrack by Abouthotelier",
     description: "Cloud-based property management system providing comprehensive hotel operations management and channel connectivity.",
-    icon: "",
+    icon: "/lovable-uploads/pms-catalog-roomrack-by-abouthotelier.webp",
     categories: ["PMS", "Europe"],
     slug: "abouthotelier",
-    website: "https://abouthotelier.com"
+    website: "https://abouthotelier.com/hotel-management-software-roomrack/"
   },
   {
+    aliases: ["Heyandes"],
     id: "heyandes",
-    name: "Heyandes",
+    name: "HeyAndes",
     description: "Cloud-based property management system providing comprehensive hotel operations management and channel connectivity.",
-    icon: "",
+    icon: "/lovable-uploads/pms-catalog-heyandes.webp",
     categories: ["PMS", "Americas"],
     slug: "heyandes",
     website: "https://www.heyandes.com/"
   },
   {
+    aliases: ["Zuzu Hospitality"],
     id: "zuzu",
-    name: "Zuzu Hospitality",
+    name: "ZUZU Hospitality",
     description: "All-in-one hospitality platform combining human expertise and advanced technology to help independent hotels thrive across Southeast Asia and India with smart pricing, revenue management, and distribution.",
     icon: "/lovable-uploads/zuzu-logo.webp",
-    categories: ["PMS", "Asia Pacific"],
+    categories: ["PMS", "Asia"],
     slug: "zuzu",
-    website: "https://zuzuhospitality.com/"
+    website: "https://zuzuhospitality.com/platform/property-management-software"
   },
   {
     id: "cohosting",
@@ -3446,49 +3581,52 @@ export const integrations: Integration[] = [
     website: "https://frontdesktech.com/"
   },
   {
+    aliases: ["Joodlab"],
     id: "joodlab",
-    name: "Joodlab",
+    name: "Joodlab / Joodbooking",
     description: "Cloud-based property management system providing comprehensive hotel operations management and channel connectivity.",
-    icon: "",
+    icon: "/lovable-uploads/pms-catalog-joodlab-joodbooking.webp",
     categories: ["PMS", "Middle East"],
     slug: "joodlab",
-    website: "https://www.joodlab.com/"
+    website: "https://joodbooking.com/"
   },
   {
+    aliases: ["Lsisoftware"],
     id: "lsisoftware",
-    name: "Lsisoftware",
+    name: "LSI Software / Positive Hotel",
     description: "Cloud-based property management system providing comprehensive hotel operations management and channel connectivity.",
-    icon: "",
+    icon: "/lovable-uploads/pms-catalog-lsi-software-positive-hotel.webp",
     categories: ["PMS", "Europe"],
     slug: "lsisoftware",
-    website: "https://www.lsisoftware.pl/"
+    website: "https://www.lsisoftware.pl/oferta/hotele/"
   },
   {
     id: "arealy",
     name: "Arealy",
     description: "Cloud-based property management system providing comprehensive hotel operations management and channel connectivity.",
-    icon: "",
+    icon: "/lovable-uploads/pms-catalog-arealy.webp",
     categories: ["PMS", "Europe"],
     slug: "arealy",
     website: "https://www.area.ly/"
   },
   {
+    aliases: ["Tuzgle"],
     id: "tuzgle",
-    name: "Tuzgle",
+    name: "Tuzgle-IT / TuHotel",
     description: "Cloud-based property management system providing comprehensive hotel operations management and channel connectivity.",
-    icon: "",
-    categories: ["PMS", "Americas"],
+    icon: "/lovable-uploads/pms-catalog-tuzgle-it-tuhotel.webp",
+    categories: ["PMS", "Latin America"],
     slug: "tuzgle",
-    website: "https://tuzgle-it.com/"
+    website: "https://tuzgle-app.com/"
   },
   {
     id: "amiqa",
     name: "Amiqa",
     description: "Cloud-based property management system providing comprehensive hotel operations management and channel connectivity.",
-    icon: "",
+    icon: "/lovable-uploads/pms-catalog-amiqa.webp",
     categories: ["PMS", "Europe"],
     slug: "amiqa",
-    website: "https://amiqa.io/"
+    website: "https://amiqa.io/en/pms"
   },
   {
     id: "homeit",
@@ -3527,13 +3665,14 @@ export const integrations: Integration[] = [
     website: "https://mettletech.co/"
   },
   {
+    aliases: ["CICO Technologies LLC"],
     id: "cico-technologies-llc",
-    name: "CICO Technologies LLC",
+    name: "CICO",
     description: "Cloud-based property management system providing comprehensive hotel operations management and channel connectivity.",
-    icon: "",
+    icon: "/lovable-uploads/pms-catalog-cico.webp",
     categories: ["PMS", "Asia Pacific"],
     slug: "cico-technologies-llc",
-    website: "https://www.cicogroup.com/"
+    website: "https://mycico.com/"
   },
   {
     id: "aron-cloud",
@@ -3563,13 +3702,14 @@ export const integrations: Integration[] = [
     website: "https://www.sentineltech.com/"
   },
   {
+    aliases: ["Digital Solusindo"],
     id: "digital-solusindo",
-    name: "Digital Solusindo",
+    name: "Digital Solusindo / DSI SISTEM",
     description: "Cloud-based property management system providing comprehensive hotel operations management and channel connectivity.",
-    icon: "",
+    icon: "/lovable-uploads/pms-catalog-digital-solusindo-dsi-sistem.webp",
     categories: ["PMS", "Asia Pacific"],
     slug: "digital-solusindo",
-    website: "https://www.digitalsolusindo.id/"
+    website: "https://digitalsolusindo.id/"
   },
   {
     id: "uno-hotelsde",
@@ -3590,13 +3730,14 @@ export const integrations: Integration[] = [
     website: "https://www.raumschmiede.de"
   },
   {
+    aliases: ["visitorapp.co"],
     id: "visitorappco",
-    name: "visitorapp.co",
+    name: "Visitor",
     description: "Cloud-based property management system providing comprehensive hotel operations management and channel connectivity.",
-    icon: "",
+    icon: "/lovable-uploads/pms-catalog-visitor.webp",
     categories: ["PMS", "Europe"],
     slug: "visitorappco",
-    website: "https://www.visitorapp.co/"
+    website: "https://www.visitor.de/"
   },
   {
     id: "hostmesa",
@@ -3617,13 +3758,14 @@ export const integrations: Integration[] = [
     website: "https://www.sooninn.com.tw/"
   },
   {
+    aliases: ["biloki"],
     id: "biloki",
-    name: "biloki",
+    name: "Biloki",
     description: "Cloud-based property management system providing comprehensive hotel operations management and channel connectivity.",
-    icon: "",
+    icon: "/lovable-uploads/pms-catalog-biloki.webp",
     categories: ["PMS", "Europe"],
     slug: "biloki",
-    website: "https://www.biloki.fr/"
+    website: "https://www.biloki.fr/fr"
   },
   {
     id: "atflow",
@@ -3635,10 +3777,11 @@ export const integrations: Integration[] = [
     website: "https://atflow.fi/"
   },
   {
+    aliases: ["lodgix"],
     id: "lodgix",
-    name: "lodgix",
+    name: "Lodgix",
     description: "Cloud-based property management system providing comprehensive hotel operations management and channel connectivity.",
-    icon: "",
+    icon: "/lovable-uploads/pms-catalog-lodgix.webp",
     categories: ["PMS", "Americas"],
     slug: "lodgix",
     website: "https://www.lodgix.com/"
@@ -3695,10 +3838,10 @@ export const integrations: Integration[] = [
     id: "taskyinn",
     name: "Taskyinn",
     description: "Cloud-based property management system providing comprehensive hotel operations management and channel connectivity.",
-    icon: "",
+    icon: "/lovable-uploads/pms-catalog-taskyinn.webp",
     categories: ["PMS", "Middle East"],
     slug: "taskyinn",
-    website: "https://www.taskyinn.com/"
+    website: "https://taskyinn.sa/ar"
   },
   {
     id: "muntadaacom",
@@ -3716,7 +3859,7 @@ export const integrations: Integration[] = [
     icon: "/lovable-uploads/stayntouch-logo.jpeg",
     categories: ["PMS", "Americas"],
     slug: "stayntouch",
-    website: "https://www.stayntouch.com/"
+    website: "https://www.stayntouch.com/cloud-pms/"
   },
   {
     id: "sahab-tech",
@@ -3740,10 +3883,10 @@ export const integrations: Integration[] = [
     id: "hotels-task",
     name: "Hotels Task",
     description: "Cloud-based property management system providing comprehensive hotel operations management and channel connectivity.",
-    icon: "",
+    icon: "/lovable-uploads/pms-catalog-hotels-task.webp",
     categories: ["PMS", "Middle East"],
     slug: "hotels-task",
-    website: "https://hotelstask.com"
+    website: "https://hotelstask.com/"
   },
   {
     id: "turbosuite",
@@ -3774,22 +3917,23 @@ export const integrations: Integration[] = [
     website: "https://resbox.com"
   },
   {
+    aliases: ["Symple Host"],
     id: "symple-host",
-    name: "Symple Host",
+    name: "SympleHost",
     description: "Cloud-based property management system providing comprehensive hotel operations management and channel connectivity.",
-    icon: "",
+    icon: "/lovable-uploads/pms-catalog-symplehost.webp",
     categories: ["PMS", "Asia Pacific"],
     slug: "symple-host",
-    website: "https://www.symplehost.ai/"
+    website: "https://www.symplehost.ai/en"
   },
   {
     id: "rushd",
     name: "Rushd",
     description: "Cloud-based property management system providing comprehensive hotel operations management and channel connectivity.",
-    icon: "",
+    icon: "/lovable-uploads/pms-catalog-rushd.webp",
     categories: ["PMS", "Middle East"],
     slug: "rushd",
-    website: "https://rushd.tech"
+    website: "https://rushd.tech/"
   },
   {
     id: "sedgeosio",
@@ -3823,9 +3967,9 @@ export const integrations: Integration[] = [
     name: "HotelBee",
     description: "Comprehensive cloud-based hotel management software that streamlines day-to-day operations and provides valuable business insights for hotels, B&Bs, hostels, and resorts worldwide.",
     icon: "/lovable-uploads/pms-hotelbee.webp",
-    categories: ["PMS", "Hotels"],
+    categories: ["PMS", "Hotels", "Europe"],
     slug: "hotelbee",
-    website: "https://hotelbee.co/"
+    website: "https://hotelbee.co/products/property-management"
   },
   {
     id: "mrhewbuc",
@@ -3861,7 +4005,7 @@ export const integrations: Integration[] = [
     icon: "/lovable-uploads/pms-checkedinn.ico",
     categories: ["PMS", "Hotels", "Europe"],
     slug: "checkedinn",
-    website: "https://checked-inn.de/"
+    website: "https://www.checked-inn.de/products/pms"
   },
   {
     id: "mcontigo",
@@ -3921,13 +4065,14 @@ export const integrations: Integration[] = [
     website: "https://gatein.ae/en"
   },
   {
+    aliases: ["Transitor (Comers)"],
     id: "transitor",
-    name: "Transitor (Comers)",
+    name: "Transitor / Comers",
     description: "Swedish hospitality management system by Comers, offering property management, booking, and guest communication tools for accommodation providers across Scandinavia and Europe.",
     icon: "/lovable-uploads/pms-transitor.webp",
     categories: ["PMS", "Europe"],
     slug: "transitor",
-    website: "https://comers.se"
+    website: "https://transitor.se/"
   },
   {
     id: "roamhome",
@@ -4029,20 +4174,22 @@ export const integrations: Integration[] = [
     website: "https://apar1ments.com"
   },
   {
+    aliases: ["Apartx"],
     id: "apartx",
-    name: "Apartx",
+    name: "ApartX",
     description: "Kazakhstan-based property management platform for apartment rentals and short-term accommodations. Provides booking management, guest communication, and operational tools for Central Asian property managers.",
     icon: "/lovable-uploads/pms-apartx.webp",
     categories: ["PMS", "Asia"],
     slug: "apartx",
-    website: "https://apartx.co"
+    website: "https://apartx.co/"
   },
   {
+    aliases: ["Sisreservas"],
     id: "sisreservas",
-    name: "Sisreservas",
+    name: "SistemInternet (Sisreservas)",
     description: "Brazilian hotel management and reservation system providing PMS, booking engine, and channel management tools for hotels and pousadas across Brazil. One of Brazil's established hospitality technology solutions.",
     icon: "/lovable-uploads/pms-sisreservas.webp",
-    categories: ["PMS", "IBE", "Americas"],
+    categories: ["PMS", "IBE", "Latin America"],
     slug: "sisreservas",
     website: "https://www.sisreservas.com.br/"
   },
@@ -4071,7 +4218,7 @@ export const integrations: Integration[] = [
     icon: "/lovable-uploads/pms-hotelgest.webp",
     categories: ["PMS", "Europe", "Americas"],
     slug: "hotelgest",
-    website: "https://hotelgest.com"
+    website: "https://hotelgest.com/"
   },
   {
     id: "cozzyid",
@@ -4098,16 +4245,17 @@ export const integrations: Integration[] = [
     icon: "/lovable-uploads/pms-emonsite.webp",
     categories: ["PMS", "Europe"],
     slug: "deverso",
-    website: "https://deverso.it"
+    website: "https://deverso.it/"
   },
   {
+    aliases: ["Elev8"],
     id: "elev8suite",
-    name: "Elev8",
+    name: "ELEV8",
     description: "Switzerland-based hotel management suite providing comprehensive PMS, booking engine, and revenue management tools for independent hotels and boutique properties across Europe.",
     icon: "/lovable-uploads/pms-elev8.ico",
     categories: ["PMS", "Europe"],
     slug: "elev8suite",
-    website: "https://www.elev8-suite.com/"
+    website: "https://elev8-suite.com/"
   },
   {
     id: "thefinner",
@@ -4128,13 +4276,14 @@ export const integrations: Integration[] = [
     website: "https://hostiq.ua/eng/"
   },
   {
+    aliases: ["Hotelitech"],
     id: "hotelitech",
-    name: "Hotelitech",
+    name: "HoteliTech",
     description: "Brazilian hospitality technology company offering PMS, booking engine, and channel management solutions for hotels and pousadas across Brazil. Focused on simplifying hotel operations for independent properties.",
     icon: "/lovable-uploads/pms-hotelitech.png",
-    categories: ["PMS", "Americas"],
+    categories: ["PMS", "Latin America"],
     slug: "hotelitech",
-    website: "https://hotelitech.com.br"
+    website: "https://hotelitech.com.br/pms/"
   },
   {
     id: "innetltda",
@@ -4169,7 +4318,7 @@ export const integrations: Integration[] = [
     icon: "/lovable-uploads/pms-easyconcierge.webp",
     categories: ["PMS", "Europe"],
     slug: "easyconcierge",
-    website: "https://easy-concierge.fr"
+    website: "https://easy-concierge.fr/"
   },
   {
     id: "mediatarget",
@@ -4187,7 +4336,7 @@ export const integrations: Integration[] = [
     icon: "/lovable-uploads/pms-gatein.webp",
     categories: ["PMS", "Middle East"],
     slug: "msool",
-    website: "https://msool.io"
+    website: "https://msool.io/"
   },
   {
     id: "mykratisi",
@@ -4196,7 +4345,7 @@ export const integrations: Integration[] = [
     icon: "/lovable-uploads/pms-mykratisi.webp",
     categories: ["PMS", "Europe"],
     slug: "mykratisi",
-    website: "https://mykratisi.gr"
+    website: "https://mykratisi.gr/"
   },
   {
     id: "novaestate",
@@ -4257,9 +4406,9 @@ export const integrations: Integration[] = [
     name: "Hotelier 101",
     description: "Turkey-based hotel management platform providing PMS, booking engine, and operational tools for independent hotels and small chains. Designed for the Turkish hospitality market with multi-language support.",
     icon: "/lovable-uploads/pms-hotelier101.png",
-    categories: ["PMS", "Europe", "Middle East"],
+    categories: ["PMS", "Middle East"],
     slug: "hotelier101",
-    website: "https://hotelier101.com"
+    website: "https://hotelier101.com/"
   },
   {
     id: "scovietnam",
@@ -4271,13 +4420,14 @@ export const integrations: Integration[] = [
     website: "https://scovietnam.com"
   },
   {
+    aliases: ["Sirrom Solutions"],
     id: "sirromsolutions",
-    name: "Sirrom Solutions",
+    name: "Sirrom / hejGuide",
     description: "Netherlands-based hospitality technology company providing property management and booking solutions for hotels and accommodation providers across the Benelux region and Europe.",
-    icon: "",
+    icon: "/lovable-uploads/pms-catalog-sirrom-hejguide.webp",
     categories: ["PMS", "Europe"],
     slug: "sirromsolutions",
-    website: "https://sirrom.io"
+    website: "https://sirrom.io/"
   },
   {
     id: "stayfleximmo",
@@ -4325,13 +4475,14 @@ export const integrations: Integration[] = [
     website: "https://www.j14a.co/"
   },
   {
+    aliases: ["Ydea"],
     id: "ydea",
-    name: "Ydea",
+    name: "Ydea-Tech / Y-Concierge",
     description: "Peru-based hospitality management platform built on Odoo, providing property management, booking, and operational tools for hotels and accommodation providers across Peru and Latin America.",
     icon: "/lovable-uploads/pms-ydea.webp",
     categories: ["PMS", "Americas"],
     slug: "ydea",
-    website: "https://ydea-aqp-eirl.odoo.com/"
+    website: "https://ydea-tech.com/"
   },
   {
     id: "maiahost",
@@ -4384,7 +4535,7 @@ export const integrations: Integration[] = [
     icon: "/lovable-uploads/pms-vayada.webp",
     categories: ["PMS", "Europe"],
     slug: "vayada",
-    website: "https://vayada.com"
+    website: "https://vayada.com/pms"
   },
   {
     id: "nissiaholidays",
@@ -4429,7 +4580,7 @@ export const integrations: Integration[] = [
     icon: "/lovable-uploads/pms-ecommerceloka.png",
     categories: ["PMS", "Asia Pacific"],
     slug: "ecommerceloka",
-    website: "https://ecommerceloka.com"
+    website: "https://ecommerceloka.com/solusi-kami#pms"
   },
   {
     id: "ctoutvert",
@@ -4456,7 +4607,7 @@ export const integrations: Integration[] = [
     icon: "/lovable-uploads/pms-oomsi.svg",
     categories: ["PMS", "Vacation Rental", "North America"],
     slug: "oomsi",
-    website: "https://oomsi.com"
+    website: "https://oomsi.com/"
   },
   {
     id: "navthan",
@@ -4486,13 +4637,14 @@ export const integrations: Integration[] = [
     website: "https://azurerd.com"
   },
   {
+    aliases: ["Desata"],
     id: "desata",
-    name: "Desata",
+    name: "Desata / HostAI",
     description: "Spanish SaaS technology company creating specialized applications and tailored solutions to automate hospitality and business niche processes, combining technology, AI, and business strategy.",
-    icon: "",
+    icon: "/lovable-uploads/pms-catalog-desata-hostai.webp",
     categories: ["PMS", "Europe"],
     slug: "desata",
-    website: ""
+    website: "https://desata.es/"
   },
   {
     id: "varaamokki",
@@ -4504,13 +4656,14 @@ export const integrations: Integration[] = [
     website: "https://www.varaamokki.com"
   },
   {
+    aliases: ["Stellar Tourism Innovations"],
     id: "stellartourism",
-    name: "Stellar Tourism Innovations",
-    description: "German hospitality technology company offering automated digital check-in, guest registration, and tourist tax solutions for vacation rentals and hotels, simplifying property management and boosting revenue.",
-    icon: "/lovable-uploads/pms-stellartourism.webp",
+    name: "Xentra",
+    description: "Hospitality property management software from Xentra, the current brand used by Stellar Tourism Innovations.",
+    icon: "/lovable-uploads/pms-catalog-xentra.webp",
     categories: ["PMS", "Europe"],
     slug: "stellartourism",
-    website: "https://stellar-trust.com"
+    website: "https://www.myxentra.com/en/features/integrations/pms"
   },
   {
     id: "norrkallan",
@@ -4555,7 +4708,7 @@ export const integrations: Integration[] = [
     icon: "/lovable-uploads/pms-rentdari.webp",
     categories: ["PMS", "Europe"],
     slug: "rentdari",
-    website: "https://rentdari.com"
+    website: "https://rentdari.com/fr"
   },
   {
     id: "zerotoone",
@@ -4591,7 +4744,7 @@ export const integrations: Integration[] = [
     icon: "/lovable-uploads/pms-roomnix.png",
     categories: ["PMS", "Europe", "Middle East"],
     slug: "roomnix",
-    website: "https://roomnix.com"
+    website: "https://roomnix.com/hotel-pms-software"
   },
   {
     id: "yallahost",
@@ -4618,7 +4771,7 @@ export const integrations: Integration[] = [
     icon: "/lovable-uploads/pms-innexo.webp",
     categories: ["PMS", "North America"],
     slug: "innexo",
-    website: "https://innexo.com"
+    website: "https://innexo.com/"
   },
   {
     id: "simplyresa",
@@ -4627,7 +4780,7 @@ export const integrations: Integration[] = [
     icon: "/lovable-uploads/pms-simplyresa.webp",
     categories: ["PMS", "Europe"],
     slug: "simplyresa",
-    website: "https://simply-resa.fr"
+    website: "https://simply-resa.fr/"
   },
   {
     id: "zyzsolution",
@@ -4689,7 +4842,7 @@ export const integrations: Integration[] = [
     icon: "/lovable-uploads/pms-comfortly.png",
     categories: ["PMS", "North America"],
     slug: "comfortly",
-    website: "https://comfort.ly"
+    website: "https://comfort.ly/"
   },
   {
     id: "hisamichiono",
@@ -4761,7 +4914,7 @@ export const integrations: Integration[] = [
     icon: "/lovable-uploads/pms-hostspilot.png",
     categories: ["PMS", "Europe"],
     slug: "hostspilot",
-    website: "https://www.host-pilot.ai"
+    website: "https://hostspilot.com/pms-cost-calculator.html"
   },
   {
     id: "stayarc",
@@ -4956,6 +5109,7 @@ export const integrations: Integration[] = [
     website: "https://minedata.ch"
   },
   {
+    aliases: ["Arpón Enterprise"],
     // Mexican hotel PMS, trading since 1982. Their own wordmark can't be used
     // here: assets/logo.png is a JPEG (despite the name) on a black background
     // and logo-white.png is white-on-transparent, so both disappear or box out
@@ -4967,7 +5121,7 @@ export const integrations: Integration[] = [
     description: "Cloud PMS built specifically for the Mexican hotel market, covering front desk and reservations, housekeeping, point of sale, CFDI electronic invoicing and revenue reporting. Used by over 760 hotels.",
     icon: "/lovable-uploads/pms-arpon.webp",
     categories: ["PMS", "Latin America"],
-    website: "https://arpon.com"
+    website: "https://arpon.com/"
   },
   {
     // Their only logo asset is assets/logo.png — actually a 1024px JPEG despite
@@ -4984,7 +5138,7 @@ export const integrations: Integration[] = [
     description: "Self-serve property management system for independent hotels and guesthouses, built by a hotelier rather than around a sales process — sign-up to first booking without a demo or sales call. Covers the front-desk essentials: drag-and-drop booking calendar, digital guest registration with document capture and online check-in, Stripe card payments alongside a digital cash book, automatic invoicing with PDF export, housekeeping checklists with photo damage reports, and night audit and occupancy reporting. Existing rooms, guests and bookings import from Excel or CSV. Also handles multi-property, long-term rentals, vouchers, door codes, staff time tracking and a TM30 export for Thailand immigration reporting.",
     icon: "/lovable-uploads/pms-pmspilot.webp",
     categories: ["PMS", "Asia"],
-    website: "https://pmspilot.com"
+    website: "https://pmspilot.com/en"
   },
   {
     // Their mark, from their own icon.svg — path unmodified, only the fill and
@@ -5230,5 +5384,1194 @@ export const integrations: Integration[] = [
     icon: "/lovable-uploads/pms-estada.webp",
     categories: ["PMS", "Europe"],
     website: "https://estada.io"
+  },
+  // PMS catalog reviewed against vendor websites on 2026-09-05.
+  // Sources and branding notes: docs/pms-catalog-review.md.
+  {
+    "id": "1day-pms",
+    "name": "1day PMS",
+    "description": "Cloud PMS for managing accommodation reservations, guests and daily property operations.",
+    "icon": "/lovable-uploads/pms-catalog-1day-pms.webp",
+    "categories": [
+      "PMS",
+      "Australia"
+    ],
+    "slug": "1day-pms",
+    "website": "https://1day.io/"
+  },
+  {
+    "id": "accommador",
+    "name": "Accommador",
+    "description": "Property management software for accommodation reservations and day-to-day operations.",
+    "icon": "/lovable-uploads/pms-catalog-accommador.webp",
+    "categories": [
+      "PMS",
+      "Australia"
+    ],
+    "slug": "accommador",
+    "website": "https://accommador.com/features/property-management/"
+  },
+  {
+    "id": "aetheriaos",
+    "name": "Aetheriaos",
+    "description": "Hospitality operating system combining property management and accommodation workflows.",
+    "icon": "/lovable-uploads/pms-catalog-aetheriaos.webp",
+    "categories": [
+      "PMS",
+      "Asia"
+    ],
+    "slug": "aetheriaos",
+    "website": "https://aetheriaos.com/"
+  },
+  {
+    "id": "aicilabs",
+    "name": "AIciLabs",
+    "description": "Hospitality software vendor offering a property management system for accommodation businesses.",
+    "icon": "/lovable-uploads/pms-catalog-aicilabs.webp",
+    "categories": [
+      "PMS",
+      "Europe"
+    ],
+    "slug": "aicilabs",
+    "website": "https://aicilabs.com/"
+  },
+  {
+    "id": "alojando",
+    "name": "Alojando",
+    "description": "PMS for managing accommodation bookings, room availability and guest operations.",
+    "icon": "/lovable-uploads/pms-catalog-alojando.webp",
+    "categories": [
+      "PMS",
+      "Americas"
+    ],
+    "slug": "alojando",
+    "website": "https://alojando.app/"
+  },
+  {
+    "id": "anpira",
+    "name": "Anpira",
+    "description": "Property management software for coordinating accommodation reservations and operations.",
+    "icon": "/lovable-uploads/pms-catalog-anpira.webp",
+    "categories": [
+      "PMS",
+      "Europe"
+    ],
+    "slug": "anpira",
+    "website": "https://www.anpira.com/"
+  },
+  {
+    "id": "aperfectstay",
+    "name": "aPerfectStay",
+    "description": "Property management platform for accommodation bookings and operational workflows.",
+    "icon": "/lovable-uploads/pms-catalog-aperfectstay.webp",
+    "categories": [
+      "PMS",
+      "Europe"
+    ],
+    "slug": "aperfectstay",
+    "website": "https://aperfectstay.ai/"
+  },
+  {
+    "id": "aspixr",
+    "name": "Aspixr",
+    "description": "Hospitality software with property management tools for accommodation operators.",
+    "icon": "/lovable-uploads/pms-catalog-aspixr.webp",
+    "categories": [
+      "PMS",
+      "Americas"
+    ],
+    "slug": "aspixr",
+    "website": "https://www.aspixr.com/"
+  },
+  {
+    "id": "autonomya",
+    "name": "Autonomya",
+    "description": "Property management platform for automating accommodation booking and operational workflows.",
+    "icon": "/lovable-uploads/pms-catalog-autonomya.webp",
+    "categories": [
+      "PMS",
+      "Europe"
+    ],
+    "slug": "autonomya",
+    "website": "https://autonomya.fr/"
+  },
+  {
+    "id": "bayabotech-xenia",
+    "name": "BayaboTech / Xenia",
+    "description": "Developer of Xenia, a hospitality property management system.",
+    "icon": "/lovable-uploads/pms-catalog-bayabotech-xenia.webp",
+    "categories": [
+      "PMS",
+      "Africa"
+    ],
+    "slug": "bayabotech-xenia",
+    "website": "https://bayabotech.com/"
+  },
+  {
+    "id": "bedlink",
+    "name": "Bedlink",
+    "description": "Accommodation management software for reservations and property operations.",
+    "icon": "/lovable-uploads/pms-catalog-bedlink.webp",
+    "categories": [
+      "PMS",
+      "Europe"
+    ],
+    "slug": "bedlink",
+    "website": "https://www.bedlink.fr/"
+  },
+  {
+    "id": "bedmerge",
+    "name": "Bedmerge",
+    "description": "Property management software for coordinating accommodation bookings and availability.",
+    "icon": "/lovable-uploads/pms-catalog-bedmerge.webp",
+    "categories": [
+      "PMS",
+      "Europe"
+    ],
+    "slug": "bedmerge",
+    "website": "https://www.bedmerge.com/"
+  },
+  {
+    "id": "bindroom",
+    "name": "Bindroom",
+    "description": "Hospitality platform with a PMS for managing reservations and property operations.",
+    "icon": "/lovable-uploads/pms-catalog-bindroom.webp",
+    "categories": [
+      "PMS",
+      "Asia"
+    ],
+    "slug": "bindroom",
+    "website": "https://www.bindroom.com/"
+  },
+  {
+    "id": "casotel",
+    "name": "Casotel",
+    "description": "Hotel PMS for reservations, operational management and electronic invoicing in Latin America.",
+    "icon": "/lovable-uploads/pms-catalog-casotel.webp",
+    "categories": [
+      "PMS",
+      "Latin America"
+    ],
+    "slug": "casotel",
+    "website": "https://casotel.com/"
+  },
+  {
+    "id": "checkinbuddy",
+    "name": "CheckinBuddy",
+    "description": "Hotel management software for reservations, guest check-in and daily operations.",
+    "icon": "/lovable-uploads/pms-catalog-checkinbuddy.webp",
+    "categories": [
+      "PMS",
+      "Asia"
+    ],
+    "slug": "checkinbuddy",
+    "website": "https://checkinbuddy.in/"
+  },
+  {
+    "id": "checkinn",
+    "name": "Checkinn",
+    "description": "Japanese accommodation management platform for bookings and property operations.",
+    "icon": "/lovable-uploads/pms-catalog-checkinn.webp",
+    "categories": [
+      "PMS",
+      "Asia"
+    ],
+    "slug": "checkinn",
+    "website": "https://checkinn.jp/"
+  },
+  {
+    "id": "chevalier",
+    "name": "Chevalier",
+    "description": "PMS for managing accommodation reservations and daily property workflows.",
+    "icon": "/lovable-uploads/pms-catalog-chevalier.webp",
+    "categories": [
+      "PMS",
+      "Europe"
+    ],
+    "slug": "chevalier",
+    "website": "https://chevalier-pms.com/"
+  },
+  {
+    "id": "chexta",
+    "name": "Chexta",
+    "description": "Hotel management software combining reservations and operational tools.",
+    "icon": "/lovable-uploads/pms-catalog-chexta.webp",
+    "categories": [
+      "PMS",
+      "Middle East"
+    ],
+    "slug": "chexta",
+    "website": "https://chexta.com/"
+  },
+  {
+    "id": "chiara-software-chilloso",
+    "name": "Chiara Software / Chilloso",
+    "description": "Italian software vendor offering the Chilloso hospitality management product.",
+    "icon": "/lovable-uploads/pms-catalog-chiara-software-chilloso.webp",
+    "categories": [
+      "PMS",
+      "Europe"
+    ],
+    "slug": "chiara-software-chilloso",
+    "website": "https://chiara-software.it/"
+  },
+  {
+    "id": "cobijo",
+    "name": "Cobijo",
+    "description": "Property management platform for accommodation bookings and daily operations.",
+    "icon": "/lovable-uploads/pms-catalog-cobijo.webp",
+    "categories": [
+      "PMS",
+      "Europe"
+    ],
+    "slug": "cobijo",
+    "website": "https://www.cobijo.app/"
+  },
+  {
+    "id": "deplino",
+    "name": "Deplino",
+    "description": "Hospitality management software for coordinating accommodation reservations and operations.",
+    "icon": "/lovable-uploads/pms-catalog-deplino.webp",
+    "categories": [
+      "PMS",
+      "Europe"
+    ],
+    "slug": "deplino",
+    "website": "https://deplino.ro/"
+  },
+  {
+    "id": "doorling",
+    "name": "Doorling",
+    "description": "Accommodation management software for bookings and property workflows.",
+    "icon": "/lovable-uploads/pms-catalog-doorling.webp",
+    "categories": [
+      "PMS",
+      "Europe"
+    ],
+    "slug": "doorling",
+    "website": "https://doorling.it/"
+  },
+  {
+    "id": "doorloom",
+    "name": "Doorloom",
+    "description": "Hospitality software for managing accommodation reservations and property operations.",
+    "icon": "/lovable-uploads/pms-catalog-doorloom.webp",
+    "categories": [
+      "PMS",
+      "Asia"
+    ],
+    "slug": "doorloom",
+    "website": "https://doorloom.com/"
+  },
+  {
+    "id": "easybnb",
+    "name": "Easybnb",
+    "description": "Property management software for short-term rental accommodation.",
+    "icon": "/lovable-uploads/pms-catalog-easybnb.webp",
+    "categories": [
+      "PMS",
+      "Europe"
+    ],
+    "slug": "easybnb",
+    "website": "https://easybnb.it/"
+  },
+  {
+    "id": "easyrural",
+    "name": "Easyrural",
+    "description": "Management software for rural accommodation and booking operations.",
+    "icon": "/lovable-uploads/pms-catalog-easyrural.webp",
+    "categories": [
+      "PMS",
+      "Europe"
+    ],
+    "slug": "easyrural",
+    "website": "https://easyrural.net/"
+  },
+  {
+    "id": "facility-hotel",
+    "name": "Facility Hotel",
+    "description": "Cloud hotel PMS with reservation, front-desk and hotel management tools.",
+    "icon": "/lovable-uploads/pms-catalog-facility-hotel.webp",
+    "categories": [
+      "PMS",
+      "Latin America"
+    ],
+    "slug": "facility-hotel",
+    "website": "https://sistemafacilityhotel.com.br/pms/"
+  },
+  {
+    "id": "fades-management-bedflow",
+    "name": "Fades Management / BedFlow",
+    "description": "Software vendor offering BedFlow, a hotel property management product.",
+    "icon": "/lovable-uploads/pms-catalog-fades-management-bedflow.webp",
+    "categories": [
+      "PMS",
+      "Europe"
+    ],
+    "slug": "fades-management-bedflow",
+    "website": "https://fades-management.com/"
+  },
+  {
+    "id": "finestar-hospira",
+    "name": "FinestAR / Hospira",
+    "description": "Hospitality technology vendor offering Hospira property management software.",
+    "icon": "/lovable-uploads/pms-catalog-finestar-hospira.webp",
+    "categories": [
+      "PMS",
+      "Europe"
+    ],
+    "slug": "finestar-hospira",
+    "website": "https://finestar.hr/"
+  },
+  {
+    "id": "flowhub",
+    "name": "FlowHub",
+    "description": "Hotel management platform for reservations and property operations.",
+    "icon": "/lovable-uploads/pms-catalog-flowhub.webp",
+    "categories": [
+      "PMS",
+      "Asia"
+    ],
+    "slug": "flowhub",
+    "website": "https://flowhubhotel.com/"
+  },
+  {
+    "id": "foli",
+    "name": "Foli",
+    "description": "Accommodation management software for bookings and operational workflows.",
+    "icon": "/lovable-uploads/pms-catalog-foli.webp",
+    "categories": [
+      "PMS",
+      "Europe"
+    ],
+    "slug": "foli",
+    "website": "https://www.foli.si/"
+  },
+  {
+    "id": "fom",
+    "name": "Fom",
+    "description": "Hospitality software offering a property management system for accommodation operators.",
+    "icon": "",
+    "categories": [
+      "PMS",
+      "Middle East"
+    ],
+    "slug": "fom",
+    "website": "https://fom.services/pms-registration/"
+  },
+  {
+    "id": "gerenhotel",
+    "name": "GerenHotel",
+    "description": "Web-based hotel management software with reservations, room status and guest check-in tools.",
+    "icon": "",
+    "categories": [
+      "PMS",
+      "Latin America"
+    ],
+    "slug": "gerenhotel",
+    "website": "https://gerenhotel.com.br/"
+  },
+  {
+    "id": "gohosty",
+    "name": "GoHosty",
+    "description": "Property management software for coordinating accommodation bookings and operations.",
+    "icon": "/lovable-uploads/pms-catalog-gohosty.webp",
+    "categories": [
+      "PMS",
+      "Americas"
+    ],
+    "slug": "gohosty",
+    "website": "https://gohosty.com/property-management-software"
+  },
+  {
+    "id": "guestfix",
+    "name": "Guestfix",
+    "description": "Hotel management software for reservations and guest operations.",
+    "icon": "/lovable-uploads/pms-catalog-guestfix.webp",
+    "categories": [
+      "PMS",
+      "Europe"
+    ],
+    "slug": "guestfix",
+    "website": "https://guestfix.com/"
+  },
+  {
+    "id": "hamnsystem",
+    "name": "Hamnsystem",
+    "description": "Booking and payment software for motorhome pitches, marinas and other outdoor accommodation.",
+    "icon": "/lovable-uploads/pms-catalog-hamnsystem.webp",
+    "categories": [
+      "PMS",
+      "Europe",
+      "Outdoor"
+    ],
+    "slug": "hamnsystem",
+    "website": "https://www.hamnsystem.se/sv/"
+  },
+  {
+    "id": "happybooking",
+    "name": "HappyBooking",
+    "description": "Reservation and property management software for hotels, hostels and accommodation providers.",
+    "icon": "/lovable-uploads/pms-catalog-happybooking.webp",
+    "categories": [
+      "PMS"
+    ],
+    "slug": "happybooking",
+    "website": "https://www.happybooking.se/"
+  },
+  {
+    "id": "hostalio",
+    "name": "Hostalio",
+    "description": "Accommodation management software for reservations and property operations.",
+    "icon": "/lovable-uploads/pms-catalog-hostalio.webp",
+    "categories": [
+      "PMS",
+      "Europe"
+    ],
+    "slug": "hostalio",
+    "website": "https://hostalio.pl/"
+  },
+  {
+    "id": "hostflowlab",
+    "name": "Hostflowlab",
+    "description": "Property management software for coordinating accommodation bookings and daily workflows.",
+    "icon": "/lovable-uploads/pms-catalog-hostflowlab.webp",
+    "categories": [
+      "PMS",
+      "Latin America"
+    ],
+    "slug": "hostflowlab",
+    "website": "https://hostflowlab.com/"
+  },
+  {
+    "id": "hostieboard",
+    "name": "Hostieboard",
+    "description": "Property management platform for accommodation booking and operational workflows.",
+    "icon": "/lovable-uploads/pms-catalog-hostieboard.webp",
+    "categories": [
+      "PMS",
+      "Europe"
+    ],
+    "slug": "hostieboard",
+    "website": "https://hostieboard.com/"
+  },
+  {
+    "id": "hostlio-pro",
+    "name": "Hostlio Pro",
+    "description": "Hospitality management platform for reservations and property operations.",
+    "icon": "/lovable-uploads/pms-catalog-hostlio-pro.webp",
+    "categories": [
+      "PMS",
+      "Americas"
+    ],
+    "slug": "hostlio-pro",
+    "website": "https://www.hostliopro.com/"
+  },
+  {
+    "id": "hostmanager",
+    "name": "Hostmanager",
+    "description": "Property management software for managing accommodation bookings and operational workflows.",
+    "icon": "",
+    "categories": [
+      "PMS",
+      "Latin America"
+    ],
+    "slug": "hostmanager",
+    "website": "https://www.hostmanager.cl/"
+  },
+  {
+    "id": "hoteliya",
+    "name": "Hoteliya",
+    "description": "Hotel management platform for reservations and property operations.",
+    "icon": "",
+    "categories": [
+      "PMS",
+      "Australia"
+    ],
+    "slug": "hoteliya",
+    "website": "https://hoteliya.com/"
+  },
+  {
+    "id": "hotelsystem",
+    "name": "Hotelsystem",
+    "description": "Hotel management software covering front-office reservations and financial administration.",
+    "icon": "/lovable-uploads/pms-catalog-hotelsystem.webp",
+    "categories": [
+      "PMS",
+      "Europe"
+    ],
+    "slug": "hotelsystem",
+    "website": "https://hotelsystem.hu/"
+  },
+  {
+    "id": "hotpilot",
+    "name": "Hotpilot",
+    "description": "AI-assisted hotel PMS for reservation management and daily hotel operations.",
+    "icon": "/lovable-uploads/pms-catalog-hotpilot.webp",
+    "categories": [
+      "PMS",
+      "Europe"
+    ],
+    "slug": "hotpilot",
+    "website": "https://hotpilot.ai/property-management-system"
+  },
+  {
+    "id": "igumbi",
+    "name": "Igumbi",
+    "description": "Hotel PMS for room reservations, guest management and accommodation administration.",
+    "icon": "/lovable-uploads/pms-catalog-igumbi.webp",
+    "categories": [
+      "PMS",
+      "Europe"
+    ],
+    "slug": "igumbi",
+    "website": "https://www.igumbi.com/de/tour/hotel-pms"
+  },
+  {
+    "id": "imperahost",
+    "name": "Imperahost",
+    "description": "Management software for vacation-rental bookings and operational workflows.",
+    "icon": "/lovable-uploads/pms-catalog-imperahost.webp",
+    "categories": [
+      "PMS",
+      "Europe"
+    ],
+    "slug": "imperahost",
+    "website": "https://www.imperahost.es/"
+  },
+  {
+    "id": "innexia-opm",
+    "name": "Innexia OPM",
+    "description": "Hotel PMS with housekeeping, revenue management, reconciliation and scheduling tools.",
+    "icon": "/lovable-uploads/pms-catalog-innexia-opm.webp",
+    "categories": [
+      "PMS"
+    ],
+    "slug": "innexia-opm",
+    "website": "https://innexiaopm.com/"
+  },
+  {
+    "id": "innflowbr",
+    "name": "Innflowbr",
+    "description": "Hotel management software for accommodation bookings and daily operations.",
+    "icon": "/lovable-uploads/pms-catalog-innflowbr.webp",
+    "categories": [
+      "PMS",
+      "Latin America"
+    ],
+    "slug": "innflowbr",
+    "website": "https://innflowbr.com.br/"
+  },
+  {
+    "id": "innsyst-presidium-services",
+    "name": "InnSyst (Presidium Services)",
+    "description": "Cloud hotel management platform operated by Presidium Services.",
+    "icon": "/lovable-uploads/pms-catalog-innsyst-presidium-services.webp",
+    "categories": [
+      "PMS",
+      "Americas"
+    ],
+    "slug": "innsyst-presidium-services",
+    "website": "https://innsyst.com/features/property-management"
+  },
+  {
+    "id": "kimisuite",
+    "name": "KIMISUITE",
+    "description": "Business software suite with hotel reservation, property management and channel management tools.",
+    "icon": "/lovable-uploads/pms-catalog-kimisuite.webp",
+    "categories": [
+      "PMS",
+      "Europe"
+    ],
+    "slug": "kimisuite",
+    "website": "https://kimisuite.com/en"
+  },
+  {
+    "id": "koopsdesk",
+    "name": "KoopsDesk",
+    "description": "Hospitality management software for accommodation reservations and operational workflows.",
+    "icon": "/lovable-uploads/pms-catalog-koopsdesk.webp",
+    "categories": [
+      "PMS",
+      "Latin America"
+    ],
+    "slug": "koopsdesk",
+    "website": "https://koops.app/"
+  },
+  {
+    "id": "kunjey",
+    "name": "Kunjey",
+    "description": "Property management system for managing accommodation bookings and daily operations.",
+    "icon": "/lovable-uploads/pms-catalog-kunjey.webp",
+    "categories": [
+      "PMS",
+      "Middle East"
+    ],
+    "slug": "kunjey",
+    "website": "https://kunjey.com/"
+  },
+  {
+    "id": "lodgepedia",
+    "name": "Lodgepedia",
+    "description": "Hotel management software for reservations and property operations.",
+    "icon": "/lovable-uploads/pms-catalog-lodgepedia.webp",
+    "categories": [
+      "PMS",
+      "Americas"
+    ],
+    "slug": "lodgepedia",
+    "website": "https://lodgepedia.com/"
+  },
+  {
+    "id": "lyra",
+    "name": "Lyra",
+    "description": "Hospitality PMS with accommodation booking and operational management tools.",
+    "icon": "/lovable-uploads/pms-catalog-lyra.webp",
+    "categories": [
+      "PMS",
+      "Europe"
+    ],
+    "slug": "lyra",
+    "website": "https://lyrasystem.com/b-and-b-pms/"
+  },
+  {
+    "id": "magisolution-magotel",
+    "name": "MagiSolution / MAGOTEL",
+    "description": "Software vendor offering MAGOTEL for hotel reservations and operational management.",
+    "icon": "/lovable-uploads/pms-catalog-magisolution-magotel.webp",
+    "categories": [
+      "PMS",
+      "Asia"
+    ],
+    "slug": "magisolution-magotel",
+    "website": "https://magisolution.com/"
+  },
+  {
+    "id": "mer-yaz-l-m-hoteluter",
+    "name": "Mer Yazılım / Hoteluter",
+    "description": "Software vendor offering Hoteluter hotel management software.",
+    "icon": "/lovable-uploads/pms-catalog-mer-yaz-l-m-hoteluter.webp",
+    "categories": [
+      "PMS",
+      "Middle East"
+    ],
+    "slug": "mer-yaz-l-m-hoteluter",
+    "website": "https://merbilisim.com/"
+  },
+  {
+    "id": "merrsaah",
+    "name": "Merrsaah",
+    "description": "Hotel management software for accommodation reservations and property operations.",
+    "icon": "/lovable-uploads/pms-catalog-merrsaah.webp",
+    "categories": [
+      "PMS",
+      "Africa"
+    ],
+    "slug": "merrsaah",
+    "website": "https://merrsaah.com/"
+  },
+  {
+    "id": "minical",
+    "name": "miniCal",
+    "description": "Open-source property management software for accommodation reservations and front-desk operations.",
+    "icon": "/lovable-uploads/pms-catalog-minical.webp",
+    "categories": [
+      "PMS",
+      "Americas"
+    ],
+    "slug": "minical",
+    "website": "https://www.minical.io/"
+  },
+  {
+    "id": "mintc-stay",
+    "name": "MintC Stay",
+    "description": "Accommodation PMS with room calendars, rates and reservation management, connected through Channex.",
+    "icon": "/lovable-uploads/pms-catalog-mintc-stay.webp",
+    "categories": [
+      "PMS",
+      "Asia"
+    ],
+    "slug": "mintc-stay",
+    "website": "https://mintcinc.com/"
+  },
+  {
+    "id": "moobi-hotel",
+    "name": "Moobi Hotel",
+    "description": "Hotel management module covering room status, reservations, guests and billing.",
+    "icon": "/lovable-uploads/pms-catalog-moobi-hotel.webp",
+    "categories": [
+      "PMS",
+      "Asia"
+    ],
+    "slug": "moobi-hotel",
+    "website": "https://moobi.id/hotel/"
+  },
+  {
+    "id": "moya-sync-pms",
+    "name": "MOYA SYNC PMS",
+    "description": "Property management software for accommodation bookings and operational workflows.",
+    "icon": "/lovable-uploads/pms-catalog-moya-sync-pms.webp",
+    "categories": [
+      "PMS",
+      "Europe"
+    ],
+    "slug": "moya-sync-pms",
+    "website": "https://moyasync.fr/"
+  },
+  {
+    "id": "multistay",
+    "name": "MultiStay",
+    "description": "Property management software for accommodation reservations and daily operations.",
+    "icon": "/lovable-uploads/pms-catalog-multistay.webp",
+    "categories": [
+      "PMS",
+      "Americas"
+    ],
+    "slug": "multistay",
+    "website": "https://multistay.rentals/"
+  },
+  {
+    "id": "mybooking",
+    "name": "Mybooking",
+    "description": "Accommodation management platform for reservations and property operations.",
+    "icon": "/lovable-uploads/pms-catalog-mybooking.webp",
+    "categories": [
+      "PMS",
+      "Americas"
+    ],
+    "slug": "mybooking",
+    "website": "https://www.mybooking.ai/en/"
+  },
+  {
+    "id": "naya-people",
+    "name": "Naya People",
+    "description": "Developer of Naya PMS for hotel reservations and operational management.",
+    "icon": "/lovable-uploads/pms-catalog-naya-people.webp",
+    "categories": [
+      "PMS",
+      "Asia"
+    ],
+    "slug": "naya-people",
+    "website": "https://nayapeople.com/en/products/naya-pms/all-features"
+  },
+  {
+    "id": "neosuite",
+    "name": "Neosuite",
+    "description": "Hospitality management software for accommodation bookings and property operations.",
+    "icon": "/lovable-uploads/pms-catalog-neosuite.webp",
+    "categories": [
+      "PMS",
+      "Asia"
+    ],
+    "slug": "neosuite",
+    "website": "https://neosuite.io/"
+  },
+  {
+    "id": "newbyte",
+    "name": "Newbyte",
+    "description": "Software vendor offering hotel property management tools.",
+    "icon": "/lovable-uploads/pms-catalog-newbyte.webp",
+    "categories": [
+      "PMS",
+      "Latin America"
+    ],
+    "slug": "newbyte",
+    "website": "https://newbyte.net.br/pt-br"
+  },
+  {
+    "id": "nuru",
+    "name": "Nuru",
+    "description": "Hospitality software suite with hotel management and point-of-sale tools.",
+    "icon": "/lovable-uploads/pms-catalog-nuru.webp",
+    "categories": [
+      "PMS",
+      "Australia"
+    ],
+    "slug": "nuru",
+    "website": "https://nurupos.app/"
+  },
+  {
+    "id": "odabed",
+    "name": "Odabed",
+    "description": "Hotel property management system for reservations and daily operations.",
+    "icon": "/lovable-uploads/pms-catalog-odabed.webp",
+    "categories": [
+      "PMS",
+      "Europe"
+    ],
+    "slug": "odabed",
+    "website": "https://odabed.com/"
+  },
+  {
+    "id": "okmystay",
+    "name": "OKmystay",
+    "description": "PMS for hotels and holiday apartments, with booking, check-in, payment and housekeeping workflows.",
+    "icon": "/lovable-uploads/pms-catalog-okmystay.webp",
+    "categories": [
+      "PMS",
+      "Europe"
+    ],
+    "slug": "okmystay",
+    "website": "https://www.okmystay.com/"
+  },
+  {
+    "id": "otizi",
+    "name": "Otizi",
+    "description": "Accommodation management software for booking and operational workflows.",
+    "icon": "/lovable-uploads/pms-catalog-otizi.webp",
+    "categories": [
+      "PMS",
+      "Europe"
+    ],
+    "slug": "otizi",
+    "website": "https://otizi.fr/"
+  },
+  {
+    "id": "packxgen-simplestay-room",
+    "name": "PackXGen / SimpleStay Room+",
+    "description": "Software vendor offering SimpleStay Room+ property management software.",
+    "icon": "/lovable-uploads/pms-catalog-packxgen-simplestay-room.webp",
+    "categories": [
+      "PMS",
+      "Europe"
+    ],
+    "slug": "packxgen-simplestay-room",
+    "website": "https://packxgen.com/"
+  },
+  {
+    "id": "patelhms",
+    "name": "PatelHMS",
+    "description": "Hotel PMS for reservations and day-to-day property operations.",
+    "icon": "",
+    "categories": [
+      "PMS",
+      "Americas"
+    ],
+    "slug": "patelhms",
+    "website": "https://www.patelhms.com/property-management/"
+  },
+  {
+    "id": "quarto-studio",
+    "name": "Quarto Studio",
+    "description": "Hospitality management platform for accommodation reservations and property workflows.",
+    "icon": "/lovable-uploads/pms-catalog-quarto-studio.webp",
+    "categories": [
+      "PMS",
+      "Latin America"
+    ],
+    "slug": "quarto-studio",
+    "website": "https://quarto-studio.com/"
+  },
+  {
+    "id": "qvision-roomzy-pms",
+    "name": "QVision / Roomzy PMS",
+    "description": "Hospitality software vendor offering Roomzy PMS.",
+    "icon": "/lovable-uploads/pms-catalog-qvision-roomzy-pms.webp",
+    "categories": [
+      "PMS",
+      "Europe"
+    ],
+    "slug": "qvision-roomzy-pms",
+    "website": "https://qvision.gr/"
+  },
+  {
+    "id": "recama",
+    "name": "Recama",
+    "description": "Accommodation management software for booking and property operations.",
+    "icon": "/lovable-uploads/pms-catalog-recama.webp",
+    "categories": [
+      "PMS",
+      "Americas"
+    ],
+    "slug": "recama",
+    "website": "https://recama.com/"
+  },
+  {
+    "id": "rently",
+    "name": "Rently",
+    "description": "Property management software for accommodation bookings and operational workflows.",
+    "icon": "/lovable-uploads/pms-catalog-rently.webp",
+    "categories": [
+      "PMS",
+      "Middle East"
+    ],
+    "slug": "rently",
+    "website": "https://rently.pro/"
+  },
+  {
+    "id": "revpilot",
+    "name": "RevPilot",
+    "description": "Hotel property management software for reservations and daily operations.",
+    "icon": "",
+    "categories": [
+      "PMS",
+      "Asia"
+    ],
+    "slug": "revpilot",
+    "website": "https://revpilotlabs.com/pms.html"
+  },
+  {
+    "id": "rmos",
+    "name": "RMOS",
+    "description": "Hotel PMS for accommodation reservations and operational management.",
+    "icon": "/lovable-uploads/pms-catalog-rmos.webp",
+    "categories": [
+      "PMS",
+      "Middle East"
+    ],
+    "slug": "rmos",
+    "website": "https://rmosweb.com/products/rmos-web-pms"
+  },
+  {
+    "id": "roomconnect",
+    "name": "Roomconnect",
+    "description": "Hotel management software for reservations and daily property operations.",
+    "icon": "/lovable-uploads/pms-catalog-roomconnect.webp",
+    "categories": [
+      "PMS",
+      "Latin America"
+    ],
+    "slug": "roomconnect",
+    "website": "https://roomconnect.io/"
+  },
+  {
+    "id": "roomspilot",
+    "name": "RoomsPilot",
+    "description": "Property management platform with tools for managing multiple accommodation properties.",
+    "icon": "/lovable-uploads/pms-catalog-roomspilot.webp",
+    "categories": [
+      "PMS",
+      "Americas"
+    ],
+    "slug": "roomspilot",
+    "website": "https://roomspilot.com/features/multi-property-management"
+  },
+  {
+    "id": "rotamundos-r2-os",
+    "name": "Rotamundos / R2-OS",
+    "description": "Hospitality company offering the R2-OS property management product.",
+    "icon": "/lovable-uploads/pms-catalog-rotamundos-r2-os.webp",
+    "categories": [
+      "PMS",
+      "Latin America"
+    ],
+    "slug": "rotamundos-r2-os",
+    "website": "https://rotamundos.com/"
+  },
+  {
+    "id": "runset-pms",
+    "name": "Runset PMS",
+    "description": "PMS for holiday rentals and hotels, combining reservations and operational management.",
+    "icon": "/lovable-uploads/pms-catalog-runset-pms.webp",
+    "categories": [
+      "PMS",
+      "Europe"
+    ],
+    "slug": "runset-pms",
+    "website": "https://runset.ai/pms"
+  },
+  {
+    "id": "saam-pms",
+    "name": "Saam PMS",
+    "description": "Hotel PMS for managing reservations and daily property operations.",
+    "icon": "/lovable-uploads/pms-catalog-saam-pms.webp",
+    "categories": [
+      "PMS",
+      "Africa"
+    ],
+    "slug": "saam-pms",
+    "website": "https://saampms.com/"
+  },
+  {
+    "id": "silbeck",
+    "name": "Silbeck",
+    "description": "Hotel management software vendor serving accommodation businesses.",
+    "icon": "",
+    "categories": [
+      "PMS",
+      "Latin America"
+    ],
+    "slug": "silbeck",
+    "website": "https://materiais.silbeck.com.br/ads-solicitacao-de-orcamento"
+  },
+  {
+    "id": "skl",
+    "name": "SKL",
+    "description": "PMS for accommodation reservations and operational management.",
+    "icon": "/lovable-uploads/pms-catalog-skl.webp",
+    "categories": [
+      "PMS",
+      "Europe"
+    ],
+    "slug": "skl",
+    "website": "https://www.skl.es/pms-skl/"
+  },
+  {
+    "id": "smartsuite",
+    "name": "SmartSuite",
+    "description": "Hospitality software suite with a hotel property management product.",
+    "icon": "/lovable-uploads/pms-catalog-smartsuite.webp",
+    "categories": [
+      "PMS",
+      "Asia"
+    ],
+    "slug": "smartsuite",
+    "website": "https://smartsuite.vn/vi/product/pms"
+  },
+  {
+    "id": "staycore",
+    "name": "Staycore",
+    "description": "Hotel management software for reservations and property operations.",
+    "icon": "/lovable-uploads/pms-catalog-staycore.webp",
+    "categories": [
+      "PMS",
+      "Asia"
+    ],
+    "slug": "staycore",
+    "website": "https://staycore.io/hotel-management-software-nigeria/"
+  },
+  {
+    "id": "stayreo",
+    "name": "Stayreo",
+    "description": "Hotel PMS for managing accommodation reservations and daily operations.",
+    "icon": "/lovable-uploads/pms-catalog-stayreo.webp",
+    "categories": [
+      "PMS",
+      "Asia"
+    ],
+    "slug": "stayreo",
+    "website": "https://www.stayreo.com/platform/pms"
+  },
+  {
+    "id": "staytric",
+    "name": "Staytric",
+    "description": "Hotel management software for reservations and property workflows.",
+    "icon": "/lovable-uploads/pms-catalog-staytric.webp",
+    "categories": [
+      "PMS",
+      "Asia"
+    ],
+    "slug": "staytric",
+    "website": "https://staytric.com/"
+  },
+  {
+    "id": "tribii",
+    "name": "Tribii",
+    "description": "Accommodation management platform with a property management system.",
+    "icon": "/lovable-uploads/pms-catalog-tribii.webp",
+    "categories": [
+      "PMS",
+      "Europe"
+    ],
+    "slug": "tribii",
+    "website": "https://tribii.com/product/free-pms"
+  },
+  {
+    "id": "unihotel360",
+    "name": "UniHotel360",
+    "description": "Hotel management platform with a PMS for reservations and property operations.",
+    "icon": "/lovable-uploads/pms-catalog-unihotel360.webp",
+    "categories": [
+      "PMS",
+      "Asia"
+    ],
+    "slug": "unihotel360",
+    "website": "https://unihotel360.com/solutions/pms"
+  },
+  {
+    "id": "unozero",
+    "name": "UNOZERO",
+    "description": "Hospitality management software for accommodation reservations and daily operations.",
+    "icon": "",
+    "categories": [
+      "PMS",
+      "Latin America"
+    ],
+    "slug": "unozero",
+    "website": "https://unozero.ai/"
+  },
+  {
+    "id": "vacant",
+    "name": "Vacant",
+    "description": "Property management software for accommodation bookings and operational workflows.",
+    "icon": "/lovable-uploads/pms-catalog-vacant.webp",
+    "categories": [
+      "PMS",
+      "Americas"
+    ],
+    "slug": "vacant",
+    "website": "https://vacant.com/"
+  },
+  {
+    "id": "vectorguest",
+    "name": "VectorGuest",
+    "description": "Hospitality platform with property management tools for accommodation operators.",
+    "icon": "/lovable-uploads/pms-catalog-vectorguest.webp",
+    "categories": [
+      "PMS",
+      "Europe"
+    ],
+    "slug": "vectorguest",
+    "website": "https://vectorguest.com/"
+  },
+  {
+    "id": "vive",
+    "name": "Vive",
+    "description": "Hospitality management software for accommodation booking and operational workflows.",
+    "icon": "/lovable-uploads/pms-catalog-vive.webp",
+    "categories": [
+      "PMS",
+      "Latin America"
+    ],
+    "slug": "vive",
+    "website": "https://vivetechecuador.com/"
+  },
+  {
+    "id": "voyando",
+    "name": "Voyando",
+    "description": "Property management software for holiday accommodation and booking operations.",
+    "icon": "/lovable-uploads/pms-catalog-voyando.webp",
+    "categories": [
+      "PMS",
+      "Europe"
+    ],
+    "slug": "voyando",
+    "website": "https://voyando.com/oplossingen/property-management-software-voor-vakantiehuizen/"
+  },
+  {
+    "id": "wacheckin",
+    "name": "WACheckin",
+    "description": "Accommodation management platform combining reservations, check-in and guest communication tools.",
+    "icon": "/lovable-uploads/pms-catalog-wacheckin.webp",
+    "categories": [
+      "PMS",
+      "Europe"
+    ],
+    "slug": "wacheckin",
+    "website": "https://wacheckin.com/"
+  },
+  {
+    "id": "welasync",
+    "name": "Welasync",
+    "description": "Hospitality management software for accommodation reservations and property operations.",
+    "icon": "/lovable-uploads/pms-catalog-welasync.webp",
+    "categories": [
+      "PMS",
+      "Asia"
+    ],
+    "slug": "welasync",
+    "website": "https://welasync.com/"
+  },
+  {
+    "id": "wowstay",
+    "name": "WowStay",
+    "description": "Property management software for accommodation bookings and daily operations.",
+    "icon": "/lovable-uploads/pms-catalog-wowstay.webp",
+    "categories": [
+      "PMS",
+      "Asia"
+    ],
+    "slug": "wowstay",
+    "website": "https://wowstay.live/"
   }
 ];

@@ -63,8 +63,11 @@ const Integrations = ({ loaderData }: Route.ComponentProps) => {
   const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
   const [viewMode, setViewMode] = useState<"grid" | "list">("grid");
 
-  const matches = (item: { name: string; categories: string[] }) => {
-    const matchesSearch = fold(item.name).includes(fold(searchTerm));
+  const matches = (item: { name: string; aliases?: string[]; categories: string[] }) => {
+    const query = fold(searchTerm.trim());
+    const matchesSearch = [item.name, ...(item.aliases ?? [])].some((name) =>
+      fold(name).includes(query),
+    );
     const matchesCategories =
       selectedCategories.length === 0 || selectedCategories.some((c) => item.categories.includes(c));
     return matchesSearch && matchesCategories;
