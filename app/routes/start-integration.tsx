@@ -6,6 +6,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { CheckCircle, AlertCircle, ArrowRight, ExternalLink } from "lucide-react";
 import type { Route } from "./+types/start-integration";
+import { Link } from "react-router";
 
 export const meta: Route.MetaFunction = ({ location }) =>
   pageMeta(
@@ -32,6 +33,11 @@ const StartIntegration = () => {
               Channex is an API platform designed to help Property Management Systems (PMS) seamlessly connect with multiple Online Travel Agencies (OTAs). Our service simplifies the complexity of OTA integrations, allowing you to focus on building great PMS experiences while we handle the connectivity.
             </p>
           </div>
+
+          <aside className="rounded-lg border border-primary/20 bg-primary/5 p-5 mb-8 font-inter">
+            <p className="font-semibold mb-2">Connecting your first property?</p>
+            <p className="text-muted-foreground leading-relaxed">Before the API steps, read about OTA authorization, what you can automate, certification and going live.{" "}<Link to="/connect-first-property" className="text-primary underline underline-offset-4">Read the first-property guide</Link>.</p>
+          </aside>
 
           {/* Prerequisites */}
           <Card className="mb-8">

@@ -18,6 +18,8 @@ export default [
   route("contact", "routes/contact.tsx"),
   route("pricing", "routes/pricing.tsx"),
   route("start-integration", "routes/start-integration.tsx"),
+  route("connect-first-property", "routes/connect-first-property.tsx"),
+  route("connect-first-property.md", "routes/connect-first-property-md.ts"),
   route("blog", "routes/blog.tsx"),
   route("blog/:slug", "routes/blog.$slug.tsx"),
   route("comparison/siteminder", "routes/comparison.siteminder.tsx"),

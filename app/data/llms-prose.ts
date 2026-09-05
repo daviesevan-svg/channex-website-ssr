@@ -61,7 +61,7 @@ never competes with its partners.
 - Glamping properties
 
 ## OTA Connections (examples)
-Booking.com, Expedia, Airbnb, Vrbo, Hotels.com, Agoda, Trip.com, Hostelworld, and 390+ more`;
+Booking.com, Expedia, Airbnb, Vrbo, Hotels.com, Agoda, Trip.com and Hostelworld are examples. See the integrations directory for all ${OTA_CHANNEL_COUNT} OTA and booking channels; PMS and technology partners are counted separately.`;
 
 export const LLMS_PROSE_REST = `## How it compares to competitors
 - vs SiteMinder: Channex offers white-label B2B partnerships; SiteMinder sells direct to hotels and does not offer white-label
@@ -81,6 +81,7 @@ export const LLMS_PROSE_REST = `## How it compares to competitors
 - Test/Staging Environment: https://staging.channex.io
 
 ## Integration Guide
+First-property overview: https://channex.io/connect-first-property
 Full guide: https://channex.io/start-integration
 
 ### Step 1 — Get Access
@@ -99,7 +100,7 @@ Full guide: https://channex.io/start-integration
 
 ### Step 4 — Receive Bookings
 Two options (both recommended together):
-- **Pull method**: Poll the Booking Revisions Feed API for all properties in one call every 15–20 minutes. Acknowledge each booking after saving.
+- **Pull method**: Poll the Booking Revisions Feed API across all properties. Acknowledge each revision after saving. When using webhooks, also poll this feed every 15–20 minutes as a backup.
 - **Push method (webhooks)**: Channex sends a webhook on new bookings. Pull the booking by ID, save it, and acknowledge. Must use HTTPS and return 200 OK.
 
 ### Certification

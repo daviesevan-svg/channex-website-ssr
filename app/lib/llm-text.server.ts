@@ -179,6 +179,7 @@ export function buildLlmsTxt(baseProse: string): string {
   return `${baseProse.trim()}
 
 ## Machine-Readable Pages (Markdown)
+- [Connect your first property](${SITE_URL}/connect-first-property.md) — PMS readiness, OTA authorization, sandbox, certification and production
 - [Pricing](${SITE_URL}/pricing.md) — full pricing model, volume tiers, FAQ
 - [Integrations directory](${SITE_URL}/integrations.md) — all ${integrations.length} connected channels and PMS systems
 - Blog posts: append \`.md\` to any post URL for a markdown version

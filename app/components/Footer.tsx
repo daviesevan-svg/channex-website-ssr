@@ -44,6 +44,7 @@ const Footer = () => {
           <div className="space-y-4">
             <h3 className="font-semibold text-lg font-inter">Product</h3>
             <ul className="space-y-2 text-slate-400">
+              <li><Link to="/connect-first-property" className="hover:text-white transition-colors font-inter">Connect Your First Property</Link></li>
               <li><a href="https://docs.channex.io/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors font-inter">API Documentation</a></li>
               <li><Link to="/integrations" className="hover:text-white transition-colors font-inter">Integrations</Link></li>
               <li><a href="https://staging.channex.io/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors font-inter">Staging Environment</a></li>
