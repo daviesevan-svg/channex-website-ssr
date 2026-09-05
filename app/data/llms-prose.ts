@@ -1,3 +1,4 @@
+import { AI_BUILD_DESCRIPTION, AI_SKILL_URL, SYNC_DESCRIPTION, CONTENT_ROADMAP, limitations, API_RESPONSE_NOTE, SUPPORT_HOURS, SUPPORT_NOTE } from "@/data/integration-copy";
 // Hand-written prose for /llms.txt. The Pricing Model section that used to
 // live between these two chunks is now generated from app/data/pricing.ts by
 // the llms.txt route so it can never drift from the pricing page.
@@ -42,15 +43,15 @@ never competes with its partners.
 - Channel connections: ${approx(CHANNEL_CONNECTION_COUNT)} live property-to-channel connections
 - OTA connections: ${OTA_CHANNEL_COUNT} OTAs and booking channels (see the integrations directory)
 - Uptime SLA: 99.9%
-- API response time: sub-100ms
+- API response time: sub-100ms. ${API_RESPONSE_NOTE}
 
 ## Core Features
 - White-label branding — PMS partners resell under their own brand
 - REST API with JSON — no XML or CSV mapping required
-- Two-way sync for rates, availability, restrictions, and reservations
+- ${SYNC_DESCRIPTION}
 - Support for hotels, vacation rentals, campgrounds, glamping, and RV parks
 - Transparent per-property pricing
-- Fast integration — typically 2-4 weeks
+- ${AI_BUILD_DESCRIPTION}
 - Test sandbox environment
 - GDPR and PCI DSS compliant
 
@@ -79,6 +80,19 @@ export const LLMS_PROSE_REST = `## How it compares to competitors
 - Contact: https://channex.io/#contact
 - Support Email: support@channex.io
 - Test/Staging Environment: https://staging.channex.io
+
+## Current limitations
+${limitations.map((item) => `- ${item.title}: ${item.description}`).join("\n")}
+
+${CONTENT_ROADMAP}
+
+## Support availability
+${SUPPORT_HOURS}. ${SUPPORT_NOTE}
+
+## AI-assisted integration
+${AI_BUILD_DESCRIPTION}
+Channex integration skill for Claude Code: ${AI_SKILL_URL}
+Other coding agents can use https://channex.io/connect-first-property.md and the API documentation.
 
 ## Integration Guide
 First-property overview: https://channex.io/connect-first-property

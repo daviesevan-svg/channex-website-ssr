@@ -1,3 +1,5 @@
+import IntegrationLimits from "@/components/IntegrationLimits";
+import { AI_BUILD_TITLE, AI_BUILD_DESCRIPTION, SYNC_DESCRIPTION, API_RESPONSE_NOTE } from "@/data/integration-copy";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -75,8 +77,8 @@ const Features = () => {
     {
       icon: Zap,
       title: "Real-Time OTA Connectivity",
-      description: "Certified connections with Booking.com, Expedia, Airbnb, Agoda, and more. Instant updates for availability, rates, and restrictions with automatic reservation import & sync.",
-      highlight: "Instant Updates",
+      description: SYNC_DESCRIPTION,
+      highlight: "API + Webhooks",
       color: "from-amber-500/20 to-amber-600/20"
     },
     {
@@ -160,7 +162,7 @@ const Features = () => {
   ];
 
   const benefits = [
-    { icon: Rocket, title: "Fast Implementation", description: "Get up and running in days, not months" },
+    { icon: Rocket, title: AI_BUILD_TITLE, description: AI_BUILD_DESCRIPTION },
     { icon: TrendingUp, title: "Revenue Growth", description: "Increase bookings through expanded distribution" },
     { icon: CheckCircle, title: "Reduced Complexity", description: "We handle OTA integrations, you focus on PMS" }
   ];
@@ -199,7 +201,7 @@ const Features = () => {
               </div>
               <div className="text-center">
                 <div className="text-4xl font-bold bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">&lt;100ms</div>
-                <div className="text-slate-300 text-sm mt-1">Response Time</div>
+                <div className="text-slate-300 text-sm mt-1">API response</div>
               </div>
               <div className="text-center">
                 <div className="text-4xl font-bold bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">{OTA_CHANNEL_COUNT}+</div>
@@ -209,6 +211,8 @@ const Features = () => {
           </div>
         </div>
       </section>
+
+      <div className="container mx-auto px-4 lg:px-6"><p className="text-sm text-muted-foreground mt-6">{API_RESPONSE_NOTE}</p><IntegrationLimits /></div>
 
       {/* Benefits Section */}
       <section className="py-24 bg-background">

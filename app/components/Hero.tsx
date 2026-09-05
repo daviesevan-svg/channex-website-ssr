@@ -1,3 +1,4 @@
+import { AI_BUILD_TITLE, AI_BUILD_DESCRIPTION } from "@/data/integration-copy";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Code, Zap, Check } from "lucide-react";
 import { Link, useNavigate } from "react-router";
@@ -48,7 +49,7 @@ const Hero = () => {
                 <div className="flex items-center justify-center w-5 h-5 rounded-full bg-primary/20">
                   <Check size={14} className="text-primary" />
                 </div>
-                <span className="text-lg font-inter">2-4 weeks integration time</span>
+                <span className="text-lg font-inter">{AI_BUILD_TITLE}</span>
               </div>
               <div className="flex items-center gap-3 text-foreground">
                 <div className="flex items-center justify-center w-5 h-5 rounded-full bg-primary/20">
@@ -57,6 +58,8 @@ const Hero = () => {
                 <span className="text-lg font-inter">We never sell direct to hotels</span>
               </div>
             </div>
+
+            <p className="text-base text-muted-foreground leading-relaxed">{AI_BUILD_DESCRIPTION}</p>
 
             {/* CTA buttons */}
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
@@ -101,7 +104,8 @@ const Hero = () => {
               </div>
               <div className="text-center lg:text-left">
                 <div className="text-3xl lg:text-4xl font-bold bg-gradient-primary bg-clip-text text-transparent font-inter">&lt;100ms</div>
-                <div className="text-sm text-muted-foreground font-inter mt-1">Response</div>
+                <div className="text-sm text-muted-foreground font-inter mt-1">API response</div>
+                <p className="text-sm text-muted-foreground mt-2">OTA delivery varies</p>
               </div>
             </div>
           </div>

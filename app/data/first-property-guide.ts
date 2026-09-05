@@ -1,9 +1,10 @@
+import { AI_BUILD_DESCRIPTION, AI_SKILL_URL, SYNC_DESCRIPTION, CONTENT_ROADMAP, limitations } from "@/data/integration-copy";
 import { PLATFORM_FEE, HOTEL_BASE_RATE, VR_BASE_RATE } from "@/data/pricing";
 
 // Shared by the server-rendered guide and its Markdown mirror.
 export const guideTitle = "Built a PMS? Connect your first Booking.com or Airbnb property.";
 export const guideDescription = "A practical guide for PMS developers and AI-assisted builders: OTA access, sandbox testing, certification, and your first live property.";
-export const guideIntro = "Your PMS manages the property. Channex connects its availability, rates and reservations to the booking channels. Here is the path from a working PMS to your first live connection, including the steps that need a property owner or the Channex team.";
+export const guideIntro = `${SYNC_DESCRIPTION} ${AI_BUILD_DESCRIPTION} This guide covers the steps that need a property owner or the Channex team.`;
 
 export const guideSections = [
   {
@@ -20,7 +21,7 @@ export const guideSections = [
     paragraphs: [
       "Your PMS integrates with Channex's API; Channex handles the channel connections. Follow the Channex integration path rather than starting a separate direct API integration for each OTA. The property owner still needs to authorize the connection to their OTA account.",
       "For Booking.com, the property requests Channex as its connectivity provider in the extranet, then the rooms and rate plans are mapped in Channex. For Airbnb, follow the Airbnb account authorization and listing mapping guide. Keep the account owner available for these steps.",
-      "This guide follows the connection of existing OTA listings. Creating a property in Channex does not by itself publish a listing on Booking.com or Airbnb. If your product needs listing creation, photos, policies or other content management, confirm the exact channel workflow before building it.",
+      "This guide connects existing OTA listings. Channex cannot currently create OTA listings or update content such as photos, facilities and amenities. Manage those directly in the OTA extranet; see the limitations and roadmap below.",
     ],
     links: [{ label: "Booking.com connection guide", href: "https://docs.channex.io/channel-mapping-guides/booking.com" }, { label: "Airbnb connection guide", href: "https://docs.channex.io/channel-mapping-guides/airbnb" }],
   },
@@ -34,21 +35,27 @@ export const guideSections = [
     links: [{ label: "PMS integration guide", href: "https://docs.channex.io/guides/pms-integration-guide" }, { label: "Embed channel mapping", href: "https://docs.channex.io/api-v.1-documentation/channel-iframe" }, { label: "Messaging API", href: "https://docs.channex.io/api-v.1-documentation/messages-collection" }, { label: "Reviews API", href: "https://docs.channex.io/api-v.1-documentation/reviews-collection" }],
   },
   {
+    id: "limitations", title: "What Channex doesn’t support yet", owner: "Current scope and roadmap",
+    paragraphs: [...limitations.map((item) => `${item.title}: ${item.description}`), CONTENT_ROADMAP],
+    links: [{ label: "Discuss your requirements", href: "/contact" }],
+  },
+  {
     id: "sandbox", title: "4. Prove the flow in staging", owner: "Your developer or coding agent",
     paragraphs: [
+      "For Claude Code, the Channex integration skill linked below provides implementation guidance. Other AI builders can use this guide, its Markdown version and the API documentation. Review and test generated code against the certification scenarios.",
       "Create a free staging account and generate an API key. Begin with the authenticated read below, then follow Start Integration to create your test property, rooms and rates. The staging environment is separate from production.",
       "Send availability separately from rates and restrictions. Batch changes and use a queue that respects the published rate limits. Test new reservations, modifications and cancellations using the documented test accounts or certification alternatives.",
       "For booking delivery, use the Booking Revisions Feed. With webhooks, fetch the specific revision, save it durably in your PMS, then acknowledge that revision. Also poll the feed as a backup every 15–20 minutes. A webhook HTTP response and a booking revision acknowledgement are separate actions.",
       "Make repeated delivery safe: identify bookings and revisions by their IDs so a retry cannot create another reservation or deduct inventory twice. Recalculate availability from the saved reservation state and send the resulting count. Test recovery after an outage as well as the happy path.",
     ],
-    links: [{ label: "Start Integration", href: "/start-integration" }, { label: "API reference", href: "https://docs.channex.io/api-v.1-documentation/api-reference" }, { label: "Booking revisions", href: "https://docs.channex.io/api-v.1-documentation/bookings-collection" }, { label: "Rate limits", href: "https://docs.channex.io/api-v.1-documentation/rate-limits" }],
+    links: [{ label: "Channex integration skill for Claude Code", href: AI_SKILL_URL }, { label: "Start Integration", href: "/start-integration" }, { label: "API reference", href: "https://docs.channex.io/api-v.1-documentation/api-reference" }, { label: "Booking revisions", href: "https://docs.channex.io/api-v.1-documentation/bookings-collection" }, { label: "Rate limits", href: "https://docs.channex.io/api-v.1-documentation/rate-limits" }],
   },
   {
     id: "certification", title: "5. Complete certification", owner: "Your developer and Channex",
     paragraphs: [
       "Production access requires Channex certification. Run the published scenarios through your application, collect the requested task IDs and booking evidence, and submit the certification form linked in the documentation. A live screen-sharing review follows.",
       "The tests cover full sync, incremental updates, restrictions, booking delivery and rate limits. Record any unsupported features in the test notes; the review determines whether the integration is ready. A successful API request alone is not certification.",
-      "Arrange a person who can demonstrate the application and explain its update and recovery logic. Confirm the review schedule and production access steps with the team; the site's typical integration estimate is not a guaranteed approval date.",
+      "Arrange a person who can demonstrate the application and explain its update and recovery logic. Confirm the review schedule and production access steps with the team; building an integration in hours does not guarantee production approval in that time.",
     ],
     links: [{ label: "Certification scenarios and submission", href: "https://docs.channex.io/api-v.1-documentation/pms-certification-tests" }],
   },

@@ -1,3 +1,4 @@
+import { SUPPORT_HOURS, SUPPORT_NOTE } from "@/data/integration-copy";
 import { Button } from "@/components/ui/button";
 import { Mail, MessageSquare, Phone } from "lucide-react";
 import ContactForm from "./ContactForm";
@@ -37,7 +38,7 @@ const Contact = () => {
                 <div className="space-y-1">
                   <h4 className="font-semibold text-foreground font-inter">Email Us</h4>
                   <p className="text-muted-foreground font-inter">hello@channex.io</p>
-                  <p className="text-sm text-muted-foreground font-inter">We'll respond within 24 hours</p>
+                  <p className="text-sm text-muted-foreground font-inter">{SUPPORT_HOURS}</p>
                 </div>
               </div>
 
@@ -47,8 +48,8 @@ const Contact = () => {
                 </div>
                 <div className="space-y-1">
                   <h4 className="font-semibold text-foreground font-inter">Live Chat</h4>
-                  <p className="text-muted-foreground font-inter">Available 24/7</p>
-                  <p className="text-sm text-muted-foreground font-inter">Fast technical support</p>
+                  <p className="text-muted-foreground font-inter">{SUPPORT_HOURS}</p>
+                  <p className="text-sm text-muted-foreground font-inter">{SUPPORT_NOTE}</p>
                 </div>
               </div>
 

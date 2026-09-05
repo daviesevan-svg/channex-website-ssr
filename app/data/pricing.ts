@@ -1,3 +1,4 @@
+import { AI_BUILD_DESCRIPTION } from "@/data/integration-copy";
 // Single source of truth for pricing facts. Rendered by the /pricing page,
 // the /pricing-calculator, the /pricing.md markdown mirror, and /llms.txt —
 // change numbers here and every surface stays in sync.
@@ -80,7 +81,7 @@ export const channels = [
  *  platform fee makes no sense for a single property. */
 export const goodFit = [
   "You build the software a property runs on — a commercial PMS, booking engine, or your own in-house system",
-  "You have developers who can integrate a REST API and pass certification (typically 2–4 weeks)",
+  AI_BUILD_DESCRIPTION,
   "You're connecting a portfolio, not a single property — the platform fee is flat, so cost per property falls as you grow",
 ];
 
