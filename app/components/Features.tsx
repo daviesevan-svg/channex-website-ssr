@@ -1,3 +1,4 @@
+import { AI_BUILD_TITLE, AI_BUILD_DESCRIPTION, AI_SKILL_URL } from "@/data/integration-copy";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { OTA_CHANNEL_COUNT } from "@/data/counts";
@@ -18,15 +19,15 @@ const Features = () => {
     {
       icon: Code2,
       title: "Modern REST API",
-      description: "JSON-based REST API with webhooks. No CSV mapping or XML files. Full documentation and test sandbox included.",
+      description: "Send availability, rates and restrictions; receive reservations, modifications and cancellations. REST API, webhooks and a test sandbox included.",
       highlight: "REST + Webhooks",
       gradient: "from-blue-500 to-cyan-500"
     },
     {
       icon: Zap,
-      title: "Fast Integration",
-      description: "Most teams go live in 2-4 weeks. Sub-100ms response times with 99.9% uptime SLA.",
-      highlight: "2-4 weeks",
+      title: AI_BUILD_TITLE,
+      description: AI_BUILD_DESCRIPTION,
+      highlight: "AI-assisted",
       gradient: "from-purple-500 to-pink-500"
     },
     {
@@ -138,6 +139,7 @@ const Features = () => {
               <p className="text-slate-300 font-inter leading-relaxed text-lg">
                 Create a free staging account, generate an API key, and run your first request. This example lists the Channex properties your key can access.
               </p>
+              <a href={AI_SKILL_URL} className="inline-block text-white underline underline-offset-4">Channex integration skill for Claude Code</a>
               <div className="flex flex-col sm:flex-row gap-4">
                 <a href="https://docs.channex.io/api-v.1-documentation/api-reference" target="_blank" rel="noopener noreferrer">
                   <Button className="bg-gradient-primary hover:shadow-primary transition-all duration-300 font-inter w-full sm:w-auto">

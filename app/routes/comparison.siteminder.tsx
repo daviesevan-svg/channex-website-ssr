@@ -1,3 +1,4 @@
+import { API_RESPONSE_NOTE } from "@/data/integration-copy";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -85,7 +86,7 @@ const ComparisonSiteMinder = () => {
     },
     {
       category: "Response Time",
-      channex: "Sub-100ms response times for real-time sync",
+      channex: "Sub-100ms Channex API responses; OTA delivery varies",
       siteminder: "Instant updates (specific timing not published)",
       channexWins: true
     },
@@ -271,8 +272,8 @@ const ComparisonSiteMinder = () => {
                   <div className="flex items-start gap-3">
                     <Check className="text-primary mt-1 flex-shrink-0" size={20} />
                     <div>
-                      <p className="font-semibold text-foreground">Sub-100ms Response Times</p>
-                      <p className="text-sm text-muted-foreground">Real-time OTA synchronization</p>
+                      <p className="font-semibold text-foreground">Sub-100ms API Response Times</p>
+                      <p className="text-sm text-muted-foreground">{API_RESPONSE_NOTE}</p>
                     </div>
                   </div>
                 </div>

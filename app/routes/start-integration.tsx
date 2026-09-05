@@ -1,3 +1,5 @@
+import IntegrationLimits from "@/components/IntegrationLimits";
+import { AI_BUILD_DESCRIPTION, AI_SKILL_URL } from "@/data/integration-copy";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { pageMeta } from "@/lib/seo";
@@ -38,6 +40,10 @@ const StartIntegration = () => {
             <p className="font-semibold mb-2">Connecting your first property?</p>
             <p className="text-muted-foreground leading-relaxed">Before the API steps, read about OTA authorization, what you can automate, certification and going live.{" "}<Link to="/connect-first-property" className="text-primary underline underline-offset-4">Read the first-property guide</Link>.</p>
           </aside>
+
+          <p className="text-muted-foreground leading-relaxed mb-4">{AI_BUILD_DESCRIPTION}</p>
+          <a href={AI_SKILL_URL} className="inline-block mb-4 text-primary underline underline-offset-4">Use the Channex integration skill for Claude Code</a>
+          <IntegrationLimits />
 
           {/* Prerequisites */}
           <Card className="mb-8">

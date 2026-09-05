@@ -1,3 +1,4 @@
+import { SYNC_DESCRIPTION } from "@/data/integration-copy";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { pageMeta } from "@/lib/seo";
@@ -139,7 +140,7 @@ const Pricing = () => {
                     <h3 className="text-xl font-bold text-foreground font-inter">Channel Manager</h3>
                   </div>
                   <p className="text-sm text-muted-foreground font-inter">
-                    Rates, availability, restrictions and reservations — two-way
+                    {SYNC_DESCRIPTION}
                   </p>
                 </CardHeader>
                 <CardContent className="space-y-4">
