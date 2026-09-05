@@ -78,6 +78,7 @@ export interface ChannelRow {
 export interface PartnerRow {
   id: string;
   name: string;
+  aliases?: string[];
   categories: string[];
   logo: string | null;
 }
@@ -112,7 +113,13 @@ export function integrationsIndex(): IntegrationsIndex {
 
   const partners: PartnerRow[] = integrations
     .filter((i) => !hasDetailPage(i))
-    .map((i) => ({ id: i.id, name: i.name, categories: i.categories, logo: i.icon || null }))
+    .map((i) => ({
+      id: i.id,
+      name: i.name,
+      ...(i.aliases?.length ? { aliases: i.aliases } : {}),
+      categories: i.categories,
+      logo: i.icon || null,
+    }))
     .sort(byName);
 
   const categoryCounts: Record<string, number> = {};
