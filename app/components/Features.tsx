@@ -136,10 +136,10 @@ const Features = () => {
                 Start integrating in minutes
               </h3>
               <p className="text-slate-300 font-inter leading-relaxed text-lg">
-                Our REST API is designed for developers, by developers. Clean endpoints, comprehensive docs, and a test sandbox to get you started quickly.
+                Create a free staging account, generate an API key, and run your first request. This example lists the Channex properties your key can access.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <a href="https://docs.channex.io/" target="_blank" rel="noopener noreferrer">
+                <a href="https://docs.channex.io/api-v.1-documentation/api-reference" target="_blank" rel="noopener noreferrer">
                   <Button className="bg-gradient-primary hover:shadow-primary transition-all duration-300 font-inter w-full sm:w-auto">
                     View Documentation
                     <ArrowRight size={16} className="ml-2" />
@@ -153,30 +153,24 @@ const Features = () => {
               </div>
             </div>
             
-            <div className="bg-slate-950 rounded-xl p-6 overflow-hidden border border-slate-700">
+            <div className="min-w-0 bg-slate-950 rounded-xl p-6 overflow-hidden border border-slate-700">
               <div className="flex items-center gap-2 mb-4">
                 <div className="w-3 h-3 bg-red-500 rounded-full"></div>
                 <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
                 <div className="w-3 h-3 bg-green-500 rounded-full"></div>
-                <span className="text-slate-400 text-sm ml-2 font-mono">api.channex.io</span>
+                <span className="text-slate-400 text-sm ml-2 font-mono">staging.channex.io</span>
               </div>
-              <pre className="text-sm text-slate-300 font-mono overflow-x-auto">
-{`POST /v1/properties
-{
-  "property": {
-    "title": "Luxury Hotel Downtown",
-    "currency": "USD",
-    "timezone": "UTC"
-  }
-}
-
-// Response
-{
-  "id": "prop_123abc",
-  "status": "active",
-  "channels": ["booking", "expedia"]
-}`}
+              <pre className="text-sm text-slate-300 font-mono overflow-x-auto" tabIndex={0} aria-label="List staging properties using curl">
+                <code>{`# Set CHANNEX_API_KEY to your staging API key.
+# Run in your terminal or server environment.
+curl --fail-with-body \\
+  'https://staging.channex.io/api/v1/properties/' \\
+  --header "user-api-key: $CHANNEX_API_KEY" \\
+  --header 'Accept: application/json'`}</code>
               </pre>
+              <p className="text-sm text-slate-400 mt-5 leading-relaxed">
+                Returns JSON containing property records and pagination metadata. A new account with no properties returns an empty list. This request reads properties; it does not create OTA listings or connect channels.
+              </p>
             </div>
           </div>
         </div>
