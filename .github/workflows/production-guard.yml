@@ -1,17 +1,25 @@
-# Watches the deployed site from outside it.
+# Guards the contact-form spam defence, from outside the Worker that hosts it.
 #
 # On 2026-09-05 `main` was six weeks behind `ssr-migration` and still
 # deployable: merging three doc PRs into it shipped a 27 July snapshot to
-# production, silently removing the contact-form spam defence, Turnstile and
-# the daily quarantine digest. Spam reached the sales inbox within hours.
+# production, silently removing the spam classifier, Turnstile and the daily
+# quarantine digest. Spam reached the sales inbox within hours.
 #
-# The digest was supposed to be the alarm for exactly that, but it runs inside
-# the Worker — so a deploy that drops the Worker code drops the alarm with it,
-# and the failure is silent. This check runs in GitHub Actions instead, which
-# is why it survives a bad deploy. A failed run emails the repo owner.
+# The digest was built to be the alarm for exactly that, but it runs inside the
+# Worker — so the deploy that dropped Turnstile dropped the alarm with it, and
+# the failure was silent. These checks run in Actions instead, which is why
+# they survive a bad deploy. A failed run emails the repo owner.
+#
+# Two layers, deliberately:
+#   before merge  — defence-intact, on the PR's MERGE RESULT. A stale base is
+#                   red on the PR, so the bad tree never reaches production.
+#   after deploy  — turnstile-live, against channex.io itself. Catches anything
+#                   that gets past review, or breaks outside the repo (a wiped
+#                   secret, a bad rollback from the dashboard).
 name: Production guard
 
 on:
+  pull_request:
   schedule:
     - cron: "20 7 * * *" # shortly after the Worker's own 07:00 UTC digest
   push:
@@ -19,8 +27,24 @@ on:
   workflow_dispatch:
 
 jobs:
+  defence-intact:
+    name: Spam defence is present in the code
+    runs-on: ubuntu-latest
+    steps:
+      # On a pull_request this checks out the merge commit, so what is verified
+      # is the tree that merging would actually produce — which is what makes a
+      # stale base visible here rather than in production.
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Classifier, Turnstile and digest are wired up
+        run: node scripts/check-spam-defence.mjs
+
   turnstile-live:
     name: Spam defence is live on channex.io
+    # Pointless on a PR: this checks production, which the PR has not changed.
+    if: github.event_name != 'pull_request'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -34,18 +58,20 @@ jobs:
       - name: Turnstile site key is being served
         run: node scripts/check-turnstile.mjs https://channex.io
 
-  branches-aligned:
-    name: No stale deployable branch
+  single-branch:
+    name: No second deployable branch
+    if: github.event_name != 'pull_request'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-      # Cloudflare Workers Builds builds this repo's branches, so any branch
-      # that lags main is a production rollback waiting to be merged into.
-      # Keep one deployable branch, or keep them identical.
-      - name: ssr-migration must not lag main
+      # Cloudflare Workers Builds builds every branch in this repo, not just
+      # the production one — verified against the merged codex/* branches. The
+      # repo was consolidated to a single branch on 2026-09-05; a long-lived
+      # branch reappearing behind main is the rollback trap re-forming.
+      - name: ssr-migration must not come back stale
         run: |
           set -euo pipefail
           if ! git show-ref --verify --quiet refs/remotes/origin/ssr-migration; then
@@ -56,8 +82,7 @@ jobs:
           ahead=$(git rev-list --count origin/main..origin/ssr-migration)
           echo "ssr-migration is $behind behind and $ahead ahead of main."
           if [ "$behind" -ne 0 ] || [ "$ahead" -ne 0 ]; then
-            echo "::error::ssr-migration has diverged from main. Deploying either branch"
-            echo "::error::now ships a different site. Fast-forward it, or delete it and"
-            echo "::error::set the Cloudflare production branch to main."
+            echo "::error::ssr-migration is back and has diverged from main."
+            echo "::error::Deploying either branch now ships a different site."
             exit 1
           fi
