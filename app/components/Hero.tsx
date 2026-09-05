@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Code, Zap, Check } from "lucide-react";
-import { useNavigate } from "react-router";
+import { Link, useNavigate } from "react-router";
 import { CHANNEL_CONNECTION_COUNT, OTA_CHANNEL_COUNT, approx } from "@/data/counts";
 const heroImage = "/channex-og-image.png";
 
@@ -81,6 +81,11 @@ const Hero = () => {
                 </a>
               </Button>
             </div>
+
+            <p className="text-base text-muted-foreground">
+              Already built a PMS?{" "}
+              <Link to="/connect-first-property" className="text-primary underline underline-offset-4 hover:no-underline">Connect your first Booking.com or Airbnb property</Link>.
+            </p>
 
             {/* Stats */}
             <div className="grid grid-cols-3 gap-6 pt-8 border-t border-border/50">
