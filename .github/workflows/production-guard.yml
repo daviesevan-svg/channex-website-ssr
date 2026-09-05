@@ -1,0 +1,63 @@
+# Watches the deployed site from outside it.
+#
+# On 2026-09-05 `main` was six weeks behind `ssr-migration` and still
+# deployable: merging three doc PRs into it shipped a 27 July snapshot to
+# production, silently removing the contact-form spam defence, Turnstile and
+# the daily quarantine digest. Spam reached the sales inbox within hours.
+#
+# The digest was supposed to be the alarm for exactly that, but it runs inside
+# the Worker — so a deploy that drops the Worker code drops the alarm with it,
+# and the failure is silent. This check runs in GitHub Actions instead, which
+# is why it survives a bad deploy. A failed run emails the repo owner.
+name: Production guard
+
+on:
+  schedule:
+    - cron: "20 7 * * *" # shortly after the Worker's own 07:00 UTC digest
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  turnstile-live:
+    name: Spam defence is live on channex.io
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      # Exits non-zero when TURNSTILE_SITE_KEY is absent from the served HTML,
+      # which is true both when the key is unset and when the deployed build
+      # has no Turnstile code at all — the case that actually bit us.
+      - name: Turnstile site key is being served
+        run: node scripts/check-turnstile.mjs https://channex.io
+
+  branches-aligned:
+    name: No stale deployable branch
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      # Cloudflare Workers Builds builds this repo's branches, so any branch
+      # that lags main is a production rollback waiting to be merged into.
+      # Keep one deployable branch, or keep them identical.
+      - name: ssr-migration must not lag main
+        run: |
+          set -euo pipefail
+          if ! git show-ref --verify --quiet refs/remotes/origin/ssr-migration; then
+            echo "ssr-migration is gone — nothing can lag main. OK."
+            exit 0
+          fi
+          behind=$(git rev-list --count origin/ssr-migration..origin/main)
+          ahead=$(git rev-list --count origin/main..origin/ssr-migration)
+          echo "ssr-migration is $behind behind and $ahead ahead of main."
+          if [ "$behind" -ne 0 ] || [ "$ahead" -ne 0 ]; then
+            echo "::error::ssr-migration has diverged from main. Deploying either branch"
+            echo "::error::now ships a different site. Fast-forward it, or delete it and"
+            echo "::error::set the Cloudflare production branch to main."
+            exit 1
+          fi
