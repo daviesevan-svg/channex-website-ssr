@@ -4,91 +4,97 @@ const AcceptableUsePolicy = () => {
       <h2 className="text-3xl font-bold text-foreground font-inter">
         Acceptable Use Policy
       </h2>
-      
+      <p className="text-sm text-muted-foreground font-inter italic">
+        Effective from: 17 August 2026
+      </p>
+
       <div className="space-y-6 text-muted-foreground font-inter leading-relaxed">
         <div>
           <p>
-            Here at Channex, our goal is to help you and your team do the best work of your lives, every day. To do this, we need to keep our products and services running smoothly, quickly, and without distraction. For this to happen, we need help from you, our users. We need you not to misuse or abuse our products and services.
+            Channex moves live availability, rates and bookings between accommodation providers and the channels they sell on. When the platform is misused, the damage lands on other people — a property whose rooms are oversold, a guest charged for a stay that does not exist, a channel that suspends a connection everyone depends on. This policy sets out what we do not allow.
           </p>
           <p className="mt-4">
-            To describe exactly what we mean by "misuse" or "abuse" – and help us identify such transgressions, and react accordingly – we've created this Acceptable Use Policy. Under this policy, we reserve the right to remove content that is inconsistent with the spirit of the guidelines, even if it's something that is not forbidden by the letter of the policy. In other words, if you do something that isn't listed here verbatim, but it looks or smells like something listed here, we may still remove it.
+            It applies to everyone using the Services, and it forms part of the Customer Agreement. "Services" means the Channex platform and APIs, and the websites we operate, including channex.io and its subdomains. "Content" means any data, text, code, images or other material you submit to, or transmit through, the Services.
           </p>
           <p className="mt-4">
-            You'll see the word "services" a lot throughout this page. That refers to all websites owned or operated by Channex (such as Channex.io, and any related websites, sub-domains and pages) as well as any hosted services operated by Channex.
+            We apply this policy to the substance of what you do, not only to the wording below. If something is not listed here but is clearly of the same kind, we may still act on it.
           </p>
+        </div>
+
+        <div>
+          <h3 className="text-xl font-semibold text-foreground mb-4">Inventory, rates and bookings</h3>
+          <p className="mb-3">These matter most, because they affect guests and channels directly.</p>
+          <ul className="list-disc pl-6 space-y-2">
+            <li>Listing, connecting or managing a property you do not own or are not authorised to act for</li>
+            <li>Publishing availability you do not have, or rates you do not intend to honour</li>
+            <li>Using the Services to take bookings you know you cannot fulfil</li>
+            <li>Misrepresenting a property, its location, its facilities or its licensing status on a connected channel</li>
+            <li>Using the Services in a way that breaches your own agreement with a connected channel, or that is designed to circumvent that channel's rules on rates, parity, cancellation or content</li>
+            <li>Submitting deliberately false or manipulated booking, cancellation or modification data</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 className="text-xl font-semibold text-foreground mb-4">Disruption and system integrity</h3>
+          <ul className="list-disc pl-6 space-y-2">
+            <li>Probing, scanning or testing the vulnerability of any system or network hosting the Services, unless we have agreed to it in writing in advance</li>
+            <li>Tampering with, reverse engineering or attacking the Services, circumventing any security or authentication measure, or attempting to gain unauthorised access to the Services, related systems, networks or data</li>
+            <li>Modifying, disabling or otherwise compromising the integrity or performance of the Services</li>
+            <li>Intercepting or deciphering transmissions to or from the servers running the Services</li>
+            <li>Placing an unreasonable load on our infrastructure — including exceeding documented API rate limits, polling far more often than the documentation provides for, or running automated processes that consume disproportionate resources</li>
+            <li>Sharing user credentials, or accessing the Services through an account that was not issued to you</li>
+            <li>Accessing the Services by any means other than our published interfaces and APIs, including scraping</li>
+          </ul>
           <p className="mt-4">
-            Use your judgment, and let's be kind to each other so we can keep creating great things. You can find all the legal fine print at the bottom of this page.
+            If you believe you have found a security vulnerability, please report it to support@channex.io. We will not pursue a good-faith researcher who reports a genuine issue promptly and does not access or alter other customers' data.
           </p>
         </div>
 
         <div>
-          <h3 className="text-xl font-semibold text-foreground mb-4">Here's what we won't allow:</h3>
-        </div>
-
-        <div>
-          <h4 className="text-lg font-semibold text-foreground mb-3">Disruption</h4>
+          <h3 className="text-xl font-semibold text-foreground mb-4">Wrongful activity</h3>
           <ul className="list-disc pl-6 space-y-2">
-            <li>Compromising the integrity of our systems. This could include probing, scanning, or testing the vulnerability of any system or network that hosts our services.</li>
-            <li>Tampering with, reverse-engineering, or hacking our services, circumventing any security or authentication measures, or attempting to gain unauthorised access to the services, related systems, networks, or data</li>
-            <li>Modifying, disabling, or compromising the integrity or performance of the services or related systems, network or data</li>
-            <li>Deciphering any transmissions to or from the servers running the services</li>
-            <li>Overwhelming or attempting to overwhelm our infrastructure by imposing an unreasonably large load on our systems that consume extraordinary resources (CPUs, memory, disk space, bandwidth, etc.), such as:
-              <ul className="list-disc pl-6 space-y-1 mt-2">
-                <li>Using "robots," "spiders," "offline readers," or other automated systems to sends more request messages to our servers than a human could reasonably send in the same period of time by using a normal browser</li>
-                <li>Going far beyond the use parameters for any given service as described in its corresponding documentation</li>
-                <li>Consuming an unreasonable amount of storage for music, videos, pornography, etc., in a way that's unrelated to the purposes for which the services were designed</li>
-              </ul>
-            </li>
+            <li>Using the Services for any unlawful purpose, or in breach of any applicable law — including data protection, consumer, tax, export control and local accommodation licensing laws</li>
+            <li>Misrepresenting who you are, or disguising the origin of Content — including spoofing, phishing, manipulating headers or identifiers, impersonating another person or business, or falsely implying a relationship with Channex</li>
+            <li>Using the Services to violate someone's privacy — publishing other people's private or confidential information without permission, or harvesting personal information from the Services</li>
+            <li>Using the Services to stalk, harass or threaten anyone</li>
+            <li>Reselling, sublicensing or providing access to the Services to a third party without a signed agreement permitting it (see Section 14 of the Customer Agreement)</li>
           </ul>
         </div>
 
         <div>
-          <h4 className="text-lg font-semibold text-foreground mb-3">Wrongful activities</h4>
+          <h3 className="text-xl font-semibold text-foreground mb-4">Messaging and guest communications</h3>
           <ul className="list-disc pl-6 space-y-2">
-            <li>Misrepresentation of yourself, or disguising the origin of any content (including by "spoofing", "phishing", manipulating headers or other identifiers, impersonating anyone else, or falsely implying any sponsorship or association with Channex or any third party)</li>
-            <li>Using the services to violate the privacy of others, including publishing or posting other people's private and confidential information without their express permission, or collecting or gathering other people's personal information (including account names or information) from our services</li>
-            <li>Using our services to stalk, harass, or post direct, specific threats of violence against others</li>
-            <li>Using the Services for any illegal purpose, or in violation of any laws (including without limitation data, privacy, and export control laws)</li>
-            <li>Accessing or searching any part of the services by any means other than our publicly supported interfaces (for example, "scraping")</li>
-            <li>Using meta tags or any other "hidden text" including Channex's or our suppliers' product names or trademarks</li>
+            <li>Sending unsolicited communications, advertising or spam through the Services. We take a zero tolerance approach to this — see Section 6.2 of the Customer Agreement</li>
+            <li>Messaging guests for any purpose other than servicing their booking, unless you have their consent and a lawful basis to do so</li>
+            <li>Sending messages that do not comply with applicable marketing, consumer and travel regulations</li>
           </ul>
+          <p className="mt-4">
+            If you provide the Services to your own clients, your terms with them must prohibit the same conduct.
+          </p>
         </div>
 
         <div>
-          <h4 className="text-lg font-semibold text-foreground mb-3">Inappropriate communications</h4>
+          <h3 className="text-xl font-semibold text-foreground mb-4">Content</h3>
+          <p className="mb-3">Do not submit or transmit Content that:</p>
           <ul className="list-disc pl-6 space-y-2">
-            <li>Using the services to generate or send unsolicited communications, advertising, chain letters, or spam</li>
-            <li>Soliciting our users for commercial purposes, unless expressly permitted by Channex</li>
-            <li>Disparaging Channex or our partners, vendors, or affiliates</li>
-            <li>Promoting or advertising products or services other than your own without appropriate authorisation</li>
+            <li>infringes anyone's intellectual property or other rights, or that you do not have the right to submit</li>
+            <li>is deceptive, fraudulent, defamatory, obscene, threatening or harassing</li>
+            <li>is pornographic or sexually explicit. The transmission of adult content through the Services is prohibited</li>
+            <li>attacks or demeans people on the basis of race, ethnicity, national origin, religion, sex, gender, sexual orientation, disability or medical condition</li>
+            <li>contains viruses, worms, scripting exploits or similar harmful material</li>
           </ul>
-        </div>
-
-        <div>
-          <h4 className="text-lg font-semibold text-foreground mb-3">Inappropriate content</h4>
-          <p>Posting, uploading, sharing, submitting, or otherwise providing content that:</p>
-          <ul className="list-disc pl-6 space-y-2 mt-2">
-            <li>Infringes Channex's or a third party's intellectual property or other rights, including any copyright, trademark, patent, trade secret, moral rights, privacy rights of publicity, or any other intellectual property right or proprietary or contractual right</li>
-            <li>You don't have the right to submit</li>
-            <li>Is deceptive, fraudulent, illegal, obscene, defamatory, libelous, threatening, harmful to minors, pornographic (including child pornography, which we will remove and report to law enforcement, including the National Center for Missing and Exploited Children), indecent, harassing, hateful</li>
-            <li>Encourages illegal or tortious conduct or that is otherwise inappropriate</li>
-            <li>Attacks others based on their race, ethnicity, national origin, religion, sex, gender, sexual orientation, disability, or medical condition</li>
-            <li>Contains viruses, bots, worms, scripting exploits, or other similar materials</li>
-            <li>Is intended to be inflammatory</li>
-            <li>Could otherwise cause damage to Channex or any third party</li>
-          </ul>
-        </div>
-
-        <div className="bg-muted/50 p-6 rounded-lg">
-          <p>
-            In this Acceptable Use Policy, the term "content" means: (1) any information, data, text, software, code, scripts, music, sound, photos, graphics, videos, messages, tags, interactive features, or other materials that you post, upload, share, submit, or otherwise provide in any manner to the services and (2) any other materials, content, or data you provide to Channex or use with the Services.
+          <p className="mt-4">
+            Child sexual abuse material will be removed and reported to law enforcement and to the appropriate authority — in the United Kingdom, the Internet Watch Foundation, and elsewhere the equivalent body, including the National Center for Missing and Exploited Children in the United States.
           </p>
         </div>
 
         <div className="bg-destructive/10 border border-destructive/20 p-6 rounded-lg">
           <p className="font-semibold text-destructive mb-2">Enforcement</p>
           <p>
-            Without affecting any other remedies available to us, Channex may permanently or temporarily terminate or suspend a user's account or access to the services without notice or liability if Channex (in its sole discretion) determines that a user has violated this Acceptable Use Policy.
+            Where we believe this policy has been breached, we will normally tell you and give you a reasonable opportunity to put it right. Where the breach is urgent — for example where it threatens the security of the Services, exposes guests to harm, or puts a channel connection at risk for other customers — we may suspend access immediately and tell you promptly afterwards. Suspension and termination are governed by Sections 12 and 13 of the Customer Agreement, and this does not affect any other remedy available to us.
+          </p>
+          <p className="mt-3">
+            To report a suspected breach of this policy, email support@channex.io.
           </p>
         </div>
       </div>

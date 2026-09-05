@@ -3,7 +3,14 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Code, Zap, Check } from "lucide-react";
 import { Link, useNavigate } from "react-router";
 import { CHANNEL_CONNECTION_COUNT, OTA_CHANNEL_COUNT, approx } from "@/data/counts";
-const heroImage = "/channex-og-image.png";
+// A dedicated hero asset. This used to point at /channex-og-image.png — the
+// social-share image — which meant every visitor downloaded a 508 kB PNG sized
+// for Twitter cards to fill a ~600px slot. Worse, React 19 emits a
+// `<link rel="preload" as="image">` for it, so phones fetched all 508 kB at high
+// priority for an image `lg:block hidden` never shows them. The srcset gives
+// them the 20 kB candidate instead.
+const HERO_IMAGE = "/hero-dashboard.webp";
+const HERO_IMAGE_SMALL = "/hero-dashboard-600.webp";
 
 const Hero = () => {
   const navigate = useNavigate();
@@ -90,20 +97,25 @@ const Hero = () => {
               <Link to="/connect-first-property" className="text-primary underline underline-offset-4 hover:no-underline">Connect your first Booking.com or Airbnb property</Link>.
             </p>
 
-            {/* Stats */}
-            <div className="grid grid-cols-3 gap-6 pt-8 border-t border-border/50">
+            {/* Stats.
+                Three columns of a 390px screen are ~103px wide, where the 30px
+                figures didn't fit: "100,000+" needed 143px and "<100ms" 118, so
+                both rendered clipped — the headline number read "100,00", which
+                is worse than not showing it. Smaller type below `sm` only; the
+                desktop sizes are untouched. */}
+            <div className="grid grid-cols-3 gap-4 sm:gap-6 pt-8 border-t border-border/50">
               <div className="text-center lg:text-left">
-                <div className="text-3xl lg:text-4xl font-bold bg-gradient-primary bg-clip-text text-transparent font-inter">
+                <div className="text-xl sm:text-3xl lg:text-4xl font-bold bg-gradient-primary bg-clip-text text-transparent font-inter">
                   {approx(CHANNEL_CONNECTION_COUNT)}
                 </div>
                 <div className="text-sm text-muted-foreground font-inter mt-1">Channel connections</div>
               </div>
               <div className="text-center lg:text-left">
-                <div className="text-3xl lg:text-4xl font-bold bg-gradient-primary bg-clip-text text-transparent font-inter">99.9%</div>
+                <div className="text-xl sm:text-3xl lg:text-4xl font-bold bg-gradient-primary bg-clip-text text-transparent font-inter">99.9%</div>
                 <div className="text-sm text-muted-foreground font-inter mt-1">Uptime</div>
               </div>
               <div className="text-center lg:text-left">
-                <div className="text-3xl lg:text-4xl font-bold bg-gradient-primary bg-clip-text text-transparent font-inter">&lt;100ms</div>
+                <div className="text-xl sm:text-3xl lg:text-4xl font-bold bg-gradient-primary bg-clip-text text-transparent font-inter">&lt;100ms</div>
                 <div className="text-sm text-muted-foreground font-inter mt-1">API response</div>
                 <p className="text-sm text-muted-foreground mt-2">OTA delivery varies</p>
               </div>
@@ -113,9 +125,18 @@ const Hero = () => {
           {/* Right content - Dashboard image */}
           <div className="relative animate-scale-in lg:block hidden" style={{ animationDelay: "0.3s" }}>
             <div className="relative">
-              <img 
-                src={heroImage} 
-                alt="Channex Dashboard Interface" 
+              {/* Largest element in the desktop viewport, so it's the LCP
+                  candidate: eager and high priority. width/height reserve the
+                  aspect ratio so nothing shifts when it decodes. */}
+              <img
+                src={HERO_IMAGE}
+                srcSet={`${HERO_IMAGE_SMALL} 600w, ${HERO_IMAGE} 1200w`}
+                sizes="(min-width: 1024px) 45vw, 600px"
+                width={1200}
+                height={754}
+                alt="Channex Dashboard Interface"
+                fetchPriority="high"
+                decoding="async"
                 className="w-full h-auto rounded-2xl shadow-elegant"
               />
               <div className="absolute inset-0 bg-gradient-primary/5 rounded-2xl"></div>

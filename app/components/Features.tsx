@@ -33,7 +33,7 @@ const Features = () => {
     {
       icon: DollarSign,
       title: "Transparent Pricing",
-      description: "WhiteLabel plan from $130/month plus $7 per hotel or $0.50 per vacation rental unit. No hidden fees, no per-room charges, no setup costs.",
+      description: "WhiteLabel plan from $130/month plus $7 per hotel or $0.50 per vacation rental unit. No commission, no setup costs, and every chargeable extra published on the pricing page.",
       highlight: "From $130/mo",
       gradient: "from-green-500 to-emerald-500"
     },

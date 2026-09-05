@@ -5,7 +5,7 @@ export const integrations: Integration[] = [
     id: "agoda", 
     name: "Agoda",
     description: "One of Asia's leading OTAs with a strong presence in Southeast Asia and global reach. Agoda offers competitive rates and extensive inventory for leisure and business travelers.",
-    icon: "/lovable-uploads/agoda-logo.jpg",
+    icon: "/lovable-uploads/agoda-logo.webp",
     categories: ["OTA", "Global", "Asia"],
     slug: "agoda",
     longDescription: "Agoda is a premier online travel agency that connects travelers with accommodations worldwide, with a particular strength in the Asian market. As part of Booking Holdings Inc., Agoda provides a platform for hotels, vacation rentals, and unique stays to reach millions of travelers globally. Known for its competitive pricing, extensive inventory, and user-friendly booking experience, Agoda is an essential channel for properties looking to expand their reach in Asia and beyond.",
@@ -461,7 +461,7 @@ export const integrations: Integration[] = [
     slug: "pricetravel",
     name: "PriceTravel",
     description: "Reach travelers across Latin America. Ideal for properties targeting regional tourists and travel agencies.",
-    icon: "/lovable-uploads/pricetravel-logo.jpg",
+    icon: "/lovable-uploads/pricetravel-logo.webp",
     categories: ["Regional", "OTA", "Latin America"],
     website: "https://www.pricetravel.com/",
   },
@@ -479,15 +479,16 @@ export const integrations: Integration[] = [
     slug: "szallas",
     name: "Szallas",
     description: "Connect with Hungary's leading travel platform. Ideal for properties targeting travelers in Central and Eastern Europe.",
-    icon: "",
-    categories: ["Regional", "Europe", "OTA"]
+    icon: "/images/integrations/ota-szallas.svg",
+    categories: ["Regional", "Europe", "OTA"],
+    website: "https://szallas.hu"
   },
   {
     id: "11",
     slug: "roombeast",
     name: "Roombeast",
     description: "Ideal for properties aiming to simplify operations and boost visibility in the Latam market.",
-    icon: "",
+    icon: "/images/integrations/ota-roombeast.webp",
     categories: ["Regional", "Latin America", "OTA"],
     website: "https://roombeast.com/",
   },
@@ -573,7 +574,7 @@ export const integrations: Integration[] = [
     id: "13",
     name: "Airbnb",
     description: "Sync your PMS with Airbnb to manage bookings, rates, and availability effortlessly. Perfect for short-term rentals and unique stays.",
-    icon: "/lovable-uploads/airbnb-logo.png",
+    icon: "/lovable-uploads/airbnb-logo.webp",
     categories: ["Global", "Vacation Rentals", "OTA"],
     slug: "airbnb",
     longDescription: "Airbnb is the world's leading marketplace for unique stays and experiences. Our seamless integration allows property managers to effortlessly synchronize their listings, manage bookings, and optimize pricing across this global platform that connects millions of hosts with travelers seeking authentic accommodations.",
@@ -646,7 +647,7 @@ export const integrations: Integration[] = [
     slug: "hotelbeds",
     name: "Hotelbeds",
     description: "Link your PMS with Hotelbeds to access a global B2B travel network. Perfect for properties seeking partnerships with travel agents and tour operators.",
-    icon: "/lovable-uploads/hotelbeds-logo.png",
+    icon: "/lovable-uploads/hotelbeds-logo.webp",
     categories: ["B2B", "Global", "Distribution", "OTA"],
     website: "https://www.hotelbeds.com/",
   },
@@ -654,7 +655,7 @@ export const integrations: Integration[] = [
     id: "16",
     name: "Trip.com",
     description: "Attract travellers from Asia and beyond. Ideal for properties seeking a global audience with a focus on Asian markets.",
-    icon: "/lovable-uploads/tripcom-logo.png",
+    icon: "/lovable-uploads/tripcom-logo.webp",
     categories: ["Asia", "Global", "OTA"],
     slug: "trip-com",
     longDescription: "Trip.com is China's leading online travel platform and one of the world's largest travel service providers. With over 400 million users globally, Trip.com offers unparalleled access to Chinese outbound travelers and growing Asian markets. Our integration enables properties to tap into this massive and lucrative market segment with localized services and payment methods.",
@@ -742,7 +743,7 @@ export const integrations: Integration[] = [
     slug: "traveloka",
     name: "Traveloka",
     description: "Reach travellers across Southeast Asia. Ideal for properties targeting this fast-growing regional market.",
-    icon: "/lovable-uploads/traveloka-logo.png",
+    icon: "/lovable-uploads/traveloka-logo.webp",
     categories: ["Asia", "Regional", "OTA"],
     website: "https://www.traveloka.com/",
   },
@@ -750,7 +751,7 @@ export const integrations: Integration[] = [
     id: "19",
     name: "VRBO",
     description: "Manage vacation rental bookings seamlessly. Perfect for properties offering unique stays and family-friendly accommodations.",
-    icon: "/lovable-uploads/vrbo-logo.png",
+    icon: "/lovable-uploads/vrbo-logo.webp",
     categories: ["Vacation Rentals", "Global", "OTA"],
     slug: "vrbo",
     longDescription: "VRBO (Vacation Rentals by Owner) is the world's leading vacation rental marketplace, specializing in whole-home rentals for families and groups. As part of Expedia Group, VRBO connects property owners with travelers seeking authentic, home-like experiences. Our integration provides comprehensive tools for managing vacation rental bookings and property optimization across this premium platform.",
@@ -850,7 +851,7 @@ export const integrations: Integration[] = [
     slug: "hrs",
     name: "HRS",
     description: "Streamline bookings for business travelers and corporate clients. Ideal for properties targeting the corporate travel market.",
-    icon: "/lovable-uploads/hrs-logo.png",
+    icon: "/lovable-uploads/hrs-logo.webp",
     categories: ["Corporate", "Global", "B2B", "OTA"],
     website: "https://www.hrs.com/",
   },
@@ -859,7 +860,7 @@ export const integrations: Integration[] = [
     slug: "hipcamp",
     name: "Hipcamp",
     description: "Ideal for campsites, glamping, and unique nature-focused properties.",
-    icon: "/lovable-uploads/hipcamp-logo.png",
+    icon: "/lovable-uploads/hipcamp-logo.webp",
     categories: ["Outdoor", "Vacation Rentals", "OTA"],
     website: "https://www.hipcamp.com/",
   },
@@ -868,7 +869,7 @@ export const integrations: Integration[] = [
     slug: "edreams",
     name: "eDreams",
     description: "Connect with one of Europe's leading OTAs. Perfect for properties targeting European and global leisure travelers.",
-    icon: "/lovable-uploads/edreams-logo.png",
+    icon: "/lovable-uploads/edreams-logo.webp",
     categories: ["OTA", "Europe", "Global"],
     website: "https://www.edreams.com/"
   },
@@ -877,7 +878,7 @@ export const integrations: Integration[] = [
     slug: "travelgatex",
     name: "TravelgateX",
     description: "Access a global marketplace of travel distributors. Ideal for properties seeking broad B2B connectivity and increased distribution.",
-    icon: "",
+    icon: "/images/integrations/ota-travelgatex.svg",
     categories: ["B2B", "Global", "Distribution", "OTA"]
   },
   {
@@ -890,12 +891,44 @@ export const integrations: Integration[] = [
     website: "https://www.hopper.com/",
   },
   {
+    // Tagged OTA, so this one HAS a detail page — hence the longer fields. All
+    // of it is from reconline.com; their own site is the only source used.
+    //
+    // Logo is the three-bar mark, on Evan's explicit call after being shown
+    // that it is RETIRED. reconline.com served it as _images/rec_logo.gif
+    // until Dec 2025; by Mar 2026 the redesign had replaced it with a CSS
+    // text wordmark, and their Hospitality Net profile logo — re-uploaded
+    // May 2026 — is the plain wordmark too. Revisit if we ever want the
+    // directory to track their current identity.
+    //
+    // Sourced from HotelMinder's partner directory, the only copy anywhere
+    // with both real resolution and transparency: their own site never
+    // served it larger than 137x23, and the vector on Guesty's marketplace
+    // is a potrace job whose letter counters are knocked out by a white
+    // layer painted on top, so it cannot be made transparent. Cropped from
+    // 500x500 to its ink bounds (500x86); pixels are otherwise untouched.
     id: "27",
     slug: "reconline",
     name: "Reconline",
-    description: "Connect with Reconline GDS to access global distribution channels and connect with travel agents worldwide. Ideal for properties seeking broader exposure and increased bookings.",
-    icon: "",
+    description: "Swiss GDS distribution specialist that lists independent hotels in Amadeus, Sabre and Travelport, reaching corporate travel programmes and travel-agency demand. Connects through the channel manager a hotel already runs rather than replacing it, and is priced per actualised booking with no setup fee and no monthly minimum.",
+    longDescription: "reconline AG has specialised in GDS distribution for independent hotels for over 20 years, working from Zermatt in Switzerland. The Global Distribution Systems — Amadeus, Sabre and Travelport — are where corporations, travel management companies and agencies book, and they have traditionally been hard for an independent property to reach without a brand affiliation. reconline handles the listing and the ongoing rate, availability and inventory sync across all three, integrating with the channel manager the hotel already uses instead of asking it to switch. Setup is a roughly 30-minute profile, hotels are typically live across all three systems within ten days, and they pay only for bookings that actualise — no setup fee, no monthly minimum. Travel agent commissions are settled automatically through Onyx CenterSource.",
+    icon: "/images/integrations/ota-reconline.webp",
     categories: ["Distribution", "Global", "B2B", "OTA"],
+    features: [
+      "Listing in Amadeus, Sabre and Travelport",
+      "Connects through the hotel's existing channel manager",
+      "Rate, availability and inventory sync across all three GDS",
+      "Live within about ten days of a 30-minute setup",
+      "Priced per actualised booking — no setup fee, no monthly minimum",
+      "Automated travel agent commission handling via Onyx CenterSource",
+      "Site and support in English, German, French, Spanish and Italian"
+    ],
+    useCases: [
+      "Independent hotels chasing corporate and managed-travel demand",
+      "Properties wanting GDS reach without a brand affiliation",
+      "Hotels already running a channel manager and adding a channel",
+      "Properties selling to travel agencies and travel management companies"
+    ],
     website: "https://www.reconline.com/",
   },
   {
@@ -919,7 +952,7 @@ export const integrations: Integration[] = [
     slug: "roibos",
     name: "Roibos",
     description: "A robust B2B travel platform. Ideal for properties seeking connections with tour operators, travel agents, and wholesalers worldwide.",
-    icon: "/lovable-uploads/da970051-848f-499c-a8cc-2c650fae0caf.png",
+    icon: "/lovable-uploads/da970051-848f-499c-a8cc-2c650fae0caf.webp",
     categories: ["B2B", "Global", "Distribution", "OTA"],
     website: "https://roibos.com/",
   },
@@ -928,7 +961,7 @@ export const integrations: Integration[] = [
     slug: "hyperguest",
     name: "Hyperguest",
     description: "Access a direct, commission-free B2B distribution network. Ideal for properties seeking to optimize margins and connect with travel agents globally.",
-    icon: "/lovable-uploads/da51353c-aaa9-4fa4-ba27-c0c34f952887.png",
+    icon: "/lovable-uploads/da51353c-aaa9-4fa4-ba27-c0c34f952887.webp",
     categories: ["B2B", "Global", "Distribution", "OTA"],
     website: "https://www.hyperguest.com/",
   },
@@ -937,7 +970,7 @@ export const integrations: Integration[] = [
     slug: "inntopia",
     name: "Inntopia",
     description: "Connect your PMS with Inntopia to streamline bookings and packaging for resorts, hotels, and vacation rentals. Ideal for properties targeting year-round leisure and group travelers.",
-    icon: "",
+    icon: "/images/integrations/ota-inntopia.webp",
     categories: ["Vacation Rentals", "OTA"],
     website: "https://www.inntopia.com/",
   },
@@ -946,7 +979,7 @@ export const integrations: Integration[] = [
     slug: "travia",
     name: "Travia",
     description: "Travia is a B2B distribution marketplace connecting agencies and accommodation providers with live availability, direct bookings, and seamless contracting.",
-    icon: "",
+    icon: "/images/integrations/ota-travia.svg",
     categories: ["B2B", "Distribution", "Global", "OTA"],
     website: "https://travia.io/",
     features: [
@@ -972,7 +1005,7 @@ export const integrations: Integration[] = [
     slug: "wink",
     name: "Wink",
     description: "Connect with Wink to streamline bookings and enhance distribution through its travel platform. Ideal for properties seeking innovative solutions to reach modern travelers.",
-    icon: "",
+    icon: "/images/integrations/ota-wink.webp",
     categories: ["Distribution", "OTA"]
   },
   {
@@ -989,15 +1022,30 @@ export const integrations: Integration[] = [
     slug: "spot2nite",
     name: "Spot2nite",
     description: "Connect with Spot2Nite to manage bookings for RV parks and campgrounds seamlessly. Ideal for properties catering to travelers seeking outdoor and road trip adventures.",
-    icon: "",
+    icon: "/images/integrations/ota-spot2nite.webp",
     categories: ["Outdoor", "Vacation Rentals", "OTA"]
   },
   {
-    id: "38",
-    name: "Camping Vision",
-    description: "Integrate your PMS with Camping Vision to access Europe's leading platform for campsite bookings. Ideal for campgrounds, glamping sites, and holiday parks targeting outdoor enthusiasts.",
-    icon: "",
-    categories: ["Outdoor", "Europe", "Vacation Rentals"]
+    // Renamed from "Camping Vision" on Evan's confirmation; campingvision.com
+    // now redirects to travel.vacanceselect.com.
+    //
+    // id carries the old slug rather than the original "38", so
+    // /integrations/camping-vision still 301s to the new URL through the
+    // loader's legacy-id path. Nothing is lost by retiring "38": the entry
+    // only became an OTA in d3058d0, so that URL never served a detail page.
+    //
+    // Their mark reads "VacanceSelect | Travel" — the partner-facing arm, and
+    // the only lockup the partner site publishes — so the plain brand name
+    // comes from this entry rather than from the image. Stacked rather than
+    // the horizontal version, which is 9:1 and renders 12px tall in the
+    // channel slot against 39px for this one.
+    id: "camping-vision",
+    name: "VacanceSelect",
+    description: "European distribution platform for family holidays, connecting campsites, holiday parks and resorts with travellers through its own consumer brands — VacanceSelect, Allcamps, LuxCamp, Friferie and Dansk Bilferie — each aimed at a different family segment. Over 25 years in the market, with more than 100 staff across offices in Breda, Copenhagen, Geneva and Hamburg, and partner support that runs to named account managers, marketing campaigns and booking-data insights.",
+    icon: "/images/integrations/ota-vacanceselect.webp",
+    categories: ["OTA", "Outdoor", "Europe", "Vacation Rentals"],
+    slug: "vacanceselect",
+    website: "https://travel.vacanceselect.com"
   },
   {
     id: "39",
@@ -1020,7 +1068,7 @@ export const integrations: Integration[] = [
     slug: "opengds-com",
     name: "OpenGDS.com",
     description: "Streamline distribution and connect with local travel agents and OTAs.",
-    icon: "",
+    icon: "/images/integrations/ota-opengds.svg",
     categories: ["Distribution", "B2B", "OTA"]
   },
   {
@@ -1044,7 +1092,7 @@ export const integrations: Integration[] = [
     id: "44",
     name: "Booking.com",
     description: "Connect your PMS to Booking.com for seamless management of rates, availability, and reservations. Ideal for all property types aiming for global reach.",
-    icon: "/lovable-uploads/bookingcom-logo.png",
+    icon: "/lovable-uploads/bookingcom-logo.webp",
     categories: ["OTA", "Global"],
     slug: "booking-com",
     longDescription: "Booking.com is the world's leading digital travel company, connecting properties with millions of travelers worldwide. Our integration provides real-time synchronization of rates, availability, and reservations, ensuring your property maintains optimal visibility and booking efficiency across this massive platform.",
@@ -1112,7 +1160,7 @@ export const integrations: Integration[] = [
     id: "45",
     name: "Expedia",
     description: "Integrate your PMS with Expedia to streamline bookings, rates, and availability. Perfect for properties targeting a wide, global audience.",
-    icon: "/lovable-uploads/expedia-logo.png",
+    icon: "/lovable-uploads/expedia-logo.webp",
     categories: ["OTA", "Global"],
     slug: "expedia",
     longDescription: "Expedia Group is one of the world's largest online travel companies, reaching over 750 million people annually across its family of brands including Expedia.com, Hotels.com, and Vrbo. Our integration provides seamless connectivity to this massive distribution network, enabling properties to manage rates, availability, and bookings across multiple Expedia Group platforms from a single interface.",
@@ -1958,7 +2006,7 @@ export const integrations: Integration[] = [
     id: "158",
     name: "Rentware",
     description: "A property management and rental platform offering solutions for booking management, guest communication, and payment processing.",
-    icon: "/lovable-uploads/rentware-logo.png",
+    icon: "/lovable-uploads/rentware-logo.webp",
     categories: ["PMS", "Vacation Rentals", "Global"],
     website: "https://rentware.com/en/"
   },
@@ -1973,7 +2021,7 @@ export const integrations: Integration[] = [
     id: "160",
     name: "Hosroom",
     description: "A property management system offering solutions for booking management, guest communication, and operational efficiency.",
-    icon: "/images/integrations/hosroom.png",
+    icon: "/images/integrations/hosroom.webp",
     categories: ["PMS"]
   },
   {
@@ -2170,7 +2218,7 @@ export const integrations: Integration[] = [
     slug: "waverick",
     name: "Waverick",
     description: "Waverick Adventures is a platform that allows users to find and compare surf camps and schools across various Moroccan destinations, including Taghazout, Rabat, Imsouane, Dakhla, Casablanca, and Essaouira.",
-    icon: "",
+    icon: "/images/integrations/ota-waverick.webp",
     categories: ["OTA", "Outdoor"]
   },
   {
@@ -2287,10 +2335,15 @@ export const integrations: Integration[] = [
   },
   {
     id: "210",
+    slug: "staylist",
     name: "Staylist",
-    description: "Staylist is a comprehensive, cloud-based property management system (PMS) tailored for RV parks, campgrounds, cabins, and glamping sites. It offers an all-in-one solution encompassing reservations, guest communication, dynamic pricing, and integrated point-of-sale (POS) systems.",
-    icon: "",
-    categories: ["PMS"]
+    description: "Cloud hospitality platform for destination RV parks and resorts, glamping resorts, boutique hotels and vacation rentals. Combines reservations and guest management with integrated food & beverage and retail point of sale, revenue management (dynamic pricing, demand forecasting and upsell recommendations), AI concierge and call intelligence, and USALI-framework accounting that reconciles to QuickBooks.",
+    // Their own wordmark: dark #241F19 lettering with a teal accent on
+    // transparent, so it reads on our light tiles as-is. Kept as SVG (12 paths,
+    // no scripts or external refs) — 7 kB and sharp at any slot size.
+    icon: "/lovable-uploads/pms-staylist.svg",
+    categories: ["PMS", "Outdoor"],
+    website: "https://staylist.com"
   },
   {
     id: "211",
@@ -2329,7 +2382,7 @@ export const integrations: Integration[] = [
     slug: "hoterip",
     name: "Hoterip",
     description: "A leading travel platform in Southeast Asia. Ideal for properties targeting Indonesian travelers and regional markets.",
-    icon: "",
+    icon: "/images/integrations/ota-hoterip.webp",
     categories: ["Asia", "Regional", "OTA"]
   },
   {
@@ -2337,7 +2390,7 @@ export const integrations: Integration[] = [
     slug: "mr-and-mrs-smith",
     name: "Mr & Mrs Smith",
     description: "A curated platform for luxury and boutique stays. Ideal for properties offering unique, high-end experiences.",
-    icon: "/lovable-uploads/mrandmrssmith-logo.jpg",
+    icon: "/lovable-uploads/mrandmrssmith-logo.webp",
     categories: ["Luxury", "Global", "OTA"],
     website: "https://www.mrandmrssmith.com/",
   },
@@ -2437,7 +2490,7 @@ export const integrations: Integration[] = [
     id: "223",
     name: "Booknpay",
     description: "Booknpay is an all-in-one platform built to boost hotel and villa performance by transforming property websites into powerful direct booking channels. Equipped with a seamless Online Reservation System, it maximizes revenue potential and delivers a smoother booking experience for guests.",
-    icon: "/lovable-uploads/78a66bab-8fd7-464c-a255-301401af8dde.png",
+    icon: "/lovable-uploads/78a66bab-8fd7-464c-a255-301401af8dde.webp",
     categories: ["IBE", "Asia"],
     slug: "booknpay",
     longDescription: "Booknpay is an innovative all-in-one platform specifically designed to boost hotel and villa performance by transforming property websites into powerful direct booking channels. With a seamless Online Reservation System at its core, Booknpay maximizes revenue potential while delivering an exceptional booking experience for guests. The platform empowers hospitality businesses to reduce dependency on third-party booking sites and increase direct bookings, ultimately improving profit margins and guest relationships.",
@@ -2485,7 +2538,7 @@ export const integrations: Integration[] = [
     id: "224",
     name: "Ministry of Villas",
     description: "A luxury villa booking platform specializing in exceptional private villas across Asia-Pacific destinations. Offers personalized service and inspires travelers to experience the privacy and luxury of villa stays over traditional hotels.",
-    icon: "/lovable-uploads/ministryofvillas-logo.png",
+    icon: "/lovable-uploads/ministryofvillas-logo.webp",
     categories: ["OTA", "Vacation Rentals", "Asia"],
     slug: "ministry-of-villas",
     longDescription: "Ministry of Villas is the quintessential service for travelers seeking luxury villa accommodations across premier destinations including Bali, Thailand, Japan, Philippines, and more. We inspire travelers who would normally book a hotel to experience staying in a private villa, adding a new dimension to their holiday. Our platform makes searching for a villa a pleasure and the booking process painless, connecting guests with exceptional properties while providing villa owners with a premium distribution channel.",
@@ -2839,7 +2892,7 @@ export const integrations: Integration[] = [
     name: "HotelREZ",
     description: "A global hotel representation company increasing revenue with GDS, RFPs, Direct Booking tools and unlocking global demand and marketing power.",
     longDescription: "Interface your PMS to our SynXIS CRS for GDS, IDS, OTAs connectivity and Direct Hotel Booking Solutions with demand partnerships, global reach, marketing, account management, support and best in class systems – more business at an attractive cost of sale. Unlock chain-level reach without sacrificing independence. HotelREZ, seamlessly integrated with your Channex PMS, connects you to the most powerful commercial network for independent hotels worldwide. Gain Global Preferred Status and access chain-level deals across GDS (750k agencies), OTAs, corporate RFPs, consortia, TMCs, and direct channels. HotelREZ drives higher-margin business and sustainable growth for independent and small hotel groups. As a Global Partner of Hospitality Solutions (formerly Sabre Hospitality), we use SynXis as our CRS \"pipe\", but the real value goes far beyond connectivity. We help you win more profitable business, not simply additional room nights.",
-    icon: "/lovable-uploads/hotelrez-logo.png",
+    icon: "/lovable-uploads/hotelrez-logo.webp",
     categories: ["OTA", "Distribution", "Global"],
     website: "https://hotelrez.com/",
     features: [
@@ -2858,10 +2911,16 @@ export const integrations: Integration[] = [
     ]
   },
   {
+    // The icon here used to hotlink a wixstatic.com URL that was not WeSpeak's
+    // logo at all — it was HOLIDAY INN's mark, lifted from the client wall on
+    // wespeak.pro (the path is /images/Logos/Clientes/). So this tile showed
+    // another company's trademark. Replaced with WeSpeak's own stacked lockup
+    // from /images/Logos/WeSpeak/fondo transparente/6.png, cropped from
+    // 1563x1563 to its ink bounds and resized to 260px, ~4x the 64px slot.
     id: "wespeak",
     name: "WeSpeak",
     description: "AI-powered conversational assistant for hotels that increases direct bookings through 24/7 personalized guest interactions via WhatsApp.",
-    icon: "https://static.wixstatic.com/media/714745_cc95c7f8e7c94a2ab835761be0b915ba~mv2.png",
+    icon: "/lovable-uploads/pms-wespeak.webp",
     categories: ["IBE"],
     slug: "wespeak",
     longDescription: "WeSpeak is an AI-powered conversational assistant designed specifically for hotels. Trusted by over 500 hotels across 20 countries, WeSpeak helps properties increase direct bookings by engaging with guests 24/7 through personalized interactions, primarily via WhatsApp. The platform reduces operational time for hotel staff by up to 90% while improving guest satisfaction with instant, professional responses in multiple languages.",
@@ -2885,10 +2944,15 @@ export const integrations: Integration[] = [
     website: "https://www.wespeak.pro/"
   },
   {
+    // The icon here used to hotlink levart.com.au for a file called
+    // Direct-Bookings-Dark-Blue.svg, which is not a logo — it is a feature
+    // illustration of a browser window with a chart and a calendar grid.
+    // Replaced with their actual wordmark, Levart-Logo-Dark.svg from the same
+    // site, kept as SVG and byte-identical to what they serve.
     id: "levart",
     name: "Levart",
     description: "Australian hospitality software provider offering intelligent booking engine technology, channel management, and website solutions to increase direct bookings.",
-    icon: "https://www.levart.com.au/wp-content/uploads/2021/05/Direct-Bookings-Dark-Blue.svg",
+    icon: "/lovable-uploads/pms-levart.svg",
     categories: ["IBE"],
     slug: "levart",
     longDescription: "Levart provides superior software solutions for the hospitality industry, helping properties grow direct bookings, easily manage online distribution, and optimize overall profitability with intelligent technology solutions. Their suite includes an intelligent booking engine, channel manager, and website solutions, all backed by a dedicated Client Success Team.",
@@ -2969,7 +3033,7 @@ export const integrations: Integration[] = [
     id: "klook",
     name: "Klook",
     description: "Leading travel activities and services booking platform in Asia-Pacific, connecting millions of travelers with unique experiences, tours, and accommodations.",
-    icon: "/lovable-uploads/klook-logo.png",
+    icon: "/lovable-uploads/klook-logo.webp",
     categories: ["OTA", "Global", "Asia", "Activities"],
     slug: "klook",
     longDescription: "Klook is Asia-Pacific's leading travel activities and services booking platform, offering travelers instant booking and confirmation for tours, attractions, transportation, and accommodations. With over 400,000 activities across 1,000+ destinations worldwide, Klook has become the go-to platform for travelers seeking unique experiences. Our integration enables properties to tap into Klook's massive user base of experience-seeking travelers, particularly strong in Asian markets.",
@@ -3041,7 +3105,7 @@ export const integrations: Integration[] = [
     id: "check24",
     name: "Check24",
     description: "Germany's leading comparison and booking platform for travel, hotels, and accommodations, connecting millions of German-speaking travelers with properties worldwide.",
-    icon: "/lovable-uploads/check24-logo.png",
+    icon: "/lovable-uploads/check24-logo.webp",
     categories: ["OTA", "Europe", "Germany"],
     slug: "check24",
     longDescription: "Check24 is Germany's largest online comparison portal and one of Europe's leading travel booking platforms. With over 15 million customers and a dominant presence in German-speaking markets (Germany, Austria, Switzerland), Check24 provides hotels and accommodations with direct access to high-value European travelers. Known for its comprehensive comparison features and trusted brand reputation, Check24 is essential for properties targeting the lucrative German travel market.",
@@ -3758,7 +3822,7 @@ export const integrations: Integration[] = [
     id: "hotelbee",
     name: "HotelBee",
     description: "Comprehensive cloud-based hotel management software that streamlines day-to-day operations and provides valuable business insights for hotels, B&Bs, hostels, and resorts worldwide.",
-    icon: "/lovable-uploads/pms-hotelbee.png",
+    icon: "/lovable-uploads/pms-hotelbee.webp",
     categories: ["PMS", "Hotels"],
     slug: "hotelbee",
     website: "https://hotelbee.co/"
@@ -3776,7 +3840,7 @@ export const integrations: Integration[] = [
     id: "balimmo",
     name: "Balimmo",
     description: "Full-service villa investment and rental management platform in Bali, handling legal, construction, and rental operations for property investors seeking high-yield returns.",
-    icon: "/lovable-uploads/pms-balimmo.png",
+    icon: "/lovable-uploads/pms-balimmo.webp",
     categories: ["PMS", "Vacation Rentals", "Asia Pacific"],
     slug: "balimmo",
     website: "https://balimmo.fr/"
@@ -3821,7 +3885,7 @@ export const integrations: Integration[] = [
     id: "bedandbreakfastitaly",
     name: "Bed-and-Breakfast.it",
     description: "Italy's leading B&B booking portal connecting travellers with thousands of bed and breakfasts, guesthouses, and small accommodations across Italy. One of the most visited Italian travel platforms for independent accommodation.",
-    icon: "/lovable-uploads/ota-bedandbreakfast-it.png",
+    icon: "/lovable-uploads/ota-bedandbreakfast-it.webp",
     categories: ["OTA", "Europe"],
     slug: "bedandbreakfastitaly",
     website: "https://www.bed-and-breakfast.it/"
@@ -3837,9 +3901,12 @@ export const integrations: Integration[] = [
   },
   {
     id: "uibsplatform",
-    name: "UIBS | hospitality. platform",
+    name: "UIBS | hospitality",
     description: "Microsoft Azure-certified CRS, Booking Engine, CRM, CMS, and core PMS delivering seamless, fully-branded website guest experiences and a unified single-source-of-truth platform for hoteliers and vacation rentals. Connects to Channex to keep availability, rates, inventory, and reservations accurate across all channels.",
-    icon: "/lovable-uploads/pms-uibs.svg",
+    // Their supplied 2026 mark: a square navy badge, unlike the wide wordmark it
+    // replaces. New filename rather than overwriting pms-uibs.svg, because that
+    // path is stable and already cached at the edge.
+    icon: "/lovable-uploads/pms-uibs-hospitality.svg",
     categories: ["PMS", "IBE", "Europe", "Global"],
     slug: "uibsplatform",
     website: "https://hospitality.uibs.net"
@@ -3848,7 +3915,7 @@ export const integrations: Integration[] = [
     id: "gatein",
     name: "GateIn",
     description: "UAE-based property management and hospitality technology platform providing hotels and accommodation providers with tools for reservations, guest management, and operations. Serving the Middle East hospitality market.",
-    icon: "/lovable-uploads/pms-gatein.png",
+    icon: "/lovable-uploads/pms-gatein.webp",
     categories: ["PMS", "Middle East"],
     slug: "gatein",
     website: "https://gatein.ae/en"
@@ -3857,7 +3924,7 @@ export const integrations: Integration[] = [
     id: "transitor",
     name: "Transitor (Comers)",
     description: "Swedish hospitality management system by Comers, offering property management, booking, and guest communication tools for accommodation providers across Scandinavia and Europe.",
-    icon: "/lovable-uploads/pms-transitor.png",
+    icon: "/lovable-uploads/pms-transitor.webp",
     categories: ["PMS", "Europe"],
     slug: "transitor",
     website: "https://comers.se"
@@ -3879,15 +3946,6 @@ export const integrations: Integration[] = [
     categories: ["PMS", "Asia"],
     slug: "hostomat",
     website: "https://www.hostomat.io/"
-  },
-  {
-    id: "sitemarq",
-    name: "Sitemarq",
-    description: "UK-based property management and booking solution for independent hotels and accommodation providers. Offers website booking engines, channel management integration, and guest management tools.",
-    icon: "/lovable-uploads/pms-sitemarq.svg",
-    categories: ["PMS", "Europe"],
-    slug: "sitemarq",
-    website: "https://sitemarq.com/"
   },
   {
     id: "mantavillas",
@@ -3920,7 +3978,7 @@ export const integrations: Integration[] = [
     id: "hotelnative",
     name: "Hotel Native",
     description: "AI-powered hotel management platform from Costa Rica offering smart property management, guest communication, and revenue optimisation tools for independent hotels and boutique properties in Latin America and beyond.",
-    icon: "/lovable-uploads/pms-hotelnative.ico",
+    icon: "/lovable-uploads/pms-hotelnative.webp",
     categories: ["PMS", "Americas"],
     slug: "hotelnative",
     website: "https://hellonative.ai"
@@ -3929,7 +3987,7 @@ export const integrations: Integration[] = [
     id: "emonsite",
     name: "E-monsite",
     description: "French website builder and digital platform that includes accommodation booking and reservation management tools for small hotels, guesthouses, and B&Bs. Widely used by independent accommodation providers in France.",
-    icon: "/lovable-uploads/pms-emonsite.png",
+    icon: "/lovable-uploads/pms-emonsite.webp",
     categories: ["PMS", "IBE", "Europe"],
     slug: "emonsite",
     website: "https://www.e-monsite.com"
@@ -3956,7 +4014,7 @@ export const integrations: Integration[] = [
     id: "alsolutions",
     name: "AL Solutions",
     description: "Italian technology company providing custom software solutions for the hospitality sector, including property management systems, booking engines, and digital tools for hotels and accommodation providers across Italy.",
-    icon: "/lovable-uploads/pms-alsolutionsdiarzilliluca.png",
+    icon: "/lovable-uploads/pms-alsolutionsdiarzilliluca.webp",
     categories: ["PMS", "Europe"],
     slug: "alsolutions",
     website: "https://www.alsolutions.it"
@@ -3965,7 +4023,7 @@ export const integrations: Integration[] = [
     id: "apar1ments",
     name: "Apar1Ments Living",
     description: "Austria-based serviced apartment and short-term rental management platform. Provides property management, booking, and guest experience tools for urban apartment operators and corporate housing providers.",
-    icon: "/lovable-uploads/pms-apar1mentsliving.jpg",
+    icon: "/lovable-uploads/pms-apar1mentsliving.webp",
     categories: ["PMS", "Europe"],
     slug: "apar1ments",
     website: "https://apar1ments.com"
@@ -3974,7 +4032,7 @@ export const integrations: Integration[] = [
     id: "apartx",
     name: "Apartx",
     description: "Kazakhstan-based property management platform for apartment rentals and short-term accommodations. Provides booking management, guest communication, and operational tools for Central Asian property managers.",
-    icon: "/lovable-uploads/pms-apartx.ico",
+    icon: "/lovable-uploads/pms-apartx.webp",
     categories: ["PMS", "Asia"],
     slug: "apartx",
     website: "https://apartx.co"
@@ -3983,7 +4041,7 @@ export const integrations: Integration[] = [
     id: "sisreservas",
     name: "Sisreservas",
     description: "Brazilian hotel management and reservation system providing PMS, booking engine, and channel management tools for hotels and pousadas across Brazil. One of Brazil's established hospitality technology solutions.",
-    icon: "/lovable-uploads/pms-sisreservas.png",
+    icon: "/lovable-uploads/pms-sisreservas.webp",
     categories: ["PMS", "IBE", "Americas"],
     slug: "sisreservas",
     website: "https://www.sisreservas.com.br/"
@@ -3992,7 +4050,7 @@ export const integrations: Integration[] = [
     id: "bluesquareai",
     name: "BlueSquareAI",
     description: "Albania-based AI-powered property management platform for hotels and vacation rentals. Leverages artificial intelligence for smart pricing, booking optimisation, and guest management automation.",
-    icon: "/lovable-uploads/pms-bluesquareai.png",
+    icon: "/lovable-uploads/pms-bluesquareai.webp",
     categories: ["PMS", "Europe"],
     slug: "bluesquareai",
     website: "https://bluesquareai.com/"
@@ -4001,7 +4059,7 @@ export const integrations: Integration[] = [
     id: "bookingfwi",
     name: "Booking FWI",
     description: "Caribbean-based online booking and property management platform serving hotels and accommodations in the French West Indies (FWI). Provides reservation management and distribution tools for Caribbean hospitality providers.",
-    icon: "/lovable-uploads/pms-bookingfwi.png",
+    icon: "/lovable-uploads/pms-bookingfwi.webp",
     categories: ["PMS", "IBE", "Americas"],
     slug: "bookingfwi",
     website: "https://demo.bookingfwi.com/"
@@ -4028,7 +4086,7 @@ export const integrations: Integration[] = [
     id: "cruwzo",
     name: "Cruwzo",
     description: "Germany-based property management and hospitality software solution for hotels and accommodation providers. Offers streamlined front desk operations, reservation management, and reporting for European properties.",
-    icon: "/lovable-uploads/pms-emonsite.png",
+    icon: "/lovable-uploads/pms-emonsite.webp",
     categories: ["PMS", "Europe"],
     slug: "cruwzo",
     website: "https://www.cruwzo.com/"
@@ -4037,7 +4095,7 @@ export const integrations: Integration[] = [
     id: "deverso",
     name: "Deverso Srl",
     description: "Italian hospitality technology company developing property management and booking solutions for hotels, resorts, and accommodation providers across Italy. Offers integrated PMS and distribution tools.",
-    icon: "/lovable-uploads/pms-emonsite.png",
+    icon: "/lovable-uploads/pms-emonsite.webp",
     categories: ["PMS", "Europe"],
     slug: "deverso",
     website: "https://deverso.it"
@@ -4082,7 +4140,7 @@ export const integrations: Integration[] = [
     id: "innetltda",
     name: "INNET LTDA",
     description: "Brazilian technology company providing hotel management software and digital solutions for hospitality providers. Offers PMS, booking tools, and operational systems for hotels and accommodation businesses in Brazil.",
-    icon: "/lovable-uploads/pms-innetltda.ico",
+    icon: "/lovable-uploads/pms-innetltda.webp",
     categories: ["PMS", "Americas"],
     slug: "innetltda",
     website: "https://innet.com.br/"
@@ -4100,7 +4158,7 @@ export const integrations: Integration[] = [
     id: "jetquid",
     name: "Jet Quid",
     description: "India-based hospitality management platform offering property management, booking engine, and revenue tools for hotels and resorts. Designed to help Indian hoteliers streamline operations and increase direct bookings.",
-    icon: "/lovable-uploads/pms-jetquid.png",
+    icon: "/lovable-uploads/pms-jetquid.webp",
     categories: ["PMS", "Asia"],
     slug: "jetquid",
   },
@@ -4108,7 +4166,7 @@ export const integrations: Integration[] = [
     id: "easyconcierge",
     name: "Easy Concierge",
     description: "French property management and concierge software for vacation rentals, apartments, and boutique hotels. Provides booking management, guest communication, and operational tools for French accommodation providers.",
-    icon: "/lovable-uploads/pms-easyconcierge.png",
+    icon: "/lovable-uploads/pms-easyconcierge.webp",
     categories: ["PMS", "Europe"],
     slug: "easyconcierge",
     website: "https://easy-concierge.fr"
@@ -4117,7 +4175,7 @@ export const integrations: Integration[] = [
     id: "mediatarget",
     name: "Media Target",
     description: "French digital agency and hospitality technology provider offering website development, booking solutions, and digital marketing tools for hotels and accommodation businesses in France.",
-    icon: "/lovable-uploads/pms-emonsite.png",
+    icon: "/lovable-uploads/pms-emonsite.webp",
     categories: ["PMS", "IBE", "Europe"],
     slug: "mediatarget",
     website: "https://mediatarget.fr"
@@ -4126,7 +4184,7 @@ export const integrations: Integration[] = [
     id: "msool",
     name: "Msool",
     description: "Saudi Arabia-based property management platform for hotels and short-term rentals. Provides reservation management, booking engine, and operational tools tailored for the Saudi Arabian and Gulf hospitality market.",
-    icon: "/lovable-uploads/pms-gatein.png",
+    icon: "/lovable-uploads/pms-gatein.webp",
     categories: ["PMS", "Middle East"],
     slug: "msool",
     website: "https://msool.io"
@@ -4135,7 +4193,7 @@ export const integrations: Integration[] = [
     id: "mykratisi",
     name: "MyKratisi",
     description: "Greece-based property management and booking platform for hotels, villas, and vacation rentals. Offers reservation management, channel connectivity, and guest tools designed for the Greek tourism and hospitality market.",
-    icon: "/lovable-uploads/pms-mykratisi.png",
+    icon: "/lovable-uploads/pms-mykratisi.webp",
     categories: ["PMS", "Europe"],
     slug: "mykratisi",
     website: "https://mykratisi.gr"
@@ -4189,7 +4247,7 @@ export const integrations: Integration[] = [
     id: "revbotid",
     name: "Revbot.id",
     description: "Indonesia-based AI-powered revenue management and property management platform for hotels and villas. Uses intelligent automation to optimise pricing, distribution, and operations for Indonesian accommodation providers.",
-    icon: "/lovable-uploads/pms-revbotid.png",
+    icon: "/lovable-uploads/pms-revbotid.webp",
     categories: ["PMS", "Asia"],
     slug: "revbotid",
     website: "https://revbot.id/"
@@ -4216,7 +4274,7 @@ export const integrations: Integration[] = [
     id: "sirromsolutions",
     name: "Sirrom Solutions",
     description: "Netherlands-based hospitality technology company providing property management and booking solutions for hotels and accommodation providers across the Benelux region and Europe.",
-    icon: "/lovable-uploads/pms-sitemarq.svg",
+    icon: "",
     categories: ["PMS", "Europe"],
     slug: "sirromsolutions",
     website: "https://sirrom.io"
@@ -4225,7 +4283,7 @@ export const integrations: Integration[] = [
     id: "stayfleximmo",
     name: "STAYFLEX IMMO",
     description: "France-based property management platform for short-term rentals and vacation properties. Provides booking management, guest communication, and operational tools for French property managers and vacation rental owners.",
-    icon: "/lovable-uploads/pms-stayfleximmo.png",
+    icon: "/lovable-uploads/pms-stayfleximmo.webp",
     categories: ["PMS", "Europe"],
     slug: "stayfleximmo",
     website: "https://www.stayflex-immo.com/"
@@ -4234,7 +4292,7 @@ export const integrations: Integration[] = [
     id: "strabiliare",
     name: "Strabiliare",
     description: "Italian property management company and software provider for vacation rentals and boutique accommodations. Offers reservation management, booking tools, and guest experience solutions for Italian properties.",
-    icon: "/lovable-uploads/pms-strabiliaresrlsunipersonale.png",
+    icon: "/lovable-uploads/pms-strabiliaresrlsunipersonale.webp",
     categories: ["PMS", "Europe"],
     slug: "strabiliare",
     website: "https://strabiliare.it/"
@@ -4243,7 +4301,7 @@ export const integrations: Integration[] = [
     id: "suitespotproperties",
     name: "SuiteSpot Properties",
     description: "Canada-based property management platform for hotels and serviced apartments. SuiteSpot provides operations management, maintenance tracking, and guest experience tools for hospitality providers in North America.",
-    icon: "/lovable-uploads/pms-suitespot.png",
+    icon: "/lovable-uploads/pms-suitespot.webp",
     categories: ["PMS", "Americas"],
     slug: "suitespotproperties",
     website: "https://www.suitespot.ai/"
@@ -4252,7 +4310,7 @@ export const integrations: Integration[] = [
     id: "threenorthclean",
     name: "Three North Clean",
     description: "Canada-based property management and cleaning operations platform for vacation rentals and short-term accommodations. Provides operational management, housekeeping scheduling, and property maintenance tools.",
-    icon: "/lovable-uploads/pms-threenorthcleaninc.ico",
+    icon: "/lovable-uploads/pms-threenorthcleaninc.webp",
     categories: ["PMS", "Americas"],
     slug: "threenorthclean",
     website: "https://threenorthclean.com/"
@@ -4261,7 +4319,7 @@ export const integrations: Integration[] = [
     id: "uabiluma",
     name: "UAB Iluma (J14A)",
     description: "Lithuania-based hospitality technology company providing property management and booking solutions for hotels and accommodation providers across the Baltic states and Northern Europe.",
-    icon: "/lovable-uploads/pms-sitemarq.svg",
+    icon: "/lovable-uploads/pms-uabiluma.webp",
     categories: ["PMS", "Europe"],
     slug: "uabiluma",
     website: "https://www.j14a.co/"
@@ -4302,19 +4360,10 @@ export const integrations: Integration[] = [
     website: "https://bedrockresidencies.com"
   },
   {
-    id: "luxeshine",
-    name: "Luxeshine",
-    description: "USA-based hospitality management platform providing property management and booking solutions for hotels and accommodation providers. Luxeshine offers streamlined operations, reservation management, and guest experience tools for the North American market.",
-    icon: "/lovable-uploads/pms-sitemarq.svg",
-    categories: ["PMS", "Americas"],
-    slug: "luxeshine",
-    website: "https://luxeshine.com"
-  },
-  {
     id: "ribat",
     name: "Ribat",
     description: "Egypt-based property management system providing hotel management and booking solutions for accommodation providers across Egypt and the Middle East. Ribat offers reservation management, front desk operations, and distribution tools for hospitality businesses.",
-    icon: "/lovable-uploads/pms-sitemarq.svg",
+    icon: "",
     categories: ["PMS", "Middle East & Africa"],
     slug: "ribat",
     website: "https://ribat.io"
@@ -4332,7 +4381,7 @@ export const integrations: Integration[] = [
     id: "vayada",
     name: "Vayada",
     description: "Germany-based hospitality platform connecting hotels with content creators and influencers. Vayada provides property management and marketing tools that help hotels leverage creator partnerships for authentic promotion and direct bookings.",
-    icon: "/lovable-uploads/pms-vayada.png",
+    icon: "/lovable-uploads/pms-vayada.webp",
     categories: ["PMS", "Europe"],
     slug: "vayada",
     website: "https://vayada.com"
@@ -4350,24 +4399,16 @@ export const integrations: Integration[] = [
     id: "hubnb",
     name: "Hubnb",
     description: "Brazil-based property management platform for short-term rentals and vacation accommodations. Hubnb provides booking management, channel distribution, and operational tools for property managers and hosts across Brazil and Latin America.",
-    icon: "/lovable-uploads/pms-sitemarq.svg",
+    icon: "/lovable-uploads/pms-hubnb.webp",
     categories: ["PMS", "Americas"],
     slug: "hubnb",
     website: "https://hubnb.com.br"
   },
   {
-    id: "gustavopms",
-    name: "Gustavo PMS",
-    description: "Property management system providing hotel and accommodation operators with tools for reservations, front desk operations, and channel management. Gustavo PMS helps hospitality businesses streamline their daily operations and distribution.",
-    icon: "/lovable-uploads/pms-sitemarq.svg",
-    categories: ["PMS"],
-    slug: "gustavopms",
-  },
-  {
     id: "booksuite",
     name: "Booksuite",
     description: "Brazil-based hotel e-commerce platform providing website creation, property management, and booking engine solutions. Booksuite helps hotels and accommodations in Brazil grow their direct bookings and manage their online presence.",
-    icon: "/lovable-uploads/pms-booksuite.png",
+    icon: "/lovable-uploads/pms-booksuite.webp",
     categories: ["PMS", "Americas"],
     slug: "booksuite",
     website: "https://www.booksuite.io"
@@ -4394,7 +4435,7 @@ export const integrations: Integration[] = [
     id: "ctoutvert",
     name: "Ctoutvert / Secureholiday",
     description: "France-based online booking and distribution platform specializing in outdoor accommodation, camping, and holiday parks. Ctoutvert operates the Secureholiday Platform, providing campsite and holiday park operators with online reservation management, channel distribution, and CRM tools across Europe.",
-    icon: "/lovable-uploads/ota-ctoutvert.png",
+    icon: "/lovable-uploads/ota-ctoutvert.webp",
     categories: ["OTA", "Europe", "Outdoor"],
     slug: "ctoutvert",
     website: "https://www.ctoutvert.com/fr"
@@ -4403,7 +4444,7 @@ export const integrations: Integration[] = [
     id: "resonline",
     name: "Resonline",
     description: "Australia-based channel manager and online distribution platform providing hotels, motels, and accommodation providers with a total solution to expand their online reach globally. Resonline enables properties to manage rooms and rates across multiple booking channels with ease.",
-    icon: "/lovable-uploads/ota-resonline.png",
+    icon: "/lovable-uploads/ota-resonline.webp",
     categories: ["OTA", "Asia Pacific"],
     slug: "resonline",
     website: "https://www.resonline.com"
@@ -4430,7 +4471,7 @@ export const integrations: Integration[] = [
     id: "luppa",
     name: "Luppa",
     description: "Argentine all-in-one management platform for hospitality businesses including hotels and accommodation providers. Luppa offers inventory management, sales tracking, and statistics for property operators.",
-    icon: "/lovable-uploads/pms-luppa.png",
+    icon: "/lovable-uploads/pms-luppa.webp",
     categories: ["PMS", "Latin America"],
     slug: "luppa",
     website: "https://luppa.net.ar"
@@ -4439,7 +4480,7 @@ export const integrations: Integration[] = [
     id: "azurecorporate",
     name: "Azure Corporate LLC",
     description: "Vacation rental management company specializing in property management solutions for short-term rental operators. Azure Corporate provides personalized services to maximize investment returns for property owners.",
-    icon: "/lovable-uploads/pms-azurecorporate.png",
+    icon: "/lovable-uploads/pms-azurecorporate.webp",
     categories: ["PMS", "Vacation Rental", "North America"],
     slug: "azurecorporate",
     website: "https://azurerd.com"
@@ -4457,7 +4498,7 @@ export const integrations: Integration[] = [
     id: "varaamokki",
     name: "Varaamokki",
     description: "Finnish holiday accommodation booking and management platform built on Apaleo, specializing in cabin and cottage rentals across Lapland and other Finnish destinations.",
-    icon: "/lovable-uploads/pms-varaamokki.png",
+    icon: "/lovable-uploads/pms-varaamokki.webp",
     categories: ["PMS", "Europe"],
     slug: "varaamokki",
     website: "https://www.varaamokki.com"
@@ -4466,7 +4507,7 @@ export const integrations: Integration[] = [
     id: "stellartourism",
     name: "Stellar Tourism Innovations",
     description: "German hospitality technology company offering automated digital check-in, guest registration, and tourist tax solutions for vacation rentals and hotels, simplifying property management and boosting revenue.",
-    icon: "/lovable-uploads/pms-stellartourism.png",
+    icon: "/lovable-uploads/pms-stellartourism.webp",
     categories: ["PMS", "Europe"],
     slug: "stellartourism",
     website: "https://stellar-trust.com"
@@ -4475,7 +4516,7 @@ export const integrations: Integration[] = [
     id: "norrkallan",
     name: "Norrkällan",
     description: "Swedish hospitality and retreat provider located in Vännäs, Norrland, offering hotel rooms, conference packages, and wellness retreats inspired by the nature of northern Sweden.",
-    icon: "/lovable-uploads/pms-norrkallan.png",
+    icon: "/lovable-uploads/pms-norrkallan.webp",
     categories: ["PMS", "Europe"],
     slug: "norrkallan",
     website: "https://norrkallan.se"
@@ -4493,7 +4534,7 @@ export const integrations: Integration[] = [
     id: "macpms",
     name: "MAC PMS",
     description: "Intelligent hotel management platform from Vietnam providing smart property management solutions for modern hospitality operators.",
-    icon: "/lovable-uploads/pms-macpms.png",
+    icon: "/lovable-uploads/pms-macpms.webp",
     categories: ["PMS", "Asia Pacific"],
     slug: "macpms",
     website: "https://www.macpms.com"
@@ -4511,7 +4552,7 @@ export const integrations: Integration[] = [
     id: "rentdari",
     name: "Rentdari",
     description: "Property management platform helping rental operators manage their properties across channels including Airbnb, with tools for contracts, concierge services, and revenue tracking.",
-    icon: "/lovable-uploads/pms-rentdari.png",
+    icon: "/lovable-uploads/pms-rentdari.webp",
     categories: ["PMS", "Europe"],
     slug: "rentdari",
     website: "https://rentdari.com"
@@ -4538,7 +4579,7 @@ export const integrations: Integration[] = [
     id: "roamkaro",
     name: "Roamkaro",
     description: "Indian hospitality technology company providing property management and booking solutions for accommodation operators across India.",
-    icon: "/lovable-uploads/pms-roamkaro.png",
+    icon: "/lovable-uploads/pms-roamkaro.webp",
     categories: ["PMS", "Asia Pacific"],
     slug: "roamkaro",
     website: "https://www.roamkaro.in"
@@ -4556,7 +4597,7 @@ export const integrations: Integration[] = [
     id: "yallahost",
     name: "Yallahost",
     description: "SaaS property management platform helping operators manage their rental properties with ease. Yallahost provides an intuitive PMS for short-term rental and hotel management.",
-    icon: "/lovable-uploads/pms-yallahost.png",
+    icon: "/lovable-uploads/pms-yallahost.webp",
     categories: ["PMS", "Middle East", "Africa"],
     slug: "yallahost",
     website: "https://yallahost.io"
@@ -4574,7 +4615,7 @@ export const integrations: Integration[] = [
     id: "innexo",
     name: "innexo",
     description: "AI-driven hotel operations platform transforming hospitality management with smart pricing, housekeeping optimization, and revenue management tools for modern hotels.",
-    icon: "/lovable-uploads/pms-innexo.png",
+    icon: "/lovable-uploads/pms-innexo.webp",
     categories: ["PMS", "North America"],
     slug: "innexo",
     website: "https://innexo.com"
@@ -4583,7 +4624,7 @@ export const integrations: Integration[] = [
     id: "simplyresa",
     name: "Simply-resa",
     description: "French all-in-one reservation management solution providing a native Channel Manager for hotels, spas, thalassotherapy centres, and wellness properties across France, Belgium, and Switzerland.",
-    icon: "/lovable-uploads/pms-simplyresa.png",
+    icon: "/lovable-uploads/pms-simplyresa.webp",
     categories: ["PMS", "Europe"],
     slug: "simplyresa",
     website: "https://simply-resa.fr"
@@ -4610,7 +4651,7 @@ export const integrations: Integration[] = [
     id: "checkeasy",
     name: "Check Easy",
     description: "French AI-powered property inspection platform automating inventory reports with timestamped photo reports, damage detection, and dispute reduction for Airbnb concierges and property managers.",
-    icon: "/lovable-uploads/pms-checkeasy.png",
+    icon: "/lovable-uploads/pms-checkeasy.webp",
     categories: ["PMS", "Europe"],
     slug: "checkeasy",
     website: "https://www.checkeasy.co"
@@ -4627,7 +4668,7 @@ export const integrations: Integration[] = [
     id: "mystay",
     name: "mystay",
     description: "Portuguese hospitality platform offering direct booking solutions for villas, apartments, and hotels across Portugal, with best price guarantees and exclusive discounts for direct guests.",
-    icon: "/lovable-uploads/pms-mystay.png",
+    icon: "/lovable-uploads/pms-mystay.webp",
     categories: ["PMS", "Europe"],
     slug: "mystay",
     website: "https://mystay.pt"
@@ -4636,7 +4677,7 @@ export const integrations: Integration[] = [
     id: "appsclicks",
     name: "Appsclicks",
     description: "Israeli technology company connecting hospitality clients to the right users at the right time using AI, machine learning, data analytics, and human expertise.",
-    icon: "/lovable-uploads/pms-appsclicks.png",
+    icon: "/lovable-uploads/pms-appsclicks.webp",
     categories: ["PMS", "Middle East"],
     slug: "appsclicks",
     website: "https://appsclicks.com"
@@ -4690,7 +4731,7 @@ export const integrations: Integration[] = [
     id: "flexglobal",
     name: "Flex",
     description: "Irish flexible short-term rental platform offering fully furnished, move-in-ready apartments for holidays, business travellers, relocations, and extended stays across London, Paris, Algiers, and more.",
-    icon: "/lovable-uploads/pms-flexglobal.png",
+    icon: "/lovable-uploads/pms-flexglobal.webp",
     categories: ["PMS", "Europe"],
     slug: "flexglobal",
     website: "https://theflex.global"
@@ -4744,7 +4785,7 @@ export const integrations: Integration[] = [
     id: "tenerifebsl",
     name: "Tenerife Belgique SL",
     description: "Spanish property management company guiding buyers through property purchases in Tenerife, offering full-service support from search to completion.",
-    icon: "/lovable-uploads/pms-tenerifebsl.png",
+    icon: "/lovable-uploads/pms-tenerifebsl.webp",
     categories: ["PMS", "Europe"],
     slug: "tenerifebsl",
     website: "https://www.tenerifeonline.com"
@@ -4753,7 +4794,7 @@ export const integrations: Integration[] = [
     id: "morphicai",
     name: "Morphicai",
     description: "UK-based AI co-host platform for Airbnb guest messaging, combining automated replies, AI drafts, WhatsApp host approval, and human-in-the-loop safeguards for property managers.",
-    icon: "/lovable-uploads/pms-morphicai.png",
+    icon: "/lovable-uploads/pms-morphicai.webp",
     categories: ["PMS", "Europe"],
     slug: "morphicai",
     website: "https://www.morphicai.io"
@@ -4762,7 +4803,7 @@ export const integrations: Integration[] = [
     id: "adivor",
     name: "Adivor",
     description: "Mexican AI automation agency helping hospitality businesses grow with AI agents, marketing automation, and technology consulting.",
-    icon: "/lovable-uploads/pms-adivor.png",
+    icon: "/lovable-uploads/pms-adivor.webp",
     categories: ["PMS", "Latin America"],
     slug: "adivor",
     website: "https://adivor.com.mx"
@@ -4771,7 +4812,7 @@ export const integrations: Integration[] = [
     id: "insistmx",
     name: "insist",
     description: "Mexican software development company specialising in IT solutions for the hotel, restaurant, and hospitality sectors, offering management systems, advisory, and maintenance services.",
-    icon: "/lovable-uploads/pms-insistmx.png",
+    icon: "/lovable-uploads/pms-insistmx.webp",
     categories: ["PMS", "Latin America"],
     slug: "insistmx",
     website: "https://www.insist.com.mx"
@@ -4789,7 +4830,7 @@ export const integrations: Integration[] = [
     id: "localota",
     name: "LocalOTA",
     description: "LocalOTA is an online travel agency connecting travellers with unique local accommodations, experiences, and destinations, helping property owners reach guests seeking authentic local stays.",
-    icon: "/lovable-uploads/ota-localota.jpg",
+    icon: "/lovable-uploads/ota-localota.webp",
     categories: ["OTA", "North America"],
     slug: "localota",
     website: "https://www.localota.com"
@@ -4798,7 +4839,7 @@ export const integrations: Integration[] = [
     id: "kliknbook",
     name: "KliknBook",
     description: "KliknBook is a B2B online travel agency offering travel agencies exclusive access to hotel inventory across key Asian markets including Singapore, Kuala Lumpur, and Bangkok. Focused on speed, accuracy, and efficiency in hotel booking.",
-    icon: "",
+    icon: "/images/integrations/ota-kliknbook.webp",
     categories: ["OTA", "B2B", "Asia"],
     slug: "kliknbook",
     website: "https://www.kliknbook.com",
@@ -4823,7 +4864,7 @@ export const integrations: Integration[] = [
     id: "webbeds",
     name: "WebBeds",
     description: "WebBeds is a global B2B marketplace for the travel trade, connecting 500,000+ hotels with over 50,000 online and offline travel buyers across 50+ countries. One of the world's largest B2B hotel distribution platforms with $3.2B+ TTV.",
-    icon: "",
+    icon: "/images/integrations/ota-webbeds.svg",
     categories: ["OTA", "B2B", "Global"],
     slug: "webbeds",
     website: "https://www.webbeds.com",
@@ -4850,7 +4891,7 @@ export const integrations: Integration[] = [
     id: "nuitee",
     name: "Nuitee",
     description: "Nuitee is an AI-driven B2B hotel distribution and API platform, providing developers and travel businesses with modular APIs for hotel search, rates, booking, and branded site deployment. Poised to disrupt the $75B B2B hotel market.",
-    icon: "",
+    icon: "/images/integrations/ota-nuitee.svg",
     categories: ["OTA", "B2B", "Global"],
     slug: "nuitee",
     website: "https://nuitee.com",
@@ -4877,7 +4918,7 @@ export const integrations: Integration[] = [
     id: "yatra",
     name: "Yatra",
     description: "Yatra is one of India's leading online travel companies, offering real-time bookings for 103,000+ hotels in India and 1.5M+ hotels worldwide. A top corporate travel services provider with 700+ corporate customers and multiple national tourism awards.",
-    icon: "",
+    icon: "/images/integrations/ota-yatra.svg",
     categories: ["OTA", "Asia", "Global"],
     slug: "yatra",
     website: "https://www.yatra.com",
@@ -4910,8 +4951,284 @@ export const integrations: Integration[] = [
     slug: "minedata",
     name: "MineData (Hostera)",
     description: "Swiss provider whose Hostera PMS handles reservations, room planning, guest records, invoicing and reporting for hotels and accommodation businesses across the D-A-CH region.",
-    icon: "/lovable-uploads/pms-minedata.png",
+    icon: "/lovable-uploads/pms-minedata.webp",
     categories: ["PMS", "Europe"],
     website: "https://minedata.ch"
   },
+  {
+    // Mexican hotel PMS, trading since 1982. Their own wordmark can't be used
+    // here: assets/logo.png is a JPEG (despite the name) on a black background
+    // and logo-white.png is white-on-transparent, so both disappear or box out
+    // on our light tiles. The favicon is a self-contained blue tile that reads
+    // correctly, so that's the mark.
+    id: "arpon",
+    slug: "arpon",
+    name: "Arpón Enterprise",
+    description: "Cloud PMS built specifically for the Mexican hotel market, covering front desk and reservations, housekeeping, point of sale, CFDI electronic invoicing and revenue reporting. Used by over 760 hotels.",
+    icon: "/lovable-uploads/pms-arpon.webp",
+    categories: ["PMS", "Latin America"],
+    website: "https://arpon.com"
+  },
+  {
+    // Their only logo asset is assets/logo.png — actually a 1024px JPEG despite
+    // the name, on a blue-grey studio backdrop with a baked-in drop shadow, so
+    // used as-is it boxes out on our light tiles. Backdrop flood-filled to
+    // transparency and resized to 192px, 2.4x the largest slot it renders in.
+    //
+    // Tagged Asia on Evan's confirmation. Their site names no company, entity
+    // or country anywhere, so the data can't support the tag on its own — the
+    // Thailand TM30 immigration export is the only geographic signal in it.
+    id: "pmspilot",
+    slug: "pmspilot",
+    name: "PMSPilot",
+    description: "Self-serve property management system for independent hotels and guesthouses, built by a hotelier rather than around a sales process — sign-up to first booking without a demo or sales call. Covers the front-desk essentials: drag-and-drop booking calendar, digital guest registration with document capture and online check-in, Stripe card payments alongside a digital cash book, automatic invoicing with PDF export, housekeeping checklists with photo damage reports, and night audit and occupancy reporting. Existing rooms, guests and bookings import from Excel or CSV. Also handles multi-property, long-term rentals, vouchers, door codes, staff time tracking and a TM30 export for Thailand immigration reporting.",
+    icon: "/lovable-uploads/pms-pmspilot.webp",
+    categories: ["PMS", "Asia"],
+    website: "https://pmspilot.com"
+  },
+  {
+    // Their mark, from their own icon.svg — path unmodified, only the fill and
+    // a measured tight viewBox. Their favicon is a cream glyph on a dark badge;
+    // this is the inverse lockup Evan supplied, on transparency rather than the
+    // cream field, which would have shown as an off-white box on our tiles.
+    //
+    // Tagged North America on Evan's confirmation. Their copy points that way
+    // — dollar figures, US OTAs, motels — but never states a market outright,
+    // so the site alone wouldn't carry the tag.
+    id: "lodgingos",
+    slug: "lodgingos",
+    name: "LodgingOs",
+    description: "Hotel management software for independent hotels and motels, built around the hours when nobody is at the desk. Combines the front desk, a 0%-commission direct booking page and OTA channel sync in one system, so a last room sold at the desk closes across the other channels before the next refresh. Adds phone answering that takes bookings after hours and hands off anything it shouldn't handle, self check-in from a lobby tablet that verifies ID and issues a door code, housekeeping, a night audit that runs itself overnight, and ADR, RevPAR and occupancy reporting.",
+    icon: "/lovable-uploads/pms-lodgingos.svg",
+    categories: ["PMS", "North America"],
+    website: "https://www.lodgingos.com"
+  },
+  {
+    // Their own horizontal dark lockup (onepms-logo-hor-dark.png), unmodified
+    // apart from the webp conversion. The variant their header actually renders
+    // is onepms-logo-hor-light.png — a white wordmark that would vanish on our
+    // light tiles. At 175px wide it is 2.7x the 64px slot it renders in.
+    //
+    // Asia is carried by the data, not a judgement call: the footer gives
+    // ONEPMS JSC in Da Nang, and the site claims 1,000+ properties in Vietnam.
+    id: "onepms",
+    slug: "onepms",
+    name: "OnePMS",
+    description: "Cloud hotel management system from Da Nang, used by over 1,000 properties across Vietnam — homestays and small hotels through to resorts. The front desk handles individual and group reservations on hourly, daily or monthly stays, check-in and check-out with front-desk cash handling and per-staff permissions, housekeeping with room status, cleaning schedules and minibar posting from the room, and revenue and expense reporting broken down by period, source and room type. Multi-property, so a chain runs from one account, and it works the same on desktop, tablet and phone. Pre-integrated with the Vietnamese e-invoice gateways — VNPT, Easy Invoice and Fast Invoice — so invoices issue straight from the cash register under government rules. Priced on a hotel's actual room count. Sold alongside OneCMS, the vendor's own channel manager.",
+    icon: "/lovable-uploads/pms-onepms.webp",
+    categories: ["PMS", "Asia"],
+    website: "https://onepms.net"
+  },
+  {
+    // No logo: HostPilot publishes no brand asset anywhere. No <img> on the
+    // site, no /logo.*, /icon.*, /apple-icon or opengraph-image route, and the
+    // favicon is still the stock Vercel black-circle placeholder. Their header
+    // lockup is built from DOM and CSS — a gradient tile, a Lucide house glyph
+    // and text — in the dark-header polarity (white "Host", gradient "Pilot"),
+    // so lifting it would give us white-on-white the way Nuitee and Waverick
+    // did. Monogram stands until Evan supplies the light-background export.
+    //
+    // No region tag: their legal notice is still an unfilled template — the
+    // company name, SIRET/RCS, VAT and registered office are all literal
+    // "[A COMPLETER]" placeholders — so no country is disclosed. EUR pricing,
+    // an FR/EN toggle and French placeholder text all point to France, but the
+    // site never says it, so the tag would be inference. Vacation Rentals is
+    // carried by their own copy: they describe the product as short-term
+    // rental management SaaS throughout.
+    id: "hostpilot",
+    slug: "hostpilot",
+    name: "HostPilot",
+    description: "Short-term rental management software for Airbnb and Booking.com hosts, connecting to both through their APIs to sync reservations, availability and rates, with iCal kept as a complement or fallback for feeds such as Vrbo. Built around a Smart Calendar that merges bookings, blocks and availability, and a dashboard spanning multiple properties. Revenue AI reads availability, bookings, blocks and rates to flag pricing opportunities, and Listing AI drafts titles, descriptions, amenity checks and photo plans — both advisory only, with nothing published until the host approves it. Self-serve throughout: an in-product tutorial sets up the first property with no onboarding call. Priced from EUR 9 a month for a single property to EUR 149 for unlimited, on a 30-day trial.",
+    icon: "",
+    categories: ["PMS", "Vacation Rentals"],
+    website: "https://hostpilotapp.io"
+  },
+  {
+    // Logo is their own mark, lifted verbatim from the inline <svg> in their
+    // site header — same path data and same #166534 green, with only the 36px
+    // width/height dropped so it scales into the slot. OutReserve publishes no
+    // logo file: their favicon.svg wraps the same mark in an opaque white
+    // 1000x1000 rect, and the only lockup with the wordmark is the one baked
+    // into their Open Graph banner, which is the white-on-dark variant and
+    // would have vanished on our tiles. Mark alone is fine here — the channel
+    // card prints the name beside the logo anyway.
+    //
+    // North America is carried by their own copy, not inferred: they describe
+    // themselves as a North American platform, browse by US state across all
+    // fifty, and offer the RV rental side in Canada.
+    id: "outreserve",
+    slug: "outreserve",
+    name: "OutReserve",
+    description: "Outdoor booking platform for the United States, covering campgrounds, RV parks, cabins, yurts and glamping sites alongside peer-to-peer RV rentals. Guests search by national park, city or state across all fifty states and filter by site type and RV class. Hosts either claim an existing listing or build a new one from scratch, then run reservations, distribution, payments and analytics from a host dashboard, with availability syncing in real time. Free to list, with no card required to start, and more than 6,000 properties on the platform by their own count.",
+    icon: "/images/integrations/ota-outreserve.svg",
+    categories: ["Outdoor", "Vacation Rentals", "OTA", "North America"],
+    website: "https://outreserve.com"
+  },
+  {
+    // Name is "Santara AI" with an A, not "Sentara" — the request had it as
+    // Sentara, but their own site uses Santara 145 times and Sentara zero.
+    //
+    // Logo is their published app icon, /brand/santara-app-icon.svg, byte for
+    // byte as they serve it. It is a solid #2A44DB badge, so it holds up on a
+    // light tile without a variant hunt. They publish no wordmark lockup —
+    // /brand/ has only the app icon and its PNG exports.
+    //
+    // Asia is carried by their own copy, not inferred: they describe the
+    // product as built for Southeast Asia and name Bali and Vietnam as the
+    // markets, including in their meta description.
+    id: "santara-ai",
+    slug: "santara-ai",
+    name: "Santara AI",
+    description: "AI-native short-term rental platform built for Southeast Asia, aimed at operators in Bali and Vietnam running anywhere from one listing to forty. Everything hangs off a 6am Morning Brief that surfaces the day's arrivals, departures, turnovers, gap nights and anything needing attention before a guest or channel raises it. Bundles the PMS with AI guest messaging, per-night dynamic pricing inside a floor and ceiling the operator sets, a direct booking site and upsells, and dispatches cleaning turnovers to cleaners over WhatsApp. Airbnb and Booking.com connect as live channels. Charges a flat monthly fee per listing that falls as the portfolio grows, takes 0% commission on bookings and upsells, and includes migration, listing setup and staff training at no cost; the one optional extra is a 3% guest-paid service fee on the direct booking engine.",
+    icon: "/lovable-uploads/pms-santara-ai.svg",
+    categories: ["PMS", "Vacation Rentals", "Asia"],
+    website: "https://www.santara.ai"
+  },
+  {
+    // Logo is their own /assets/images/header/ascendtravel-logo.svg, byte for
+    // byte as they serve it — a coloured wordmark that needs no light/dark
+    // variant. 17 KB, in line with the other wordmark SVGs in this directory.
+    //
+    // Asia is carried by the data, not inferred: Ascend Travel Co., Ltd. lists
+    // a Bangkok head office at True Digital Park and publishes Thai tourism
+    // authority licence 11/08384.
+    //
+    // The two-million and fifty-thousand figures come from their own Thai meta
+    // description and are attributed as such. Their "Thailand's leading budget
+    // accommodation platform" line is left out: budget focus is factual and in
+    // the page title, "leading" is a claim nothing supports.
+    id: "ascendtravel",
+    slug: "ascendtravel",
+    name: "Ascend Travel",
+    description: "Thai booking platform aimed at the budget end of the market, listing more than two million properties worldwide and over fifty thousand in Thailand by its own count. Sells to leisure travellers and to companies from the same inventory: the corporate side sets spend limits per employee grade, routes bookings through automatic approval, and issues tax invoices to Thai requirements. Search filters run to the practical rather than the aspirational — breakfast included, EV charging. Beyond rooms it books co-working space and runs a full MICE arm covering seminars, team building, incentive and group tours, staff and private events, CSR activities, private jet charter, car rental and ticketing and visa services. Operated by Ascend Travel Co., Ltd. of Bangkok under Thai tourism authority licence 11/08384, trading since 2016.",
+    icon: "/images/integrations/ota-ascendtravel.svg",
+    categories: ["OTA", "Asia"],
+    website: "https://hotel.ascendtravel.com"
+  },
+  {
+    // The five entries below are Szallas Group sister brands, added together
+    // with the existing Szallas entry. Three of them (Travelminit, Noclegi,
+    // Hotely) serve their header logo from the same /wsngo/ path szallas.hu
+    // uses, and RevNGo serves its logo and OG image straight off szalas.hu,
+    // which corroborates the grouping independently of anyone telling us.
+    //
+    // Note on ownership: travelminit.ro's own cookie notice says it is part of
+    // the Wirtualna Polska holding, so Szallas Group itself appears to sit
+    // under WP rather than being the top of the tree. Described here as
+    // Szallas Group brands, which is what the shared platform evidences.
+    id: "travelminit",
+    slug: "travelminit",
+    name: "Travelminit",
+    description: "Romanian accommodation channel in the Szallas Group, listing hotels, guesthouses, apartments and wellness packages across Romania. Runs the group's book-here-pay-at-the-property model, so the guest reserves online and settles with the hotel on arrival, and offers members up to 25% off through a VIP account.",
+    icon: "/images/integrations/ota-travelminit.webp",
+    categories: ["Regional", "Europe", "OTA"],
+    website: "https://travelminit.ro"
+  },
+  {
+    id: "noclegi",
+    slug: "noclegi",
+    name: "Noclegi.pl",
+    description: "Polish accommodation channel in the Szallas Group, trading as Noclegi.pl by Nocowanie.pl. Covers hotels, apartments, private rooms and wellness packages, listing roughly 86,900 offers across 175 countries with more than 3.2 million guest reviews by its own count. Guests book online and pay the property on arrival.",
+    icon: "/images/integrations/ota-noclegi.svg",
+    categories: ["Regional", "Europe", "OTA"],
+    website: "https://noclegi.pl"
+  },
+  {
+    id: "nocowanie",
+    slug: "nocowanie",
+    name: "Nocowanie.pl",
+    description: "Polish accommodation channel in the Szallas Group and the parent brand behind Noclegi.pl, listing around 100,000 properties in Poland and abroad. Sells Polish domestic stays alongside the outbound destinations Polish travellers book most — Croatia, Hungary, Czechia, Slovakia and Romania.",
+    icon: "/images/integrations/ota-nocowanie.webp",
+    categories: ["Regional", "Europe", "OTA"],
+    website: "https://www.nocowanie.pl"
+  },
+  {
+    id: "hotely",
+    slug: "hotely",
+    name: "Hotely.cz",
+    description: "Czech accommodation channel in the Szallas Group, covering hotels, pensions, apartments and wellness stay packages. Runs the same book-here-pay-at-the-hotel model as its sister brands, with channel-specific discounts applied at booking.",
+    icon: "/images/integrations/ota-hotely.svg",
+    categories: ["Regional", "Europe", "OTA"],
+    website: "https://www.hotely.cz"
+  },
+  {
+    id: "revngo",
+    slug: "revngo",
+    name: "RevNGo.com",
+    description: "The Szallas Group's cross-border brand, pooling the inventory its national sites sell separately and putting it in front of travellers moving between Central and Eastern European markets. Sells in eight languages — English, Czech, Hungarian, Romanian, Slovak, German, Polish and Croatian — and prices in seven currencies including EUR, HUF, PLN, RON, CZK, GBP and USD. Same book-here-pay-at-the-hotel model, with rates shown inclusive of taxes and fees.",
+    icon: "/images/integrations/ota-revngo.svg",
+    categories: ["Regional", "Europe", "OTA"],
+    website: "https://revngo.com"
+  },
+  {
+    // Logo is the SVG Evan supplied, committed byte for byte. 32 KB because it
+    // is raw Inkscape output — the rounded corners are clipPaths rather than
+    // rx, so the cruft is load-bearing and cannot be stripped without redrawing
+    // the mark. Checked at 40px, where it still reads clearly.
+    //
+    // Name follows app.keyspms.com, which uses "KeysPMS" throughout and matches
+    // what Evan asked for. Their other site, keyspms.com, styles it "KEYSpms"
+    // and the app tab title says "Keys PMS"; there is no consistent spelling on
+    // their side to defer to.
+    //
+    // Description is deliberately confined to product scope and list pricing.
+    // It carries none of their traction claims — see the commit message for
+    // why: both of their sites are unfinished generated templates, and the
+    // numbers and testimonials on them do not survive a look.
+    //
+    // No region tag: the only location given is a San Francisco footer address
+    // that sits next to a +1 (888) 555-0123 phone number, which is in the
+    // reserved fictional range, so neither is evidence of anything.
+    id: "keyspms",
+    slug: "keyspms",
+    name: "KeysPMS",
+    description: "Cloud property management system for hotels, covering booking management for walk-ins, groups and OTA imports on one timeline, a real-time room grid with availability calendar and bulk rate updates, housekeeping boards with inspection checklists and maintenance tickets, and a one-click night audit with discrepancy detection and audit trails. Adds revenue tools — dynamic pricing, rate plans and occupancy forecasting — two-way OTA sync, guest profiles with ID scanning and duplicate merging, and occupancy, revenue and AR reporting. Self-serve: sign up, configure rooms and rate plans through a guided wizard, no consultant. Listed at $3 per room per month from $30, or $5 per room from $75 with the channel manager, revenue tools and API access, on a 14-day trial.",
+    icon: "/lovable-uploads/pms-keyspms.svg",
+    categories: ["PMS"],
+    website: "https://app.keyspms.com"
+  },
+  {
+    // Unusual entry: Syncfaro is not a PMS but a connector INTO Channex, so
+    // the directory lists the thing that brings MotoPress sites to us. Tagged
+    // PMS because that is the certification track they came through and what
+    // Evan asked for; MotoPress itself is not in the directory.
+    //
+    // Their "certified Channex connector" line is the one claim here we can
+    // check internally rather than take from a website — flagged to Evan, who
+    // knows the certification list.
+    //
+    // Logo is their own rectangular lockup, logo_rectangulo.avif, converted
+    // from AVIF to webp at 320px. Chosen over their round mark, which drops
+    // the wordmark and sits smaller in the slot. Its background is opaque
+    // #FEFEFE rather than transparent, which is invisible against our white
+    // tiles but would box out if the tile colour ever changed.
+    //
+    // No region tag: the site names no company, country or entity anywhere,
+    // and prices in EUR, which is not on its own evidence of a market.
+    id: "syncfaro",
+    slug: "syncfaro",
+    name: "Syncfaro",
+    description: "WordPress plugin that connects MotoPress Hotel Booking sites to Channex, adding the rate and availability sync MotoPress's built-in channel manager does not do. MotoPress ships iCal only, which keeps calendars roughly aligned but carries no prices; Syncfaro pushes rates per rate plan with seasons and rules intact, syncs availability in real time so a booking on one channel closes the room everywhere, and pulls channel bookings back in with their creations, amendments and cancellations. Handles multiple rate plans per room, refundable against non-refundable, each mapped to its own channel rate plan, and sends minimum-stay rules alongside prices in a single restrictions call. Runs on standard WordPress scheduling, so there is no cron or server work to do. Sold to agencies by number of sites on an annual licence — EUR 179 for one site, EUR 449 for five, EUR 1,299 for fifteen — with the operator bringing their own Channex account.",
+    icon: "/lovable-uploads/pms-syncfaro.webp",
+    categories: ["PMS"],
+    website: "https://syncfaro.com"
+  },
+  {
+    // Logo is their published /apple-touch-icon.png, converted to webp. It is
+    // the only real brand asset the site serves — /logo.svg, /icon.svg and
+    // /manifest.json all return the SPA shell rather than 404ing, so probing
+    // filenames finds nothing but HTML. Matches the mark Evan supplied.
+    //
+    // Europe comes from Verifactu: they file booking and order invoices with
+    // the Spanish tax agency, which is not something you build unless you
+    // serve Spain. The footer names no company or country, and EUR pricing
+    // alone would not have been enough.
+    id: "estada",
+    slug: "estada",
+    name: "Estada",
+    description: "All-in-one platform bundling a PMS, a channel manager and an AI website builder, sold to hosts, agencies and regional portals running vacation rentals, hotels or B&Bs. Pushes rates and availability to Airbnb, Booking.com, Vrbo, Expedia and 50-plus other channels alongside multi-calendar and iCal sync, and takes direct bookings through the operator's own Stripe account at no commission, either instantly or as requests approved before the guest confirms. Around that sits the operational half: rates, seasons and minimum stays, upsells and extras, payment links, invoices and e-signed contracts, invoicing filed with the Spanish tax agency through Verifactu, online check-in and guest registration, a unified inbox that can pull Airbnb and Booking.com messages in, AI content writing and translation, and separate owner, cleaner and guest portals with settlements. From EUR 15 a month for three rentals, on a 14-day trial with no setup fee.",
+    icon: "/lovable-uploads/pms-estada.webp",
+    categories: ["PMS", "Europe"],
+    website: "https://estada.io"
+  }
 ];

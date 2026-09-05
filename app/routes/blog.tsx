@@ -4,10 +4,16 @@ import Footer from "@/components/Footer";
 import { pageMeta } from "@/lib/seo";
 import BlogCard from "@/components/BlogCard";
 import BlogSidebar from "@/components/BlogSidebar";
-import { blogPosts, blogCategories } from "@/data/blogPosts";
+import { blogIndex } from "@/lib/blog.server";
 import { Button } from "@/components/ui/button";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import type { Route } from "./+types/blog";
+
+// Already sorted newest-first and stripped of article bodies, so the browser
+// gets card metadata rather than every post's full HTML.
+export async function loader() {
+  return blogIndex();
+}
 
 export const meta: Route.MetaFunction = ({ location }) =>
   pageMeta(
@@ -18,16 +24,15 @@ export const meta: Route.MetaFunction = ({ location }) =>
     location,
   );
 
-const Blog = () => {
+const Blog = ({ loaderData }: Route.ComponentProps) => {
+  const { posts, categories } = loaderData;
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
   const [currentPage, setCurrentPage] = useState(1);
   const postsPerPage = 6;
 
-  // Filter posts by category and sort by date (newest first)
-  const filteredPosts = (selectedCategory 
-    ? blogPosts.filter(post => post.category.id === selectedCategory)
-    : blogPosts)
-    .sort((a, b) => new Date(b.publishDate).getTime() - new Date(a.publishDate).getTime());
+  const filteredPosts = selectedCategory
+    ? posts.filter((post) => post.category.id === selectedCategory)
+    : posts;
 
   // Pagination
   const totalPages = Math.ceil(filteredPosts.length / postsPerPage);
@@ -115,8 +120,8 @@ const Blog = () => {
             {/* Sidebar */}
             <div className="lg:col-span-1">
               <BlogSidebar
-                categories={blogCategories}
-                recentPosts={blogPosts}
+                categories={categories}
+                recentPosts={posts}
                 onCategoryFilter={handleCategoryFilter}
                 selectedCategory={selectedCategory}
               />

@@ -17,6 +17,8 @@ import {
   ChevronUp,
   Code2,
   FlaskConical,
+  Layers,
+  Ruler,
   X,
 } from "lucide-react";
 import { useState } from "react";
@@ -30,6 +32,9 @@ import {
   VR_BASE_RATE,
   HOTEL_TIERS,
   VR_TIERS,
+  INCLUDED_LIMITS,
+  OVERAGE_FEES,
+  USAGE_FEES,
   goodFit,
   wrongFit,
 } from "@/data/pricing";
@@ -282,6 +287,71 @@ const Pricing = () => {
                   <ArrowRight size={16} className="ml-2" />
                 </Link>
               </Button>
+            </div>
+          </div>
+
+          {/* Charged on top — the fees that used to live only in the contract */}
+          <div className="mb-20 max-w-4xl mx-auto">
+            <div className="text-center mb-8">
+              <h2 className="text-3xl font-bold text-foreground font-inter mb-3">
+                What else can be charged
+              </h2>
+              <p className="text-muted-foreground font-inter max-w-2xl mx-auto">
+                Most accounts never see these. They are published here so nothing on your invoice
+                arrives unannounced — every charge we can raise is on this page.
+              </p>
+            </div>
+
+            <div className="rounded-xl border border-border bg-card/50 p-6 mb-6">
+              <h3 className="font-semibold text-foreground font-inter mb-4 flex items-center gap-2">
+                <Layers className="h-5 w-5 text-primary" /> Usage fees
+              </h3>
+              <ul className="space-y-4 font-inter text-sm">
+                {USAGE_FEES.map((f) => (
+                  <li key={f.item} className="border-b border-border/50 pb-4 last:border-0 last:pb-0">
+                    <div className="flex justify-between gap-4">
+                      <span className="font-medium text-foreground">{f.item}</span>
+                      <span className="font-semibold text-foreground tabular-nums whitespace-nowrap">
+                        {f.fee}
+                      </span>
+                    </div>
+                    <p className="text-muted-foreground mt-1 leading-relaxed">{f.note}</p>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div className="rounded-xl border border-border bg-card/50 p-6">
+              <h3 className="font-semibold text-foreground font-inter mb-2 flex items-center gap-2">
+                <Ruler className="h-5 w-5 text-primary" /> Property size limits and overage
+              </h3>
+              <p className="text-sm text-muted-foreground font-inter mb-4 leading-relaxed">
+                Every property includes generous limits. Overage applies only to the part above
+                them, not to the whole property.
+              </p>
+
+              <ul className="space-y-2 font-inter text-sm mb-5">
+                {INCLUDED_LIMITS.map((l) => (
+                  <li key={l.type} className="flex justify-between gap-4 py-1.5 border-b border-border/50 last:border-0">
+                    <span className="text-muted-foreground">{l.type}</span>
+                    <span className="text-foreground text-right">{l.limits}</span>
+                  </li>
+                ))}
+              </ul>
+
+              <ul className="space-y-2 font-inter text-sm">
+                {OVERAGE_FEES.map((o) => (
+                  <li key={o.item} className="flex justify-between gap-4 py-1.5 border-b border-border/50 last:border-0">
+                    <span className="text-muted-foreground">
+                      {o.item}
+                      {o.note ? <span className="text-muted-foreground/70"> — {o.note}</span> : null}
+                    </span>
+                    <span className="font-semibold text-foreground tabular-nums whitespace-nowrap">
+                      {o.fee}
+                    </span>
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
 

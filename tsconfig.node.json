@@ -19,11 +19,21 @@
     "noUnusedParameters": false,
     "noFallthroughCasesInSwitch": true,
 
-    /* vite.config.ts imports app/data/integrations.ts (build-time XLSX export) */
+    /* vite.config.ts imports app data directly (build-time XLSX export and the
+       social-card check), so those modules and their types are part of this
+       project too. */
     "baseUrl": ".",
     "paths": {
       "@/*": ["./app/*"]
     }
   },
-  "include": ["vite.config.ts", "react-router.config.ts", "app/data/integrations.ts", "app/types/integration.ts"]
+  "include": [
+    "vite.config.ts",
+    "react-router.config.ts",
+    "app/data/integrations.ts",
+    "app/data/blogPosts.ts",
+    "app/lib/og-image.ts",
+    "app/types/integration.ts",
+    "app/types/blog.ts"
+  ]
 }

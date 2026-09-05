@@ -67,7 +67,7 @@ export const blogPosts: BlogPost[] = [
       <p>Set up your two discount tiers as shown below. For a <strong>weekly discount</strong>, set the condition to <code>&ge; 7 days</code> and enter your desired percentage (e.g., 5%). For a <strong>monthly discount</strong>, add a second rule with <code>&ge; 30 days</code> and a higher percentage (e.g., 10%) to reward longer commitments.</p>
 
       <figure style="margin: 2rem 0;">
-        <img src="/lovable-uploads/blog-airbnb-weekly-monthly-discounts-screenshot.png" alt="Channex Pricing Settings showing weekly (7+ days, 5%) and monthly (30+ days, 10%) long-term stay discounts" style="width: 100%; border-radius: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.12); border: 1px solid #e2e8f0;" />
+        <img src="/lovable-uploads/blog-airbnb-weekly-monthly-discounts-screenshot.webp" alt="Channex Pricing Settings showing weekly (7+ days, 5%) and monthly (30+ days, 10%) long-term stay discounts" style="width: 100%; border-radius: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.12); border: 1px solid #e2e8f0;" />
         <figcaption style="text-align: center; margin-top: 0.75rem; color: #64748b; font-size: 0.875rem; font-style: italic;">Weekly (7+ nights, 5% off) and monthly (30+ nights, 10% off) discount rules configured in Channex Pricing Settings</figcaption>
       </figure>
 
@@ -88,7 +88,7 @@ export const blogPosts: BlogPost[] = [
     publishDate: "2026-03-19",
     category: blogCategories[4],
     tags: ["Airbnb", "Discounts", "Revenue Management", "Long-Stay", "Channex"],
-    featuredImage: "/lovable-uploads/blog-airbnb-weekly-monthly-discounts-header.png",
+    featuredImage: "/lovable-uploads/blog-airbnb-weekly-monthly-discounts-header.webp",
     readTime: 4,
     metaDescription: "Learn how to set up weekly and monthly length-of-stay discounts on Airbnb using Channex to attract longer bookings and increase revenue."
   },
@@ -111,7 +111,7 @@ export const blogPosts: BlogPost[] = [
       <p>When you receive a notification, you can see the alert type, the property it relates to, and a summary of the required action. Best of all, <strong>clicking the notification takes you directly to the relevant page in the Airbnb extranet</strong>, eliminating the need to manually search for the issue.</p>
       
       <figure style="margin: 2rem 0;">
-        <img src="/lovable-uploads/blog-notifications-feed.png" alt="Channex Live Feed Events showing various Airbnb Notifications" style="width: 100%; border-radius: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.12); border: 1px solid #e2e8f0;" />
+        <img src="/lovable-uploads/blog-notifications-feed.webp" alt="Channex Live Feed Events showing various Airbnb Notifications" style="width: 100%; border-radius: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.12); border: 1px solid #e2e8f0;" />
         <figcaption style="text-align: center; margin-top: 0.75rem; color: #64748b; font-size: 0.875rem; font-style: italic;">Live Feed Events displaying real-time Airbnb notifications</figcaption>
       </figure>
       
@@ -126,7 +126,7 @@ export const blogPosts: BlogPost[] = [
       <p>These alerts relate to essential account information that could impact your ability to get paid. Acting on them quickly is critical. Examples include prompts to update your account details or add US tax information, both necessary steps for processing payouts and keeping your account active.</p>
       
       <figure style="margin: 2rem 0;">
-        <img src="/lovable-uploads/blog-notifications-account.png" alt="Examples of account-related notifications for tax info and details updates" style="width: 100%; border-radius: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.12); border: 1px solid #e2e8f0;" />
+        <img src="/lovable-uploads/blog-notifications-account.webp" alt="Examples of account-related notifications for tax info and details updates" style="width: 100%; border-radius: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.12); border: 1px solid #e2e8f0;" />
         <figcaption style="text-align: center; margin-top: 0.75rem; color: #64748b; font-size: 0.875rem; font-style: italic;">Account-related notifications requiring immediate attention</figcaption>
       </figure>
       
@@ -135,7 +135,7 @@ export const blogPosts: BlogPost[] = [
       <p>Airbnb closely monitors listing performance. These notifications give you an early warning about potential problems, allowing you to take corrective action before a listing is suspended. You may receive quality notifications warning about potential suspension due to quality standards, alerts to take action on specific listing issues, or account-level warnings about issues across multiple listings that could affect your payouts if not addressed.</p>
       
       <figure style="margin: 2rem 0;">
-        <img src="/lovable-uploads/blog-notifications-quality.png" alt="Examples of quality and issue-related notifications" style="width: 100%; border-radius: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.12); border: 1px solid #e2e8f0;" />
+        <img src="/lovable-uploads/blog-notifications-quality.webp" alt="Examples of quality and issue-related notifications" style="width: 100%; border-radius: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.12); border: 1px solid #e2e8f0;" />
         <figcaption style="text-align: center; margin-top: 0.75rem; color: #64748b; font-size: 0.875rem; font-style: italic;">Quality warnings and listing issue notifications</figcaption>
       </figure>
       
@@ -144,7 +144,7 @@ export const blogPosts: BlogPost[] = [
       <p>Stay informed about changes to your listings' visibility on Airbnb. For example, you will receive confirmation when a previously suspended or deactivated listing is reactivated and visible to guests again.</p>
       
       <figure style="margin: 2rem 0;">
-        <img src="/lovable-uploads/blog-notifications-reactivation.png" alt="Example of a Listing Reactivation notification" style="width: 100%; border-radius: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.12); border: 1px solid #e2e8f0;" />
+        <img src="/lovable-uploads/blog-notifications-reactivation.webp" alt="Example of a Listing Reactivation notification" style="width: 100%; border-radius: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.12); border: 1px solid #e2e8f0;" />
         <figcaption style="text-align: center; margin-top: 0.75rem; color: #64748b; font-size: 0.875rem; font-style: italic;">Listing reactivation confirmation notification</figcaption>
       </figure>
       
@@ -155,7 +155,7 @@ export const blogPosts: BlogPost[] = [
       <p>Your Live Feed contains many different event types. To focus solely on these important Airbnb alerts, simply use the <strong>Filter</strong> dropdown on the Live Feed Events page and select <strong>"Airbnb Notification"</strong>. This will hide all other events, giving you a clear, actionable list of items that require your attention.</p>
       
       <figure style="margin: 2rem 0;">
-        <img src="/lovable-uploads/blog-notifications-filter.png" alt="Filtering the Live Feed to show only Airbnb Notifications" style="width: 100%; border-radius: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.12); border: 1px solid #e2e8f0;" />
+        <img src="/lovable-uploads/blog-notifications-filter.webp" alt="Filtering the Live Feed to show only Airbnb Notifications" style="width: 100%; border-radius: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.12); border: 1px solid #e2e8f0;" />
         <figcaption style="text-align: center; margin-top: 0.75rem; color: #64748b; font-size: 0.875rem; font-style: italic;">Use the filter dropdown to view only Airbnb notifications</figcaption>
       </figure>
       
@@ -173,7 +173,7 @@ export const blogPosts: BlogPost[] = [
     publishDate: "2026-02-12",
     category: blogCategories[3],
     tags: ["Product Updates", "Airbnb", "Notifications", "Live Feed", "Quality Management", "Account Management"],
-    featuredImage: "/lovable-uploads/blog-airbnb-notifications-header.png",
+    featuredImage: "/lovable-uploads/blog-airbnb-notifications-header.webp",
     readTime: 5,
     metaDescription: "Stay ahead of Airbnb issues with real-time notifications in Channex. Get alerts for quality warnings, account updates, and listing changes with direct links to resolve them in the Airbnb extranet."
   },
@@ -210,7 +210,7 @@ export const blogPosts: BlogPost[] = [
       <p>First, go to the <strong>Edit Channel</strong> screen for the relevant OTA, such as Airbnb. Select the <strong>Listing</strong> tab to see all your properties. Find the property you wish to update and click on the <strong>Actions</strong> dropdown menu. From there, select <strong>Price settings</strong>.</p>
       
       <figure style="margin: 2rem 0;">
-        <img src="/lovable-uploads/blog-discounts-step1.png" alt="Navigating to Price Settings in Channex" style="width: 100%; border-radius: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.12); border: 1px solid #e2e8f0;" />
+        <img src="/lovable-uploads/blog-discounts-step1.webp" alt="Navigating to Price Settings in Channex" style="width: 100%; border-radius: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.12); border: 1px solid #e2e8f0;" />
         <figcaption style="text-align: center; margin-top: 0.75rem; color: #64748b; font-size: 0.875rem; font-style: italic;">Navigate to Price Settings from the Listing tab</figcaption>
       </figure>
       
@@ -219,7 +219,7 @@ export const blogPosts: BlogPost[] = [
       <p>In the <strong>Price Settings</strong> window, you will see an overview of your current pricing structure. To add a new promotion, click on the <strong>Add discount rule</strong> link located under the "Length of stay discounts" section.</p>
       
       <figure style="margin: 2rem 0;">
-        <img src="/lovable-uploads/blog-discounts-step2.png" alt="Adding a discount rule in Channex" style="width: 100%; border-radius: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.12); border: 1px solid #e2e8f0;" />
+        <img src="/lovable-uploads/blog-discounts-step2.webp" alt="Adding a discount rule in Channex" style="width: 100%; border-radius: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.12); border: 1px solid #e2e8f0;" />
         <figcaption style="text-align: center; margin-top: 0.75rem; color: #64748b; font-size: 0.875rem; font-style: italic;">Click "Add discount rule" to create a new promotion</figcaption>
       </figure>
       
@@ -228,7 +228,7 @@ export const blogPosts: BlogPost[] = [
       <p>A dropdown menu will appear with three options. Select <strong>Booking ahead</strong> to create an Early Bird discount or <strong>Last-minute</strong> to create a last-minute offer.</p>
       
       <figure style="margin: 2rem 0;">
-        <img src="/lovable-uploads/blog-discounts-step3.png" alt="Selecting the discount type" style="width: 100%; border-radius: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.12); border: 1px solid #e2e8f0;" />
+        <img src="/lovable-uploads/blog-discounts-step3.webp" alt="Selecting the discount type" style="width: 100%; border-radius: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.12); border: 1px solid #e2e8f0;" />
         <figcaption style="text-align: center; margin-top: 0.75rem; color: #64748b; font-size: 0.875rem; font-style: italic;">Choose between Booking ahead, Last-minute, or Long-term stay discounts</figcaption>
       </figure>
       
@@ -237,7 +237,7 @@ export const blogPosts: BlogPost[] = [
       <p>Now, you can define the specific conditions for your discount. For an <strong>Early Bird (Booking ahead)</strong> discount, specify the minimum number of days in advance a guest must book to qualify and the percentage discount they will receive. For example, you could offer a 10% discount for bookings made 56 days or more in advance.</p>
       
       <figure style="margin: 2rem 0;">
-        <img src="/lovable-uploads/blog-discounts-step4.png" alt="Configuring an Early Bird discount" style="width: 100%; border-radius: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.12); border: 1px solid #e2e8f0;" />
+        <img src="/lovable-uploads/blog-discounts-step4.webp" alt="Configuring an Early Bird discount" style="width: 100%; border-radius: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.12); border: 1px solid #e2e8f0;" />
         <figcaption style="text-align: center; margin-top: 0.75rem; color: #64748b; font-size: 0.875rem; font-style: italic;">Set the booking window (56 days ahead) and discount percentage (10%)</figcaption>
       </figure>
       
@@ -248,7 +248,7 @@ export const blogPosts: BlogPost[] = [
       <p>Once configured, your new discount rules will be clearly displayed in the Price Settings window. You can add multiple rules to create a comprehensive pricing strategy that rewards both early planners and spontaneous travelers. Review the settings to ensure they align with your revenue goals.</p>
       
       <figure style="margin: 2rem 0;">
-        <img src="/lovable-uploads/blog-discounts-step5.png" alt="Reviewing active Early Bird and Last-Minute discounts" style="width: 100%; border-radius: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.12); border: 1px solid #e2e8f0;" />
+        <img src="/lovable-uploads/blog-discounts-step5.webp" alt="Reviewing active Early Bird and Last-Minute discounts" style="width: 100%; border-radius: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.12); border: 1px solid #e2e8f0;" />
         <figcaption style="text-align: center; margin-top: 0.75rem; color: #64748b; font-size: 0.875rem; font-style: italic;">Both Early Bird (56 days, 10%) and Last-Minute (6 days, 15%) discounts active</figcaption>
       </figure>
       
@@ -266,7 +266,7 @@ export const blogPosts: BlogPost[] = [
     publishDate: "2026-02-12",
     category: blogCategories[4],
     tags: ["Best Practices", "Pricing Strategy", "Revenue Management", "Discounts", "Early Bird", "Last-Minute", "Dynamic Pricing"],
-    featuredImage: "/lovable-uploads/blog-basic-discounts-header.png",
+    featuredImage: "/lovable-uploads/blog-basic-discounts-header.webp",
     readTime: 6,
     metaDescription: "Learn how to maximize revenue with Early Bird and Last-Minute discounts in Channex. Step-by-step guide to implementing strategic pricing that attracts both planners and spontaneous travelers."
   },
@@ -294,7 +294,7 @@ export const blogPosts: BlogPost[] = [
       <p>This makes it easier to detect early signs of quality degradation, even when overall ratings remain high.</p>
       
       <figure style="margin: 2rem 0;">
-        <img src="/lovable-uploads/trip-issues-dashboard.png" alt="Channex Hosting Quality Dashboard showing review scores, listing status, and top negative tags" style="width: 100%; border-radius: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.12); border: 1px solid #e2e8f0;" />
+        <img src="/lovable-uploads/trip-issues-dashboard.webp" alt="Channex Hosting Quality Dashboard showing review scores, listing status, and top negative tags" style="width: 100%; border-radius: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.12); border: 1px solid #e2e8f0;" />
         <figcaption style="text-align: center; margin-top: 0.75rem; color: #64748b; font-size: 0.875rem; font-style: italic;">Performance Dashboard showing trip issues and quality metrics</figcaption>
       </figure>
       
@@ -347,7 +347,7 @@ export const blogPosts: BlogPost[] = [
     publishDate: "2026-01-09",
     category: blogCategories[3],
     tags: ["Product Updates", "Airbnb", "Quality Management", "Performance Dashboard", "Trip Issues", "Review Analytics"],
-    featuredImage: "/lovable-uploads/trip-issues-header.jpg",
+    featuredImage: "/lovable-uploads/trip-issues-header.webp",
     readTime: 5,
     metaDescription: "Monitor Airbnb trip issues and quality signals in Channex's Performance Dashboard. Identify recurring problems early and maintain listing visibility with actionable insights."
   },
@@ -381,7 +381,7 @@ export const blogPosts: BlogPost[] = [
       </ul>
       
       <figure style="margin: 2rem 0;">
-        <img src="/lovable-uploads/airbnb-promo-available.png" alt="Channex Listing tab showing New Listing Promo Available status" style="width: 100%; border-radius: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.12); border: 1px solid #e2e8f0;" />
+        <img src="/lovable-uploads/airbnb-promo-available.webp" alt="Channex Listing tab showing New Listing Promo Available status" style="width: 100%; border-radius: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.12); border: 1px solid #e2e8f0;" />
         <figcaption style="text-align: center; margin-top: 0.75rem; color: #64748b; font-size: 0.875rem; font-style: italic;">New Listing Promo showing as "Available" for eligible listings</figcaption>
       </figure>
       
@@ -409,7 +409,7 @@ export const blogPosts: BlogPost[] = [
       </table>
       
       <figure style="margin: 2rem 0;">
-        <img src="/lovable-uploads/airbnb-promo-disable.png" alt="Channex showing option to disable running New Listing Promo" style="width: 100%; border-radius: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.12); border: 1px solid #e2e8f0;" />
+        <img src="/lovable-uploads/airbnb-promo-disable.webp" alt="Channex showing option to disable running New Listing Promo" style="width: 100%; border-radius: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.12); border: 1px solid #e2e8f0;" />
         <figcaption style="text-align: center; margin-top: 0.75rem; color: #64748b; font-size: 0.875rem; font-style: italic;">Easily disable a running promotion with one click</figcaption>
       </figure>
       
@@ -437,7 +437,7 @@ export const blogPosts: BlogPost[] = [
     publishDate: "2026-01-08",
     category: blogCategories[3],
     tags: ["Product Updates", "Airbnb", "New Listing", "Promotion", "Discounts", "Channel Management"],
-    featuredImage: "/lovable-uploads/airbnb-new-listing-promo-header.jpg",
+    featuredImage: "/lovable-uploads/airbnb-new-listing-promo-header.webp",
     readTime: 4,
     metaDescription: "Manage Airbnb's New Listing Promotion directly from Channex. Get your first 3 bookings 20% faster with a 20% discount for new properties."
   },
@@ -458,7 +458,7 @@ export const blogPosts: BlogPost[] = [
       <p>Today we're launching the <strong>Airbnb Listing Quality Dashboard</strong> inside Channex: a single screen that shows your entire performance picture, week-by-week, with the metrics that actually matter for ranking and guest conversion.</p>
       
       <figure style="margin: 2rem 0;">
-        <img src="/lovable-uploads/airbnb-quality-dashboard.png" alt="Channex Airbnb Listing Quality Dashboard showing review scores, stats, and performance metrics" style="width: 100%; border-radius: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.12); border: 1px solid #e2e8f0;" />
+        <img src="/lovable-uploads/airbnb-quality-dashboard.webp" alt="Channex Airbnb Listing Quality Dashboard showing review scores, stats, and performance metrics" style="width: 100%; border-radius: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.12); border: 1px solid #e2e8f0;" />
         <figcaption style="text-align: center; margin-top: 0.75rem; color: #64748b; font-size: 0.875rem; font-style: italic;">The new Airbnb Listing Quality Dashboard in Channex</figcaption>
       </figure>
       
@@ -555,7 +555,7 @@ export const blogPosts: BlogPost[] = [
       <p>This dashboard is the result.</p>
       
       <figure style="margin: 2rem 0;">
-        <img src="/lovable-uploads/airbnb-quality-dashboard-menu.png" alt="Channex Actions menu showing Performance Dashboard option" style="width: 100%; max-width: 500px; border-radius: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.12); border: 1px solid #e2e8f0;" />
+        <img src="/lovable-uploads/airbnb-quality-dashboard-menu.webp" alt="Channex Actions menu showing Performance Dashboard option" style="width: 100%; max-width: 500px; border-radius: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.12); border: 1px solid #e2e8f0;" />
         <figcaption style="text-align: center; margin-top: 0.75rem; color: #64748b; font-size: 0.875rem; font-style: italic;">Access the Performance Dashboard from the Actions menu</figcaption>
       </figure>
       
@@ -598,7 +598,7 @@ export const blogPosts: BlogPost[] = [
     publishDate: "2025-11-21",
     category: blogCategories[3],
     tags: ["Product Updates", "Airbnb", "Quality Metrics", "Performance Dashboard", "Review Management"],
-    featuredImage: "/lovable-uploads/airbnb-quality-dashboard.png",
+    featuredImage: "/lovable-uploads/airbnb-quality-dashboard.webp",
     readTime: 7,
     metaDescription: "Discover Channex's new Airbnb Listing Quality Dashboard: track review scores, quality status, and guest feedback tags in one place to improve search ranking and visibility."
   },
@@ -625,7 +625,7 @@ export const blogPosts: BlogPost[] = [
       <p>We've now added a clear visual indicator in Channex to show you exactly when this happens. In the calendar, these dates appear with red stripes, like this:</p>
       
       <figure style="margin: 2rem 0;">
-        <img src="/lovable-uploads/sandwich-nights-calendar.png" alt="Channex calendar showing Sandwich Nights with red diagonal stripes" style="width: 100%; border-radius: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.12); border: 1px solid #e2e8f0;" />
+        <img src="/lovable-uploads/sandwich-nights-calendar.webp" alt="Channex calendar showing Sandwich Nights with red diagonal stripes" style="width: 100%; border-radius: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.12); border: 1px solid #e2e8f0;" />
         <figcaption style="text-align: center; margin-top: 0.75rem; color: #64748b; font-size: 0.875rem; font-style: italic;">Red diagonal stripes indicate nights that are available but unbookable due to minimum stay restrictions</figcaption>
       </figure>
       
@@ -752,7 +752,7 @@ export const blogPosts: BlogPost[] = [
     publishDate: "2025-11-21",
     category: blogCategories[3],
     tags: ["Product Updates", "Rate Management", "Revenue Management", "Channex Features", "Minimum Stay"],
-    featuredImage: "/lovable-uploads/sandwich-nights-calendar.png",
+    featuredImage: "/lovable-uploads/sandwich-nights-calendar.webp",
     readTime: 8,
     metaDescription: "Discover how Channex's new Sandwich Nights feature helps you identify and fix unbookable dates caused by minimum stay restrictions, preventing lost revenue."
   },
@@ -944,7 +944,7 @@ export const blogPosts: BlogPost[] = [
     publishDate: "2026-01-03",
     category: blogCategories[0],
     tags: ["STAAH SU", "Alternative", "PMS", "Channel Manager", "API", "Integration", "Comparison"],
-    featuredImage: "/lovable-uploads/staah-channex-comparison-v2.png",
+    featuredImage: "/lovable-uploads/staah-channex-comparison-v2.webp",
     readTime: 5,
     metaDescription: "STAAH SU vs Channex comparison: Compare pricing (per-property vs per-room), API integration (2-4 weeks vs 2-3 months), OTA connections, and white-label features for PMS providers."
   },
@@ -1008,7 +1008,7 @@ export const blogPosts: BlogPost[] = [
     publishDate: "2025-10-04",
     category: blogCategories[4],
     tags: ["Airbnb", "Review Tags", "Guest Feedback", "Channex", "Property Management", "Reviews API"],
-    featuredImage: "/lovable-uploads/review-tags-hero.png",
+    featuredImage: "/lovable-uploads/review-tags-hero.webp",
     readTime: 3,
     metaDescription: "Learn how Airbnb Review Tags through Channex's Reviews API help property managers gather detailed guest feedback to improve operations and boost satisfaction."
   },
@@ -1063,7 +1063,7 @@ export const blogPosts: BlogPost[] = [
     publishDate: "2025-08-20",
     category: blogCategories[3],
     tags: ["Airbnb", "LOS Pricing", "Length of Stay", "Channex", "Feature Update", "BETA"],
-    featuredImage: "/lovable-uploads/1c0d9073-b987-4554-b250-cd69e1bdf95a.png",
+    featuredImage: "/lovable-uploads/1c0d9073-b987-4554-b250-cd69e1bdf95a.webp",
     readTime: 3,
     metaDescription: "Channex now supports Airbnb's Length of Stay (LOS) Pricing in BETA. Learn how to set different rates based on booking length to boost occupancy and optimize revenue."
   },
@@ -1112,7 +1112,7 @@ export const blogPosts: BlogPost[] = [
     publishDate: "2025-08-09",
     category: blogCategories[1],
     tags: ["Airbnb", "Channex", "Pricing", "Non-refundable", "Channel Manager"],
-    featuredImage: "/lovable-uploads/9395960d-6320-483a-8f62-78c6ce80f67e.png",
+    featuredImage: "/lovable-uploads/9395960d-6320-483a-8f62-78c6ce80f67e.webp",
     readTime: 4,
     metaDescription: "Learn how to add a non-refundable discount on Airbnb via Channex to boost bookings, reduce cancellations, and secure revenue in a few easy steps."
   },
@@ -1185,12 +1185,12 @@ export const blogPosts: BlogPost[] = [
       </ol>
 
       <figure style="margin: 2rem 0;">
-        <img src="/lovable-uploads/72b04c70-76d3-4cfc-825b-3c012770e12e.png" alt="Channex Listings tab showing Actions dropdown with Checkout Tasks option" style="width: 100%; border-radius: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.12); border: 1px solid #e2e8f0;" />
+        <img src="/lovable-uploads/72b04c70-76d3-4cfc-825b-3c012770e12e.webp" alt="Channex Listings tab showing Actions dropdown with Checkout Tasks option" style="width: 100%; border-radius: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.12); border: 1px solid #e2e8f0;" />
         <figcaption style="text-align: center; margin-top: 0.75rem; color: #64748b; font-size: 0.875rem; font-style: italic;">Navigate to your Airbnb channel settings and select Checkout Tasks from the Actions menu</figcaption>
       </figure>
 
       <figure style="margin: 2rem 0;">
-        <img src="/lovable-uploads/ac556622-4248-4011-a160-c1ec25c6fa79.png" alt="Manage Checkout Tasks interface in Channex with various checkout options" style="width: 100%; border-radius: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.12); border: 1px solid #e2e8f0;" />
+        <img src="/lovable-uploads/ac556622-4248-4011-a160-c1ec25c6fa79.webp" alt="Manage Checkout Tasks interface in Channex with various checkout options" style="width: 100%; border-radius: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.12); border: 1px solid #e2e8f0;" />
         <figcaption style="text-align: center; margin-top: 0.75rem; color: #64748b; font-size: 0.875rem; font-style: italic;">Configure your checkout tasks with checkboxes and custom instructions for guests</figcaption>
       </figure>
 
@@ -1208,7 +1208,7 @@ export const blogPosts: BlogPost[] = [
     publishDate: "2025-09-08",
     category: blogCategories[1],
     tags: ["Airbnb", "Channex", "Checkout Instructions", "Guest Management", "Property Management"],
-    featuredImage: "/lovable-uploads/98fd546a-dcf2-4e99-ab63-2ac38047f1c0.png",
+    featuredImage: "/lovable-uploads/98fd546a-dcf2-4e99-ab63-2ac38047f1c0.webp",
     readTime: 3,
     metaDescription: "Learn how to set up and manage Airbnb checkout instructions with Channex to improve guest experience and streamline property turnovers."
   },
@@ -1245,7 +1245,7 @@ export const blogPosts: BlogPost[] = [
       <p>Channex solves this by bringing the entire promotion lifecycle directly into your central channel manager. Under your listing settings, you can now see the live eligibility and status of every property's launch promotion.</p>
       
       <figure style="margin: 2rem 0;">
-        <img src="/lovable-uploads/airbnb-promo-available.png" alt="Channex Listing tab showing New Listing Promo Available status" style="width: 100%; border-radius: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.12); border: 1px solid #e2e8f0;" />
+        <img src="/lovable-uploads/airbnb-promo-available.webp" alt="Channex Listing tab showing New Listing Promo Available status" style="width: 100%; border-radius: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.12); border: 1px solid #e2e8f0;" />
         <figcaption style="text-align: center; margin-top: 0.75rem; color: #64748b; font-size: 0.875rem; font-style: italic;">Instantly see which new listings are eligible for the 20% promotion directly inside Channex</figcaption>
       </figure>
       
@@ -1258,7 +1258,7 @@ export const blogPosts: BlogPost[] = [
       <p>With Channex, disabling a running promotion is as simple as clicking a button. The change syncs to Airbnb instantly, updating your live rates in real-time.</p>
       
       <figure style="margin: 2rem 0;">
-        <img src="/lovable-uploads/airbnb-promo-disable.png" alt="Channex showing option to disable running New Listing Promo" style="width: 100%; border-radius: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.12); border: 1px solid #e2e8f0;" />
+        <img src="/lovable-uploads/airbnb-promo-disable.webp" alt="Channex showing option to disable running New Listing Promo" style="width: 100%; border-radius: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.12); border: 1px solid #e2e8f0;" />
         <figcaption style="text-align: center; margin-top: 0.75rem; color: #64748b; font-size: 0.875rem; font-style: italic;">Need to adjust your strategy? Disable active promotions instantly with one click</figcaption>
       </figure>
       
@@ -1307,7 +1307,7 @@ export const blogPosts: BlogPost[] = [
     publishDate: "2026-06-29",
     category: blogCategories[3],
     tags: ["Product Updates", "Airbnb", "New Listing", "Promotion", "Channel Management", "Property Management"],
-    featuredImage: "/lovable-uploads/airbnb-new-listing-promo-header.jpg",
+    featuredImage: "/lovable-uploads/airbnb-new-listing-promo-header.webp",
     readTime: 4,
     metaDescription: "Learn how to use Channex to manage and automate Airbnb's New Listing Promotion directly from your channel manager. Get your first 3 bookings 20% faster."
   },
@@ -1348,7 +1348,7 @@ export const blogPosts: BlogPost[] = [
       <p>Navigate to the <strong>Channel Settings</strong> for Airbnb inside Channex, and click on the <strong>Listing</strong> tab. Find the property you want to adjust, click the <strong>Actions</strong> dropdown on the right, and select <strong>Price settings</strong>.</p>
       
       <figure style="margin: 2rem 0;">
-        <img src="/lovable-uploads/airbnb-last-minute-listing-tab.png" alt="Channex Edit Channel Listing tab showing Price Settings option in Actions menu" style="width: 100%; border-radius: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.12); border: 1px solid #e2e8f0;" />
+        <img src="/lovable-uploads/airbnb-last-minute-listing-tab.webp" alt="Channex Edit Channel Listing tab showing Price Settings option in Actions menu" style="width: 100%; border-radius: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.12); border: 1px solid #e2e8f0;" />
         <figcaption style="text-align: center; margin-top: 0.75rem; color: #64748b; font-size: 0.875rem; font-style: italic;">Access Price Settings directly from the Actions menu on any listing</figcaption>
       </figure>
       
@@ -1357,7 +1357,7 @@ export const blogPosts: BlogPost[] = [
       <p>Inside the Price Settings modal, scroll down to the <strong>Length of stay discounts</strong> section. Click the <strong>Add discount rule</strong> dropdown on the right and select <strong>Last-minute</strong>.</p>
       
       <figure style="margin: 2rem 0;">
-        <img src="/lovable-uploads/airbnb-last-minute-price-settings.png" alt="Channex Price Settings modal showing Add Discount Rule dropdown with Last-minute option" style="width: 100%; border-radius: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.12); border: 1px solid #e2e8f0;" />
+        <img src="/lovable-uploads/airbnb-last-minute-price-settings.webp" alt="Channex Price Settings modal showing Add Discount Rule dropdown with Last-minute option" style="width: 100%; border-radius: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.12); border: 1px solid #e2e8f0;" />
         <figcaption style="text-align: center; margin-top: 0.75rem; color: #64748b; font-size: 0.875rem; font-style: italic;">Choose 'Last-minute' from the discount rule options</figcaption>
       </figure>
       
@@ -1368,7 +1368,7 @@ export const blogPosts: BlogPost[] = [
       <p>For example, you can set a rule where bookings made within <strong>2 days</strong> of arrival automatically receive a <strong>15% discount</strong>.</p>
       
       <figure style="margin: 2rem 0;">
-        <img src="/lovable-uploads/airbnb-last-minute-days-dropdown.png" alt="Channex dropdown to select number of days for Last-minute discount trigger" style="width: 100%; border-radius: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.12); border: 1px solid #e2e8f0;" />
+        <img src="/lovable-uploads/airbnb-last-minute-days-dropdown.webp" alt="Channex dropdown to select number of days for Last-minute discount trigger" style="width: 100%; border-radius: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.12); border: 1px solid #e2e8f0;" />
         <figcaption style="text-align: center; margin-top: 0.75rem; color: #64748b; font-size: 0.875rem; font-style: italic;">Select the trigger window (in days) and input your desired discount percentage</figcaption>
       </figure>
       
@@ -1423,7 +1423,7 @@ export const blogPosts: BlogPost[] = [
     publishDate: "2026-06-29",
     category: blogCategories[3],
     tags: ["Product Updates", "Airbnb", "Discounts", "Last-Minute Bookings", "Revenue Management", "Channel Management"],
-    featuredImage: "/lovable-uploads/airbnb-last-minute-discounts-hero.jpg",
+    featuredImage: "/lovable-uploads/airbnb-last-minute-discounts-hero.webp",
     readTime: 4,
     metaDescription: "Learn how to manage and automate Airbnb Last-Minute Discounts directly from Channex to drive bookings, fill mid-week gaps, and maximize Q3 revenue."
   }

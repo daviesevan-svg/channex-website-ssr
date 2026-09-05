@@ -5,369 +5,446 @@ const CustomerAgreement = () => {
         Channex Customer Agreement
       </h2>
       <p className="text-sm text-muted-foreground font-inter italic">
-        Effective starting: June 20, 2020
+        Effective from: 17 August 2026
       </p>
-      
+
       <div className="space-y-6 text-muted-foreground font-inter leading-relaxed">
         <p>
-          This Channex Customer Agreement (the "Agreement") is between you and buuqit.com Ltd (09250795) Trading as Channex ("Channex"). If you are agreeing to this Agreement not as an individual but on behalf of your company, then "Customer" or "you" means your company, and you are binding your company to this Agreement. Channex may modify this Agreement from time to time, subject to the terms in Section 26 (Changes to this Agreement) below.
+          This Channex Customer Agreement (the "Agreement") is between you and Channex.io LTD, a company registered in England and Wales with company number 09250795, whose registered office is at Castell Pigyn Lodge, Abergwili, Carmarthen, SA31 2JL, United Kingdom ("Channex", "we", "us"). If you are agreeing to this Agreement on behalf of a company or other organisation rather than as an individual, then "Customer" or "you" means that organisation, and you confirm you have authority to bind it.
         </p>
-        
+
         <p>
-          By clicking on the "I agree" (or similar button) that is presented to you at the time of your Order, or by using or accessing Channex products, you indicate your assent to be bound by this Agreement.
+          By clicking "I agree" (or a similar button) when you place an Order, or by accessing or using the Channex platform, you agree to be bound by this Agreement.
         </p>
 
         <div className="space-y-6">
           <div>
-            <h3 className="text-xl font-semibold text-foreground mb-3">1. Scope of the Agreement</h3>
+            <h3 className="text-xl font-semibold text-foreground mb-3">1. Scope and order of precedence</h3>
             <p>
-              This Agreement governs your initial purchase as well as any future purchases made by you that reference this Agreement. This Agreement includes our Privacy Policy, our Acceptable Use Policy, any Orders, and any other referenced policies and attachments. This Agreement applies to Channex add-ons or plugins that you purchase from the Channex Marketplace. However, it does not apply to add-ons or plugins from other vendors on the Channex Marketplace, which are covered under the Channex Marketplace Terms of Use.
+              1.1 This Agreement governs your access to and use of the Channex platform and related services (together, the "Services"). It applies to your first Order and to any later Order that references it. It includes our Privacy Policy, our Acceptable Use Policy, our Security Policy and the Data Protection Addendum at Section 21 below.
+            </p>
+            <p className="mt-3">
+              1.2 <strong>Order of precedence.</strong> If there is any conflict or inconsistency between documents, the following order applies, with the first listed prevailing: (a) in respect of the processing of personal data, any European Commission standard contractual clauses, UK International Data Transfer Agreement or Addendum, or other data protection agreement signed between us — these rank first because the clauses themselves require it; (b) any service agreement, partner agreement or addendum signed by an authorised representative of both parties, including its appendices; (c) your Order; (d) this Agreement; (e) any policy referenced in this Agreement. A signed agreement varies this Agreement only to the extent of the conflict — the rest of this Agreement continues to apply.
+            </p>
+            <p className="mt-3">
+              1.3 This Agreement does not apply to third party products or services that you choose to connect to the Services, which are covered by Section 18 (Third party channels and services).
             </p>
           </div>
 
           <div>
-            <h3 className="text-xl font-semibold text-foreground mb-3">2. Types of Channex Products</h3>
+            <h3 className="text-xl font-semibold text-foreground mb-3">2. The Services</h3>
             <p>
-              This Agreement governs (a) Channex's commercially available downloadable software products (currently designated as "Server" or "Data Center" deployments) ("Software"), (b) Channex's hosted or cloud-based solutions (currently designated as "Cloud" deployments) ("Hosted Services"), and (c) any related support or maintenance services provided by Channex. Software and Hosted Services, together with related Documentation, are referred to as "Products". The Products and their permitted use are further described in Channex's standard documentation ("Documentation"). Section 6 (Software Terms) applies specifically to Software, and Section 7 (Hosted Services Terms) applies specifically to Hosted Services, but unless otherwise specified, other provisions of this Agreement apply to all Products.
+              2.1 Channex provides a hosted inventory management and distribution platform that connects property, hotel and vacation rental systems to online travel agents, booking engines, metasearch channels and other systems that need availability, rate and booking data. The Services are provided over the internet on a subscription basis. There is no software for you to install or host.
+            </p>
+            <p className="mt-3">
+              2.2 Subject to this Agreement and payment of the applicable fees, we grant you a non-exclusive, non-transferable right to access and use the Services during your Subscription Term, for your own business purposes and in accordance with your Order and our documentation.
+            </p>
+            <p className="mt-3">
+              2.3 We may change, improve or add to the Services from time to time. We will not make a change that materially reduces the core functionality you are paying for during a Subscription Term without giving you notice under Section 20 (Changes to this Agreement).
+            </p>
+            <p className="mt-3">
+              2.4 You decide which channels, applications and third parties your properties connect to and share data with. We do not make that choice for you.
             </p>
           </div>
 
           <div>
-            <h3 className="text-xl font-semibold text-foreground mb-3">3. Account Registration</h3>
+            <h3 className="text-xl font-semibold text-foreground mb-3">3. Your account</h3>
             <p>
-              You may need to register for a Channex account in order to place orders or access or receive any Products. Any registration information that you provide to us must be accurate, current and complete. You must also update your information so that we may send notices, statements and other information to you by email or through your account. You are responsible for all actions taken through your accounts.
+              3.1 You need a Channex account to place Orders and use the Services. The registration information you give us must be accurate, current and complete, and you must keep it up to date so that we can send you notices, statements and invoices.
+            </p>
+            <p className="mt-3">
+              3.2 User credentials are issued to named individuals and must not be shared. You must keep them confidential, and tell us promptly if you become aware of any unauthorised use of your account. You are responsible for everything done through your account.
             </p>
           </div>
 
           <div>
-            <h3 className="text-xl font-semibold text-foreground mb-3">4. Orders</h3>
+            <h3 className="text-xl font-semibold text-foreground mb-3">4. Orders and scope of use</h3>
             <p>
-              4.1 Directly with Channex. Channex's Product ordering documentation or purchase flow ("Order") will specify your authorised scope of use for the Products, which may include: (a) number and type of Authorised Users (as defined below), (b) storage or capacity (for Hosted Services), (c) numbers of licenses, copies or instances (for Software), or (d) other restrictions or billable units (as applicable, the "Scope of Use"). The term "Order" also includes any applicable Product or Support and Maintenance renewal, or purchases you make to increase or upgrade your Scope of Use.
+              4.1 Your Order sets out your authorised scope of use — which may include the number of properties, rooms or units, the number of user seats, and any applicable limits ("Scope of Use") — together with the fees, the currency and the Subscription Term.
             </p>
-            <p>
-              4.2 Reseller Orders. This Agreement applies whether you purchase our Products directly from Channex or through authorised resellers (each, a "Reseller"). If you purchase through a Reseller, your Scope of Use shall be as stated in the Order placed by Reseller for you, and Reseller is responsible for the accuracy of any such Order. Resellers are not authorised to make any promises or commitments on Channex's behalf, and we are not bound by any obligations to you other than what we specify in this Agreement.
+            <p className="mt-3">
+              4.2 Your users may be your own staff, or contractors, agents or other people acting on your behalf. You are responsible for their compliance with this Agreement.
             </p>
-          </div>
-
-          <div>
-            <h3 className="text-xl font-semibold text-foreground mb-3">5. Authorised Users</h3>
-            <p>
-              Only the specific individuals for whom you have paid the required fees and whom you designate through the applicable Product ("Authorised Users") may access and use the Products. Some Products may allow you to designate different types of Authorised Users, in which case pricing and functionality may vary according to the type of Authorised User. Authorised Users may be you or your Affiliates' employees, representatives, consultants, contractors, agents, or other third parties who are acting for your benefit or on your behalf. You may also permit your customers to have limited access to certain Products as Authorised Users. You may increase the number of Authorised Users permitted to access your instance of the Product by placing a new Order or, in some cases, directly through the Product. In all cases, you must pay the applicable fee for the increased number of Authorised Users. You are responsible for compliance with this Agreement by all Authorised Users. All use of Products by you and your Authorised Users must be within the Scope of Use and solely for the benefit of you or your Affiliates. "Affiliate" means an entity which, directly or indirectly, owns or controls, is owned or is controlled by or is under common ownership or control with a party, where "control" means the power to direct the management or affairs of an entity, and "ownership" means the beneficial ownership of 50% (or, if the applicable jurisdiction does not allow majority ownership, the maximum amount permitted under such law) or more of the voting equity securities or other equivalent voting interests of the entity.
+            <p className="mt-3">
+              4.3 You may increase your Scope of Use at any time, through the platform or by placing a new Order. We will charge the additional fees at the rates then applying to your account, in your next billing cycle.
             </p>
-          </div>
-
-          <div>
-            <h3 className="text-xl font-semibold text-foreground mb-3">6. Software Terms</h3>
-            <p>
-              6.1 Your License Rights. Subject to the terms and conditions of this Agreement, Channex grants you a non-exclusive, non-sublicenseable and non-transferable license to install and use the Software during the applicable License Term in accordance with this Agreement, your applicable Scope of Use, and the Documentation. The term of each Software license ("License Term") will be specified in your Order. Your License Term will end upon any termination of this Agreement, even if it is identified as "perpetual" or if no expiration date is specified in your Order. The Software requires a license key in order to operate, which will be delivered as described in Section 10.2 (Delivery).
-            </p>
-            <p>
-              6.2 Number of Instances. Unless otherwise specified in your Order, for each Software license that you purchase, you may install one production instance of the Software on systems owned or operated by you (or your third party service providers so long as you remain responsible for their compliance with the terms and conditions of this Agreement). We also make available "developer" licenses free of charge for certain of our Software offerings to allow you to deploy non-production instances, such as for staging or QA purposes. Details for how to request non-production licenses are available on our website.
-            </p>
-            <p>
-              6.3 Your Modifications. Subject to the terms and conditions of this Agreement (including without limitation Section 2 (Combining the Products with Open Source Software) of Third Party Code in Channex Products): (1) for any elements of the Software provided by Channex in source code form, and to the extent permitted in the Documentation, you may modify such source code solely for purposes of developing bug fixes, customizations and additional features for the Software and (2) you may also modify the Documentation to reflect your permitted modifications of the Software source code or the particular use of the Products within your organization. Any modified source code or Documentation constitutes "Your Modifications". You may use Your Modifications solely with respect to your own instances in support of your permitted use of the Software but you may not distribute the code to Your Modifications to any third party. Notwithstanding anything in this Agreement to the contrary, Channex has no support, warranty, indemnification or other obligation or liability with respect to Your Modifications or their combination, interaction or use with our Products. You shall indemnify, defend and hold us harmless from and against any and all claims, costs, damages, losses, liabilities and expenses (including reasonable attorneys' fees and costs) arising out of or in connection with any claim brought against us by a third party relating to Your Modifications (including but not limited to any representations or warranties you make about Your Modifications or the Software) or your breach of this Section 6.3. This indemnification obligation is subject to your receiving (i) prompt written notice of such claim (but in any event notice in sufficient time for you to respond without prejudice); (ii) the exclusive right to control and direct the investigation, defense, or settlement of such claim; and (iii) all reasonably necessary cooperation of Channex at your expense.
-            </p>
-            <p>
-              6.4 Attribution. In any use of the Software, you must include the following attribution to Channex on all user interfaces in the following format: "Powered by Channex," which must in every case include a hyperlink to https://channex.io, and which must be in the same format as delivered in the Software.
-            </p>
-            <p>
-              6.5 Third Party Code. The Software includes code and libraries licensed to us by third parties, including open source software. See Third Party Code in Channex Products for additional provisions regarding our use of third party code.
+            <p className="mt-3">
+              4.4 If you purchase the Services through an authorised reseller or partner, your Scope of Use is as stated in the Order that partner places for you, and your commercial relationship — including payment, support and cancellation — is with them.
             </p>
           </div>
 
           <div>
-            <h3 className="text-xl font-semibold text-foreground mb-3">7. Hosted Services Terms</h3>
+            <h3 className="text-xl font-semibold text-foreground mb-3">5. Your data</h3>
             <p>
-              7.1 Access to Hosted Services. Subject to the terms and conditions of this Agreement, Channex grants you a non-exclusive right to access and use the Hosted Services during the applicable Subscription Term (as defined below) in accordance with this Agreement, your applicable Scope of Use and the Documentation. If Channex offers client software (e.g., a desktop or mobile application) for any Hosted Service, you may use such software solely with the Hosted Service, subject to the terms and conditions of this Agreement. You acknowledge that our Hosted Services are on-line, subscription-based products and that we may make changes to the Hosted Services from time to time.
+              5.1 "Your Data" means all data and content you or your users submit to, or generate through, the Services — including property details, room types, rate plans, availability, prices, restrictions, bookings and guest details.
             </p>
-            <p>
-              7.2 Subscription Terms and Renewals. Hosted Services are provided on a subscription basis for a set term specified in your Order ("Subscription Term"). Except as otherwise specified in your Order, all subscriptions will automatically renew for periods equal to your initial Subscription Term (and you will be charged at the then-current rates) unless you cancel your subscription through your account. If you cancel, your subscription will terminate at the end of then-current billing cycle, but you will not be entitled to any credits or refunds for amounts accrued or paid prior to such termination.
+            <p className="mt-3">
+              5.2 <strong>Your Data belongs to you.</strong> You retain all right, title and interest in it. We claim no ownership of it.
             </p>
-            <p>
-              7.3 Credentials. You must ensure that all Authorised Users keep their user IDs and passwords for the Hosted Services strictly confidential and not share such information with any unauthorised person. User IDs are granted to individual, named persons and may not be shared. You are responsible for any and all actions taken using your accounts and passwords, and you agree to immediately notify Channex of any unauthorised use of which you become aware.
+            <p className="mt-3">
+              5.3 You grant us a non-exclusive, worldwide, royalty-free right to host, copy, store, transmit and process Your Data solely to the extent necessary to provide the Services to you — including transmitting it to the channels and third parties you have chosen to connect — to provide support you request, and to comply with our legal obligations. We will not use Your Data for any other purpose.
             </p>
-            <p>
-              7.4 Your Data. "Your Data" means any data, content, code, video, images or other materials of any type that you upload, submit or otherwise transmit to or through Hosted Services. You will retain all right, title and interest in and to Your Data in the form provided to Channex. Subject to the terms of this Agreement, you hereby grant to Channex a non-exclusive, worldwide, royalty-free right to (a) collect, use, copy, store, transmit, modify and create derivative works of Your Data, in each case solely to the extent necessary to provide the applicable Hosted Service to you and (b) for Hosted Services that enable you to share Your Data or interact with other people, to distribute and publicly perform and display Your Data as you (or your Authorised Users) direct or enable through the Hosted Service. Channex may also access your account or instance in order to respond to your support requests.
+            <p className="mt-3">
+              5.4 <strong>We will not approach your customers.</strong> We will not use Your Data to contact, market to, or enter into a business relationship with your clients or their guests, other than as necessary to deliver the Services you have asked us to deliver. This Section 5.4 survives termination of this Agreement.
             </p>
-            <p>
-              7.5 Security. Channex implements security procedures to help protect Your Data from security attacks. However, you understand that use of the Hosted Services necessarily involves transmission of Your Data over networks that are not owned, operated or controlled by us, and we are not responsible for any of Your Data lost, altered, intercepted or stored across such networks. We cannot guarantee that our security procedures will be error-free, that transmissions of Your Data will always be secure or that unauthorised third parties will never be able to defeat our security measures or those of our third party service providers.
+            <p className="mt-3">
+              5.5 You are responsible for the accuracy and legality of Your Data, and for having the rights and permissions needed to provide it to us and to have us transmit it to the channels you connect. Personal data is dealt with in Section 21 (Data Protection Addendum).
             </p>
-            <p>
-              7.6 Storage Limits. There may be storage limits associated with a particular Hosted Service. These limits are described in the services descriptions on our websites or in the Documentation for the particular Hosted Service. Channex reserves the right to charge for additional storage or overage fees at the rates specified on our website. We may impose new, or may modify existing, storage limits for the Hosted Services at any time in our discretion, with or without notice to you.
-            </p>
-            <p>
-              7.7 Responsibility for Your Data.
-            </p>
-            <p>
-              7.7.1 General. You must ensure that your use of Hosted Services and all Your Data is at all times compliant with our Acceptable Use Policy and all applicable local, state, federal and international laws and regulations ("Laws"). You represent and warrant that: (i) you have obtained all necessary rights, releases and permissions to provide all Your Data to Channex and to grant the rights granted to Channex in this Agreement and (ii) Your Data and its transfer to and use by Channex as authorised by you under this Agreement do not violate any Laws (including without limitation those relating to export control and electronic communications) or rights of any third party, including without limitation any intellectual property rights, rights of privacy, or rights of publicity, and any use, collection and disclosure authorised herein is not inconsistent with the terms of any applicable privacy policies. Other than its security obligations under Section 7.5 (Security), Channex assumes no responsibility or liability for Your Data, and you shall be solely responsible for Your Data and the consequences of using, disclosing, storing, or transmitting it.
-            </p>
-            <p>
-              7.7.2 Sensitive Data. You will not submit to the Hosted Services (or use the Hosted Services to collect): (i) any personally identifiable information, except as necessary for the establishment of your Channex account; (ii) any patient, medical or other protected health information regulated by HIPAA or any similar federal or state laws, rules or regulations; or (iii) any other information subject to regulation or protection under specific laws such as the Gramm-Leach-Bliley Act (or related rules or regulations) ((i) through (iii), collectively, "Sensitive Data"). You also acknowledge that Channex is not acting as your Business Associate or subcontractor (as such terms are defined and used in HIPAA) and that the Hosted Services are not HIPAA compliant. "HIPAA" means the Health Insurance Portability and Accountability Act, as amended and supplemented. Notwithstanding any other provision to the contrary, Channex has no liability under this Agreement for Sensitive Data.
-            </p>
-            <p>
-              7.7.3 Indemnity for Your Data. You will defend, indemnify and hold harmless Channex from and against any loss, cost, liability or damage, including attorneys' fees, for which Channex becomes liable arising from or relating to any claim relating to Your Data, including but not limited to any claim brought by a third party alleging that Your Data, or your use of the Hosted Services in breach of this Agreement, infringes or misappropriates the intellectual property rights of a third party or violates applicable law. This indemnification obligation is subject to your receiving (i) prompt written notice of such claim (but in any event notice in sufficient time for you to respond without prejudice); (ii) the exclusive right to control and direct the investigation, defense, or settlement of such claim; and (iii) all reasonable necessary cooperation of Channex at your expense.
-            </p>
-            <p>
-              7.8 Removals and Suspension. Channex has no obligation to monitor any content uploaded to the Hosted Services. Nonetheless, if we deem such action necessary based on your violation of this Agreement or in response to takedown requests that we receive following our guidelines for Reporting Copyright and Trademark Violations, we may (1) remove Your Data from the Hosted Services or (2) suspend your access to the Hosted Services. We will generally alert you when we take such action and give you a reasonable opportunity to cure your breach, but if we determine that your actions endanger the operation of the Hosted Service or other users, we may suspend your access immediately without notice. You will continue to be charged for the Hosted Service during any suspension period. We have no liability to you for removing or deleting Your Data from or suspending your access to any Hosted Services as described in this section.
-            </p>
-            <p>
-              7.9 Deletion at End of Subscription Term. We may remove or delete Your Data within a reasonable period of time after the termination of your Subscription Term.
-            </p>
-            <p>
-              7.10 Service-Specific Terms. Some of our Hosted Services may be subject to additional terms specific to that service as set forth in our Service-Specific Terms.
+            <p className="mt-3">
+              5.6 We may generate aggregated, anonymised statistics from platform usage in order to operate, secure and improve the Services. Such statistics never identify you, your properties, your guests or your data.
             </p>
           </div>
 
           <div>
-            <h3 className="text-xl font-semibold text-foreground mb-3">8. Support and Maintenance</h3>
+            <h3 className="text-xl font-semibold text-foreground mb-3">6. Acceptable use and content</h3>
             <p>
-              Channex will provide the support and maintenance services for the Products described in the Channex Support Policy ("Support and Maintenance") during the period for which you have paid the applicable fee. Support and Maintenance is subject to the terms of the Channex Support Policy and will be provided at the support level and during the support term specified in your Order. The Channex Support Policy may be modified by Channex from time to time to reflect process improvements or changing practices. Support and Maintenance for Software includes access to New Releases, if and when available. You may use any New Releases that we provide to you during a valid support term in the same way that you use Software, and New Releases are included in the definition of Software in that case. "New Releases" are bug fixes, patches, major or minor releases, or any other changes, enhancements, or modifications to the Software that we make generally commercially available.
+              6.1 Your use of the Services must comply with our Acceptable Use Policy and with all applicable laws, including travel, consumer, data protection and anti-spam laws.
+            </p>
+            <p className="mt-3">
+              6.2 We take a zero tolerance approach to unsolicited messaging. You must not use the Services to send spam, and if you resell or provide access to the Services to your own clients, your terms with them must prohibit the same. The transmission of adult content through the Services is prohibited.
+            </p>
+            <p className="mt-3">
+              6.3 We have no obligation to monitor content submitted to the Services, and we do not routinely inspect Your Data. Where we reasonably believe content or activity breaches this Agreement, endangers the Services, or exposes us or other customers to legal risk, we may remove the content or suspend the affected access under Section 12 (Suspension).
             </p>
           </div>
 
           <div>
-            <h3 className="text-xl font-semibold text-foreground mb-3">9. TAM and Training Services</h3>
+            <h3 className="text-xl font-semibold text-foreground mb-3">7. Security</h3>
             <p>
-              We will provide Technical Account Manager (TAM) and training services purchased in an Order in accordance with the descriptions and conditions for those services set forth in the Order and the accompanying service descriptions or datasheets ("Ancillary Services"). Channex shall retain all right, title and interest in and to any materials, deliverables, modifications, derivative works or developments related to any training services we provide ("Training Materials"). Any Training Materials provided to you may be used only in connection with the Products subject to the same use restrictions for the Products. If applicable, you will reimburse Channex for reasonable travel and lodging expenses as incurred.
+              7.1 We implement appropriate technical and organisational measures designed to protect Your Data against accidental or unlawful destruction, loss, alteration, unauthorised disclosure or access. Those measures are described in our Security Policy, which forms part of this Agreement.
+            </p>
+            <p className="mt-3">
+              7.2 Using the Services necessarily involves transmitting data across networks we do not own or control. While we encrypt data in transit and take the measures described in our Security Policy, no system can be guaranteed impenetrable, and we cannot warrant that our measures or those of our suppliers will never be defeated.
+            </p>
+            <p className="mt-3">
+              7.3 Card processing for the Services is carried out by PCI DSS compliant service providers. Each party is responsible for its own compliance with the Payment Card Industry Data Security Standard in respect of cardholder data within its own environment.
             </p>
           </div>
 
           <div>
-            <h3 className="text-xl font-semibold text-foreground mb-3">10. Returns and Financial Terms</h3>
+            <h3 className="text-xl font-semibold text-foreground mb-3">8. Support</h3>
             <p>
-              10.1 Return Policy. As part of our commitment to customer satisfaction, it is our customary business practice to allow customers to return a Product within 30 days of payment for any reason or no reason and to receive a refund of the amount paid for the returned Product. In the context of Software, a return means that we will disable the license key that allowed the Software to operate. In the context of Hosted Services, a return means that we will disable access to the Hosted Service. We will not accept returns after the 30-day return period. You understand that Channex may change this practice in the future in accordance with Section 26 (Changes to this Agreement).
+              8.1 Technical support is included in your subscription fees at no additional charge. We provide support by web chat, email and telephone during our published support hours.
             </p>
-            <p>
-              10.2 Delivery. We will deliver the applicable license keys (in the case of Software) or login instructions (in the case of Hosted Services) to the email addresses specified in your Order when we have received payment of the applicable fees. All deliveries under this Agreement will be electronic. For the avoidance of doubt, you are responsible for installation of any Software, and you acknowledge that Channex has no further delivery obligation with respect to the Software after delivery of the license keys.
-            </p>
-            <p>
-              10.3 Payment. You agree to pay all fees in accordance with each Order. Unless otherwise specified in your Order, you will pay all amounts in U.S. dollars at the time you place your Order. Other than as expressly set forth in Section 10.1 (Return Policy) and Section 20 (IP Indemnification by Channex), all amounts are non-refundable, non-cancelable and non-creditable. In making payments, you acknowledge that you are not relying on future availability of any Products beyond the current License Term or Subscription Term or any Product upgrades or feature enhancements. If you add Authorised Users during your License Term or Subscription Term, we will charge you for the increased number of Authorised Users pursuant to the then-currently applicable rates in your next billing cycle. You agree that we may bill your credit card for renewals, additional users, and unpaid fees, as applicable. If you purchase any Products through a Reseller, you owe payment to the Reseller as agreed between you and the Reseller, but you acknowledge that we may terminate your rights to use Products if we do not receive our corresponding payment from the Reseller.
-            </p>
-            <p>
-              10.4 Taxes. Your payments under this Agreement exclude any taxes or duties payable in respect of the Products in the jurisdiction where the payment is either made or received. To the extent that any such taxes or duties are payable by Channex, you must pay to Channex the amount of such taxes or duties in addition to any fees owed under this Agreement. Notwithstanding the foregoing, you may have obtained an exemption from relevant taxes or duties as of the time such taxes or duties are levied or assessed. In that case, you will have the right to provide to Channex any such exemption information, and Channex will use reasonable efforts to provide such invoicing documents as may enable you to obtain a refund or credit for the amount so paid from any relevant revenue authority if such a refund or credit is available.
+            <p className="mt-3">
+              8.2 Where you provide the Services to your own clients under a partner or reseller arrangement, you provide first line support to those clients and we provide second line support to you.
             </p>
           </div>
 
           <div>
-            <h3 className="text-xl font-semibold text-foreground mb-3">11. No-Charge Products</h3>
+            <h3 className="text-xl font-semibold text-foreground mb-3">9. Service availability</h3>
             <p>
-              We may offer certain Products to you at no charge, including free accounts, trial use, and access to Beta Versions as defined below ("No-Charge Products"). Your use of No-Charge Products is subject to any additional terms that we specify and is only permitted for the period designated by us. You may not use No-Charge Products for competitive analysis or similar purposes. We may terminate your right to use No-Charge Products at any time and for any reason in our sole discretion, without liability to you. You understand that any pre-release and beta products we make available ("Beta Versions") are still under development, may be inoperable or incomplete and are likely to contain more errors and bugs than generally available Products. We make no promises that any Beta Versions will ever be made generally available. In some circumstances, we may charge a fee in order to allow you to access Beta Versions, but the Beta Versions will still remain subject to this Section 11 (No-Charge Products). All information regarding the characteristics, features or performance of Beta Versions constitutes Channex's Confidential Information. To the maximum extent permitted by applicable law, we disclaim all obligations or liabilities with respect to No-Charge Products, including any Support and Maintenance, warranty, and indemnity obligations.
+              9.1 We will provide the Services with the level of skill and care reasonably expected of a competent provider of comparable services, and will use commercially reasonable efforts to correct any error or interruption as soon as possible.
+            </p>
+            <p className="mt-3">
+              9.2 <strong>Uptime commitment.</strong> We will provide at least <strong>99.5% uptime availability</strong>, measured monthly. At 99.5%, permitted unavailability is approximately 3 hours 39 minutes per month, or 1 day 19 hours 49 minutes per year.
+            </p>
+            <p className="mt-3">
+              9.3 The uptime commitment excludes scheduled maintenance — including regular error corrections and software updates — and unavailability caused by a Force Majeure Event, by your own systems or connectivity, or by a third party channel or service you have connected. We will not carry out scheduled maintenance between 06:00 and 18:00 GMT.
+            </p>
+            <p className="mt-3">
+              9.4 <strong>Remedy.</strong> If we fail to meet the uptime commitment in any month, you may terminate this Agreement immediately on written notice, and we will refund any fees you have prepaid for the unused remainder of your Subscription Term.
             </p>
           </div>
 
           <div>
-            <h3 className="text-xl font-semibold text-foreground mb-3">12. Restrictions</h3>
+            <h3 className="text-xl font-semibold text-foreground mb-3">10. Fees and payment</h3>
             <p>
-              Except as otherwise expressly permitted in this Agreement, you will not: (a) rent, lease, reproduce, modify, adapt, create derivative works of, distribute, sell, sublicense, transfer, or provide access to the Products to a third party, (b) use the Products for the benefit of any third party, (c) incorporate any Products into a product or service you provide to a third party, (d) interfere with any license key mechanism in the Products or otherwise circumvent mechanisms in the Products intended to limit your use, (e) reverse engineer, disassemble, decompile, translate, or otherwise seek to obtain or derive the source code, underlying ideas, algorithms, file formats or non-public APIs to any Products, except as permitted by law, (f) remove or obscure any proprietary or other notices contained in any Product, or (g) publicly disseminate information regarding the performance of the Products.
+              10.1 <strong>Currency and rates.</strong> Fees are charged in the currency stated in your Order, at the rates set out in it.
+            </p>
+            <p className="mt-3">
+              10.2 <strong>Invoicing.</strong> Unless your Order says otherwise, fees are invoiced monthly in arrears on the 1st of each month and are due within <strong>fourteen (14) days</strong> of the invoice date. Where you pay by card, you authorise us to charge that card for subscription fees, renewals and any additional usage.
+            </p>
+            <p className="mt-3">
+              10.3 <strong>Price changes.</strong> We may change our fees on <strong>ninety (90) days' advance written notice</strong>. A change takes effect at the end of that notice period and applies to existing and future properties alike. If you do not accept a price change, you may terminate under Section 13.4 before it takes effect.
+            </p>
+            <p className="mt-3">
+              10.4 <strong>Taxes.</strong> Fees exclude VAT and any other applicable taxes or duties, which you will pay in addition where they are chargeable. If you hold a valid exemption, tell us and we will provide the invoicing documentation you need.
+            </p>
+            <p className="mt-3">
+              10.5 Except as set out in Section 9.4 (service availability remedy), Section 11 (30-day satisfaction refund), Section 20.3 (changes you do not accept) and Section 21.7 (subprocessor objection), fees are non-refundable and non-creditable once due.
             </p>
           </div>
 
           <div>
-            <h3 className="text-xl font-semibold text-foreground mb-3">13. Your Development of Add-Ons</h3>
+            <h3 className="text-xl font-semibold text-foreground mb-3">11. 30-day satisfaction refund</h3>
+            <p>
+              If you are a new customer and you are not satisfied with the Services, you may cancel within 30 days of your first payment and we will refund your first monthly invoice in full. This right applies to new customers only and is limited to the first monthly invoice. To use it, contact us at support@channex.io within the 30-day period.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-xl font-semibold text-foreground mb-3">12. Suspension</h3>
+            <p>
+              12.1 We may suspend your access to the Services, without liability, if an invoice remains unpaid more than thirty (30) days after its due date, or if your use of the Services breaches the Acceptable Use Policy or applicable law.
+            </p>
+            <p className="mt-3">
+              12.2 We will give you notice and a reasonable opportunity to put things right before suspending, unless the problem is urgent — for example where your account is compromised, or your use threatens the security or operation of the Services or other customers — in which case we may suspend immediately and tell you promptly afterwards.
+            </p>
+            <p className="mt-3">
+              12.3 Suspension is limited to what is necessary, and we will restore access promptly once the cause is resolved.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-xl font-semibold text-foreground mb-3">13. Term, renewal and termination</h3>
+            <p>
+              13.1 <strong>Term.</strong> Unless your Order says otherwise, the initial Subscription Term is one (1) year from the start date in your Order.
+            </p>
+            <p className="mt-3">
+              13.2 <strong>Renewal.</strong> The Subscription Term renews automatically for successive periods of one (1) year unless either party gives the other written notice of non-renewal at least thirty (30) days before the end of the then-current term.
+            </p>
+            <p className="mt-3">
+              13.3 <strong>Termination for breach or insolvency.</strong> Either party may terminate immediately on written notice if the other materially breaches this Agreement and does not remedy the breach within thirty (30) days of a written request to do so, or if the other enters into bankruptcy, administration, liquidation, composition proceedings or any similar proceedings.
+            </p>
+            <p className="mt-3">
+              13.4 <strong>Termination for convenience.</strong> Either party may terminate this Agreement for any reason on thirty (30) calendar days' written notice.
+            </p>
+            <p className="mt-3">
+              13.5 <strong>Effect of termination.</strong> On termination, your right to access the Services ends. Rights and obligations that accrued before termination — including your obligation to pay fees already due, and either party's right to claim for a breach that existed at or before termination — are unaffected. Except where this Agreement says otherwise, you will not receive a credit or refund for prepaid but unused fees on a termination for convenience by you.
+            </p>
+            <p className="mt-3">
+              13.6 <strong>Transition assistance.</strong> If you ask us in writing, we will provide reasonable transition assistance for up to sixty (60) days after termination, at your cost. We will agree the scope and fees with you in writing before we start. This is conditional on your account not being in material payment breach.
+            </p>
+            <p className="mt-3">
+              13.7 <strong>Return and deletion of Your Data.</strong> During the Subscription Term and for thirty (30) days after it ends, you may export Your Data from the platform, or ask us to provide it to you in a commonly used format. After that period we may delete Your Data in accordance with the retention schedule in our Security Policy.
+            </p>
+            <p className="mt-3">
+              13.8 <strong>Survival.</strong> The following survive termination: Sections 5.2 and 5.4 (ownership of and non-approach to Your Data), 10 (Fees and payment, in respect of amounts already due), 13.5 to 13.8 (effect of termination, transition assistance, return and deletion of Your Data, and this Section), 14 (Restrictions), 16 (Ownership and feedback), 17 (Confidentiality), 19.2 (Warranty disclaimer), 19.3 (Limitation of liability), 19.4 (Indemnities), 21.13 and 21.14 (deletion of personal data, and liability under the Data Protection Addendum), 22 (Governing law and jurisdiction) and 25 (General).
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-xl font-semibold text-foreground mb-3">14. Restrictions</h3>
+            <p>
+              Except as expressly permitted in this Agreement, in your Order, or in a separate agreement signed by us, you will not:
+            </p>
+            <ul className="list-disc pl-6 space-y-2 mt-3">
+              <li>rent, lease, sell, sublicense, transfer or provide access to the Services to a third party;</li>
+              <li>use the Services for the benefit of, or to provide a service to, a third party;</li>
+              <li>incorporate the Services into a product or service you supply to a third party;</li>
+              <li>reverse engineer, decompile or disassemble any part of the Services, or attempt to derive their source code or non-public APIs, except to the extent the law permits despite this restriction;</li>
+              <li>circumvent or interfere with any mechanism in the Services intended to limit your use, or with any security or authentication measure;</li>
+              <li>remove or obscure any proprietary notice in the Services; or</li>
+              <li>access the Services in order to build a competing product.</li>
+            </ul>
+            <p className="mt-3">
+              <strong>Partners and resellers.</strong> The first three restrictions above do not apply to the extent we have appointed you as a reseller, or granted you white label or embedding rights, under a signed agreement. If you have such an agreement, that agreement defines what you may do and prevails under Section 1.2.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-xl font-semibold text-foreground mb-3">15. Branding and attribution</h3>
+            <p>
+              15.1 Unless we have agreed otherwise in writing, where you present the Services or their output to your own users you should include a reasonable attribution to Channex.
+            </p>
+            <p className="mt-3">
+              15.2 <strong>White label.</strong> This attribution requirement does not apply where we have granted you white label rights under a signed agreement. Under such an agreement you may apply your own branding and styling to the platform, and no Channex attribution is required. Fees may apply where custom development work is needed to deliver your branding.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-xl font-semibold text-foreground mb-3">16. Ownership and feedback</h3>
+            <p>
+              16.1 The Services are made available to you on a subscription basis. We and our licensors retain all right, title and interest in the Services, the platform, all underlying technology, and any modifications or derivative works of them. No rights are granted to you except those expressly set out in this Agreement.
+            </p>
+            <p className="mt-3">
+              16.2 If you choose to send us suggestions, ideas or other feedback about the Services, we may use it freely to develop and improve our products, without obligation or payment to you. Feedback is not your Confidential Information. This does not give us any rights in Your Data.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-xl font-semibold text-foreground mb-3">17. Confidentiality</h3>
+            <p>
+              17.1 Each party may receive information from the other that is identified as confidential, or that a reasonable person would understand to be confidential from its nature or the circumstances of disclosure ("Confidential Information"). Your Data is your Confidential Information. The non-public technical and commercial details of the Services are ours.
+            </p>
+            <p className="mt-3">
+              17.2 The receiving party will keep the other's Confidential Information confidential, use it only to perform this Agreement, and disclose it only to those of its personnel and professional advisers who need it and are bound by equivalent obligations.
+            </p>
+            <p className="mt-3">
+              17.3 These obligations do not apply to information that is or becomes public through no fault of the receiving party, was already lawfully known to it, is lawfully received from a third party without restriction, or is independently developed without use of the Confidential Information. A party may disclose Confidential Information where required by law, regulation or court order, giving the other party advance notice where it is lawful to do so.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-xl font-semibold text-foreground mb-3">18. Third party channels and services</h3>
+            <p>
+              18.1 The Services connect to online travel agents, booking engines, metasearch providers, property management systems, payment providers and other third parties. Those third parties are not under our control. Your relationship with each of them — including their commercial terms, their commission, their content rules and their treatment of your data — is between you and them.
+            </p>
+            <p className="mt-3">
+              18.2 We do not warrant the availability, accuracy or performance of any third party channel or service, and we are not liable for a third party's acts, omissions, outages or changes to its interfaces. Where a channel changes or withdraws its interface, we will use commercially reasonable efforts to update the Services, but we cannot guarantee continuity of any particular connection.
+            </p>
+            <p className="mt-3">
+              18.3 When you connect a third party to your account, you authorise us to exchange Your Data with it as needed for that connection to work.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-xl font-semibold text-foreground mb-3">19. Warranties, liability and indemnities</h3>
             <div className="space-y-4">
               <p>
-                <strong>13.1 License to Developer Guides.</strong> From time to time, Channex may publish SDK's or API's and associated guidelines ("Developer Guides") to allow you to develop plugins, extensions, add-ons or other software products or services that interoperate or are integrated with the Products ("Add-Ons"). You may distribute your Add-Ons to third parties, but only for those Products permitted by Channex, and only in accordance with the Developer Guides.
+                <strong>19.1 Mutual warranties.</strong> Each party warrants that it has the legal power and authority to enter into this Agreement, and that the person accepting it has authority to bind that party.
               </p>
               <p>
-                <strong>13.2 Conditions to Development of Add-Ons.</strong> Notwithstanding anything in this Agreement to the contrary, Channex has no support, warranty, indemnification or other obligation or liability with respect to your Add-Ons or their combination, interaction or use with the Products. You shall indemnify, defend and hold us harmless from and against any and all claims, costs, damages, losses, liabilities and expenses (including reasonable attorneys' fees and costs) arising out of or in connection with any claim brought against us by a third party relating to your Add-Ons (including but not limited to any representations or warranties you make about your Add-Ons) or your breach of this Section.
-              </p>
-            </div>
-          </div>
-
-          <div>
-            <h3 className="text-xl font-semibold text-foreground mb-3">14. License Certifications and Audits</h3>
-            <p>
-              At our request, you agree to provide a signed certification that you are using all Products pursuant to the terms of this Agreement, including the Scope of Use. You agree to allow us, or our authorised agent, to audit your use of the Products. We will provide you with at least 10 days advance notice prior to the audit, and the audit will be conducted during normal business hours. We will bear all out-of-pocket costs that we incur for the audit, unless the audit reveals that you have exceeded the Scope of Use. You will provide reasonable assistance, cooperation, and access to relevant information in the course of any audit at your own cost. If you exceed your Scope of Use, we may invoice you for any past or ongoing excessive use, and you will pay the invoice promptly after receipt. This remedy is without prejudice to any other remedies available to Channex at law or equity or under this Agreement. To the extent we are obligated to do so, we may share audit results with certain of our third party licensors or assign the audit rights specified in this Section to such licensors.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-xl font-semibold text-foreground mb-3">15. Ownership and Feedback</h3>
-            <p>
-              Products are made available on a limited license or access basis, and no ownership right is conveyed to you, irrespective of the use of terms such as "purchase" or "sale". Channex and its licensors have and retain all right, title and interest, including all intellectual property rights, in and to the Products (including all No-Charge Products), their "look and feel", any and all related or underlying technology, and any modifications or derivative works of the foregoing created by or for Channex, including without limitation as they may incorporate Feedback ("Channex Technology"). From time to time, you may choose to submit comments, information, questions, data, ideas, description of processes, or other information to Channex, including sharing Your Modifications or in the course of receiving Support and Maintenance ("Feedback"). Channex may in connection with any of its products or services freely use, copy, disclose, license, distribute and exploit any Feedback in any manner without any obligation, royalty or restriction based on intellectual property rights or otherwise. No Feedback will be considered your Confidential Information, and nothing in this Agreement limits Channex's right to independently use, develop, evaluate, or market products, whether incorporating Feedback or otherwise.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-xl font-semibold text-foreground mb-3">16. Confidentiality</h3>
-            <p>
-              Except as otherwise set forth in this Agreement, each party agrees that all code, inventions, know-how, business, technical and financial information disclosed to such party ("Receiving Party") by the disclosing party ("Disclosing Party") constitute the confidential property of the Disclosing Party ("Confidential Information"), provided that it is identified as confidential at the time of disclosure. Any Channex Technology and any performance information relating to the Products shall be deemed Confidential Information of Channex without any marking or further designation. Except as expressly authorised herein, the Receiving Party will hold in confidence and not use or disclose any Confidential Information. The Receiving Party's nondisclosure obligation shall not apply to information which the Receiving Party can document: (i) was rightfully in its possession or known to it prior to receipt of the Confidential Information; (ii) is or has become public knowledge through no fault of the Receiving Party; (iii) is rightfully obtained by the Receiving Party from a third party without breach of any confidentiality obligation; or (iv) is independently developed by employees of the Receiving Party who had no access to such information. The Receiving Party may also disclose Confidential Information if so required pursuant to a regulation, law or court order (but only to the minimum extent required to comply with such regulation or order and with advance notice to the Disclosing Party). The Receiving Party acknowledges that disclosure of Confidential Information would cause substantial harm for which damages alone would not be a sufficient remedy, and therefore that upon any such disclosure by the Receiving Party the Disclosing Party shall be entitled to appropriate equitable relief in addition to whatever other remedies it might have at law. For the avoidance of doubt, this Section shall not operate as a separate warranty with respect to the operation of any Product.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-xl font-semibold text-foreground mb-3">17. Term and Termination</h3>
-            <p>
-              This Agreement is in effect for as long as you have a valid License Term or Subscription Term (the "Term"), unless sooner terminated as permitted in this Agreement. Either party may terminate this Agreement before the expiration of the Term if the other party materially breaches any of the terms of this Agreement and does not cure the breach within thirty (30) days after written notice of the breach. Either party may also terminate the Agreement before the expiration of the Term if the other party ceases to operate, declares bankruptcy, or becomes insolvent or for any reason with a 30 day notice. You may terminate this Agreement at any time with notice to Channex, but you will not be entitled to any credits or refunds as a result of convenience termination for prepaid but unused Software, Hosted Services subscriptions, or Support and Maintenance. Except where an exclusive remedy may be specified in this Agreement, the exercise by either party of any remedy, including termination, will be without prejudice to any other remedies it may have under this Agreement, by law, or otherwise. Once the Agreement terminates, you (and your Authorised Users) will no longer have any right to use or access any Products, or any information or materials that we make available to you under this Agreement, including Channex Confidential Information. You are required to delete any of the foregoing from your systems as applicable (including any third party systems operated on your behalf) and provide written certification to us that you have done so at our request. The following provisions will survive any termination or expiration of this Agreement: Sections 7.7.3 (Indemnity for Your Data), 10.3 (Payment), 10.4 (Taxes), 11 (No-Charge Products) (disclaimers and use restrictions only), 12 (Restrictions), 13.2 (Conditions to Development of Add-Ons), 14 (License Certifications and Audits), 15 (Ownership and Feedback), 16 (Confidentiality), 17 (Term and Termination), 18.2 (Warranty Disclaimer), 19 (Limitation of Liability), 21 (Third Party Vendor Products), 24 (Dispute Resolution), 25 (Export Restrictions), and 27 (General Provisions).
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-xl font-semibold text-foreground mb-3">18. Representations and Warranties</h3>
-            <div className="space-y-4">
-              <p>
-                <strong>18.1 Due Authority.</strong> Each party represents and warrants that it has the legal power and authority to enter into this Agreement, and that, if you are an entity, this Agreement and each Order is entered into by an employee or agent of such party with all necessary authority to bind such party to the terms and conditions of this Agreement.
+                <strong>19.2 Warranty disclaimer.</strong> Other than the commitments expressly given in Sections 7 (Security), 9 (Service availability) and 19.1, and to the maximum extent permitted by law, the Services are provided without further warranty of any kind, whether express, implied or statutory, including any implied warranty of satisfactory quality, fitness for a particular purpose or non-infringement. We do not warrant that the Services will be uninterrupted or entirely error-free, or that they will meet requirements we have not agreed with you in writing. Nothing in this Section limits your statutory rights where they cannot lawfully be excluded.
               </p>
               <p>
-                <strong>18.2 WARRANTY DISCLAIMER.</strong> <span className="uppercase text-sm">ALL PRODUCTS ARE PROVIDED "AS IS," AND Channex AND ITS SUPPLIERS EXPRESSLY DISCLAIM ANY AND ALL WARRANTIES AND REPRESENTATIONS OF ANY KIND, INCLUDING ANY WARRANTY OF NON-INFRINGEMENT, TITLE, FITNESS FOR A PARTICULAR PURPOSE, FUNCTIONALITY, OR MERCHANTABILITY, WHETHER EXPRESS, IMPLIED, OR STATUTORY. YOU MAY HAVE OTHER STATUTORY RIGHTS, BUT THE DURATION OF STATUTORILY REQUIRED WARRANTIES, IF ANY, SHALL BE LIMITED TO THE SHORTEST PERIOD PERMITTED BY LAW. Channex SHALL NOT BE LIABLE FOR DELAYS, INTERRUPTIONS, SERVICE FAILURES AND OTHER PROBLEMS INHERENT IN USE OF THE INTERNET AND ELECTRONIC COMMUNICATIONS OR OTHER SYSTEMS OUTSIDE THE REASONABLE CONTROL OF Channex. TO THE MAXIMUM EXTENT PERMITTED BY LAW, NEITHER Channex NOR ANY OF ITS THIRD PARTY SUPPLIERS MAKES ANY REPRESENTATION, WARRANTY OR GUARANTEE AS TO THE RELIABILITY, TIMELINESS, QUALITY, SUITABILITY, TRUTH, AVAILABILITY, ACCURACY OR COMPLETENESS OF ANY PRODUCTS OR ANY CONTENT THEREIN OR GENERATED THEREWITH, OR THAT: (A) THE USE OF ANY PRODUCTS WILL BE SECURE, TIMELY, UNINTERRUPTED OR ERROR-FREE; (B) THE PRODUCTS WILL OPERATE IN COMBINATION WITH ANY OTHER HARDWARE, SOFTWARE, SYSTEM, OR DATA; (C) THE PRODUCTS (OR ANY PRODUCTS, SERVICES, INFORMATION, OR OTHER MATERIAL PURCHASED OR OBTAINED BY YOU THROUGH THE PRODUCTS) WILL MEET YOUR REQUIREMENTS OR EXPECTATIONS); (D) ANY STORED DATA WILL BE ACCURATE OR RELIABLE OR THAT ANY STORED DATA WILL NOT BE LOST OR CORRUPTED; (E) ERRORS OR DEFECTS WILL BE CORRECTED; OR (F) THE PRODUCTS (OR ANY SERVER(S) THAT MAKE A HOSTED SERVICE AVAILABLE) ARE FREE OF VIRUSES OR OTHER HARMFUL COMPONENTS.</span>
+                <strong>19.3 Limitation of liability.</strong>
               </p>
-            </div>
-          </div>
-
-          <div>
-            <h3 className="text-xl font-semibold text-foreground mb-3">19. Limitation of Liability</h3>
-            <p className="uppercase text-sm">
-              NEITHER PARTY (NOR ITS SUPPLIERS) SHALL BE LIABLE FOR ANY LOSS OF USE, LOST OR INACCURATE DATA, FAILURE OF SECURITY MECHANISMS, INTERRUPTION OF BUSINESS, COSTS OF DELAY OR ANY INDIRECT, SPECIAL, INCIDENTAL, RELIANCE OR CONSEQUENTIAL DAMAGES OF ANY KIND (INCLUDING LOST PROFITS), REGARDLESS OF THE FORM OF ACTION, WHETHER IN CONTRACT, TORT (INCLUDING NEGLIGENCE), STRICT LIABILITY OR OTHERWISE, EVEN IF INFORMED OF THE POSSIBILITY OF SUCH DAMAGES IN ADVANCE. NEITHER PARTY'S AGGREGATE LIABILITY TO THE OTHER SHALL EXCEED THE AMOUNT ACTUALLY PAID BY YOU TO US FOR PRODUCTS AND SUPPORT AND MAINTENANCE IN THE 12 MONTHS IMMEDIATELY PRECEDING THE CLAIM. NOTWITHSTANDING ANYTHING ELSE IN THIS AGREEMENT, OUR AGGREGATE LIABILITY TO YOU IN RESPECT OF NO-CHARGE PRODUCTS SHALL BE US$20. THIS SECTION 19 (LIMITATION OF LIABILITY) SHALL NOT APPLY TO (1) AMOUNTS OWED BY YOU UNDER ANY ORDERS, (2) EITHER PARTY'S EXPRESS INDEMNIFICATION OBLIGATIONS IN THIS AGREEMENT, OR (3) YOUR BREACH OF SECTION 12 (RESTRICTIONS) OR SECTION 2 (COMBINING THE PRODUCTS WITH OPEN SOURCE SOFTWARE) OF THIRD PARTY CODE IN Channex PRODUCTS). TO THE MAXIMUM EXTENT PERMITTED BY LAW, NO SUPPLIERS OF ANY THIRD PARTY COMPONENTS INCLUDED IN THE PRODUCTS WILL BE LIABLE TO YOU FOR ANY DAMAGES WHATSOEVER. The parties agree that the limitations specified in this Section 19 (Limitation of Liability) will survive and apply even if any limited remedy specified in this Agreement is found to have failed of its essential purpose.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-xl font-semibold text-foreground mb-3">20. IP Indemnification by Channex</h3>
-            <p>
-              We will defend you against any claim brought against you by a third party alleging that a Product, when used as authorised under this Agreement, infringes a United States or European Union patent or registered copyright (a "Claim"), and we will indemnify you and hold you harmless against any damages and costs finally awarded by a court of competent jurisdiction or agreed to settlement by Channex (including reasonable attorneys' fees) arising out of a Claim, provided that we have received from you: (a) prompt written notice of the claim (but in any event notice in sufficient time for us to respond without prejudice); (b) reasonable assistance in the defense and investigation of the claim, including providing us a copy of the claim and all relevant evidence in your possession, custody or control; and (c) the exclusive right to control and direct the investigation, defense, and settlement (if applicable) of the claim. If your use of a Product is (or in our opinion is likely to be) enjoined, if required by settlement, or if we determine such actions are reasonably necessary to avoid material liability, we may, at our option and in our discretion: (i) procure a license for your continued use of the Product in accordance with this Agreement; (ii) substitute a substantially functionally similar Product; or (iii) terminate your right to continue using the Product and refund, in the case of Software, the license fee paid by you as reduced to reflect a three year straight-line depreciation from the license purchase date, and in the case of a Hosted Service, any prepaid amounts for the terminated portion of the Subscription Term. Channex's indemnification obligations above do not apply: (1) if the total aggregate fees received by Channex with respect to your license to Software or subscription to Hosted Services in the 12 month period immediately preceding the claim is less than US$50,000; (2) if the Product is modified by any party other than Channex, but solely to the extent the alleged infringement is caused by such modification; (3) if the Product is used in combination with any non-Channex product, software or equipment, but solely to the extent the alleged infringement is caused by such combination; (4) to unauthorised use of Products; (5) to any Claim arising as a result of (y) Your Data (or circumstances covered by your indemnification obligations in Section 7.7.3 (Indemnity for Your Data)) or (z) any third-party deliverables or components contained with the Products; (6) to any unsupported release of the Software; or (7) if you settle or make any admissions with respect to a claim without Channex's prior written consent. <span className="uppercase text-sm">THIS SECTION 20 (IP INDEMNIFICATION BY Channex) STATES OUR SOLE LIABILITY AND YOUR EXCLUSIVE REMEDY FOR ANY INFRINGEMENT OF INTELLECTUAL PROPERTY RIGHTS IN CONNECTION WITH ANY PRODUCT OR OTHER ITEMS PROVIDED BY Channex UNDER THIS AGREEMENT.</span>
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-xl font-semibold text-foreground mb-3">21. Third Party Vendor Products</h3>
-            <p>
-              Channex or third parties may from time to time make available to you (e.g., through the Channex Marketplace) third-party products or services, including but not limited to add-ons and plugins as well as implementation, customisation, training, and other consulting services. If you procure any of these third party products or services, you do so under a separate agreement (and exchange of data) solely between you and the third party vendor. Channex does not warrant or support non-Channex products or services, whether or not they are designated by Channex as "verified" or otherwise, and disclaims all liability for such products or services. If you install or enable any third party products or services for use with Channex products, you acknowledge that Channex may allow the vendors of those products and services to access Your Data as required for the interoperation and support of such add-ons with the Channex products. Channex shall not be responsible for any disclosure, modification or deletion of Your Data resulting from any such access by third party add-on vendors.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-xl font-semibold text-foreground mb-3">22. Publicity Rights</h3>
-            <p>
-              We may identify you as an Channex customer in our promotional materials. You may request that we stop doing so by submitting an email to support@channex.io at any time. Please note that it may take us up to 30 days to process your request.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-xl font-semibold text-foreground mb-3">23. Improving Our Products</h3>
-            <p>
-              We are always striving to improve our Products. In order to do so, we need to measure, analyse, and aggregate how users interact with our Products, such as usage patterns and characteristics of our user base. We collect and use analytics data regarding the use of our Products as described in our Privacy Policy.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-xl font-semibold text-foreground mb-3">24. Dispute Resolution</h3>
-            <div className="space-y-4">
-              <p>
-                <strong>24.1 Dispute Resolution; Arbitration.</strong> In the event of any controversy or claim arising out of or relating to this Agreement, the parties hereto shall consult and negotiate with each other and, recognising their mutual interests, attempt to reach a solution satisfactory to both parties. If the parties do not reach settlement within a period of 60 days, any unresolved controversy or claim arising out of or relating to this Agreement shall proceed to binding arbitration under the Rules of Arbitration of the International Chamber of Commerce. The parties shall seek to mutually appoint an arbitrator. If the parties cannot agree on a single arbitrator, then there shall be three (3) arbitrators: one selected by each party, and a third selected by the first two. Arbitration will take place in the following cities as mutually agreed between the parties: London (UK). All negotiations and arbitration proceedings pursuant to this Section will be confidential and treated as compromise and settlement negotiations for purposes of all similar rules and codes of evidence of applicable legislation and jurisdictions. The language of the arbitration shall be English.
-              </p>
-              <p>
-                <strong>24.2 Governing Law; Jurisdiction.</strong> This Agreement will be governed by and construed in accordance with the applicable laws of the United Kingdom.
-              </p>
-              <p>
-                Channex may bring a claim for equitable relief in any court with proper jurisdiction.
-              </p>
-              <p>
-                <strong>24.3 Injunctive Relief; Enforcement.</strong> Notwithstanding the provisions of Section 24.1 (Dispute Resolution; Arbitration), nothing in this Agreement shall prevent either party from seeking injunctive relief with respect to a violation of intellectual property rights, confidentiality obligations or enforcement or recognition of any award or order in any appropriate jurisdiction.
-              </p>
-              <p>
-                <strong>24.4 Exclusion of UN Convention and UCITA.</strong> The terms of the United Nations Convention on Contracts for the Sale of Goods do not apply to this Agreement. The Uniform Computer Information Transactions Act (UCITA) shall not apply to this Agreement regardless of when or where adopted.
-              </p>
-            </div>
-          </div>
-
-          <div>
-            <h3 className="text-xl font-semibold text-foreground mb-3">25. Changes to this Agreement</h3>
-            <p>
-              We may update or modify this Agreement from time to time, including any referenced policies and other documents. If a revision meaningfully reduces your rights, we will use reasonable efforts to notify you (by, for example, sending an email to the billing or technical contact you designate in the applicable Order, posting on our blog, through your Channex account, or in the Product itself). If we modify the Agreement during your License Term or Subscription Term, the modified version will be effective upon your next renewal of a License Term, Support and Maintenance term, or Subscription Term, as applicable. In this case, if you object to the updated Agreement, as your exclusive remedy, you may choose not to renew, including cancelling any terms set to auto-renew. With respect to No-Charge Products, accepting the updated Agreement is required for you to continue using the No-Charge Products. You may be required to click through the updated Agreement to show your acceptance. If you do not agree to the updated Agreement after it becomes effective, you will no longer have a right to use No-Charge Products. For the avoidance of doubt, any Order is subject to the version of the Agreement in effect at the time of the Order.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-xl font-semibold text-foreground mb-3">27. General Provisions</h3>
-            <p>
-              Any notice under this Agreement must be given in writing. We may provide notice to you via email or through your account. Our notices to you will be deemed given upon the first business day after we send it. You may provide notice to us by email to support@channex.io. Your notices to us will be deemed given upon our receipt. Neither party shall be liable to the other for any delay or failure to perform any obligation under this Agreement (except for a failure to pay fees) if the delay or failure is due to unforeseen events which are beyond the reasonable control of such party, such as a strike, blockade, war, act of terrorism, riot, natural disaster, failure or diminishment of power or telecommunications or data networks or services, or refusal of a license by a government agency. You may not assign this Agreement without our prior written consent. We will not unreasonably withhold our consent if the assignee agrees to be bound by the terms and conditions of this Agreement. We may assign our rights and obligations under this Agreement (in whole or in part) without your consent. The Products are commercial computer software. If you are an agency, department, or other entity of the United States Government, the use, duplication, reproduction, release, modification, disclosure, or transfer of the Products, or any related documentation of any kind, including technical data and manuals, is restricted by the terms of this Agreement. The Products were developed fully at private expense. All other use is prohibited. This Agreement is the entire agreement between you and Channex relating to the Products and supersedes all prior or contemporaneous oral or written communications, proposals and representations with respect to the Products or any other subject matter covered by this Agreement. If any provision of this Agreement is held to be void, invalid, unenforceable or illegal, the other provisions shall continue in full force and effect. This Agreement may not be modified or amended by you without our written agreement (which may be withheld in our complete discretion without any requirement to provide any explanation). As used herein, "including" (and its variants) means "including without limitation" (and its variants). No failure or delay by the injured party to this Agreement in exercising any right, power or privilege hereunder shall operate as a waiver thereof, nor shall any single or partial exercise thereof preclude any other or further exercise thereof or the exercise of any right, power or privilege hereunder at law or equity. The parties are independent contractors. This Agreement shall not be construed as constituting either party as a partner of the other or to create any other form of legal association that would give on party the express or implied right, power or authority to create any duty or obligation of the other party.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-xl font-semibold text-foreground mb-3">28. GDPR Data Protection Addendum</h3>
-            <div className="space-y-4">
-              <p>
-                <strong>28.1 Definitions:</strong> In this Addendum, the following terms shall have the following meanings:
-              </p>
-              <div className="ml-4 space-y-2">
+              <div className="ml-4 space-y-3">
                 <p>
-                  (a) "controller", "processor", "data subject", "personal data", "processing" (and "process") and "special categories of personal data" shall have the meanings given in Applicable Data Protection Law;
+                  (a) Subject to 19.3(c), neither party is liable to the other for any indirect, special, incidental or consequential loss or damage, including loss of profit, loss of revenue, loss of goodwill, loss of anticipated savings or loss of data, whether or not the loss was foreseeable or the party was advised of its possibility.
                 </p>
                 <p>
-                  (b) "Applicable Data Protection Law" shall mean: (i) prior to 25 May 2018, the EU Data Protection Directive (Directive 95/46/EC); and (ii) on and after 25 May 2018, the EU General Data Protection Regulation (Regulation 2016/679); and
+                  (b) Subject to 19.3(c), each party's total aggregate liability under or in connection with this Agreement — whether in contract, tort (including negligence), breach of statutory duty or otherwise — will not exceed the total fees paid or payable by you in the <strong>three (3) months</strong> immediately preceding the event giving rise to the claim.
                 </p>
                 <p>
-                  (c) "Channex" means the Channex entity that is a party to this Addendum, as specified in paragraph 1 of the section "APPLICATION OF THIS ADDENDUM" above.
+                  (c) <strong>Nothing in this Agreement limits or excludes either party's liability for:</strong> (i) death or personal injury caused by its negligence; (ii) fraud or fraudulent misrepresentation; (iii) your obligation to pay fees properly due; or (iv) any other liability that cannot lawfully be limited or excluded under the laws of England and Wales.
+                </p>
+                <p>
+                  (d) The parties agree that the limitations in this Section 19.3 are reasonable, having regard to the fees charged for the Services and to the allocation of risk between the parties.
                 </p>
               </div>
-              
               <p>
-                <strong>28.2 Relationship of the parties:</strong> Customer (the controller) appoints Channex as a processor to process the personal data described in the Agreement (the "Data") for the purposes described, and the terms set out, in the Agreement, including, for the avoidance of doubt, to provide you with, and update and improve, our services (or as otherwise agreed in writing by the parties) (the "Permitted Purpose"). Each party shall comply with the obligations that apply to it under Applicable Data Protection Law.
+                <strong>19.4 Indemnities.</strong>
               </p>
+              <div className="ml-4 space-y-3">
+                <p>
+                  (a) <strong>By you.</strong> You will indemnify us against third party claims, and reasonable legal costs, arising from your material breach of this Agreement, from Your Data or your own content infringing a third party's rights, or from your violation of applicable law.
+                </p>
+                <p>
+                  (b) <strong>By us.</strong> We will defend you against any third party claim that the Services, used in accordance with this Agreement, infringe that third party's patent, copyright, trademark or trade secret, and we will indemnify you against damages and costs finally awarded or agreed in settlement. This does not apply where the claim arises from combining the Services with something we did not provide, or from Your Data. If a claim is made or we reasonably expect one, we may procure the right for you to continue using the Services, modify or replace them with something functionally equivalent, or terminate the affected Services and refund prepaid fees for the unused term.
+                </p>
+                <p>
+                  (c) <strong>Procedure.</strong> The indemnified party must notify the indemnifier promptly, give it sole control of the defence and settlement, and provide reasonable cooperation at the indemnifier's expense. The indemnifier will not settle in a way that imposes an obligation or admits liability on behalf of the indemnified party without its prior written consent.
+                </p>
+              </div>
+            </div>
+          </div>
 
+          <div>
+            <h3 className="text-xl font-semibold text-foreground mb-3">20. Changes to this Agreement</h3>
+            <p>
+              20.1 We may update this Agreement and the policies it references — to reflect changes in the law, new regulatory requirements, or changes to the Services.
+            </p>
+            <p className="mt-3">
+              20.2 If a change materially reduces your rights, we will notify you at least thirty (30) days before it takes effect, by email to your billing or technical contact or by a notice in the platform. Other changes take effect when published.
+            </p>
+            <p className="mt-3">
+              20.3 If you do not accept a change that materially reduces your rights, you may terminate before it takes effect, and we will refund a pro rata share of any fees you have prepaid for the period after termination. Continuing to use the Services after the change takes effect means you accept it.
+            </p>
+            <p className="mt-3">
+              20.4 <strong>Signed agreements.</strong> Where you have a signed service agreement, partner agreement or addendum with us, we may not vary the terms of that signed document by updating this Agreement. Changes to a signed document require a written instrument executed by authorised representatives of both parties.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-xl font-semibold text-foreground mb-3">21. Data Protection Addendum</h3>
+            <div className="space-y-4">
               <p>
-                <strong>28.3 Prohibited data:</strong> Unless explicitly requested by Channex to do so, Customer shall not disclose (and shall not permit any data subject to disclose) any special categories of personal data to Channex for processing.
+                <strong>21.1 Definitions.</strong> "Controller", "processor", "data subject", "personal data", "processing" and "special categories of personal data" have the meanings given in Data Protection Law. "Data Protection Law" means the UK General Data Protection Regulation and the Data Protection Act 2018, and, where applicable to the processing, Regulation (EU) 2016/679 (the EU GDPR) and any national implementing legislation, in each case as amended or replaced from time to time. "Customer Personal Data" means personal data contained in Your Data and processed by us on your behalf under this Agreement.
               </p>
-
               <p>
-                <strong>28.4 International transfers:</strong> Channex shall not transfer the Data outside of the European Economic Area ("EEA") unless it has taken such measures as are necessary to ensure the transfer is in compliance with Applicable Data Protection Law. Such measures may include (without limitation) transferring the Data to a recipient in a country that the European Commission has decided provides adequate protection for personal data (e.g., New Zealand), to a recipient in the United States that has certified its compliance with the EU-US Privacy Shield, or to a recipient that has executed standard contractual clauses adopted or approved by the European Commission.
+                <strong>21.2 Roles.</strong> You are the controller of Customer Personal Data and we are your processor. We process Customer Personal Data only on your documented instructions, which are the instructions contained in this Agreement, your Order, your configuration of the Services and your choice of connected channels. We will tell you if we consider an instruction to breach Data Protection Law. Each party will comply with the obligations that apply to it under Data Protection Law, and a material breach of Data Protection Law by either party is a material breach of this Agreement.
               </p>
-
               <p>
-                <strong>28.5 Confidentiality of processing:</strong> Channex shall ensure that any person it authorises to process the Data (an "Authorised Person") shall protect the Data in accordance with Channex's confidentiality obligations under the Agreement.
+                <strong>21.3 Subject matter and scope.</strong> The subject matter of the processing is the provision of the Services. It lasts for the Subscription Term plus the retention periods in our Security Policy. The nature and purpose is the hosting, transmission and management of property, rate, availability and booking data. The categories of data subject are your personnel and the guests who book with your properties. The personal data typically comprises names, postal and email addresses, telephone numbers, booking details and, where you enable it, payment card details and identity document numbers.
               </p>
-
               <p>
-                <strong>28.6 Security:</strong> Channex shall implement technical and organisational measures which may be amended and updated from time to time, to protect the Data (i) from accidental or unlawful destruction, and (ii) loss, alteration, unauthorised disclosure of, or access to the Data (a "Security Incident").
+                <strong>21.4 Prohibited data.</strong> Do not submit special categories of personal data to the Services unless we have expressly agreed in writing to process it.
               </p>
-
               <p>
-                <strong>28.7 Subcontracting:</strong> Customer consents to Channex engaging third party subprocessors to process the Data for the Permitted Purpose provided that: (i) Channex maintains an up-to-date list of its subprocessors, which shall be available on its website on or before 25 May 2018, which it shall update with details of any change in subprocessors at least 30 days prior to the change; (ii) Channex imposes data protection terms on any subprocessor it appoints that require it to protect the Data to the standard required by Applicable Data Protection Law; and (iii) Channex remains liable for any breach of this Addendum that is caused by an act, error or omission of its subprocessor. Customer may object to Channex's appointment or replacement of a subprocessor prior to its appointment or replacement, provided such objection is based on reasonable grounds relating to data protection. In such event, Channex will either not appoint or replace the subprocessor or, if this is not reasonably possible, in Channex's sole discretion, Customer may suspend or terminate the Agreement without penalty (without prejudice to any fees incurred by Customer up to and including the date of suspension or termination).
+                <strong>21.5 Confidentiality.</strong> We ensure that anyone we authorise to process Customer Personal Data is subject to a duty of confidentiality and has been trained appropriately.
               </p>
-
               <p>
-                <strong>28.8 Cooperation and data subjects' rights:</strong> Channex shall provide reasonable and timely assistance to Customer (at Customer's expense) to enable Customer to respond to: (i) any request from a data subject to exercise any of its rights under Applicable Data Protection Law; and (ii) any other correspondence, enquiry or complaint received from a data subject, regulator or other third party in connection with the processing of the Data. In the event that any such request, correspondence, enquiry or complaint is made directly to Channex, Channex shall promptly inform Customer providing full details of the same.
+                <strong>21.6 Security.</strong> We implement appropriate technical and organisational measures to protect Customer Personal Data against accidental or unlawful destruction, loss, alteration, and unauthorised disclosure or access. Our current measures are described in our Security Policy.
               </p>
-
               <p>
-                <strong>28.9 Data Protection Impact Assessment:</strong> If Channex believes or becomes aware that its processing of the Data is likely to result in a high risk to the data protection rights and freedoms of data subjects, it shall inform Customer and provide reasonable cooperation to Customer in connection with any data protection impact assessment that may be required under Applicable Data Protection Law.
+                <strong>21.7 Subprocessors.</strong> You give us general authorisation to engage subprocessors to process Customer Personal Data for the purpose of providing the Services. We maintain a current list of our subprocessors, which is available on request from support@channex.io. We will give you at least thirty (30) days' notice before adding or replacing a subprocessor. We impose data protection terms on each subprocessor that are no less protective than those in this Section 21, and we remain liable for their acts and omissions. You may object to a new subprocessor on reasonable data protection grounds, in which case we will either not make the change or, if that is not reasonably possible, you may terminate the affected Services without penalty and receive a refund of prepaid fees for the unused term. Where standard contractual clauses are in place between us, the subprocessor authorisation regime in those clauses applies instead of the general authorisation in this Section 21.7 — which may require our obtaining your specific prior written authorisation for each new subprocessor.
               </p>
-
               <p>
-                <strong>28.10 Security incidents:</strong> If it becomes aware of a confirmed Security Incident, Channex shall inform Customer without undue delay and shall provide reasonable information and cooperation to Customer so that Customer can fulfil any data breach reporting obligations it may have under (and in accordance with the timescales required by) Applicable Data Protection Law. Channex shall further take reasonably necessary measures and actions to remedy or mitigate the effects of the Security Incident and keep Customer informed of all material developments in connection with the Security Incident.
+                <strong>21.8 International transfers.</strong> We will not transfer Customer Personal Data to a country outside the UK or the EEA unless the transfer is made in accordance with Data Protection Law — for example to a country covered by UK adequacy regulations or a European Commission adequacy decision, under the UK International Data Transfer Agreement or Addendum, or under the European Commission's standard contractual clauses, in each case with any supplementary measures required.
               </p>
-
               <p>
-                <strong>28.11 Deletion or return of Data:</strong> Upon termination or expiry of the Agreement, Channex will, on Customer's explicit request, delete or return the Data in its possession or control (in a manner and form decided by Channex, acting reasonably). This requirement shall not apply to the extent that Channex is required by applicable law to retain some or all of the Data, or to Data it has archived on back-up systems, which Data Channex shall securely isolate and protect from any further processing.
+                <strong>21.9 Data subject rights.</strong> Taking account of the nature of the processing, we will assist you by appropriate technical and organisational measures, so far as is reasonably possible, in responding to requests from data subjects exercising their rights. If a data subject contacts us directly about Customer Personal Data, we will not respond substantively but will refer them to you and pass on the details promptly.
+              </p>
+              <p>
+                <strong>21.10 Assistance.</strong> We will provide you with reasonable assistance with data protection impact assessments and prior consultations with a supervisory authority, and with your obligations to keep Customer Personal Data secure and to notify personal data breaches, taking into account the nature of the processing and the information available to us.
+              </p>
+              <p>
+                <strong>21.11 Personal data breach.</strong> We will notify you without undue delay after becoming aware of a personal data breach affecting Customer Personal Data, and will provide the information reasonably available to us so that you can meet your own notification obligations. We will take reasonable steps to remedy or mitigate the breach and keep you informed of material developments.
+              </p>
+              <p>
+                <strong>21.12 Audit.</strong> We will make available the information reasonably necessary to demonstrate our compliance with this Section 21, and will allow for and contribute to audits, including inspections, conducted by you or an auditor you appoint. Audits are limited to once in any twelve-month period unless a personal data breach or a regulator requires otherwise, must be on at least thirty (30) days' notice, during business hours, subject to confidentiality, and must not unreasonably disrupt our operations. Where a current third party audit report or certification answers your question, we may provide that instead.
+              </p>
+              <p>
+                <strong>21.13 Deletion or return.</strong> On termination, we will delete or return Customer Personal Data in accordance with Section 13.7 and the retention schedule in our Security Policy, except to the extent we are required by law to retain it, or where it sits on backup media, in which case we will isolate it and protect it from further processing until deletion.
+              </p>
+              <p>
+                <strong>21.14 Liability.</strong> Liability arising under or in connection with this Section 21 is subject to the limitations and exclusions in Section 19.3. This does not limit or affect any liability owed directly to a data subject under standard contractual clauses signed between us: that liability is governed by those clauses and cannot be varied by this Agreement.
               </p>
             </div>
           </div>
 
           <div>
-            <h3 className="text-xl font-semibold text-foreground mb-3">29. Modifications</h3>
-            <div className="space-y-4">
-              <p>
-                We may revise these Terms from time to time to better reflect:
-              </p>
-              <div className="ml-4 space-y-2">
-                <p>(a) changes to the law,</p>
-                <p>(b) new regulatory requirements, or</p>
-                <p>(c) improvements or enhancements made to our Services.</p>
-              </div>
-              <p>
-                If an update affects your use of the Services or your legal rights as a user of our Services, we'll notify you prior to the update's effective date by sending an email to the email address associated with your account or via an in-product notification. These updated terms will be effective no less than 30 days from when we notify you.
-              </p>
-              <p>
-                If you don't agree to the updates we make, please cancel your account before they become effective.
-              </p>
-              <p>
-                Where applicable, we'll offer you a pro rata refund based on the amounts you have prepaid for Services and your account cancellation date.
-              </p>
-              <p>
-                By continuing to use or access the Services after the updates come into effect, you agree to be bound by the revised Terms.
-              </p>
-            </div>
+            <h3 className="text-xl font-semibold text-foreground mb-3">22. Governing law and jurisdiction</h3>
+            <p>
+              22.1 This Agreement, and any dispute or claim arising out of or in connection with it or its subject matter (including non-contractual disputes or claims), is governed by and construed in accordance with the laws of <strong>England and Wales</strong>.
+            </p>
+            <p className="mt-3">
+              22.2 The parties submit to the <strong>exclusive jurisdiction of the courts of England and Wales</strong>.
+            </p>
+            <p className="mt-3">
+              22.3 Before starting proceedings, the parties will consult in good faith and try to reach a resolution. This does not prevent either party from applying to any court of competent jurisdiction for injunctive or other urgent relief, in particular to protect intellectual property rights or Confidential Information.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-xl font-semibold text-foreground mb-3">23. Publicity</h3>
+            <p>
+              We will not identify you as a Channex customer, or use your name or logo in our promotional materials, without your prior written consent. Where you give consent, you may withdraw it at any time by emailing support@channex.io, and we will remove the reference from materials under our control within thirty (30) days.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-xl font-semibold text-foreground mb-3">24. Force majeure</h3>
+            <p>
+              24.1 Neither party is liable for any delay or failure to perform (other than a failure to pay amounts due) caused by an event beyond its reasonable control — including strike, blockade, war, act of terrorism, riot, natural disaster, epidemic, failure of power, telecommunications or data networks, or refusal of a licence by a government agency (a "Force Majeure Event").
+            </p>
+            <p className="mt-3">
+              24.2 The affected party will give written notice within five (5) business days of the event, describing its nature and expected duration, and will use commercially reasonable efforts to mitigate and overcome it. If a Force Majeure Event continues for sixty (60) consecutive days or more, either party may terminate this Agreement on fourteen (14) days' written notice without liability, other than for fees already due and payable.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-xl font-semibold text-foreground mb-3">25. General</h3>
+            <p>
+              25.1 <strong>Notices.</strong> Notices under this Agreement must be in writing, in English. Notices to us go to support@channex.io. Notices to you go to the email address on your account, or through the platform, and are deemed given on the next business day after sending.
+            </p>
+            <p className="mt-3">
+              25.2 <strong>Assignment.</strong> You may not assign or transfer this Agreement without our prior written consent, which we will not unreasonably withhold if the assignee agrees to be bound by it. We may assign this Agreement, in whole or in part, to an affiliate or in connection with a merger, acquisition or sale of all or substantially all of our assets. On a merger or consolidation of either party, the surviving entity is bound by this Agreement.
+            </p>
+            <p className="mt-3">
+              25.3 <strong>Independent contractors.</strong> Nothing in this Agreement creates an agency, partnership, joint venture or employment relationship. Neither party may bind the other.
+            </p>
+            <p className="mt-3">
+              25.4 <strong>Costs.</strong> Except as a court orders, each party bears its own legal costs in relation to any dispute.
+            </p>
+            <p className="mt-3">
+              25.5 <strong>Severability.</strong> If any provision of this Agreement is held invalid or unenforceable, it will be applied in the narrowest way that makes it enforceable, or severed if that is not possible, and the remaining provisions continue in full force.
+            </p>
+            <p className="mt-3">
+              25.6 <strong>Waiver.</strong> A failure or delay in enforcing a provision is not a waiver of it, and does not prevent later enforcement.
+            </p>
+            <p className="mt-3">
+              25.7 <strong>Third party rights.</strong> A person who is not a party to this Agreement has no right under the Contracts (Rights of Third Parties) Act 1999 to enforce any of its terms.
+            </p>
+            <p className="mt-3">
+              25.8 <strong>Entire agreement.</strong> This Agreement, together with your Order and any signed agreement or addendum between us, is the entire agreement between the parties about the Services, and supersedes all prior communications, proposals and representations about them. Section 1.2 governs any conflict between those documents. Nothing in this Section limits liability for fraud or fraudulent misrepresentation.
+            </p>
+            <p className="mt-3">
+              25.9 <strong>Interpretation.</strong> "Including" means "including without limitation". Section headings are for convenience and do not affect interpretation.
+            </p>
           </div>
         </div>
       </div>

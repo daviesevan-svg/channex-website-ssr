@@ -3,19 +3,21 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { pageMeta } from "@/lib/seo";
 import BlogCard from "@/components/BlogCard";
-import { blogPosts } from "@/data/blogPosts";
+import { blogPostBySlug } from "@/lib/blog.server";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import { ArrowLeft, Calendar, Clock, User, Share2, Twitter, Facebook, Linkedin } from "lucide-react";
 import type { Route } from "./+types/blog.$slug";
 
+// Returns this one post plus card-sized related posts, so the client gets one
+// article body instead of the whole dataset.
 export async function loader({ params }: Route.LoaderArgs) {
-  const post = blogPosts.find((p) => p.slug === params.slug);
-  if (!post) {
+  const data = blogPostBySlug(params.slug);
+  if (!data) {
     throw new Response(null, { status: 404, statusText: "Not Found" });
   }
-  return { post };
+  return data;
 }
 
 export const meta: Route.MetaFunction = ({ loaderData, location }) =>
@@ -24,7 +26,8 @@ export const meta: Route.MetaFunction = ({ loaderData, location }) =>
       title: `${loaderData.post.title} | Channex Blog`,
       description: loaderData.post.metaDescription || loaderData.post.excerpt,
       type: "article",
-      ogImage: loaderData.post.featuredImage,
+      // JPEG sibling, not the WebP the page renders — see ogImageFor().
+      ogImage: loaderData.ogImage,
       structuredData: [
         {
           "@context": "https://schema.org",
@@ -52,12 +55,7 @@ export const meta: Route.MetaFunction = ({ loaderData, location }) =>
   );
 
 const BlogPost = ({ loaderData }: Route.ComponentProps) => {
-  const { post } = loaderData;
-
-  // Get related posts (same category, excluding current post)
-  const relatedPosts = blogPosts
-    .filter(p => p.category.id === post.category.id && p.id !== post.id)
-    .slice(0, 3);
+  const { post, related: relatedPosts } = loaderData;
 
   const shareUrl = `https://channex.io/blog/${post.slug}`;
   const shareTitle = post.title;
@@ -81,9 +79,12 @@ const BlogPost = ({ loaderData }: Route.ComponentProps) => {
         {/* Hero Image */}
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 mb-12">
           <div className="aspect-video rounded-lg overflow-hidden">
-            <img 
-              src={post.featuredImage} 
+            {/* Top of the article and the LCP candidate on this page. */}
+            <img
+              src={post.featuredImage}
               alt={post.title}
+              fetchPriority="high"
+              decoding="async"
               className="w-full h-full object-cover"
             />
           </div>
