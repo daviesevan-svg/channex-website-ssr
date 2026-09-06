@@ -6419,6 +6419,18 @@ export const integrations: Integration[] = [
     "website": "https://smartsuite.vn/vi/product/pms"
   },
   {
+    "id": "stayax",
+    "name": "Stayax",
+    "description": "Hospitality platform combining property management, dynamic pricing, multi-channel distribution and payment collection.",
+    "icon": "/lovable-uploads/pms-catalog-stayax.webp",
+    "categories": [
+      "PMS",
+      "Middle East"
+    ],
+    "slug": "stayax",
+    "website": "https://stayax.com/"
+  },
+  {
     "id": "staycore",
     "name": "Staycore",
     "description": "Hotel management software for reservations and property operations.",
