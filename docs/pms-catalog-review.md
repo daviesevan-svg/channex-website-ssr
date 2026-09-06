@@ -250,3 +250,18 @@ Hotpilot (hotpilot.ai) is distinct from the existing HostPilot domain (hostpilot
 | Add | WACheckin | [Source](https://wacheckin.com/) | Spain: Website address | Logo; [page](https://wacheckin.com/) |
 | Add | Welasync | [Source](https://welasync.com/) | Thailand: Supplied CSV location; not independently verified | Logo; [page](https://welasync.com/) |
 | Add | WowStay | [Source](https://wowstay.live/) | Malaysia: Supplied CSV location; not independently verified | Site icon; full logo needed; initials fallback |
+
+## Later additions
+
+Single listings added after the 5 September review. Same evidence standard: the
+claim in each row is what the vendor's own site shows, and anything not checked
+is labelled as such.
+
+| Action | Listing | Vendor evidence | Location basis | Asset basis |
+|---|---|---|---|---|
+| Add (6 Sep 2026) | Stayax | [Source](https://stayax.com/) — four modules: AI Boost, Yield AI, Hotel Management, Payax; the management module is labelled "İŞLET PMS · Yönetim" | Turkey: Turkish-language site, TÜRSAB-certified agency stated on the page | Brand mark from `/images/favicon-stayax.svg` (coral `#FF4E4F`, legible on a white card); the `stayax-wordmark-white.svg` wordmark is white-on-transparent and would have needed a dark plate |
+
+Tagged `PMS` + `Middle East`, matching the region tag the four existing
+Turkey-located vendors already use. Only the one functional tag, since no
+record in the dataset carries more than one — Yield AI would otherwise argue
+for `RMS` as well.
