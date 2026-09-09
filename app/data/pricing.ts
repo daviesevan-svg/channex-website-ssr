@@ -48,10 +48,15 @@ export const INCLUDED_LIMITS = [
   { type: "Vacation rental", limits: "50 room types, 10 rate plans per room type" },
 ];
 
+/** Ceiling on each hotel size-overage line, per property. Held as a constant
+ *  because it is now quoted on two rows, and these are contractual figures —
+ *  two literals that must always agree are exactly how this page drifts. */
+export const OVERAGE_CAP = 7;
+
 /** Charged only on the part of a property that exceeds the limits above. */
 export const OVERAGE_FEES = [
-  { item: "Hotel — each room type over 20", fee: "$1", note: "capped at $7 per property" },
-  { item: "Hotel — each rate plan over 200", fee: "$0.10", note: "" },
+  { item: "Hotel — each room type over 20", fee: "$1", note: `capped at $${OVERAGE_CAP} per property` },
+  { item: "Hotel — each rate plan over 200", fee: "$0.10", note: `capped at $${OVERAGE_CAP} per property` },
   { item: "Vacation rental — each rate plan over 10 per room type", fee: "$0.10", note: "" },
 ];
 
