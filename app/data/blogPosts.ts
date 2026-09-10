@@ -36,6 +36,274 @@ export const blogCategories: BlogCategory[] = [
 
 export const blogPosts: BlogPost[] = [
   {
+    id: "airbnb-high-rated-guest-discount",
+    title: "Airbnb High-Rated Guest Discount: Reward Your Best Guests Automatically",
+    slug: "airbnb-high-rated-guest-discount",
+    excerpt: "Airbnb's Top-rated guests discount gives 15% off to guests with at least 3 reviews and a 4.8+ average rating — and Airbnb's own estimates put it at ~11% more gross booking value. Turn it on for any listing straight from Channex.",
+    content: `
+      <p>Every host knows the difference between a great guest and a difficult one. Great guests read the house rules, communicate clearly, leave the place tidy and write the reviews that keep your listing climbing Airbnb's search results. Difficult guests cost you time, cleaning and occasionally a claim.</p>
+
+      <p>Airbnb's <strong>Top-rated guests discount</strong> — shown in Channex as the <strong>High-Rated Guest Discount</strong> — lets you tilt the odds in your favour: a discount only the best-reviewed travellers on the platform can see. You can switch it on for any connected listing directly inside Channex, without touching the extranet.</p>
+
+      <hr style="margin: 2rem 0; border: none; border-top: 1px solid #e2e8f0;" />
+
+      <h2 style="font-size: 1.875rem; font-weight: 700; margin-bottom: 1rem; color: #1e293b;">What is the High-Rated Guest Discount?</h2>
+
+      <p>It is one of Airbnb's automatic promotions. When enabled on a listing, it gives a discount to Airbnb's top-rated guests — <strong>those with at least 3 host reviews and an average rating of 4.8 or higher</strong>. The discount is applied automatically to eligible bookings; there is no code for the guest to enter and nothing for you to approve.</p>
+
+      <p>The rate is set by Airbnb at <strong>15%</strong>, and Channex shows it on the promotion so you know exactly what you are agreeing to before you flip the toggle.</p>
+
+      <hr style="margin: 2rem 0; border: none; border-top: 1px solid #e2e8f0;" />
+
+      <h2 style="font-size: 1.875rem; font-weight: 700; margin-bottom: 1rem; color: #1e293b;">What Airbnb's own numbers say</h2>
+
+      <p>Airbnb ran a limited-time pilot and a follow-up experiment on this discount and published the results to hosts. At a 15% discount, Airbnb estimates that global active listings offering the Top-rated guests promotion generate:</p>
+
+      <table style="width: 100%; border-collapse: collapse; margin: 2rem 0; border: 1px solid #e2e8f0;">
+        <thead>
+          <tr style="background-color: #f8fafc;">
+            <th style="padding: 1rem; text-align: left; border-bottom: 2px solid #e2e8f0; font-weight: 600;">Metric</th>
+            <th style="padding: 1rem; text-align: left; border-bottom: 2px solid #e2e8f0; font-weight: 600;">Airbnb's estimate</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="padding: 1rem; border-bottom: 1px solid #e2e8f0;"><strong>Gross booking value</strong></td>
+            <td style="padding: 1rem; border-bottom: 1px solid #e2e8f0;">~11% higher</td>
+          </tr>
+          <tr>
+            <td style="padding: 1rem; border-bottom: 1px solid #e2e8f0;"><strong>Nights booked</strong></td>
+            <td style="padding: 1rem; border-bottom: 1px solid #e2e8f0;">~14% more</td>
+          </tr>
+          <tr>
+            <td style="padding: 1rem; border-bottom: 1px solid #e2e8f0;"><strong>Chance of a top-rated guest booking</strong></td>
+            <td style="padding: 1rem; border-bottom: 1px solid #e2e8f0;">~43% higher</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>Airbnb also reports that hosts in the pilot saw improvements in both earnings and the likelihood of securing a booking from a top-rated guest, and that these guests are more likely to leave a 5-star rating.</p>
+
+      <p style="background-color: #f8fafc; border-left: 4px solid #cbd5e1; padding: 1rem 1.25rem; margin: 1.5rem 0; color: #475569; font-size: 0.9375rem;"><strong>The small print, in full:</strong> the 5-star finding comes from an Airbnb pilot covering check-ins between 12 February and 12 March 2026 in the US, CA, FR, GB, AU, BR, IT, KR, ES, MX and DE. The three percentages above were observed between 17 June and 7 July 2026 via an Airbnb experiment covering check-in dates from 17 June 2026 onwards in all countries Airbnb operates in. They are modelled from observed pilot performance and may vary by listing and market. Airbnb also reserves the right to discontinue the discount at any time.</p>
+
+      <p>Read that as directional rather than a promise: an 11% lift in gross booking value at a 15% discount is Airbnb's modelled average, not a guarantee for your property. But the direction is worth taking seriously — a discount that is only visible to a specific, high-quality segment behaves very differently from an across-the-board price cut.</p>
+
+      <hr style="margin: 2rem 0; border: none; border-top: 1px solid #e2e8f0;" />
+
+      <h2 style="font-size: 1.875rem; font-weight: 700; margin-bottom: 1rem; color: #1e293b;">How it appears to guests</h2>
+
+      <p>The discount is not silent. According to Airbnb, an eligible guest sees:</p>
+
+      <ul>
+        <li><strong>A search boost.</strong> Discounted pricing can improve where your listing appears in their search results.</li>
+        <li><strong>A badge on your listing page</strong> reading "This host is offering a discount".</li>
+        <li><strong>Strikethrough pricing</strong> that makes the saving obvious at a glance.</li>
+      </ul>
+
+      <p>That combination matters. You are not just cutting the rate — you are buying a visual differentiator in a results page where every other listing looks broadly the same.</p>
+
+      <h3 style="font-size: 1.375rem; font-weight: 600; margin: 1.5rem 0 0.75rem; color: #1e293b;">The mechanics worth knowing</h3>
+
+      <ul>
+        <li>Eligible guests get the discount <strong>off the nightly rate only</strong>. Coupons and local taxes are not included.</li>
+        <li>Airbnb's guidance for this discount is that it <strong>will be combined with other discounts</strong>.</li>
+        <li>If you remove the discount later, the change <strong>does not affect pending or confirmed reservations</strong> — only new bookings.</li>
+      </ul>
+
+      <hr style="margin: 2rem 0; border: none; border-top: 1px solid #e2e8f0;" />
+
+      <h2 style="font-size: 1.875rem; font-weight: 700; margin-bottom: 1rem; color: #1e293b;">How to enable it in Channex</h2>
+
+      <p>Airbnb's own guidance to hosts is that if you use property management software, you should check with your provider before setting this up in the extranet. If you are on Channex, you do not need to ask — it is already there.</p>
+
+      <h3 style="font-size: 1.375rem; font-weight: 600; margin: 1.5rem 0 0.75rem; color: #1e293b;">Step 1: Open the Listing tab</h3>
+
+      <p>Open your Airbnb channel in Channex and go to the <strong>Listing</strong> tab. Each connected listing shows its ID, publication status, pricing mode and a <strong>Promotions</strong> column. Where promotions are available for a listing, you will see <strong>Available</strong> as a link.</p>
+
+      <figure style="margin: 2rem 0;">
+        <img src="/lovable-uploads/blog-airbnb-promotions-listing.webp" alt="Channex Airbnb channel Listing tab showing two published listings with a Promotions column marked Available" style="width: 100%; border-radius: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.12); border: 1px solid #e2e8f0;" />
+        <figcaption style="text-align: center; margin-top: 0.75rem; color: #64748b; font-size: 0.875rem; font-style: italic;">The Listing tab, with promotions shown as "Available" per listing</figcaption>
+      </figure>
+
+      <h3 style="font-size: 1.375rem; font-weight: 600; margin: 1.5rem 0 0.75rem; color: #1e293b;">Step 2: Open Promotions and toggle it on</h3>
+
+      <p>Click <strong>Available</strong> to open the Promotions panel for that listing. You will see every promotion Airbnb currently offers for it, each with its own description and discount rate. Switch on <strong>High-Rated Guest Discount</strong> and Channex pushes the change to Airbnb for you.</p>
+
+      <figure style="margin: 2rem 0;">
+        <img src="/lovable-uploads/blog-airbnb-promotions-panel.webp" alt="Channex Promotions panel showing the High-Rated Guest Discount at 15% and the Mobile-Only Discount at 10%, each with a toggle" style="width: 100%; border-radius: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.12); border: 1px solid #e2e8f0;" />
+        <figcaption style="text-align: center; margin-top: 0.75rem; color: #64748b; font-size: 0.875rem; font-style: italic;">The Promotions panel — High-Rated Guest Discount (15%) and Mobile-Only Discount (10%)</figcaption>
+      </figure>
+
+      <p>Doing it in Channex rather than the extranet matters most when you have more than one property: you can see which listings are running which promotions from a single screen, and change them as your season changes.</p>
+
+      <hr style="margin: 2rem 0; border: none; border-top: 1px solid #e2e8f0;" />
+
+      <h2 style="font-size: 1.875rem; font-weight: 700; margin-bottom: 1rem; color: #1e293b;">Important: promotions override discounts</h2>
+
+      <p>One rule in the Promotions panel is worth reading twice. <strong>Promotions override discounts.</strong> Channex states it plainly: if a host sets a New Listing Promotion on a listing that has a last-minute discount, guests will only receive the New Listing Promotion.</p>
+
+      <p>So promotions do not layer on top of your other Airbnb discounts — a promotion wins, and the discount it replaces simply does not apply. Note the distinction from the point above: Airbnb describes the Top-rated guests <em>discount</em> as combining with other discounts, while a <em>promotion</em> such as the New Listing Promotion supersedes them. If a listing has several things running at once, check the final price a guest actually sees before assuming the savings compound.</p>
+
+      <hr style="margin: 2rem 0; border: none; border-top: 1px solid #e2e8f0;" />
+
+      <h2 style="font-size: 1.875rem; font-weight: 700; margin-bottom: 1rem; color: #1e293b;">When to use it</h2>
+
+      <table style="width: 100%; border-collapse: collapse; margin: 2rem 0; border: 1px solid #e2e8f0;">
+        <thead>
+          <tr style="background-color: #f8fafc;">
+            <th style="padding: 1rem; text-align: left; border-bottom: 2px solid #e2e8f0; font-weight: 600;">Situation</th>
+            <th style="padding: 1rem; text-align: left; border-bottom: 2px solid #e2e8f0; font-weight: 600;">Recommendation</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="padding: 1rem; border-bottom: 1px solid #e2e8f0;"><strong>High-value or design-led property</strong></td>
+            <td style="padding: 1rem; border-bottom: 1px solid #e2e8f0;">Strong fit. The cost of a bad stay is high, so screening for well-reviewed guests is worth more than the 15%.</td>
+          </tr>
+          <tr>
+            <td style="padding: 1rem; border-bottom: 1px solid #e2e8f0;"><strong>New listing with no reviews</strong></td>
+            <td style="padding: 1rem; border-bottom: 1px solid #e2e8f0;">Good fit. Airbnb reports top-rated guests are more likely to leave a 5-star rating, which gets you to the crucial three-review milestone faster.</td>
+          </tr>
+          <tr>
+            <td style="padding: 1rem; border-bottom: 1px solid #e2e8f0;"><strong>Low season or soft dates</strong></td>
+            <td style="padding: 1rem; border-bottom: 1px solid #e2e8f0;">Good fit. You are already discounting to fill; this way the discount buys you a better guest as well as a booking.</td>
+          </tr>
+          <tr>
+            <td style="padding: 1rem; border-bottom: 1px solid #e2e8f0;"><strong>Peak dates that already sell out</strong></td>
+            <td style="padding: 1rem; border-bottom: 1px solid #e2e8f0;">Leave it off. You do not need to buy demand you already have.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>And because removing the discount never touches pending or confirmed reservations, testing it is genuinely low-risk: turn it on for a slow month, watch what lands, turn it off again.</p>
+
+      <hr style="margin: 2rem 0; border: none; border-top: 1px solid #e2e8f0;" />
+
+      <h2 style="font-size: 1.875rem; font-weight: 700; margin-bottom: 1rem; color: #1e293b;">Get started</h2>
+
+      <p>Log in to Channex, open your Airbnb channel and check which of your listings say <strong>Available</strong> in the Promotions column. Pair this with the <a href="/blog/airbnb-mobile-only-discount" style="color: #2563eb; text-decoration: underline;">Mobile-Only Discount</a> and your length-of-stay rules for a promotion strategy that works while you sleep.</p>
+    `,
+    author: {
+      name: "Channex Team",
+      avatar: "/placeholder.svg",
+      bio: "Actionable distribution tips and product guidance."
+    },
+    publishDate: "2026-09-10",
+    category: blogCategories[4],
+    tags: ["Airbnb", "Promotions", "Discounts", "Guest Quality", "Revenue Management", "Channex"],
+    featuredImage: "/lovable-uploads/blog-airbnb-high-rated-guest-discount-header.webp",
+    readTime: 6,
+    metaDescription: "Enable Airbnb's Top-rated guests discount from Channex: 15% off for guests with 3+ reviews and a 4.8+ rating. Airbnb estimates ~11% more gross booking value and ~14% more nights booked."
+  },
+  {
+    id: "airbnb-mobile-only-discount",
+    title: "Airbnb Mobile-Only Discount: Capture App Bookings with 10% Off",
+    slug: "airbnb-mobile-only-discount",
+    excerpt: "The Mobile-Only Discount gives 10% off to guests booking through the Airbnb app on Android and iOS. Enable it per listing from the Channex Promotions panel in a couple of clicks.",
+    content: `
+      <p>A large share of travel research and booking now happens on a phone, in an app, often in the gaps of someone's day. Airbnb's <strong>Mobile-Only Discount</strong> is built for exactly that moment: a targeted discount that only appears to guests booking through the Airbnb mobile app.</p>
+
+      <p>Like every Airbnb promotion, it is applied automatically to eligible bookings — and like every Airbnb promotion, you can now enable it per listing from inside Channex.</p>
+
+      <hr style="margin: 2rem 0; border: none; border-top: 1px solid #e2e8f0;" />
+
+      <h2 style="font-size: 1.875rem; font-weight: 700; margin-bottom: 1rem; color: #1e293b;">What is the Mobile-Only Discount?</h2>
+
+      <p>It gives a discount to guests booking through the <strong>Airbnb mobile app (Android &amp; iOS)</strong>. Guests browsing on desktop or the mobile web do not see it. The rate is set by Airbnb at <strong>10%</strong>, shown on the promotion in Channex before you enable it.</p>
+
+      <p>Because the discount is channel-specific rather than date-specific, it does not touch your calendar, your rates or your restrictions. It is a targeting tool, not a pricing change — the same room, at a slightly better price, shown only to the audience Airbnb wants to convert in-app.</p>
+
+      <h3 style="font-size: 1.375rem; font-weight: 600; margin: 1.5rem 0 0.75rem; color: #1e293b;">Why enable it</h3>
+
+      <ul>
+        <li><strong>It reaches an audience your other levers don't.</strong> Length-of-stay discounts target trip shape; last-minute discounts target timing. This one targets the device — a segment none of your other rules can address.</li>
+        <li><strong>Impulse and spontaneity.</strong> App bookings skew towards travellers deciding in the moment. A visible saving at that moment is disproportionately persuasive.</li>
+        <li><strong>Competitive placement.</strong> An active promotion makes your listing more attractive in exactly the surface where it is shown.</li>
+        <li><strong>Zero admin.</strong> No codes, no manual approvals, no calendar edits. It is applied automatically to eligible bookings.</li>
+      </ul>
+
+      <hr style="margin: 2rem 0; border: none; border-top: 1px solid #e2e8f0;" />
+
+      <h2 style="font-size: 1.875rem; font-weight: 700; margin-bottom: 1rem; color: #1e293b;">How to enable it in Channex</h2>
+
+      <h3 style="font-size: 1.375rem; font-weight: 600; margin: 1.5rem 0 0.75rem; color: #1e293b;">Step 1: Open the Listing tab</h3>
+
+      <p>In Channex, open your Airbnb channel and select the <strong>Listing</strong> tab. Every connected listing is shown with its ID, status, pricing mode and a <strong>Promotions</strong> column. Listings that can run promotions show <strong>Available</strong>.</p>
+
+      <figure style="margin: 2rem 0;">
+        <img src="/lovable-uploads/blog-airbnb-promotions-listing.webp" alt="Channex Airbnb channel Listing tab showing two published listings with a Promotions column marked Available" style="width: 100%; border-radius: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.12); border: 1px solid #e2e8f0;" />
+        <figcaption style="text-align: center; margin-top: 0.75rem; color: #64748b; font-size: 0.875rem; font-style: italic;">Promotions are managed per listing, from the Listing tab</figcaption>
+      </figure>
+
+      <h3 style="font-size: 1.375rem; font-weight: 600; margin: 1.5rem 0 0.75rem; color: #1e293b;">Step 2: Toggle on the Mobile-Only Discount</h3>
+
+      <p>Click <strong>Available</strong> to open the Promotions panel. Find <strong>Mobile-Only Discount</strong>, check the stated discount, and switch the toggle on. Channex sends the change to Airbnb — there is nothing to save in the extranet afterwards.</p>
+
+      <figure style="margin: 2rem 0;">
+        <img src="/lovable-uploads/blog-airbnb-promotions-panel.webp" alt="Channex Promotions panel showing the Mobile-Only Discount at 10% and the High-Rated Guest Discount at 15%, each with a toggle" style="width: 100%; border-radius: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.12); border: 1px solid #e2e8f0;" />
+        <figcaption style="text-align: center; margin-top: 0.75rem; color: #64748b; font-size: 0.875rem; font-style: italic;">Mobile-Only Discount (10%) alongside the High-Rated Guest Discount (15%)</figcaption>
+      </figure>
+
+      <hr style="margin: 2rem 0; border: none; border-top: 1px solid #e2e8f0;" />
+
+      <h2 style="font-size: 1.875rem; font-weight: 700; margin-bottom: 1rem; color: #1e293b;">Remember: promotions override discounts</h2>
+
+      <p>Before you enable anything, understand how promotions interact with the rest of your pricing. <strong>Promotions override discounts.</strong> The Promotions panel spells it out: if a host sets a New Listing Promotion on a listing that has a last-minute discount, guests will only receive the New Listing Promotion.</p>
+
+      <p>So a guest booking in the app on a listing that also runs a last-minute discount will not receive both. Decide which lever matters most for each listing rather than assuming the savings compound — and revisit that decision when your season, or your occupancy, changes.</p>
+
+      <hr style="margin: 2rem 0; border: none; border-top: 1px solid #e2e8f0;" />
+
+      <h2 style="font-size: 1.875rem; font-weight: 700; margin-bottom: 1rem; color: #1e293b;">Getting the most out of it</h2>
+
+      <table style="width: 100%; border-collapse: collapse; margin: 2rem 0; border: 1px solid #e2e8f0;">
+        <thead>
+          <tr style="background-color: #f8fafc;">
+            <th style="padding: 1rem; text-align: left; border-bottom: 2px solid #e2e8f0; font-weight: 600;">Tactic</th>
+            <th style="padding: 1rem; text-align: left; border-bottom: 2px solid #e2e8f0; font-weight: 600;">Why it works</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="padding: 1rem; border-bottom: 1px solid #e2e8f0;"><strong>Use it on soft dates</strong></td>
+            <td style="padding: 1rem; border-bottom: 1px solid #e2e8f0;">Enable it when you need volume, and turn it off once the dates fill. It takes one toggle either way.</td>
+          </tr>
+          <tr>
+            <td style="padding: 1rem; border-bottom: 1px solid #e2e8f0;"><strong>Check your photos first</strong></td>
+            <td style="padding: 1rem; border-bottom: 1px solid #e2e8f0;">You are buying app traffic. A listing that looks good on a small screen — strong lead image, short title — converts that traffic; one that doesn't wastes the discount.</td>
+          </tr>
+          <tr>
+            <td style="padding: 1rem; border-bottom: 1px solid #e2e8f0;"><strong>Respond fast</strong></td>
+            <td style="padding: 1rem; border-bottom: 1px solid #e2e8f0;">App bookers move quickly. Instant Book or a quick response time converts far more of the demand you just paid to attract.</td>
+          </tr>
+          <tr>
+            <td style="padding: 1rem; border-bottom: 1px solid #e2e8f0;"><strong>Review it per listing</strong></td>
+            <td style="padding: 1rem; border-bottom: 1px solid #e2e8f0;">Promotions are set listing by listing. A property that sells out on its own does not need one; a slower sibling might.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <hr style="margin: 2rem 0; border: none; border-top: 1px solid #e2e8f0;" />
+
+      <h2 style="font-size: 1.875rem; font-weight: 700; margin-bottom: 1rem; color: #1e293b;">One panel, every promotion</h2>
+
+      <p>Managing promotions inside Channex means you can see, at a glance, which of your listings are running what — and change it without logging into another system. Open your Airbnb channel, click through to the Listing tab and see which listings say <strong>Available</strong>.</p>
+
+      <p>Also worth enabling: the <a href="/blog/airbnb-high-rated-guest-discount" style="color: #2563eb; text-decoration: underline;">High-Rated Guest Discount</a>, which gives 15% off to guests with at least 3 reviews and a 4.8+ average rating — Airbnb estimates it delivers around 11% more gross booking value and 14% more nights booked.</p>
+    `,
+    author: {
+      name: "Channex Team",
+      avatar: "/placeholder.svg",
+      bio: "Actionable distribution tips and product guidance."
+    },
+    publishDate: "2026-09-10",
+    category: blogCategories[4],
+    tags: ["Airbnb", "Promotions", "Discounts", "Mobile", "Direct Distribution", "Channex"],
+    featuredImage: "/lovable-uploads/blog-airbnb-mobile-only-discount-header.webp",
+    readTime: 5,
+    metaDescription: "Turn on Airbnb's Mobile-Only Discount from Channex: 10% off for guests booking in the Airbnb app on Android and iOS. Setup steps, tactics, and how promotions override discounts."
+  },
+  {
     id: "airbnb-weekly-monthly-discounts",
     title: "Boost Bookings with Weekly & Monthly Discounts on Airbnb",
     slug: "airbnb-weekly-monthly-discounts",
