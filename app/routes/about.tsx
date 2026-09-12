@@ -116,7 +116,7 @@ const About = () => {
     { year: "2015", title: "The problem, first-hand", description: "Our founder builds his own PMS while running hotels — and hits the channel-manager wall" },
     { year: "2019", title: "PMS sold", description: "The PMS is sold in December, but the connectivity gap it exposed is still there" },
     { year: "2020", title: "Channex founded", description: "Launched in January to build the channel manager that PMS had needed: modern API, per-property pricing, wholesale only" },
-    { year: "2022", title: "Enterprise scale", description: "Hundreds of PMS integrations live, on a 99.9% uptime SLA" },
+    { year: "2022", title: "Enterprise scale", description: "Hundreds of PMS integrations live, serving properties around the clock" },
     { year: "Today", title: `${PMS_COUNT}+ PMS partners`, description: `${OTA_CHANNEL_COUNT} booking channels behind one API, serving partners worldwide` }
   ];
 

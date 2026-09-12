@@ -98,21 +98,17 @@ const Hero = () => {
             </p>
 
             {/* Stats.
-                Three columns of a 390px screen are ~103px wide, where the 30px
-                figures didn't fit: "100,000+" needed 143px and "<100ms" 118, so
-                both rendered clipped — the headline number read "100,00", which
-                is worse than not showing it. Smaller type below `sm` only; the
-                desktop sizes are untouched. */}
-            <div className="grid grid-cols-3 gap-4 sm:gap-6 pt-8 border-t border-border/50">
+                Two columns since the uptime figure came out — the remaining
+                figures get more room, but keep the smaller type below `sm`:
+                at 390px the 30px figures didn't fit ("100,000+" needed 143px,
+                "<100ms" 118), and a headline number reading "100,00" is worse
+                than not showing it. The desktop sizes are untouched. */}
+            <div className="grid grid-cols-2 gap-4 sm:gap-6 pt-8 border-t border-border/50">
               <div className="text-center lg:text-left">
                 <div className="text-xl sm:text-3xl lg:text-4xl font-bold bg-gradient-primary bg-clip-text text-transparent font-inter">
                   {approx(CHANNEL_CONNECTION_COUNT)}
                 </div>
                 <div className="text-sm text-muted-foreground font-inter mt-1">Channel connections</div>
-              </div>
-              <div className="text-center lg:text-left">
-                <div className="text-xl sm:text-3xl lg:text-4xl font-bold bg-gradient-primary bg-clip-text text-transparent font-inter">99.9%</div>
-                <div className="text-sm text-muted-foreground font-inter mt-1">Uptime</div>
               </div>
               <div className="text-center lg:text-left">
                 <div className="text-xl sm:text-3xl lg:text-4xl font-bold bg-gradient-primary bg-clip-text text-transparent font-inter">&lt;100ms</div>

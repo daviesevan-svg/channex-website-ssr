@@ -91,12 +91,6 @@ const ComparisonSiteMinder = () => {
       channexWins: true
     },
     {
-      category: "Uptime SLA",
-      channex: "99.9% uptime SLA",
-      siteminder: "99.95% uptime",
-      channexWins: false
-    },
-    {
       category: "Setup Complexity",
       channex: "Simple API integration, minimal setup required",
       siteminder: "Requires hotel staff training and ongoing management",
@@ -217,7 +211,7 @@ const ComparisonSiteMinder = () => {
               Understand the key differences between Channex's white-label API and SiteMinder's all-in-one platform to choose the right solution for your business.
             </p>
 
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-6 pt-8 max-w-2xl mx-auto">
+            <div className="grid grid-cols-2 gap-6 pt-8 max-w-xl mx-auto">
               <div className="text-center">
                 <div className="text-3xl font-bold text-primary">15</div>
                 <div className="text-slate-300 text-sm mt-1">Feature Categories</div>
@@ -225,10 +219,6 @@ const ComparisonSiteMinder = () => {
               <div className="text-center">
                 <div className="text-3xl font-bold text-primary">{OTA_CHANNEL_COUNT}+</div>
                 <div className="text-slate-300 text-sm mt-1">OTA Partners</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-primary">99.9%</div>
-                <div className="text-slate-300 text-sm mt-1">Uptime SLA</div>
               </div>
             </div>
           </div>

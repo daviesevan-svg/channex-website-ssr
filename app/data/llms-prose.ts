@@ -42,7 +42,6 @@ never competes with its partners.
 - Properties: ${approx(HOTEL_PROPERTY_COUNT)} hotel properties and ${approx(VR_LISTING_COUNT)} vacation rental / outdoor hospitality listings
 - Channel connections: ${approx(CHANNEL_CONNECTION_COUNT)} live property-to-channel connections
 - OTA connections: ${OTA_CHANNEL_COUNT} OTAs and booking channels (see the integrations directory)
-- Uptime SLA: 99.9%
 - API response time: sub-100ms. ${API_RESPONSE_NOTE}
 
 ## Core Features

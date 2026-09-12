@@ -1079,11 +1079,6 @@ export const blogPosts: BlogPost[] = [
               <td style="padding: 1rem; text-align: center;">Limited</td>
               <td style="padding: 1rem; text-align: center; color: #059669; font-weight: 600;">Full white-label</td>
             </tr>
-            <tr>
-              <td style="padding: 1rem; font-weight: 500;">Uptime SLA</td>
-              <td style="padding: 1rem; text-align: center;">Not published</td>
-              <td style="padding: 1rem; text-align: center; color: #059669; font-weight: 600;">99.9%</td>
-            </tr>
           </tbody>
         </table>
       </div>
@@ -1135,7 +1130,7 @@ export const blogPosts: BlogPost[] = [
       <p>Yeah, sandbox is free. Use it as long as you need.</p>
 
       <h3 style="font-size: 1.25rem; font-weight: 600; margin-top: 1.5rem; margin-bottom: 0.75rem; color: #334155;">What's support like?</h3>
-      <p>99.9% uptime. Real developers on email and Slack. No ticket queues.</p>
+      <p>Real developers on email and Slack. No ticket queues.</p>
 
       <hr style="margin: 2rem 0; border: none; border-top: 1px solid #e2e8f0;" />
 

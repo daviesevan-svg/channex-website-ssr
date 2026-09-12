@@ -92,7 +92,7 @@ const Features = () => {
       icon: BarChart3,
       title: "High Reliability & Speed",
       description: "Built with performance in mind featuring low-latency updates to OTAs and scales seamlessly with your PMS growth.",
-      highlight: "99.9% Uptime",
+      highlight: "Built to Scale",
       color: "from-green-500/20 to-green-600/20"
     },
     {
@@ -194,11 +194,7 @@ const Features = () => {
               Everything you need to connect your Property Management System to the world's leading booking platforms — while keeping your brand front and center.
             </p>
 
-            <div className="grid grid-cols-3 gap-6 pt-8 max-w-2xl mx-auto">
-              <div className="text-center">
-                <div className="text-4xl font-bold bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">99.9%</div>
-                <div className="text-slate-300 text-sm mt-1">Uptime SLA</div>
-              </div>
+            <div className="grid grid-cols-2 gap-6 pt-8 max-w-xl mx-auto">
               <div className="text-center">
                 <div className="text-4xl font-bold bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">&lt;100ms</div>
                 <div className="text-slate-300 text-sm mt-1">API response</div>
