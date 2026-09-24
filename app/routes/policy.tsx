@@ -15,7 +15,7 @@ export const meta: Route.MetaFunction = ({ location }) =>
   pageMeta(
     {
       title: "Terms & Policies | Channex",
-      description: "Legal terms, privacy, security, and acceptable use policies.",
+      description: "The Channex Customer Agreement, Privacy Policy, Security Policy and Acceptable Use Policy for Channex.io LTD, registered in England and Wales.",
     },
     location,
   );

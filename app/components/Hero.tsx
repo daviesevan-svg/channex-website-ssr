@@ -146,8 +146,8 @@ const Hero = () => {
             </div>
             
             <div className="absolute -bottom-4 -left-4 bg-card border border-border rounded-lg p-4 shadow-primary animate-fade-in" style={{ animationDelay: "1s" }}>
-              <div className="text-sm font-medium text-foreground font-inter">API Calls Today</div>
-              <div className="text-2xl font-bold text-primary font-inter">2.4M</div>
+              <div className="text-sm font-medium text-foreground font-inter">Webhooks</div>
+              <div className="text-xs text-muted-foreground font-inter">New bookings pushed to your PMS</div>
             </div>
           </div>
         </div>

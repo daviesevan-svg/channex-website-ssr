@@ -38,6 +38,7 @@ export const blogPosts: BlogPost[] = [
   {
     id: "airbnb-high-rated-guest-discount",
     title: "Airbnb High-Rated Guest Discount: Reward Your Best Guests Automatically",
+    seoTitle: "Airbnb High-Rated Guest Discount in Channex",
     slug: "airbnb-high-rated-guest-discount",
     excerpt: "Airbnb's Top-rated guests discount gives 15% off to guests with at least 3 reviews and a 4.8+ average rating — and Airbnb's own estimates put it at ~11% more gross booking value. Turn it on for any listing straight from Channex.",
     content: `
@@ -198,6 +199,7 @@ export const blogPosts: BlogPost[] = [
   {
     id: "airbnb-mobile-only-discount",
     title: "Airbnb Mobile-Only Discount: Capture App Bookings with 10% Off",
+    seoTitle: "Airbnb Mobile-Only Discount: 10% Off App Bookings",
     slug: "airbnb-mobile-only-discount",
     excerpt: "The Mobile-Only Discount gives 10% off to guests booking through the Airbnb app on Android and iOS. Enable it per listing from the Channex Promotions panel in a couple of clicks.",
     content: `
@@ -363,6 +365,7 @@ export const blogPosts: BlogPost[] = [
   {
     id: "airbnb-notifications-channex-dashboard",
     title: "Stay Ahead of Issues: Introducing Real-Time Airbnb Notifications in Channex",
+    seoTitle: "Real-Time Airbnb Notifications in Channex",
     slug: "airbnb-notifications-channex-dashboard",
     excerpt: "Never miss critical Airbnb alerts again. Channex now displays real-time Airbnb notifications directly in your dashboard, from quality warnings to account updates, with one-click access to resolve issues.",
     content: `
@@ -448,6 +451,7 @@ export const blogPosts: BlogPost[] = [
   {
     id: "maximize-revenue-basic-discounts",
     title: "Maximize Revenue with Basic Discounts: Early Bird & Last-Minute Strategies",
+    seoTitle: "Early Bird & Last-Minute Discounts in Channex",
     slug: "maximize-revenue-basic-discounts",
     excerpt: "Strategic discounts can significantly influence booking patterns and boost your bottom line. Learn how to implement Early Bird and Last-Minute discounts in Channex to attract planners and spontaneous travelers alike.",
     content: `
@@ -541,6 +545,7 @@ export const blogPosts: BlogPost[] = [
   {
     id: "monitoring-trip-issues-performance-dashboard",
     title: "Improving Hosting Quality by Monitoring Trip Issues in the Performance Dashboard",
+    seoTitle: "Monitoring Trip Issues in the Performance Dashboard",
     slug: "monitoring-trip-issues-performance-dashboard",
     excerpt: "On Airbnb, hosting quality is evaluated not only on overall review scores, but on recurring trip issues and patterns over time. Our Performance Dashboard now surfaces trip-issue insights to help you identify problems early.",
     content: `
@@ -622,6 +627,7 @@ export const blogPosts: BlogPost[] = [
   {
     id: "airbnb-new-listing-promotion",
     title: "Boost Your New Properties: Introducing the Airbnb New Listing Promotion Feature",
+    seoTitle: "Airbnb New Listing Promotion in Channex",
     slug: "airbnb-new-listing-promotion",
     excerpt: "Launching a new property can be a challenge. Channex now lets you manage Airbnb's New Listing Promotion directly from your dashboard, helping you get those crucial first 3 bookings 20% faster.",
     content: `
@@ -712,6 +718,7 @@ export const blogPosts: BlogPost[] = [
   {
     id: "airbnb-listing-quality-dashboard",
     title: "Introducing the New Airbnb Listing Quality Dashboard in Channex",
+    seoTitle: "Airbnb Listing Quality Dashboard in Channex",
     slug: "airbnb-listing-quality-dashboard",
     excerpt: "Airbnb has become more demanding about quality metrics. Channex's new dashboard shows your entire performance picture, week-by-week, with metrics that actually matter for ranking and guest conversion.",
     content: `
@@ -873,6 +880,7 @@ export const blogPosts: BlogPost[] = [
   {
     id: "sandwich-nights-unbookable-dates",
     title: "Introducing \"Sandwich Nights\": Why Some Dates Become Unbookable Without You Realising",
+    seoTitle: "Sandwich Nights: Why Some Dates Become Unbookable",
     slug: "sandwich-nights-unbookable-dates",
     excerpt: "Learn why some dates become impossible to book even though you have availability, and how Channex now highlights these \"Sandwich Nights\" automatically.",
     content: `
@@ -1027,6 +1035,7 @@ export const blogPosts: BlogPost[] = [
   {
     id: "staah-su-vs-channex-alternative",
     title: "STAAH SU vs Channex: Channel Manager Comparison for PMS Providers (2026)",
+    seoTitle: "STAAH SU vs Channex: Comparison for PMS Providers",
     slug: "staah-su-vs-channex-alternative",
     excerpt: "Detailed comparison of STAAH SU and Channex channel managers. Compare pricing, API integration, OTA connections, and features to find the best fit for your PMS.",
     content: `
@@ -1333,6 +1342,7 @@ export const blogPosts: BlogPost[] = [
   {
     id: "non-refundable-airbnb-channex",
     title: "How to Offer a Non-Refundable Discount on Airbnb with Channex",
+    seoTitle: "Non-Refundable Discount on Airbnb with Channex",
     slug: "non-refundable-discount-airbnb-channex",
     excerpt: "Boost bookings, cut cancellations, and secure revenue by adding a non-refundable rate on Airbnb via Channex—set it up in minutes.",
     content: `
@@ -1478,6 +1488,7 @@ export const blogPosts: BlogPost[] = [
   {
     id: "airbnb-new-listing-promotion-automation",
     title: "Get Booked Faster: Automating Your Airbnb New Property Launch with Channex",
+    seoTitle: "Automating Your Airbnb New Property Launch",
     slug: "airbnb-new-listing-promotion-automation",
     excerpt: "Struggling to get your new Airbnb listings off the ground? Discover how Channex's built-in Airbnb New Listing Promotion management gets you booked 20% faster, directly from your channel manager dashboard.",
     content: `
@@ -1577,6 +1588,7 @@ export const blogPosts: BlogPost[] = [
   {
     id: "airbnb-last-minute-discounts-q3",
     title: "Maximize Q3 Occupancy: Managing Airbnb Last-Minute Discounts Directly via Channex",
+    seoTitle: "Managing Airbnb Last-Minute Discounts via Channex",
     slug: "airbnb-last-minute-discounts-q3",
     excerpt: "Don't let empty nights spoil your peak Q3 season. Learn how to configure and automate Airbnb Last-Minute Discounts directly inside Channex to capture late-booking travelers and maximize your revenue.",
     content: `

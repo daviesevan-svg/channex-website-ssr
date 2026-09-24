@@ -57,7 +57,7 @@ export const meta: Route.MetaFunction = ({ loaderData, location }) =>
   pageMeta(
     {
       title: `${loaderData.integration.name} Integration | Channex`,
-      description: loaderData.integration.longDescription || loaderData.integration.description,
+      description: loaderData.integration.description || loaderData.integration.longDescription,
       structuredData: [
         {
           "@context": "https://schema.org",
@@ -130,7 +130,9 @@ const IntegrationDetail = ({ loaderData }: Route.ComponentProps) => {
       <section className="py-12 bg-gradient-subtle">
         <div className="container mx-auto px-4 lg:px-6">
           <div className="max-w-4xl mx-auto">
-            <div className="flex items-start gap-6">
+            {/* Stacks below `sm`: side by side, the logo left the heading
+                and summary about 200px on a phone and they ran off-screen. */}
+            <div className="flex flex-col sm:flex-row sm:items-start gap-6">
               <IntegrationLogo
                 name={integration.name}
                 logo={integration.icon || null}
@@ -138,7 +140,7 @@ const IntegrationDetail = ({ loaderData }: Route.ComponentProps) => {
                 textClassName="text-2xl"
               />
               
-              <div className="flex-1">
+              <div className="flex-1 min-w-0">
                 <h1 className="text-4xl lg:text-5xl font-bold text-foreground font-inter mb-4">
                   {integration.name}
                 </h1>

@@ -1,4 +1,4 @@
-import { AI_BUILD_TITLE, AI_BUILD_DESCRIPTION, AI_SKILL_URL } from "@/data/integration-copy";
+import { AI_BUILD_TITLE, AI_SKILL_URL } from "@/data/integration-copy";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { OTA_CHANNEL_COUNT } from "@/data/counts";
@@ -26,7 +26,7 @@ const Features = () => {
     {
       icon: Zap,
       title: AI_BUILD_TITLE,
-      description: AI_BUILD_DESCRIPTION,
+      description: "Build with the Channex integration skill for Claude Code, our API docs and the staging sandbox. Going live still needs testing, Channex certification and OTA account authorization.",
       highlight: "AI-assisted",
       gradient: "from-purple-500 to-pink-500"
     },
@@ -61,8 +61,8 @@ const Features = () => {
     {
       icon: Shield,
       title: "Enterprise Security",
-      description: "GDPR and PCI DSS compliant. Activity logs and audit trails. Industry-standard security practices.",
-      highlight: "GDPR + PCI DSS",
+      description: "GDPR compliant, with activity logs and audit trails. Card handling designed in line with PCI DSS and processed by PCI DSS-certified providers.",
+      highlight: "GDPR",
       gradient: "from-slate-500 to-gray-600"
     },
     {

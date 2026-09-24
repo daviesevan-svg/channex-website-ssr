@@ -1,6 +1,9 @@
 export interface BlogPost {
   id: string;
   title: string;
+  /** Shorter title for <title> and social cards when `title` is over ~60
+   *  characters, which search results would otherwise cut off. */
+  seoTitle?: string;
   slug: string;
   excerpt: string;
   content: string;

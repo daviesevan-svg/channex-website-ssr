@@ -57,7 +57,11 @@ const Header = () => {
 
         {/* Mobile Menu Button */}
         <button
+          type="button"
           className="md:hidden"
+          aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
+          aria-expanded={isMobileMenuOpen}
+          aria-controls="mobile-menu"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         >
           {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -66,7 +70,7 @@ const Header = () => {
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="md:hidden bg-background border-b border-border">
+        <div id="mobile-menu" className="md:hidden bg-background border-b border-border">
           <div className="container mx-auto px-4 py-4 space-y-4">
             <Link prefetch="intent" to="/about" className="block text-muted-foreground hover:text-foreground transition-colors font-inter">
               About
