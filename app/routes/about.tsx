@@ -153,18 +153,21 @@ const About = () => {
       {/* Enhanced Stats Section */}
       <section className="py-24 bg-background">
         <div className="container mx-auto px-4 lg:px-6">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
             {stats.map((stat, index) => (
               <Card 
                 key={stat.label} 
                 className="border border-border/50 bg-card/50 backdrop-blur-sm hover:border-primary/30 transition-all duration-300 hover:shadow-lg hover:shadow-primary/10 group"
               >
-                <CardContent className="p-8 space-y-4">
+                {/* Tighter padding and type below `sm`: in two columns at
+                    375px a card has ~95px for content and "100,000+" at 36px
+                    needs ~160px, which widened the whole page. */}
+                <CardContent className="p-5 sm:p-8 space-y-4">
                   <div className="p-4 bg-gradient-to-br from-primary/20 to-primary/10 rounded-xl w-fit group-hover:scale-110 transition-transform duration-300">
                     <stat.icon size={28} className="text-primary" />
                   </div>
                   <div>
-                    <div className="text-4xl font-bold text-foreground">{stat.number}</div>
+                    <div className="text-2xl sm:text-4xl font-bold text-foreground">{stat.number}</div>
                     <div className="text-sm text-muted-foreground font-medium mt-1">{stat.label}</div>
                     <p className="text-xs text-muted-foreground/70 mt-2">{stat.description}</p>
                   </div>

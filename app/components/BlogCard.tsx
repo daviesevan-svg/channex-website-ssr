@@ -3,6 +3,7 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Link } from "react-router";
 import { Clock, User } from "lucide-react";
+import { formatPublishDate } from "@/lib/utils";
 
 interface BlogCardProps {
   post: BlogListItem;
@@ -57,7 +58,7 @@ const BlogCard = ({ post }: BlogCardProps) => {
                 <Clock className="w-3 h-3" />
                 <span>{post.readTime} min read</span>
               </div>
-              <span>{new Date(post.publishDate).toLocaleDateString()}</span>
+              <time dateTime={post.publishDate}>{formatPublishDate(post.publishDate)}</time>
             </div>
           </div>
         </CardContent>

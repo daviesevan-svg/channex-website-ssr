@@ -128,7 +128,7 @@ const ComparisonSiteMinder = () => {
     },
     {
       category: "Compliance",
-      channex: "GDPR, PCI DSS compliant with activity logs and audit trails",
+      channex: "GDPR compliant with activity logs and audit trails; card handling designed in line with PCI DSS, processed by PCI DSS-certified providers",
       siteminder: "GDPR, PCI DSS, PSD2 SCA compliant",
       channexWins: false,
       bothHaveFeature: true
@@ -476,7 +476,7 @@ const ComparisonSiteMinder = () => {
                     <Check className="text-green-500 mt-1 flex-shrink-0" size={20} />
                     <div>
                       <p className="font-semibold text-foreground">Compliance</p>
-                      <p className="text-sm text-muted-foreground">GDPR & PCI DSS compliant with activity logs and audit trails</p>
+                      <p className="text-sm text-muted-foreground">GDPR compliant with activity logs and audit trails; card handling designed in line with PCI DSS</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">

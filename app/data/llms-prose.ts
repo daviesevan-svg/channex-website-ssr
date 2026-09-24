@@ -52,7 +52,7 @@ never competes with its partners.
 - Transparent per-property pricing
 - ${AI_BUILD_DESCRIPTION}
 - Test sandbox environment
-- GDPR and PCI DSS compliant
+- GDPR compliant. Card handling is designed in line with PCI DSS and processed by PCI DSS-certified providers; Channex itself is not certified to PCI DSS or ISO 27001
 
 ## Supported Property Types
 - Hotels and serviced apartments

@@ -1,4 +1,5 @@
 import { Link } from "react-router";
+import { OTA_CHANNEL_COUNT } from "@/data/counts";
 
 const Partners = () => {
   const partners = [
@@ -14,7 +15,7 @@ const Partners = () => {
         <div className="text-center space-y-8">
           <div className="space-y-4">
             <h2 className="text-sm font-semibold text-muted-foreground uppercase tracking-wider font-inter">
-              TRUSTED BY LEADING PLATFORMS
+              Booking channels
             </h2>
             <p className="text-lg text-muted-foreground font-inter">
               Connect seamlessly with the world's largest OTAs
@@ -38,7 +39,7 @@ const Partners = () => {
           <div className="pt-8">
             <p className="text-sm text-muted-foreground font-inter">
               <Link to="/integrations" className="hover:text-primary transition-colors duration-300 cursor-pointer">
-                + 50 more OTA connections available
+                + {OTA_CHANNEL_COUNT - partners.length} more OTA connections available
               </Link>
             </p>
           </div>

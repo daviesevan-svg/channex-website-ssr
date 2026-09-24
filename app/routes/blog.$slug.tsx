@@ -9,6 +9,7 @@ import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import { ArrowLeft, Calendar, Clock, User, Share2, Twitter, Facebook, Linkedin } from "lucide-react";
 import type { Route } from "./+types/blog.$slug";
+import { formatPublishDate } from "@/lib/utils";
 
 // Returns this one post plus card-sized related posts, so the client gets one
 // article body instead of the whole dataset.
@@ -20,10 +21,15 @@ export async function loader({ params }: Route.LoaderArgs) {
   return data;
 }
 
+// Search results show about 60 characters of a title; drop the suffix rather
+// than let it push the post's own words out of view.
+const blogTitle = (title: string) =>
+  title.length + " | Channex Blog".length <= 60 ? `${title} | Channex Blog` : title;
+
 export const meta: Route.MetaFunction = ({ loaderData, location }) =>
   pageMeta(
     {
-      title: `${loaderData.post.title} | Channex Blog`,
+      title: blogTitle(loaderData.post.seoTitle ?? loaderData.post.title),
       description: loaderData.post.metaDescription || loaderData.post.excerpt,
       type: "article",
       // JPEG sibling, not the WebP the page renders — see ogImageFor().
@@ -126,7 +132,7 @@ const BlogPost = ({ loaderData }: Route.ComponentProps) => {
                   <div className="flex items-center gap-4">
                     <div className="flex items-center gap-1">
                       <Calendar className="w-4 h-4" />
-                      <span>{new Date(post.publishDate).toLocaleDateString()}</span>
+                      <time dateTime={post.publishDate}>{formatPublishDate(post.publishDate)}</time>
                     </div>
                     <div className="flex items-center gap-1">
                       <Clock className="w-4 h-4" />
@@ -136,8 +142,9 @@ const BlogPost = ({ loaderData }: Route.ComponentProps) => {
                 </div>
               </div>
 
-              {/* Article Body */}
-              <div className="prose prose-lg max-w-none prose-headings:text-foreground prose-p:text-muted-foreground prose-strong:text-foreground prose-code:bg-muted prose-code:px-1 prose-code:py-0.5 prose-code:rounded prose-pre:bg-muted prose-pre:border prose-blockquote:border-l-primary prose-blockquote:border-l-4 prose-blockquote:pl-4 prose-blockquote:bg-primary/5 prose-table:w-full prose-table:border-collapse prose-th:border prose-th:border-gray-300 prose-th:p-3 prose-th:bg-gray-50 prose-th:text-left prose-th:font-semibold prose-td:border prose-td:border-gray-300 prose-td:p-3">
+              {/* Article Body. Below `sm` a wide table scrolls inside its own
+                  box rather than widening the whole page. */}
+              <div className="max-sm:[&_table]:block max-sm:[&_table]:overflow-x-auto prose prose-lg max-w-none prose-headings:text-foreground prose-p:text-muted-foreground prose-strong:text-foreground prose-code:bg-muted prose-code:px-1 prose-code:py-0.5 prose-code:rounded prose-pre:bg-muted prose-pre:border prose-blockquote:border-l-primary prose-blockquote:border-l-4 prose-blockquote:pl-4 prose-blockquote:bg-primary/5 prose-table:w-full prose-table:border-collapse prose-th:border prose-th:border-gray-300 prose-th:p-3 prose-th:bg-gray-50 prose-th:text-left prose-th:font-semibold prose-td:border prose-td:border-gray-300 prose-td:p-3">
                 <div dangerouslySetInnerHTML={{ __html: post.content }} />
               </div>
 

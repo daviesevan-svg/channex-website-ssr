@@ -34,7 +34,7 @@ export const meta: Route.MetaFunction = ({ location }) =>
               name: "Which OTAs does Channex connect to?",
               acceptedAnswer: {
                 "@type": "Answer",
-                text: "Certified connections include Booking.com, Airbnb, Expedia, Agoda and 40+ regional OTAs with real-time synchronization.",
+                text: `Certified connections include Booking.com, Airbnb, Expedia, Agoda and ${OTA_CHANNEL_COUNT - 4} more OTAs and regional channels, with real-time synchronization.`,
               },
             },
           ],

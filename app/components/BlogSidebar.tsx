@@ -4,6 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router";
 import { Calendar, User } from "lucide-react";
+import { formatPublishDate } from "@/lib/utils";
 
 interface BlogSidebarProps {
   categories: BlogCategory[];
@@ -65,7 +66,7 @@ const BlogSidebar = ({ categories, recentPosts, onCategoryFilter, selectedCatego
                   </h4>
                   <div className="flex items-center gap-2 mt-1 text-xs text-muted-foreground">
                     <Calendar className="w-3 h-3" />
-                    <span>{new Date(post.publishDate).toLocaleDateString()}</span>
+                    <time dateTime={post.publishDate}>{formatPublishDate(post.publishDate)}</time>
                   </div>
                 </div>
               </div>

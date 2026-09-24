@@ -19,7 +19,7 @@ const Footer = () => {
               <span className="text-xl font-bold font-inter">Channex</span>
             </div>
             <p className="text-slate-400 font-inter leading-relaxed">
-              The leading white-label channel manager API for Property Management Systems worldwide.
+              White-label channel manager API for PMS vendors and in-house hotel systems.
             </p>
             <div className="flex space-x-4">
               <a 
