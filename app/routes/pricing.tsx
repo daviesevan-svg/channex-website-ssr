@@ -494,7 +494,7 @@ const Pricing = () => {
             <h2 className="text-2xl font-bold text-foreground mb-4 font-inter">Are you an OTA?</h2>
             <p className="text-muted-foreground font-inter">
               Get in touch if you'd like to connect Channex as a channel — that's a different
-              conversation, and there's no fee for it.
+              conversation.
             </p>
           </div>
 
