@@ -1408,10 +1408,16 @@ export const integrations: Integration[] = [
     categories: ["PMS", "Latin America"]
   },
   {
+    // Evan supplied this as an auto-trace of their raster logo (VTracer). The
+    // traced paths are unmodified; only the full-canvas white background was
+    // dropped and a tight viewBox added, because the artwork filled about a
+    // quarter of an 840px square and would have rendered tiny in a 64px slot.
+    // The letter counters are near-white shapes drawn on top rather than
+    // holes, so they read as white on our light tiles.
     id: "69",
     name: "The Lobby Boy",
     description: "A user-friendly property management system tailored for boutique hotels and small accommodations. Offers tools for booking management, guest communication, and operations. Ideal for properties seeking simplicity and personalized service.",
-    icon: "",
+    icon: "/lovable-uploads/pms-the-lobby-boy.svg",
     categories: ["PMS"]
   },
   {
