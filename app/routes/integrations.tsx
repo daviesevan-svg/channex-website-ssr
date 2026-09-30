@@ -231,15 +231,15 @@ const Integrations = ({ loaderData }: Route.ComponentProps) => {
                 <div
                   className={
                     viewMode === "grid"
-                      ? "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+                      ? "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 auto-rows-fr gap-6"
                       : "space-y-4"
                   }
                 >
                   {shownChannels.map((channel) => (
                     <Card
                       key={channel.id}
-                      className={`group hover:shadow-primary transition-all duration-300 hover:scale-[1.02] ${
-                        viewMode === "list" ? "flex flex-row" : ""
+                      className={`group hover:shadow-primary transition-all duration-300 hover:scale-[1.02] flex ${
+                        viewMode === "list" ? "flex-row" : "flex-col"
                       }`}
                     >
                       <CardHeader className={viewMode === "list" ? "pb-3" : ""}>
@@ -276,11 +276,13 @@ const Integrations = ({ loaderData }: Route.ComponentProps) => {
                         </div>
                       </CardHeader>
 
-                      <CardContent className={viewMode === "list" ? "pt-0 flex-1" : ""}>
-                        <CardDescription className="text-sm text-muted-foreground leading-relaxed">
+                      <CardContent className={`flex flex-1 flex-col ${viewMode === "list" ? "pt-0" : ""}`}>
+                        {/* Clamped so every card is the same height; the full
+                            text is still in the HTML and on the channel page. */}
+                        <CardDescription className="text-sm text-muted-foreground leading-relaxed line-clamp-4">
                           {channel.description}
                         </CardDescription>
-                        <div className="mt-4">
+                        <div className="mt-auto pt-4">
                           <Button variant="ghost" size="sm" asChild>
                             <Link prefetch="intent" to={`/integrations/${channel.slug}`}>Learn More</Link>
                           </Button>
