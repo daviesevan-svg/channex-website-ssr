@@ -5321,6 +5321,80 @@ export const integrations: Integration[] = [
     website: "https://revngo.com"
   },
   {
+    // Tagged OTA, so this one has a detail page. Everything here is from
+    // hoteltrader.com (home, /hotels, /about-us, /our-difference); none of
+    // their traction figures are carried. Channex lists it as channel code HDR.
+    //
+    // Logo is the dark wordmark their own header serves as the "black-logo"
+    // (Group.svg), committed byte for byte. Their newer white-logo-ht.svg is
+    // near-white (#EEF3F8) and would vanish on our tiles.
+    id: "hoteltrader",
+    slug: "hoteltrader",
+    name: "Hotel Trader",
+    description: "B2B hotel distribution exchange connecting hotels directly with travel buyers through one connection and one agreement. Hotels choose which buyers sell their rooms, manage community and exclusive rates in one place, and see how each buyer performs, with payments processed and reconciled on the platform.",
+    longDescription: "Hotel Trader runs The Exchange, a marketplace that connects hotels with travel buyers directly, without a wholesaler sitting between them. It positions itself as neither a channel manager nor a wholesaler: rates and availability come from the hotel's own systems, and the hotel decides which travel buyers get access to its inventory. One agreement covers distribution, payments, rate setup and support. Hotels can offer community rates open to the network alongside exclusive rates for chosen partners, see booking and pricing behaviour for each buyer, and use the platform's rate-governance tools to catch leaks and undercutting. Hotel Trader says a hotel can be onboarded in under eight minutes, and it works with independents, hotel groups and global chains.",
+    icon: "/images/integrations/ota-hoteltrader.svg",
+    categories: ["B2B", "Global", "Distribution", "OTA"],
+    features: [
+      "Direct connections to travel buyers, with no wholesaler in between",
+      "One agreement for distribution, payments, rate setup and support",
+      "Community and exclusive rates managed in one place",
+      "Hotel chooses which travel buyers sell its rooms",
+      "Per-buyer visibility into bookings and price sensitivity",
+      "Rate governance and leak detection",
+      "Automated payment processing and reconciliation",
+      "Onboarding in under eight minutes, by Hotel Trader's account"
+    ],
+    useCases: [
+      "Hotels adding B2B demand without signing individual wholesaler contracts",
+      "Properties that want control over which resellers carry their rates",
+      "Hotel groups and chains protecting rate parity in B2B channels",
+      "Independent hotels reaching travel buyers worldwide"
+    ],
+    website: "https://www.hoteltrader.com/"
+  },
+  {
+    // Everything here is from tboholidays.com and tbo.com, the parent brand's
+    // site; both carry the same "159,000 buyers / 1 million+ hotels / 100+
+    // countries" line, which is attributed to them rather than stated as fact.
+    // Channex lists it as channel code TBO (TBO India is a separate code, TIN).
+    //
+    // Named "TBO Holidays" to match the site linked and the Channex channel
+    // list, so the logo is the tboholidays.com wordmark rather than the tbo.com
+    // one. They only publish it as a 247x48 PNG; converted losslessly to WebP.
+    id: "tboholidays",
+    slug: "tboholidays",
+    name: "TBO Holidays",
+    description: "B2B travel distribution platform from TBO, selling hotel inventory to travel agencies, independent travel advisors, tour operators, travel management companies and online travel companies. By its own count it connects over 159,000 travel buyers across more than 100 countries, and it settles transactions in local currencies for both buyers and suppliers.",
+    icon: "/images/integrations/ota-tboholidays.webp",
+    categories: ["B2B", "Global", "Distribution", "OTA"],
+    features: [
+      "Hotel inventory sold to retail and API travel buyers",
+      "Real-time inventory and booking management for suppliers",
+      "Transactions in local currencies for buyers and suppliers",
+      "Promotions marketed to travel agents through the TBO+ programme",
+      "Agent portal in 16 languages"
+    ],
+    website: "https://www.tboholidays.com/"
+  },
+  {
+    // From hotelspecials.nl (home + /about/over-hotelspecials). Operated by
+    // Hotel Booker B.V., which the footer says is part of BookerZzz, trading
+    // since 2002. The 6,500-offers figure is theirs and attributed as such;
+    // their customer-count claim is left out. Channex channel code HOS.
+    //
+    // Logo is the "default" symbol from their header sprite (logo.svg#default),
+    // lifted out into a standalone SVG with the paths untouched. The sprite's
+    // other symbol, #dark, is the white-text version for dark backgrounds.
+    id: "hotelspecials",
+    slug: "hotelspecials",
+    name: "HotelSpecials",
+    description: "Dutch hotel-deals site selling stays packaged with extras such as dinner, wellness, late check-out and 3-for-2 nights, with more than 6,500 offers by its own count. Covers hotels in the Netherlands, Belgium, Germany and further across Europe, and runs sister sites in Belgium, Germany, Austria, Denmark and France. Operated by Hotel Booker B.V., part of BookerZzz.",
+    icon: "/images/integrations/ota-hotelspecials.svg",
+    categories: ["Regional", "Europe", "OTA"],
+    website: "https://www.hotelspecials.nl/"
+  },
+  {
     // Logo is the SVG Evan supplied, committed byte for byte. 32 KB because it
     // is raw Inkscape output — the rounded corners are clipPaths rather than
     // rx, so the cruft is load-bearing and cannot be stripped without redrawing
