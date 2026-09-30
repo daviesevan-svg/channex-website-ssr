@@ -5395,6 +5395,39 @@ export const integrations: Integration[] = [
     website: "https://www.hotelspecials.nl/"
   },
   {
+    // From glampinghub.com (home + /who-we-are). Listing counts are from the
+    // homepage's destination totals on 2026-09-30 and attributed as theirs.
+    // Channex channel code GHB.
+    //
+    // Logo is the inline SVG from their header (svg.brand-img). It paints with
+    // CSS variables from their stylesheet, so those were resolved to the values
+    // their page computes (#0eb56a, #242727, #00665f, #6bbe45, #00908c); the
+    // paths are untouched.
+    id: "glampinghub",
+    slug: "glampinghub",
+    name: "Glamping Hub",
+    description: "Booking platform for glamping and unique stays in nature — cabins, safari tents, domes, yurts, treehouses and tiny homes. Launched in 2013 with headquarters in Denver and Seville, it lists roughly 18,600 accommodations across six continents by its own homepage count, most of them in North America, and prices in USD, EUR, GBP, CAD, AUD and NZD.",
+    icon: "/images/integrations/ota-glampinghub.svg",
+    categories: ["Outdoor", "Vacation Rentals", "Global", "OTA"],
+    website: "https://glampinghub.com/"
+  },
+  {
+    // From heytripgo.com. Its supply figures are attributed as theirs.
+    // Channex channel code HTG ("Heytrip"); styled "HeyTrip" by the vendor.
+    //
+    // Logo is the monkey mark only, cropped from their header PNG (256x60,
+    // served as a data URI) to its ink bounds and padded square; pixels are
+    // untouched. The wordmark beside it is white and would vanish on our
+    // tiles, and they publish no dark version.
+    id: "heytrip",
+    slug: "heytrip",
+    name: "HeyTrip",
+    description: "Hong Kong-based B2B travel distribution platform, established in 2007, selling hotel, flight and car inventory to travel agencies, wholesalers and travel management companies through a booking portal and an API. By its own count it offers more than a million hotels, around 78,000 of them contracted directly, with supply across Greater China, Asia-Pacific, Europe, North America and the Middle East.",
+    icon: "/images/integrations/ota-heytrip.webp",
+    categories: ["B2B", "Asia", "Distribution", "OTA"],
+    website: "https://www.heytripgo.com/"
+  },
+  {
     // Logo is the SVG Evan supplied, committed byte for byte. 32 KB because it
     // is raw Inkscape output — the rounded corners are clipPaths rather than
     // rx, so the cruft is load-bearing and cannot be stripped without redrawing
@@ -6379,6 +6412,19 @@ export const integrations: Integration[] = [
     "website": "https://rently.pro/"
   },
   {
+    "id": "revchill",
+    "name": "RevChill",
+    "description": "UAE-based hotel technology and consultancy firm offering a booking engine, channel manager, PMS, website development, AI chatbot and loyalty programme, alongside digital marketing and revenue consulting aimed at growing direct bookings.",
+    "icon": "/lovable-uploads/pms-catalog-revchill.webp",
+    "categories": [
+      "PMS",
+      "IBE",
+      "Middle East"
+    ],
+    "slug": "revchill",
+    "website": "https://www.revchill.com/"
+  },
+  {
     "id": "revpilot",
     "name": "RevPilot",
     "description": "Hotel property management software for reservations and daily operations.",
@@ -6413,6 +6459,17 @@ export const integrations: Integration[] = [
     ],
     "slug": "roomconnect",
     "website": "https://roomconnect.io/"
+  },
+  {
+    "id": "roompanda",
+    "name": "Roompanda",
+    "description": "Guest-facing kit for PMS products connected to Channex: a live internet booking engine, guest website, vouchers and a Google Hotel Ads listing, each on the hotel's own brand. Built by the Channex team.",
+    "icon": "/lovable-uploads/pms-catalog-roompanda.svg",
+    "categories": [
+      "IBE"
+    ],
+    "slug": "roompanda",
+    "website": "https://roompanda.com/"
   },
   {
     "id": "roomspilot",
