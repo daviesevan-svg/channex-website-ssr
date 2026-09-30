@@ -57,7 +57,7 @@ const AcceptableUsePolicy = () => {
             <li>Misrepresenting who you are, or disguising the origin of Content — including spoofing, phishing, manipulating headers or identifiers, impersonating another person or business, or falsely implying a relationship with Channex</li>
             <li>Using the Services to violate someone's privacy — publishing other people's private or confidential information without permission, or harvesting personal information from the Services</li>
             <li>Using the Services to stalk, harass or threaten anyone</li>
-            <li>Reselling, sublicensing or providing access to the Services to a third party without a signed agreement permitting it (see Section 14 of the Customer Agreement)</li>
+            <li>Reselling, sublicensing or transferring your account or your access to the Services to a third party as a standalone service (see Section 14 of the Customer Agreement)</li>
           </ul>
         </div>
 
