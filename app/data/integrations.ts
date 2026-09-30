@@ -5321,6 +5321,39 @@ export const integrations: Integration[] = [
     website: "https://revngo.com"
   },
   {
+    // Tagged OTA, so this one has a detail page. Everything here is from
+    // hoteltrader.com (home, /hotels, /about-us, /our-difference); none of
+    // their traction figures are carried. Channex lists it as channel code HDR.
+    //
+    // Logo is the dark wordmark their own header serves as the "black-logo"
+    // (Group.svg), committed byte for byte. Their newer white-logo-ht.svg is
+    // near-white (#EEF3F8) and would vanish on our tiles.
+    id: "hoteltrader",
+    slug: "hoteltrader",
+    name: "Hotel Trader",
+    description: "B2B hotel distribution exchange connecting hotels directly with travel buyers through one connection and one agreement. Hotels choose which buyers sell their rooms, manage community and exclusive rates in one place, and see how each buyer performs, with payments processed and reconciled on the platform.",
+    longDescription: "Hotel Trader runs The Exchange, a marketplace that connects hotels with travel buyers directly, without a wholesaler sitting between them. It positions itself as neither a channel manager nor a wholesaler: rates and availability come from the hotel's own systems, and the hotel decides which travel buyers get access to its inventory. One agreement covers distribution, payments, rate setup and support. Hotels can offer community rates open to the network alongside exclusive rates for chosen partners, see booking and pricing behaviour for each buyer, and use the platform's rate-governance tools to catch leaks and undercutting. Hotel Trader says a hotel can be onboarded in under eight minutes, and it works with independents, hotel groups and global chains.",
+    icon: "/images/integrations/ota-hoteltrader.svg",
+    categories: ["B2B", "Global", "Distribution", "OTA"],
+    features: [
+      "Direct connections to travel buyers, with no wholesaler in between",
+      "One agreement for distribution, payments, rate setup and support",
+      "Community and exclusive rates managed in one place",
+      "Hotel chooses which travel buyers sell its rooms",
+      "Per-buyer visibility into bookings and price sensitivity",
+      "Rate governance and leak detection",
+      "Automated payment processing and reconciliation",
+      "Onboarding in under eight minutes, by Hotel Trader's account"
+    ],
+    useCases: [
+      "Hotels adding B2B demand without signing individual wholesaler contracts",
+      "Properties that want control over which resellers carry their rates",
+      "Hotel groups and chains protecting rate parity in B2B channels",
+      "Independent hotels reaching travel buyers worldwide"
+    ],
+    website: "https://www.hoteltrader.com/"
+  },
+  {
     // Logo is the SVG Evan supplied, committed byte for byte. 32 KB because it
     // is raw Inkscape output — the rounded corners are clipPaths rather than
     // rx, so the cruft is load-bearing and cannot be stripped without redrawing
