@@ -5,7 +5,7 @@ const CustomerAgreement = () => {
         Channex Customer Agreement
       </h2>
       <p className="text-sm text-muted-foreground font-inter italic">
-        Effective from: 17 August 2026
+        Effective from: 17 August 2026 · Last updated: 30 September 2026
       </p>
 
       <div className="space-y-6 text-muted-foreground font-inter leading-relaxed">
@@ -220,26 +220,24 @@ const CustomerAgreement = () => {
               Except as expressly permitted in this Agreement, in your Order, or in a separate agreement signed by us, you will not:
             </p>
             <ul className="list-disc pl-6 space-y-2 mt-3">
-              <li>rent, lease, sell, sublicense, transfer or provide access to the Services to a third party;</li>
-              <li>use the Services for the benefit of, or to provide a service to, a third party;</li>
-              <li>incorporate the Services into a product or service you supply to a third party;</li>
+              <li>rent, lease, sell, sublicense or transfer your account, or your access to the Services, to a third party as a standalone service;</li>
               <li>reverse engineer, decompile or disassemble any part of the Services, or attempt to derive their source code or non-public APIs, except to the extent the law permits despite this restriction;</li>
               <li>circumvent or interfere with any mechanism in the Services intended to limit your use, or with any security or authentication measure;</li>
               <li>remove or obscure any proprietary notice in the Services; or</li>
               <li>access the Services in order to build a competing product.</li>
             </ul>
             <p className="mt-3">
-              <strong>Partners and resellers.</strong> The first three restrictions above do not apply to the extent we have appointed you as a reseller, or granted you white label or embedding rights, under a signed agreement. If you have such an agreement, that agreement defines what you may do and prevails under Section 1.2.
+              <strong>Building the Services into your own products.</strong> Nothing in this Section prevents you from incorporating the Services into your own products and services, including through the API, and providing them to your own customers under your own brand. You remain responsible for your customers' use of the Services, and your terms with them must be consistent with the Acceptable Use Policy. If we have appointed you as a reseller under a signed agreement, that agreement defines what you may do and prevails under Section 1.2.
             </p>
           </div>
 
           <div>
-            <h3 className="text-xl font-semibold text-foreground mb-3">15. Branding and attribution</h3>
+            <h3 className="text-xl font-semibold text-foreground mb-3">15. Branding</h3>
             <p>
-              15.1 Unless we have agreed otherwise in writing, where you present the Services or their output to your own users you should include a reasonable attribution to Channex.
+              15.1 You are not required to display any Channex attribution, logo or link. You may present the Services and their output to your own users under your own brand.
             </p>
             <p className="mt-3">
-              15.2 <strong>White label.</strong> This attribution requirement does not apply where we have granted you white label rights under a signed agreement. Under such an agreement you may apply your own branding and styling to the platform, and no Channex attribution is required. Fees may apply where custom development work is needed to deliver your branding.
+              15.2 Fees may apply where custom development work is needed to deliver your branding in the Channex platform interface.
             </p>
           </div>
 
