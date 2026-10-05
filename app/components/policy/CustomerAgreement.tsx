@@ -153,7 +153,7 @@ const CustomerAgreement = () => {
               10.1 <strong>Currency and rates.</strong> Fees are charged in the currency stated in your Order, at the rates set out in it.
             </p>
             <p className="mt-3">
-              10.2 <strong>Invoicing.</strong> Unless your Order says otherwise, fees are invoiced monthly in arrears on the 1st of each month and are due within <strong>fourteen (14) days</strong> of the invoice date. Where you pay by card, you authorise us to charge that card for subscription fees, renewals and any additional usage.
+              10.2 <strong>Invoicing.</strong> Unless your Order says otherwise, we charge fees on the 1st of each month, for that month in advance, and invoices are due within <strong>fourteen (14) days</strong> of the invoice date. Where you pay by card, you authorise us to charge that card for subscription fees, renewals and any additional usage.
             </p>
             <p className="mt-3">
               10.3 <strong>Price changes.</strong> We may change our fees on <strong>ninety (90) days' advance written notice</strong>. A change takes effect at the end of that notice period and applies to existing and future properties alike. If you do not accept a price change, you may terminate under Section 13.4 before it takes effect.

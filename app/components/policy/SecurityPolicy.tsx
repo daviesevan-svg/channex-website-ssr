@@ -186,7 +186,7 @@ const SecurityPolicy = () => {
           <ul className="list-disc pl-6 space-y-1">
             <li>Availability, rate and restriction data is removed for past dates daily.</li>
             <li>Credit card information is held until 7 days after the booking departure date, then deleted.</li>
-            <li>Bookings are deleted once they reach 2 years after the departure date.</li>
+            <li>Bookings are deleted once they reach 6 months after the departure date.</li>
           </ul>
 
           <p className="mb-3 mt-5"><strong>After an account is cancelled or terminated:</strong></p>
