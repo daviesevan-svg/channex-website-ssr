@@ -5428,6 +5428,45 @@ export const integrations: Integration[] = [
     website: "https://www.heytripgo.com/"
   },
   {
+    // From kizan.com.sa (home page; the site has no separate About page). The
+    // Jeddah address and the TBO joint venture are from its footer, which
+    // links tbo.com. Its testimonials are generic and are not carried.
+    // Channex channel code KZT ("Kizan Tourism").
+    //
+    // Logo is their header PNG (192x60, served as a data URI in their JS
+    // bundle), committed byte for byte: dark wordmark on transparent, so it
+    // reads on our tiles, and they publish no larger version.
+    id: "kizan",
+    slug: "kizan",
+    name: "Kizan Tourism",
+    description: "Saudi Arabian tourism platform based in Jeddah, selling hotels, apartments and villas alongside tours and airport transfers across the Kingdom's destinations, to both travel trade and direct guests. Presents itself as a joint venture with TBO, and serves customers in Arabic and English.",
+    icon: "/images/integrations/ota-kizan.png",
+    categories: ["Regional", "Middle East", "B2B", "OTA"],
+    website: "https://www.kizan.com.sa/"
+  },
+  {
+    // From feratel.at (/our-company, /our-solutions/destination-management-
+    // system). feratel.com, the site linked, is their consumer webcam and
+    // booking portal; the channel itself is Deskline, so that is what the
+    // description covers. Their customer-count claim is left out; the
+    // partner-portal and PMS-interface figures are attributed as theirs.
+    // Channex channel code FER ("Feratel Deskline"), hence the aliases.
+    // Styled "feratel" in lower case by the vendor throughout.
+    //
+    // Logo is the inline header SVG from feratel.com. Paths and fills are
+    // untouched; only the Astro class/data attributes were dropped and xmlns
+    // added. The tagline paths carry no fill and render black, as on their
+    // site.
+    id: "feratel",
+    slug: "feratel",
+    name: "feratel",
+    aliases: ["Feratel Deskline", "Deskline"],
+    description: "Destination management system from feratel media technologies AG of Innsbruck, Austria, used by tourism organisations to run the accommodation, experiences and packages of a whole region. Its Deskline database powers the one-stop booking shops on destination websites and the reservation centres behind them, and by feratel's own count it passes that inventory on to more than 30 partner booking portals. Also behind the feratel.com webcam portal, with offices in eight European countries.",
+    icon: "/images/integrations/ota-feratel.svg",
+    categories: ["Regional", "Europe", "Distribution", "OTA"],
+    website: "https://www.feratel.com/en"
+  },
+  {
     // Logo is the SVG Evan supplied, committed byte for byte. 32 KB because it
     // is raw Inkscape output — the rounded corners are clipPaths rather than
     // rx, so the cruft is load-bearing and cannot be stripped without redrawing

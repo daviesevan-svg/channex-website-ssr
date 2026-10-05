@@ -10,7 +10,7 @@
 // reminder to bump them here.
 
 /** Integrations tagged "OTA" — the booking channels with their own page. */
-export const OTA_CHANNEL_COUNT = 73;
+export const OTA_CHANNEL_COUNT = 75;
 
 /** PMS/booking-engine/tech partners listed in the directory (non-OTA). */
 export const PARTNER_COUNT = 467;

@@ -68,6 +68,7 @@ function reportChannelGaps(): void {
 export interface ChannelRow {
   id: string;
   name: string;
+  aliases?: string[];
   slug: string;
   categories: string[];
   description: string;
@@ -104,6 +105,7 @@ export function integrationsIndex(): IntegrationsIndex {
     .map((i) => ({
       id: i.id,
       name: i.name,
+      ...(i.aliases?.length ? { aliases: i.aliases } : {}),
       slug: integrationSlug(i),
       categories: i.categories,
       description: i.description,
