@@ -5945,6 +5945,18 @@ export const integrations: Integration[] = [
     "website": "https://hostalio.pl/"
   },
   {
+    "id": "hosteo",
+    "name": "Hosteo",
+    "description": "Moroccan property management system and channel manager for riads, guesthouses, apartments, villas, aparthotels and hotels, combining reservations, online check-in with police registration forms, housekeeping, maintenance, a WhatsApp Business inbox, a direct booking website and finances in dirhams with tourist tax.",
+    "icon": "/lovable-uploads/pms-catalog-hosteo.svg",
+    "categories": [
+      "PMS",
+      "Africa"
+    ],
+    "slug": "hosteo",
+    "website": "https://hosteo.ma/"
+  },
+  {
     "id": "hostflowlab",
     "name": "Hostflowlab",
     "description": "Property management software for coordinating accommodation bookings and daily workflows.",
