@@ -6523,6 +6523,18 @@ export const integrations: Integration[] = [
     "website": "https://roompanda.com/"
   },
   {
+    "id": "roomrise",
+    "name": "Roomrise",
+    "description": "Property management system for homestays, serviced apartments and small to mid-sized hotels in Vietnam. Brings OTA, direct and walk-in bookings onto one night-by-night calendar with a built-in channel manager (Traveloka included), alongside a direct booking page, housekeeping, guest registration with document scanning, OTA payout reconciliation and multi-property access. AI suggests rates with a reason for the owner to approve and drafts translated guest replies.",
+    "icon": "/lovable-uploads/pms-catalog-roomrise.png",
+    "categories": [
+      "PMS",
+      "Asia"
+    ],
+    "slug": "roomrise",
+    "website": "https://roomrise.io/"
+  },
+  {
     "id": "roomspilot",
     "name": "RoomsPilot",
     "description": "Property management platform with tools for managing multiple accommodation properties.",
