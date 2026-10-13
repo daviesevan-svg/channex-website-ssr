@@ -5696,6 +5696,19 @@ export const integrations: Integration[] = [
     "website": "https://www.bindroom.com/"
   },
   {
+    "id": "bookmatrix",
+    "name": "Bookmatrix.com",
+    "aliases": ["Bookmatrix"],
+    "description": "Greek all-in-one software for hotels and rental rooms: a booking calendar with a channel manager connected to over 100 channels through Channex, a commission-free booking engine and website builder, myDATA receipts and invoices sent to AADE through Viva Fiscal, card payments via Stripe or Viva, a unified inbox with AI replies to OTA messages and reviews, a housekeeping app, per-booking PIN codes for TTLock smart locks and AADE short-term rental registry filings. Set up by their team, usually within 48 hours, with phone support in Greek.",
+    "icon": "/lovable-uploads/pms-catalog-bookmatrix.svg",
+    "categories": [
+      "PMS",
+      "Europe"
+    ],
+    "slug": "bookmatrix",
+    "website": "https://bookmatrix.com/"
+  },
+  {
     "id": "casotel",
     "name": "Casotel",
     "description": "Hotel PMS for reservations, operational management and electronic invoicing in Latin America.",
