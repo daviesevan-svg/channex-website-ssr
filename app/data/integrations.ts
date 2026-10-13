@@ -5780,6 +5780,18 @@ export const integrations: Integration[] = [
     "website": "https://www.cobijo.app/"
   },
   {
+    "id": "cuvanti",
+    "name": "Cuvanti",
+    "description": "Property management software for letting agents, landlords and property developers that runs long-term lets, mid-term stays, short stays and sales on one property record over a double-entry ledger. Covers trust accounting with bank reconciliation, owner statements, arrears chasing, maintenance triage, listing syndication to rental portals and booking channels such as Airbnb and Booking.com, and separate portals for owners, tenants, tradespeople and buyers. Sold in eight countries, with the United States and Germany as its core markets, priced per organisation with no property minimum.",
+    "icon": "/lovable-uploads/pms-catalog-cuvanti.webp",
+    "categories": [
+      "PMS",
+      "Vacation Rentals"
+    ],
+    "slug": "cuvanti",
+    "website": "https://cuvanti.com/"
+  },
+  {
     "id": "deplino",
     "name": "Deplino",
     "description": "Hospitality management software for coordinating accommodation reservations and operations.",
@@ -6521,6 +6533,18 @@ export const integrations: Integration[] = [
     ],
     "slug": "roompanda",
     "website": "https://roompanda.com/"
+  },
+  {
+    "id": "roomrise",
+    "name": "Roomrise",
+    "description": "Property management system for homestays, serviced apartments and small to mid-sized hotels in Vietnam. Brings OTA, direct and walk-in bookings onto one night-by-night calendar with a built-in channel manager (Traveloka included), alongside a direct booking page, housekeeping, guest registration with document scanning, OTA payout reconciliation and multi-property access. AI suggests rates with a reason for the owner to approve and drafts translated guest replies.",
+    "icon": "/lovable-uploads/pms-catalog-roomrise.png",
+    "categories": [
+      "PMS",
+      "Asia"
+    ],
+    "slug": "roomrise",
+    "website": "https://roomrise.io/"
   },
   {
     "id": "roomspilot",
