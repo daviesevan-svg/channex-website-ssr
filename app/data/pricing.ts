@@ -5,10 +5,6 @@ import { AI_BUILD_DESCRIPTION } from "@/data/integration-copy";
 import { OTA_CHANNEL_COUNT, PARTNER_COUNT } from "@/data/counts";
 
 export const PLATFORM_FEE = 130;
-
-/** Flat fee charged when a customer wants us off our standard contract — their
- *  own paper, negotiated terms, or a security questionnaire to complete. */
-export const CUSTOM_TERMS_REVIEW_FEE = 1500;
 export const HOTEL_BASE_RATE = 7;
 export const VR_BASE_RATE = 0.5;
 
@@ -147,7 +143,7 @@ export const faqs = [
   },
   {
     question: "Are there minimums, commissions or hidden fees?",
-    answer: `No minimums and no commission — there's no minimum number of properties, no certification fee, no commission on bookings and no setup cost. Nor is anything hidden: every charge we can raise is published on this page. Most accounts pay the platform fee plus the per-property fee and nothing else, but four things can be added on top. Three are usage-based: $${DUPLICATE_CHANNEL_FEE} a month for each duplicate connection where one property connects to the same OTA twice or more, $${STRIPE_TOKENISATION_FEE.toFixed(2)} per transaction if you use Stripe tokenisation, and overage on properties larger than the included limits of 20 room types and 200 rate plans per hotel. The fourth is optional and entirely in your hands: a $${CUSTOM_TERMS_REVIEW_FEE.toLocaleString("en-US")} review fee if you ask us to leave our standard contract for custom terms or a security review.`
+    answer: `No minimums and no commission — there's no minimum number of properties, no certification fee, no commission on bookings and no setup cost. Nor is anything hidden: every charge we can raise is published on this page. Most accounts pay the platform fee plus the per-property fee and nothing else, but three usage-based charges can be added on top: $${DUPLICATE_CHANNEL_FEE} a month for each duplicate connection where one property connects to the same OTA twice or more, $${STRIPE_TOKENISATION_FEE.toFixed(2)} per transaction if you use Stripe tokenisation, and overage on properties larger than the included limits of 20 room types and 200 rate plans per hotel.`
   },
   {
     question: "How and when am I billed?",
@@ -170,8 +166,8 @@ export const faqs = [
     answer: "There's no fixed term or minimum contract — Channex is billed monthly and you can cancel any time, with 30 days' notice. Scaling the number of connected properties up or down needs no notice at all."
   },
   {
-    question: "Can we contract on our own terms?",
-    answer: `We contract on our standard terms. If you need us to work from your paper instead, negotiate custom terms, or complete a security review or vendor questionnaire, there's a $${CUSTOM_TERMS_REVIEW_FEE.toLocaleString("en-US")} review fee. Our standard agreement is published in full — read it before you sign up, and most partners find they don't need changes.`
+    question: "What agreement do we sign?",
+    answer: "You sign up on our standard Customer Agreement, published in full on our Terms & Policies page at channex.io/policy. Read it before you sign up: it covers fees and billing, notice and termination, data protection and support."
   },
   {
     question: "Is there a setup or onboarding fee?",
