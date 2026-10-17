@@ -5467,6 +5467,46 @@ export const integrations: Integration[] = [
     website: "https://www.feratel.com/en"
   },
   {
+    // From crewdogs.com (home page, /blog/about, /help/howitworks). Founded
+    // in 2020 by US military veterans; the 15% average military discount,
+    // the 2% host fee and the ID.me verification are all from their own
+    // pages. The home page's running savings and charity totals are left
+    // out. Channex channel code DOG ("Crewdogs").
+    //
+    // Logo is their header SVG (cdn.crewdogsconnect.com/assets/
+    // Crewdogs_withDog1.svg), committed byte for byte: blue wordmark with
+    // the dog mark, which reads on our light tiles.
+    id: "crewdogs",
+    slug: "crewdogs",
+    name: "Crewdogs",
+    description: "Veteran-founded US booking platform for the military community, listing vacation rentals, rooms and longer stays for service members, veterans and military families. Every user is verified through ID.me, listings carry a military discount Crewdogs puts at 15% on average, and hosts pay a 2% fee per booking. Supports government travel with per diem pricing and itemised PCS/TDY receipts, and supports veteran causes.",
+    icon: "/images/integrations/ota-crewdogs.svg",
+    categories: ["Vacation Rentals", "North America", "OTA"],
+    website: "https://www.crewdogs.com/"
+  },
+  {
+    // From hosts.hopper.com, Hopper's sign-up page for vacation-rental hosts
+    // (a client-rendered SPA, read in the browser). The 120M+ installs, the
+    // $1M damage guarantee and the 4,000 property managers are attributed
+    // as theirs. Separate from the Hopper record above: that is the hotel
+    // channel (HOP), this is the homes channel, Channex code HPH
+    // ("HopperHomes"), which trades in USD only.
+    //
+    // Logo is the hopper wordmark from the Hopper Homes header. The path is
+    // copied from their JS bundle; the outer Sketch groups (whose transforms
+    // cancel out) were dropped, and the coral the page applies through CSS,
+    // rgb(250, 104, 102), is set as the fill. "HOMES" beside it on their
+    // header is plain text, not part of the logo.
+    id: "hopper-homes",
+    slug: "hopper-homes",
+    name: "Hopper Homes",
+    aliases: ["HopperHomes"],
+    description: "Vacation rental marketplace inside the Hopper travel app, which Hopper describes as the leading travel app for Millennial and Gen Z travellers in North America, with more than 120 million installs. Lists homes from property managers alongside Hopper's flights and hotels, with a $1M damage guarantee per booking. Rates are sent in US dollars.",
+    icon: "/images/integrations/ota-hopper-homes.svg",
+    categories: ["Vacation Rentals", "North America", "OTA"],
+    website: "https://hosts.hopper.com/"
+  },
+  {
     // Logo is the SVG Evan supplied, committed byte for byte. 32 KB because it
     // is raw Inkscape output — the rounded corners are clipPaths rather than
     // rx, so the cruft is load-bearing and cannot be stripped without redrawing
