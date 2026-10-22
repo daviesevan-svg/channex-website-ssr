@@ -6204,6 +6204,19 @@ export const integrations: Integration[] = [
     "website": "https://innsyst.com/features/property-management"
   },
   {
+    "id": "keylo",
+    "name": "Keylo",
+    "description": "Software for short-term rental hosts and small hotels, strongest in Spain, Portugal and Italy. A guest app shared as one link, translated into 16 languages, with self check-in by timed access codes and TTLock smart-lock PINs; online guest registration sent straight to SES Hospedajes, SIBA and Alloggiati Web, with ID documents read on the guest's phone; paid extras and automatic guest messages; and, on the Pro plan, a channel manager built on Channex for Booking.com and Airbnb, a direct booking engine with Stripe payments and a unified inbox with AI reply suggestions. Run by Rull Zapelloni, S.L. in Spain, with data hosted in the EU.",
+    "icon": "/lovable-uploads/pms-catalog-keylo.webp",
+    "categories": [
+      "PMS",
+      "Vacation Rentals",
+      "Europe"
+    ],
+    "slug": "keylo",
+    "website": "https://keyloapp.com/"
+  },
+  {
     "id": "kimisuite",
     "name": "KIMISUITE",
     "description": "Business software suite with hotel reservation, property management and channel management tools.",
