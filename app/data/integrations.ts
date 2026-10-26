@@ -6697,6 +6697,20 @@ export const integrations: Integration[] = [
     "website": "https://smartsuite.vn/vi/product/pms"
   },
   {
+    "id": "soraso",
+    "name": "SORASO",
+    "aliases": ["Soraso", "Smart Finder"],
+    "description": "Hotel software suite from Smart Finder Co., Ltd. in Thailand, in hotel technology since 1997, serving hotels and resorts in Thailand, Vietnam, Laos, Myanmar and Cambodia. Covers a multi-property PMS, POS for F&B, retail and entertainment, back office, an internet booking engine with packages and vouchers, a channel manager, banquet and event management, and guest tools such as web check-in with OCR, digital room keys and QR service requests. Integrates with marketplaces, ERP systems including SAP, passport scanners and IoT locks through an open API, deploys in the cloud or hybrid on-premise, and is offered white-label to hotel groups and technology partners.",
+    "icon": "/lovable-uploads/pms-catalog-soraso.webp",
+    "categories": [
+      "PMS",
+      "IBE",
+      "Asia"
+    ],
+    "slug": "soraso",
+    "website": "https://soraso.net/"
+  },
+  {
     "id": "stayax",
     "name": "Stayax",
     "description": "Hospitality platform combining property management, dynamic pricing, multi-channel distribution and payment collection.",
