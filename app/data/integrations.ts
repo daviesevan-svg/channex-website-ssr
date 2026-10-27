@@ -4762,13 +4762,14 @@ export const integrations: Integration[] = [
     website: "https://yallahost.io"
   },
   {
-    id: "dixome",
-    name: "DIXOME",
-    description: "Spanish technology company providing digital solutions and services for hospitality and accommodation businesses.",
-    icon: "",
-    categories: ["PMS", "Europe"],
-    slug: "dixome",
-    website: ""
+    id: "aloxame",
+    name: "Alóxame",
+    aliases: ["Aloxame", "DIXOME", "Díxome"],
+    description: "Spanish PMS from DIXOME for hotels, tourist apartments, holiday homes, rural houses and property managers. Brings reservations, a channel manager for Booking.com, Airbnb, Expedia, Vrbo and Google Vacation Rentals, a booking engine, online check-in with SES Hospedajes reporting, smart locks, housekeeping, dynamic pricing, Stripe and Redsys payments and invoicing into one platform.",
+    icon: "/lovable-uploads/pms-catalog-aloxame.webp",
+    categories: ["PMS", "Vacation Rentals", "Europe"],
+    slug: "aloxame",
+    website: "https://aloxame.com/"
   },
   {
     id: "innexo",
