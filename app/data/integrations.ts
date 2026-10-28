@@ -5508,6 +5508,26 @@ export const integrations: Integration[] = [
     website: "https://hosts.hopper.com/"
   },
   {
+    // From bookd.direct/llms.txt and partners.bookd.direct (home page FAQ
+    // and /llms.txt). The partner FAQ names the Channex channel code BDK
+    // ("Bookd (channel code BDK) can be switched on in Channex itself");
+    // BDK is not yet in the docs.channex.io channel-codes list, and BKD
+    // there is BookDirect, a different channel. Operated by Caius Data LLC,
+    // Sheridan, Wyoming. The partner-hotel results (Trip.com, Stay22) that
+    // Bookd shows when it has no property of its own are left out.
+    //
+    // Logo is the SVG Evan supplied, committed byte for byte: navy "book"
+    // with a green "d" and tick, which reads on our light tiles.
+    id: "bookd",
+    slug: "bookd",
+    name: "Bookd",
+    aliases: ["Bookd.direct", "BDK"],
+    description: "Direct-booking marketplace for independent hotels, B&Bs, inns, guesthouses and vacation rentals, bookable on bookd.direct and from inside AI assistants such as ChatGPT, Claude, Gemini and Grok through Bookd's MCP connector. Guests send a booking request that the property confirms, and they pay the property directly: Bookd never holds guest money, and the stay contract is between the guest and the property. No setup or monthly fees and no exclusivity; Bookd takes a 5% commission on the room price of bookings it generates.",
+    icon: "/images/integrations/ota-bookd.svg",
+    categories: ["Vacation Rentals", "Global", "OTA"],
+    website: "https://bookd.direct/"
+  },
+  {
     // Logo is the SVG Evan supplied, committed byte for byte. 32 KB because it
     // is raw Inkscape output — the rounded corners are clipPaths rather than
     // rx, so the cruft is load-bearing and cannot be stripped without redrawing
