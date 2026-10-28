@@ -6430,6 +6430,24 @@ export const integrations: Integration[] = [
     "website": "https://neosuite.io/"
   },
   {
+    // From nestorenterprise.com (home page, FAQ and footer). Developed by
+    // Manaphon Logistics Co., Ltd.; tagged Asia for its Thailand TM30
+    // workflows. Their site says Channex certification is "under active
+    // review"; listed on Evan's word. Logo is their own /assets/logo.svg,
+    // committed byte for byte.
+    "id": "nestor",
+    "name": "Nestor Enterprise PMS",
+    "aliases": ["Nestor", "Manaphon Logistics"],
+    "description": "PMS from Manaphon Logistics Co., Ltd. for independent and boutique hotels, small hotel groups, serviced apartments and residences that mix short and long stays. Covers reservations and front desk, rates and restrictions, housekeeping, maintenance, billing and folios, accounting and owner statements, revenue forecasting, workflow automation, guest profiles and multi-property controls, plus long-stay tools such as tenant ledgers, recurring charges, arrears and utility billing, and TM30 passport workflows for properties in Thailand. Offers a public API and signed webhooks.",
+    "icon": "/lovable-uploads/pms-catalog-nestor.svg",
+    "categories": [
+      "PMS",
+      "Asia"
+    ],
+    "slug": "nestor",
+    "website": "https://nestorenterprise.com/"
+  },
+  {
     "id": "newbyte",
     "name": "Newbyte",
     "description": "Software vendor offering hotel property management tools.",
