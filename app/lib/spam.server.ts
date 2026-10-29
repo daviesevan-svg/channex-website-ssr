@@ -93,6 +93,12 @@ const GREETING =
 const URL_RE = /\b(?:https?:\/\/|www\.)\S+/i;
 const CYRILLIC = /[Ѐ-ӿ]/;
 
+/** "Flood Test" typed into the form's fields — a load probe, first seen
+ *  2026-10-29 with "Flood Test" in the name, company and message. No hotel or
+ *  PMS enquiry says this, so it's sufficient on its own. Separators are
+ *  optional so "FloodTest", "flood_test" and "Flood-Test 7" match too. */
+const FLOOD_TEST = /flood[\s_-]*test/i;
+
 /** Trailing two capitals after a lowercase letter: "…DrathGM", "…gausaGW",
  *  "…dreftXO", "…NoxUC". This matched all 25 bot submissions and none of the
  *  78 genuine ones. Kept to exactly two capitals — the shape the run actually
@@ -163,6 +169,12 @@ export function classifySpam(input: SpamInput, ctx: SpamContext = {}): SpamVerdi
   // case-flip count is what separates gibberish from a real short message.
   if (message.length >= 14 && !/\s/.test(message) && caseFlips(message) >= 5) {
     add("opaque-message", 4, message.slice(0, 24));
+  }
+
+  // A content signal, not an infrastructure one, so the daily digest counts
+  // these as bots instead of listing them under "worth a look".
+  if ([firstName, lastName, company, message].some((v) => FLOOD_TEST.test(v))) {
+    add("flood-test", 4);
   }
 
   // A browser posting our own form sends its own origin, and the form's action
