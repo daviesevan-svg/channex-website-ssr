@@ -6058,6 +6058,25 @@ export const integrations: Integration[] = [
     "website": "https://www.happybooking.se/"
   },
   {
+    // From heytia.fr (home page and mentions légales). Published by Jérémy
+    // Teulet, entrepreneur individuel, Arcachon. Their integrations section
+    // credits the channel sync to "notre channel manager certifié Channex".
+    // Logo is their own /assets/owl.svg, committed byte for byte; the
+    // "HeyTia." wordmark on their site is HTML text, not an image.
+    "id": "heytia",
+    "name": "HeyTia",
+    "aliases": ["Hey Tia"],
+    "description": "All-in-one software for holiday-rental concierge companies, independent agencies and owners in France. Airbnb and Booking.com reservations in one calendar, with availability and rates sent to the platforms through its Channex-certified channel manager; online guest check-in with access codes released once the file is complete; Tia, an AI assistant that answers guests on WhatsApp, Airbnb and Booking.com and hands over to the team; cleaning and maintenance tasks created from each booking; owner statements in PDF on the 1st of the month; Stripe-held security deposits; and PriceLabs dynamic pricing. Designed and built on the Bassin d'Arcachon.",
+    "icon": "/lovable-uploads/pms-catalog-heytia.svg",
+    "categories": [
+      "PMS",
+      "Vacation Rentals",
+      "Europe"
+    ],
+    "slug": "heytia",
+    "website": "https://heytia.fr/"
+  },
+  {
     "id": "hostalio",
     "name": "Hostalio",
     "description": "Accommodation management software for reservations and property operations.",
