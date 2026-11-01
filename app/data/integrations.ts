@@ -6551,6 +6551,25 @@ export const integrations: Integration[] = [
     "website": "https://www.patelhms.com/property-management/"
   },
   {
+    // From propool.ai (home page, /llms.txt and /privacy). Operated by
+    // TEKNIKOZ SOFTWARE PRIVATE LIMITED. Their site doesn't mention Channex;
+    // listed on Evan's word. Logo is the house-and-magnifier mark cut from the
+    // full lockup Evan supplied (paths and colours unchanged): the 4.2:1
+    // wordmark would render ~15 px tall in the 64 px card slot.
+    "id": "propool",
+    "name": "Propool",
+    "aliases": ["ProPool", "Teknikoz"],
+    "description": "Rental management software for villa and short-term rental managers in Thailand, from Phuket to Bangkok and Chiang Mai. Airbnb, Booking.com, Agoda and direct bookings in one fleet calendar priced in Thai baht, with nightly rates and availability pushed to the connected channels; monthly owner statements totalled from the calendar, with management fees and adjustments per property, locked when issued; an owner portal showing each owner only their own properties, statements and documents; and Propy, an assistant that answers from your leads, tasks and listings and asks before changing anything. In English, Thai, Russian and Hindi, with an Android app. Operated by TEKNIKOZ SOFTWARE PRIVATE LIMITED.",
+    "icon": "/lovable-uploads/pms-catalog-propool.svg",
+    "categories": [
+      "PMS",
+      "Vacation Rentals",
+      "Asia"
+    ],
+    "slug": "propool",
+    "website": "https://propool.ai/"
+  },
+  {
     "id": "quarto-studio",
     "name": "Quarto Studio",
     "description": "Hospitality management platform for accommodation reservations and property workflows.",
