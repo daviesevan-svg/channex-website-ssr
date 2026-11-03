@@ -6479,6 +6479,26 @@ export const integrations: Integration[] = [
     "website": "https://newbyte.net.br/pt-br"
   },
   {
+    // From nodegroupe.com (home page and /llms.txt). Published by DARYMA
+    // PARTNERS (France), launched 2025; tagged Africa for Morocco, where it
+    // files the police guest register and has a darija interface. Their site
+    // doesn't mention Channex; listed on Evan's word. Logo is their own
+    // /logo/Wordmark_black.svg, committed byte for byte.
+    "id": "node",
+    "name": "Node",
+    "aliases": ["Node Groupe", "nodegroupe", "Daryma Partners"],
+    "description": "All-in-one PMS and channel manager for short-term rental managers in France, Belgium, Switzerland and Morocco: concierge companies, independent Airbnb hosts, guesthouses and riads, campsites, gîtes and estate agencies. Syncs rates and availability with Airbnb, Booking.com, Vrbo, Expedia and Google Vacation Rentals; a unified inbox with an AI that replies to guests on its own or for approval; cleaning schedules and a team app; owner statements, an owner portal and e-signed contracts; a guest guidebook with online check-in and paid extras; smart-lock codes; PriceLabs or Beyond pricing; Morocco's police guest register and France's carte G compliance; a free direct booking site; a marketplace that introduces managers to property owners in their area; and a public API, webhooks and an MCP server. Published by DARYMA PARTNERS.",
+    "icon": "/lovable-uploads/pms-catalog-node.svg",
+    "categories": [
+      "PMS",
+      "Vacation Rentals",
+      "Europe",
+      "Africa"
+    ],
+    "slug": "node",
+    "website": "https://nodegroupe.com/"
+  },
+  {
     "id": "nuru",
     "name": "Nuru",
     "description": "Hospitality software suite with hotel management and point-of-sale tools.",
