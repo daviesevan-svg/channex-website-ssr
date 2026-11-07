@@ -159,13 +159,15 @@ export function buildIntegrationsMarkdown(): string {
         .slice()
         .sort((a, b) => a.name.localeCompare(b.name))
         .map((i) => {
-          const site = i.website ? ` — ${i.website}` : "";
           // Only booking channels have their own page; link the rest by name
           // only so this file never points at a URL that just redirects.
           const label = hasDetailPage(i)
             ? `[${i.name}](${SITE_URL}/integrations/${encodeURIComponent(integrationSlug(i))})`
             : i.name;
-          return `- ${label} (${i.categories.join(", ")})${site}`;
+          // No vendor website URLs: this file is public, and a list of every
+          // partner with its site is exactly what a competitor would scrape.
+          // The /integrations page and its JS don't carry them either.
+          return `- ${label} (${i.categories.join(", ")})`;
         })
         .join("\n");
       return `## ${category} (${list.length})\n\n${rows}`;
