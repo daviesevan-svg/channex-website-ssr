@@ -6209,9 +6209,12 @@ export const integrations: Integration[] = [
     "website": "https://www.imperahost.es/"
   },
   {
+    // Refreshed 2026-11-07 from innexiaopm.com (home, /services, /about). The
+    // site names no company or country and doesn't mention Channex. Logo is
+    // their /icon.jpeg cropped to the ink and resized to 480 px wide.
     "id": "innexia-opm",
     "name": "Innexia OPM",
-    "description": "Hotel PMS with housekeeping, revenue management, reconciliation and scheduling tools.",
+    "description": "Cloud hotel PMS built by hoteliers around the owner's view of the business. Staff work from phones and tablets, checking guests in from the floor with an integrated ID scanner and tablet-signed registration cards; housekeepers upload photos to verify each room before arrival; maintenance work orders go to contractors with the room and urgency attached. Owners get end-of-day batch verification in the PMS, OTA reconciliation in which every OTA reservation is checked by hand so commissions are paid correctly, revenue-management pricing recommendations, rates set once and pushed to the OTAs, a 360-degree guest account view, a guest portal for requests and reviews, staff scheduling with live payroll cost, and occupancy and revenue analytics.",
     "icon": "/lovable-uploads/pms-catalog-innexia-opm.webp",
     "categories": [
       "PMS"
