@@ -5878,6 +5878,25 @@ export const integrations: Integration[] = [
     "website": "https://deplino.ro/"
   },
   {
+    // From dint.com/property-management, /about and /terms (2026-11-11). Dint+
+    // is a consumer app from Dint+ Inc. (bookings, messaging, AI assistants);
+    // this is its Hosting workspace for property owners. Their page names
+    // Channex as the connectivity provider for Booking.com and Airbnb but says
+    // live activation is "in preparation", not yet live. No country stated, so
+    // no region tag. Logo is Evan's file, identical (md5) to their
+    // /favicon/android-chrome-192x192.png, converted to WebP.
+    "id": "dint",
+    "name": "Dint+",
+    "aliases": ["Dint", "Dint Plus", "Dint+ Inc"],
+    "description": "Hosting workspace inside Dint+, a consumer app from Dint+ Inc. that also covers messaging, AI assistants, services and bookings. Owners build a property listing with room or unit layouts, photos and amenities; manage availability, calendar blocks, rates and stay rules; and review reservations in one place. Calendars exchange over iCal, and Channex connects the property to Booking.com and Airbnb for rates, availability, stay restrictions and reservations. Optional AI phone and website assistants answer guest questions from approved property information, and Dint-managed plans that coordinate guest communication, pricing, cleaners and maintenance are in preparation.",
+    "icon": "/lovable-uploads/pms-catalog-dint.webp",
+    "categories": [
+      "PMS"
+    ],
+    "slug": "dint",
+    "website": "https://www.dint.com/property-management"
+  },
+  {
     "id": "doorling",
     "name": "Doorling",
     "description": "Accommodation management software for bookings and property workflows.",
