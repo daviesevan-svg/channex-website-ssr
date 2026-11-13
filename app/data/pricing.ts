@@ -52,8 +52,8 @@ export const OVERAGE_CAP = 7;
 /** Charged only on the part of a property that exceeds the limits above. */
 export const OVERAGE_FEES = [
   { item: "Hotel — each room type over 20", fee: "$1", note: `capped at $${OVERAGE_CAP} per property` },
-  { item: "Hotel — each rate plan over 200", fee: "$0.10", note: `capped at $${OVERAGE_CAP} per property` },
-  { item: "Vacation rental — each rate plan over 10 per room type", fee: "$0.10", note: "" },
+  { item: "Hotel — each rate plan over 200", fee: "$0.05", note: `capped at $${OVERAGE_CAP} per property` },
+  { item: "Vacation rental — each rate plan over 10 per room type", fee: "$0.05", note: "" },
 ];
 
 /** Usage-based fees that are not tied to property size. */
