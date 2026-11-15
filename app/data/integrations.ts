@@ -5709,6 +5709,25 @@ export const integrations: Integration[] = [
     "website": "https://autonomya.fr/"
   },
   {
+    // From baanhost.com (home page, /pricing, /terms, /privacy), 2026-11-14.
+    // Operated by BaanHost, Thailand (terms are governed by Thai law). Their
+    // FAQ tells hosts to "select Channex on the platform" to connect channels,
+    // so the Channex sync is live. Logo is Evan's 512 px app icon, resized to
+    // 256 px WebP.
+    "id": "baanhost",
+    "name": "BaanHost",
+    "aliases": ["Baan Host"],
+    "description": "Back office for villa estates, guesthouses, bungalow resorts, hostels, hotels and serviced apartments, on iPhone, iPad, Android and the web. A tape chart with two-way sync to Airbnb, Booking.com, Agoda, Expedia, Trip.com, Hostelworld and 20+ more platforms through Channex; online check-in where guests enter passport details, sign and pay by QR or card; housekeeping jobs created at checkout and closed with a photo; a night audit that marks no-shows, posts room charges and sends the daily report; payments, receipts, invoices and owner statements in any currency; and a direct booking page. Thailand's TM30 immigration report exports in the bureau's own format, passport scanning runs on the device, and the app speaks eleven languages. Priced by units from ฿1,490 a month with no booking commission. Started at, and used every day in, a property the team runs itself.",
+    "icon": "/lovable-uploads/pms-catalog-baanhost.webp",
+    "categories": [
+      "PMS",
+      "Vacation Rentals",
+      "Asia"
+    ],
+    "slug": "baanhost",
+    "website": "https://baanhost.com/"
+  },
+  {
     "id": "bayabotech-xenia",
     "name": "BayaboTech / Xenia",
     "description": "Developer of Xenia, a hospitality property management system.",
