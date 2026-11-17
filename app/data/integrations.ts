@@ -3802,6 +3802,21 @@ export const integrations: Integration[] = [
     website: "https://servos.dk/"
   },
   {
+    // From setapp.az/en (home, /about, /faq, /modules/sales, /contact,
+    // /terms_condition), 2026-11-17. Baku, Azerbaijan; terms governed by
+    // Azerbaijani law; founded 2019. Their site does NOT mention Channex.
+    // Not the Mac app subscription service of the same name. Logo is the S
+    // mark cut from Evan's 512 px lockup (the full lockup is 3.4:1 ink).
+    id: "setapp",
+    name: "Setapp",
+    aliases: ["Setapp PMS", "setapp.az"],
+    description: "Cloud PMS from Baku for hotels, aparthotels, short-term rental portfolios and resorts, founded in 2019. One panel covers booking on a visual calendar, restaurant POS, spa, housekeeping, technical, cashbox, bank, credit, finance, reports, statistics and a channel manager for Booking.com, Expedia, Airbnb, Agoda, Hotelbeds and others. Multi-property and multi-currency, with per-owner statements for aparthotels; runs as a PWA in English, Azerbaijani and Russian.",
+    icon: "/lovable-uploads/pms-catalog-setapp.webp",
+    categories: ["PMS", "Europe", "Asia"],
+    slug: "setapp",
+    website: "https://setapp.az/"
+  },
+  {
     // id keeps the legacy bulk-import value so the old
     // /integrations/support@imobiznetsinc URL 301s to the clean slug.
     id: "support@imobiznetsinc",
