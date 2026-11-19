@@ -3653,6 +3653,23 @@ export const integrations: Integration[] = [
     website: "https://hospify.app/"
   },
   {
+    // From myxcaliber.com/web (home, /why-xcaliber, /partners,
+    // /privacy-policy), 2026-11-19. Xcaliber Co., Ltd., founded 1 April 2008,
+    // Bangkok (5/F Gaysorn Amarin, Ploenchit Road); offices in Johor Bahru and
+    // Makati City. Their site does NOT mention Channex (it says it partners
+    // with "the major channel managers" without naming them). Logo is their
+    // own /assets/images/logo/xcaliber-mark.svg byte for byte; the full
+    // lockup is ~4:1 and too wide for the 64 px tile.
+    id: "xcaliber",
+    name: "Xcaliber",
+    aliases: ["myXcaliber", "Xcaliber Co., Ltd."],
+    description: "Direct booking engine from Bangkok for hotels and resorts across South East Asia, in business since 2008 and used by 1,000+ partner hotels. Member rates, private sales links, upsells and a mobile-first checkout, alongside an e-Voucher, package and privilege builder, payment gateways through the region's banks, a channel manager offered with partner platforms, metasearch rate feeds, and hotel website design and hosting. Local teams in Thailand, Malaysia, Vietnam, the Philippines, Indonesia and Laos.",
+    icon: "/lovable-uploads/ibe-catalog-xcaliber.svg",
+    categories: ["IBE", "Asia"],
+    slug: "xcaliber",
+    website: "https://www.myxcaliber.com/web/"
+  },
+  {
     id: "xlayertechnologies",
     name: "Xlayertechnologies",
     description: "Cloud-based property management system providing comprehensive hotel operations management and channel connectivity.",

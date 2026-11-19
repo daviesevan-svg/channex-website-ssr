@@ -13,7 +13,7 @@
 export const OTA_CHANNEL_COUNT = 78;
 
 /** PMS/booking-engine/tech partners listed in the directory (non-OTA). */
-export const PARTNER_COUNT = 479;
+export const PARTNER_COUNT = 480;
 
 /** Integrations tagged "PMS" specifically — narrower than PARTNER_COUNT, which
  *  also covers booking engines, RMS and payment gateways. */
