@@ -446,28 +446,6 @@ const Features = () => {
         </div>
       </section>
 
-      {/* How Channex Compares */}
-      <section className="py-24 bg-slate-900/20">
-        <div className="container mx-auto px-4 lg:px-6">
-          <div className="text-center space-y-6 mb-16">
-            <h2 className="text-4xl lg:text-5xl font-bold text-foreground font-inter">
-              How Channex Compares
-            </h2>
-            <p className="text-xl text-muted-foreground font-inter max-w-2xl mx-auto">
-              See how Channex stacks up against other channel manager solutions
-            </p>
-          </div>
-          <div className="flex justify-center">
-            <Button size="lg" variant="outline" className="font-inter" asChild>
-              <Link to="/comparison/siteminder">
-                View Channex vs SiteMinder Comparison
-                <ArrowRight size={16} className="ml-2" />
-              </Link>
-            </Button>
-          </div>
-        </div>
-      </section>
-
       {/* Call to Action - Enhanced */}
       <section className="py-24 bg-background">
         <div className="container mx-auto px-4 lg:px-6">

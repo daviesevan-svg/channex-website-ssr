@@ -22,7 +22,6 @@ const routes = [
   "/pricing",
   "/contact",
   "/blog",
-  "/comparison/siteminder",
   "/policy",
 ];
 

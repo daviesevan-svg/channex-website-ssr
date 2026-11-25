@@ -22,7 +22,6 @@ export default [
   route("connect-first-property.md", "routes/connect-first-property-md.ts"),
   route("blog", "routes/blog.tsx"),
   route("blog/:slug", "routes/blog.$slug.tsx"),
-  route("comparison/siteminder", "routes/comparison.siteminder.tsx"),
   route("policy", "routes/policy.tsx"),
   route("pricing-calculator", "routes/pricing-calculator.tsx"),
   // ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE

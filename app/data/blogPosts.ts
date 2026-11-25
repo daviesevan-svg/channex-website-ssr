@@ -1200,9 +1200,8 @@ export const blogPosts: BlogPost[] = [
 
       <hr style="margin: 2rem 0; border: none; border-top: 1px solid #e2e8f0;" />
 
-      <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 1rem; color: #1e293b;">More comparisons</h2>
+      <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 1rem; color: #1e293b;">Further reading</h2>
       <ul style="list-style: none; padding: 0;">
-        <li style="margin-bottom: 0.5rem;">→ <a href="/comparison/siteminder" style="color: #3b82f6; text-decoration: underline;">Channex vs SiteMinder</a></li>
         <li style="margin-bottom: 0.5rem;">→ <a href="/features" style="color: #3b82f6; text-decoration: underline;">All features</a></li>
         <li style="margin-bottom: 0.5rem;">→ <a href="https://docs.channex.io/" target="_blank" style="color: #3b82f6; text-decoration: underline;">API docs</a></li>
         <li style="margin-bottom: 0.5rem;">→ <a href="/pricing" style="color: #3b82f6; text-decoration: underline;">Pricing</a></li>
