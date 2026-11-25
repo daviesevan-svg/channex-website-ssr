@@ -61,7 +61,6 @@ const Footer = () => {
             <ul className="space-y-2 text-slate-400">
               <li><Link prefetch="intent" to="/about" className="hover:text-white transition-colors font-inter">About Us</Link></li>
               <li><Link prefetch="intent" to="/blog" className="hover:text-white transition-colors font-inter">Blog</Link></li>
-              <li><Link prefetch="intent" to="/comparison/siteminder" className="hover:text-white transition-colors font-inter">Alternative to Siteminder</Link></li>
             </ul>
           </div>
 
