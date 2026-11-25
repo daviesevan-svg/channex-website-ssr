@@ -24,6 +24,8 @@ export default [
   route("blog/:slug", "routes/blog.$slug.tsx"),
   route("policy", "routes/policy.tsx"),
   route("pricing-calculator", "routes/pricing-calculator.tsx"),
+  // Removed page; 301 to /features so old links still land somewhere.
+  route("comparison/siteminder", "routes/comparison-siteminder-redirect.ts"),
   // ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE
   route("*", "routes/not-found.tsx"),
 ] satisfies RouteConfig;
