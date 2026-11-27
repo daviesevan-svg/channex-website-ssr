@@ -4978,7 +4978,8 @@ export const integrations: Integration[] = [
     // Kanha LLC, a New Hampshire limited liability company. Their site says
     // OTA channel sync runs "through Channex", live with Booking.com and
     // Expedia at White Mountain Cottages (Conway, NH). Logo is their own
-    // /icon.svg byte for byte, the same mark as the PNG Evan supplied.
+    // /icon.svg, the same mark as the PNG Evan supplied, with only its declared
+    // size raised from 32 to 64 so it fills the 40 px tile slot.
     id: "kanha",
     name: "Kanha",
     aliases: ["Kanha LLC", "Garg Reservations"],
