@@ -4974,6 +4974,21 @@ export const integrations: Integration[] = [
     website: "https://kan2go.gr"
   },
   {
+    // From gargreservations.com (home, /terms), 2026-11-27. Operated by
+    // Kanha LLC, a New Hampshire limited liability company. Their site says
+    // OTA channel sync runs "through Channex", live with Booking.com and
+    // Expedia at White Mountain Cottages (Conway, NH). Logo is their own
+    // /icon.svg byte for byte, the same mark as the PNG Evan supplied.
+    id: "kanha",
+    name: "Kanha",
+    aliases: ["Kanha LLC", "Garg Reservations"],
+    description: "Front-desk software from New Hampshire for small hotels, motels, inns and cottage properties. One tape chart for rooms and reservations, with folios, payments and a night audit; housekeeping on staff phones; a smart-lock door code made for each stay; a direct booking engine; and OTA channel sync through Channex with Booking.com, Expedia, Airbnb and other channels on every plan. Card payments go to the property's own Stripe account. Priced from $90 a month with no setup fee or contract.",
+    icon: "/lovable-uploads/pms-catalog-kanha.svg",
+    categories: ["PMS", "North America"],
+    slug: "kanha",
+    website: "https://gargreservations.com/"
+  },
+  {
     id: "tenerifebsl",
     name: "Tenerife Belgique SL",
     description: "Spanish property management company guiding buyers through property purchases in Tenerife, offering full-service support from search to completion.",
