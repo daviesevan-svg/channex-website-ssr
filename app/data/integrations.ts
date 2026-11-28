@@ -5196,6 +5196,19 @@ export const integrations: Integration[] = [
     website: "https://pmspilot.com/en"
   },
   {
+    // Their apple-touch-icon (a clock dial on a dark square), resized to 128px.
+    // Their site is French-only and states the Channex link itself: "Airbnb et
+    // Booking.com par Channex, certifié".
+    id: "pmsconciergerie",
+    slug: "pmsconciergerie",
+    name: "PMS Conciergerie",
+    aliases: ["Corbineau Digital"],
+    description: "French software for short-term rental concierge businesses, built for the phone. Calendar, bookings, cleaning schedules, guest messaging and a monthly statement for each owner in one place, with Airbnb and Booking.com connected through Channex. Each morning an assistant lines up decisions to approve, such as assigning a cleaner or accepting an early arrival, but never sets prices; rates are entered by hand or come from PriceLabs. Also covers tourist tax and the police registration form for foreign guests, and Stripe payments for extras and deposits. Priced at €15 per active listing per month with no contract.",
+    icon: "/lovable-uploads/pms-catalog-pmsconciergerie.webp",
+    categories: ["PMS", "Europe"],
+    website: "https://pms-conciergerie.fr/"
+  },
+  {
     // Their mark, from their own icon.svg — path unmodified, only the fill and
     // a measured tight viewBox. Their favicon is a cream glyph on a dark badge;
     // this is the inverse lockup Evan supplied, on transparency rather than the
